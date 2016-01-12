@@ -1,0 +1,133 @@
+
+/* Typography
+ * ------------------------------------------ */
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color_text_main;
+	font-family: $font_main;
+	font-size: rem(1);
+	line-height: $font_line_height_body;
+	//-webkit-font-smoothing: antialiased;
+	//-moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+	background-color: $color_background_hr;
+	border: 0;
+	height: 2px;
+	margin: 2em 0;
+	width: 100%;
+}
+
+/* Headings
+ * ------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font_heading;
+	color: $color_text_heading;
+}
+
+h1 {
+	@include h1;
+	margin-bottom: 0.5em;
+}
+h2 {
+	@include h2;
+	margin-bottom: 0.6em;
+}
+h3 {
+	@include h3;
+	margin-bottom: 0.8em;
+}
+h4 {
+	@include h4;
+	margin-bottom: 1em;
+}
+h5 {
+	@include h5;
+	margin-bottom: 1em;
+}
+h6 {
+	@include h6;
+	margin-bottom: 1em;
+}
+
+/* Copy
+ * ------------------------------------------ */
+
+p {
+	margin: 0 0 1.5em;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote, q {
+	quotes: "" "";
+	margin: 1.5em;
+	color: $color_blockquote;
+	@include h3;
+	&:before {
+		content: "";
+	}
+	&:after {
+		content: ""
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $color_background_pre;
+	font-family: $font_pre;
+	font-size: rem(1);
+	line-height: $font_line_height_pre;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: $font_code;
+	font-weight: 900;
+	font-size: 0.9em;
+	color: $color_code;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+small,
+.small {
+	font-size: 75%;
+}
+
+big,
+.big {
+	font-size: 125%;
+}
+

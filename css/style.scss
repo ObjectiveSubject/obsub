@@ -1,0 +1,51 @@
+/*
+Theme Name: obsub
+Theme URI: https://github.com/ObjectiveSubject/obsub
+Author: Objective Subject
+Author URI: http://objectivesubject.com/
+Description: A wordpress theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: obsub
+
+ObSub is based on wp-boilerplate: https://github.com/ObjectiveSubject/wp-boilerplate
+and Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/* Vendor
+----------------------------------------------- */
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+
+/* Base
+----------------------------------------------- */
+@import "base/variables";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/global";
+@import "base/typography";
+@import "base/helpers";
+
+
+/* Layout
+----------------------------------------------- */
+@import "layout/document";
+@import "layout/header";
+@import "layout/post";
+@import "layout/footer";
+
+
+/* Components
+----------------------------------------------- */
+@import "components/asides";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/media";
+@import "components/navigation";
+@import "components/widgets";

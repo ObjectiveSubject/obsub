@@ -1,0 +1,79 @@
+// Structure
+// ============================================ /
+$max-width: rem(1200) !global;
+
+$size_container_padding: 40px;
+
+$size_site_main: 70%;
+$size_site_sidebar: 30%;
+
+$screen-sm: 600px;
+$screen-md: 768px;
+$screen-lg: 960px;
+$screen-xl: 1200px;
+
+
+// Colors
+// ============================================ /
+$color_text_main: #404040;
+$color_text_heading: #202020;
+$color_text_input: #666;
+$color_text_input_focus: #111;
+
+$color_link: #0071BC;
+$color_link_visited: tint($color_link, 10%);
+$color_link_hover: darken($color_link, 10%);
+
+$color_code: #0071BC;
+
+$color_blockquote: #222;
+
+$color_background_body: #fff;
+$color_background_hr: #ccc;
+$color_background_button: #e6e6e6;
+$color_background_pre: #eee;
+
+$color_border_button: #ccc #ccc #bbb;
+$color_border_button_hover: #ccc #bbb #aaa;
+$color_border_button_focus: #aaa #bbb #bbb;
+
+$color_background_selection: lightblue;
+
+$color_border_input: #ccc;
+$color_border_input_hover: #ccc;
+$color_border_input_focus: #ccc;
+
+$color_text_input: #404040;
+$color_text_input_hover: #111;
+$color_text_input_focus: #111;
+
+
+// Typography
+// ============================================ /
+$font_main: "Arnhem Pro", "Georgia", sans-serif;
+$font_heading: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font_code: "Menlo", monospace;
+$font_pre: "Menlo", monospace;
+$font_line_height_body: 1.5;
+$font_line_height_pre: 1.6;
+
+$h1_size: 3.5em;  $h1_line_height: 1.1em;
+$h2_size: 2.5em;  $h2_line_height: 1.2em;
+$h3_size: 1.5em;  $h3_line_height: 1.3em;
+$h4_size: 1.2em;  $h4_line_height: 1.4em;
+$h5_size: 1em;  $h5_line_height: 1.4em;
+$h6_size: 1em;  $h6_line_height: 1.4em;
+
+$color_text_muted: #aaa;
+
+
+// Tables
+// ============================================ /
+$table_bg: transparent;
+$table-bg-accent: #fafafa;
+$table-bg-hover: #eee;
+$table_bg_nested: transparent;
+$table-cell-padding: 5px;
+$line-height-base: 1em;
+$table-border-color: #DDD;
+$table-condensed-cell-padding: 5px;

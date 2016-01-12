@@ -1,0 +1,85 @@
+// Display
+// ======================================= /
+.show { display: block; }
+.hide { display: none; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+.hide-sm {
+	@media (min-width: $screen-sm) {
+		display: none !important;
+	}
+}
+.hide-md {
+	@media (min-width: $screen-md) {
+		display: none !important;
+	}
+}
+.hide-lg {
+	@media (min-width: $screen-lg) {
+		display: none !important;
+	}
+}
+.hide-xl {
+	@media (min-width: $screen-xl) {
+		display: none !important;
+	}
+}
+.show-xl, .show-sm, .show-md, .show-lg { display: none !important; }
+.show-sm {
+	@media (min-width: $screen-sm) {
+		display: block !important;
+	}
+}
+.show-md {
+	@media (min-width: $screen-md) {
+		display: block !important;
+	}
+}
+.show-lg {
+	@media (min-width: $screen-lg) {
+		display: block !important;
+	}
+}
+.show-xl {
+	@media (min-width: $screen-xl) {
+		display: block !important;
+	}
+}
+
+// Layout
+// ======================================= /
+.outer-container {
+  @include outer-container;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.clearfix {
+  @include clearfix;
+}
+
+// Lists
+// ======================================= /
+.list-unstyled {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+// Style
+// ======================================= /
+a.no-decoration { text-decoration: none; }

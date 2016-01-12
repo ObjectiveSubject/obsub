@@ -1,0 +1,43 @@
+@import '../color-scheme/admin-colors';
+
+#login {
+
+  h1 a {
+    background-image: url(../../images/login-logo.png);
+    width: 100%;
+    background-size: auto;
+  }
+
+  #backtoblog a,
+  #nav a {
+    &:hover { color: $link; }
+  }
+
+  .message {
+    border-color: $action-color;
+  }
+}
+
+input[type=checkbox],
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=radio],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+  &:focus {
+    border-color: $button-color;
+    box-shadow: 0 0 5px -1px $button-color;
+  }
+}

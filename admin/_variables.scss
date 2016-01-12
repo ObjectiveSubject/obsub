@@ -1,0 +1,66 @@
+$yellow: #FBB03B;
+$blue: #0071BC;
+$green: #009245;
+$teal: #008C9C;
+$red: #DD3D36;
+
+// core variables
+
+$text-color: #fff !default;
+$base-color: #555 !default;
+$icon-color: #FFF !default;
+$highlight-color: #888 !default;
+$notification-color: $yellow !default;
+$action-color: $blue !default;
+$error: $red !default;
+$error-focus: saturate(darken($error, 20%), 20%) !default;
+
+// global
+
+$body-background: #ececec !default;
+
+$link: $action-color !default;
+$link-focus: desaturate(lighten($action-color, 20%), 20%) !default;
+
+$button-color: $action-color !default;
+$form-checked: $highlight-color !default;
+
+$notice-border-success: $green !default;
+$notice-border-error: $error !default;
+
+
+// admin menu & admin-bar
+
+$menu-text: $text-color !default;
+$menu-icon: $icon-color !default;
+$menu-background: $base-color !default;
+
+$menu-highlight-text: $text-color !default;
+$menu-highlight-icon: $text-color !default;
+$menu-highlight-background: $highlight-color !default;
+
+$menu-current-text: $menu-highlight-text !default;
+$menu-current-icon: $menu-highlight-icon !default;
+$menu-current-background: $menu-highlight-background !default;
+
+$menu-submenu-text: $notification-color !default;
+$menu-submenu-background: darken($base-color, 15%) !default;
+$menu-submenu-background-alt: desaturate( lighten( $menu-background, 7% ), 7% ) !default;
+
+$menu-submenu-focus-text: $text-color !default;
+$menu-submenu-current-text: $text-color !default;
+
+$menu-bubble-text: $text-color !default;
+$menu-bubble-background: $notification-color !default;
+$menu-bubble-current-text: $text-color !default;
+$menu-bubble-current-background: $menu-submenu-background !default;
+
+$menu-collapse-text: $menu-icon !default;
+$menu-collapse-icon: $menu-icon !default;
+$menu-collapse-focus-text: $text-color !default;
+$menu-collapse-focus-icon: $menu-highlight-icon !default;
+
+$adminbar-avatar-frame: lighten( $menu-background, 7% ) !default;
+$adminbar-input-background: lighten( $menu-background, 7% ) !default;
+
+$menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
