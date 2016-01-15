@@ -46,7 +46,9 @@ function obsub_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails', array(
+		'post', 'case_study'
+	) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -98,12 +100,18 @@ function obsub_scripts() {
 
 	wp_enqueue_style( 'obsub-style', get_template_directory_uri() . "/style{$postfix}.css" );
 
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', get_template_directory_uri() . "/js/jquery-2.1.4.js", array(), '', true );
+	wp_register_script( 'velocity', get_template_directory_uri() . "/js/velocity.min.js", array(), '', true );
+	wp_register_script( 'velocity_ui', get_template_directory_uri() . "/js/velocity.ui.min.js", array(), '', true );
+	
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . "/js/modernizr.min.js", array(), '', false );
-	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array('jquery'), '', true );
-
-	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-	// 	wp_enqueue_script( 'comment-reply' );
-	// }
+	wp_enqueue_script( 'jquery' );
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'velocity' );
+		wp_enqueue_script( 'velocity_ui' );
+	}
+	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'obsub_scripts' );
 

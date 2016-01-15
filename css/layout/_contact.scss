@@ -1,0 +1,44 @@
+.office-location {
+	padding-bottom: $leading * 2;
+	@include media(640px) {
+		width: 50%;
+		float: left;
+	}
+	&.brooklyn {
+		background: #F8D8D7;
+	}
+	&.oakland {
+		background: #CFE4EF;
+	}
+
+	address, p {
+		padding: 0 7%;
+		@include media($screen-lg) {
+			padding: 0;
+			max-width: 340px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.h2 {
+		margin-top: $leading * 2;
+	}
+}
+
+.office-map {
+	background: #DDD;
+	height: 50vw;
+	min-height: 320px;
+	width: 100%;
+	@include media($screen-xl) {
+		height: 37.5vw;
+	}
+
+	.brooklyn & {
+		background: #FFB4AF;
+	}
+	.oakland & {
+		background: #71A1CA;
+	}
+}

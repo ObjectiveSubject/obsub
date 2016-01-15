@@ -1,0 +1,25 @@
+.site-footer {
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+	a {
+		display: block;
+		padding: 5px 0;
+		color: $medium_gray;
+		&:hover {
+			color: $color_text_main;
+		}
+
+		@include media($screen-md) {
+			display: inline-block;
+			padding: 0;
+			margin-right: 5%;
+			&.social {
+				margin-right: 1%;	
+			}
+		}
+
+		&.facebook {
+			margin-top: $leading;
+		}
+	}
+}

@@ -50,7 +50,21 @@
 // Layout
 // ======================================= /
 .outer-container {
-  @include outer-container;
+	@include outer-container;
+	padding: 0 $size_container_padding;
+	&.bleed {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.inner-container {
+	max-width: $content-max-width;
+	margin: 0 auto;
+	padding: 0 $size_container_padding;
+	&.bleed {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .alignleft {
@@ -80,6 +94,68 @@
   list-style: none;
 }
 
+// Colors
+// ======================================= /
+.bg-localdata {
+	background: $local_data_orange;
+	color: white;
+}
+.bg-boston-public-schools {
+	background: $boston_blue;
+	color: white;
+}
+.bg-city-of-oakland {
+	background: $oakland_green;
+	color: white;
+}
+
+
 // Style
 // ======================================= /
 a.no-decoration { text-decoration: none; }
+
+.text-color-link {
+	color: $color_text_main;
+	&:hover {
+		color: $color_link;
+	}
+}
+.white-link {
+	color: white;
+	&:hover {
+		color: $color_link;
+	}
+}
+
+.media-size  {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgba(white, 0.25);
+	padding: 5px;
+	color: #bbb;
+	font-size: 12px;
+	&:before {
+		content: "default";
+	}
+	@include media($screen_sm) {
+		&:before {
+			content: "small";
+		}
+	}
+	@include media($screen_md) {
+		&:before {
+			content: "medium";
+		}
+	}
+	@include media($screen_lg) {
+		&:before {
+			content: "large";
+		}
+	}
+	@include media($screen_xl) {
+		&:before {
+			content: "xlarge";
+		}
+	}
+}

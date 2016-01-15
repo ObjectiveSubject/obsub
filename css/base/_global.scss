@@ -12,6 +12,10 @@ html {
 	box-sizing: border-box;
 }
 
+body {
+  background-color: $light_gray;
+}
+
 ::-moz-selection { /* Code for Firefox */
     // color: $color_selection_text;
     background: $color_background_selection;
@@ -38,41 +42,12 @@ a {
 		color: $color_link_hover;
 	}
 	&:focus {
-		outline: thin dotted;
+		outline: none;
 	}
 	&:hover,
 	&:active {
 		outline: 0;
 	}
-}
-
-/* Lists
- * ------------------------------------------- */
-
-ul, ol {
-	margin: 0 0 1.5em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
 }
 
 /* Based on Bootstrap 3.3.2

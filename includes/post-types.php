@@ -1,31 +1,30 @@
 <?php
-/*
 
-// Brands post type ================================ /
-add_action('init', 'register_brands');
+// Case Studies post type ================================ /
+add_action('init', 'register_case_studies');
 
-function register_brands() {
+function register_case_studies() {
 
 	$labels = array (
-		'name' => 'Brands',
-		'singular_name' => 'Brand',
-		'menu_name' => 'Brands',
-		'name_admin_bar' => 'Brand',
-		'add_new' => 'Add Brand',
-		'add_new_item' => 'Add New Brand',
+		'name' => 'Case Studies',
+		'singular_name' => 'Case Study',
+		'menu_name' => 'Case Studies',
+		'name_admin_bar' => 'Case Study',
+		'add_new' => 'Add Case Study',
+		'add_new_item' => 'Add New Case Study',
 		'edit' => 'Edit',
-		'edit_item' => 'Edit Brand',
-		'new_item' => 'New Brand',
-		'all_items' => 'All Brands',
-		'view' => 'View Brand',
-		'view_item' => 'View Brand',
-		'search_items' => 'Search Brands',
-		'not_found' => 'No Brands Found',
-		'not_found_in_trash' => 'No Brands Found in Trash',
-		'parent' => 'Parent Brands',
+		'edit_item' => 'Edit Case Study',
+		'new_item' => 'New Case Study',
+		'all_items' => 'All Case Studies',
+		'view' => 'View Case Study',
+		'view_item' => 'View Case Study',
+		'search_items' => 'Search Case Studies',
+		'not_found' => 'No Case Studies Found',
+		'not_found_in_trash' => 'No Case Studies Found in Trash',
+		'parent' => 'Parent Case Studies',
 	);
 
-	register_post_type('brands', array(
+	register_post_type('case_study', array(
 			'description' => '',
 			'public' => true,
 			'show_ui' => true,
@@ -33,18 +32,18 @@ function register_brands() {
 			'capability_type' => 'post',
 			'map_meta_cap' => true,
 			'hierarchical' => false,
-			'rewrite' => array('slug' => 'brands', 'with_front' => false),
+			'rewrite' => array('slug' => 'case-studies', 'with_front' => false),
 			'query_var' => true,
 			'menu_position' => 5,
-			'supports' => array('title','editor','thumbnail'),
-			'menu_icon' => 'dashicons-admin-post',
+			'supports' => array('title','editor','thumbnail','excerpt'),
+			'menu_icon' => 'dashicons-align-right',
 			'labels' => $labels
 		)
 	);
 }
 
 // Custom Admin Columns (optional) ======= /
-
+/*
 function my_{post-type}_columns($columns) {
 	$columns = array(
 		'cb'	 	=> '<input type="checkbox" />',
@@ -68,7 +67,5 @@ function my_custom_columns($column, $post_id) {
 }
 add_action("manage_{post-type}_posts_custom_column", "my_custom_columns", 10, 2);
 add_filter("manage_edit-{post-type}_columns", "my_{post-type}_columns");
-
 */
-
 ?>

@@ -10,14 +10,21 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'obsub' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'obsub' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'obsub' ), 'obsub', '<a href="http://objectivesubject.com" rel="designer">Objective Subject</a>' ); ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer outer-container future-A" role="contentinfo">
+		<a href="#" class="copyright">copyright & privacy information</a>
+		<a href="#" class="subscribe">let us say hi, periodically</a>
+		<a href="#" class="facebook social" target="_blank">facebook</a>
+		<a href="#" class="twitter social" target="_blank">twitter</a>
+		<a href="#" class="dribble social" target="_blank">dribble</a>
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
+
+<div class="media-size"></div>
+
+<?php if ( is_page( 'contact' ) ) : ?>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 

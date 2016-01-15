@@ -1,31 +1,93 @@
-.sticky {
-	display: block;
+.page-header {
+	position: relative;
+	padding: 100px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media($screen-md) {
+		padding: 170px 0;
+	}
+	@include media($screen-lg) {
+		padding: 220px 0;
+	}
+
+	& > * {
+		position: relative;
+		z-index: 1;
+		max-width: $content-max-width;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 $size_container_padding;
+		box-sizing: content-box;
+	}
+
+	.single-case_study & {
+		color: white;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(black, 0.4);
+		}
+	}
 }
 
-.hentry {
-	margin: 0 0 1.5em;
+.page-nav {
+	a {
+		color: white;
+		&:hover {
+			color: tint($color_text_main, 70%);
+		}
+	}
 }
 
-.byline,
-.updated:not(.published){
-	display: none;
+.page-section {
+	@include clearfix;
+
+	& > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > p, & > ol, & > ul {
+		max-width: $max-width * 0.666;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 $size_container_padding;
+		box-sizing: content-box;
+	}
+
+	blockquote {
+		padding: ($leading * 2) 0;
+		margin: ($leading * 2) 0 0;
+		.city-of-oakland & {
+			background: #003265;
+			color: #376FFF;
+		}
+		p {
+			font-size: rem(24);
+			line-height: rem(30);
+			font-weight: 700;
+			max-width: $max-width * 0.666;
+			margin: 0 auto;
+			padding: 0 $size_container_padding;
+			@include media($screen-lg) {
+				font-size: rem(44);
+				line-height: rem(46);
+			}
+		}
+		small {
+			font-size: rem(16);
+			line-height: rem(24);
+		}
+	}
 }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
 
-.entry-title {
-	
-}
 
-.entry-content,
-.entry-summary {
-	margin: 0 0 1.5em;
-}
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
+
+
+
+
+
+
+
+

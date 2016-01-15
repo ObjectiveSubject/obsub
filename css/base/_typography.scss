@@ -1,6 +1,9 @@
 
 /* Typography
  * ------------------------------------------ */
+ html {
+ 	font-size: 100%;
+ }
 
 body,
 button,
@@ -9,10 +12,9 @@ select,
 textarea {
 	color: $color_text_main;
 	font-family: $font_main;
-	font-size: rem(1);
-	line-height: $font_line_height_body;
-	//-webkit-font-smoothing: antialiased;
-	//-moz-osx-font-smoothing: grayscale;
+	line-height: $leading;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 hr {
@@ -25,43 +27,102 @@ hr {
 
 /* Headings
  * ------------------------------------------ */
-
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: $leading;
+	margin-top: $leading;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+h1, .h1 {
+	font-size: rem(36);
+	line-height: rem(36);
+	margin-top: $leading;
+	@include media($screen-sm) {
+		font-size: rem(48);
+		line-height: rem(48);
+	}
+	@include media($screen-md) {
+		font-size: rem(68);
+		line-height: rem(68);
+		margin-top: $leading * 2;
+	}
+}
+h2, .h2 {
+	font-size: rem(22);
+	line-height: rem(30);
+	margin-top: $leading;
+	@include media($screen-md) {
+		font-size: rem(32);
+		line-height: rem(34);
+		margin-top: $leading * 2;
+	}
+}
+h3, .h3 {
+	font-size: rem(20);
+	line-height: rem(28);
+	font-family: $font_main;
+    @include media($screen-md) {
+    	font-size: rem(22);
+    	line-height: rem(30);
+    }
+}
+h4, .h4 {
+	font-size: rem(14);
+	line-height: rem(22);
 	font-family: $font_heading;
-	color: $color_text_heading;
 }
-
-h1 {
-	@include h1;
-	margin-bottom: 0.5em;
+h5, .h5 {
+	font-size: 1rem;
+	line-height: $leading;
 }
-h2 {
-	@include h2;
-	margin-bottom: 0.6em;
-}
-h3 {
-	@include h3;
-	margin-bottom: 0.8em;
-}
-h4 {
-	@include h4;
-	margin-bottom: 1em;
-}
-h5 {
-	@include h5;
-	margin-bottom: 1em;
-}
-h6 {
-	@include h6;
-	margin-bottom: 1em;
+h6, .h6 {
+	font-size: 1rem;
+	line-height: $leading;
 }
 
 /* Copy
  * ------------------------------------------ */
-
 p {
+	line-height: $leading;
+	margin-top: $leading * 3;
+	margin-bottom: 0;
+	font-size: rem(18);
+	line-height: rem(27);
+	@include media($screen-lg) {
+		font-size: rem(22);
+		line-height: rem(30);
+	}
+	&.colophon {
+		font-size: rem(16);
+		line-height: rem(24);
+	}
+}
+
+ul, ol {
 	margin: 0 0 1.5em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
 }
 
 b, strong {
@@ -72,17 +133,11 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 
-blockquote, q {
-	quotes: "" "";
-	margin: 1.5em;
+blockquote {
+	line-height: 1.5rem;
+	margin: $leading 0;
 	color: $color_blockquote;
-	@include h3;
-	&:before {
-		content: "";
-	}
-	&:after {
-		content: ""
-	}
+	font-size: 1.5rem;
 
 	p {
 		margin: 0;
@@ -90,7 +145,8 @@ blockquote, q {
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: $leading 0 0;
+	font-style: normal;
 }
 
 pre {
@@ -129,5 +185,21 @@ small,
 big,
 .big {
 	font-size: 125%;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+/* Hug the block above you */
+.hug {
+	margin-top: 0;
+}
+/* Create space */
+.push {
+	margin-top: $leading;
+}
+.push-double {
+	margin-top: $leading * 2;
 }
 

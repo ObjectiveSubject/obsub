@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'FutureAMedium';
+    src: url('fonts/future_019-webfont.eot'); 
+    src: url('fonts/future_019-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/future_019-webfont.woff') format('woff'),
+         url('fonts/future_019-webfont.ttf') format('truetype'),
+         url('fonts/future_019-webfont.svg#FutureAMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.future-A {
+	font-family: "FutureAMedium", "Futura", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
