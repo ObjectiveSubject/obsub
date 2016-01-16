@@ -12,10 +12,6 @@ html {
 	box-sizing: border-box;
 }
 
-body {
-  background-color: $light_gray;
-}
-
 ::-moz-selection { /* Code for Firefox */
     // color: $color_selection_text;
     background: $color_background_selection;

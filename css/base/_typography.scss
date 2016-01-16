@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: 400;
 }
 h1, .h1 {
-	font-size: rem(36);
-	line-height: rem(36);
+	font-size: rem(32);
+	line-height: rem(32);
 	margin-top: $leading;
 	@include media($screen-sm) {
 		font-size: rem(48);
@@ -201,5 +201,8 @@ big,
 }
 .push-double {
 	margin-top: $leading * 2;
+}
+.push-triple {
+	margin-top: $leading * 3;
 }
 

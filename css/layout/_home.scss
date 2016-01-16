@@ -1,78 +1,47 @@
-body {
 
-	&::before {
-		/* never visible - this is used in jQuery to check the current MQ */ 
-		content: 'mobile';
-		display: none;
-	}
-
-	@include media($screen-lg) {
-		&::before {
-			/* never visible - this is used in jQuery to check the current MQ */ 
-			content: 'desktop';
+.page-section {
+	position: relative;
+	&.full-height {
+		@include media($screen-md) {
+			height: 100vh;
 		}
 	}
-
-}
-
-body[data-hijacking="on"] {	
-	@include media($screen-lg) {
-		overflow: hidden;
-	}
-}
-
-.home .page-section {
-	position: relative;
-	height: 100vh;
-
-	@include media($screen-lg){
-		[data-hijacking="on"] & {
-			opacity: 0;
-			visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-	
-			> .section-container {
-				visibility: visible;
-			}
+	&.case-study-preview {
+		@include media($screen-md) {
+			background-color: transparent !important;
 		}
 	}
 }
 
 .section-container {
 	position: relative;
+	
+	.full-height & {
+		height: 100%;
+	}
+	
+	.inner-container > *:first-child {
+		margin-top: 0;
+	}
+}
+
+.section-image-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 100%;
-
-	@include media($screen-lg) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-
-		.page-section:first-of-type & {
-			&::before {
-				display: none;
-			}
-		}
-		
-		/* Force Hardware Acceleration */
-		@include transform(translateZ(0));
-		@include backface-visibility(hidden);
-
-		[data-hijacking="on"] & {
-			position: absolute;
-		}
-	}
-
-	[data-hijacking="off"] & {
-		opacity: 0;
-	}
-
-	[data-animation="gallery"] .case-study-preview & {
-		box-shadow: 0 0 0 rgba(darken(#999, 10%), .4);
-	}
+	z-index: 0;
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	z-index: 0;
+	// 	background-color: rgba(black, 0.4);
+	// }
 }
 
 .section-image {
@@ -81,42 +50,38 @@ body[data-hijacking="on"] {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
+	opacity: 0;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 0;
-		background-color: rgba(black, 0.4);
-	}
-}
+	transition: all 600ms ease;
+	/* Force Hardware Acceleration */
+	transform: scale(0.85) translateZ(0);
+	backface-visibility: hidden;
 
-.section-color {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 1;
-	transition: opacity 1000ms ease 800ms;
-	.page-section.visible & {
-		opacity: 0;
+	.active & {
+		transform: scale(1);
+		opacity: 0.7;
 	}
 }
 
 .section-content {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	transform: translateY(-50%);
+	position: relative;
 	z-index: 2;
+	padding: 20% 0;
+	@include media($screen-md){
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		padding: 0;
+		transform: translateY(-50%);
+	}
+	.home-intro & {
+		padding-top: 130px;
+		@include media($screen-md) {
+			padding: 0;
+		}
+	}
 	.case-study-preview & {
 		color: white;
 	}
@@ -125,38 +90,45 @@ body[data-hijacking="on"] {
 .os-vertical-nav {
 	/* lateral navigation */
 	position: fixed;
-	z-index: 1;
-	right: 3%;
+	z-index: 800;
+	right: $size_container_padding;
 	top: 50%;
     bottom: auto;
     transform: translateY(-50%);
 	display: none;
+	@include media($screen-md) {
+		display: block;
+	}
 
 	a {
 		display: block;
-		height: 40px;
-		width: 40px;
-
-		/* image replace */
-		overflow: hidden;
-		text-indent: 100%;
-		white-space: nowrap;
-
-		background: url(images/cd-icon-arrow.svg) no-repeat center center;
-
-		&.cd-prev {
-			@include transform(rotate(180deg));
-			margin-bottom: 10px;
+		position: relative;
+		height: 25px;
+		width: 15px;
+		.bubble {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -3px 0 0 -3px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			box-shadow: 0 0 0 4px rgba($color_text_main, 0.2);
+			border-radius: 50%;
+			transition: all 300ms ease;
 		}
-
-		&.inactive {
-			visibility: hidden;
-			opacity: 0;
-			@include transition(opacity 0.2s 0s, visibility 0s 0.2s);
+		&:hover {
+			.bubble {
+				background: $color_text_main;
+				box-shadow: 0 0 0 5px $color_text_main;
+			}
 		}
-	}
-
-	@include media($screen-lg) {
-		display: block;
+		&.active {
+			.bubble {
+				background: rgba($color_text_main, 0.5);
+				box-shadow: 0 0 0 5px rgba($color_text_main, 0.5);
+			}
+		}
 	}
 }

@@ -1,0 +1,13 @@
+body {
+	background-color: $light_gray;
+	
+	&::before {
+		content: "small";
+		display: none;
+	}
+	@include media($screen-md) {
+		&::before {
+			content: "medium";
+		}	
+	}
+}
