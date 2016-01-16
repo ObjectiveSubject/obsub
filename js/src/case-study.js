@@ -21,7 +21,6 @@
 				$this.removeClass('active');
 			}
 		});
-
 	});
 
 })(jQuery, window);
