@@ -47,23 +47,49 @@
 
 (function( $, window, undefined ){
 
-	var $window = $(window);
+	$(document).ready(function(){
 
-	$('.case-study-preview').each(function(){
-		var $this = $(this),
-			activeOffset = $this.data('active-offset'),
-			offsetTop = $this.offset().top + activeOffset,
-			offsetBottom = offsetTop + $(this).outerHeight(),
-			$image = $this.find('.section-image');
-			
-		$window.on('scroll', function(){
-			var scrollTop = $window.scrollTop();
-			if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
-				$this.addClass('active');
-			} else {
-				$this.removeClass('active');
-			}
+		var $window = $(window),
+			windowHeight = $window.height();
+
+		$('.case-study-preview').each(function(){
+			var $preview = $(this),
+				offsetTop = $preview.offset().top,
+				outerHeight = $(this).outerHeight(),
+				offsetBottom = offsetTop + ( outerHeight * 0.25 ) ,
+				$image = $preview.find('.section-image'),
+				$sectionContent = $preview.find('.section-content'),
+				contentHeight = $sectionContent.outerHeight();
+				
+			$window.on('scroll', function(){
+				var scrollTop = $window.scrollTop();
+				if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
+					$preview.addClass('active');
+					if ( $sectionContent.css('position') !== "fixed" ){
+						$sectionContent.css({
+							position: 'fixed',
+							top: ( $sectionContent.offset().top + (contentHeight/2) - scrollTop) + 'px'
+						});
+					}
+					// console.log('contentTop: '+contentTop+', scrollTop: '+scrollTop);
+				} else if ( scrollTop >= offsetBottom ) {
+					$preview.removeClass('active');
+					if ( $sectionContent.css('position') == "fixed" ){
+						$sectionContent.css({
+							position: 'absolute',
+							top: ( $sectionContent.offset().top + (contentHeight/2) - offsetTop) + 'px'
+						});
+					}
+				} else {
+					$preview.removeClass('active');
+					$sectionContent.css({
+						position: 'relative',
+						top: '50%'
+					});
+				}
+			});
 		});
+
 	});
 
 })(jQuery, window);
@@ -76,7 +102,7 @@
 	$('.smooth-scroll').on('click', function(e){
 		e.preventDefault();
 		var target = $(this).attr('href');
-		$(target).velocity("scroll", {duration: 500, mobileHA: false });
+		$(target).velocity("scroll", {duration: 1000, mobileHA: false });
 	});
 
 })(jQuery, window);

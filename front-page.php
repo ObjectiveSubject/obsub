@@ -42,7 +42,7 @@ get_header(); ?>
 				<div class="section-content">
 					<div class="inner-container">
 						<h1 class="case-study-title"><a href="<?php the_permalink(); ?>"><?php echo get_the_excerpt(); ?></a></h1>
-						<p class="hug"><em>Visual identity</em> and <em>user interface</em> for <?php the_title(); ?></p>
+						<p class="case-study-subtitle hug"><em>Visual identity</em> and <em>user interface</em> for <?php the_title(); ?></p>
 					</div>
 				</div>
 			</div>
