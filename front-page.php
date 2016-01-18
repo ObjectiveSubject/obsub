@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<section id="home-intro" class="home-intro full-height page-section active" data-color="#444444" data-active-offset="200">
+	<section id="home-intro" class="home-intro full-height page-section active" data-color="#F0F0EE" data-active-offset="200">
 
 		<div class="section-container">
 			<div class="intro-content section-content">
