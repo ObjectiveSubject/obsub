@@ -284,6 +284,8 @@ html {
 a {
   color: #0071BC;
   text-decoration: none;
+}
+a:not(.no-transition) {
   transition: all 250ms ease;
 }
 a:visited {
@@ -941,9 +943,21 @@ body::before {
 
 .site-title {
   float: right;
+  position: relative;
+  width: 96px;
+  height: 42px;
 }
-.site-title a {
+@media screen and (min-width: 768px) {
+  .site-title {
+    width: 128px;
+    height: 56px;
+  }
+}
+
+.wordmark {
   display: block;
+  position: absolute;
+  top: 0;
   width: 96px;
   height: 42px;
   text-indent: -99999px;
@@ -951,17 +965,29 @@ body::before {
   background-repeat: no-repeat;
   background-size: 96px 84px;
 }
-.main-menu-active .site-title a, .single-case_study .site-title a {
+.wordmark.dark {
+  background-position: 0 0;
+}
+.wordmark.light {
+  display: none;
   background-position: 0 -42px;
 }
 @media screen and (min-width: 768px) {
-  .site-title a {
+  .wordmark.light {
+    background-position: 0 -56px;
+  }
+}
+.single-case_study .wordmark.dark {
+  display: none;
+}
+.single-case_study .wordmark.light {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .wordmark {
     width: 128px;
     height: 56px;
     background-size: 128px 112px;
-  }
-  .main-menu-active .site-title a, .single-case_study .site-title a {
-    background-position: 0 -56px;
   }
 }
 
@@ -1038,6 +1064,9 @@ body::before {
   margin: 0;
   padding-left: 0;
 }
+.main-navigation ul.sub-menu {
+  display: none;
+}
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -1050,17 +1079,17 @@ body::before {
   left: 0;
   font-size: 1.5rem;
   line-height: 1em;
-  transition: all 300ms ease 0ms;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
 }
-.main-menu-active .main-menu {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.main-menu li {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 .main-menu a {
   color: white;
   text-transform: lowercase;
+}
+.main-menu a:hover {
+  color: #646464;
 }
 
 .main-menu-scrim {

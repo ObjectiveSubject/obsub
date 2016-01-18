@@ -26,14 +26,17 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="outer-container">
 			
-			<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+			<div class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark dark" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark light" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
+			</div>
 
 			<nav id="site-navigation" class="main-navigation future-A" role="navigation">
 				<a class="menu-toggle" href="#"><i class="center-line"></i><span class="hide">menu</span></a>
 				<ul class="main-menu list-unstyled">
 					<li class="menu-item">
-						<a href="#">case studies</a>
-						<ul class="sub-menu list-unstyled">
+						<a href="#case-studies-menu">case studies</a>
+						<ul id="case-studies-menu" class="sub-menu list-unstyled">
 							<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
 							foreach ( $case_studies as $study ) : ?>
 							<li class="sub-menu-item">
