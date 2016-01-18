@@ -63,6 +63,10 @@
 			background: #003265;
 			color: #376FFF;
 		}
+		.localdata & {
+			background: $localdata_red;
+			color: #FFEAC4;
+		}
 		p {
 			font-size: rem(24);
 			line-height: rem(30);

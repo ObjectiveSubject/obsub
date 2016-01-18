@@ -591,7 +591,7 @@ h6, .h6 {
  * ------------------------------------------ */
 p {
   line-height: 1.5rem;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
   margin-bottom: 0;
   font-size: 1.125rem;
   line-height: 1.6875rem;
@@ -608,7 +608,7 @@ p.colophon {
 }
 
 ul, ol {
-  margin: 0 0 1.5em;
+  margin: 3rem 0 0;
 }
 
 ul {
@@ -805,11 +805,6 @@ big,
 .inner-container {
   max-width: 42.66563rem;
   margin: 0 auto;
-  padding: 0 20px;
-}
-.inner-container.bleed {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .alignleft {
@@ -1145,6 +1140,10 @@ body::before {
 .city-of-oakland .page-section blockquote {
   background: #003265;
   color: #376FFF;
+}
+.localdata .page-section blockquote {
+  background: #EE5A24;
+  color: #FFEAC4;
 }
 .page-section blockquote p {
   font-size: 1.5rem;
@@ -1583,10 +1582,12 @@ figcaption {
   font-style: italic;
   max-width: 42.66563rem;
   margin: 0.75rem auto 0;
-  padding: 0 20px;
 }
 .city-of-oakland figcaption {
   color: #376FFF;
+}
+.localdata figcaption {
+  color: #EE5A24;
 }
 
 /* Responsive Media

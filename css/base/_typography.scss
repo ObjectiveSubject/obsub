@@ -85,7 +85,7 @@ h6, .h6 {
  * ------------------------------------------ */
 p {
 	line-height: $leading;
-	margin-top: $leading * 3;
+	margin-top: $leading * 2;
 	margin-bottom: 0;
 	font-size: rem(18);
 	line-height: rem(27);
@@ -100,7 +100,7 @@ p {
 }
 
 ul, ol {
-	margin: 0 0 1.5em;
+	margin: ($leading * 2) 0 0;
 }
 
 ul {
