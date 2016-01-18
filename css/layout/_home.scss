@@ -105,7 +105,7 @@
 }
 
 .former-clients {
-	padding-top: 50vh;
+	margin-top: 50vh;
 }
 
 .os-vertical-nav {
@@ -131,24 +131,24 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			margin: -3px 0 0 -3px;
-			width: 6px;
-			height: 6px;
+			margin: -7px 0 0 -7px;
+			width: 14px;
+			height: 14px;
 			border-radius: 50%;
-			box-shadow: 0 0 0 4px rgba($color_text_main, 0.2);
+			border: 4px solid rgba($color_text_main, 0.2);
 			border-radius: 50%;
 			transition: all 300ms ease;
 		}
 		&:hover {
 			.bubble {
-				background: $color_text_main;
-				box-shadow: 0 0 0 5px $color_text_main;
+				border-color: $color_text_main;
+				transform: scale(1.2);
+				border-width: 3px;
 			}
 		}
 		&.active {
 			.bubble {
-				background: rgba($color_text_main, 0.5);
-				box-shadow: 0 0 0 5px rgba($color_text_main, 0.5);
+				background: $color_text_main;
 			}
 		}
 	}

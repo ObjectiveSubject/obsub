@@ -46,12 +46,14 @@
 .page-section {
 	@include clearfix;
 
-	& > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > p, & > ol, & > ul {
-		max-width: $max-width * 0.666;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0 $size_container_padding;
-		box-sizing: content-box;
+	&.contain-content {
+		& > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > p, & > ol, & > ul {
+			max-width: $max-width * 0.666;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 $size_container_padding;
+			box-sizing: content-box;
+		}
 	}
 
 	blockquote {

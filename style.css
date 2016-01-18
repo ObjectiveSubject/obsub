@@ -1131,7 +1131,7 @@ body::before {
 .page-section:after {
   clear: both;
 }
-.page-section > h1, .page-section > h2, .page-section > h3, .page-section > h4, .page-section > h5, .page-section > h6, .page-section > p, .page-section > ol, .page-section > ul {
+.page-section.contain-content > h1, .page-section.contain-content > h2, .page-section.contain-content > h3, .page-section.contain-content > h4, .page-section.contain-content > h5, .page-section.contain-content > h6, .page-section.contain-content > p, .page-section.contain-content > ol, .page-section.contain-content > ul {
   max-width: 42.66563rem;
   margin-left: auto;
   margin-right: auto;
@@ -1271,7 +1271,7 @@ body::before {
 }
 
 .former-clients {
-  padding-top: 50vh;
+  margin-top: 50vh;
 }
 
 .os-vertical-nav {
@@ -1301,21 +1301,22 @@ body::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -3px 0 0 -3px;
-  width: 6px;
-  height: 6px;
+  margin: -7px 0 0 -7px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(34, 34, 34, 0.2);
+  border: 4px solid rgba(34, 34, 34, 0.2);
   border-radius: 50%;
   transition: all 300ms ease;
 }
 .os-vertical-nav a:hover .bubble {
-  background: #222222;
-  box-shadow: 0 0 0 5px #222222;
+  border-color: #222222;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-width: 3px;
 }
 .os-vertical-nav a.active .bubble {
-  background: rgba(34, 34, 34, 0.5);
-  box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.5);
+  background: #222222;
 }
 
 .office-location {
@@ -1644,4 +1645,62 @@ figcaption {
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
+}
+
+.client-list:before, .client-list:after {
+  content: "";
+  display: table;
+}
+.client-list:after {
+  clear: both;
+}
+
+.client {
+  box-sizing: border-box;
+  float: left;
+}
+.client:before, .client:after {
+  content: "";
+  display: table;
+}
+.client:after {
+  clear: both;
+}
+.client.layout-half {
+  width: 50%;
+}
+.client.layout-half.left {
+  padding-right: 20px;
+  clear: left;
+}
+.client.layout-half.right {
+  padding-left: 20px;
+}
+.client.layout-image-left, .client.layout-image-right {
+  width: 100%;
+  clear: both;
+}
+.client.layout-image-left img, .client.layout-image-right img {
+  display: block;
+}
+.client.layout-image-left p, .client.layout-image-right p {
+  width: 50%;
+}
+.client.client.layout-image-right p {
+  float: left;
+  padding-right: 20px;
+}
+.client.client.layout-image-right img {
+  float: right;
+  margin-right: -22.666%;
+  padding-left: 20px;
+}
+.client.client.layout-image-left p {
+  float: right;
+  padding-left: 20px;
+}
+.client.client.layout-image-left img {
+  float: left;
+  margin-left: -22.666%;
+  padding-right: 20px;
 }

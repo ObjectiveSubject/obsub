@@ -16,7 +16,7 @@
 	</nav>
 </section>
 
-<section id="opportunity" class="page-section">
+<section id="opportunity" class="page-section contain-content">
 	<h2 class="future-A">opportunity</h2>
 	<p class="push-double">Oakland, California is a diverse and dynamic community, with rapid change nearly a constant throughout its storied history. In order to deliver better services to that community, the City government is developing new strategies to deliver better experiences and services online. Working with Code for America on a new model of ‘Digital Front Door,’ the City understood the need for defining an ownable look and feel for everything it does as a government.</p>
 	<p class="push-double">
@@ -28,7 +28,7 @@
 	</blockquote>
 </section>
 
-<section id="process" class="page-section" style="background-color: #E7F1CF; padding-bottom: 100px;">
+<section id="process" class="page-section contain-content" style="background-color: #E7F1CF; padding-bottom: 100px;">
 	<figure class="alignnone hug">
 		<img src="http://placehold.it/1200x275" width="1200" height="275">
 		<figcaption>Artifacts from Oakland's Archives</figcaption>
@@ -48,7 +48,7 @@
 	<p>The City should be able to modulate its expression without always having to resort to the blunt use of the logo. To address, we created a pattern that takes after[g] the tree logo, but grows it into a full root system, as complex and rich as are the communities and network that support the city. The pattern can then be applied to different elements in more overt or more subtle ways, based on what the context calls for.</p>
 </section>
 
-<section id="solution" class="page-section" style="background-color: #E0F3F2; padding-bottom: 100px">
+<section id="solution" class="page-section contain-content" style="background-color: #E0F3F2; padding-bottom: 100px">
 	<figure class="alignnone hug">
 		<img src="http://placehold.it/1200x400" width="1200" height="400" />
 		<figcaption>Root system</figcaption>	
@@ -80,13 +80,13 @@ $case_studies = get_posts(array(
 	'post__not_in' => array( get_the_id() )
 )); 
 foreach ($case_studies as $study) : ?>
-<section class="page-section case-study-nav bg-<?php echo $study->post_name; ?>">
+<section class="page-section contain-content case-study-nav bg-<?php echo $study->post_name; ?>">
 	<h1><?php echo $study->post_excerpt; ?></h1>
 	<p class="hug"><em>Visual identity</em> and <em>interface design</em> for <?php echo get_the_title( $study->ID ); ?></p>
 </section>
 <?php endforeach; ?>
 
-<section class="page-section">
+<section class="page-section contain-content">
 	<h2><em>What can we do for your project?</em></h2>
 	<p class="h2 hug future-A"><a href="#" class="text-color-link">get in touch</a></p>
 </section>
