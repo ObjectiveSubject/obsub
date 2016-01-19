@@ -32,6 +32,16 @@
 			background: rgba(black, 0.4);
 		}
 	}
+
+	& > * {
+		@include media($screen-md) {
+			width: 55vw;
+		}
+		@include media($screen-xl) {
+			width: auto;
+		}
+	}
+
 }
 
 .page-nav {

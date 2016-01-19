@@ -286,7 +286,7 @@ a {
   text-decoration: none;
 }
 a:not(.no-transition) {
-  transition: all 250ms ease;
+  transition: color 250ms ease, background-color 250ms ease, opacity 250ms ease;
 }
 a:visited {
   color: #1a7fc3;
@@ -542,9 +542,23 @@ h1, .h1 {
 }
 @media screen and (min-width: 768px) {
   h1, .h1 {
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  h1, .h1 {
+    font-size: 3.8125rem;
+    font-size: 5.65vw;
+    line-height: 3.8125rem;
+    line-height: 5.65vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1, .h1 {
     font-size: 4.25rem;
     line-height: 4.25rem;
-    margin-top: 3rem;
   }
 }
 
@@ -556,8 +570,16 @@ h2, .h2 {
 @media screen and (min-width: 768px) {
   h2, .h2 {
     font-size: 2rem;
+    font-size: 2.666vw;
     line-height: 2.125rem;
+    line-height: 2.833vw;
     margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -790,7 +812,7 @@ big,
   max-width: 64.0625rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .outer-container:before, .outer-container:after {
   content: "";
@@ -1125,7 +1147,7 @@ body::before {
   max-width: 42.66563rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 30px;
   box-sizing: content-box;
 }
 .single-case_study .page-header {
@@ -1139,6 +1161,16 @@ body::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .page-header > * {
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header > * {
+    width: auto;
+  }
 }
 
 .page-nav a {
@@ -1159,7 +1191,7 @@ body::before {
   max-width: 42.66563rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 30px;
   box-sizing: content-box;
 }
 .page-section blockquote {
@@ -1180,7 +1212,7 @@ body::before {
   font-weight: 700;
   max-width: 42.66563rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 @media screen and (min-width: 960px) {
   .page-section blockquote p {
@@ -1318,7 +1350,7 @@ body::before {
   /* lateral navigation */
   position: fixed;
   z-index: 800;
-  right: 20px;
+  right: 30px;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -1359,52 +1391,161 @@ body::before {
   background: #222222;
 }
 
+.office-locations {
+  position: relative;
+  background-color: white;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+
 .office-location {
+  position: relative;
   padding-bottom: 3rem;
+  width: 100%;
 }
-@media screen and (min-width: 640px) {
-  .office-location {
-    width: 50%;
-    float: left;
+@media screen and (min-width: 768px) {
+  .os-cssvhunit .office-location {
+    padding-bottom: 0;
+    height: 100vh;
   }
-}
-.office-location.brooklyn {
-  background: #F8D8D7;
-}
-.office-location.oakland {
-  background: #CFE4EF;
-}
-.office-location address, .office-location p {
-  padding: 0 7%;
-}
-@media screen and (min-width: 960px) {
-  .office-location address, .office-location p {
-    padding: 0;
-    max-width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.office-location .h2 {
-  margin-top: 3rem;
 }
 
 .office-map {
+  position: relative;
+  z-index: 1;
   background: #DDD;
-  height: 50vw;
-  min-height: 320px;
+  height: 350px;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: 1280px 900px;
+  background-position: center center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .office-map {
-    height: 37.5vw;
+    background-size: cover;
+    height: 600px;
+  }
+  .os-cssvhunit .office-map {
+    height: 100vh;
+    width: 66.666%;
   }
 }
-.brooklyn .office-map {
-  background: #FFB4AF;
+@media screen and (min-width: 1200px) {
+  .os-cssvhunit .office-map {
+    width: 75%;
+  }
 }
-.oakland .office-map {
-  background: #71A1CA;
+.office-map:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 52px;
+  top: 50%;
+  left: 50%;
+  margin-top: -52px;
+  margin-left: -20px;
+  background-size: 40px 52px;
+}
+.office-map.brooklyn-map {
+  background-image: url(images/brooklyn-map.png);
+}
+.office-map.brooklyn-map:after {
+  background-image: url(images/pin-red@2x.png);
+}
+.office-map.oakland-map {
+  background-image: url(images/oakland-map.png);
+}
+.office-map.oakland-map:after {
+  background-image: url(images/pin-blue@2x.png);
+}
+@media screen and (min-width: 768px) {
+  .os-cssvhunit .office-map.oakland-map {
+    box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+.fixed .office-map {
+  position: fixed;
+  top: 0;
+}
+.offset .office-map {
+  position: absolute;
+  top: 100vh;
+}
+
+.office-address {
+  padding: 3rem 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .os-cssvhunit .office-location .office-address {
+    display: none;
+  }
+}
+.office-address.brooklyn address, .brooklyn .office-address address {
+  color: #E24F4A;
+}
+.office-address.oakland address, .oakland .office-address address {
+  color: #3384AF;
+}
+
+.directions {
+  color: #999C98;
+}
+
+.address-sidebar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .address-sidebar {
+    width: 33.333%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .os-cssvhunit .address-sidebar {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-sidebar {
+    width: 25%;
+  }
+}
+.address-sidebar.fixed {
+  position: fixed;
+  top: 0;
+}
+.address-sidebar.offset {
+  position: absolute;
+  top: 100vh;
+}
+.address-sidebar .office-address {
+  transition: all 400ms ease;
+}
+.os-csstransforms .address-sidebar .office-address {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  padding-top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.address-sidebar .office-address.brooklyn {
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+}
+.address-sidebar .office-address.oakland {
+  -webkit-transform: translateX(-100%) translateY(-50%);
+          transform: translateX(-100%) translateY(-50%);
+}
+.address-sidebar[data-show="brooklyn"] .office-address.brooklyn {
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+}
+.address-sidebar[data-show="oakland"] .office-address.oakland {
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
 }
 
 .site-footer {

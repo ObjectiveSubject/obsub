@@ -43,9 +43,19 @@ h1, .h1 {
 		line-height: rem(48);
 	}
 	@include media($screen-md) {
+		font-size: rem(54);
+		line-height: rem(54);
+		margin-top: $leading * 2;
+	}
+	@include media($screen-lg) {
+		font-size: rem(61);
+		font-size: 5.65vw;
+		line-height: rem(61);
+		line-height: 5.65vw;
+	}
+	@include media($screen-xl) {
 		font-size: rem(68);
 		line-height: rem(68);
-		margin-top: $leading * 2;
 	}
 }
 h2, .h2 {
@@ -54,8 +64,14 @@ h2, .h2 {
 	margin-top: $leading;
 	@include media($screen-md) {
 		font-size: rem(32);
+		font-size: 2.666vw;
 		line-height: rem(34);
+		line-height: 2.833vw;
 		margin-top: $leading * 2;
+	}
+	@include media($screen-xl) {
+		font-size: rem(32);
+		line-height: rem(34);
 	}
 }
 h3, .h3 {

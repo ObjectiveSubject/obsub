@@ -28,7 +28,7 @@ a {
 	color: $color_link;
 	text-decoration: none;
   &:not(.no-transition) {
-    transition: all 250ms ease;
+    transition: color 250ms ease, background-color 250ms ease, opacity 250ms ease;
   } 
 
 	&:visited {
