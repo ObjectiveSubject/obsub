@@ -117,6 +117,13 @@ p {
 
 ul, ol {
 	margin: ($leading * 2) 0 0;
+	line-height: $leading;
+	font-size: rem(18);
+	line-height: rem(27);
+	@include media($screen-lg) {
+		font-size: rem(22);
+		line-height: rem(30);
+	}
 }
 
 ul {

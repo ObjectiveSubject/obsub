@@ -59,7 +59,8 @@
 }
 .inner-container {
 	max-width: $content-max-width;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .alignleft {

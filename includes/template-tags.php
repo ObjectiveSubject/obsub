@@ -7,6 +7,28 @@
  * @package obsub
  */
 
+
+function os_slide_nav($id) {
+	if ( ! $id ) $id = '';
+	
+	echo '<nav id="' . $id . '" class="os-slide-nav">';
+		echo '<a href="#prev" class="os-slide-prev prev"><i>«</i></a>';
+		echo '<a href="#next" class="os-slide-next next"><i>»</i></a>';
+	echo '</nav>';
+}
+
+
+function os_path( $filename, $dir ) {
+	if ( ! $filename ) return;
+
+	if ( $dir ) {
+		return get_template_directory_uri() . '/images/' . $dir . '/' . $filename;
+	} else {
+		return get_template_directory_uri() . '/images/' . $filename;
+	}
+}
+
+
 if ( ! function_exists( 'the_posts_navigation' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.

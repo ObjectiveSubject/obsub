@@ -33,18 +33,24 @@
 
 <section id="process" class="page-section contain-content" style="background-color: #FFEAC4; padding-bottom: 100px;">
 	<figure class="alignnone hug">
-		<img src="http://placehold.it/1200x450" width="1200" height="450">
+		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<figcaption>Inspiration</figcaption>
 	</figure>
 	<h2 class="future-A">process</h2>
 	<p class="push">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
 	<figure class="alignnone">
-		<img src="http://placehold.it/1200x330" width="1200" height="330" />
+		<img src="<?php echo os_path('wordmark.png', 'localdata') ?>" width="1400" height="340" />
 		<figcaption>The LocalData Wordmark</figcaption>	
 	</figure>
 	<p>We further helped the team design a product interface with an emphasis on clear and bold information communication, highlighting key data points with large and crisp typography.</p>
-	<figure class="alignnone">
-		<img src="http://placehold.it/1200x600?text=Slideshow" width="1200" height="600">
+	<figure class="os-slideshow-container">
+		<div id="tool-landing-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#tool-landing-nav .prev", "nextArrow": "#tool-landing-nav .next", "appendDots": "#tool-landing-dots" }'>
+			<li><img src="<?php echo os_path('tool-landing.jpg', 'localdata'); ?>" width="850" height="792"></li>
+			<li><img src="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
+			<li><img src="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+		</ul>
+		<?php os_slide_nav("tool-landing-nav"); ?>
 		<figcaption>The LocalData Tool Landing</figcaption>
 	</figure>
 </section>
@@ -52,15 +58,21 @@
 <section id="solution" class="page-section contain-content" style="background-color: #FFEAC4; padding-bottom: 100px">	
 	<h2 class="future-A">solution</h2>
 	<p class="push">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
-	<figure class="alignnone">
-		<img src="http://placehold.it/1200x600?text=Slideshow" width="1200" height="600">
-		<figcaption>The LocalData Homepage</figcaption>
+	<figure class="os-slideshow-container">
+		<div id="homepage-slide-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#homepage-slide-nav .prev", "nextArrow": "#homepage-slide-nav .next", "appendDots": "#homepage-slide-dots" }'>
+			<li><img src="<?php echo os_path('homepage.jpg', 'localdata') ?>" width="850" height="792"></li>
+			<li><img src="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
+			<li><img src="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+		</ul>
+		<?php os_slide_nav("homepage-slide-nav"); ?>
 	</figure>
+	<figcaption>The LocalData Homepage</figcaption>
 	<figure class="aligncenter">
-		<img src="http://placehold.it/1024x680" width="1024" height="680">
+		<img src="<?php echo os_path('stationery.jpg', 'localdata') ?>" width="1024" height="680">
 		<figcaption>LocalData Stationery</figcaption>
 	</figure>
-	<div class="colophon inner-container">
+	<div class="colophon push-double inner-container">
 		<div class="details">
 			<em>Details</em><br/>
 			<em>Typography</em>: Neuzeit (1966, Wilhelm Pischner)<br/>

@@ -88,10 +88,10 @@
 		}	
 	}
 	&.brooklyn, .brooklyn & {
-		address { color: #E24F4A; }
+		address { color: $red; }
 	}
 	&.oakland, .oakland & {
-		address { color: #3384AF; }
+		address { color: $blue; }
 	}
 }
 
