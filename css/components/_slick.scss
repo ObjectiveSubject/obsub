@@ -30,6 +30,10 @@
         cursor: pointer;
         cursor: hand;
     }
+
+    .os-slideshow & {
+        overflow: visible;
+    }
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -64,11 +68,19 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    transition: opacity 500ms ease;
     [dir="rtl"] & {
         float: right;
     }
     &:focus {
         outline: none;
+    }
+
+    .os-slideshow & {
+        opacity: 0.2;
+        &.slick-active {
+            opacity: 1;
+        }
     }
 
     .os-slideshow.center-mode & {
@@ -132,26 +144,52 @@
         font-size: 1rem;
         &.slick-active {
             button {
-                background: $localdata_red;
+                background: $color_text_main;
             }
         }
     }
     button {
         text-indent: -99999px;
         padding: 0;
-        border: 2px solid $localdata_red;
+        border: 2px solid $color_text_main;
         border-radius: 50%;
         width: 10px;
         height: 10px;
         background: none;
         &:hover {
+            background: $color_text_main;
+        }
+    }
+    
+    .localdata & {
+        li.slick-active button {
             background: $localdata_red;
+        }
+        button {
+            border-color: $localdata_red;
+            &:hover {
+                background: $localdata_red;
+            }
+        }
+    }
+    .city-of-oakland & {
+        li.slick-active button {
+            background: $oakland_blue;
+        }
+        button {
+            border-color: $oakland_blue;
+            &:hover {
+                background: $oakland_blue;
+            }
         }
     }
 }
 
 .os-slideshow-container {
     position: relative;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .os-slideshow {
@@ -174,13 +212,34 @@
         line-height: 2rem;
         width: 4rem;
         text-align: center;
-        color: $localdata_red;
+        color: $color_text_main;
+        &:hover {
+            color: darken($color_text_main, 15%);
+        }
+        .localdata & {
+            color: $localdata_red;
+            &:hover {
+                color: darken($localdata_red, 15%);
+            }
+        }
+        .city-of-oakland & {
+            color: $oakland_blue;
+            &:hover {
+                color: darken($oakland_blue, 15%);
+            }
+        }
     }
     .next {
         float: right;
+        @include media($screen-lg) {
+            margin-right: 6.5%;
+        }
     }
     .prev {
         float: left;
+        @include media($screen-lg) {
+            margin-left: 6.5%;   
+        }
     }
 }
 

@@ -15,9 +15,11 @@
 				$sectionContent = $preview.find('.section-content'),
 				mediaSize, outerHeight, offsetTop, offsetBottom, contentHeight;
 
-			init();
-			$window.on("resize", init);
-			$window.on('scroll', onScroll);			
+			if ( $('body.home').length > 0 ){
+				init();
+				$window.on("resize", init);
+				$window.on('scroll', onScroll);	
+			}		
 
 			function init() {
 				mediaSize = OS.getMediaSize();

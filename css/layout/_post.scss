@@ -55,6 +55,7 @@
 
 .page-section {
 	position: relative;
+	overflow: hidden;
 	@include clearfix;
 
 	&.full-height {

@@ -30,7 +30,7 @@
 
 <section id="process" class="page-section contain-content" style="background-color: #E7F1CF; padding-bottom: 100px;">
 	<figure class="alignnone hug">
-		<img src="http://placehold.it/1200x275" width="1200" height="275">
+		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<figcaption>Artifacts from Oakland's Archives</figcaption>
 	</figure>
 	<p class="push-double">From our offices in Oakland, Objective Subject recommended a concerted approach to visual communication that aims to unify all city departments and allows the city to define a recognizable look and feel throughout its communications, digital and otherwise.[c] The current cacophony of symbols does not connote the clarity and simplicity that should be the hallmark of any experience with a large organization, but so often is not.</p>
@@ -42,28 +42,61 @@
 	</figure>
 	<p>As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue with a range of rich hues in complement.</p>
 	<figure class="aligncenter">
-		<img src="http://placehold.it/850x600" width="850" height="600">
+		<img src="<?php echo os_path('brochures.png', 'oakland') ?>" width="1025" height="690">
 		<figcaption>City of Oakland Brochures</figcaption>
 	</figure>
 	<p>The City should be able to modulate its expression without always having to resort to the blunt use of the logo. To address, we created a pattern that takes after[g] the tree logo, but grows it into a full root system, as complex and rich as are the communities and network that support the city. The pattern can then be applied to different elements in more overt or more subtle ways, based on what the context calls for.</p>
 </section>
 
-<section id="solution" class="page-section contain-content" style="background-color: #E0F3F2; padding-bottom: 100px">
+<section id="solution" class="page-section contain-content" style="padding-bottom: 100px" data-color="#E0F3F2">
+	
 	<figure class="alignnone hug">
-		<img src="http://placehold.it/1200x400" width="1200" height="400" />
+		<img src="<?php echo os_path('pattern.jpg', 'oakland') ?>" width="1400" height="460" />
 		<figcaption>Root system</figcaption>	
 	</figure>
-	<figure class="alignnone">
-		<img src="http://placehold.it/1200x600?text=slideshow" width="1200" height="600" />
-		<figcaption>City of Oakland Homepage</figcaption>	
+	
+	<figure class="os-slideshow-container">
+		<div id="oakland-website-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
+			<li>
+				<img src="<?php echo os_path('homepage.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>City of Oakland Homepage</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('pay-ticket.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>Pay Tickets Page</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('news-press.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>News and Press</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("oakland-website-nav"); ?>
 	</figure>
+	
 	<h2 class="future-A">solution</h2>
 	<p class="push-double">The pattern portfolio we built is now being used by Code for America as it conducts agile design and development of various new services for the city, visible in this Beta website.</p>
 	<p class="push-double">In the same spirit of open development, the portfolio library is publicly available, and joined with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity. We will keep supporting the city as it works to improve the quality of its communication with citizens from our west coast office.</p>
-	<figure class="alignnone">
-		<img src="http://placehold.it/1200x600?text=slideshow" width="1200" height="600" />
-		<figcaption>City of Oakland Design Toolkit</figcaption>	
+
+	<figure class="os-slideshow-container">
+		<div id="oakland-toolkit-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
+			<li>
+				<img src="<?php echo os_path('toolkit-home.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>City of Oakland Design Toolkit</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('toolkit-vis-identity.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>Toolkit – Visual Identity</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('toolkit-pattern-portfolio.png', 'oakland'); ?>" width="848" height="778">
+				<figcaption>Toolkit – Pattern Portfolio</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("oakland-toolkit-nav"); ?>
 	</figure>
+	
 	<p class="colophon">
 		<em>Details</em><br/>
 		<em>Typography</em>: Fakt Pro (1966, Wilhelm Pischner)<br/>
@@ -72,24 +105,9 @@
 	</p>
 </section>
 
-<?php 
-$case_studies = get_posts(array(
-	'post_type'=>'case_study', 
-	'orderby' => 'rand', 
-	'posts_per_page' => '1',
-	'post__not_in' => array( get_the_id() )
-)); 
-foreach ($case_studies as $study) : ?>
-<section class="page-section contain-content case-study-nav bg-<?php echo $study->post_name; ?>">
-	<h1><?php echo $study->post_excerpt; ?></h1>
-	<p class="hug"><em>Visual identity</em> and <em>interface design</em> for <?php echo get_the_title( $study->ID ); ?></p>
-</section>
-<?php endforeach; ?>
+<?php os_get_case_study(); ?>
 
-<section class="page-section contain-content">
-	<h2><em>What can we do for your project?</em></h2>
-	<p class="h2 hug future-A"><a href="#" class="text-color-link">get in touch</a></p>
-</section>
+<?php get_template_part('module', 'get-in-touch'); ?>
 
 
 

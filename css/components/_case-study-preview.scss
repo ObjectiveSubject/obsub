@@ -1,6 +1,8 @@
 .case-study-preview {
-	@include media($screen-md) {
-		background-color: transparent !important;
+	.home & {
+		@include media($screen-md) {
+			background-color: transparent !important;
+		}
 	}
 
 	a {
@@ -94,11 +96,13 @@
 }
 
 .case-study-subtitle {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: all 300ms ease 300ms;
-	.active & {
-		opacity: 1;
-		transform: translateY(0);
+	@include media($screen-md) {
+		opacity: 0;
+		transform: translateY(30px);
+		.active & {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
+	transition: all 300ms ease 300ms;
 }

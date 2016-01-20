@@ -1196,6 +1196,7 @@ body::before {
 
 .page-section {
   position: relative;
+  overflow: hidden;
 }
 .page-section:before, .page-section:after {
   content: "";
@@ -1668,11 +1669,19 @@ figure.aligncenter img:after {
 
 figcaption {
   font-style: italic;
+  font-size: 1rem;
   max-width: 42.66563rem;
   margin: 0.75rem auto 0;
   padding: 0 30px;
   box-sizing: content-box;
   text-align: center;
+}
+.os-slideshow figcaption {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.os-slideshow .slick-active figcaption {
+  opacity: 1;
 }
 @media screen and (min-width: 960px) {
   figcaption {
@@ -1834,6 +1843,9 @@ figcaption {
   cursor: pointer;
   cursor: hand;
 }
+.os-slideshow .slick-list {
+  overflow: visible;
+}
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -1862,6 +1874,7 @@ figcaption {
   float: left;
   height: 100%;
   min-height: 1px;
+  transition: opacity 500ms ease;
   display: none;
 }
 [dir="rtl"] .slick-slide {
@@ -1869,6 +1882,12 @@ figcaption {
 }
 .slick-slide:focus {
   outline: none;
+}
+.os-slideshow .slick-slide {
+  opacity: 0.2;
+}
+.os-slideshow .slick-slide.slick-active {
+  opacity: 1;
 }
 .os-slideshow.center-mode .slick-slide {
   padding-left: 10px;
@@ -1927,23 +1946,44 @@ figcaption {
   font-size: 1rem;
 }
 .slick-dots li.slick-active button {
-  background: #EE5A24;
+  background: #222222;
 }
 .slick-dots button {
   text-indent: -99999px;
   padding: 0;
-  border: 2px solid #EE5A24;
+  border: 2px solid #222222;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   background: none;
 }
 .slick-dots button:hover {
+  background: #222222;
+}
+.localdata .slick-dots li.slick-active button {
   background: #EE5A24;
+}
+.localdata .slick-dots button {
+  border-color: #EE5A24;
+}
+.localdata .slick-dots button:hover {
+  background: #EE5A24;
+}
+.city-of-oakland .slick-dots li.slick-active button {
+  background: #376FFF;
+}
+.city-of-oakland .slick-dots button {
+  border-color: #376FFF;
+}
+.city-of-oakland .slick-dots button:hover {
+  background: #376FFF;
 }
 
 .os-slideshow-container {
   position: relative;
+  max-width: 64.0625rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .os-slideshow {
@@ -1973,13 +2013,38 @@ figcaption {
   line-height: 2rem;
   width: 4rem;
   text-align: center;
+  color: #222222;
+}
+.os-slide-nav a:hover {
+  color: black;
+}
+.localdata .os-slide-nav a {
   color: #EE5A24;
+}
+.localdata .os-slide-nav a:hover {
+  color: #b73b0e;
+}
+.city-of-oakland .os-slide-nav a {
+  color: #376FFF;
+}
+.city-of-oakland .os-slide-nav a:hover {
+  color: #0041ea;
 }
 .os-slide-nav .next {
   float: right;
 }
+@media screen and (min-width: 960px) {
+  .os-slide-nav .next {
+    margin-right: 6.5%;
+  }
+}
 .os-slide-nav .prev {
   float: left;
+}
+@media screen and (min-width: 960px) {
+  .os-slide-nav .prev {
+    margin-left: 6.5%;
+  }
 }
 
 .os-numbered-list {
@@ -2037,7 +2102,7 @@ figcaption {
 }
 
 @media screen and (min-width: 768px) {
-  .case-study-preview {
+  .home .case-study-preview {
     background-color: transparent !important;
   }
 }
@@ -2133,15 +2198,19 @@ figcaption {
 }
 
 .case-study-subtitle {
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
   transition: all 300ms ease 300ms;
 }
-.active .case-study-subtitle {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+@media screen and (min-width: 768px) {
+  .case-study-subtitle {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  .active .case-study-subtitle {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .get-in-touch {

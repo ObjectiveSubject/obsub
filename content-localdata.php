@@ -31,7 +31,7 @@
 	</blockquote>
 </section>
 
-<section id="process" class="page-section contain-content" style="padding-bottom: 100px;">
+<section id="process" class="page-section contain-content" style="padding-bottom: 100px; background-color: #FFEAC4;">
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<figcaption>Inspiration</figcaption>
@@ -55,7 +55,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section contain-content" style="padding-bottom: 100px" data-color="#FFEAC4">	
+<section id="solution" class="page-section contain-content" style="padding-bottom: 100px; background-color: #FFEAC4;">	
 	<h2 class="future-A">solution</h2>
 	<p class="push">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	<figure class="os-slideshow-container">
@@ -92,41 +92,7 @@
 	<p class="future-A"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com</a></p>
 </section>
 
-
-<section class="page-section spacer" data-color="#FFEAC4">
-</section>
-
-
-<?php 
-$case_studies = get_posts(array(
-	'post_type'=>'case_study', 
-	'orderby' => 'rand', 
-	'posts_per_page' => '1',
-	'post__not_in' => array( get_the_id() )
-)); 
-foreach ($case_studies as $study) :
-
-	$featured_image_id = get_post_thumbnail_id( $study->ID );
-	$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'large', true);
-	$featured_image_url = $featured_image_array[0];
-	$color = get_field('case_study_color', $study->ID);
-	?>
-	<section class="page-section full-height case-study-preview <?php echo $study->post_name; ?>" data-color="<?php echo $color; ?>">
-		<div class="section-container">
-			<div class="section-image-container">
-				<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );"></div>
-			</div>
-			<div class="section-content">
-				<div class="inner-container">
-					<h1 class="case-study-title"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
-					<p class="case-study-subtitle hug"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<?php endforeach; ?>
-
+<?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'get-in-touch' ); ?>
 

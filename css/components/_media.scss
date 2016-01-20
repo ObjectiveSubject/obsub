@@ -43,11 +43,21 @@ figure {
 }
 figcaption {
 	font-style: italic;
+	font-size: 1rem;
 	max-width: $content-max-width;
 	margin: ($leading/2) auto 0;
 	padding: 0 $size_container_padding;
 	box-sizing: content-box;
 	text-align: center;
+
+	.os-slideshow & {
+		opacity: 0;
+		transition: opacity 500ms ease;
+	}
+	.os-slideshow .slick-active & {
+		opacity: 1;		
+	}
+
 	@include media($screen-lg) {
 		text-align: left;
 	}
