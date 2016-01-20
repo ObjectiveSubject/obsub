@@ -19,7 +19,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="page-section office-locations clearfix">
+		<section class="page-section office-locations clearfix" data-show-map="brooklyn">
 			<div class="office-location brooklyn clearfix">
 				<div id="brooklyn-map" class="office-map brooklyn-map"></div>
 				<div class="office-address">
@@ -51,7 +51,7 @@ get_header(); ?>
 					</p>
 				</div>
 			</div>
-			<div class="address-sidebar" data-show="brooklyn">
+			<!-- <div class="address-sidebar" data-show="brooklyn">
 				<div class="office-address brooklyn">
 					<address class="h2 hug future-A">
 						81 prospect street<br/>
@@ -77,7 +77,7 @@ get_header(); ?>
 						I-580 exit 20 towards Broadway
 					</p>
 				</div>
-			</div>
+			</div> -->
 		</section>
 
 		<section class="page-section outer-container">

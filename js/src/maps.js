@@ -5,62 +5,60 @@
 (function( $, window, undefined ){
 
 	var $window = $(window),
-		winHeight = $window.height(),
-		mediaSize = getMediaSize(),
-		$brooklyn, brooklynTop, 
-		$oakland, oaklandTop,
-		$addressBar;
+		winHeight,
+		mediaSize,
+		$offices,
+		toggleMapY,
+		unFixedY;
+		// $brooklyn, brooklynTop, 
+		// $oakland, oaklandTop;
+
+	// Modernizr.cssvhunit = false;
 
 	if ( $('.office-map').length > 0 && Modernizr.cssvhunit ) {
 
-		$brooklyn 	 = $('.office-location.brooklyn');
-		$oakland 	 = $('.office-location.oakland');
-		$addressBar  = $('.address-sidebar');
-
-		brooklynTop  = $brooklyn.offset().top;
-		oaklandTop 	 = $oakland.offset().top;
+		$offices = $('.office-locations');
+		initSizes();
 		
-		$window.on("resize", onResize);
+		$window.on("resize", initSizes);
 		$window.on("scroll", onScroll);
 	}
 
-	function onResize() {
-		winHeight = $window.height();
-		brooklynTop = $brooklyn.offset().top;
-		oaklandTop = $oakland.offset().top;
-		mediaSize = getMediaSize();
+	function initSizes() {
+		winHeight 	= $window.height();
+		mediaSize 	= getMediaSize();
+		officesTop 	= $offices.offset().top;
+		toggleMapY	= $('.brooklyn .office-address').offset().top;
+		unFixedY	= $('.office-location.oakland').offset().top;
+		// brooklynTop = $brooklyn.offset().top;
+		// oaklandTop = $oakland.offset().top;
 	}
 
 	function onScroll() {
 
-		var scrollTop = $window.scrollTop(),
-			scrollMid = scrollTop + (winHeight / 2);
+		var scrollTop = $window.scrollTop();
+			// scrollMid = scrollTop + (winHeight / 2);
+
+			console.log(scrollTop + ' - ' + unFixedY);
 
 		if ( mediaSize == "medium" ) {
 
-			if ( scrollTop >= brooklynTop && scrollTop < oaklandTop ) {
-				$brooklyn
+			if ( scrollTop >= officesTop && scrollTop < unFixedY ) {
+				$offices
 					.addClass('fixed')
-					.removeClass('offset');
-				$addressBar
-					.addClass('fixed')
-					.removeClass('offset');
-			} else if ( scrollTop >= oaklandTop ) {
-				$brooklyn
-					.removeClass('fixed')
-					.addClass('offset');
-				$addressBar
-					.removeClass('fixed')
-					.addClass('offset');
+					.removeClass('un-fixed');
+				$offices.attr("data-show-map", "brooklyn");
+			} else if ( scrollTop >= unFixedY ) {
+				$offices
+					.addClass('un-fixed')
+					.removeClass('fixed');
 			} else {
-				$brooklyn.removeClass('fixed offset');
-				$addressBar.removeClass('fixed offset');
+				$offices.removeClass('fixed un-fixed');
+				$offices.attr("data-show-map", "brooklyn");
 			}
 
-			if ( scrollMid >= oaklandTop ) {
-				$addressBar.attr("data-show", "oakland");
-			} else {
-				$addressBar.attr("data-show", "brooklyn");
+			if ( scrollTop >= toggleMapY ) {
+				$offices.attr("data-show-map", "oakland");
 			}
 
 		}

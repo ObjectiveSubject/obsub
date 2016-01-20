@@ -1,17 +1,21 @@
 .office-locations {
 	position: relative;
 	background-color: white;
-	border-top: 1px solid #E4E4E4;
 	border-bottom: 1px solid #E4E4E4;
+	.os-cssvhunit & {
+		border-top: 1px solid #E4E4E4;
+	}
 }
 
 .office-location {
 	position: relative;
 	padding-bottom: $leading * 2;
 	width: 100%;
+	border-top: 1px solid #E4E4E4;
 	@include media($screen-md) {
+		padding-bottom: 0;
 		.os-cssvhunit & {
-			padding-bottom: 0;
+			border-top: 0;
 			height: 100vh;
 		}
 	}
@@ -23,21 +27,24 @@
 	background: #DDD;
 	height: 350px;
 	width: 100%;
+	transition: opacity 750ms ease;
 	background-repeat: no-repeat;
-	background-size: 1280px 900px;
+	background-size: 1280px 1080px;
 	background-position: center center;
 	@include media($screen-md) {
 		background-size: cover;
 		height: 600px;
+		width: 66.666%;
+		float: left;
 		.os-cssvhunit & {
+			position: absolute;
+			top: 0;
 			height: 100vh;
-			width: 66.666%;
+			opacity: 0;
 		}
 	}
 	@include media($screen-xl) {
-		.os-cssvhunit & { 
-			width: 75%; 
-		}
+		width: 75%; 
 	}
 	&:after {
 		content: "";
@@ -52,20 +59,21 @@
 	}
 
 	&.brooklyn-map {
+		[data-show-map="brooklyn"] & {
+			opacity: 1;
+		}
 		background-image: url(images/brooklyn-map.png);
 		&:after {
 			background-image: url(images/pin-red@2x.png);
 		}
 	}
 	&.oakland-map {
+		[data-show-map="oakland"] & {
+			opacity: 1;
+		}
 		background-image: url(images/oakland-map.png);
 		&:after {
 			background-image: url(images/pin-blue@2x.png);
-		}
-		.os-cssvhunit & {
-			@include media($screen-md) {
-				box-shadow: 0 -10px 10px -10px rgba(black,0.5);
-			}
 		}
 	}
 
@@ -73,20 +81,31 @@
 		position: fixed;
 		top: 0;
 	}
-	.offset & {
+	.un-fixed & {
 		position: absolute;
-		top: 100vh;
+		top: 0;
+		// top: 100vh;
 	}
 }
 
 .office-address {
 	padding: ($leading * 2) $size_container_padding 0;
-	
-	.os-cssvhunit .office-location & {
-		@include media($screen-md) {
-			display: none;
-		}	
+	transition: all 400ms ease;
+	@include media($screen-md) {
+		float: right;
+		width: 33.333%;
+		.os-csstransforms & {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			padding-top: 0;
+			transform: translateY(-50%);
+		}
 	}
+	@include media($screen-xl) {
+		width: 25%;
+	}
+	
 	&.brooklyn, .brooklyn & {
 		address { color: $red; }
 	}
@@ -97,56 +116,6 @@
 
 .directions {
 	color: $medium_gray;
-}
-
-.address-sidebar {
-	display: none;
-	@include media($screen-md) {
-		.os-cssvhunit & {
-			display: block;
-		}
-		width: 33.333%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 100vh;
-	}
-	@include media($screen-xl) {
-		width: 25%;
-	}
-	&.fixed {
-		position: fixed;
-		top: 0;
-	}
-	&.offset {
-		position: absolute;
-		top: 100vh;
-	}
-
-	.office-address {
-		transition: all 400ms ease;		
-		.os-csstransforms & {
-			position: absolute;
-			top: 50%;
-			right: 0;
-			width: 100%;
-			padding-top: 0;
-			transform: translateY(-50%);
-		}
-		&.brooklyn {
-			transform: translateX(100%) translateY(-50%);
-		}
-		&.oakland {
-			transform: translateX(-100%) translateY(-50%);
-		}
-	}
-
-	&[data-show="brooklyn"] .office-address.brooklyn {
-		transform: translateX(0) translateY(-50%);
-	}
-	&[data-show="oakland"] .office-address.oakland {
-		transform: translateX(0) translateY(-50%);
-	}
 }
 
 
