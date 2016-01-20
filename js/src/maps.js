@@ -10,10 +10,6 @@
 		$offices,
 		toggleMapY,
 		unFixedY;
-		// $brooklyn, brooklynTop, 
-		// $oakland, oaklandTop;
-
-	// Modernizr.cssvhunit = false;
 
 	if ( $('.office-map').length > 0 && Modernizr.cssvhunit ) {
 
@@ -30,16 +26,11 @@
 		officesTop 	= $offices.offset().top;
 		toggleMapY	= $('.brooklyn .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
-		// brooklynTop = $brooklyn.offset().top;
-		// oaklandTop = $oakland.offset().top;
 	}
 
 	function onScroll() {
 
 		var scrollTop = $window.scrollTop();
-			// scrollMid = scrollTop + (winHeight / 2);
-
-			console.log(scrollTop + ' - ' + unFixedY);
 
 		if ( mediaSize == "medium" ) {
 

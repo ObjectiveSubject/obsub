@@ -51,33 +51,6 @@ get_header(); ?>
 					</p>
 				</div>
 			</div>
-			<!-- <div class="address-sidebar" data-show="brooklyn">
-				<div class="office-address brooklyn">
-					<address class="h2 hug future-A">
-						81 prospect street<br/>
-						brooklyn, ny 11201
-					</address>
-					<p class="directions push">
-						<em>Directions</em><br/>
-						F to York St,<br/>
-						A and C to High St,<br/>
-						2 and 3 to Clark St
-					</p>
-				</div>
-				<div class="office-address oakland">
-					<address class="h2 hug future-A">
-						2355 broadway<br/>
-						no. 402<br/>
-						oakland, ca 94612
-					</address>
-					<p class="directions push">
-						<em>Directions</em><br/>
-						BART: 19th St - Oakland<br/>
-						From San Francisco:<br/>
-						I-580 exit 20 towards Broadway
-					</p>
-				</div>
-			</div> -->
 		</section>
 
 		<section class="page-section outer-container">
