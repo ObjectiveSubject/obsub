@@ -20,18 +20,18 @@
 	<h2 class="future-A">opportunity</h2>
 	<p>If cities and towns across the country are to thrive in the decades ahead, the detailed, parcel-level data that community groups, planners and government agencies collect needs to be transformed.</p>
 	<p>When three eager technologists were embedded in the Detroit city government as part of their Code for America fellowship, they knew they had their work cut out for them.</p>
-	<ol>
-		<li>They saw Detriot as the vast sprawling city.</li>
-		<li>Looking for the best opportunities to use technology.</li>
-		<li>Outdated surveys providing inadequate data for informed decisions, was a major issue.</li>
-		<li>Surveying was a time and resources-intensive process involving paper forms, content-entry errors and many months to plot an area.</li>
+	<ol class="list-unstyled os-numbered-list">
+		<li><span class="number future-A">1</span>They saw Detriot as the vast sprawling city.</li>
+		<li><span class="number future-A">2</span>Looking for the best opportunities to use technology.</li>
+		<li><span class="number future-A">3</span>Outdated surveys providing inadequate data for informed decisions, was a major issue.</li>
+		<li><span class="number future-A">4</span>Surveying was a time and resources-intensive process involving paper forms, content-entry errors and many months to plot an area.</li>
 	</ol>
 	<blockquote>
 		<p>"They saw detroit, the vast sprawling city, and the outdated surveys providing inadequate data for informed decisions, as a major issue."<br/><small>&mdash; Susan Johnson, <em>Marketing Director</em>, <em>LocalData</em></small></p>
 	</blockquote>
 </section>
 
-<section id="process" class="page-section contain-content" style="background-color: #FFEAC4; padding-bottom: 100px;">
+<section id="process" class="page-section contain-content" style="padding-bottom: 100px;">
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<figcaption>Inspiration</figcaption>
@@ -55,7 +55,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section contain-content" style="background-color: #FFEAC4; padding-bottom: 100px">	
+<section id="solution" class="page-section contain-content" style="padding-bottom: 100px" data-color="#FFEAC4">	
 	<h2 class="future-A">solution</h2>
 	<p class="push">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	<figure class="os-slideshow-container">
@@ -72,22 +72,28 @@
 		<img src="<?php echo os_path('stationery.jpg', 'localdata') ?>" width="1024" height="680">
 		<figcaption>LocalData Stationery</figcaption>
 	</figure>
-	<div class="colophon push-double inner-container">
-		<div class="details">
-			<em>Details</em><br/>
-			<em>Typography</em>: Neuzeit (1966, Wilhelm Pischner)<br/>
-			<em>Industry</em>: Public Sector, Start-Up<br/>
-			<em>Team</em>: David Jalber-Gagnier, Sam Gray, Emma White, Jessica Wilson
-		</div>
-		<div class="awards">
-			<span class="icon-trophy">[trophy]</span><br/>
-			<em>Red dot award</em>: Best Design Interface<br/>
-			<em>D&AD</em>: Website Award<br/>
-			<em>Webby</em>: Commended<br/>
-			<em>W3</em>: Special Mention
+	<div class="colophon push-double outer-container clearfix">
+		<div class="inner-container">
+			<div class="details push-double">
+				<em>Details</em><br/>
+				<em>Typography</em>: Neuzeit (1966, Wilhelm Pischner)<br/>
+				<em>Industry</em>: Public Sector, Start-Up<br/>
+				<em>Team</em>: David Jalber-Gagnier, Sam Gray, Emma White, Jessica Wilson
+			</div>
+			<div class="awards push-double">
+				<span class="icon-trophy">[trophy]</span><br/>
+				<em>Red dot award</em>: Best Design Interface<br/>
+				<em>D&AD</em>: Website Award<br/>
+				<em>Webby</em>: Commended<br/>
+				<em>W3</em>: Special Mention
+			</div>
 		</div>
 	</div>
-	<p class="future-A"><a href="http://localdata.com" target="_blank">localdata.com</a></p>
+	<p class="future-A"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com</a></p>
+</section>
+
+
+<section class="page-section spacer" data-color="#FFEAC4">
 </section>
 
 
@@ -98,11 +104,27 @@ $case_studies = get_posts(array(
 	'posts_per_page' => '1',
 	'post__not_in' => array( get_the_id() )
 )); 
-foreach ($case_studies as $study) : ?>
-<section class="page-section contain-content case-study-nav bg-<?php echo $study->post_name; ?>">
-	<h1><?php echo $study->post_excerpt; ?></h1>
-	<p class="hug"><em>Visual identity</em> and <em>interface design</em> for <?php echo get_the_title( $study->ID ); ?></p>
-</section>
+foreach ($case_studies as $study) :
+
+	$featured_image_id = get_post_thumbnail_id( $study->ID );
+	$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'large', true);
+	$featured_image_url = $featured_image_array[0];
+	$color = get_field('case_study_color', $study->ID);
+	?>
+	<section class="page-section full-height case-study-preview <?php echo $study->post_name; ?>" data-color="<?php echo $color; ?>">
+		<div class="section-container">
+			<div class="section-image-container">
+				<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );"></div>
+			</div>
+			<div class="section-content">
+				<div class="inner-container">
+					<h1 class="case-study-title"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
+					<p class="case-study-subtitle hug"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <?php endforeach; ?>
 
 

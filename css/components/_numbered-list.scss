@@ -1,0 +1,39 @@
+.os-numbered-list {
+	@include clearfix;
+	margin-top: 0;
+	li {
+		position: relative;
+		margin: 1.5rem 0 0;
+		padding-left: 2.5rem;
+	    box-sizing: border-box;
+		@include media($screen-md) {
+			width: 50%;
+			float: left;
+			padding-left: 0;
+			padding-right: 1.5rem;
+			margin: 4rem 0 0;
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+		@include media($screen-lg) {
+			margin: 6rem 0 0;
+		}
+	}
+	.number {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		color: white;
+		font-size: 3rem;
+		line-height: 3rem;
+		@include media($screen-md) {
+			font-size: 6rem;
+		}
+		@include media($screen-lg) {
+			font-size: 9rem;
+			line-height: 5rem;
+		}
+	}
+}

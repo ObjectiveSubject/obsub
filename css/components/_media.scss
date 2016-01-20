@@ -45,11 +45,20 @@ figcaption {
 	font-style: italic;
 	max-width: $content-max-width;
 	margin: ($leading/2) auto 0;
+	padding: 0 $size_container_padding;
+	box-sizing: content-box;
+	text-align: center;
+	@include media($screen-lg) {
+		text-align: left;
+	}
 	.city-of-oakland & {
-		color: #376FFF;
+		color: $oakland_green;
 	}
 	.localdata & {
 		color: $localdata_red;
+	}
+	.city-of-oakland & {
+		color: $boston_blue;
 	}
 }
 

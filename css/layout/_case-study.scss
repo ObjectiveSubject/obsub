@@ -1,0 +1,24 @@
+.colophon {
+	@include clearfix;
+	.details {
+		@include media($screen-lg) {
+			float: left;
+			width: 60%;
+		}
+	}
+	.awards {
+		@include media($screen-lg) {
+			float: left;
+			width: 40%;
+		}
+	}
+}
+
+.cta-link {
+	.localdata & {
+		color: $localdata_red;
+		&:hover {
+			color: darken($localdata_red, 20%);
+		}
+	}
+}

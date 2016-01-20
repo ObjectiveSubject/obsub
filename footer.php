@@ -10,12 +10,14 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer outer-container future-A" role="contentinfo">
-		<a href="#" class="copyright">copyright & privacy information</a>
-		<a href="#" class="subscribe">let us say hi, periodically</a>
-		<a href="#" class="facebook social" target="_blank">facebook</a>
-		<a href="#" class="twitter social" target="_blank">twitter</a>
-		<a href="#" class="dribble social" target="_blank">dribble</a>
+	<footer id="colophon" class="site-footer future-A bg-default" role="contentinfo">
+		<div class="outer-container">
+			<a href="#" class="copyright">copyright & privacy information</a>
+			<a href="#" class="subscribe">let us say hi, periodically</a>
+			<a href="#" class="facebook social" target="_blank">facebook</a>
+			<a href="#" class="twitter social" target="_blank">twitter</a>
+			<a href="#" class="dribble social" target="_blank">dribble</a>
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

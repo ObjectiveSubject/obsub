@@ -132,20 +132,20 @@
         font-size: 1rem;
         &.slick-active {
             button {
-                background: $color_text_main;
+                background: $localdata_red;
             }
         }
     }
     button {
         text-indent: -99999px;
         padding: 0;
-        border: 2px solid $color_text_main;
+        border: 2px solid $localdata_red;
         border-radius: 50%;
         width: 10px;
         height: 10px;
         background: none;
         &:hover {
-            background: $color_text_main;
+            background: $localdata_red;
         }
     }
 }
@@ -174,6 +174,7 @@
         line-height: 2rem;
         width: 4rem;
         text-align: center;
+        color: $localdata_red;
     }
     .next {
         float: right;

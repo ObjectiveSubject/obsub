@@ -92,16 +92,19 @@
 
 // Colors
 // ======================================= /
+.bg-default {
+	background-color: $light_gray;
+}
 .bg-localdata {
-	background: $local_data_orange;
+	background-color: $local_data_orange;
 	color: white;
 }
 .bg-boston-public-schools {
-	background: $boston_blue;
+	background-color: $boston_blue;
 	color: white;
 }
 .bg-city-of-oakland {
-	background: $oakland_green;
+	background-color: $oakland_green;
 	color: white;
 }
 
