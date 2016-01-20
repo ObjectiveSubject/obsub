@@ -13,12 +13,12 @@
 
 	if ( $('.office-map').length > 0 && Modernizr.cssvhunit ) {
 
-		$brooklyn 	 = $('.office-location.brooklyn'),
-		$oakland 	 = $('.office-location.oakland'),
+		$brooklyn 	 = $('.office-location.brooklyn');
+		$oakland 	 = $('.office-location.oakland');
 		$addressBar  = $('.address-sidebar');
 
-		brooklynTop  = $brooklyn.offset().top,
-		oaklandTop 	 = $oakland.offset().top,
+		brooklynTop  = $brooklyn.offset().top;
+		oaklandTop 	 = $oakland.offset().top;
 		
 		$window.on("resize", onResize);
 		$window.on("scroll", onScroll);

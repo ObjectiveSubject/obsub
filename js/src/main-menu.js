@@ -23,7 +23,7 @@
 			];
 			$.Velocity.RunSequence(animationSequence);
 		} else {
-			if ( $('.main-menu-scrim').length == 0 ) {
+			if ( $('.main-menu-scrim').length === 0 ) {
 				$('<div class="main-menu-scrim"></div>').appendTo('body');
 			}
 			$siteHeader.addClass('main-menu-active');
