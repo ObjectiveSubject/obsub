@@ -7,7 +7,7 @@
 	var $sections = $('.page-section'),
 		$window = $(window),
 		defaultColor = '#F0F0EE';
-		mediaSize = getMediaSize();
+		mediaSize = OS.getMediaSize();
 
 	if ( mediaSize == "medium" ) {
 
@@ -35,11 +35,6 @@
 
 	}
 
-	function getMediaSize() {
-		//detect if desktop/mobile
-		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
-	}
-
 })(jQuery, window);
 /* 
  * Case Study Previews
@@ -56,13 +51,14 @@
 			var $preview = $(this),
 				$image = $preview.find('.section-image'),
 				$sectionContent = $preview.find('.section-content'),
-				outerHeight, offsetTop, offsetBottom, contentHeight;
+				mediaSize, outerHeight, offsetTop, offsetBottom, contentHeight;
 
 			init();
 			$window.on("resize", init);
 			$window.on('scroll', onScroll);			
 
 			function init() {
+				mediaSize = OS.getMediaSize();
 				outerHeight = $preview.outerHeight();
 				offsetTop = $preview.offset().top - (outerHeight * 0.25);
 				offsetBottom = $preview.offset().top + ( outerHeight * 0.5 );
@@ -71,10 +67,13 @@
 
 			function onScroll() {
 				var scrollTop = $window.scrollTop();
-				if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
-					$preview.addClass('active');
-				} else {
-					$preview.removeClass('active');
+
+				if ( mediaSize == "medium" ) {
+					if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
+						$preview.addClass('active');
+					} else {
+						$preview.removeClass('active');
+					}
 				}
 			}
 		});
@@ -161,7 +160,7 @@
 
 	function initSizes() {
 		winHeight 	= $window.height();
-		mediaSize 	= getMediaSize();
+		mediaSize 	= OS.getMediaSize();
 		officesTop 	= $offices.offset().top;
 		toggleMapY	= $('.brooklyn .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
@@ -193,11 +192,6 @@
 
 		}
 
-	}
-
-	function getMediaSize() {
-		//detect if desktop/mobile
-		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	}
 
 })(jQuery, window);

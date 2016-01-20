@@ -102,20 +102,21 @@ function obsub_scripts() {
 
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', get_template_directory_uri() . "/js/jquery-2.1.4.js", array(), '', true );
-	wp_register_script( 'velocity', get_template_directory_uri() . "/js/velocity.min.js", array(), '', true );
-	wp_register_script( 'velocity_ui', get_template_directory_uri() . "/js/velocity.ui.min.js", array(), '', true );
-	wp_register_script( 'jquery_color', get_template_directory_uri() . "/js/jquery.color-2.1.0.js", array(), '', true );
-	wp_register_script( 'slick', get_template_directory_uri() . "/js/slick.js", array(), '', true );
+	wp_register_script( 'velocity', get_template_directory_uri() . "/js/velocity.min.js", array('jquery'), '', true );
+	wp_register_script( 'velocity_ui', get_template_directory_uri() . "/js/velocity.ui.min.js", array('jquery'), '', true );
+	wp_register_script( 'jquery_color', get_template_directory_uri() . "/js/jquery.color-2.1.0.js", array('jquery'), '', true );
+	wp_register_script( 'slick', get_template_directory_uri() . "/js/slick.js", array('jquery'), '', true );
 	// wp_register_script( 'waypoints', get_template_directory_uri() . "/js/jquery.waypoints.min.js", array('jquery'), '', true );
 	
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . "/js/modernizr.min.js", array(), '', false );
-	wp_enqueue_script( 'jquery' );
+	// wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'velocity' );
 	wp_enqueue_script( 'velocity_ui' );
 	wp_enqueue_script( 'jquery_color' );
 	wp_enqueue_script( 'slick' );
 	// wp_enqueue_script( 'waypoints' );
-	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array(), '', true );
+	wp_enqueue_script( 'os', get_template_directory_uri() . "/js/os.js", array('jquery'), '', true );
+	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'obsub_scripts' );
 

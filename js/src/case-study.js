@@ -13,13 +13,14 @@
 			var $preview = $(this),
 				$image = $preview.find('.section-image'),
 				$sectionContent = $preview.find('.section-content'),
-				outerHeight, offsetTop, offsetBottom, contentHeight;
+				mediaSize, outerHeight, offsetTop, offsetBottom, contentHeight;
 
 			init();
 			$window.on("resize", init);
 			$window.on('scroll', onScroll);			
 
 			function init() {
+				mediaSize = OS.getMediaSize();
 				outerHeight = $preview.outerHeight();
 				offsetTop = $preview.offset().top - (outerHeight * 0.25);
 				offsetBottom = $preview.offset().top + ( outerHeight * 0.5 );
@@ -28,10 +29,13 @@
 
 			function onScroll() {
 				var scrollTop = $window.scrollTop();
-				if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
-					$preview.addClass('active');
-				} else {
-					$preview.removeClass('active');
+
+				if ( mediaSize == "medium" ) {
+					if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
+						$preview.addClass('active');
+					} else {
+						$preview.removeClass('active');
+					}
 				}
 			}
 		});

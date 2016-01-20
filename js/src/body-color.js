@@ -7,7 +7,7 @@
 	var $sections = $('.page-section'),
 		$window = $(window),
 		defaultColor = '#F0F0EE';
-		mediaSize = getMediaSize();
+		mediaSize = OS.getMediaSize();
 
 	if ( mediaSize == "medium" ) {
 
@@ -33,11 +33,6 @@
 			});
 		});
 
-	}
-
-	function getMediaSize() {
-		//detect if desktop/mobile
-		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	}
 
 })(jQuery, window);

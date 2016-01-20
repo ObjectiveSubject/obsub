@@ -22,7 +22,7 @@
 
 	function initSizes() {
 		winHeight 	= $window.height();
-		mediaSize 	= getMediaSize();
+		mediaSize 	= OS.getMediaSize();
 		officesTop 	= $offices.offset().top;
 		toggleMapY	= $('.brooklyn .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
@@ -54,11 +54,6 @@
 
 		}
 
-	}
-
-	function getMediaSize() {
-		//detect if desktop/mobile
-		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	}
 
 })(jQuery, window);
