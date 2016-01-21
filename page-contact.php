@@ -53,7 +53,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="page-section outer-container">
+		<section class="page-section outer-container push-triple">
 			<div class="inner-container">
 				<p>If you are curious to hear more about our work and process, interested in hiring us for your project, or simply want to ask about job availability, please do not hesitate to contact us.</p>
 				<p class="h2 future-A"><a href="#talk-to-us" class="text-color-link">talk to us</a></p>

@@ -47,7 +47,7 @@ function obsub_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails', array(
-		'post', 'case_study'
+		'post', 'case_study', 'bio'
 	) );
 
 	// This theme uses wp_nav_menu() in one location.

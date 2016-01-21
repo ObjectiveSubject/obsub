@@ -42,6 +42,49 @@ function register_case_studies() {
 	);
 }
 
+
+// Bios post type ================================ /
+add_action('init', 'register_bios');
+
+function register_bios() {
+
+	$labels = array (
+		'name' => 'Bios',
+		'singular_name' => 'Bio',
+		'menu_name' => 'Bios',
+		'name_admin_bar' => 'Bio',
+		'add_new' => 'Add Bio',
+		'add_new_item' => 'Add New Bio',
+		'edit' => 'Edit',
+		'edit_item' => 'Edit Bio',
+		'new_item' => 'New Bio',
+		'all_items' => 'All Bios',
+		'view' => 'View Bio',
+		'view_item' => 'View Bio',
+		'search_items' => 'Search Bios',
+		'not_found' => 'No Bios Found',
+		'not_found_in_trash' => 'No Bios Found in Trash',
+		'parent' => 'Parent Bios',
+	);
+
+	register_post_type('bio', array(
+			'description' => '',
+			'public' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'capability_type' => 'post',
+			'map_meta_cap' => true,
+			'hierarchical' => false,
+			'rewrite' => true,
+			'query_var' => true,
+			'menu_position' => 5,
+			'supports' => array('title','editor','thumbnail','excerpt'),
+			'menu_icon' => 'dashicons-businessman',
+			'labels' => $labels
+		)
+	);
+}
+
 // Custom Admin Columns (optional) ======= /
 /*
 function my_{post-type}_columns($columns) {
