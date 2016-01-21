@@ -1019,10 +1019,10 @@ body::before {
     background-position: 0 -56px;
   }
 }
-.single-case_study .wordmark.dark {
+.light-theme .wordmark.dark, .main-menu-active .wordmark.dark {
   display: none;
 }
-.single-case_study .wordmark.light {
+.light-theme .wordmark.light, .main-menu-active .wordmark.light {
   display: block;
 }
 @media screen and (min-width: 768px) {

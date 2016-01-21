@@ -47,7 +47,8 @@
 			background-position: 0 -56px;
 		}
 	}
-	.single-case_study & {
+	.light-theme &,
+	.main-menu-active & {
 		&.dark { display: none; }
 		&.light { display: block; }
 	}
