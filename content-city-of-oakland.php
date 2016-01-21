@@ -4,7 +4,7 @@
 	$featured_image_url = $featured_image_array[0];
 ?>
 
-<section class="page-header" style="background-image:url( <?php echo $featured_image_url; ?> )">
+<section class="page-header page-section full-height" style="background-image:url( <?php echo $featured_image_url; ?> )">
 	<h1 class="page-title"><?php echo get_the_excerpt(); ?></h1>
 	<p class="page-subtitle h3"><em>Visual identity</em> and <em>user interface</em> design for City of Oakland</p>
 	<nav class="page-nav push-double">

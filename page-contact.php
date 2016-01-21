@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<section class="page-header">
+		<section class="page-header page-section full-height">
 			<div class="inner-container">
 				<h1 class="page-title">We’re based in Brooklyn, NY and Oakland, CA.</h1>
 				<h2 class="future-A page-subtitle">

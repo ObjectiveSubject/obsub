@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<section class="page-header outer-container">
+		<section class="page-header page-section full-height outer-container">
 			<div class="inner-container">
 				<?php the_content(); ?>
 			</div>
