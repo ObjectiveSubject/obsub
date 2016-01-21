@@ -83,7 +83,7 @@
 	<p>The City should be able to modulate its expression without always having to resort to the blunt use of the logo. To address, we created a pattern that takes after[g] the tree logo, but grows it into a full root system, as complex and rich as are the communities and network that support the city. The pattern can then be applied to different elements in more overt or more subtle ways, based on what the context calls for.</p>
 </section>
 
-<section id="solution" class="page-section contain-content" style="padding-bottom: 100px" data-color="#E0F3F2">
+<section id="solution" class="page-section contain-content" style="background-color: #E0F3F2; padding-bottom: 100px">
 	
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('pattern.jpg', 'oakland') ?>" width="1400" height="460" />

@@ -9,7 +9,7 @@
 		defaultColor = '#F0F0EE';
 		mediaSize = OS.getMediaSize();
 
-	if ( mediaSize == "medium" ) {
+	if ( mediaSize == "medium" && $('[data-color]').length > 0 ) {
 
 		$sections.each(function(){
 			var $section = $(this),
