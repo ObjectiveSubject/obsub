@@ -37,6 +37,57 @@
 
 })(jQuery, window);
 /* 
+ * Header
+ */
+
+(function( $, window, undefined ){
+
+	var $window = $(window),
+		$masthead = $('#masthead'),
+		$pageHeader = $('.single-case_study .page-header'),
+		offset,
+		mastheadTop,
+		headerBottom;
+
+	init();
+	$window
+		.on("resize", init)
+		.on("scroll", onScroll);
+
+	function init() {
+		if ( OS.getMediaSize() == "medium" ) {
+			offset = 30;
+		} else {
+			offset = 10;
+		}
+		if ( $pageHeader.length > 0 ) {
+			headerBottom = $pageHeader.offset().top + $pageHeader.outerHeight() - offset;
+			if ( $window.scrollTop() < headerBottom ) {
+				$masthead.addClass("light-theme");
+			}
+		}
+		mastheadTop = $masthead.offset().top - offset;
+	}
+
+	function onScroll() {
+		scrollTop = $window.scrollTop();
+		if ( scrollTop >= mastheadTop ) {
+			$masthead.addClass("fixed");
+		} else {
+			$masthead.removeClass("fixed");
+		}
+
+		if ( $pageHeader.length > 0 ) {
+			if ( scrollTop >= headerBottom ) {
+				$masthead.removeClass("light-theme");
+			} else {
+				$masthead.addClass("light-theme");
+			}
+		}
+	}
+
+})(jQuery, window);
+/* 
  * Case Study Previews
  */
 
@@ -106,16 +157,16 @@
 		e.preventDefault();
 		var $siteHeader = $('.site-header'),
 			$mainMenu = $('.main-menu'),
-			$wordmarkLight = $('.wordmark.light'),
-			$wordmarkDark = $('.wordmark.dark'),
+			// $wordmarkLight = $('.wordmark.light'),
+			// $wordmarkDark = $('.wordmark.dark'),
 			animationSequence;
 
 		if ( $siteHeader.hasClass('main-menu-active') ) {
 			$siteHeader.removeClass('main-menu-active');
 			animationSequence = [
 				{ e: $(".main-menu > li"),	p: { translateY: "20px" }, 	o: { duration: 200, stagger: 200 } },
-				{ e: $wordmarkDark, 		p: "fadeIn", 		o: { duration: 300, display: "block" } },
-				{ e: $wordmarkLight,		p: "fadeOut", 		o: { duration: 300, display: "block", sequenceQueue: false } },
+				// { e: $wordmarkDark, 		p: "fadeIn", 		o: { duration: 300, display: "block" } },
+				// { e: $wordmarkLight,		p: "fadeOut", 		o: { duration: 300, display: "block", sequenceQueue: false } },
 				{ e: $mainMenu, 			p: "fadeOut" , 		o: { duration: 300, sequenceQueue: false } },
 				{ e: $('.main-menu-scrim'), p: "fadeOut" , 		o: { duration: 300, sequenceQueue: false } }
 			];
@@ -128,8 +179,8 @@
 			animationSequence = [
 				{ e: $('.main-menu-scrim'), p: "fadeIn", 		o: { duration: 300 } },
 			    { e: $mainMenu, 			p: "fadeIn", 		o: { duration: 300, sequenceQueue: false } },
-			    { e: $wordmarkDark, 		p: "fadeOut", 		o: { duration: 300, sequenceQueue: false } },
-			    { e: $wordmarkLight, 		p: "fadeIn", 		o: { duration: 300, sequenceQueue: false } },
+			    // { e: $wordmarkDark, 		p: "fadeOut", 		o: { duration: 300, sequenceQueue: false } },
+			    // { e: $wordmarkLight, 		p: "fadeIn", 		o: { duration: 300, sequenceQueue: false } },
 			    { e: $(".main-menu > li"), 	p: { translateY: "0" },	o: { duration: 200, stagger: 200 } },
 			];
 			$.Velocity.RunSequence(animationSequence);

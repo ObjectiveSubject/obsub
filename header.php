@@ -24,7 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'obsub' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="outer-container">
+		<!-- <div class="outer-container"> -->
 			
 			<div class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark dark" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
@@ -54,7 +54,7 @@
 				</ul>
 			</nav>
 
-		</div>
+		<!-- </div> -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content <?php echo $post->post_name; ?>">
