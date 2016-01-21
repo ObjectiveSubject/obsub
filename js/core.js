@@ -45,7 +45,7 @@
 	var $window = $(window),
 		$masthead = $('#masthead'),
 		$pageHeader = $('.single-case_study .page-header'),
-		offset,
+		offset = 30,
 		mastheadTop,
 		headerBottom;
 
@@ -55,11 +55,6 @@
 		.on("scroll", onScroll);
 
 	function init() {
-		if ( OS.getMediaSize() == "medium" ) {
-			offset = 30;
-		} else {
-			offset = 10;
-		}
 		if ( $pageHeader.length > 0 ) {
 			headerBottom = $pageHeader.offset().top + $pageHeader.outerHeight() - offset;
 			if ( $window.scrollTop() < headerBottom ) {

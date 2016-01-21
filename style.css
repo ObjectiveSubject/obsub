@@ -969,12 +969,7 @@ body::before {
 }
 #masthead.fixed {
   position: fixed;
-  top: 10px;
-}
-@media screen and (min-width: 768px) {
-  #masthead.fixed {
-    top: 30px;
-  }
+  top: 30px;
 }
 @media screen and (min-width: 768px) {
   #masthead {
@@ -1044,7 +1039,7 @@ body::before {
 
 .menu-toggle {
   position: absolute;
-  top: 21px;
+  top: 2px;
   width: 18px;
   height: 18px;
 }
@@ -1145,7 +1140,7 @@ body::before {
 
 .main-menu-scrim {
   position: fixed;
-  background: #000;
+  background: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
   width: 100%;
