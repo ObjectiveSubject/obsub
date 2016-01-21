@@ -36,10 +36,40 @@
 	<p class="push-double">From our offices in Oakland, Objective Subject recommended a concerted approach to visual communication that aims to unify all city departments and allows the city to define a recognizable look and feel throughout its communications, digital and otherwise.[c] The current cacophony of symbols does not connote the clarity and simplicity that should be the hallmark of any experience with a large organization, but so often is not.</p>
 	<h2 class="future-A">process</h2>
 	<p class="push-double">With any project, we first perform in-depth research and a far-reaching visual audit. In the City’s Archives, we were able to trace the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer Jesse Ragan to treat the symbol as a character and give it better optical legibility.</p>
-	<figure class="alignnone">
-		<img src="http://placehold.it/1200x600?text=interactive+element" width="1200" height="600" />
-		<figcaption>Oakland’s tree, before and after</figcaption>	
+	
+
+	<figure class="oakland-tree">
+		<div class="slider-row oakland-tree-large">
+			<img src="<?php echo os_path('tree-1-lg.png', 'oakland'); ?>" class="large top" />
+			<img src="<?php echo os_path('tree-2-lg.png', 'oakland'); ?>" class="large bottom" />
+			<div class="slider">
+				<div class="slider-track"></div>
+				<div class="slider-thumb"></div>
+				<input type="range" name="tree-slider-lg" class="slider-input tree-slider-lg" value="50" min="0" max="100">
+			</div>
+		</div>
+		<div class="slider-row oakland-tree-medium">
+			<img src="<?php echo os_path('tree-1-md.png', 'oakland'); ?>" class="medium top" />
+			<img src="<?php echo os_path('tree-2-md.png', 'oakland'); ?>" class="medium bottom" />
+			<div class="slider">
+				<div class="slider-track"></div>
+				<div class="slider-thumb"></div>
+				<input type="range" name="tree-slider-md" class="slider-input tree-slider-md" value="50" min="0" max="100">
+			</div>
+		</div>
+		<div class="slider-row oakland-tree-small">
+			<img src="<?php echo os_path('tree-1-sm.png', 'oakland'); ?>" class="small top" />
+			<img src="<?php echo os_path('tree-2-sm.png', 'oakland'); ?>" class="small bottom" />
+			<div class="slider">
+				<div class="slider-track"></div>
+				<div class="slider-thumb"></div>
+				<input type="range" name="tree-slider-sm" class="slider-input tree-slider-sm" value="50" min="0" max="100">
+			</div>
+		</div>
 	</figure>
+	<figcaption>Oakland’s tree, before and after</figcaption>
+	
+
 	<p>As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue with a range of rich hues in complement.</p>
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('brochures.png', 'oakland') ?>" width="1025" height="690">

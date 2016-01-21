@@ -2216,3 +2216,194 @@ figcaption {
 .get-in-touch {
   position: relative;
 }
+
+.oakland-tree {
+  background: white;
+  padding: 1.5rem 30px 4.5rem;
+  /* range slider resets */
+  /* Make the thumbs the same size as your custom sliderthumb. They will not be visible but they will be draggable. */
+  /* Eliminate the default appearance and tooltip behaviour that is peculiar to IE and Edge. */
+  /* Custom slider styles */
+}
+.oakland-tree input[type=range]::-ms-track {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+}
+.oakland-tree input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 100%;
+  -moz-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+}
+.oakland-tree input[type=range] {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+}
+.oakland-tree input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+.oakland-tree input[type=range]:focus {
+  outline: none;
+}
+.oakland-tree input[type=range]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+}
+.oakland-tree input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+}
+.oakland-tree input[type=range]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+.oakland-tree input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+.oakland-tree input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+.oakland-tree input[type=range]::-ms-tooltip {
+  display: none;
+}
+.oakland-tree .slider {
+  display: none;
+  border: 0 none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+@media screen and (min-width: 768px) {
+  .oakland-tree .slider {
+    display: block;
+  }
+}
+.oakland-tree .slider-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  z-index: 100;
+}
+.oakland-tree .slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1a7fc3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 0 none;
+  padding: 0;
+  margin: -10px 0 0 -10px;
+  text-align: center;
+  pointer-events: none;
+}
+.oakland-tree .slider-track {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  border-radius: 2px;
+  margin-left: -1.5px;
+  background-color: #1a7fc3;
+  height: 100%;
+}
+
+.slider-row {
+  position: relative;
+  padding: 1.5rem 0;
+  margin: 3rem auto 0;
+}
+.slider-row:before, .slider-row:after {
+  content: "";
+  display: table;
+}
+.slider-row:after {
+  clear: both;
+}
+.slider-row.oakland-tree-large {
+  max-width: 640px;
+}
+.slider-row.oakland-tree-medium {
+  display: none;
+  max-width: 215px;
+}
+@media screen and (min-width: 500px) {
+  .slider-row.oakland-tree-medium {
+    display: block;
+  }
+}
+.slider-row.oakland-tree-small {
+  max-width: 116px;
+}
+.slider-row img {
+  display: block;
+  width: 45%;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .slider-row img {
+    width: 100%;
+    float: none;
+  }
+}
+.slider-row img.top {
+  margin-right: 10%;
+}
+@media screen and (max-width: 767px) {
+  .slider-row img.top {
+    clip: auto !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-row img.top {
+    position: absolute;
+    top: 1.5rem;
+    margin: 0;
+  }
+  .slider-row img.top.large {
+    clip: rect(0, 320px, 392px, 0);
+  }
+  .slider-row img.top.medium {
+    clip: rect(0, 107px, 130px, 0);
+  }
+  .slider-row img.top.small {
+    clip: rect(0, 58px, 70px, 0);
+  }
+}
