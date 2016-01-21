@@ -108,7 +108,12 @@
 	}
 }
 
-
+[data-parallax-node] {
+	@include media($screen-md) {
+		position: absolute;
+		width: 100%;
+	}
+}
 
 
 

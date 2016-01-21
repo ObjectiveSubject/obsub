@@ -1251,6 +1251,13 @@ body::before {
   line-height: 1.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  [data-parallax-node] {
+    position: absolute;
+    width: 100%;
+  }
+}
+
 .former-clients {
   margin-top: 50vh;
 }

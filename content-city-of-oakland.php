@@ -23,16 +23,21 @@
 		<strong>A Symbol</strong><br/>
 		For many decades, a stylized oak tree has represented the city and its intertwined citizenry. In fact, the symbol has become so popular that many in the community embrace it to brand their store, organization, and even bodies. While such a wellspring of adoption is any community’s dream, this common use exposed the need for the City to differentiate its visual toolkit for communications. 
 	</p>
-	<blockquote>
-		<p>"Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures."<br/><small>&mdash; Kayla, Oakland Native, Chapter 510</small></p>
-	</blockquote>
+</section>
+
+<section class="page-section push-double" style="background-color: #E7F1CF;">
+	<figure class="alignnone hug">
+		<div style="overflow:hidden; position: relative;">
+			<blockquote data-parallax-node="0.5">
+				<p>"Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures."<br/><small>&mdash; Kayla, Oakland Native, Chapter 510</small></p>
+			</blockquote>
+			<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
+		</div>
+		<figcaption>Artifacts from Oakland's Archives</figcaption>
+	</figure>
 </section>
 
 <section id="process" class="page-section contain-content" style="background-color: #E7F1CF; padding-bottom: 100px;">
-	<figure class="alignnone hug">
-		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
-		<figcaption>Artifacts from Oakland's Archives</figcaption>
-	</figure>
 	<p class="push-double">From our offices in Oakland, Objective Subject recommended a concerted approach to visual communication that aims to unify all city departments and allows the city to define a recognizable look and feel throughout its communications, digital and otherwise.[c] The current cacophony of symbols does not connote the clarity and simplicity that should be the hallmark of any experience with a large organization, but so often is not.</p>
 	<h2 class="future-A">process</h2>
 	<p class="push-double">With any project, we first perform in-depth research and a far-reaching visual audit. In the City’s Archives, we were able to trace the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer Jesse Ragan to treat the symbol as a character and give it better optical legibility.</p>
