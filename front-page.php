@@ -42,7 +42,7 @@ get_header(); ?>
 				<div class="section-content">
 					<div class="inner-container">
 						<h1 class="case-study-title"><a href="<?php the_permalink(); ?>"><?php echo get_the_excerpt(); ?></a></h1>
-						<p class="case-study-subtitle hug"><em>Visual identity</em> and <em>user interface</em> for <?php the_title(); ?></p>
+						<p class="case-study-subtitle push"><em>Visual identity</em> and <em>user interface</em> for <?php the_title(); ?></p>
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ get_header(); ?>
 	
 	<?php endwhile;  ?>
 
-	<section id="former-clients" class="page-section former-clients contain-content" data-color="#FBF0F0">
+	<section id="former-clients" class="page-section former-clients contain-content">
 		
 		<h2 class="future-A">our specialities extends across other industries</h2>
 		<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -104,30 +104,5 @@ get_header(); ?>
 	</section>
 
 	<section class="page-section" data-color="#FBF0F0"></section>
-
-	<nav>
-		<ul class="os-vertical-nav list-unstyled">
-			<li>
-				<a href="#home-intro" class="active smooth-scroll">
-					<span class="hide">Top</span>
-					<span class="bubble"></span>
-				</a>
-			</li>
-			<?php while ( $case_studies->have_posts() ) : $case_studies->the_post(); ?>
-			<li>
-				<a href="#<?php echo $post->post_name; ?>" class="smooth-scroll">
-					<span class="hide"><?php the_title(); ?></span>
-					<span class="bubble"></span>
-				</a>
-			</li>
-			<?php endwhile; ?>
-			<li>
-				<a href="#former-clients" class="smooth-scroll">
-					<span class="hide">Former Clients</span>
-					<span class="bubble"></span>
-				</a>
-			</li>
-		</ul>
-	</nav><!-- .os-vertical-nav -->
 
 <?php get_footer(); ?>

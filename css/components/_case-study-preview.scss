@@ -88,9 +88,8 @@
 
 .case-study-title {
 	a {
-		text-shadow: 0 0 0 rgba(0,0,0,0);
 		&:hover {
-			text-shadow: -2px 3px 0 rgba(0,0,0,0.2);
+			opacity: 0.7;
 		}
 	}
 }

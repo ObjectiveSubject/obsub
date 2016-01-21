@@ -4,6 +4,15 @@
     top: 30px;
     z-index: 1000;
     padding: 0 $size_container_padding;
+
+    &.fixed {
+		position: fixed;
+		top: 10px;
+		@include media($screen-md) {
+			top: 30px;
+		}
+	}
+
     @include media($screen-md) {
     	top: 60px;
     }
@@ -138,14 +147,6 @@
 .main-navigation {
 	display: block;
 	position: relative;
-
-	.fixed & {
-		position: fixed;
-		top: 10px;
-		@include media($screen-md) {
-			top: 30px;
-		}
-	}
 
 	ul {
 		list-style: none;
