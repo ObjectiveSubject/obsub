@@ -13,8 +13,8 @@
 		if ( $siteHeader.hasClass('main-menu-active') ) {
 			$siteHeader.removeClass('main-menu-active');
 			animationSequence = [
-				{ e: $(".main-menu > li"),	p: { translateY: "20px" }, 	o: { duration: 200, stagger: 200 } },
-				{ e: $mainMenu, 			p: "fadeOut" , 		o: { duration: 300, sequenceQueue: false } },
+				// { e: $(".main-menu > li"),	p: { translateY: "20px" }, 	o: { duration: 200, stagger: 200 } },
+				{ e: $mainMenu, 			p: "fadeOut" , 		o: { duration: 300 } },
 				{ e: $('.main-menu-scrim'), p: "fadeOut" , 		o: { duration: 300, sequenceQueue: false } }
 			];
 			$.Velocity.RunSequence(animationSequence);
@@ -26,7 +26,7 @@
 			animationSequence = [
 				{ e: $('.main-menu-scrim'), p: "fadeIn", 		o: { duration: 300 } },
 			    { e: $mainMenu, 			p: "fadeIn", 		o: { duration: 300, sequenceQueue: false } },
-			    { e: $(".main-menu > li"), 	p: { translateY: "0" },	o: { duration: 200, stagger: 200 } },
+			    // { e: $(".main-menu > li"), 	p: { translateY: "0" },	o: { duration: 200, stagger: 200 } },
 			];
 			$.Velocity.RunSequence(animationSequence);
 		}

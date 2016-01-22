@@ -158,8 +158,13 @@
     left: 0;
     font-size: 1.5rem;
     line-height: 1em;
-    li {
-    	transform: translateY(20px);
+    @include media($screen-md) {
+    	top: 0;
+    	left: 50px;
+    }
+    @include media($screen-xl) {
+    	top: 0;
+    	left: 80px;
     }
     a {
     	color: white;
@@ -168,6 +173,15 @@
     		color: tint($color_text_main, 30%)
     	}
     }
+    .cs-localdata a:hover {
+		color: $localdata_orange;
+	}
+	.cs-city-of-oakland a:hover {
+		color: $oakland_green;
+	}
+	.cs-boston-public-schools a:hover {
+		color: $boston_blue;
+	}
 }
 
 .main-menu-scrim {

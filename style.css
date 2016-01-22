@@ -1140,9 +1140,17 @@ body::before {
   font-size: 1.5rem;
   line-height: 1em;
 }
-.main-menu li {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+@media screen and (min-width: 768px) {
+  .main-menu {
+    top: 0;
+    left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-menu {
+    top: 0;
+    left: 80px;
+  }
 }
 .main-menu a {
   color: white;
@@ -1150,6 +1158,15 @@ body::before {
 }
 .main-menu a:hover {
   color: #646464;
+}
+.main-menu .cs-localdata a:hover {
+  color: #FFA100;
+}
+.main-menu .cs-city-of-oakland a:hover {
+  color: #4EBB25;
+}
+.main-menu .cs-boston-public-schools a:hover {
+  color: #0077C8;
 }
 
 .main-menu-scrim {
