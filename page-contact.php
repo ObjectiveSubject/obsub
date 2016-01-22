@@ -21,7 +21,6 @@ get_header(); ?>
 
 		<section class="page-section office-locations clearfix" data-show-map="brooklyn">
 			<div class="office-location brooklyn clearfix">
-				<div id="brooklyn-map" class="office-map brooklyn-map"></div>
 				<div class="office-address">
 					<address class="h2 hug future-A">
 						81 prospect street<br/>
@@ -34,9 +33,9 @@ get_header(); ?>
 						2 and 3 to Clark St
 					</p>
 				</div>
+				<div id="brooklyn-map" class="office-map brooklyn-map"></div>
 			</div>
 			<div class="office-location oakland clearfix">
-				<div id="oakland-map" class="office-map oakland-map"></div>
 				<div class="office-address">
 					<address class="h2 hug future-A">
 						2355 broadway<br/>
@@ -50,6 +49,7 @@ get_header(); ?>
 						I-580 exit 20 towards Broadway
 					</p>
 				</div>
+				<div id="oakland-map" class="office-map oakland-map"></div>
 			</div>
 		</section>
 

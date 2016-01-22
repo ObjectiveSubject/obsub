@@ -1551,26 +1551,23 @@ body::before {
 .office-locations {
   position: relative;
   background-color: white;
-  border-bottom: 1px solid #E4E4E4;
-}
-.os-cssvhunit .office-locations {
-  border-top: 1px solid #E4E4E4;
 }
 
 .office-location {
   position: relative;
-  padding-bottom: 3rem;
   width: 100%;
-  border-top: 1px solid #E4E4E4;
 }
 @media screen and (min-width: 768px) {
-  .office-location {
-    padding-bottom: 0;
-  }
   .os-cssvhunit .office-location {
     border-top: 0;
     height: 100vh;
   }
+}
+.office-location.brooklyn {
+  background-color: #F7D7D6;
+}
+.office-location.oakland {
+  background-color: #CEE3EE;
 }
 
 .office-map {
@@ -1579,6 +1576,7 @@ body::before {
   background: #DDD;
   height: 350px;
   width: 100%;
+  margin-top: 3rem;
   transition: opacity 750ms ease;
   background-repeat: no-repeat;
   background-size: 1280px 1080px;
@@ -1588,19 +1586,16 @@ body::before {
   .office-map {
     background-size: cover;
     height: 600px;
-    width: 66.666%;
-    float: left;
+    width: 50%;
+    float: right;
+    margin-top: 0;
   }
   .os-cssvhunit .office-map {
     position: absolute;
     top: 0;
+    right: 0;
     height: 100vh;
     opacity: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .office-map {
-    width: 75%;
   }
 }
 .office-map:after {
@@ -1614,17 +1609,11 @@ body::before {
   margin-left: -20px;
   background-size: 40px 52px;
 }
-.office-map.brooklyn-map {
-  background-image: url(images/brooklyn-map.png);
-}
 [data-show-map="brooklyn"] .office-map.brooklyn-map {
   opacity: 1;
 }
 .office-map.brooklyn-map:after {
   background-image: url(images/pin-red@2x.png);
-}
-.office-map.oakland-map {
-  background-image: url(images/oakland-map.png);
 }
 [data-show-map="oakland"] .office-map.oakland-map {
   opacity: 1;
@@ -1647,32 +1636,17 @@ body::before {
 }
 @media screen and (min-width: 768px) {
   .office-address {
-    float: right;
-    width: 33.333%;
+    float: left;
+    width: 50%;
   }
   .os-csstransforms .office-address {
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 50%;
     padding-top: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-50%) translateX(-75%);
+            transform: translateY(-50%) translateX(-75%);
   }
-}
-@media screen and (min-width: 1200px) {
-  .office-address {
-    width: 25%;
-  }
-}
-.office-address.brooklyn address, .brooklyn .office-address address {
-  color: #E24F4A;
-}
-.office-address.oakland address, .oakland .office-address address {
-  color: #1a7fc3;
-}
-
-.directions {
-  color: #999C98;
 }
 
 .colophon:before, .colophon:after {

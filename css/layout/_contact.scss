@@ -1,23 +1,22 @@
 .office-locations {
 	position: relative;
 	background-color: white;
-	border-bottom: 1px solid #E4E4E4;
-	.os-cssvhunit & {
-		border-top: 1px solid #E4E4E4;
-	}
 }
 
 .office-location {
 	position: relative;
-	padding-bottom: $leading * 2;
 	width: 100%;
-	border-top: 1px solid #E4E4E4;
 	@include media($screen-md) {
-		padding-bottom: 0;
 		.os-cssvhunit & {
 			border-top: 0;
 			height: 100vh;
 		}
+	}
+	&.brooklyn {
+		background-color: #F7D7D6;
+	}
+	&.oakland {
+		background-color: #CEE3EE;
 	}
 }
 
@@ -27,6 +26,7 @@
 	background: #DDD;
 	height: 350px;
 	width: 100%;
+	margin-top: $leading * 2;
 	transition: opacity 750ms ease;
 	background-repeat: no-repeat;
 	background-size: 1280px 1080px;
@@ -34,17 +34,16 @@
 	@include media($screen-md) {
 		background-size: cover;
 		height: 600px;
-		width: 66.666%;
-		float: left;
+		width: 50%;
+		float: right;
+		margin-top: 0;
 		.os-cssvhunit & {
 			position: absolute;
 			top: 0;
+			right: 0;
 			height: 100vh;
 			opacity: 0;
 		}
-	}
-	@include media($screen-xl) {
-		width: 75%; 
 	}
 	&:after {
 		content: "";
@@ -62,7 +61,7 @@
 		[data-show-map="brooklyn"] & {
 			opacity: 1;
 		}
-		background-image: url(images/brooklyn-map.png);
+		// background-image: url(images/brooklyn-map.png);
 		&:after {
 			background-image: url(images/pin-red@2x.png);
 		}
@@ -71,7 +70,7 @@
 		[data-show-map="oakland"] & {
 			opacity: 1;
 		}
-		background-image: url(images/oakland-map.png);
+		// background-image: url(images/oakland-map.png);
 		&:after {
 			background-image: url(images/pin-blue@2x.png);
 		}
@@ -92,30 +91,16 @@
 	padding: ($leading * 2) $size_container_padding 0;
 	transition: all 400ms ease;
 	@include media($screen-md) {
-		float: right;
-		width: 33.333%;
+		float: left;
+		width: 50%;
 		.os-csstransforms & {
 			position: absolute;
 			top: 50%;
-			right: 0;
+			left: 50%;
 			padding-top: 0;
-			transform: translateY(-50%);
+			transform: translateY(-50%) translateX(-75%);
 		}
 	}
-	@include media($screen-xl) {
-		width: 25%;
-	}
-	
-	&.brooklyn, .brooklyn & {
-		address { color: $red; }
-	}
-	&.oakland, .oakland & {
-		address { color: $blue; }
-	}
-}
-
-.directions {
-	color: $medium_gray;
 }
 
 
