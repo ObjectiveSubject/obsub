@@ -113,6 +113,16 @@
 // ======================================= /
 a.no-decoration { text-decoration: none; }
 
+[class*="rotate-"] {
+	display: inline-block;
+	&[class*="-c-45"] {
+		transform: rotate(45deg);
+	}
+	&[class*="-cc-45"] {
+		transform: rotate(-45deg);
+	}
+}
+
 .text-color-link {
 	color: $color_text_main;
 	&:hover {

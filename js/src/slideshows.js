@@ -39,6 +39,18 @@
 					]
 				});
 			}
+
+			if ( slides.hasClass('unslick') ) {
+				var breakpoint = {
+					breakpoint: slides.data("unslick"),
+					settings: "unslick"
+				};
+				if ( settings.responsive ) {
+					settings.responsive.push(breakpoint);
+				} else {
+					settings.responsive = [breakpoint];
+				}
+			}
 			
 			slides.slick(settings);
 

@@ -85,6 +85,10 @@
 			background: $localdata_red;
 			color: #FFEAC4;
 		}
+		.boston-public-schools & {
+			background: $boston_dark_green;
+			color: $boston_green;
+		}
 		p {
 			font-size: rem(24);
 			line-height: rem(30);

@@ -7,8 +7,7 @@
 	var $window = $(window),
 		$masthead = $('#masthead'),
 		$pageHeader = $('.single-case_study .page-header'),
-		offset = 30,
-		mastheadTop,
+		offset,
 		headerBottom;
 
 	init();
@@ -17,23 +16,22 @@
 		.on("scroll", onScroll);
 
 	function init() {
+		if ( OS.getMediaSize() == "medium" ) {
+			offset = 100;
+		} else {
+			offset = 30;
+		}
 		if ( $pageHeader.length > 0 ) {
 			headerBottom = $pageHeader.offset().top + $pageHeader.outerHeight() - offset;
 			if ( $window.scrollTop() < headerBottom ) {
 				$masthead.addClass("light-theme");
 			}
 		}
-		mastheadTop = $masthead.offset().top - offset;
 	}
 
 	function onScroll() {
-		scrollTop = $window.scrollTop();
-		if ( scrollTop >= mastheadTop ) {
-			$masthead.addClass("fixed");
-		} else {
-			$masthead.removeClass("fixed");
-		}
-
+		var scrollTop = $window.scrollTop();
+		
 		if ( $pageHeader.length > 0 ) {
 			if ( scrollTop >= headerBottom ) {
 				$masthead.removeClass("light-theme");

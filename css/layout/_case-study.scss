@@ -21,4 +21,26 @@
 			color: darken($localdata_red, 20%);
 		}
 	}
+	.city-of-oakland & {
+		color: $oakland_blue;
+		&:hover {
+			color: darken($oakland_blue, 20%);
+		}
+	}
+	.boston-public-schools & {
+		color: $boston_green;
+		&:hover {
+			color: $boston_dark_green;
+		}
+	}
+
+	.icon {
+		font-size: 1.25em;
+		transition: all 250ms ease;
+	}
+	&:hover {
+		[class*="rotate-"] {
+			transform: rotate(0) translateX(20px);
+		}
+	}
 }

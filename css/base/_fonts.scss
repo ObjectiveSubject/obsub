@@ -10,7 +10,12 @@
 }
 
 .future-A {
-	font-family: "FutureAMedium", "Futura", sans-serif;
+	font-family: $font_heading;
 	-webkit-font-smoothing: antialiased;
     text-transform: lowercase;
+}
+
+.arnhem {
+    font-family: $font_main;
+    -webkit-font-smoothing: antialiased;
 }

@@ -36,8 +36,8 @@ figure {
  	&.aligncenter {
  		img {
  			display: block;
- 			width: 100%;
- 			@include outer-container;
+ 			max-width: 100%;
+ 			margin: 0 auto;
  		}
  	}
 }
@@ -67,8 +67,8 @@ figcaption {
 	.localdata & {
 		color: $localdata_red;
 	}
-	.city-of-oakland & {
-		color: $boston_blue;
+	.boston-public-schools & {
+		color: $boston_green;
 	}
 }
 

@@ -96,13 +96,17 @@
         }
 
         img {
-            box-shadow: 0 6px 10px -2px rgba(black, 0.2);
             margin: 0 auto;
         }
     }
 
     img {
         display: block;
+    }
+    &.shadow {
+        img {
+            box-shadow: 0 6px 10px -2px rgba(black, 0.2);
+        }
     }
     &.slick-loading img {
         display: none;
@@ -168,7 +172,7 @@
         button {
             border-color: $localdata_red;
             &:hover {
-                background: $localdata_red;
+                background: darken($localdata_red, 15%);
             }
         }
     }
@@ -179,7 +183,18 @@
         button {
             border-color: $oakland_blue;
             &:hover {
-                background: $oakland_blue;
+                background: darken($oakland_blue, 15%);
+            }
+        }
+    }
+    .boston-public-schools & {
+        li.slick-active button {
+            background: $boston_green;
+        }
+        button {
+            border-color: $boston_green;
+            &:hover {
+                background: $boston_dark_green;
             }
         }
     }
@@ -187,7 +202,7 @@
 
 .os-slideshow-container {
     position: relative;
-    max-width: $max-width;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -226,6 +241,12 @@
             color: $oakland_blue;
             &:hover {
                 color: darken($oakland_blue, 15%);
+            }
+        }
+        .boston-public-schools & {
+            color: $boston_green;
+            &:hover {
+                color: $boston_dark_green;
             }
         }
     }

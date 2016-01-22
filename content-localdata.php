@@ -55,7 +55,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section contain-content" style="padding-bottom: 100px; background-color: #FFEAC4;">	
+<section id="solution" class="page-section contain-content" style="padding-bottom: 100px; background-color: #FFEBC4;">	
 	<h2 class="future-A">solution</h2>
 	<p class="push">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	<figure class="os-slideshow-container">
@@ -69,7 +69,7 @@
 	</figure>
 	<figcaption>The LocalData Homepage</figcaption>
 	<figure class="aligncenter">
-		<img src="<?php echo os_path('stationery.jpg', 'localdata') ?>" width="1024" height="680">
+		<img src="<?php echo os_path('stationery.png', 'localdata') ?>" width="1200" height="797">
 		<figcaption>LocalData Stationery</figcaption>
 	</figure>
 	<div class="colophon push-double outer-container clearfix">
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 	</div>
-	<p class="future-A"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com</a></p>
+	<p class="h2 future-A"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 </section>
 
 <?php os_get_case_study(); ?>

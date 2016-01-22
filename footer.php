@@ -10,8 +10,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer future-A bg-default" role="contentinfo">
-		<div class="outer-container">
+	<footer id="colophon" class="site-footer future-A bg-default outer-container" role="contentinfo">
+		<div class="inner-container">
 			<a href="#" class="copyright">copyright & privacy information</a>
 			<a href="#" class="subscribe">let us say hi, periodically</a>
 			<a href="#" class="facebook social" target="_blank">facebook</a>

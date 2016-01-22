@@ -138,6 +138,9 @@
 		<em>Industry</em>: Public Sector<br/>
 		<em>Team</em>: David Jalber-Gagnier, Elliot Arthur, Kirk Pettinga, Andrew Mowe
 	</p>
+
+	<p class="h2 future-A"><a href="http://www.oaklandca.gov/" class="cta-link" target="_blank">oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+	<p class="h2 future-A hug"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 </section>
 
 <?php os_get_case_study(); ?>
