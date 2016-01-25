@@ -1592,30 +1592,16 @@ body::before {
     right: 0;
     height: 100vh;
     opacity: 0;
+    z-index: 0;
   }
-}
-.office-map:after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 52px;
-  top: 50%;
-  left: 50%;
-  margin-top: -52px;
-  margin-left: -20px;
-  background-size: 40px 52px;
 }
 [data-show-map="brooklyn"] .office-map.brooklyn-map {
   opacity: 1;
-}
-.office-map.brooklyn-map:after {
-  background-image: url(images/pin-red@2x.png);
+  z-index: 1;
 }
 [data-show-map="oakland"] .office-map.oakland-map {
   opacity: 1;
-}
-.office-map.oakland-map:after {
-  background-image: url(images/pin-blue@2x.png);
+  z-index: 1;
 }
 .fixed .office-map {
   position: fixed;

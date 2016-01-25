@@ -233,53 +233,18 @@
 		var brooklynMap = new mapboxgl.Map({
 		    container: 'brooklyn-map', // container id
 		    style: 'mapbox://styles/objectivesubject/cijdnlkv400hpavm3hkpvu33m', //stylesheet location
-		    // center: [-74.50, 40], // starting position
-		    // zoom: 9 // starting zoom
-		    scrollWheelZoom: false
+		    center: [-73.987472, 40.700862],
+		    zoom: 12.5,
+		    minZoom: 12.5,
 		});
+
 		var oaklandMap = new mapboxgl.Map({
 		    container: 'oakland-map', // container id
 		    style: 'mapbox://styles/objectivesubject/cijdoxa6000f81mm2bsxybv8w', //stylesheet location
-		    // center: [-74.50, 40], // starting position
-		    // zoom: 9 // starting zoom
-		    scrollWheelZoom: false
+		    center: [-122.2658341, 37.8133177],
+		    zoom: 12.5,
+		    minZoom: 12.5,
 		});
-
-		// brooklynMap.on('style.load', function () {
-		//     brooklynMap.addSource("markers", {
-		//         "type": "geojson",
-		//         "data": {
-		//             "type": "FeatureCollection",
-		//             "features": [{
-		//                 "type": "Feature",
-		//                 "geometry": {
-		//                     "type": "Point",
-		//                     "coordinates": [-73.987561, 40.700834]
-		//                 },
-		//                 "properties": {
-		//                     "title": "OS Brooklyn",
-		//                     "marker-symbol": "monument"
-		//                 }
-		//             }]
-		//         }
-		//     });
-
-		//     brooklynMap.addLayer({
-		//         "id": "markers",
-		//         "type": "symbol",
-		//         "source": "markers",
-		//         "layout": {
-		//             "icon-image": "{marker-symbol}-15",
-		//             "text-field": "{title}",
-		//             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-		//             "text-offset": [0, 0.6],
-		//             "text-anchor": "top"
-		//         },
-		//         "paint": {
-		//             "text-size": 12
-		//         }
-		//     });
-		// });
 
 		initSizes();
 		
