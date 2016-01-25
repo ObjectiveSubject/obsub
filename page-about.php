@@ -15,28 +15,28 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="page-section bios">
+		<section class="page-section bios outer-container">
 
-			<div class="outer-container">
+			<div class="inner-container">
 				<h2 class="future-A section-title">team</h2>
 			</div>
+
+			<div class="clearfix"></div>
 			
-			<div class="outer-container">
-				<?php $args = array( 'post_type' => 'bio', 'posts_per_page' => 100, 'order' => 'ASC' );
-				$bios = get_posts($args);
-				$count = 0;
-				foreach ( $bios as $bio ) : $count++; ?>
+			<?php $args = array( 'post_type' => 'bio', 'posts_per_page' => 100, 'order' => 'ASC' );
+			$bios = get_posts($args);
+			$count = 0;
+			foreach ( $bios as $bio ) : $count++; ?>
 
-					<article class="tile bio push-triple layout-image-<?php echo ($count % 2 == 0) ? 'right' : 'left'; ?>">
-						<?php echo get_the_post_thumbnail( $bio->ID, 'full', array('class' => 'tile-image bio-image') ); ?>
-						<div class="tile-content bio-content">
-							<h3 class="h2 future-A push tile-title bio-title"><?php echo get_the_title( $bio->ID ); ?><br/><?php echo $bio->post_excerpt; ?></h3>
-							<?php echo apply_filters('the_content', $bio->post_content); ?>
-						</div>
-					</article>
+				<article class="tile bio push-triple layout-image-<?php echo ($count % 2 == 0) ? 'right' : 'left'; ?>">
+					<?php echo get_the_post_thumbnail( $bio->ID, 'full', array('class' => 'tile-image bio-image') ); ?>
+					<div class="tile-content bio-content">
+						<h3 class="h2 future-A push tile-title bio-title"><?php echo get_the_title( $bio->ID ); ?><br/><?php echo $bio->post_excerpt; ?></h3>
+						<?php echo apply_filters('the_content', $bio->post_content); ?>
+					</div>
+				</article>
 
-				<?php endforeach; ?>
-			</div>
+			<?php endforeach; ?>
 
 		</section>
 
@@ -55,8 +55,9 @@ get_header(); ?>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
-			<img src="<?php echo os_path('process-snapshot.jpg', 'about'); ?>" class="process-snapshot" />
 		</section>
+
+		<div class="process-snapshot"><img src="<?php echo os_path('process-snapshot.jpg', 'about'); ?>" /></div>
 
 		<section class="page-section alumni outer-container">
 			<div class="alumni-content">

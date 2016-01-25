@@ -1,4 +1,6 @@
 .former-clients {
-	margin-top: 20vh;
-	// background: $light_gray;
+	margin-top: 7vh;
+	@include media($screen-md) {
+		margin-top: 20vh;	
+	}
 }

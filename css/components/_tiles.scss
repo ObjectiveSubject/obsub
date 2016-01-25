@@ -1,15 +1,23 @@
 .tile {
 	@include clearfix;
-
-	
-	p {
-		margin-top: $leading;
+	@include media($screen-md) {
+		float: left;
 	}
+
 	.tile-image {
 		display: block
 	}
 
 	.tile-title {
+		@include media($screen-md) {
+			margin-top: 0;
+		}
+	}
+
+	.tile-content {
+		&.bio-content {
+			p { margin-top: $leading; }
+		}
 		@include media($screen-md) {
 			margin-top: 0;
 		}
@@ -23,9 +31,6 @@
 		}
 		.tile-content {
 			@include media($screen-md) {
-				@include span-columns(5);
-			}
-			@include media($screen-lg) {
 				@include span-columns(4);
 			}
 		}
@@ -40,12 +45,21 @@
 		}
 		.tile-content {
 			@include media($screen-md) {
-				@include span-columns(5);
-				@include shift(1);
-			}
-			@include media($screen-lg) {
 				@include span-columns(4);
+				@include shift(2);
 			}
+		}
+	}
+	&.layout-half.left {
+		@include media($screen-md) {
+			@include span-columns(4);
+			@include shift(2);
+		}
+	}
+	&.layout-half.right {
+		@include media($screen-md) {
+			@include span-columns(4);
+			@include omega();
 		}
 	}
 }

@@ -63,9 +63,10 @@
 </section>
 
 <section id="solution" class="page-section contain-content" style="background-color: #D5EFFF; padding-bottom: 100px">	
-	<figure class="alignnone hug">	
-		[image]
-		<!-- <img src="<?php //echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978"> -->
+	<figure class="aligncenter hug">
+		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
+			<img src="<?php echo os_path('results.png', 'bps') ?>" width="843" height="317">
+		</div>
 		<figcaption>Comprehensive Icon system for filtration of schools</figcaption>
 	</figure>
 	<h2 class="future-A">solution</h2>

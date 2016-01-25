@@ -49,20 +49,6 @@
 
 // Layout
 // ======================================= /
-.outer-container {
-	@include outer-container;
-	padding: 0 $size_container_padding;
-	&.bleed {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-.inner-container {
-	max-width: $content-max-width;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .alignleft {
 	display: inline;
 	float: left;

@@ -18,6 +18,7 @@
 	position: relative;
 	width: 96px;
 	height: 42px;
+	margin-top: 3px;
 	@include media($screen-md) {
 		width: 128px;
 		height: 56px;
@@ -60,7 +61,7 @@
 
 .menu-toggle {
 	position: absolute;
-    top: 2px;
+    top: 10px;
 	width: 18px;
 	height: 18px;
 

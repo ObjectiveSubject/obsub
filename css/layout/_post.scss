@@ -77,6 +77,7 @@
 	blockquote {
 		padding: ($leading * 2) 0;
 		margin: ($leading * 2) 0 0;
+		&[data-parallax-node] { margin-top: 0; }
 		.city-of-oakland & {
 			background: #003265;
 			color: #376FFF;

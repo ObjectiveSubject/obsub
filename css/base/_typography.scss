@@ -49,13 +49,13 @@ h1, .h1 {
 	}
 	@include media($screen-lg) {
 		font-size: rem(61);
-		font-size: 5.65vw;
+		font-size: 5.5vw;
 		line-height: rem(61);
-		line-height: 5.65vw;
+		line-height: 5.5vw;
 	}
 	@include media($screen-xl) {
-		font-size: rem(68);
-		line-height: rem(68);
+		font-size: rem(66);
+		line-height: rem(66);
 	}
 }
 h2, .h2 {
