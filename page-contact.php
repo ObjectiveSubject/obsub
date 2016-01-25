@@ -10,16 +10,17 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<section class="page-header page-section full-height">
-			<div class="inner-container">
-				<h1 class="page-title">We’re based in Brooklyn, NY and Oakland, CA.</h1>
-				<h2 class="future-A page-subtitle">
+			<div class="outer-container">
+				<h1 class="page-title inner-container">We’re based in Brooklyn, NY and Oakland, CA.</h1>
+				<h2 class="future-A page-subtitle inner-container">
 					718.801.8075<br/>
 					<a href="mailto:info@objectivesubject.com" class="text-color-link">info@objectivesubject.com</a>
 				</h2>
 			</div>
+			<a href="#office-locations" class="chevron scroll-down smooth-scroll"><span class="hide">Office Locations</span></a>
 		</section>
 
-		<section class="page-section office-locations clearfix" data-show-map="brooklyn">
+		<section id="office-locations" class="page-section office-locations clearfix" data-show-map="brooklyn">
 			<div class="office-location brooklyn clearfix">
 				<div class="office-address">
 					<address class="h2 hug future-A">

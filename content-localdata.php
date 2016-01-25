@@ -5,15 +5,17 @@
 ?>
 
 <section class="page-header page-section full-height" style="background-image:url( <?php echo $featured_image_url; ?> )">
-	<h1 class="page-title"><?php echo get_the_excerpt(); ?></h1>
-	<p class="page-subtitle h3"><em>Visual identity</em> and <em>user interface</em> design for LocalData</p>
-	<nav class="page-nav push-double">
-		<ul class="list-unstyled">
-			<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
-			<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
-			<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
-		</ul>
-	</nav>
+	<div class="outer-container">
+		<h1 class="page-title inner-container"><?php echo get_the_excerpt(); ?></h1>
+		<p class="page-subtitle h3 inner-container"><em>Visual identity</em> and <em>user interface</em> design for LocalData</p>
+		<nav class="page-nav push-double inner-container">
+			<ul class="list-unstyled">
+				<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
+				<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
+				<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
+			</ul>
+		</nav>
+	</div>
 </section>
 
 <section id="opportunity" class="page-section contain-content">

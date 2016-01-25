@@ -9,13 +9,16 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<section class="page-header page-section full-height outer-container">
-			<div class="inner-container">
-				<?php the_content(); ?>
+		<section class="page-header page-section full-height">
+			<div class="outer-container">
+				<div class="inner-container">
+					<?php the_content(); ?>
+				</div>
 			</div>
+			<a href="#bios" class="chevron scroll-down smooth-scroll"><span class="hide">Bios</span></a>
 		</section>
 
-		<section class="page-section bios outer-container">
+		<section id="bios" class="page-section bios outer-container">
 
 			<div class="inner-container">
 				<h2 class="future-A section-title">team</h2>
