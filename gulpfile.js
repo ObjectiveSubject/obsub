@@ -1,5 +1,5 @@
 var gulp 		 = require('gulp'),
-	autoprefixer = require('gulp-autoprefixer'),
+	// autoprefixer = require('gulp-autoprefixer'),
 	cache 		 = require('gulp-cache'),
 	concat 		 = require('gulp-concat'),
 	jshint 		 = require('gulp-jshint'),
@@ -13,7 +13,7 @@ var gulp 		 = require('gulp'),
 // Styles
 gulp.task('styles', function() {
 	return sass('css/style.scss', { style: 'expanded' })
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		// .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('./'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
@@ -24,7 +24,7 @@ gulp.task('styles', function() {
 // Admin Login Styles
 gulp.task('admin-styles', function() {
 	return sass('admin/**/*.scss', { style: 'expanded' })
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		// .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(minifycss())
 		.pipe(gulp.dest('admin'))
 		.pipe(notify({ message: 'Admin Styles task complete' }));
