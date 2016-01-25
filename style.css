@@ -1558,7 +1558,7 @@ body::before {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .os-cssvhunit .office-location {
+  .os-webgl .office-location {
     border-top: 0;
     height: 100vh;
   }
@@ -1590,7 +1590,7 @@ body::before {
     float: right;
     margin-top: 0;
   }
-  .os-cssvhunit .office-map {
+  .os-webgl .office-map {
     position: absolute;
     top: 0;
     right: 0;

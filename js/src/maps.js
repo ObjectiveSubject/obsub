@@ -11,7 +11,7 @@
 		toggleMapY,
 		unFixedY;
 
-	if ( $('.office-map').length > 0 && Modernizr.cssvhunit ) {
+	if ( $('.office-map').length > 0 && Modernizr.webgl ) {
 
 		$offices = $('.office-locations');
 		mapboxgl.accessToken = 'pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA';
