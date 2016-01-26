@@ -57,11 +57,63 @@ get_header(); ?>
 		<section class="page-section outer-container push-triple">
 			<div class="inner-container">
 				<p>If you are curious to hear more about our work and process, interested in hiring us for your project, or simply want to ask about job availability, please do not hesitate to contact us.</p>
-				<p class="h2 future-A"><a href="#talk-to-us" class="text-color-link">talk to us</a></p>
-				<p class="h2 hug future-A"><a href="#hire-us" class="text-color-link">hire us</a></p>
-				<p class="h2 hug future-A"><a href="#join-us" class="text-color-link">join us</a></p>
 			</div>
 		</section>
+
+		<div class="contact-form-container">
+			<form action="/contact.php" method="post" accept-charset="utf-8" class="contact-form outer-container">
+				
+				<div class="inner-container future-A">
+					<div class="subject-select h2">
+						<a href="#form-fields" class="gateway" data-value="talk to us">talk to us</a><br/>
+						<a href="#form-fields" class="gateway" data-value="hire us">hire us</a><br/>
+						<a href="#form-fields" class="gateway" data-value="join us">join us</a>
+					</div>
+					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="talk to us" /></span>
+					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="hire us" /></span>
+					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="join us" /></span>
+				</div>
+
+				<div id="form-fields" class="form-fields inner-container">
+
+					<p>Tell us a little bit about yourself...</p>
+
+					<div class="input-row future-A push">
+						<label class="row-node inline-label h2">my name is </label>
+						<span class="row-node inline-input h2"><input type="text" id="contact_name" name="contact_name" value="" placeholder="luke skywalker" required></span>
+					</div>
+
+					<div class="input-row future-A">
+						<label class="row-node inline-label h2 hug">I work for </label>
+						<span class="row-node inline-input h2"><input type="text" id="contact_company" name="contact_company" value="" placeholder="the rebels"></span>
+					</div>
+
+					<div class="input-row future-A">
+						<label class="row-node inline-label h2 hug">my email address is </label>
+						<span class="row-node inline-input h2"><input type="text" id="contact_email" name="contact_email" value="" placeholder="luke@rebelbase.org" required></span>
+					</div>
+
+					<div class="input-row future-A push">
+						<label class="row-node h2 hug">my message is:</label>
+						<span class="row-node h2"><textarea id="contact_message" name="contact_message" value="" placeholder="write your message here..." required></textarea></span>
+						<input type="submit" id="contact_submit" class="h2 future-A push" name="contact_submit" value="send message" />
+					</div>
+
+					<input type="hidden" name="name" value="">
+					<input type="hidden" name="email" value="">
+					<input type="hidden" name="message" value="">
+
+					<nav class="form-nav push">
+						<a href="#contact_name" class=""><span class="hide">Name</span></a>
+						<a href="#contact_company" class=""><span class="hide">Company</span></a>
+						<a href="#contact_email" class=""><span class="hide">Email</span></a>
+						<a href="#contact_message" class=""><span class="hide">Message</span></a>
+					</nav>
+
+				</div>
+
+			</form>
+		</div>
 
 	<?php endwhile; // end of the loop. ?>
 		

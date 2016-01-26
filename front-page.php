@@ -64,25 +64,29 @@ get_header(); ?>
 		<h2 class="future-A push-triple inner-container">media</h2>
 		<ul class="client-list list-unstyled clearfix hug">
 			<li class="tile push-triple layout-image-right">
-				<img src="http://placehold.it/495x330" class="tile-image" width="495" height="330" style="display: block;">
+				<img src="<?php echo os_path('times-journeys.png', 'home'); ?>" class="tile-image" width="495" height="330" style="display: block;">
 				<div class="tile-content push">
-					<p class="hug"><strong>The New York Times</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-nytimes.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-image-left">
-				<img src="http://placehold.it/495x330" class="tile-image" width="495" height="330" style="display: block;">
+				<img src="<?php echo os_path('ap.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
 				<div class="tile-content push">
-					<p class="hug"><strong>Associate Press</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-ap.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-half left">
 				<div class="tile-content push">
-					<p class="hug"><strong>Foreign Affairs</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-fa.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-half right">
 				<div class="tile-content push">
-					<p class="hug"><strong>Council on Foreign Relations</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-cfr.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 		</ul>
@@ -90,25 +94,29 @@ get_header(); ?>
 		<h2 class="future-A push-triple inner-container">arts</h2>
 		<ul class="client-list list-unstyled clearfix hug">
 			<li class="tile push-triple layout-image-right">
-				<img src="http://placehold.it/495x330" class="tile-image" width="495" height="330" style="display: block;">
+				<img src="<?php echo os_path('bam.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
 				<div class="tile-content push">
-					<p class="hug"><strong>BAM</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-bam.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-half left">
 				<div class="tile-content push">
-					<p class="hug"><strong>Orpheus Chamber Orchestra</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-orpheus.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-half right">
 				<div class="tile-content push">
-					<p class="hug"><strong>National Board of Review</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-nbr.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-image-left">
-				<img src="http://placehold.it/495x330" class="tile-image" width="495" height="330" style="display: block;">
+				<img src="<?php echo os_path('gibney.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
 				<div class="tile-content push">
-					<p class="hug"><strong>Gibney Dance</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-gibney.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 		</ul>
@@ -117,12 +125,14 @@ get_header(); ?>
 		<ul class="client-list list-unstyled clearfix hug">
 			<li class="tile push-triple layout-half left">
 				<div class="tile-content push">
-					<p class="hug"><strong>guittard</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-guittard.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 			<li class="tile push-triple layout-half right">
 				<div class="tile-content push">
-					<p class="hug"><strong>carr mcclellan</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<div><img src="<?php echo os_path('logo-carrmcclellan.png', 'home'); ?>" /></div>
+					<p class="push">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				</div>
 			</li>
 		</ul>

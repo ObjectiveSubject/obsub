@@ -103,11 +103,11 @@ p {
 	line-height: $leading;
 	margin-top: $leading * 2;
 	margin-bottom: 0;
-	font-size: rem(18);
-	line-height: rem(27);
+	font-size: rem(16);
+	line-height: rem(24);
 	@include media($screen-lg) {
-		font-size: rem(22);
-		line-height: rem(30);
+		font-size: rem(18);
+		line-height: rem(27);
 	}
 	&.colophon {
 		font-size: rem(16);

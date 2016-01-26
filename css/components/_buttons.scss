@@ -1,6 +1,28 @@
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
 	@include button();
+}
+
+input[type="submit"] {
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	color: $color_text_main;
+	opacity: 0.3;
+	line-height: 1em;
+	padding: 0;
+	text-shadow: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: all 300ms ease;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }

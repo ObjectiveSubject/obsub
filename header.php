@@ -36,9 +36,10 @@
 				<ul class="main-menu list-unstyled">
 					<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
 					foreach ( $case_studies as $study ) : ?>
-					<li class="menu-item h2 hug <?php echo 'cs-' . $study->post_name; ?>">
-						<a href="<?php echo get_the_permalink( $study->ID ); ?>"><?php echo get_the_title($study->ID); ?></a>
-					</li>
+						<li class="menu-item h2 hug <?php echo 'cs-' . $study->post_name; ?>">
+							<a href="<?php echo get_the_permalink( $study->ID ); ?>"><?php echo get_the_title($study->ID); ?></a>
+							<?php echo get_the_post_thumbnail( $study->ID, 'thumbnail' ); ?>
+						</li>
 					<?php endforeach; ?>
 					<li class="menu-item h2 hug">
 						<a href="<?php echo site_url('/about'); ?>">about</a>
