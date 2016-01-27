@@ -38,40 +38,40 @@
  * Case Studies
  */
 
-(function( $, window, undefined ){
+// (function( $, window, undefined ){
 
-	var $sections = $('.page-section'),
-		$window = $(window),
-		defaultColor = '#F0F0EE';
-		mediaSize = OS.getMediaSize();
+// 	var $sections = $('.page-section'),
+// 		$window = $(window),
+// 		defaultColor = '#F0F0EE';
+// 		mediaSize = OS.getMediaSize();
 
-	if ( mediaSize == "medium" && $('[data-color]').length > 0 ) {
+// 	if ( mediaSize == "medium" && $('[data-color]').length > 0 ) {
 
-		$sections.each(function(){
-			var $section = $(this),
-				sectionColor = $section.data('color') || defaultColor,
-				$nextSection = $section.next('.page-section'),
-				nextSectionColor = $nextSection.data('color') || defaultColor,
-				animation_begin_pos = $section.offset().top, //where you want the animation to begin
-				animation_end_pos = $section.offset().top + $section.outerHeight(), //where you want the animation to stop
-				beginning_color = new $.Color( sectionColor ), //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
-				ending_color = ( $nextSection.length ) ? new $.Color( nextSectionColor ) : new $.Color( defaultColor ); //what color we want to use in the end
-			$window.on("scroll", function(){
-				var scrollTop = $window.scrollTop();
-				if ( scrollTop >= animation_begin_pos && scrollTop < animation_end_pos ) {
-					var percentScrolled = (scrollTop - animation_begin_pos) / ( animation_end_pos - animation_begin_pos ),
-						newRed   = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled ),
-						newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled ),
-						newBlue  = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled ),
-		            	newColor = new $.Color( newRed, newGreen, newBlue );
-		            $('body').css({ backgroundColor: newColor });
-				}
-			});
-		});
+// 		$sections.each(function(){
+// 			var $section = $(this),
+// 				sectionColor = $section.data('color') || defaultColor,
+// 				$nextSection = $section.next('.page-section'),
+// 				nextSectionColor = $nextSection.data('color') || defaultColor,
+// 				animation_begin_pos = $section.offset().top, //where you want the animation to begin
+// 				animation_end_pos = $section.offset().top + $section.outerHeight(), //where you want the animation to stop
+// 				beginning_color = new $.Color( sectionColor ), //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
+// 				ending_color = ( $nextSection.length ) ? new $.Color( nextSectionColor ) : new $.Color( defaultColor ); //what color we want to use in the end
+// 			$window.on("scroll", function(){
+// 				var scrollTop = $window.scrollTop();
+// 				if ( scrollTop >= animation_begin_pos && scrollTop < animation_end_pos ) {
+// 					var percentScrolled = (scrollTop - animation_begin_pos) / ( animation_end_pos - animation_begin_pos ),
+// 						newRed   = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled ),
+// 						newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled ),
+// 						newBlue  = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled ),
+// 		            	newColor = new $.Color( newRed, newGreen, newBlue );
+// 		            $('body').css({ backgroundColor: newColor });
+// 				}
+// 			});
+// 		});
 
-	}
+// 	}
 
-})(jQuery, window);
+// })(jQuery, window);
 /* 
  * contact form
  */
@@ -175,39 +175,54 @@
 
 (function( $, window, undefined ){
 
-	var $window = $(window),
-		$masthead = $('#masthead'),
-		$pageHeader = $('.single-case_study .page-header'),
+	var $body = $('body'),
+		$caseStudyHeader = $('.single-case_study .page-header'),
 		offset,
-		headerBottom;
+		headerBottom,
+		caseStudiesTop, clientsTop;
 
 	init();
-	$window
+	OS.window
 		.on("resize", init)
 		.on("scroll", onScroll);
 
 	function init() {
-		if ( OS.getMediaSize() == "medium" ) {
+		if ( OS.getMediaSize() == "xlarge" ) {
 			offset = 100;
+		} else if ( OS.getMediaSize() == "medium" ) {
+			offset = 60;
 		} else {
 			offset = 30;
 		}
-		if ( $pageHeader.length > 0 ) {
-			headerBottom = $pageHeader.offset().top + $pageHeader.outerHeight() - offset;
-			if ( $window.scrollTop() < headerBottom ) {
-				$masthead.addClass("light-theme");
+		if ( OS.isCaseStudy() ) {
+			headerBottom = $caseStudyHeader.outerHeight() - offset;
+			if ( OS.window.scrollTop() < headerBottom ) {
+				$body.addClass("ui-light-theme");
 			}
+		}
+		if ( OS.isHome() ) {
+			caseStudiesTop = $('.home .case-study-preview').first().offset().top;
+			clientsTop = $('.former-clients').offset().top;
 		}
 	}
 
 	function onScroll() {
-		var scrollTop = $window.scrollTop();
+		var scrollTop = OS.window.scrollTop();
 		
-		if ( $pageHeader.length > 0 ) {
+		// Set light theme if on top of case study header
+		if ( OS.isCaseStudy() ) {
 			if ( scrollTop >= headerBottom ) {
-				$masthead.removeClass("light-theme");
+				$body.removeClass("ui-light-theme");
 			} else {
-				$masthead.addClass("light-theme");
+				$body.addClass("ui-light-theme");
+			}
+		}
+
+		if ( OS.isHome() ){
+			if ( scrollTop >= (caseStudiesTop - offset) && scrollTop < (clientsTop - offset) ) {
+				$body.addClass("ui-light-theme");
+			} else {
+				$body.removeClass("ui-light-theme");
 			}
 		}
 	}
@@ -219,44 +234,50 @@
 
 (function( $, window, undefined ){
 
-	$(document).ready(function(){
+	$('.home-intro, .home .case-study-preview').each(function(){
+		var $preview = $(this),
+			$container = $preview.find('.section-container'),
+			$scrim = $preview.find('.scrim'),
+			$content = $preview.find('.section-content'),
+			scrimOpacity = 0.3,
+			previewTop,
+			winHeight,
+			mediaSize;
 
-		var $window = $(window),
-			windowHeight = $window.height();
+		init();
+		OS.window.on("resize", init);
+		OS.window.on('scroll', onScroll);	
+	
+		function init() {
+			mediaSize = OS.getMediaSize();
+			winHeight = OS.window.height();
+			previewTop = $preview.offset().top;
+		}
 
-		$('.case-study-preview').each(function(){
-			var $preview = $(this),
-				$image = $preview.find('.section-image'),
-				$sectionContent = $preview.find('.section-content'),
-				mediaSize, outerHeight, offsetTop, offsetBottom, contentHeight;
+		function onScroll() {
+			var scrollTop = OS.window.scrollTop(),
+				distance = scrollTop - previewTop;
 
-			if ( $('body.home').length > 0 ){
-				init();
-				$window.on("resize", init);
-				$window.on('scroll', onScroll);	
-			}		
+			if ( distance >= 0 ) {
+				$container.velocity({
+					translateY: (distance * 0.3) + 'px'
+				}, 0);
+				
+				// $scrim.velocity({
+				// 	opacity: (distance * 0.00075) + scrimOpacity
+				// }, 0);
 
-			function init() {
-				mediaSize = OS.getMediaSize();
-				outerHeight = $preview.outerHeight();
-				offsetTop = $preview.offset().top - (outerHeight * 0.25);
-				offsetBottom = $preview.offset().top + ( outerHeight * 0.5 );
-				contentHeight = $sectionContent.outerHeight();
+				// $content.velocity({
+				// 	opacity: 1 - (distance * 0.002)
+				// }, 0);
 			}
 
-			function onScroll() {
-				var scrollTop = $window.scrollTop();
-
-				if ( mediaSize == "medium" ) {
-					if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
-						$preview.addClass('active');
-					} else {
-						$preview.removeClass('active');
-					}
-				}
-			}
-		});
-
+			// if ( scrollTop >= previewTop - (winHeight * 0.25) ) {
+			// 	$preview.addClass("active");
+			// } else {
+			// 	$preview.removeClass("active");
+			// }
+		}
 	});
 
 })(jQuery, window);
@@ -297,7 +318,7 @@
 			if ( scrollTop >= offsetTop && scrollTop < (offsetTop + winHeight) ) {
 				if ( $nextSection.length === 0 ) {
 					$('.scroll-down')
-						.attr('href', '#home-intro' )
+						.attr('href', '#page' )
 						.addClass("reverse");
 				} else {
 					$('.scroll-down')
@@ -456,7 +477,7 @@
 				var scrollTop = $window.scrollTop(),
 					offset = scrollTop - threshold;
 
-				if ( OS.getMediaSize() == "medium" ) {
+				if ( OS.getMediaSize() !== "default", OS.getMediaSize() !== "small" ) {
 					
 					if ( scrollTop >= threshold ) {
 						$node.css({

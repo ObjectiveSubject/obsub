@@ -57,7 +57,7 @@
 			background-position: 0 -56px;
 		}
 	}
-	.light-theme &,
+	.ui-light-theme &,
 	.main-menu-active & {
 		&.dark { display: none; }
 		&.light { display: block; }
@@ -92,7 +92,7 @@
 		height: 3px;
 		background: $color_text_main;
 		transition: all 300ms ease;
-		.light-theme & {
+		.ui-light-theme & {
 			background: white;
 		}
 	}
@@ -139,13 +139,13 @@
 		background: $color_text_main;
 		transition: all 300ms ease;
 
-		.light-theme & {
+		.ui-light-theme & {
 			background: white;
 		}
 	}
 	&:hover {
 		.center-line {
-			.light-theme & {
+			.ui-light-theme & {
 				background: tint($color_text_main, 30%);
 			}
 		}

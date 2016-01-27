@@ -15,4 +15,9 @@ body {
 			content: "medium";
 		}	
 	}
+	@include media($screen-xl) {
+		&::before {
+			content: "xlarge";
+		}	
+	}
 }

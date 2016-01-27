@@ -4,39 +4,54 @@
 
 (function( $, window, undefined ){
 
-	var $window = $(window),
-		$masthead = $('#masthead'),
-		$pageHeader = $('.single-case_study .page-header'),
+	var $body = $('body'),
+		$caseStudyHeader = $('.single-case_study .page-header'),
 		offset,
-		headerBottom;
+		headerBottom,
+		caseStudiesTop, clientsTop;
 
 	init();
-	$window
+	OS.window
 		.on("resize", init)
 		.on("scroll", onScroll);
 
 	function init() {
-		if ( OS.getMediaSize() == "medium" ) {
+		if ( OS.getMediaSize() == "xlarge" ) {
 			offset = 100;
+		} else if ( OS.getMediaSize() == "medium" ) {
+			offset = 60;
 		} else {
 			offset = 30;
 		}
-		if ( $pageHeader.length > 0 ) {
-			headerBottom = $pageHeader.offset().top + $pageHeader.outerHeight() - offset;
-			if ( $window.scrollTop() < headerBottom ) {
-				$masthead.addClass("light-theme");
+		if ( OS.isCaseStudy() ) {
+			headerBottom = $caseStudyHeader.outerHeight() - offset;
+			if ( OS.window.scrollTop() < headerBottom ) {
+				$body.addClass("ui-light-theme");
 			}
+		}
+		if ( OS.isHome() ) {
+			caseStudiesTop = $('.home .case-study-preview').first().offset().top;
+			clientsTop = $('.former-clients').offset().top;
 		}
 	}
 
 	function onScroll() {
-		var scrollTop = $window.scrollTop();
+		var scrollTop = OS.window.scrollTop();
 		
-		if ( $pageHeader.length > 0 ) {
+		// Set light theme if on top of case study header
+		if ( OS.isCaseStudy() ) {
 			if ( scrollTop >= headerBottom ) {
-				$masthead.removeClass("light-theme");
+				$body.removeClass("ui-light-theme");
 			} else {
-				$masthead.addClass("light-theme");
+				$body.addClass("ui-light-theme");
+			}
+		}
+
+		if ( OS.isHome() ){
+			if ( scrollTop >= (caseStudiesTop - offset) && scrollTop < (clientsTop - offset) ) {
+				$body.addClass("ui-light-theme");
+			} else {
+				$body.removeClass("ui-light-theme");
 			}
 		}
 	}

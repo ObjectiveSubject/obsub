@@ -960,6 +960,11 @@ body::before {
     content: "medium";
   }
 }
+@media screen and (min-width: 1200px) {
+  body::before {
+    content: "xlarge";
+  }
+}
 
 #masthead {
   width: 100%;
@@ -1033,10 +1038,10 @@ body::before {
     background-position: 0 -56px;
   }
 }
-.light-theme .wordmark.dark, .main-menu-active .wordmark.dark {
+.ui-light-theme .wordmark.dark, .main-menu-active .wordmark.dark {
   display: none;
 }
-.light-theme .wordmark.light, .main-menu-active .wordmark.light {
+.ui-light-theme .wordmark.light, .main-menu-active .wordmark.light {
   display: block;
 }
 @media screen and (min-width: 768px) {
@@ -1075,7 +1080,7 @@ body::before {
   background: #222222;
   transition: all 300ms ease;
 }
-.light-theme .menu-toggle .top-line, .light-theme .menu-toggle .bottom-line {
+.ui-light-theme .menu-toggle .top-line, .ui-light-theme .menu-toggle .bottom-line {
   background: white;
 }
 .menu-toggle .top-line {
@@ -1122,10 +1127,10 @@ body::before {
   background: #222222;
   transition: all 300ms ease;
 }
-.light-theme .menu-toggle .center-line {
+.ui-light-theme .menu-toggle .center-line {
   background: white;
 }
-.light-theme .menu-toggle:hover .center-line {
+.ui-light-theme .menu-toggle:hover .center-line {
   background: #646464;
 }
 
@@ -1306,18 +1311,21 @@ body::before {
   opacity: 1;
 }
 .scroll-down:before, .scroll-down:after {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  width: 1rem;
+  height: 0.5rem;
+  background-color: #222222;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+.ui-light-theme .scroll-down:before, .ui-light-theme .scroll-down:after {
+  background-color: white;
+}
 .scroll-down:before {
-  content: "";
-  position: absolute;
-  top: 0.25rem;
   left: 0;
-  width: 1rem;
-  height: 0.5rem;
-  background-color: #222222;
   -webkit-transform: skewY(30deg);
   -moz-transform: skewY(30deg);
   -ms-transform: skewY(30deg);
@@ -1325,13 +1333,7 @@ body::before {
   transform: skewY(30deg);
 }
 .scroll-down:after {
-  content: "";
-  position: absolute;
-  top: 0.25rem;
   left: 50%;
-  width: 1rem;
-  height: 0.5rem;
-  background-color: #222222;
   -webkit-transform: skewY(-30deg);
   -moz-transform: skewY(-30deg);
   -ms-transform: skewY(-30deg);
@@ -1344,6 +1346,7 @@ body::before {
   padding: 100px 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .page-header {
@@ -1394,19 +1397,6 @@ body::before {
 @media screen and (min-width: 768px) {
   .page-section.full-height {
     height: 100vh;
-  }
-}
-.page-section.contain-content > h1, .page-section.contain-content > h2, .page-section.contain-content > h3, .page-section.contain-content > h4, .page-section.contain-content > h5, .page-section.contain-content > h6, .page-section.contain-content > p, .page-section.contain-content > ol, .page-section.contain-content > ul {
-  max-width: 42.624rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  box-sizing: content-box;
-}
-@media screen and (min-width: 500px) {
-  .page-section.contain-content > h1, .page-section.contain-content > h2, .page-section.contain-content > h3, .page-section.contain-content > h4, .page-section.contain-content > h5, .page-section.contain-content > h6, .page-section.contain-content > p, .page-section.contain-content > ol, .page-section.contain-content > ul {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 .page-section blockquote {
@@ -1462,6 +1452,7 @@ body::before {
 
 .former-clients {
   margin-top: 7vh;
+  background-color: #F0F0EE;
 }
 @media screen and (min-width: 768px) {
   .former-clients {
@@ -2115,21 +2106,16 @@ figcaption {
   font-size: 1rem;
   max-width: 42.624rem;
   margin: 0.75rem auto 0;
-  padding: 0 15px;
   box-sizing: content-box;
   text-align: center;
 }
 .os-slideshow figcaption {
   opacity: 0;
   transition: opacity 500ms ease;
+  text-align: center;
 }
 .os-slideshow .slick-active figcaption {
   opacity: 1;
-}
-@media screen and (min-width: 500px) {
-  figcaption {
-    padding: 0 30px;
-  }
 }
 @media screen and (min-width: 960px) {
   figcaption {
@@ -2516,10 +2502,15 @@ figcaption {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .home .case-study-preview {
-    background-color: transparent !important;
-  }
+.case-study-preview {
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .case-study-preview a {
   display: block;
@@ -2537,12 +2528,11 @@ figcaption {
 }
 
 .section-image-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .section-image {
@@ -2551,21 +2541,20 @@ figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 750ms ease;
+  -moz-transition: all 750ms ease;
   transition: all 750ms ease;
-  /* Force Hardware Acceleration */
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
   backface-visibility: hidden;
 }
-.active .section-image {
-  transform: scale(1);
-  opacity: 0.3;
-}
-.section-image:before {
-  content: "";
+.section-image .scrim {
   position: absolute;
   top: 0;
   left: 0;
@@ -2578,10 +2567,21 @@ figcaption {
 .section-content {
   position: relative;
   z-index: 2;
-  padding: 20% 0;
+  padding: 100px 0;
 }
 @media screen and (min-width: 768px) {
   .section-content {
+    padding: 170px 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .section-content {
+    padding: 220px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-intro .section-content {
+    padding: 0;
     position: absolute;
     top: 50%;
     width: 100%;
@@ -2589,34 +2589,8 @@ figcaption {
     transform: translateY(-50%);
   }
 }
-.home-intro .section-content {
-  padding-top: 130px;
-}
-@media screen and (min-width: 768px) {
-  .home-intro .section-content {
-    padding: 0;
-  }
-}
 .case-study-preview .section-content {
   color: white;
-}
-
-.case-study-title a:hover {
-  opacity: 0.7;
-}
-
-.case-study-subtitle {
-  transition: all 300ms ease 300ms;
-}
-@media screen and (min-width: 768px) {
-  .case-study-subtitle {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  .active .case-study-subtitle {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .get-in-touch {

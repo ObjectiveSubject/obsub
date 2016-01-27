@@ -4,44 +4,50 @@
 
 (function( $, window, undefined ){
 
-	$(document).ready(function(){
+	$('.home-intro, .home .case-study-preview').each(function(){
+		var $preview = $(this),
+			$container = $preview.find('.section-container'),
+			$scrim = $preview.find('.scrim'),
+			$content = $preview.find('.section-content'),
+			scrimOpacity = 0.3,
+			previewTop,
+			winHeight,
+			mediaSize;
 
-		var $window = $(window),
-			windowHeight = $window.height();
+		init();
+		OS.window.on("resize", init);
+		OS.window.on('scroll', onScroll);	
+	
+		function init() {
+			mediaSize = OS.getMediaSize();
+			winHeight = OS.window.height();
+			previewTop = $preview.offset().top;
+		}
 
-		$('.case-study-preview').each(function(){
-			var $preview = $(this),
-				$image = $preview.find('.section-image'),
-				$sectionContent = $preview.find('.section-content'),
-				mediaSize, outerHeight, offsetTop, offsetBottom, contentHeight;
+		function onScroll() {
+			var scrollTop = OS.window.scrollTop(),
+				distance = scrollTop - previewTop;
 
-			if ( $('body.home').length > 0 ){
-				init();
-				$window.on("resize", init);
-				$window.on('scroll', onScroll);	
-			}		
+			if ( distance >= 0 ) {
+				$container.velocity({
+					translateY: (distance * 0.3) + 'px'
+				}, 0);
+				
+				// $scrim.velocity({
+				// 	opacity: (distance * 0.00075) + scrimOpacity
+				// }, 0);
 
-			function init() {
-				mediaSize = OS.getMediaSize();
-				outerHeight = $preview.outerHeight();
-				offsetTop = $preview.offset().top - (outerHeight * 0.25);
-				offsetBottom = $preview.offset().top + ( outerHeight * 0.5 );
-				contentHeight = $sectionContent.outerHeight();
+				// $content.velocity({
+				// 	opacity: 1 - (distance * 0.002)
+				// }, 0);
 			}
 
-			function onScroll() {
-				var scrollTop = $window.scrollTop();
-
-				if ( mediaSize == "medium" ) {
-					if ( scrollTop >= offsetTop && scrollTop < offsetBottom ) {
-						$preview.addClass('active');
-					} else {
-						$preview.removeClass('active');
-					}
-				}
-			}
-		});
-
+			// if ( scrollTop >= previewTop - (winHeight * 0.25) ) {
+			// 	$preview.addClass("active");
+			// } else {
+			// 	$preview.removeClass("active");
+			// }
+		}
 	});
 
 })(jQuery, window);

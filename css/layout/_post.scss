@@ -3,6 +3,7 @@
 	padding: 100px 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	@include media($screen-md) {
 		padding: 170px 0;
 	}
@@ -48,20 +49,6 @@
 	&.full-height {
 		@include media($screen-md) {
 			height: 100vh;
-		}
-	}
-
-	&.contain-content {
-		& > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > p, & > ol, & > ul {
-			max-width: $max-width * 0.666;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 0 $size_container_padding;
-			box-sizing: content-box;
-			@include media($screen-sm) {
-				padding-left: $size_container_padding_sm;
-				padding-right: $size_container_padding_sm;
-			}
 		}
 	}
 

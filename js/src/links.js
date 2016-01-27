@@ -35,7 +35,7 @@
 			if ( scrollTop >= offsetTop && scrollTop < (offsetTop + winHeight) ) {
 				if ( $nextSection.length === 0 ) {
 					$('.scroll-down')
-						.attr('href', '#home-intro' )
+						.attr('href', '#page' )
 						.addClass("reverse");
 				} else {
 					$('.scroll-down')
