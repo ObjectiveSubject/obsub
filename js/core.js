@@ -245,6 +245,7 @@
 			mediaSize;
 
 		init();
+		if ( mediaSize !== "default" && mediaSize !== "small" )
 		OS.window.on("resize", init);
 		OS.window.on('scroll', onScroll);	
 	
@@ -420,7 +421,7 @@
 
 		var scrollTop = $window.scrollTop();
 
-		if ( mediaSize == "medium" ) {
+		if ( mediaSize !== "default" && mediaSize !== "small") {
 
 			if ( scrollTop >= officesTop && scrollTop < unFixedY ) {
 				$offices
@@ -569,7 +570,7 @@
 				$imgTop = $sliderRow.find('img.top');
 
 			$input.on('input', function(e){
-				if ( OS.getMediaSize() == "medium" ) {
+				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
 				
 					var val = $input.val(),
 						width = $imgTop.width(),

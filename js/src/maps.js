@@ -50,7 +50,7 @@
 
 		var scrollTop = $window.scrollTop();
 
-		if ( mediaSize == "medium" ) {
+		if ( mediaSize !== "default" && mediaSize !== "small") {
 
 			if ( scrollTop >= officesTop && scrollTop < unFixedY ) {
 				$offices

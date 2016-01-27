@@ -13,7 +13,7 @@
 				$imgTop = $sliderRow.find('img.top');
 
 			$input.on('input', function(e){
-				if ( OS.getMediaSize() == "medium" ) {
+				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
 				
 					var val = $input.val(),
 						width = $imgTop.width(),

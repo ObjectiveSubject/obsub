@@ -15,6 +15,7 @@
 			mediaSize;
 
 		init();
+		if ( mediaSize !== "default" && mediaSize !== "small" )
 		OS.window.on("resize", init);
 		OS.window.on('scroll', onScroll);	
 	
