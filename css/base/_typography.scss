@@ -49,9 +49,9 @@ h1, .h1 {
 	}
 	@include media($screen-lg) {
 		font-size: rem(61);
-		font-size: 5.5vw;
+		// font-size: 5.5vw;
 		line-height: rem(61);
-		line-height: 5.5vw;
+		// line-height: 5.5vw;
 	}
 	@include media($screen-xl) {
 		font-size: rem(66);
@@ -64,9 +64,9 @@ h2, .h2 {
 	margin-top: $leading;
 	@include media($screen-md) {
 		font-size: rem(32);
-		font-size: 2.666vw;
+		// font-size: 2.666vw;
 		line-height: rem(34);
-		line-height: 2.833vw;
+		// line-height: 2.833vw;
 		margin-top: $leading * 2;
 	}
 	@include media($screen-xl) {

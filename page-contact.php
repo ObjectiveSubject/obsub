@@ -61,17 +61,17 @@ get_header(); ?>
 		</section>
 
 		<div class="contact-form-container">
-			<form action="/contact.php" method="post" accept-charset="utf-8" class="contact-form outer-container">
+			<form id="contact-form" action="/contact.php" method="post" accept-charset="utf-8" class="contact-form outer-container">
 				
 				<div class="inner-container future-A">
 					<div class="subject-select h2">
-						<a href="#form-fields" class="gateway" data-value="talk to us">talk to us</a><br/>
-						<a href="#form-fields" class="gateway" data-value="hire us">hire us</a><br/>
-						<a href="#form-fields" class="gateway" data-value="join us">join us</a>
+						<a href="#contact-form" class="gateway text-color-link" data-value="talk to us" data-fields="#form-fields">talk to us</a><br/>
+						<a href="#contact-form" class="gateway text-color-link" data-value="hire us" data-fields="#form-fields">hire us</a><br/>
+						<a href="#contact-form" class="gateway text-color-link" data-value="join us" data-fields="#form-fields">join us</a>
+						<span class="hide"><input type="radio" name="contact_subject" value="talk to us" /></span>
+						<span class="hide"><input type="radio" name="contact_subject" value="hire us" /></span>
+						<span class="hide"><input type="radio" name="contact_subject" value="join us" /></span>
 					</div>
-					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="talk to us" /></span>
-					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="hire us" /></span>
-					<span class="hide"><input type="radio" id="contact_subject" name="contact_subject" value="join us" /></span>
 				</div>
 
 				<div id="form-fields" class="form-fields inner-container">
@@ -96,7 +96,7 @@ get_header(); ?>
 					<div class="input-row future-A push">
 						<label class="row-node h2 hug">my message is:</label>
 						<span class="row-node h2"><textarea id="contact_message" name="contact_message" value="" placeholder="write your message here..." required></textarea></span>
-						<input type="submit" id="contact_submit" class="h2 future-A push" name="contact_submit" value="send message" />
+						<input type="submit" id="contact_submit" class="h2 future-A push" name="contact_submit" value="send message" disabled />
 					</div>
 
 					<input type="hidden" name="name" value="">
@@ -104,10 +104,10 @@ get_header(); ?>
 					<input type="hidden" name="message" value="">
 
 					<nav class="form-nav push">
-						<a href="#contact_name" class=""><span class="hide">Name</span></a>
-						<a href="#contact_company" class=""><span class="hide">Company</span></a>
-						<a href="#contact_email" class=""><span class="hide">Email</span></a>
-						<a href="#contact_message" class=""><span class="hide">Message</span></a>
+						<span href="#contact_name" class="active"></span>
+						<span href="#contact_company" class=""></span>
+						<span href="#contact_email" class=""></span>
+						<span href="#contact_message" class=""></span>
 					</nav>
 
 				</div>

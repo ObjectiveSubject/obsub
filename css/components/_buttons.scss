@@ -9,8 +9,7 @@ input[type="submit"] {
 	border-radius: 0;
 	background: none;
 	box-shadow: none;
-	color: $color_text_main;
-	opacity: 0.3;
+	color: #FB8585;
 	line-height: 1em;
 	padding: 0;
 	text-shadow: none;
@@ -19,10 +18,16 @@ input[type="submit"] {
     transition: all 300ms ease;
 
 	&:hover {
-		opacity: 1;
+		color: darken(#FB8585, 15%);
 	}
 
 	&:focus {
 		outline: none;
+		color: darken(#FB8585, 15%);
+	}
+
+	&[disabled] {
+		color: $medium_gray;
+		cursor: default;
 	}
 }

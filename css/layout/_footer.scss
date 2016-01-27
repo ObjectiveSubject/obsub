@@ -10,7 +10,7 @@
 			color: $color_text_main;
 		}
 
-		@include media($screen-md) {
+		@include media(1010px) {
 			display: inline-block;
 			padding: 0;
 			margin-right: 5%;
