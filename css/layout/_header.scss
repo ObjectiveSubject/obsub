@@ -1,27 +1,38 @@
 #masthead {
     width: 100%;
-    position: fixed;
-	top: 30px;
+    position: relative;
     z-index: 1000;
     padding: 0 $size_container_padding;
 
+    @include media($screen-sm) {
+    	padding-left: $size_container_padding_sm;
+		padding-right: $size_container_padding_sm;
+    }
     @include media($screen-md) {
     	top: 100px;
     }
     @include media($screen-xl) {
-    	padding: 0 ($size_container_padding * 2);
+    	padding: 0 ($size_container_padding_sm * 2);
     }
 }
 
 .site-title {
 	float: right;
-	position: relative;
+	position: fixed;
+	top: 30px;
+	right: $size_container_padding;
 	width: 96px;
 	height: 42px;
-	margin-top: 3px;
+	@include media($screen-sm) {
+		right: $size_container_padding_sm;
+	}
 	@include media($screen-md) {
 		width: 128px;
 		height: 56px;
+		top: 60px;
+    }
+    @include media($screen-xl) {
+		top: 100px;
     }
 }
 
@@ -60,12 +71,19 @@
 }
 
 .menu-toggle {
-	position: absolute;
-    top: 10px;
+	position: fixed;
+    top: 30px;
+    margin-top: 3px;
 	width: 18px;
 	height: 18px;
-
-	&:before, &:after {
+	@include media($screen-md) {
+		top: 60px;
+		margin-top: 6px;
+    }
+    @include media($screen-xl) {
+		top: 100px;
+    }
+	.top-line, .bottom-line {
 		content: "";
 		position: absolute;
 		left: 0;
@@ -78,14 +96,14 @@
 			background: white;
 		}
 	}
-	&:before {
+	.top-line {
 		top: 2px;
 	}
-	&:after {
+	.bottom-line {
 		top: 12px;
 	}
 	&:hover {
-		&:before, &:after, .center-line {
+		.top-line, .bottom-line, .center-line {
 			background: tint($color_text_main, 30%);
 		}
 	}
@@ -93,18 +111,18 @@
 		.center-line {
 			opacity: 0;
 		}
-		&:before {
+		.top-line {
 			top: 7px;
-			transform: rotate(45deg);
+			@include transform( rotate(45deg) );
 			background: white;
 		}
-		&:after {
+		.bottom-line {
 			top: 7px;
-			transform: rotate(-45deg);
+			@include transform( rotate(-45deg) );
 			background: white;
 		}
 		&:hover {
-			&:before, &:after, .center-line {
+			.top-line, .bottom-line, .center-line {
 				background: $medium_gray;
 			}
 		}
@@ -154,18 +172,21 @@
 
 .main-menu {
 	display: none;
-	position: absolute;
-    top: 60px;
-    left: 0;
+	position: fixed;
+    top: 80px;
+    left: $size_container_padding;
     font-size: 1.5rem;
     line-height: 1em;
+    @include media($screen-sm) {
+    	left: $size_container_padding_sm;
+    }
     @include media($screen-md) {
-    	top: 0;
-    	left: 50px;
+    	top: 57px;
+    	left: 80px;
     }
     @include media($screen-xl) {
-    	top: 0;
-    	left: 80px;
+    	top: 97px;
+    	left: 110px;
     }
     a {
     	color: white;

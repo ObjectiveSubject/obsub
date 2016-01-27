@@ -58,6 +58,9 @@ figcaption {
 		opacity: 1;		
 	}
 
+	@include media($screen-sm) {
+		padding: 0 $size_container_padding_sm;
+	}
 	@include media($screen-lg) {
 		text-align: left;
 	}
@@ -86,6 +89,10 @@ figcaption {
 
 	&[class*="4x3"] {
 		padding-top: 75%;
+	}
+
+	&[class*="3x1"] {
+		padding-top: 33%;
 	}
 
 	iframe, video, object, .responsive-media-content {

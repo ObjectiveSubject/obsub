@@ -1,6 +1,10 @@
 .outer-container {
 	@include outer-container;
 	padding: 0 $size_container_padding;
+	@include media($screen-sm) {
+		padding-left: $size_container_padding_sm;
+		padding-right: $size_container_padding_sm;
+	}
 	&.bleed {
 		padding-left: 0;
 		padding-right: 0;

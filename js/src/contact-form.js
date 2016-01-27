@@ -4,6 +4,9 @@
 
 (function( $, window, undefined ){
 
+	var timeout,
+		$rowInput = $('.input-row input');
+
 	$('.contact-form .gateway').click(function(e){
 		e.preventDefault();
 		var target = $(this).attr('href'),
@@ -31,8 +34,6 @@
 		var value = $(this).val(),
 			$relatedLink = $('a.gateway[data-value="'+value+'"]');
 
-		console.log("changed: " + value);
-
 		$('.subject-select').addClass("has-selection");
 		
 		if ( ! $relatedLink.hasClass('selected') ){
@@ -41,26 +42,25 @@
 		}
 	});
 
-	$('.input-row input').keyup(function(){
-		var $input = $(this),
+	$rowInput
+		.keyup(function(){
+			var $input = $(this);
+			clearTimeout(timeout);
 			timeout = setTimeout(function(){
 				if ( $input.val() !== "" ) {
 					activateNextInput();
 				}
-			}, 400);
-
-		$(this).keydown(function(){
+			}, 600);
+		})
+		.keydown(function(){
 			clearTimeout(timeout);
+		})
+		.focus(function(){
+			$(this).parents(".input-row").addClass("current");
+		})
+		.blur(function(){
+			$(this).parents(".input-row").removeClass("current");
 		});
-	});
-
-	$('.input-row input').focus(function(){
-		$(this).parents(".input-row").addClass("current");
-	});
-
-	$('.input-row input').blur(function(){
-		$(this).parents(".input-row").removeClass("current");
-	});
 
 	$('.input-row textarea').keyup(function(){
 		if ( $(this).val() !== "" ) {

@@ -2,6 +2,11 @@
 	background: white;
 	padding: $leading $size_container_padding ($leading * 3);
 
+	@include media($screen-sm) {
+		padding-left: $size_container_padding_sm;
+		padding-right: $size_container_padding_sm;
+	}
+
 	/* range slider resets */
 	input[type=range]::-ms-track {
 	  width: 100%;
@@ -165,12 +170,13 @@
 		display: block;
 		width: 45%;
 		float: left;
+		margin: 0 2.5%;
 		@include media($screen-md) {
 			width: 100%;
 			float: none;
+			margin: 0;
 		}
 		&.top {
-			margin-right: 10%;
 			@media screen and (max-width: $screen-md - 1) {
 				clip: auto !important;
 			}

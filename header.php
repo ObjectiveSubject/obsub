@@ -32,7 +32,12 @@
 			</div>
 
 			<nav id="site-navigation" class="main-navigation future-A" role="navigation">
-				<a class="menu-toggle" href="#"><i class="center-line"></i><span class="hide">menu</span></a>
+				<a class="menu-toggle" href="#">
+					<i class="top-line"></i>
+					<i class="center-line"></i>
+					<i class="bottom-line"></i>
+					<span class="hide">menu</span>
+				</a>
 				<ul class="main-menu list-unstyled">
 					<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
 					foreach ( $case_studies as $study ) : ?>

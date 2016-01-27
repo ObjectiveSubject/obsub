@@ -46,6 +46,10 @@
 	
 
 	<figure class="oakland-tree">
+		<div class="labels clearfix">
+			<em class="pull-left text-muted text-center" style="width: 50%;">Before</em>
+			<em class="pull-right text-muted text-center" style="width: 50%;">After</em>
+		</div>
 		<div class="slider-row oakland-tree-large">
 			<img src="<?php echo os_path('tree-1-lg.png', 'oakland'); ?>" class="large top" />
 			<img src="<?php echo os_path('tree-2-lg.png', 'oakland'); ?>" class="large bottom" />
@@ -87,10 +91,8 @@
 
 <section id="solution" class="page-section contain-content" style="background-color: #E0F3F2; padding-bottom: 100px">
 	
-	<figure class="alignnone hug">
-		<img src="<?php echo os_path('pattern.jpg', 'oakland') ?>" width="1400" height="460" />
-		<figcaption>Root system</figcaption>	
-	</figure>
+	<figure class="alignnone hug oakland-pattern" style="background-image: <?php echo 'url(' . os_path('pattern.jpg', 'oakland') . ')'; ?>"></figure>
+	<figcaption>Root system</figcaption>
 	
 	<figure class="os-slideshow-container">
 		<div id="oakland-website-dots"></div>
