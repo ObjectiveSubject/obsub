@@ -1376,6 +1376,9 @@ body::before {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.page-nav li {
+  display: none;
+}
 .page-nav a {
   color: white;
 }
@@ -1451,13 +1454,8 @@ body::before {
 }
 
 .former-clients {
-  margin-top: 7vh;
+  padding-top: 8vh;
   background-color: #F0F0EE;
-}
-@media screen and (min-width: 768px) {
-  .former-clients {
-    margin-top: 20vh;
-  }
 }
 
 .bio-title {
@@ -2547,11 +2545,6 @@ figcaption {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
   transition: all 750ms ease;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
   backface-visibility: hidden;
 }
 .section-image .scrim {

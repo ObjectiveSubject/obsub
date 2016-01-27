@@ -261,7 +261,7 @@
 
 			if ( distance >= 0 ) {
 				$container.velocity({
-					translateY: (distance * 0.3) + 'px'
+					translateY: (distance * 0.5) + 'px'
 				}, 0);
 				
 				// $scrim.velocity({
@@ -271,6 +271,14 @@
 				// $content.velocity({
 				// 	opacity: 1 - (distance * 0.002)
 				// }, 0);
+			} else if ( distance > $preview.outerHeight() / 2 ) {
+				$container.velocity({
+					translateY: '50%'
+				}, 0);
+			} else {
+				$container.velocity({
+					translateY: '0px'
+				}, 0);
 			}
 
 			// if ( scrollTop >= previewTop - (winHeight * 0.25) ) {
@@ -443,6 +451,24 @@
 
 		}
 
+	}
+
+})(jQuery, window);
+/* 
+ * Page nav
+ */
+
+(function( $, window, undefined ){
+
+	if ( $('.single-case_study').length > 0 ) {
+		$(document).ready(onReady);
+	}
+
+	function onReady() {
+		$('.page-nav li').velocity("fadeIn", {
+			duration: 500,
+			stagger: 200
+		})
 	}
 
 })(jQuery, window);
