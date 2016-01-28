@@ -1895,7 +1895,7 @@ input[type="submit"]:focus {
   color: #f93b3b;
 }
 input[type="submit"][disabled] {
-  color: #999C98;
+  color: #adb0ad;
   cursor: default;
 }
 
@@ -1960,7 +1960,7 @@ input[type="password"]::-webkit-input-placeholder,
 input[type="search"]::-webkit-input-placeholder,
 input[type="number"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999C98;
+  color: #adb0ad;
 }
 input[type="text"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder,
@@ -1969,7 +1969,7 @@ input[type="password"]::-moz-placeholder,
 input[type="search"]::-moz-placeholder,
 input[type="number"]::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #999C98;
+  color: #adb0ad;
 }
 input[type="text"]:-moz-placeholder,
 input[type="email"]:-moz-placeholder,
@@ -1979,7 +1979,7 @@ input[type="search"]:-moz-placeholder,
 input[type="number"]:-moz-placeholder,
 textarea:-moz-placeholder {
   /* Older versions of Firefox */
-  color: #999C98;
+  color: #adb0ad;
 }
 input[type="text"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder,
@@ -1988,7 +1988,7 @@ input[type="password"]:-ms-input-placeholder,
 input[type="search"]:-ms-input-placeholder,
 input[type="number"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #999C98;
+  color: #adb0ad;
 }
 
 textarea {
@@ -2022,10 +2022,10 @@ label.block {
   color: #222222;
 }
 .subject-select a:hover {
-  color: rgba(34, 34, 34, 0.8);
+  color: #4e4e4e;
 }
 .subject-select.has-selection a {
-  color: #999C98;
+  color: #adb0ad;
 }
 .subject-select.has-selection a:hover {
   color: #222222;

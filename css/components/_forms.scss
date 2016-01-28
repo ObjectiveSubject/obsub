@@ -38,16 +38,16 @@ textarea {
 	}
 
 	&::-webkit-input-placeholder {
-		color: $medium_gray;
+		color: tint($medium_gray, 20%);
 	}
 	&::-moz-placeholder {
-		color: $medium_gray;
+		color: tint($medium_gray, 20%);
 	}
 	&:-moz-placeholder {   /* Older versions of Firefox */
-		color: $medium_gray;
+		color: tint($medium_gray, 20%);
 	}
 	&:-ms-input-placeholder { 
-		color: $medium_gray;
+		color: tint($medium_gray, 20%);
 	}
 }
 
@@ -86,12 +86,12 @@ label {
 	a {
 		color: $color_text_main;
 		&:hover {
-			color: rgba($color_text_main, 0.8);
+			color: tint($color_text_main, 20%);
 		}
 	}
 	&.has-selection {
 		a {
-			color: $medium_gray;
+			color: tint($medium_gray, 20%);
 			&:hover {
 				color: $color_text_main;
 			}

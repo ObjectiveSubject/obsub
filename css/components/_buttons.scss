@@ -27,7 +27,7 @@ input[type="submit"] {
 	}
 
 	&[disabled] {
-		color: $medium_gray;
+		color: tint($medium_gray, 20%);
 		cursor: default;
 	}
 }
