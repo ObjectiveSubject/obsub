@@ -89,10 +89,14 @@ figcaption {
 	}
 
 	&[class*="3x1"] {
-		padding-top: 33%;
+		padding-top: 33.333%;
 	}
 
-	iframe, video, object, .responsive-media-content {
+	&[class*="3x2"] {
+		padding-top: 66.666%;
+	}
+
+	iframe, video, object, img, .responsive-media-content {
 		position: absolute;
 		top: 0;
 		left: 0;

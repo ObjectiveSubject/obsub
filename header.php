@@ -40,10 +40,13 @@
 				</a>
 				<ul class="main-menu list-unstyled">
 					<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
-					foreach ( $case_studies as $study ) : ?>
+					foreach ( $case_studies as $study ) :
+						$img_id = get_post_thumbnail_id( $study->ID );
+						$img_array = wp_get_attachment_image_src($img_id, 'thumbnail', true);
+						$img_url = $img_array[0]; ?>
 						<li class="menu-item h2 hug <?php echo 'cs-' . $study->post_name; ?>">
 							<a href="<?php echo get_the_permalink( $study->ID ); ?>"><?php echo get_the_title($study->ID); ?></a>
-							<?php echo get_the_post_thumbnail( $study->ID, 'thumbnail' ); ?>
+							<div class="cs-thumb" style="background-image: url(<?php echo $img_url; ?>)"></div>
 						</li>
 					<?php endforeach; ?>
 					<li class="menu-item h2 hug">

@@ -26,9 +26,9 @@
 
 <div class="media-size"></div>
 
-<?php if ( is_page( 'contact' ) ) : ?>
-	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
-<?php endif; ?>
+<?php //if ( is_page( 'contact' ) ) : ?>
+	<!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script> -->
+<?php //endif; ?>
 
 <?php wp_footer(); ?>
 
