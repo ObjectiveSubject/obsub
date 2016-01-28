@@ -31,9 +31,6 @@
 		height: 56px;
 		top: 60px;
     }
-    @include media($screen-xl) {
-		top: 100px;
-    }
 }
 
 .wordmark {
@@ -73,16 +70,18 @@
 .menu-toggle {
 	position: fixed;
     top: 30px;
+    left: $size_container_padding;
     margin-top: 3px;
 	width: 18px;
 	height: 18px;
+	@include media($screen-sm) {
+		left: $size_container_padding_sm;
+	}
 	@include media($screen-md) {
 		top: 60px;
 		margin-top: 6px;
     }
-    @include media($screen-xl) {
-		top: 100px;
-    }
+
 	.top-line, .bottom-line {
 		content: "";
 		position: absolute;
@@ -184,10 +183,7 @@
     	top: 57px;
     	left: 80px;
     }
-    @include media($screen-xl) {
-    	top: 97px;
-    	left: 110px;
-    }
+
     a {
     	color: white;
     	text-transform: lowercase;

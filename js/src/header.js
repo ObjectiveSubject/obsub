@@ -16,9 +16,7 @@
 		.on("scroll", onScroll);
 
 	function init() {
-		if ( OS.getMediaSize() == "xlarge" ) {
-			offset = 100;
-		} else if ( OS.getMediaSize() == "medium" ) {
+		if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small" ) {
 			offset = 60;
 		} else {
 			offset = 30;

@@ -1009,11 +1009,6 @@ body::before {
     top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .site-title {
-    top: 100px;
-  }
-}
 
 .wordmark {
   display: block;
@@ -1055,19 +1050,20 @@ body::before {
 .menu-toggle {
   position: fixed;
   top: 30px;
+  left: 15px;
   margin-top: 3px;
   width: 18px;
   height: 18px;
+}
+@media screen and (min-width: 500px) {
+  .menu-toggle {
+    left: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     top: 60px;
     margin-top: 6px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu-toggle {
-    top: 100px;
   }
 }
 .menu-toggle .top-line, .menu-toggle .bottom-line {
@@ -1168,12 +1164,6 @@ body::before {
   .main-menu {
     top: 57px;
     left: 80px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-menu {
-    top: 97px;
-    left: 110px;
   }
 }
 .main-menu a {
