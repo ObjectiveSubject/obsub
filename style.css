@@ -641,13 +641,13 @@ p.colophon {
 ul, ol {
   margin: 3rem 0 0;
   line-height: 1.5rem;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 @media screen and (min-width: 960px) {
   ul, ol {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
   }
 }
 
@@ -2344,7 +2344,7 @@ figcaption {
   border-color: #EE5A24;
 }
 .localdata .slick-dots button:hover {
-  background: #b73b0e;
+  background: #EE5A24;
 }
 .city-of-oakland .slick-dots li.slick-active button {
   background: #376FFF;
@@ -2353,7 +2353,7 @@ figcaption {
   border-color: #376FFF;
 }
 .city-of-oakland .slick-dots button:hover {
-  background: #0041ea;
+  background: #376FFF;
 }
 .boston-public-schools .slick-dots li.slick-active button {
   background: #06CA00;

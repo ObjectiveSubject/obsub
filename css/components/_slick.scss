@@ -172,7 +172,7 @@
         button {
             border-color: $localdata_red;
             &:hover {
-                background: darken($localdata_red, 15%);
+                background: $localdata_red;
             }
         }
     }
@@ -183,7 +183,7 @@
         button {
             border-color: $oakland_blue;
             &:hover {
-                background: darken($oakland_blue, 15%);
+                background: $oakland_blue;
             }
         }
     }

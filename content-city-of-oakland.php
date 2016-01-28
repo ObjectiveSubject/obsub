@@ -174,7 +174,7 @@
 
 <?php os_get_case_study(); ?>
 
-<?php get_template_part('module', 'get-in-touch'); ?>
+<?php get_template_part( 'module', 'contact-form' ); ?>
 
 
 
