@@ -93,5 +93,40 @@
 		});
 	}
 
+	/* Form submitting 
+	----------------------------------------------- */
+	var settings = { 
+			url: osAdmin.ajaxUrl,  // this is part of the JS object you pass in from wp_localize_scripts.
+			type: 'post',        // 'get' or 'post', override for form's 'method' attribute 
+			dataType: 'json',
+			data: { nonce: osAdmin.nonce },
+			success : function(responseText, statusText, xhr, $form) {
+			    var animationSequence = [
+					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
+					{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
+					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
+				];
+				$.Velocity.RunSequence(animationSequence);
+			},
+			error : function(jqXHR, textstatus, error){
+				$('.error p').append("Oops, looks like there was an error! See below:<br/><br/>" + textstatus + "<br/>" + error);
+				$('.error').velocity("fadeIn", 500);
+			}
+		};
+
+	$('#contact-form').submit(function(e){
+		e.preventDefault();
+		$.ajax(settings);
+	});
+
 
 })(jQuery, window);
+
+
+
+
+
+
+
+
+

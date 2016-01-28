@@ -2050,6 +2050,14 @@ label.block {
   border-color: #FB8585;
 }
 
+.message {
+  display: none;
+}
+
+.error {
+  color: #FB8585;
+}
+
 /* Media
  * -----------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -2111,7 +2119,7 @@ figcaption {
   }
 }
 .city-of-oakland figcaption {
-  color: #4EBB25;
+  color: #376FFF;
 }
 .localdata figcaption {
   color: #EE5A24;

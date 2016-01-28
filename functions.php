@@ -116,75 +116,28 @@ function obsub_scripts() {
 	wp_enqueue_script( 'slick' );
 	wp_enqueue_script( 'os', get_template_directory_uri() . "/js/os.js", array('jquery'), '', true );
 	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array('jquery'), '', true );
+
+	wp_localize_script( "core",
+        'osAdmin',
+        array(
+            'ajaxUrl' => admin_url( 'admin-ajax.php' ), //url for php file that process ajax request to WP
+            'nonce' => wp_create_nonce( "contact_form_nonce" ),// this is a unique token to prevent form hijacking
+        )
+    );
 }
 add_action( 'wp_enqueue_scripts', 'obsub_scripts' );
 
 
 
 
-
-/** Custom Admin Dashboard styles.
--------------------------------------------------- */
-function load_dashboard_style() {
-  wp_register_style( 'admin_dashboard_style', get_template_directory_uri() . '/admin/dashboard/admin-dashboard.css', false, '1.0.0' );
-  wp_enqueue_style( 'admin_dashboard_style' );
-}
-add_action( 'admin_enqueue_scripts', 'load_dashboard_style' );
+/** Form Handling.
+--------------------------------------------------*/
+require get_template_directory() . '/includes/forms.php';
 
 
-/** Custom Admin Color Scheme.
--------------------------------------------------- */
-require get_template_directory() . '/admin/color-scheme/admin-color-scheme.php';
-
-/** Set custom color scheme as default. ---------- */
-function set_default_admin_color($user_id) {
-  $args = array(
-      'ID' => $user_id,
-      'admin_color' => 'obsub'
-  );
-  wp_update_user( $args );
-}
-add_action('user_register', 'set_default_admin_color');
-
-
-/** Custom Admin Login.
--------------------------------------------------- */
-function load_login_style() {
-	wp_register_style( 'admin_login_style', get_template_directory_uri() . '/admin/login/admin-login.css', false, '1.0.0' );
-  wp_enqueue_style( 'admin_login_style' );
-}
-function login_logo_url() { return home_url(); }
-function login_logo_url_title() { return get_bloginfo('name'); }
-add_action( 'login_enqueue_scripts', 'load_login_style' );
-add_filter( 'login_headerurl', 'login_logo_url' );
-add_filter( 'login_headertitle', 'login_logo_url_title' );
-
-
-/** Add Custom Options pages
--------------------------------------------------- */
-// if( function_exists('acf_add_options_page') ) {
-	
-// 	acf_add_options_page(array(
-// 		'page_title' 	=> 'Theme General Settings',
-// 		'menu_title'	=> 'Theme Settings',
-// 		'menu_slug' 	=> 'theme-general-settings',
-// 		'capability'	=> 'edit_posts',
-// 		'redirect'		=> false
-// 	));
-	
-// 	acf_add_options_sub_page(array(
-// 		'page_title' 	=> 'Theme Header Settings',
-// 		'menu_title'	=> 'Header',
-// 		'parent_slug'	=> 'theme-general-settings',
-// 	));
-	
-// 	acf_add_options_sub_page(array(
-// 		'page_title' 	=> 'Theme Footer Settings',
-// 		'menu_title'	=> 'Footer',
-// 		'parent_slug'	=> 'theme-general-settings',
-// 	));
-	
-// }
+/** Custom Admin style.
+--------------------------------------------------*/
+require get_template_directory() . '/includes/admin.php';
 
 
 /** Custom template tags for this theme.
