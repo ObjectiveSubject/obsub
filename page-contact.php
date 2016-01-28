@@ -20,7 +20,7 @@ get_header(); ?>
 			<a href="#office-locations" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
 		</section>
 
-		<section id="office-locations" class="page-section office-locations clearfix" data-show-map="brooklyn">
+		<section id="office-locations" class="page-section office-locations clearfix" >
 			<div class="office-location brooklyn clearfix">
 				<div class="office-address">
 					<address class="h2 hug future-A">

@@ -9,7 +9,8 @@
 		mediaSize,
 		$offices,
 		toggleMapY,
-		unFixedY;
+		unFixedY,
+		$topMap;
 
 	if ( $('.office-map').length > 0 && Modernizr.webgl && mapboxgl ) {
 
@@ -44,26 +45,36 @@
 		officesTop 	= $offices.offset().top;
 		toggleMapY	= $('.brooklyn .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
+		$topMap		= $(brooklynMap.getCanvas());
 	}
 
 	function onScroll() {
 
-		var scrollTop = $window.scrollTop();
+		var scrollTop = $window.scrollTop(),
+			distance = scrollTop - officesTop;
 
 		if ( mediaSize !== "default" && mediaSize !== "small") {
 
-			if ( scrollTop >= officesTop && scrollTop < unFixedY ) {
+			if ( distance > 0 && scrollTop < unFixedY ) {
 				$offices
 					.addClass('fixed')
 					.removeClass('un-fixed');
-				$offices.attr("data-show-map", "brooklyn");
+				$topMap.velocity({
+					translateY: distance + 'px'
+				}, 0);
+
 			} else if ( scrollTop >= unFixedY ) {
 				$offices
 					.addClass('un-fixed')
 					.removeClass('fixed');
+				$topMap.velocity({
+					translateY: '100vh'
+				}, 0);
 			} else {
 				$offices.removeClass('fixed un-fixed');
-				$offices.attr("data-show-map", "brooklyn");
+				$topMap.velocity({
+					translateY: '0'
+				}, 0);
 			}
 
 			if ( scrollTop >= toggleMapY ) {

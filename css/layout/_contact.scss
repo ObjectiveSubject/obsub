@@ -28,11 +28,8 @@
 	width: 100%;
 	margin-top: $leading * 2;
 	transition: opacity 750ms ease;
-	background-repeat: no-repeat;
-	background-size: 1280px 1080px;
-	background-position: center center;
+	overflow: hidden;
 	@include media($screen-md) {
-		background-size: cover;
 		height: 600px;
 		width: 50%;
 		float: right;
@@ -42,49 +39,27 @@
 			top: 0;
 			right: 0;
 			height: 100vh;
-			opacity: 0;
+			// opacity: 0;
 			z-index: 0;
 		}
 	}
-	// &:after {
-	// 	content: "";
-	// 	position: absolute;
-	// 	width: 40px;
-	// 	height: 52px;
-	// 	top: 50%;
-	// 	left: 50%;
-	// 	margin-top: -52px;
-	// 	margin-left: -20px;
-	// 	background-size: 40px 52px;
-	// }
 
 	&.brooklyn-map {
-		[data-show-map="brooklyn"] & {
-			opacity: 1;
-			z-index: 1;
+		z-index: 1;
+		.fixed & {
+			position: absolute;
 		}
-		// &:after {
-		// 	background-image: url(images/pin-red@2x.png);
-		// }
 	}
 	&.oakland-map {
-		[data-show-map="oakland"] & {
-			opacity: 1;
-			z-index: 1;
+		z-index: 0;
+		.fixed & {
+			position: fixed;
 		}
-		// &:after {
-		// 	background-image: url(images/pin-blue@2x.png);
-		// }
+		.un-fixed & {
+			position: absolute;
+		}
 	}
-
-	.fixed & {
-		position: fixed;
-		top: 0;
-	}
-	.un-fixed & {
-		position: absolute;
-		top: 0;
-	}
+	
 }
 
 .office-address {

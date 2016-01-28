@@ -1675,13 +1675,10 @@ a.scroll-down:after {
   width: 100%;
   margin-top: 3rem;
   transition: opacity 750ms ease;
-  background-repeat: no-repeat;
-  background-size: 1280px 1080px;
-  background-position: center center;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .office-map {
-    background-size: cover;
     height: 600px;
     width: 50%;
     float: right;
@@ -1692,25 +1689,23 @@ a.scroll-down:after {
     top: 0;
     right: 0;
     height: 100vh;
-    opacity: 0;
     z-index: 0;
   }
 }
-[data-show-map="brooklyn"] .office-map.brooklyn-map {
-  opacity: 1;
+.office-map.brooklyn-map {
   z-index: 1;
 }
-[data-show-map="oakland"] .office-map.oakland-map {
-  opacity: 1;
-  z-index: 1;
-}
-.fixed .office-map {
-  position: fixed;
-  top: 0;
-}
-.un-fixed .office-map {
+.fixed .office-map.brooklyn-map {
   position: absolute;
-  top: 0;
+}
+.office-map.oakland-map {
+  z-index: 0;
+}
+.fixed .office-map.oakland-map {
+  position: fixed;
+}
+.un-fixed .office-map.oakland-map {
+  position: absolute;
 }
 
 .office-address {
