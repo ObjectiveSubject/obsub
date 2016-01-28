@@ -82,6 +82,24 @@ label {
 	}
 }
 
+.form-loader {
+	@include transform( translateY(9px) );
+	@include transition( all 300ms ease );
+	margin-right: 10px;
+	margin-left: -45px;
+	opacity: 0;
+	width: 32px;
+	@include media($screen-md) {
+		@include transform( translateY(12px) );
+		width: 44px;
+		margin-left: -57px;
+	}
+	.loading & {
+		opacity: 1;
+		margin-left: 0px;
+	}
+}
+
 .subject-select {
 	a {
 		color: $color_text_main;

@@ -48,8 +48,9 @@ function os_slide_nav($id) {
 }
 
 
-function os_path( $filename, $dir ) {
+function os_path( $filename, $dir = false ) {
 	if ( ! $filename ) return;
+
 
 	if ( $dir ) {
 		return get_template_directory_uri() . '/images/' . $dir . '/' . $filename;

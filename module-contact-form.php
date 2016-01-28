@@ -44,6 +44,7 @@
 				<div class="input-row future-A push">
 					<!-- <label class="row-node h2 hug">my message is:</label> -->
 					<span class="row-node h2"><textarea id="contact_message" name="contact_message" value="" placeholder="write your message here..." required></textarea></span>
+					<img src="<?php echo os_path('loader.svg'); ?>" width="44" height="44" alt="loader" class="form-loader" />
 					<input type="submit" id="contact_submit" class="h2 future-A push" name="contact_submit" value="send message" disabled />
 				</div>
 

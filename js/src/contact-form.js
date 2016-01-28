@@ -111,11 +111,15 @@
 			error : function(jqXHR, textstatus, error){
 				$('.error p').append("Oops, looks like there was an error! See below:<br/><br/>" + textstatus + "<br/>" + error);
 				$('.error').velocity("fadeIn", 500);
+			},
+			complete : function(){
+				$('.contact-form').removeClass("loading");
 			}
 		};
 
 	$('#contact-form').submit(function(e){
 		e.preventDefault();
+		$('.contact-form').addClass("loading");
 		$.ajax(settings);
 	});
 

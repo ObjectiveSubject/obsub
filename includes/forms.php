@@ -16,14 +16,31 @@
 		$body .= $message;
 		// $headers = array( "From: ".$name." <".$email.">" );
 
-		wp_mail( $to, $subject, $body );
-		// if ( wp_mail( $to, $subject, $body ) ) {
-		// 	echo '<div>';
-		// 	echo '<p>Thanks for contacting me, expect a response soon.</p>';
-		// 	echo '</div>';
-		// } else {
-		// 	echo 'An unexpected error occurred';
-		// }
+		$success = wp_mail( $to, $subject, $body );
+		
+		if ( $success ) {
+			// Create post object
+			$my_post = array(
+			  'post_title'    => wp_strip_all_tags( $name ),
+			  'post_content'  => $body,
+			  'post_status'   => 'publish',
+			  'post_author'   => 2,
+			  'post_type'	  => 'form_entry'
+			);
+			// Insert the post into the database
+			wp_insert_post( $my_post );	
+		} else {
+			// Create post object
+			$my_post = array(
+			  'post_title'    => "Submit Failed",
+			  'post_content'  => "Failed: " . $success,
+			  'post_status'   => 'publish',
+			  'post_author'   => 2,
+			  'post_type'	  => 'form_entry'
+			);
+			// Insert the post into the database
+			wp_insert_post( $my_post );	
+		}
 	}
 	add_action("wp_ajax_os_form", "os_form_process");
 

@@ -85,6 +85,49 @@ function register_bios() {
 	);
 }
 
+
+// Form Entries post type ================================ /
+add_action('init', 'register_form_entry');
+
+function register_form_entry() {
+
+	$labels = array (
+		'name' => 'Form Entries',
+		'singular_name' => 'Form Entry',
+		'menu_name' => 'Form Entries',
+		'name_admin_bar' => 'Form Entry',
+		'add_new' => 'Add Form Entry',
+		'add_new_item' => 'Add New Form Entry',
+		'edit' => 'Edit',
+		'edit_item' => 'Edit Form Entry',
+		'new_item' => 'New Form Entry',
+		'all_items' => 'All Form Entries',
+		'view' => 'View Form Entry',
+		'view_item' => 'View Form Entry',
+		'search_items' => 'Search Form Entries',
+		'not_found' => 'No Form Entries Found',
+		'not_found_in_trash' => 'No Form Entries Found in Trash',
+		'parent' => 'Parent Form Entries',
+	);
+
+	register_post_type('form_entry', array(
+			'description' => '',
+			'public' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'capability_type' => 'post',
+			'map_meta_cap' => true,
+			'hierarchical' => false,
+			'rewrite' => true,
+			'query_var' => true,
+			'menu_position' => 5,
+			'supports' => array('title','editor'),
+			'menu_icon' => 'dashicons-megaphone',
+			'labels' => $labels
+		)
+	);
+}
+
 // Custom Admin Columns (optional) ======= /
 /*
 function my_{post-type}_columns($columns) {
