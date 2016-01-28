@@ -19,8 +19,6 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-
-			<a href="#city-of-oakland" class="scroll-down smooth-scroll"><span class="hide">City of Oakland</span><span class="arrow">&rarr;</span></a>
 		</div>
 
 	</section>
@@ -144,6 +142,8 @@ get_header(); ?>
 		</div>
 
 	</section>
+
+	<a href="#city-of-oakland" class="scroll-down smooth-scroll"><span class="hide">City of Oakland</span></a>
 
 
 <?php get_footer(); ?>

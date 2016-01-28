@@ -21,21 +21,43 @@
 
 a.scroll-down {
 	display: none;
-	position: absolute;
+	position: fixed;
+	z-index: 800;
 	bottom: 2rem;
 	left: 50%;
 	margin-left: -1rem;
-	width: 2rem;
-	height: 1.5rem;
-	font-size: 3rem;
-	opacity: 0.5;
-	color: $color_text_main;
-	@include transform(rotate(90deg));
+	width: 28px;
+	height: 14px;
+	opacity: 0.25;
+	@include transform(translateY(0));
 	@include media($screen-md){
 		display: block;
 	}
+	&.off-canvas {
+		@include transform(translateY(100px));
+	}
 	&:hover {
 		opacity: 1;
+	}
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		top: 0.25rem;
+		width: 18px;
+		height: 4px;
+		background-color: $color_text_main;
+		@include transition(all 300ms ease);
+		.ui-light-theme & {
+			background-color: white;
+		}
+	}
+	&:before {
+		left: 0;
+		@include transform(rotate(45deg));
+	}
+	&:after {
+		right: 0;
+		@include transform(rotate(-45deg));
 	}
 
 }
