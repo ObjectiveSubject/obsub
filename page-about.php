@@ -15,7 +15,6 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</div>
 			</div>
-			<a href="#bios" class="chevron scroll-down smooth-scroll"><span class="hide">Bios</span></a>
 		</section>
 
 		<section id="bios" class="page-section bios outer-container">

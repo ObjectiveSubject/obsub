@@ -12,7 +12,7 @@
 		$('.page-nav li').velocity("fadeIn", {
 			duration: 500,
 			stagger: 200
-		})
+		});
 	}
 
 })(jQuery, window);
