@@ -5,26 +5,28 @@
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
-		var $window = $(window);
 
 		$('.active-on-inview').each(function(){
 			var $node = $(this),
+				offsetFactor = $node.data('offset') || 0,
 				winHeight,
-				nodeOffset;
+				nodeOffset,
+				nodeTop;
 
 			init();
-			$window
+			OS.window
 				.on("resize", init)
 				.on("scroll", onScroll);
 
 			function init() {
-				winHeight = $window.height();
-				nodeOffset = $node.offset().top;
+				winHeight = OS.window.height();
+				nodeOffset = (winHeight * offsetFactor) * -1;
 			}
 			function onScroll() {
-				var scrollTop = $window.scrollTop();
+				var scrollTop = OS.window.scrollTop();
+				nodeTop = $node.offset().top + nodeOffset;
 
-				if ( scrollTop > nodeOffset - (winHeight / 2) ) {
+				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
 					$node.removeClass('active');
@@ -34,44 +36,6 @@
 	});
 
 })(jQuery, window);
-/* 
- * Case Studies
- */
-
-// (function( $, window, undefined ){
-
-// 	var $sections = $('.page-section'),
-// 		$window = $(window),
-// 		defaultColor = '#F0F0EE';
-// 		mediaSize = OS.getMediaSize();
-
-// 	if ( mediaSize == "medium" && $('[data-color]').length > 0 ) {
-
-// 		$sections.each(function(){
-// 			var $section = $(this),
-// 				sectionColor = $section.data('color') || defaultColor,
-// 				$nextSection = $section.next('.page-section'),
-// 				nextSectionColor = $nextSection.data('color') || defaultColor,
-// 				animation_begin_pos = $section.offset().top, //where you want the animation to begin
-// 				animation_end_pos = $section.offset().top + $section.outerHeight(), //where you want the animation to stop
-// 				beginning_color = new $.Color( sectionColor ), //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
-// 				ending_color = ( $nextSection.length ) ? new $.Color( nextSectionColor ) : new $.Color( defaultColor ); //what color we want to use in the end
-// 			$window.on("scroll", function(){
-// 				var scrollTop = $window.scrollTop();
-// 				if ( scrollTop >= animation_begin_pos && scrollTop < animation_end_pos ) {
-// 					var percentScrolled = (scrollTop - animation_begin_pos) / ( animation_end_pos - animation_begin_pos ),
-// 						newRed   = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled ),
-// 						newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled ),
-// 						newBlue  = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled ),
-// 		            	newColor = new $.Color( newRed, newGreen, newBlue );
-// 		            $('body').css({ backgroundColor: newColor });
-// 				}
-// 			});
-// 		});
-
-// 	}
-
-// })(jQuery, window);
 /* 
  * contact form
  */
@@ -180,12 +144,12 @@
 			dataType: 'json',
 			data: 'action=os_form_process&amp;nonce='+osAdmin.nonce+'&amp;'+postData,
 			success : function(data, textstatus, jqXHR) {
-			 //    var animationSequence = [
-				// 	{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
-				// 	{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
-				// 	{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
-				// ];
-				// $.Velocity.RunSequence(animationSequence);
+			    var animationSequence = [
+					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
+					{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
+					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
+				];
+				$.Velocity.RunSequence(animationSequence);
 				console.log(data);
 				console.log(textstatus);
 				console.log(jqXHR);
@@ -309,14 +273,6 @@
 				$container.velocity({
 					translateY: (distance * 0.5) + 'px'
 				}, 0);
-				
-				// $scrim.velocity({
-				// 	opacity: (distance * 0.00075) + scrimOpacity
-				// }, 0);
-
-				// $content.velocity({
-				// 	opacity: 1 - (distance * 0.002)
-				// }, 0);
 			} else if ( distance > $preview.outerHeight() / 2 ) {
 				$container.velocity({
 					translateY: '50%'
@@ -326,12 +282,6 @@
 					translateY: '0px'
 				}, 0);
 			}
-
-			// if ( scrollTop >= previewTop - (winHeight * 0.25) ) {
-			// 	$preview.addClass("active");
-			// } else {
-			// 	$preview.removeClass("active");
-			// }
 		}
 	});
 
@@ -386,7 +336,31 @@
 		}
 
 	});
+
+	$('.case-study-title a').click(function(e){
+		e.preventDefault();
+		var $this = $(this),
+			$section = $this.parents('.page-section'),
+			href = $this.attr("href");
+
+		var distance = Math.abs( $section.offset().top - OS.window.scrollTop() ),
+			speed = ((distance * 5) > 1000 ) ? 1000 : distance * 5;
+		
+		$section.velocity("scroll", {
+			mobileHA: false,
+			duration: speed,
+			complete: function(){
+				location.href = href;
+			}
+		});
+	});
 	
+
+
+
+
+
+
 
 })(jQuery, window);
 /* 

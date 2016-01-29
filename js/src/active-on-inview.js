@@ -5,26 +5,28 @@
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
-		var $window = $(window);
 
 		$('.active-on-inview').each(function(){
 			var $node = $(this),
+				offsetFactor = $node.data('offset') || 0,
 				winHeight,
-				nodeOffset;
+				nodeOffset,
+				nodeTop;
 
 			init();
-			$window
+			OS.window
 				.on("resize", init)
 				.on("scroll", onScroll);
 
 			function init() {
-				winHeight = $window.height();
-				nodeOffset = $node.offset().top;
+				winHeight = OS.window.height();
+				nodeOffset = (winHeight * offsetFactor) * -1;
 			}
 			function onScroll() {
-				var scrollTop = $window.scrollTop();
+				var scrollTop = OS.window.scrollTop();
+				nodeTop = $node.offset().top + nodeOffset;
 
-				if ( scrollTop > nodeOffset - (winHeight / 2) ) {
+				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
 					$node.removeClass('active');

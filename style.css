@@ -2616,6 +2616,25 @@ figcaption {
 .case-study-preview .section-content {
   color: white;
 }
+.single-case_study .section-content .outer-container {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+  -webkit-transition: all 650ms ease;
+  -moz-transition: all 650ms ease;
+  transition: all 650ms ease;
+}
+.single-case_study .active .section-content .outer-container {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
 
 .get-in-touch {
   position: relative;

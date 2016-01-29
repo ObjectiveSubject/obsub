@@ -21,15 +21,17 @@ function os_get_case_study() {
 		$featured_image_url = $featured_image_array[0];
 		$color = get_field('case_study_color', $study->ID); ?>
 
-		<section class="page-section full-height case-study-preview <?php echo $study->post_name; ?>">
+		<section class="page-section full-height case-study-preview active-on-inview <?php echo $study->post_name; ?>" data-offset="0.25">
 			<div class="section-container">
 				<div class="section-image-container">
-					<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );"></div>
+					<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );">
+						<div class="scrim"></div>
+					</div>
 				</div>
 				<div class="section-content">
-					<div class="inner-container">
-						<h1 class="case-study-title"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
-						<p class="case-study-subtitle hug"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></p>
+					<div class="outer-container">
+						<h1 class="case-study-title inner-container"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
+						<p class="case-study-subtitle hug inner-container"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></p>
 					</div>
 				</div>
 			</div>

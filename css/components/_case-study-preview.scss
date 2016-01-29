@@ -81,16 +81,17 @@
 	.case-study-preview & {
 		color: rgba(white, 1);
 	}
-}
-
-.case-study-subtitle {
-	@include media($screen-md) {
-		// opacity: 1;
-		// transform: translateY(30px);
-		// .active & {
-		// 	opacity: 1;
-		// 	transform: translateY(0);
-		// }
+	.single-case_study & {
+		.outer-container {
+			opacity: 0;
+			@include transform(translateY(50px));
+			@include transition(all 650ms ease);
+		}
 	}
-	// transition: all 300ms ease 300ms;
+	.single-case_study .active & {
+		.outer-container {
+			opacity: 1;
+			@include transform(translateY(0));
+		}
+	}
 }

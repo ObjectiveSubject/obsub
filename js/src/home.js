@@ -33,14 +33,6 @@
 				$container.velocity({
 					translateY: (distance * 0.5) + 'px'
 				}, 0);
-				
-				// $scrim.velocity({
-				// 	opacity: (distance * 0.00075) + scrimOpacity
-				// }, 0);
-
-				// $content.velocity({
-				// 	opacity: 1 - (distance * 0.002)
-				// }, 0);
 			} else if ( distance > $preview.outerHeight() / 2 ) {
 				$container.velocity({
 					translateY: '50%'
@@ -50,12 +42,6 @@
 					translateY: '0px'
 				}, 0);
 			}
-
-			// if ( scrollTop >= previewTop - (winHeight * 0.25) ) {
-			// 	$preview.addClass("active");
-			// } else {
-			// 	$preview.removeClass("active");
-			// }
 		}
 	});
 

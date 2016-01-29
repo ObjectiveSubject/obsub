@@ -54,7 +54,7 @@
 		</div>
 	</div>
 
-	<figure class="bps-wordmarks aligncenter active-on-inview">
+	<figure class="bps-wordmarks aligncenter active-on-inview" data-offset="0.5">
 		<div style="background-color: #0077D2;" >	
 			<img src="<?php echo os_path('discover.png', 'bps') ?>" width="820" height="240">
 			<img src="<?php echo os_path('register.png', 'bps') ?>" width="820" height="240">

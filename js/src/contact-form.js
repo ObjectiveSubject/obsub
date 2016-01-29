@@ -106,12 +106,12 @@
 			dataType: 'json',
 			data: 'action=os_form_process&amp;nonce='+osAdmin.nonce+'&amp;'+postData,
 			success : function(data, textstatus, jqXHR) {
-			 //    var animationSequence = [
-				// 	{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
-				// 	{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
-				// 	{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
-				// ];
-				// $.Velocity.RunSequence(animationSequence);
+			    var animationSequence = [
+					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
+					{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
+					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
+				];
+				$.Velocity.RunSequence(animationSequence);
 				console.log(data);
 				console.log(textstatus);
 				console.log(jqXHR);

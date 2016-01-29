@@ -48,6 +48,30 @@
 		}
 
 	});
+
+	$('.case-study-title a').click(function(e){
+		e.preventDefault();
+		var $this = $(this),
+			$section = $this.parents('.page-section'),
+			href = $this.attr("href");
+
+		var distance = Math.abs( $section.offset().top - OS.window.scrollTop() ),
+			speed = ((distance * 5) > 1000 ) ? 1000 : distance * 5;
+		
+		$section.velocity("scroll", {
+			mobileHA: false,
+			duration: speed,
+			complete: function(){
+				location.href = href;
+			}
+		});
+	});
 	
+
+
+
+
+
+
 
 })(jQuery, window);
