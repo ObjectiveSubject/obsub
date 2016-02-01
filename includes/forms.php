@@ -17,9 +17,9 @@
 		$body .= "Company: " . $company . "\n";
 		$body .= "Subject: " . $_POST['contact_subject'] . "\n\n";
 		$body .= $message;
-		$headers = array( "From: ".$name." <".$email.">" );
+		// $headers = array( "From: ".$name." <".$email.">" );
 
-		$mail_sent = wp_mail( $to, $subject, $body, $headers );
+		$mail_sent = wp_mail( $to, $subject, $body );
 
 		wp_send_json( array(
 			'to' => $to,
