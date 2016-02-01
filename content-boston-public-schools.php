@@ -103,15 +103,15 @@
 		<div id="bps-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-website-nav .prev", "nextArrow": "#bps-website-nav .next", "appendDots": "#bps-website-dots" }'>
 			<li class="shadow">
-				<img src="<?php echo os_path('website-home.png', 'bps'); ?>" width="1200" height="1100">
+				<img data-lazy="<?php echo os_path('website-home.png', 'bps'); ?>" width="1200" height="1100">
 				<figcaption>Discover Boston Public Schools Homepage</figcaption>
 			</li>
 			<li class="shadow">
-				<img src="<?php echo os_path('website-results.png', 'bps'); ?>" width="1200" height="1100">
+				<img data-lazy="<?php echo os_path('website-results.png', 'bps'); ?>" width="1200" height="1100">
 				<figcaption>School results</figcaption>
 			</li>
 			<li class="shadow">
-				<img src="<?php echo os_path('website-school-detail.png', 'bps'); ?>" width="1200" height="1100">
+				<img data-lazy="<?php echo os_path('website-school-detail.png', 'bps'); ?>" width="1200" height="1100">
 				<figcaption>School detail</figcaption>
 			</li>
 		</ul>
@@ -128,17 +128,17 @@
 
 	<figure class="os-slideshow-container">
 		<div id="bps-mobile-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0" }'>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
 			<li>
-				<img src="<?php echo os_path('mobile-home.png', 'bps'); ?>" width="318" height="660">
+				<img data-lazy="<?php echo os_path('mobile-home.png', 'bps'); ?>" width="318" height="660">
 				<figcaption>Discover Boston Public Schools Mobile Homepage</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('mobile-results.png', 'bps'); ?>" width="318" height="660">
+				<img data-lazy="<?php echo os_path('mobile-results.png', 'bps'); ?>" width="318" height="660">
 				<figcaption>Mobile School results</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('mobile-about.png', 'bps'); ?>" width="318" height="660">
+				<img data-lazy="<?php echo os_path('mobile-about.png', 'bps'); ?>" width="318" height="660">
 				<figcaption>Mobile About page</figcaption>
 			</li>
 		</ul>

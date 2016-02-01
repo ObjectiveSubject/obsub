@@ -11,7 +11,8 @@
 			var slides = $(this),
 				settings = {
 					mobileFirst: true,
-					dots: true
+					dots: true,
+					lazyLoad: 'ondemand',
 				};
 
 			if ( slides.hasClass('center-mode') ) {

@@ -115,15 +115,15 @@
 		<div id="oakland-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
 			<li>
-				<img src="<?php echo os_path('homepage.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('homepage.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>City of Oakland Homepage</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('pay-ticket.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('pay-ticket.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>Pay Tickets Page</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('news-press.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('news-press.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>News and Press</figcaption>
 			</li>
 		</ul>
@@ -142,15 +142,15 @@
 		<div id="oakland-toolkit-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
 			<li>
-				<img src="<?php echo os_path('toolkit-home.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('toolkit-home.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>City of Oakland Design Toolkit</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('toolkit-vis-identity.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('toolkit-vis-identity.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>Toolkit – Visual Identity</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('toolkit-pattern-portfolio.png', 'oakland'); ?>" width="848" height="778">
+				<img data-lazy="<?php echo os_path('toolkit-pattern-portfolio.png', 'oakland'); ?>" width="848" height="778">
 				<figcaption>Toolkit – Pattern Portfolio</figcaption>
 			</li>
 		</ul>

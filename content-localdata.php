@@ -57,9 +57,9 @@
 	<figure class="os-slideshow-container">
 		<div id="tool-landing-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#tool-landing-nav .prev", "nextArrow": "#tool-landing-nav .next", "appendDots": "#tool-landing-dots" }'>
-			<li><img src="<?php echo os_path('tool-landing.jpg', 'localdata'); ?>" width="850" height="792"></li>
-			<li><img src="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
-			<li><img src="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+			<li><img data-lazy="<?php echo os_path('tool-landing.jpg', 'localdata'); ?>" width="850" height="792"></li>
+			<li><img data-lazy="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
+			<li><img data-lazy="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
 		</ul>
 		<?php os_slide_nav("tool-landing-nav"); ?>
 		<div class="outer-container">
@@ -76,9 +76,9 @@
 	<figure class="os-slideshow-container">
 		<div id="homepage-slide-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#homepage-slide-nav .prev", "nextArrow": "#homepage-slide-nav .next", "appendDots": "#homepage-slide-dots" }'>
-			<li><img src="<?php echo os_path('homepage.jpg', 'localdata') ?>" width="850" height="792"></li>
-			<li><img src="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
-			<li><img src="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+			<li><img data-lazy="<?php echo os_path('homepage.jpg', 'localdata') ?>" width="850" height="792"></li>
+			<li><img data-lazy="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
+			<li><img data-lazy="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
 		</ul>
 		<?php os_slide_nav("homepage-slide-nav"); ?>
 	</figure>
