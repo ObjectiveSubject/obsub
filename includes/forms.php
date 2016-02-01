@@ -15,11 +15,11 @@
 		$to = get_option( 'admin_email' );
 		$body = "Name: " . $name . " <".$email.">\n";
 		$body .= "Company: " . $company . "\n";
-		$body .= $subject . "\n\n";
+		$body .= "Subject: " . $_POST['contact_subject'] . "\n\n";
 		$body .= $message;
-		// $headers = array( "From: ".$name." <".$email.">" );
+		$headers = array( "From: ".$name." <".$email.">" );
 
-		$mail_sent = wp_mail( $to, $subject, $body );
+		$mail_sent = wp_mail( $to, $subject, $body, $headers );
 
 		wp_send_json( array(
 			'to' => $to,
