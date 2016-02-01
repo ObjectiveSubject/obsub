@@ -1,7 +1,6 @@
 <div class="contact-form-container outer-container">
 	<div class="inner-container">
-		<div class="success message">
-			<h2 class="future-A">Thank you! We'll be in touch shortly.</h2>
+		<div class="success message h2 future-A">
 		</div>
 		<form id="contact-form" action="/contact.php" method="post" accept-charset="utf-8" class="contact-form">
 				
@@ -61,9 +60,7 @@
 
 			</div>
 
-			<div class="error message">
-				<p class="future-A"></p>
-			</div>
+			<div class="error message push-double future-A"></div>
 
 		</form>
 	</div>

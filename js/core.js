@@ -139,33 +139,35 @@
 		$('.contact-form').addClass("loading");
 		var postData = $(this).serialize();
 		var settings = { 
-			url: osAdmin.ajaxUrl,  // this is part of the JS object you pass in from wp_localize_scripts.
-			type: 'post',        // 'get' or 'post', override for form's 'method' attribute 
+			url: osAdmin.ajaxUrl,
+			type: 'post',
 			dataType: 'json',
 			data: 'action=os_form_process&nonce='+osAdmin.nonce+'&'+postData,
 			success : function(data, textstatus, jqXHR) {
-			    var animationSequence = [
+				$success = $('.contact-form-container .success');
+
+				if ( data.mail_sent ) {
+					$success.append("Thank you! We'll be in touch shortly.");
+				} else {
+					$success.append("Thank you for contacting us!<br/><br/>Unfortunately an email notification wasn't sent. Please reach out directly: <a href='mailto:info@objectivesubject.com'>info@objectivesubject.com</a>");
+				}
+
+				var animationSequence = [
 					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
-					{ e: $('.contact-form-container .success'), p: "fadeIn", o: { duration: 500 } },
-					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500 } },
+					{ e: $success, p: "fadeIn", o: { duration: 500 } },
+					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500, sequenceQueue: false } },
 				];
 				$.Velocity.RunSequence(animationSequence);
-				console.log(data);
-				console.log(textstatus);
-				console.log(jqXHR);
 			},
 			error : function(jqXHR, textstatus, error){
 				$('.error p').append("Oops, looks like there was an error! See below:<br/><br/>" + textstatus + "<br/>" + error);
 				$('.error').velocity("fadeIn", 500);
-				console.log(jqXHR);
-				console.log(textstatus);
-				console.log(error);
+				throw textstatus + ": " + error;
 			},
 			complete : function(){
 				$('.contact-form').removeClass("loading");
 			}
 		};
-		console.log(settings.data);
 		$.ajax(settings);
 	});
 
