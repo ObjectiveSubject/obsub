@@ -104,7 +104,7 @@
 			url: osAdmin.ajaxUrl,  // this is part of the JS object you pass in from wp_localize_scripts.
 			type: 'post',        // 'get' or 'post', override for form's 'method' attribute 
 			dataType: 'json',
-			data: 'action=os_form_process&amp;nonce='+osAdmin.nonce+'&amp;'+postData,
+			data: 'action=os_form_process&nonce='+osAdmin.nonce+'&'+postData,
 			success : function(data, textstatus, jqXHR) {
 			    var animationSequence = [
 					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },

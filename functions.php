@@ -117,11 +117,11 @@ function obsub_scripts() {
 	wp_enqueue_script( 'os', get_template_directory_uri() . "/js/os.js", array('jquery'), '', true );
 	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array('jquery'), '', true );
 
-	wp_localize_script( "core",
+	wp_localize_script( 'core',
         'osAdmin',
         array(
             'ajaxUrl' => admin_url( 'admin-ajax.php' ), //url for php file that process ajax request to WP
-            'nonce' => wp_create_nonce( "contact_form_nonce" ),// this is a unique token to prevent form hijacking
+            'nonce' => wp_create_nonce('contact_form_nonce' ), // this is a unique token to prevent form hijacking
         )
     );
 }
