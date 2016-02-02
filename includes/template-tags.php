@@ -44,8 +44,8 @@ function os_slide_nav($id) {
 	if ( ! $id ) $id = '';
 	
 	echo '<nav id="' . $id . '" class="os-slide-nav">';
-		echo '<a href="#prev" class="os-slide-prev prev"><i>&larr;</i></a>';
-		echo '<a href="#next" class="os-slide-next next"><i>&rarr;</i></a>';
+		echo '<a href="#prev" class="os-slide-prev prev"><span class="graphic-arrow"></span><i class="text-arrow">&larr;</i></a>';
+		echo '<a href="#next" class="os-slide-next next"><span class="graphic-arrow"></span><i class="text-arrow">&rarr;</i></a>';
 	echo '</nav>';
 }
 

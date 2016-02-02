@@ -231,6 +231,23 @@
         &:hover {
             color: darken($color_text_main, 15%);
         }
+    }
+    .next {
+        float: right;
+        @include media($screen-lg) {
+            margin-right: 6.5%;
+        }
+    }
+    .prev {
+        float: left;
+        @include media($screen-lg) {
+            margin-left: 6.5%;   
+        }
+    }
+    .text-arrow {
+        .os-csstransforms & {
+            display: none;
+        }
         .localdata & {
             color: $localdata_red;
             &:hover {
@@ -250,17 +267,40 @@
             }
         }
     }
-    .next {
-        float: right;
-        @include media($screen-lg) {
-            margin-right: 6.5%;
-        }
+}
+
+.graphic-arrow {
+    display: none;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    .os-csstransforms & {
+        display: block;
     }
-    .prev {
-        float: left;
-        @include media($screen-lg) {
-            margin-left: 6.5%;   
-        }
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 18px;
+        height: 4px;
+        background-color: $color_text_main;
+        @include transition(all 300ms ease);
+        .localdata & { background-color: $localdata_red; }
+        .city-of-oakland & { background-color: $oakland_blue; }
+        .boston-public-schools & { background-color: $boston_green; }
+        .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
+        .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
+        .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
+    }
+    &:before {
+        top: 0;
+        .next & { @include transform(rotate(45deg)); }
+        .prev & { @include transform(rotate(-45deg)); }
+    }
+    &:after {
+        bottom: 0;
+        .next & { @include transform(rotate(-45deg)); }
+        .prev & { @include transform(rotate(45deg)); }
     }
 }
 
