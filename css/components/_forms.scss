@@ -18,7 +18,7 @@ textarea {
 	color: $color_text_input;
 	background-color: white;
 	font-family: $font_heading;
-	line-height: 1em;
+	line-height: 1.4em;
 	border: 0;
 	border-radius: 0;
 	box-sizing: border-box;
@@ -90,9 +90,6 @@ label {
 }
 
 .contact-form {
-	input {
-		line-height: 1.4em;
-	}
 
 	.form-fields {
 		display: none;
@@ -170,6 +167,37 @@ label {
 .g-recaptcha {
 	max-width: 100%;
 	overflow: hidden;
+}
+
+.subscribe-form {
+	margin-top: 0;
+	@include media($screen-md) {
+		position: absolute;
+		width: 100%;
+	}
+
+	.input-row {
+		height: 42px;
+	    position: relative;
+	}
+
+	input {
+		background: #FFF;
+		padding: 9px 3px 11px;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	button {
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    height: 100%;
+	    background: none;
+	    color: #D3D3D3;
+	    padding: 0 10px;
+	}
 }
 
 

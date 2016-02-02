@@ -15,6 +15,13 @@
 			<div class="inner-container">
 				<span class="copyright">copyright <i>&copy;</i> <?php echo date('Y'); ?> objective subject</span>
 				<a href="#subscribe" class="subscribe">let us say hi, periodically</a>
+				<form action="http://objectivesubject.createsend.com/t/r/s/djdjtk/" method="post" id="subForm" class="subscribe-form">
+				    <div class="input-row">
+				        <label for="fieldEmail" class="hide">Email</label>
+				        <input id="fieldEmail" name="cm-djdjtk-djdjtk" type="email" placeholder="luke@skywalker.com" required />
+				        <button type="submit">Press enter</button>
+				    </div>
+				</form>
 				<a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">facebook</a>
 				<a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">twitter</a>
 				<a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">dribble</a>
