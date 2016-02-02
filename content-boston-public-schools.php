@@ -31,7 +31,7 @@
 	<figure class="alignnone hug">
 		<div style="overflow:hidden; position: relative;">
 			<blockquote data-parallax-node="0.5">
-				<p>"[Discover BPS] changed the way we relate to parents."<br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
+				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
 			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />
 		</div>

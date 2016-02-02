@@ -252,6 +252,18 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ArnhemPro';
+  src: url("fonts/ArnhemPro-Blond.eot?#iefix") format("embedded-opentype"), url("fonts/ArnhemPro-Blond.otf") format("opentype"), url("fonts/ArnhemPro-Blond.woff") format("woff"), url("fonts/ArnhemPro-Blond.ttf") format("truetype"), url("fonts/ArnhemPro-Blond.svg#ArnhemPro-Blond") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ArnhemPro';
+  src: url("fonts/ArnhemPro-BlondItalic.eot?#iefix") format("embedded-opentype"), url("fonts/ArnhemPro-BlondItalic.otf") format("opentype"), url("fonts/ArnhemPro-BlondItalic.woff") format("woff"), url("fonts/ArnhemPro-BlondItalic.ttf") format("truetype"), url("fonts/ArnhemPro-BlondItalic.svg#ArnhemPro-BlondItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
 .future-A {
   font-family: "FutureAMedium", "Futura", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -259,7 +271,7 @@ th {
 }
 
 .arnhem {
-  font-family: "Arnhem Pro", "Georgia", sans-serif;
+  font-family: "ArnhemPro", "Georgia", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -516,7 +528,7 @@ input,
 select,
 textarea {
   color: #222222;
-  font-family: "Arnhem Pro", "Georgia", sans-serif;
+  font-family: "ArnhemPro", "Georgia", sans-serif;
   line-height: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -537,7 +549,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h1, .h1 {
@@ -593,7 +605,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-family: "Arnhem Pro", "Georgia", sans-serif;
+  font-family: "ArnhemPro", "Georgia", sans-serif;
 }
 @media screen and (min-width: 768px) {
   h3, .h3 {
@@ -666,7 +678,7 @@ li > ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 dd {
@@ -674,7 +686,7 @@ dd {
 }
 
 b, strong {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 dfn, cite, em, i {
@@ -689,6 +701,14 @@ blockquote {
 }
 blockquote p {
   margin: 0;
+}
+blockquote .quote:first-child {
+  margin-left: -10px;
+}
+@media screen and (min-width: 768px) {
+  blockquote .quote:first-child {
+    margin-left: -20px;
+  }
 }
 
 address {
@@ -709,7 +729,7 @@ pre {
 
 code, kbd, tt, var {
   font-family: "Menlo", monospace;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 0.9em;
   color: #0071BC;
 }
@@ -1419,7 +1439,6 @@ a.scroll-down:after {
 .page-section blockquote p {
   font-size: 1.5rem;
   line-height: 1.875rem;
-  font-weight: 700;
   max-width: 42.624rem;
   margin: 0 auto;
   padding: 0 15px;

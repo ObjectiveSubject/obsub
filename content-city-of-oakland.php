@@ -34,7 +34,7 @@
 	<figure class="alignnone hug">
 		<div style="overflow:hidden; position: relative;">
 			<blockquote data-parallax-node="0.5">
-				<p>"Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures."<br/><small>&mdash; Kayla, Oakland Native, Chapter 510</small></p>
+				<p><span class="quote">&ldquo;</span>Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures.<span class="quote">&rdquo;</span><br/><small>&mdash; Kayla, Oakland Native, Chapter 510</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		</div>
