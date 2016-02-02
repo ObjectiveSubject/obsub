@@ -36,7 +36,7 @@ get_header(); ?>
 			$color = get_field('case_study_color');
 		?>
 
-		<section id="<?php echo $post->post_name; ?>" class="page-section full-height case-study-preview <?php echo $post->post_name; ?>" >
+		<section id="<?php echo $post->post_name; ?>" class="page-section full-height case-study-preview use-ui-light-theme <?php echo $post->post_name; ?>" >
 			<div class="section-container">
 				<div class="section-image-container">
 					<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );">

@@ -21,7 +21,7 @@ function os_get_case_study() {
 		$featured_image_url = $featured_image_array[0];
 		$color = get_field('case_study_color', $study->ID); ?>
 
-		<section class="page-section full-height case-study-preview active-on-inview <?php echo $study->post_name; ?>" data-offset="0.25">
+		<section class="page-section full-height case-study-preview active-on-inview use-ui-light-theme <?php echo $study->post_name; ?>" data-offset="0.25">
 			<div class="section-container">
 				<div class="section-image-container">
 					<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );">

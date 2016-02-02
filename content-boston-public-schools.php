@@ -4,7 +4,7 @@
 	$featured_image_url = $featured_image_array[0];
 ?>
 
-<section class="page-header page-section full-height" style="background-image:url( <?php echo $featured_image_url; ?> )">
+<section class="page-header page-section full-height use-ui-light-theme" style="background-image:url( <?php echo $featured_image_url; ?> )">
 	<div class="outer-container">
 		<h1 class="page-title inner-container"><?php echo get_the_excerpt(); ?></h1>
 		<p class="page-subtitle h3 inner-container"><em>Visual identity</em> and <em>user interface</em> design for Boston Public Schools</p>
