@@ -13,10 +13,10 @@ input[type="password"],
 input[type="search"],
 input[type="number"],
 textarea {
-	display: inline;
-	width: auto;
+	display: block;
+	width: 100%;
 	color: $color_text_input;
-	background: none;
+	background-color: white;
 	font-family: $font_heading;
 	line-height: 1em;
 	border: 0;
@@ -24,7 +24,11 @@ textarea {
 	box-sizing: border-box;
 	padding: 0 0 0 3px;
 	transition: all 300ms ease;
-
+	@include media($screen-sm) {
+		display: inline;
+		width: auto;
+		background: none;
+	}
 
 	&.block {
 		display: block;
@@ -163,7 +167,10 @@ label {
 	}
 }
 
-
+.g-recaptcha {
+	max-width: 100%;
+	overflow: hidden;
+}
 
 
 

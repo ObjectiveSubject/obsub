@@ -194,6 +194,9 @@
 	/* Submit Success
 	-------------------------------------------------- */
 	function postSuccess(data, textstatus, jqXHR) {
+		var media = OS.getMediaSize(),
+			offset = (media !== "default" && media !== "small") ? -180 : -100;
+
 		$success = $('.contact-form-container .success');
 
 		if ( data.recaptcha ) {
@@ -206,6 +209,7 @@
 			{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
 			{ e: $success, p: "fadeIn", o: { duration: 500 } },
 			{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500, sequenceQueue: false } },
+			{ e: $('.contact-form-container'), p: "scroll" , o: { duration: 500, sequenceQueue: false, offset: offset } },
 		];
 		$.Velocity.RunSequence(animationSequence);
 	}
