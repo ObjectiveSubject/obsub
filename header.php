@@ -17,6 +17,9 @@
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
 <?php endif; ?>
 <?php wp_head(); ?>
+<?php if ( is_page( 'contact' ) || is_singular( 'case_study' ) ) : ?>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+<?php endif ;?>
 </head>
 
 <body <?php body_class(); ?> >

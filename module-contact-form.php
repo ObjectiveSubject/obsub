@@ -37,12 +37,13 @@
 
 				<div class="input-row future-A">
 					<label class="row-node inline-label h2 hug">my email address is </label>
-					<span class="row-node inline-input h2"><input type="text" id="contact_email" name="contact_email" value="" placeholder="luke@rebelbase.org" required></span>
+					<span class="row-node inline-input h2"><input type="email" id="contact_email" name="contact_email" value="" placeholder="luke@rebelbase.org" required></span>
 				</div>
 
 				<div class="input-row future-A push">
 					<!-- <label class="row-node h2 hug">my message is:</label> -->
 					<span class="row-node h2"><textarea id="contact_message" name="contact_message" value="" placeholder="write your message here..." required></textarea></span>
+					<div class="g-recaptcha" data-sitekey="6LdyAhcTAAAAAFhYeun4VgaG-zl-lZtoRVyOcxbg"></div>
 					<img src="<?php echo os_path('loader.svg'); ?>" width="44" height="44" alt="loader" class="form-loader" />
 					<input type="submit" id="contact_submit" class="h2 future-A push" name="contact_submit" value="send message" disabled />
 				</div>

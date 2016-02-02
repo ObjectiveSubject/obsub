@@ -22,7 +22,7 @@ textarea {
 	border: 0;
 	border-radius: 0;
 	box-sizing: border-box;
-	padding: 0;
+	padding: 0 0 0 3px;
 	transition: all 300ms ease;
 
 
@@ -37,6 +37,22 @@ textarea {
 		outline: 0;
 	}
 
+	&.error {
+		background-color: #FB8585;
+		&::-webkit-input-placeholder {
+			color: tint(#FB8585, 20%);
+		}
+		&::-moz-placeholder {
+			color: tint(#FB8585, 20%);
+		}
+		&:-moz-placeholder {   /* Older versions of Firefox */
+			color: tint(#FB8585, 20%);
+		}
+		&:-ms-input-placeholder { 
+			color: tint(#FB8585, 20%);
+		}
+	}
+
 	&::-webkit-input-placeholder {
 		color: tint($medium_gray, 20%);
 	}
@@ -49,6 +65,7 @@ textarea {
 	&:-ms-input-placeholder { 
 		color: tint($medium_gray, 20%);
 	}
+
 }
 
 textarea {
@@ -140,10 +157,10 @@ label {
 
 .message {
 	display: none;
-}
 
-.error {
-	color: #FB8585;
+	&.error {
+		color: #FB8585;
+	}
 }
 
 

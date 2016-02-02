@@ -2,13 +2,10 @@
 	position: relative;
 	padding-top: 6rem;
 	padding-bottom: 5rem;
-	a {
+	span, a {
 		display: block;
 		padding: 5px 0;
 		color: $medium_gray;
-		&:hover {
-			color: $color_text_main;
-		}
 
 		@include media(1010px) {
 			display: inline-block;
@@ -19,6 +16,16 @@
 			}
 		}
 
+		i {
+			font-style: normal;
+			vertical-align: -10px;
+			font-size: 1.8em;
+		}
+	}
+	a {
+		&:hover {
+			color: $color_text_main;
+		}
 		&.facebook {
 			margin-top: $leading;
 		}

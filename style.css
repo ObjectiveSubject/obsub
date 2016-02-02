@@ -1796,23 +1796,28 @@ a.scroll-down:after {
   padding-top: 6rem;
   padding-bottom: 5rem;
 }
-.site-footer a {
+.site-footer span, .site-footer a {
   display: block;
   padding: 5px 0;
   color: #999C98;
 }
-.site-footer a:hover {
-  color: #222222;
-}
 @media screen and (min-width: 1010px) {
-  .site-footer a {
+  .site-footer span, .site-footer a {
     display: inline-block;
     padding: 0;
     margin-right: 5%;
   }
-  .site-footer a.social {
+  .site-footer span.social, .site-footer a.social {
     margin-right: 1%;
   }
+}
+.site-footer span i, .site-footer a i {
+  font-style: normal;
+  vertical-align: -10px;
+  font-size: 1.8em;
+}
+.site-footer a:hover {
+  color: #222222;
 }
 .site-footer a.facebook {
   margin-top: 1.5rem;
@@ -1929,7 +1934,7 @@ textarea {
   border: 0;
   border-radius: 0;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 0 0 3px;
   transition: all 300ms ease;
 }
 input[type="text"].block,
@@ -1952,6 +1957,52 @@ textarea:focus {
   color: #222222;
   background-color: white;
   outline: 0;
+}
+input[type="text"].error,
+input[type="email"].error,
+input[type="url"].error,
+input[type="password"].error,
+input[type="search"].error,
+input[type="number"].error,
+textarea.error {
+  background-color: #FB8585;
+}
+input[type="text"].error::-webkit-input-placeholder,
+input[type="email"].error::-webkit-input-placeholder,
+input[type="url"].error::-webkit-input-placeholder,
+input[type="password"].error::-webkit-input-placeholder,
+input[type="search"].error::-webkit-input-placeholder,
+input[type="number"].error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder {
+  color: #fc9d9d;
+}
+input[type="text"].error::-moz-placeholder,
+input[type="email"].error::-moz-placeholder,
+input[type="url"].error::-moz-placeholder,
+input[type="password"].error::-moz-placeholder,
+input[type="search"].error::-moz-placeholder,
+input[type="number"].error::-moz-placeholder,
+textarea.error::-moz-placeholder {
+  color: #fc9d9d;
+}
+input[type="text"].error:-moz-placeholder,
+input[type="email"].error:-moz-placeholder,
+input[type="url"].error:-moz-placeholder,
+input[type="password"].error:-moz-placeholder,
+input[type="search"].error:-moz-placeholder,
+input[type="number"].error:-moz-placeholder,
+textarea.error:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #fc9d9d;
+}
+input[type="text"].error:-ms-input-placeholder,
+input[type="email"].error:-ms-input-placeholder,
+input[type="url"].error:-ms-input-placeholder,
+input[type="password"].error:-ms-input-placeholder,
+input[type="search"].error:-ms-input-placeholder,
+input[type="number"].error:-ms-input-placeholder,
+textarea.error:-ms-input-placeholder {
+  color: #fc9d9d;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
@@ -2083,8 +2134,7 @@ label.block {
 .message {
   display: none;
 }
-
-.error {
+.message.error {
   color: #FB8585;
 }
 

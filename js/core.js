@@ -81,7 +81,7 @@
 	});
 
 	$rowInput
-		.keyup(function(){
+		.on("keyup", function(){
 			var $input = $(this);
 			clearTimeout(timeout);
 			timeout = setTimeout(function(){
@@ -90,13 +90,13 @@
 				}
 			}, 600);
 		})
-		.keydown(function(){
+		.on("keydown", function(){
 			clearTimeout(timeout);
 		})
-		.focus(function(){
+		.on("focus", function(){
 			$(this).parents(".input-row").addClass("current");
 		})
-		.blur(function(){
+		.on("blur", function(){
 			$(this).parents(".input-row").removeClass("current");
 		});
 
@@ -136,40 +136,93 @@
 
 	$('#contact-form').submit(function(e){
 		e.preventDefault();
+		var $form = $(this),
+			postData = $(this).serialize();
+		
 		$('.contact-form').addClass("loading");
-		var postData = $(this).serialize();
+		if ( !checkValidForm( $form ) ) {
+			postError(false, "Invalid field", "Please make sure your fields are valid.");
+			postAlways();
+			return;
+		}
+
 		var settings = { 
 			url: osAdmin.ajaxUrl,
 			type: 'post',
 			dataType: 'json',
 			data: 'action=os_form_process&nonce='+osAdmin.nonce+'&'+postData,
-			success : function(data, textstatus, jqXHR) {
-				$success = $('.contact-form-container .success');
-
-				if ( data.mail_sent ) {
-					$success.append("Thank you! We'll be in touch shortly.");
-				} else {
-					$success.append("Thank you for contacting us!<br/><br/>Unfortunately an email notification wasn't sent. Please reach out directly: <a href='mailto:info@objectivesubject.com'>info@objectivesubject.com</a>");
-				}
-
-				var animationSequence = [
-					{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
-					{ e: $success, p: "fadeIn", o: { duration: 500 } },
-					{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500, sequenceQueue: false } },
-				];
-				$.Velocity.RunSequence(animationSequence);
-			},
-			error : function(jqXHR, textstatus, error){
-				$('.error p').append("Oops, looks like there was an error! See below:<br/><br/>" + textstatus + "<br/>" + error);
-				$('.error').velocity("fadeIn", 500);
-				throw textstatus + ": " + error;
-			},
-			complete : function(){
-				$('.contact-form').removeClass("loading");
-			}
+			success : postSuccess,
+			error : postError,
+			complete : postAlways
 		};
 		$.ajax(settings);
 	});
+
+	/* From Validation
+	-------------------------------------------------- */
+	function checkValidForm( form ){
+		var $form = (form.jquery) ? form : $(form),
+			regExpMail = new RegExp( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ ),
+			formValid = true;
+
+		$form.find('input[type="email"]').each(function(){
+			var valid = regExpMail.test( $(this).val() );
+			if ( !valid ) formValid = false;
+			$('input[type="email"]').removeClass('error');
+			$(this).addClass('error');
+			$('.message.error').append('Please provide a valid email address');
+		});
+
+		$form.find('input[required], textarea[required]').each(function(){
+			if ( !$(this).val() ) {
+				formValid = false;
+				$('input[required]').removeClass('error');
+				$(this).addClass('error');
+			}
+			$('.message.error').append('Please make sure to give us your name, email, and a brief message.');
+		});
+	
+		$form.find('input[type="hidden"]').each(function(){
+			if ( $(this).val() ) {
+				formValid = false;
+			}
+		});
+
+		return formValid;
+	}
+
+	/* Submit Success
+	-------------------------------------------------- */
+	function postSuccess(data, textstatus, jqXHR) {
+		$success = $('.contact-form-container .success');
+
+		if ( data.recaptcha ) {
+			$success.append("Thank you! We'll be in touch shortly.");
+		} else {
+			$success.append("Sorry, the verification process failed.<br/><br/>Please reach out directly: <a href='mailto:info@objectivesubject.com'>info@objectivesubject.com</a>");
+		}
+
+		var animationSequence = [
+			{ e: $('#contact-form'), p: { opacity: 0 } , o: { duration: 500 } },
+			{ e: $success, p: "fadeIn", o: { duration: 500 } },
+			{ e: $('#contact-form'), p: { height: 0 } , o: { duration: 500, sequenceQueue: false } },
+		];
+		$.Velocity.RunSequence(animationSequence);
+	}
+
+	/* Submit Error
+	-------------------------------------------------- */
+	function postError(jqXHR, textstatus, error){
+		$('.message.error').html("Oops, looks like there was an error! See below:<br/><br/>" + textstatus + "<br/>" + error + "<br/>" + jqXHR.responseText);
+		$('.message.error').velocity("fadeIn", 500);
+	}
+
+	/* Submit Always
+	-------------------------------------------------- */
+	function postAlways(){
+		$('.contact-form').removeClass("loading");
+	}
+
 
 
 })(jQuery, window);
