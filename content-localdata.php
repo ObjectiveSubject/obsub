@@ -26,7 +26,7 @@
 			<p>If cities and towns across the country are to thrive in the decades ahead, the detailed, parcel-level data that community groups, planners and government agencies collect needs to be transformed.</p>
 			<p>When three eager technologists were embedded in the Detroit city government as part of their Code for America fellowship, they knew they had their work cut out for them.</p>
 			<ol class="list-unstyled os-numbered-list">
-				<li><span class="number future-A">1</span>They saw Detriot as the vast sprawling city.</li>
+				<li><span class="number future-A">1</span>They saw Detroit as the vast sprawling city.</li>
 				<li><span class="number future-A">2</span>Looking for the best opportunities to use technology.</li>
 				<li><span class="number future-A">3</span>Outdated surveys providing inadequate data for informed decisions, was a major issue.</li>
 				<li><span class="number future-A">4</span>Surveying was a time and resources-intensive process involving paper forms, content-entry errors and many months to plot an area.</li>
