@@ -41,7 +41,7 @@
 				</div>
 
 				<div class="input-row future-A push">
-					<!-- <label class="row-node h2 hug">my message is:</label> -->
+					<label class="row-node h2 hug no-placeholder">my message is:</label>
 					<span class="row-node h2"><textarea id="contact_message" name="contact_message" value="" placeholder="write your message here..." required></textarea></span>
 					<div class="g-recaptcha" data-sitekey="6LdyAhcTAAAAAFhYeun4VgaG-zl-lZtoRVyOcxbg"></div>
 					<img src="<?php echo os_path('loader.svg'); ?>" width="44" height="44" alt="loader" class="form-loader" />

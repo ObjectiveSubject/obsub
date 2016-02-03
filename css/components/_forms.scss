@@ -217,6 +217,13 @@ label {
 	}
 }
 
+.no-placeholder {
+	display: none;
+	.os-no-placeholder & {
+		display: block;
+	}
+}
+
 
 
 

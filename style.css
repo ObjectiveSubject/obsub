@@ -2264,6 +2264,13 @@ label.block {
   padding: 0 10px;
 }
 
+.no-placeholder {
+  display: none;
+}
+.os-no-placeholder .no-placeholder {
+  display: block;
+}
+
 /* Media
  * -----------------------------------------------------------*/
 .page-content .wp-smiley,
