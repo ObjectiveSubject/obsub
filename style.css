@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: obsub
 Theme URI: https://github.com/ObjectiveSubject/obsub
@@ -2275,6 +2276,43 @@ figcaption {
   color: #06CA00;
 }
 
+/* A CSS Browser bar
+ * -----------------------------------------------------------*/
+.browser:before {
+  content: "•••";
+  display: block;
+  max-width: 850px;
+  margin: 0 auto;
+  background: #D4D4D4;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #FFF;
+  font-size: 110%;
+  padding-left: 1%;
+  height: 15px;
+  line-height: 100%;
+}
+@media screen and (min-width: 500px) {
+  .browser:before {
+    font-size: 130%;
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .browser:before {
+    font-size: 150%;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .browser:before {
+    font-size: 170%;
+    height: 30px;
+  }
+}
+
 /* Responsive Media
  * -----------------------------------------------------------*/
 [class*="responsive-media-"] {
@@ -2600,7 +2638,7 @@ figcaption {
 .graphic-arrow {
   display: none;
   position: relative;
-  width: 14px;
+  width: 32px;
   height: 14px;
 }
 .os-csstransforms .graphic-arrow {
@@ -2609,7 +2647,6 @@ figcaption {
 .graphic-arrow:before, .graphic-arrow:after {
   content: "";
   position: absolute;
-  left: 0;
   width: 18px;
   height: 4px;
   background-color: #222222;
@@ -2634,6 +2671,12 @@ figcaption {
 }
 .boston-public-schools .os-slide-nav a:hover .graphic-arrow:before, .boston-public-schools .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #0E7A09;
+}
+.next .graphic-arrow:before, .next .graphic-arrow:after {
+  right: 0;
+}
+.prev .graphic-arrow:before, .prev .graphic-arrow:after {
+  left: 0;
 }
 .graphic-arrow:before {
   top: 0;
@@ -3113,6 +3156,7 @@ figcaption {
 }
 .slider-row img {
   display: block;
+  background-color: white;
   width: 45%;
   float: left;
   margin: 0 2.5%;
@@ -3144,4 +3188,9 @@ figcaption {
   .slider-row img.top.small {
     clip: rect(0, 58px, 70px, 0);
   }
+}
+
+.parallax-container {
+  overflow: hidden;
+  position: relative;
 }

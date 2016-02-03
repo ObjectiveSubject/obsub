@@ -272,7 +272,7 @@
 .graphic-arrow {
     display: none;
     position: relative;
-    width: 14px;
+    width: 32px;
     height: 14px;
     .os-csstransforms & {
         display: block;
@@ -280,7 +280,6 @@
     &:before, &:after {
         content: "";
         position: absolute;
-        left: 0;
         width: 18px;
         height: 4px;
         background-color: $color_text_main;
@@ -291,6 +290,12 @@
         .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
         .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
         .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
+        .next & {
+            right: 0;
+        }
+        .prev & {
+            left: 0;
+        }
     }
     &:before {
         top: 0;

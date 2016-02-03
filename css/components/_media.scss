@@ -72,6 +72,37 @@ figcaption {
 	}
 }
 
+/* A CSS Browser bar
+ * -----------------------------------------------------------*/
+.browser:before {
+	content: "•••";
+	display: block;
+	max-width: 850px;
+	margin: 0 auto;
+	background: #D4D4D4;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #FFF;
+	font-size: 110%;
+	padding-left: 1%;
+	height: 15px;
+	line-height: 100%;
+	@include media($screen-sm) {
+		font-size: 130%;
+		height: 20px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	@include media($screen-sm) {
+		font-size: 150%;
+		height: 25px;
+	}
+	@include media($screen-xl) {
+		font-size: 170%;
+		height: 30px;
+	}
+}
+
 
 /* Responsive Media
  * -----------------------------------------------------------*/
