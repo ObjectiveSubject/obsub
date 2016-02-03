@@ -914,9 +914,17 @@ a.no-decoration {
   display: inline-block;
 }
 [class*="rotate-"][class*="-c-45"] {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 [class*="rotate-"][class*="-cc-45"] {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -1799,6 +1807,10 @@ a.scroll-down:after {
   transition: all 250ms ease;
 }
 .cta-link:hover [class*="rotate-"] {
+  -webkit-transform: rotate(0) translateX(20px);
+  -moz-transform: rotate(0) translateX(20px);
+  -ms-transform: rotate(0) translateX(20px);
+  -o-transform: rotate(0) translateX(20px);
   transform: rotate(0) translateX(20px);
 }
 
@@ -2993,6 +3005,10 @@ figcaption {
 
 .bps-wordmarks img {
   display: block;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
   transform: translateY(-30px);
   opacity: 0;
   transition: all 500ms ease;
@@ -3004,6 +3020,10 @@ figcaption {
   transition-delay: 500ms;
 }
 .bps-wordmarks.active img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
 }

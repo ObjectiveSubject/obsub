@@ -40,7 +40,7 @@
 	}
 	&:hover {
 		[class*="rotate-"] {
-			transform: rotate(0) translateX(20px);
+			@include transform( rotate(0) translateX(20px) );
 		}
 	}
 }

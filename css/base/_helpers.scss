@@ -105,10 +105,10 @@ a.no-decoration { text-decoration: none; }
 [class*="rotate-"] {
 	display: inline-block;
 	&[class*="-c-45"] {
-		transform: rotate(45deg);
+		@include transform( rotate(45deg) );
 	}
 	&[class*="-cc-45"] {
-		transform: rotate(-45deg);
+		@include transform( rotate(-45deg) );
 	}
 }
 

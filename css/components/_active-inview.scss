@@ -1,7 +1,7 @@
 .bps-wordmarks {
 	img {
 		display: block;
-		transform: translateY(-30px);
+		@include transform( translateY(-30px) );
 		opacity: 0;
 		transition: all 500ms ease;
 		&:nth-child(2) {
@@ -13,7 +13,7 @@
 	}
 	&.active {
 		img {
-			transform: translateY(0);
+			@include transform( translateY(0) );
 			opacity: 1;
 		}
 	}
