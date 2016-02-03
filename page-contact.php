@@ -11,7 +11,8 @@ get_header(); ?>
 
 		<section class="page-header page-section full-height">
 			<div class="outer-container">
-				<h1 class="page-title inner-container">We’re based in Brooklyn, NY and Oakland, CA.</h1>
+				<h1 class="page-title inner-container">Why not say hi?</h1>
+				<h3 class="page-subtitle inner-container">We work on both coasts of the United States to make smart design happen.</h3>
 				<h2 class="future-A page-subtitle inner-container">
 					718.801.8075<br/>
 					<a href="mailto:info@objectivesubject.com" class="text-color-link">info@objectivesubject.com</a>
