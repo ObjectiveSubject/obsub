@@ -54,6 +54,7 @@
 		@include media($screen-md) {
 			@include span-columns(4);
 			@include shift(2);
+			clear: left;
 		}
 	}
 	&.layout-half.right {
