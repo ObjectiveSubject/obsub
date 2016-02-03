@@ -75,7 +75,7 @@
 			top: 50%;
 			width: 100%;
 			padding: 0;
-			transform: translateY(-50%);
+			@include transform( translateY(-50%) );
 		}
 	}
 	.case-study-preview & {

@@ -2873,6 +2873,10 @@ figcaption {
     top: 50%;
     width: 100%;
     padding: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 }
