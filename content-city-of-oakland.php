@@ -28,10 +28,11 @@
 	<figure class="alignnone">
 		<div class="parallax-container">
 			<blockquote data-parallax-node="0.5">
-				<p><span class="quote">&ldquo;</span>Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures.<span class="quote">&rdquo;</span><br/><small>&mdash; Kayla, Oakland Native, Chapter 510</small></p>
+				<p><span class="quote">&ldquo;</span>Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures.<span class="quote">&rdquo;</span><br/><small>&mdash; Kayla, Oakland Native, Chapter 510 Writing Project</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?>" srcset="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?> 1x, <?php echo os_path('CoO-TreeB-@2x-min.jpg', 'oakland') ?> 2x" width="1600" height="1008">
 		</div>
+		<figcaption class="outer-container"><div class="inner-container">Big Trees Trail at Joaquin Miller Park, Oakland (Photo credits: Greg Linhares / City of Oakland)</div></figcaption>
 	</figure>
 
 	<div class="outer-container">

@@ -168,7 +168,7 @@ blockquote {
 
 	.quote:first-child {
 		margin-left: -10px;
-		@include media($screen-md) {
+		@include media($screen-lg) {
 			margin-left: -20px;
 		}
 	}
