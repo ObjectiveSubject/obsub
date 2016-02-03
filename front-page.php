@@ -154,7 +154,7 @@ get_header(); ?>
 				</li>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
-						<p><strong>Worldstrides</strong></p>
+						<p><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250"/></p>
 						<p class="push">An undisputed leader in educational travel for nearly 50 years, WorldStrides offers a wide range of traveler experiences from elementary school trips to full-scale group itineraries for graduate students in MBA programs around the world.</p>
 						<p class="push">Our work involved robust content strategy to bring harmony across a disparate set of metadata. Our research and analysis determined that the individual trip, or itinerary, ought to be the key node around which all content is organized. We created a series of reusable content modules which are shared amongst itineraries, simplifying site maintenance, while creating unique and immersive experiences for the user.</p>
 						<p class="push">Since launching in November 2015, the results have been impressive, with a 50% jump in lead generation.</p>
