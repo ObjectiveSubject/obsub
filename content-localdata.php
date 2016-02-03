@@ -59,9 +59,10 @@
 	<figure class="os-slideshow-container">
 		<div id="tool-landing-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#tool-landing-nav .prev", "nextArrow": "#tool-landing-nav .next", "appendDots": "#tool-landing-dots" }'>
-			<li><img data-lazy="<?php echo os_path('tool-landing.jpg', 'localdata'); ?>" width="850" height="792"></li>
-			<li><img data-lazy="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
-			<li><img data-lazy="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool2-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool3-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool4-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Tool1.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool1.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool1-@2x.png', 'localdata'); ?> 2x" width="850" height="600"></li>
 		</ul>
 		<?php os_slide_nav("tool-landing-nav"); ?>
 		<div class="outer-container">
@@ -78,9 +79,9 @@
 	<figure class="os-slideshow-container">
 		<div id="homepage-slide-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#homepage-slide-nav .prev", "nextArrow": "#homepage-slide-nav .next", "appendDots": "#homepage-slide-dots" }'>
-			<li><img data-lazy="<?php echo os_path('homepage.jpg', 'localdata') ?>" width="850" height="792"></li>
-			<li><img data-lazy="http://placehold.it/850x792/aaaaaa/ffffff?text=Slide" width="850" height="792"></li>
-			<li><img data-lazy="http://placehold.it/850x792/dddddd/666666?text=Slide" width="850" height="792"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Homepage-@2x-min.png', 'localdata') ?> 2x" width="850" height="600"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-In-Action-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600"></li>
+			<li class="browser"><img src="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Story-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600"></li>
 		</ul>
 		<?php os_slide_nav("homepage-slide-nav"); ?>
 	</figure>
@@ -88,27 +89,12 @@
 		<figcaption class="inner-container">The LocalData Homepage</figcaption>
 	</div>
 	<figure class="aligncenter">
-		<img src="<?php echo os_path('stationery.png', 'localdata') ?>" width="1200" height="797">
+		<img src="<?php echo os_path('LD-Stationery-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Stationery-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Stationery-@2x-min.png', 'localdata') ?> 2x" width="1200" height="797">
 		<div class="outer-container">
 			<figcaption class="inner-container">LocalData Stationery</figcaption>
 		</div>
 	</figure>
 	<div class="colophon push-double outer-container clearfix">
-		<div class="inner-container">
-			<div class="details push-double">
-				<em>Details</em><br/>
-				<em>Typography</em>: Neuzeit (1966, Wilhelm Pischner)<br/>
-				<em>Industry</em>: Public Sector, Start-Up<br/>
-				<em>Team</em>: David Jalber-Gagnier, Sam Gray, Emma White, Jessica Wilson
-			</div>
-			<div class="awards push-double">
-				<span class="icon-trophy">[trophy]</span><br/>
-				<em>Red dot award</em>: Best Design Interface<br/>
-				<em>D&AD</em>: Website Award<br/>
-				<em>Webby</em>: Commended<br/>
-				<em>W3</em>: Special Mention
-			</div>
-		</div>
 		<p class="h2 future-A inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 </section>

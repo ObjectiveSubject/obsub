@@ -2620,6 +2620,9 @@ figcaption {
   margin: 0;
 }
 
+.os-slide-nav {
+  display: none;
+}
 .os-slide-nav:before, .os-slide-nav:after {
   content: "";
   display: table;
@@ -2629,6 +2632,7 @@ figcaption {
 }
 @media screen and (min-width: 768px) {
   .os-slide-nav {
+    display: block;
     position: absolute;
     top: 50%;
     left: 0;

@@ -58,9 +58,9 @@
 
 	<figure class="bps-wordmarks aligncenter active-on-inview" data-offset="0.5">
 		<div style="background-color: #0077D2;" >	
-			<img src="<?php echo os_path('discover.png', 'bps') ?>" width="820" height="240">
-			<img src="<?php echo os_path('register.png', 'bps') ?>" width="820" height="240">
-			<img src="<?php echo os_path('succeed.png', 'bps') ?>" width="820" height="240">
+			<img src="<?php echo os_path('Discover.png', 'bps') ?>" srcset="<?php echo os_path('Discover.png', 'bps') ?> 1x, <?php echo os_path('Discover-@2x.png', 'bps') ?> 2x" width="820" height="240">
+			<img src="<?php echo os_path('Register.png', 'bps') ?>" srcset="<?php echo os_path('Register.png', 'bps') ?> 1x, <?php echo os_path('Register-@2x.png', 'bps') ?> 2x" width="820" height="240">
+			<img src="<?php echo os_path('Succeed.png', 'bps') ?>" srcset="<?php echo os_path('Succeed.png', 'bps') ?> 1x, <?php echo os_path('Succeed-@2x.png', 'bps') ?> 2x" width="820" height="240">
 		</div>
 		<div class="outer-container">
 			<figcaption class="inner-container">Discover Boston Public Schools wordmarks</figcaption>
@@ -72,7 +72,7 @@
 	</div>
 
 	<figure class="aligncenter">	
-		<img src="<?php echo os_path('posters.png', 'bps') ?>" width="1200" height="796">
+		<img src="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Poster-@2x-min.png', 'bps') ?> 2x" width="1200" height="797">
 		<div class="outer-container">
 			<figcaption class="inner-container">A poster for a school showcase using the visual system</figcaption>
 		</div>
@@ -87,7 +87,7 @@
 <section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">	
 	<figure class="aligncenter hug">
 		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
-			<img src="<?php echo os_path('results.png', 'bps') ?>" width="843" height="317">
+			<img src="<?php echo os_path('DBPS-Results.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Results.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Results-@2x.png', 'bps') ?> 2x" width="843" height="317">
 		</div>
 		<div class="outer-container">
 			<figcaption class="inner-container">Comprehensive Icon system for filtration of schools</figcaption>
@@ -104,17 +104,25 @@
 	<figure class="os-slideshow-container">
 		<div id="bps-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-website-nav .prev", "nextArrow": "#bps-website-nav .next", "appendDots": "#bps-website-dots" }'>
-			<li class="shadow">
-				<img data-lazy="<?php echo os_path('website-home.png', 'bps'); ?>" width="1200" height="1100">
-				<figcaption>Discover Boston Public Schools Homepage</figcaption>
+			<li class="browser">
+				<img src="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Home-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<figcaption>Discover Boston Public Schools homepage</figcaption>
 			</li>
-			<li class="shadow">
-				<img data-lazy="<?php echo os_path('website-results.png', 'bps'); ?>" width="1200" height="1100">
+			<li class="browser">
+				<img src="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
 				<figcaption>School results</figcaption>
 			</li>
-			<li class="shadow">
-				<img data-lazy="<?php echo os_path('website-school-detail.png', 'bps'); ?>" width="1200" height="1100">
+			<li class="browser">
+				<img src="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-Details-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
 				<figcaption>School detail</figcaption>
+			</li>
+			<li class="browser">
+				<img src="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Compare-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<figcaption>Compare schools</figcaption>
+			</li>
+			<li class="browser">
+				<img src="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Ready-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<figcaption>Schools chosen</figcaption>
 			</li>
 		</ul>
 		<div class="outer-container">
@@ -148,14 +156,6 @@
 	</figure>
 
 	<div class="outer-container">
-		<div class="colophon push-triple inner-container">
-			<div class="details">
-				<em>Details</em><br/>
-				<em>Typography</em>: Avenir (1988, Adrian Frutiger)<br/>
-				<em>Industry</em>: Public Sector<br/>
-				<em>Team</em>: David Jalber-Gagnier, Sam Gray, Kirk Pettinga, Emma White
-			</div>
-		</div>
 		<p class="h2 future-A inner-container"><a href="http://www.discoverbps.org/" class="cta-link" target="_blank">discoverbps.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
