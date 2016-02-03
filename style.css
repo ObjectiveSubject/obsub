@@ -1708,7 +1708,6 @@ a.scroll-down:after {
 }
 @media screen and (min-width: 768px) {
   .os-webgl .office-location {
-    border-top: 0;
     height: 100vh;
   }
 }
@@ -1728,6 +1727,8 @@ a.scroll-down:after {
   margin-top: 3rem;
   transition: opacity 750ms ease;
   overflow: hidden;
+  background-size: cover;
+  background-position: center center;
 }
 @media screen and (min-width: 768px) {
   .office-map {
@@ -1747,11 +1748,17 @@ a.scroll-down:after {
 .office-map.brooklyn-map {
   z-index: 1;
 }
+.os-no-webgl .office-map.brooklyn-map {
+  background-image: url(images/map-brooklyn.png);
+}
 .fixed .office-map.brooklyn-map {
   position: absolute;
 }
 .office-map.oakland-map {
   z-index: 0;
+}
+.os-no-webgl .office-map.oakland-map {
+  background-image: url(images/map-oakland.png);
 }
 .fixed .office-map.oakland-map {
   position: fixed;

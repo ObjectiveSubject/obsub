@@ -8,7 +8,6 @@
 	width: 100%;
 	@include media($screen-md) {
 		.os-webgl & {
-			border-top: 0;
 			height: 100vh;
 		}
 	}
@@ -29,6 +28,8 @@
 	margin-top: $leading * 2;
 	transition: opacity 750ms ease;
 	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
 	@include media($screen-md) {
 		height: 600px;
 		width: 50%;
@@ -39,19 +40,24 @@
 			top: 0;
 			right: 0;
 			height: 100vh;
-			// opacity: 0;
 			z-index: 0;
 		}
 	}
 
 	&.brooklyn-map {
 		z-index: 1;
+		.os-no-webgl & {
+			background-image: url(images/map-brooklyn.png);
+		}
 		.fixed & {
 			position: absolute;
 		}
 	}
 	&.oakland-map {
 		z-index: 0;
+		.os-no-webgl & {
+			background-image: url(images/map-oakland.png);
+		}
 		.fixed & {
 			position: fixed;
 		}
