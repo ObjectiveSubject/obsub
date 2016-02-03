@@ -29,7 +29,7 @@
 				distance;
 
 			if ( mediaSize !== "default" && mediaSize !== "small" ) {
-				scrollTop = OS.window.scrollTop(),
+				scrollTop = OS.window.scrollTop();
 				distance = scrollTop - previewTop;
 
 				if ( distance >= 0 ) {
