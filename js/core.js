@@ -398,6 +398,9 @@
 			mobileHA: false,
 			duration: speed,
 			complete: function(){
+				OS.window.on("scroll", function(e){
+					e.preventDefault();
+				});
 				location.href = href;
 			}
 		});
