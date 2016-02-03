@@ -24,7 +24,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<h2 class="future-A inner-container">opportunity</h2>
-		<p class="inner-container">Oakland, California is a diverse and dynamic community, with rapid change nearly a constant throughout its storied history. In order to deliver better services to that community, and clarify the services it provides, the City government working with <a href="https://www.codeforamerica.org/our-work/" target="_blank">Code for America</a>, is to define an ownable look and feel for all of its strategies and actions.</p>
+		<p class="inner-container">Oakland, California is a diverse and dynamic community, with rapid change nearly a constant throughout its storied history. In order to deliver better services to that community, and clarify the services it provides, the City government working with <a href="https://www.codeforamerica.org/our-work/" target="_blank" class="cs-body-link">Code for America</a>, is to define an ownable look and feel for all of its strategies and actions.</p>
 	</div>
 
 	<figure class="alignnone">
@@ -40,7 +40,7 @@
 	<div class="outer-container">
 		<p class="inner-container">
 			<strong>A Symbol</strong><br/>
-			For many decades, a stylized oak tree has represented the city and its intertwined citizenry. In fact, the symbol has become so popular that many in the community embrace it to brand their store, organization, and <a href="https://www.flickr.com/photos/rebeccacbrown13/4935745171" target="_blank">even bodies</a>. While such a wellspring of adoption is any community’s dream, this widespread use exposed the need to create a differentiated interpretation of the symbol, so it can be made clear when the government is communicating.
+			For many decades, a stylized oak tree has represented the city and its intertwined citizenry. In fact, the symbol has become so popular that many in the community embrace it to brand their store, organization, and <a href="https://www.flickr.com/photos/rebeccacbrown13/4935745171" target="_blank" class="cs-body-link">even bodies</a>. While such a wellspring of adoption is any community’s dream, this widespread use exposed the need to create a differentiated interpretation of the symbol, so it can be made clear when the government is communicating.
 		</p>
 		<p class="inner-container">In the past, the City never had a concerted approach to visual communication. The resulting cacophony of symbols across city departments did not connote the clarity and simplicity that should be the hallmark of any experience with a large organization. </p>
 	</div>

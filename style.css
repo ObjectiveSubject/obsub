@@ -1819,6 +1819,13 @@ a.scroll-down:after {
   transform: rotate(0) translateX(20px);
 }
 
+.city-of-oakland .cs-body-link {
+  color: #376FFF;
+}
+.city-of-oakland .cs-body-link:hover {
+  color: #0041ea;
+}
+
 .oakland-pattern {
   padding: 0;
   height: 32%;

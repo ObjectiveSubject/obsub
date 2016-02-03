@@ -45,6 +45,15 @@
 	}
 }
 
+.cs-body-link {
+	.city-of-oakland & {
+		color: $oakland_blue;
+		&:hover {
+			color: darken($oakland_blue, 15%);
+		}
+	}
+}
+
 .oakland-pattern {
 	padding: 0;
 	height: 32%;
