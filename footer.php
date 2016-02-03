@@ -12,9 +12,8 @@
 
 	<footer id="colophon" class="site-footer future-A bg-default" role="contentinfo">
 		<div class="outer-container">
-			<div class="inner-container">
-				<span class="copyright">copyright <i>&copy;</i> <?php echo date('Y'); ?> objective subject</span>
-				<a href="#subscribe" class="subscribe">let us say hi, periodically</a>
+			<div class="inner-container clearfix">
+				<a href="#subForm" class="subscribe-toggle">let us say hi, periodically</a>
 				<form action="http://objectivesubject.createsend.com/t/r/s/djdjtk/" method="post" id="subForm" class="subscribe-form">
 				    <div class="input-row">
 				        <label for="fieldEmail" class="hide">Email</label>
@@ -25,6 +24,7 @@
 				<a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">facebook</a>
 				<a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">twitter</a>
 				<a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">dribble</a>
+				<span class="copyright">copyright <i>&copy;</i> <?php echo date('Y'); ?> objective subject</span>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

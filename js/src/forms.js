@@ -190,6 +190,18 @@
 	}
 
 
+	/* Subscribe Form
+	----------------------------------------------- */
+	$('.subscribe-toggle').click(function(e){
+		e.preventDefault();
+		var target = $(this).attr("href");
+		if ( !$(target).hasClass("open") ){
+			$(target)
+				.addClass("open")
+				.velocity("slideDown", {duration: 300});
+			$(this).addClass("active");
+		}
+	});
 
 })(jQuery, window);
 

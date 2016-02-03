@@ -1823,12 +1823,13 @@ a.scroll-down:after {
 }
 @media screen and (min-width: 1010px) {
   .site-footer span, .site-footer a {
-    display: inline-block;
+    float: left;
     padding: 0;
-    margin-right: 5%;
+    margin-right: 2%;
   }
-  .site-footer span.social, .site-footer a.social {
-    margin-right: 1%;
+  .site-footer span.copyright, .site-footer a.copyright {
+    float: right;
+    margin-right: 0;
   }
 }
 .site-footer span i, .site-footer a i {
@@ -1836,11 +1837,8 @@ a.scroll-down:after {
   vertical-align: -10px;
   font-size: 1.8em;
 }
-.site-footer a:hover {
+.site-footer a:hover, .site-footer a.subscribe-toggle.active {
   color: #222222;
-}
-.site-footer a.facebook {
-  margin-top: 1.5rem;
 }
 .site-footer .inner-container {
   position: relative;
@@ -2177,13 +2175,30 @@ label.block {
 }
 
 .subscribe-form {
-  margin-top: 0;
+  display: none;
+  position: relative;
+  margin: 0 0 0.5rem;
+  box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 768px) {
   .subscribe-form {
     position: absolute;
     width: 100%;
+    top: 100%;
+    margin-top: -5px;
   }
+}
+.subscribe-form:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #FFF;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 .subscribe-form .input-row {
   height: 42px;
@@ -2191,7 +2206,7 @@ label.block {
 }
 .subscribe-form input {
   background: #FFF;
-  padding: 9px 3px 11px;
+  padding: 10px;
   display: block;
   width: 100%;
   height: 100%;

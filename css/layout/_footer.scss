@@ -8,11 +8,12 @@
 		color: $medium_gray;
 
 		@include media(1010px) {
-			display: inline-block;
+			float: left;
 			padding: 0;
-			margin-right: 5%;
-			&.social {
-				margin-right: 1%;	
+			margin-right: 2%;
+			&.copyright {
+				float: right;
+				margin-right: 0;
 			}
 		}
 
@@ -23,11 +24,8 @@
 		}
 	}
 	a {
-		&:hover {
+		&:hover, &.subscribe-toggle.active {
 			color: $color_text_main;
-		}
-		&.facebook {
-			margin-top: $leading;
 		}
 	}
 
