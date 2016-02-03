@@ -561,7 +561,6 @@
 (function( $, window, undefined ){
 
 	if ( $('.single-case_study').length > 0 && OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small" ) {
-		console.log(OS.getMediaSize());
 		$(document).ready(onReady);
 	}
 
