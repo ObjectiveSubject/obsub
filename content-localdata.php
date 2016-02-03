@@ -5,16 +5,18 @@
 ?>
 
 <section class="page-header page-section full-height use-ui-light-theme" style="background-image:url( <?php echo $featured_image_url; ?> )">
-	<div class="outer-container">
-		<h1 class="page-title inner-container"><?php echo get_the_excerpt(); ?></h1>
-		<p class="page-subtitle h3 inner-container"><?php the_field('case_study_subtitle'); ?></p>
-		<nav class="page-nav push-double inner-container">
-			<ul class="list-unstyled">
-				<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
-				<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
-				<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
-			</ul>
-		</nav>
+	<div class="section-content">
+		<div class="outer-container">
+			<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
+			<p class="page-subtitle h3 inner-container"><?php the_field('case_study_subtitle'); ?></p>
+			<nav class="page-nav inner-container">
+				<ul class="list-unstyled hug">
+					<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
+					<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
+					<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 	<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
 </section>

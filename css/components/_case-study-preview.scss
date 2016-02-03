@@ -19,11 +19,7 @@
 	
 	.full-height & {
 		height: 100%;
-	}
-	
-	.inner-container > *:first-child {
-		margin-top: 0;
-	}
+	}	
 }
 
 .section-image-container {
@@ -63,35 +59,37 @@
 	z-index: 2;
 	padding: 100px 0;
 	@include media($screen-md){
-		padding: 170px 0;	
-	}
-	@include media($screen-lg){
-		padding: 220px 0;	
-	}
-	.home-intro & {
-		@include media($screen-md) {
+		padding: 170px 0;
+		.os-csstransforms & {
 			padding: 0;
 			position: absolute;
-			top: 50%;
 			width: 100%;
-			padding: 0;
+			top: 50%;
 			@include transform( translateY(-50%) );
 		}
 	}
+	@include media($screen-lg){
+		padding: 220px 0;
+	}
+	
+	.inner-container > *:first-child {
+		margin-top: 0;
+	}
+	
 	.case-study-preview & {
 		color: rgba(white, 1);
 	}
-	.single-case_study & {
-		.outer-container {
+	.single-case_study .case-study-preview & {
+		@include transition(all 650ms ease);
+		@include media($screen-md) {
 			opacity: 0;
-			@include transform(translateY(50px));
-			@include transition(all 650ms ease);
+			@include transform(translateY(0));
 		}
 	}
-	.single-case_study .active & {
-		.outer-container {
+	.single-case_study .case-study-preview.active & {
+		@include media($screen-md) {
 			opacity: 1;
-			@include transform(translateY(0));
+			@include transform(translateY(-50%));
 		}
 	}
 }

@@ -30,8 +30,8 @@ function os_get_case_study() {
 				</div>
 				<div class="section-content">
 					<div class="outer-container">
-						<h1 class="case-study-title inner-container"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
-						<p class="case-study-subtitle hug inner-container"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></p>
+						<h1 class="case-study-title inner-container hug"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
+						<h3 class="case-study-subtitle hug inner-container"><em>Visual identity</em> and <em>user interface</em> for <?php echo get_the_title( $study->ID ); ?></h3>
 					</div>
 				</div>
 			</div>

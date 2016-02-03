@@ -1366,19 +1366,33 @@ a.scroll-down:after {
 }
 
 .page-header {
-  position: relative;
-  padding: 100px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.page-header .section-content {
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+}
 @media screen and (min-width: 768px) {
-  .page-header {
+  .page-header .section-content {
     padding: 170px 0;
+  }
+  .os-csstransforms .page-header .section-content {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 @media screen and (min-width: 960px) {
-  .page-header {
+  .page-header .section-content {
     padding: 220px 0;
   }
 }
@@ -1400,8 +1414,18 @@ a.scroll-down:after {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.page-nav li {
-  display: none;
+.page-nav {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .page-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-nav li {
+    opacity: 0;
+  }
 }
 .page-nav a {
   color: white;
@@ -2815,9 +2839,6 @@ figcaption {
 .full-height .section-container {
   height: 100%;
 }
-.section-container .inner-container > *:first-child {
-  margin-top: 0;
-}
 
 .section-image-container {
   position: absolute;
@@ -2860,19 +2881,11 @@ figcaption {
   .section-content {
     padding: 170px 0;
   }
-}
-@media screen and (min-width: 960px) {
-  .section-content {
-    padding: 220px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .home-intro .section-content {
+  .os-csstransforms .section-content {
     padding: 0;
     position: absolute;
-    top: 50%;
     width: 100%;
-    padding: 0;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -2880,27 +2893,41 @@ figcaption {
     transform: translateY(-50%);
   }
 }
+@media screen and (min-width: 960px) {
+  .section-content {
+    padding: 220px 0;
+  }
+}
+.section-content .inner-container > *:first-child {
+  margin-top: 0;
+}
 .case-study-preview .section-content {
   color: white;
 }
-.single-case_study .section-content .outer-container {
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transform: translateY(50px);
+.single-case_study .case-study-preview .section-content {
   -webkit-transition: all 650ms ease;
   -moz-transition: all 650ms ease;
   transition: all 650ms ease;
 }
-.single-case_study .active .section-content .outer-container {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
+@media screen and (min-width: 768px) {
+  .single-case_study .case-study-preview .section-content {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .single-case_study .case-study-preview.active .section-content {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 .get-in-touch {
