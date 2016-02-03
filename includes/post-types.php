@@ -112,7 +112,7 @@ function register_form_entry() {
 
 	register_post_type('form_entry', array(
 			'description' => '',
-			'public' => true,
+			'public' => false,
 			'show_ui' => true,
 			'show_in_menu' => true,
 			'capability_type' => 'post',
