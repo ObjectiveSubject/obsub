@@ -1370,32 +1370,6 @@ a.scroll-down:after {
   background-size: cover;
   background-position: center;
 }
-.page-header .section-content {
-  position: relative;
-  z-index: 2;
-  padding: 100px 0;
-}
-@media screen and (min-width: 768px) {
-  .page-header .section-content {
-    padding: 170px 0;
-  }
-  .os-csstransforms .page-header .section-content {
-    padding: 0;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-}
-@media screen and (min-width: 960px) {
-  .page-header .section-content {
-    padding: 220px 0;
-  }
-}
 .page-header .outer-container {
   position: relative;
   z-index: 1;
@@ -2889,7 +2863,7 @@ figcaption {
 .section-content {
   position: relative;
   z-index: 2;
-  padding: 100px 0;
+  padding: 150px 0 70px;
 }
 @media screen and (min-width: 768px) {
   .section-content {

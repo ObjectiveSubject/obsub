@@ -57,7 +57,7 @@
 .section-content {
 	position: relative;
 	z-index: 2;
-	padding: 100px 0;
+	padding: 150px 0 70px;
 	@include media($screen-md){
 		padding: 170px 0;
 		.os-csstransforms & {

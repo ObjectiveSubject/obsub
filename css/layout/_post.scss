@@ -3,25 +3,6 @@
 	background-size: cover;
 	background-position: center;
 
-	.section-content {
-		position: relative;
-		z-index: 2;
-		padding: 100px 0;
-		@include media($screen-md) {
-			padding: 170px 0;
-			.os-csstransforms & {
-				padding: 0;
-				position: absolute;
-				width: 100%;
-				top: 50%;
-				@include transform( translateY(-50%) );
-			}
-		}
-		@include media($screen-lg) {
-			padding: 220px 0;
-		}
-	}
-
 	.outer-container {
 		position: relative;
 		z-index: 1;
