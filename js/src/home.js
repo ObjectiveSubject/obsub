@@ -15,7 +15,6 @@
 			mediaSize;
 
 		init();
-		if ( mediaSize !== "default" && mediaSize !== "small" )
 		OS.window.on("resize", init);
 		OS.window.on('scroll', onScroll);	
 	
@@ -26,21 +25,26 @@
 		}
 
 		function onScroll() {
-			var scrollTop = OS.window.scrollTop(),
+			var scrollTop,
+				distance;
+
+			if ( mediaSize !== "default" && mediaSize !== "small" ) {
+				scrollTop = OS.window.scrollTop(),
 				distance = scrollTop - previewTop;
 
-			if ( distance >= 0 ) {
-				$container.velocity({
-					translateY: (distance * 0.5) + 'px'
-				}, 0);
-			} else if ( distance > $preview.outerHeight() / 2 ) {
-				$container.velocity({
-					translateY: '50%'
-				}, 0);
-			} else {
-				$container.velocity({
-					translateY: '0px'
-				}, 0);
+				if ( distance >= 0 ) {
+					$container.velocity({
+						translateY: (distance * 0.5) + 'px'
+					}, 0);
+				} else if ( distance > $preview.outerHeight() / 2 ) {
+					$container.velocity({
+						translateY: '50%'
+					}, 0);
+				} else {
+					$container.velocity({
+						translateY: '0px'
+					}, 0);
+				}
 			}
 		}
 	});

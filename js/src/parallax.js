@@ -30,7 +30,7 @@
 				var scrollTop = $window.scrollTop(),
 					offset = scrollTop - threshold;
 
-				if ( OS.getMediaSize() !== "default", OS.getMediaSize() !== "small" ) {
+				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small" ) {
 					
 					if ( scrollTop >= threshold ) {
 						$node.css({
