@@ -199,7 +199,7 @@
 			$(target)
 				.addClass("open")
 				.velocity("slideDown", {duration: 300});
-			$(this).addClass("active");
+			$(this).addClass("active").text("please provide your email");
 		}
 	});
 
