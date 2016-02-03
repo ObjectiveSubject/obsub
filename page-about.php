@@ -44,17 +44,17 @@ get_header(); ?>
 		</section>
 
 		<section class="page-section partners outer-container">
-			<h2 class="partners-title future-A">Partners</h2>
+			<h2 class="partners-title future-A">frequent collaborators</h2>
 			<div class="partners-content">
-				<p class="push">We’re lucky to parnter up with fellow creatives, developers, thinkers and strategists across projects for our clients. Being an agile studio our collaboration process is important in delivering the best creative solutions. Some of our partners include:</p>
+				<p class="push">We’re lucky to partner with fellow creatives, developers, thinkers and strategists across projects for our clients. As an agile studio, our collaborations are important for delivering the best creative solutions. Some of our partners include:</p>
 				<ul class="push list-unstyled">
-					<li><em>Jessie Ragan</em></li>
-					<li><em>Andrew Mowe</em></li>
-					<li><em>Dave Kellem</em></li>
-					<li><em>Marvin Harder</em></li>
-					<li><em>Ksenya Samarskaya</em></li>
-					<li><em>Chris Thomas</em></li>
-					<li><em>Jeffory Waldnan</em></li>
+					<li><a href="http://www.mindybestphotography.com/" target="_blank"><em>Mindy Best</em></a></li>
+					<li><a href="http://eightface.com/" target="_blank"><em>Dave Kellam</em></a></li>
+					<li><a href="http://marvinharder.com/" target="_blank"><em>Marvin Harder</em></a></li>
+					<li><a href="http://www.hieronymus.co/" target="_blank"><em>Hieronymus</em></a></li>
+					<li><a href="http://www.mowe.money/" target="_blank"><em>Andrew Mowe</em></a></li>
+					<li><a href="http://jesseragan.com/" target="_blank"><em>Jesse Ragan</em></a></li>
+					<li><a href="http://www.samarskaya.com/" target="_blank"><em>Ksenya Samarskaya</em></a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -69,14 +69,14 @@ get_header(); ?>
 					Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:
 				</p>
 				<p class="push">
-					Emma White <a href="https://twitter.com/nodilemma" target="_blank">@nodilemma</a>, Portal A<br/>
 					Aaron Carámbula <a href="https://twitter.com/daanshin" target="_blank">@daanshin</a>, Facebook<br/>
-					Blake Olmstead <a href="https://twitter.com/blakeolmstead" target="_blank">@blakeolmstead</a>, Atlas Obscura<br/>
 					Sam Gray <a href="https://twitter.com/samgray" target="_blank">@samgray</a>, BlenderBox<br/>
+					Kuan Luo <a href="https://twitter.com/kuanluo" target="_blank">@kuanluo</a>, Etsy / Grand St<br/>
+					Blake Olmstead <a href="https://twitter.com/blakeolmstead" target="_blank">@blakeolmstead</a>, Atlas Obscura<br/>
 					Zack Seuberling <a href="https://twitter.com/zackseuberling" target="_blank">@zackseuberling</a>, Rumors<br/>
-					Mark Silver <a href="https://twitter.com/markdsilver" target="_blank">@markdsilver</a>, New York Times<br/>
-					Kuan Luo <a href="https://twitter.com/kuanluo" target="_blank">@kuanluo</a>, Etsy<br/>
-					Dan Shin <a href="https://twitter.com/daanshin" target="_blank">@daanshin</a>, Square
+					Mark Silver <a href="https://twitter.com/markdsilver" target="_blank">@markdsilver</a>, The New York Times<br/>
+					Dan Shin <a href="https://twitter.com/daanshin" target="_blank">@daanshin</a>, Square<br/>
+					Emma White <a href="https://twitter.com/nodilemma" target="_blank">@nodilemma</a>, Portal A
 				</p>
 			</div>
 		</section>
@@ -86,38 +86,32 @@ get_header(); ?>
 				<h2 class="future-A">Recognition</h2>
 				<ul class="list-unstyled clearfix push">
 					<li>
-					Webby Awards 2015,
-					Travel Design,
-					New York Times, Times Journeys
+					Webby Awards 2015, Travel Design<br/>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					German Design Award, 2013
-					Identity Design,
-					Associated Press
+					German Design Award 2013, Identity Design<br/>
+					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
 					</li>
 					<li>
-					Red Dot 2014,
-					Online Design,
-					New York Times, Times Journeys
+					Red Dot Award 2014, Online Design<br/>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					Red Dot, 2012
-					Identity Design,
-					Associated Press
+					Red Dot Award 2012, Corporate Design<br/>
+					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
 					</li>
 					<li>
-					W3 Awards 2014,
-					Gold Winner
-					New York Times, Times Journeys
+					W3 Awards 2014, Gold Winner<br/>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					W3 Awards, 2012
-					Website Design,
-					Watson Adventures
+					W3 Awards 2012, Website Design<br/>
+					<a href="http://www.watsonadventures.com/" target="_blank">Watson Adventures</a>
 					</li>
 					<li>
-					Davey Awards 2014,
-					New York Times, Times Journeys
+					Davey Awards 2014<br/>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 				</ul>
 			</div>
