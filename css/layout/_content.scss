@@ -28,7 +28,7 @@ a.scroll-down {
 	margin-left: -1rem;
 	width: 28px;
 	height: 14px;
-	opacity: 0.25;
+	opacity: 0.8;
 	@include transform(translateY(0));
 	@include media($screen-md){
 		display: block;
