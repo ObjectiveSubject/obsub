@@ -83,23 +83,21 @@ figcaption {
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 	color: #FFF;
-	font-size: 110%;
+	font-size: 16px;
+	line-height: 16px;
 	padding-left: 1%;
 	height: 15px;
-	line-height: 100%;
 	@include media($screen-sm) {
-		font-size: 130%;
-		height: 20px;
+		font-size: 26px;
+		line-height: 26px;
+		height: 26px;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 	}
-	@include media($screen-sm) {
-		font-size: 150%;
-		height: 25px;
-	}
-	@include media($screen-xl) {
-		font-size: 170%;
+	@include media($screen-md) {
+		font-size: 30px;
 		height: 30px;
+		line-height: 30px;
 	}
 }
 
