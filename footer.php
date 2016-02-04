@@ -23,7 +23,7 @@
 				</form>
 				<a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">facebook</a>
 				<a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">twitter</a>
-				<a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">dribble</a>
+				<a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">dribbble</a>
 				<span class="copyright">copyright <i>&copy;</i> <?php echo date('Y'); ?> objective subject</span>
 			</div>
 		</div>
