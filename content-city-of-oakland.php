@@ -8,7 +8,7 @@
 	<div class="section-content">
 		<div class="outer-container">
 			<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
-			<p class="page-subtitle h3 inner-container"><?php the_field('case_study_subtitle'); ?></p>
+			<h3 class="page-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
 			<nav class="page-nav inner-container">
 				<ul class="list-unstyled hug">
 					<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>

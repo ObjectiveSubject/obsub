@@ -46,7 +46,7 @@ get_header(); ?>
 				<div class="section-content">
 					<div class="outer-container">
 						<h1 class="case-study-title inner-container hug"><a href="<?php the_permalink(); ?>"><?php echo get_the_excerpt(); ?></a></h1>
-						<p class="h3 case-study-subtitle inner-container push"><?php the_field('case_study_subtitle'); ?></p>
+						<h3 class="case-study-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
 					</div>
 				</div>
 			</div>

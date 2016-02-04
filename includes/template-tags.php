@@ -31,7 +31,7 @@ function os_get_case_study() {
 				<div class="section-content">
 					<div class="outer-container">
 						<h1 class="case-study-title inner-container hug"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
-						<h3 class="case-study-subtitle hug inner-container"><?php echo get_field('case_study_subtitle', $study->ID); ?></h3>
+						<h3 class="case-study-subtitle inner-container"><?php echo get_field('case_study_subtitle', $study->ID); ?></h3>
 					</div>
 				</div>
 			</div>
