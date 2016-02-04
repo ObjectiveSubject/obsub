@@ -261,6 +261,12 @@ th {
 }
 @font-face {
   font-family: 'ArnhemPro';
+  src: url("fonts/ArnhemPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ArnhemPro-Bold.otf") format("opentype"), url("fonts/ArnhemPro-Bold.woff") format("woff"), url("fonts/ArnhemPro-Bold.ttf") format("truetype"), url("fonts/ArnhemPro-Bold.svg#ArnhemPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ArnhemPro';
   src: url("fonts/ArnhemPro-BlondItalic.eot?#iefix") format("embedded-opentype"), url("fonts/ArnhemPro-BlondItalic.otf") format("opentype"), url("fonts/ArnhemPro-BlondItalic.woff") format("woff"), url("fonts/ArnhemPro-BlondItalic.ttf") format("truetype"), url("fonts/ArnhemPro-BlondItalic.svg#ArnhemPro-BlondItalic") format("svg");
   font-weight: 300;
   font-style: italic;
@@ -687,7 +693,7 @@ dd {
 }
 
 b, strong {
-  font-weight: normal;
+  font-weight: 700;
 }
 
 dfn, cite, em, i {
