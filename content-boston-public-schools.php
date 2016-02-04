@@ -32,7 +32,7 @@
 <section class="page-section push-double" style="background-color: #D6EFFD;">
 	<figure class="alignnone hug">
 		<div style="overflow:hidden; position: relative;">
-			<blockquote data-parallax-node="0.5">
+			<blockquote data-parallax-node="0.5" data-parallax-delay="-0.4">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
 			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />

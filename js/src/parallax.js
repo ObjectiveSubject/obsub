@@ -11,6 +11,7 @@
 		$('[data-parallax-node]').each(function(){
 			var $node = $(this),
 				factor = $node.data('parallax-node'),
+				delay = $node.data('parallax-delay'),
 				nodeTop,
 				winHeight,
 				threshold;
@@ -23,7 +24,7 @@
 			function init() {
 				nodeTop = $node.offset().top;
 				winHeight = $window.height();
-				threshold = nodeTop - winHeight;
+				threshold = nodeTop - (winHeight + (winHeight * delay));
 			}
 
 			function onScroll() {
