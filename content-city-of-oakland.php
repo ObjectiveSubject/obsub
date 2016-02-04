@@ -18,6 +18,11 @@
 			</nav>
 		</div>
 	</div>
+	<div class="photo-credit">
+		<div class="outer-container">
+			<div class="inner-container">&copy; City of Oakland / Greg Linhares</div>
+		</div>
+	</div>
 	<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
 </section>
 

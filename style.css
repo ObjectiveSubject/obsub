@@ -1387,6 +1387,12 @@ a.scroll-down:after {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
+.page-header .photo-credit {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  opacity: 0.3;
+}
 
 .page-nav {
   padding-top: 3rem;
