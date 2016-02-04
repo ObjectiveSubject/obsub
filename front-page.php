@@ -165,8 +165,8 @@ get_header(); ?>
 				</li>
 				<li class="tile push-triple layout-image-right">
 					<div class="tile-image">
-						<img src="<?php echo os_path('WorldStrides1.png', 'home'); ?>" srcset="<?php echo os_path('WorldStrides1.png', 'home'); ?> 1x, <?php echo os_path('WorldStrides1-@2x.png', 'home'); ?> 2x" width="493" />
-						<img src="<?php echo os_path('WorldStrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('WorldStrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('WorldStrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250"/></div>
