@@ -2948,13 +2948,17 @@ figcaption {
     float: left;
   }
 }
-.tile .tile-image {
+.tile .tile-image img {
   display: block;
+  margin-bottom: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .tile .tile-title {
     margin-top: 0;
   }
+}
+.tile .cmc-logo {
+  margin: 2.25rem 0;
 }
 .tile .tile-content.bio-content p {
   margin-top: 1.5rem;

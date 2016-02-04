@@ -5,13 +5,21 @@
 	}
 
 	.tile-image {
-		display: block
+		img {
+			display: block;
+			margin-bottom: $leading / 2;
+		}
 	}
 
 	.tile-title {
 		@include media($screen-md) {
 			margin-top: 0;
 		}
+	}
+
+	// fix to make text line up.
+	.cmc-logo {
+		margin: 2.25rem 0;
 	}
 
 	.tile-content {

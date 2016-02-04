@@ -66,9 +66,13 @@ get_header(); ?>
 			<h2 class="future-A push-triple inner-container">media</h2>
 			<ul class="client-list list-unstyled clearfix hug">
 				<li class="tile push-triple layout-image-right">
-					<img src="<?php echo os_path('times-journeys.png', 'home'); ?>" class="tile-image" width="495" height="330" style="display: block;">
+					<div class="tile-image">
+						<img src="<?php echo os_path('nyt1.gif', 'home'); ?>" srcset="<?php echo os_path('nyt1.gif', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.gif', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
+					</div>
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-nytimes.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-nytimes.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">We’ve worked with the Times to codify its design tools into a cogent set of rules and principles that can be applied by marketers, designers and advertisers who partner with The New York Times Brand. This brand book is leveraged both inside the organization and with outside groups to make every communication feel ‘Timesian.’</p>
 						<p class="push">We created an award-winning website for the Times’ travel product, Times Journeys, and continue to offer strategic and creative services to support the new ways one can Travel with The New York Times.</p>
 						<p class="push"><a href="http://nytimes.com/timesjourneys" target="_blank"><em>nytimes.com/timesjourneys</em></a></p>
@@ -77,7 +81,10 @@ get_header(); ?>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-left">
-					<img src="<?php echo os_path('ap.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
+					<div class="tile-image">
+						<img src="<?php echo os_path('ap.gif', 'home'); ?>" srcset="<?php echo os_path('ap.gif', 'home'); ?> 1x, <?php echo os_path('ap-@2x.gif', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('ap.png', 'home'); ?>" srcset="<?php echo os_path('ap.png', 'home'); ?> 1x, <?php echo os_path('ap-@2x.png', 'home'); ?> 2x" width="493" />
+					</div>
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-ap.svg', 'home'); ?>" width="80" /></div>
 						<p class="push">The world’s largest news organization looked to Objective Subject to realize its master brand strategy, encapsulating the vision of ‘One AP’ across its global network of media channels and properties.</p>
@@ -86,14 +93,14 @@ get_header(); ?>
 				</li>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-fa.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-fa.svg', 'home'); ?>" width="180" /></div>
 						<p class="push">Objective Subject created a visual system to connote the authoritative, high-quality and direct qualities of the Foreign Affairs brand. We leveraged existing visual elements, including the iconic wordmark and light blue color, to maintain continuity with the publication’s rich history.</p>
 						<p class="push">Foreign Affairs also wanted to better define how to use its name, since it is both the title of its flagship publication and also the field-at-large. Emphasizing an affiliation with the publication, we conceived an alternate identity to complement the historic wordmark, one with a blue frame that crops off the edge of any piece of communication.</p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-cfr.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-cfr.svg', 'home'); ?>" width="150" /></div>
 						<p class="push">Founded in 1921, the exclusive Council on Foreign Relations has partnered with Objective Subject for more than eight years to implement and steward its identity program, in both print and digital contexts.</p>
 					</div>
 				</li>
@@ -102,31 +109,35 @@ get_header(); ?>
 			<h2 class="future-A push-triple inner-container">arts</h2>
 			<ul class="client-list list-unstyled clearfix hug">
 				<li class="tile push-triple layout-image-right">
-					<img src="<?php echo os_path('bam.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
+					<div class="tile-image">
+						<img src="<?php echo os_path('bam.gif', 'home'); ?>" srcset="<?php echo os_path('bam.gif', 'home'); ?> 1x, <?php echo os_path('bam-@2x.gif', 'home'); ?> 2x" width="495" />
+					</div>
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-bam.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-bam.svg', 'home'); ?>" width="100" /></div>
 						<p class="push">The Brooklyn Academy of Music is an ambassador of cutting edge arts and music. Our design research found that would-be visitors struggled to find their way through the BAM campus and its many venues. We designed a visitor experience that seamlessly integrates BAM’s existing web platform and visual brand to help guests plan an evening around a BAM outing, from pre- dinner drinks to their subway ride home.</p>
 						<p class="push"><a href="http://bam.org/visit" target="_blank"><em>bam.org/visit</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-orpheus.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-orpheus.svg', 'home'); ?>" width="195" /></div>
 						<p class="push">Performing without a conductor, Orpheus Chamber Orchestra is one of the world’s foremost chamber orchestras. Its digital presence needed to both present its distinctive story as well as accomplish key business goals in ticket and subscription sales. The final solution layers various elements,bringing the vitality and emotion of the music to every user interaction.</p>
 						<p class="push"><a href="http://orpheusnyc.org" target="_blank"><em>orpheusnyc.org</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-nbr.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-nbr.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">Since 1909, the National Board of Review has been New York City’s premier film awards organization, dedicated to the celebration and advancement of excellence in cinema. We were inspired by typography in early publications to develop a visual identity that is appropriately modern. Our work extends through a suite of materials, including a website, that recall the velvety and clubby feel of a projection room.</p>
 						<p class="push"><a href="http://nationalboardofreview.org"><em>nationalboardofreview.org</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-left">
-					<img src="<?php echo os_path('gibney.png', 'home'); ?>" class="tile-image" width="495" style="display: block;">
+					<div class="tile-image">
+						<img src="<?php echo os_path('gibney.png', 'home'); ?>" srcset="<?php echo os_path('gibney.png', 'home'); ?> 1x, <?php echo os_path('gibney-@2x.png', 'home'); ?> 2x" width="493" />
+					</div>
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-gibney.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-gibney.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand positioning and develop messaging to best communicate the breadth and depth of its programming as well as its future vision. Our work included designing and building a new website, and designing visual communications worthy of any major arts organization in NYC.</p>
 						<p class="push"><a href="http://gibneydance.org" target="_blank"><em>gibneydance.org</em></a></p>
 					</div>
@@ -137,7 +148,7 @@ get_header(); ?>
 			<ul class="client-list list-unstyled clearfix hug">
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-guittard.png', 'home'); ?>" /></div>
+						<div><img src="<?php echo os_path('logo-guittard.svg', 'home'); ?>" width="180" /></div>
 						<p class="push">After nearly 150 years of making the best chocolate in the world, the Guittard Chocolate Company was looking for a way to unify its offering and leverage its reputation for quality and integrity across its branded communications.</p>
 						<p class="push">Our team conducted in-depth research with employees, partners, and customers, to identify key values and personality traits. We recommended the adoption of a master brand strategy, centered around the promise of 'Chocolate for Experts.' The corporate wordmark is derived from the founder Étienne Guittard’s signature. We leveraged the company’s navy blue for the master brand, supported by a palette of subtle, earthy and bright colors to denote the quality of the natural ingredients.</p>
 						<p class="push"><a href="http://guittard.com" target="_blank"><em>guittard.com</em></a></p>
@@ -145,16 +156,20 @@ get_header(); ?>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
-						<div><img src="<?php echo os_path('logo-carrmcclellan.png', 'home'); ?>" /></div>
+						<div class="cmc-logo"><img src="<?php echo os_path('logo-carrmcclellan.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">Carr McClellan is a full-service boutique firm with a strong track record for its clients, located throughout Northern California.</p>
 						<p class="push">The new positioning is captured in the brand strategy and reinforced by the new look: Carr McClellan is committed to advancing clients’ business goals with an approach that is effective, down-to-earth, and enthusiastic.</p>
 						<p class="push">The visual system we designed perfectly balances a modern approach, while still referencing the firm's strong heritage and persistent stability amidst a volatile industry and economy.</p>
 						<p class="push"><a href="http://carrmclellan.org" target="_blank"><em>carrmclellan.org</em></a></p>
 					</div>
 				</li>
-				<li class="tile push-triple layout-half left">
+				<li class="tile push-triple layout-image-right">
+					<div class="tile-image">
+						<img src="<?php echo os_path('WorldStrides1.png', 'home'); ?>" srcset="<?php echo os_path('WorldStrides1.png', 'home'); ?> 1x, <?php echo os_path('WorldStrides1-@2x.png', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('WorldStrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('WorldStrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('WorldStrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
+					</div>
 					<div class="tile-content push">
-						<p><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250"/></p>
+						<div><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250"/></div>
 						<p class="push">An undisputed leader in educational travel for nearly 50 years, WorldStrides offers a wide range of traveler experiences from elementary school trips to full-scale group itineraries for graduate students in MBA programs around the world.</p>
 						<p class="push">Our work involved robust content strategy to bring harmony across a disparate set of metadata. Our research and analysis determined that the individual trip, or itinerary, ought to be the key node around which all content is organized. We created a series of reusable content modules which are shared amongst itineraries, simplifying site maintenance, while creating unique and immersive experiences for the user.</p>
 						<p class="push">Since launching in November 2015, the results have been impressive, with a 50% jump in lead generation.</p>
