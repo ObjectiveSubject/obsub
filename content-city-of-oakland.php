@@ -29,7 +29,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<h2 class="future-A inner-container">opportunity</h2>
-		<p class="inner-container">Oakland, California is a diverse and dynamic community, with rapid change nearly a constant throughout its storied history. In order to deliver better services to that community, and clarify the services it provides, the City government working with <a href="https://www.codeforamerica.org/our-work/" target="_blank" class="cs-body-link">Code for America</a>, is to define an ownable look and feel for all of its strategies and actions.</p>
+		<p class="inner-container">Oakland, California is a diverse and dynamic community, with rapid change nearly a constant throughout its storied history. In order to deliver better services to that community, and clarify the services it provides, the City government worked with <a href="https://www.codeforamerica.org/our-work/" target="_blank" class="cs-body-link">Code for America</a> to define an ownable look and feel for all of its strategies and actions.</p>
 	</div>
 
 	<figure class="alignnone">
