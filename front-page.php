@@ -66,12 +66,7 @@ get_header(); ?>
 			<h2 class="future-A push-triple inner-container">media</h2>
 			<ul class="client-list list-unstyled clearfix hug">
 				<li class="tile push-triple layout-image-right">
-					<div class="tile-image">
-						<img src="<?php echo os_path('nyt1.gif', 'home'); ?>" srcset="<?php echo os_path('nyt1.gif', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.gif', 'home'); ?> 2x" width="493" />
-						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" />
-						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
-					</div>
-					<div class="tile-content push">
+					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-nytimes.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">We’ve worked with the Times to codify its design tools into a cogent set of rules and principles that can be applied by marketers, designers and advertisers who partner with The New York Times Brand. This brand book is leveraged both inside the organization and with outside groups to make every communication feel ‘Timesian.’</p>
 						<p class="push">We created an award-winning website for the Times’ travel product, Times Journeys, and continue to offer strategic and creative services to support the new ways one can Travel with The New York Times.</p>
@@ -79,15 +74,20 @@ get_header(); ?>
 						<p class="push">More recently, alongside our partners at Sotheby’s Institute of Art, we designed a digital interface for the new School of The New York Times, nytEDU. We addressed content strategy, including sitemaps, wireframes and recommendations on program naming, and visual design to educate users on ways to Learn with The New York Times.</p>
 						<p class="push"><a href="http://nytedu.com" target="_blank"><em>nytedu.com</em></a></p>
 					</div>
+					<div class="tile-image push">
+						<img src="<?php echo os_path('nyt1.png', 'home'); ?>" srcset="<?php echo os_path('nyt1.png', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.png', 'home'); ?> 2x" width="493" />
+						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/>
+						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
+					</div>
 				</li>
 				<li class="tile push-triple layout-image-left">
-					<div class="tile-image associated-press">
-						<img src="<?php echo os_path('ap.png', 'home'); ?>" srcset="<?php echo os_path('ap.png', 'home'); ?> 1x, <?php echo os_path('ap-@2x.png', 'home'); ?> 2x" width="493" />
-					</div>
-					<div class="tile-content push">
+					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-ap.svg', 'home'); ?>" width="80" /></div>
 						<p class="push">The world’s largest news organization looked to Objective Subject to realize its master brand strategy, encapsulating the vision of ‘One AP’ across its global network of media channels and properties.</p>
 						<p class="push">We created a cohesive and bold visual identity that communicates the mission and values of the AP. We supported AP’s digital teams in the implementation of numerous online products, including AP Images and AP Archives.</p>
+					</div>
+					<div class="tile-image associated-press push">
+						<img src="<?php echo os_path('ap.png', 'home'); ?>" srcset="<?php echo os_path('ap.png', 'home'); ?> 1x, <?php echo os_path('ap-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
 				<li class="tile push-triple layout-half left">
@@ -109,13 +109,13 @@ get_header(); ?>
 			<h2 class="future-A push-triple inner-container">arts</h2>
 			<ul class="client-list list-unstyled clearfix hug">
 				<li class="tile push-triple layout-image-right">
-					<div class="tile-image">
-						<img src="<?php echo os_path('bam.gif', 'home'); ?>" srcset="<?php echo os_path('bam.gif', 'home'); ?> 1x, <?php echo os_path('bam-@2x.gif', 'home'); ?> 2x" width="495" />
-					</div>
-					<div class="tile-content push">
+					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-bam.svg', 'home'); ?>" width="100" /></div>
 						<p class="push">The Brooklyn Academy of Music is an ambassador of cutting edge arts and music. Our design research found that would-be visitors struggled to find their way through the BAM campus and its many venues. We designed a visitor experience that seamlessly integrates BAM’s existing web platform and visual brand to help guests plan an evening around a BAM outing, from pre- dinner drinks to their subway ride home.</p>
 						<p class="push"><a href="http://bam.org/visit" target="_blank"><em>bam.org/visit</em></a></p>
+					</div>
+					<div class="tile-image bam push">
+						<img src="<?php echo os_path('bam.gif', 'home'); ?>" srcset="<?php echo os_path('bam.gif', 'home'); ?> 1x, <?php echo os_path('bam-@2x.gif', 'home'); ?> 2x" width="495" />
 					</div>
 				</li>
 				<li class="tile push-triple layout-half left">
@@ -133,13 +133,13 @@ get_header(); ?>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-left">
-					<div class="tile-image">
-						<img src="<?php echo os_path('gibney.png', 'home'); ?>" srcset="<?php echo os_path('gibney.png', 'home'); ?> 1x, <?php echo os_path('gibney-@2x.png', 'home'); ?> 2x" width="493" />
-					</div>
-					<div class="tile-content push">
+					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-gibney.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand positioning and develop messaging to best communicate the breadth and depth of its programming as well as its future vision. Our work included designing and building a new website, and designing visual communications worthy of any major arts organization in NYC.</p>
 						<p class="push"><a href="http://gibneydance.org" target="_blank"><em>gibneydance.org</em></a></p>
+					</div>
+					<div class="tile-image push">
+						<img src="<?php echo os_path('gibney.png', 'home'); ?>" srcset="<?php echo os_path('gibney.png', 'home'); ?> 1x, <?php echo os_path('gibney-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
 			</ul>
@@ -164,16 +164,16 @@ get_header(); ?>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-right">
-					<div class="tile-image">
-						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" />
-						<img src="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
-					</div>
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250"/></div>
 						<p class="push">An undisputed leader in educational travel for nearly 50 years, WorldStrides offers a wide range of traveler experiences from elementary school trips to full-scale group itineraries for graduate students in MBA programs around the world.</p>
 						<p class="push">Our work involved robust content strategy to bring harmony across a disparate set of metadata. Our research and analysis determined that the individual trip, or itinerary, ought to be the key node around which all content is organized. We created a series of reusable content modules which are shared amongst itineraries, simplifying site maintenance, while creating unique and immersive experiences for the user.</p>
 						<p class="push">Since launching in November 2015, the results have been impressive, with a 50% jump in lead generation.</p>
 						<p class="push"><a href="http://worldstrides.com" target="_blank"><em>worldstrides.com</em></a></p>
+					</div>
+					<div class="tile-image push">
+						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)" />
+						<img src="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
 			</ul>

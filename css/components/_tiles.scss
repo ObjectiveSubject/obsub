@@ -10,6 +10,11 @@
 				margin-top: 120px;
 			}
 		}
+		&.bam img {
+			@include media($screen-md) {
+				margin-top: 130px;
+			}
+		}
 		img {
 			display: block;
 			margin-bottom: $leading / 2;
@@ -37,14 +42,17 @@
 	}
 
 	&.layout-image-left {
-		.tile-image {
-			@include media($screen-md) {
-				@include span-columns(6);
+		@include direction-context( right-to-left ){
+			.tile-image {
+				@include media($screen-md) {
+					@include span-columns(6);
+				}
 			}
-		}
-		.tile-content {
-			@include media($screen-md) {
-				@include span-columns(4);
+			.tile-content {
+				@include media($screen-md) {
+					@include span-columns(4);
+					@include shift(2);
+				}
 			}
 		}
 	}

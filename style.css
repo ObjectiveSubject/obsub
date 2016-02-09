@@ -2957,6 +2957,11 @@ figcaption {
     margin-top: 120px;
   }
 }
+@media screen and (min-width: 768px) {
+  .tile .tile-image.bam img {
+    margin-top: 130px;
+  }
+}
 .tile .tile-image img {
   display: block;
   margin-bottom: 0.75rem;
@@ -2979,24 +2984,25 @@ figcaption {
 }
 @media screen and (min-width: 768px) {
   .tile.layout-image-left .tile-image {
-    float: left;
+    float: right;
     display: block;
-    margin-right: 2.35765%;
+    margin-left: 2.35765%;
     width: 48.82117%;
   }
   .tile.layout-image-left .tile-image:last-child {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .tile.layout-image-left .tile-content {
-    float: left;
+    float: right;
     display: block;
-    margin-right: 2.35765%;
+    margin-left: 2.35765%;
     width: 31.76157%;
+    margin-right: 17.05961%;
   }
   .tile.layout-image-left .tile-content:last-child {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) {
