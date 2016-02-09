@@ -71,13 +71,13 @@ get_header(); ?>
 					Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:
 				</p>
 				<p class="push">
-					Aaron Carámbula <a href="https://twitter.com/daanshin" target="_blank">@daanshin</a>, Facebook<br/>
-					Sam Gray <a href="https://twitter.com/samgray" target="_blank">@samgray</a>, BlenderBox<br/>
-					Kuan Luo <a href="https://twitter.com/kuanluo" target="_blank">@kuanluo</a>, Etsy / Grand St<br/>
-					Blake Olmstead <a href="https://twitter.com/blakeolmstead" target="_blank">@blakeolmstead</a>, Atlas Obscura<br/>
-					Zack Seuberling <a href="https://twitter.com/zackseuberling" target="_blank">@zackseuberling</a>, Rumors<br/>
+					Aaron Carámbula <a href="https://github.com/carambula" target="_blank">@carambula</a>, Facebook<br/>
+					Sam Gray <a href="https://github.com/samrgray" target="_blank">@samrgray</a>, BlenderBox<br/>
+					Kuan Luo <a href="https://github.com/kuanluo" target="_blank">@kuanluo</a>, Etsy / Grand St<br/>
+					Blake Olmstead <a href="https://github.com/blakeolmstead" target="_blank">@blakeolmstead</a>, Atlas Obscura<br/>
+					Zack Seuberling <a href="https://github.com/zackseuberling" target="_blank">@zackseuberling</a>, Rumors<br/>
 					Mark Silver <a href="https://twitter.com/markdsilver" target="_blank">@markdsilver</a>, The New York Times<br/>
-					Dan Shin <a href="https://twitter.com/daanshin" target="_blank">@daanshin</a>, Square<br/>
+					Dan Shin <a href="https://twitter.com/dan_shin" target="_blank">@dan_shin</a>, Square<br/>
 					Emma White <a href="https://twitter.com/nodilemma" target="_blank">@nodilemma</a>, Portal A
 				</p>
 			</div>
