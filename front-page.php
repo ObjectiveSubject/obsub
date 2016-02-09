@@ -22,7 +22,7 @@ get_header(); ?>
 						</div>
 						<div class="ozy-video push">
 							<a href="http://www.ozy.com/video/play/better-logos-better-government/67599" target="_blank">
-								<img src="<?php echo os_path('ozy-video.png', 'home'); ?>" srcset="<?php echo os_path('ozy-video.png', 'home'); ?> 1x, <?php echo os_path('ozy-video-@2x.png', 'home'); ?> 2x" width="232" alt="OZY video" />
+								<img src="<?php echo os_path('ozy-video.png', 'home'); ?>" srcset="<?php echo os_path('ozy-video.png', 'home'); ?> 1x, <?php echo os_path('ozy-video-@2x.png', 'home'); ?> 2x" width="232" height="155" alt="OZY video" />
 								<img class="play-icon" src="<?php echo os_path('play.svg'); ?>" width="32" alt="play" />
 							</a>
 							<div class="caption push-half text-muted"><em>Watch principal David Jalbert-Gagnier explain our vision in this 2:27 video from OZY.</em></div>
@@ -182,7 +182,7 @@ get_header(); ?>
 						<p class="push">Since launching in November 2015, the results have been impressive, with a 50% jump in lead generation.</p>
 						<p class="push"><a href="http://worldstrides.com" target="_blank"><em>worldstrides.com</em></a></p>
 					</div>
-					<div class="tile-image push">
+					<div class="tile-image worldstrides push">
 						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)" />
 						<img src="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
