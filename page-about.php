@@ -88,31 +88,31 @@ get_header(); ?>
 				<h2 class="future-A">Recognition</h2>
 				<ul class="list-unstyled clearfix push">
 					<li>
-					Webby Awards 2015, Travel Design<br/>
+					<strong>Webby Awards 2015</strong>, Travel Design<br/>
 					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					German Design Award 2013, Identity Design<br/>
+					<strong>German Design Award 2013</strong>, Identity Design<br/>
 					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
 					</li>
 					<li>
-					Red Dot Award 2014, Online Design<br/>
+					<strong>Red Dot Award 2014</strong>, Online Design<br/>
 					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					Red Dot Award 2012, Corporate Design<br/>
+					<strong>Red Dot Award 2012</strong>, Corporate Design<br/>
 					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
 					</li>
 					<li>
-					W3 Awards 2014, Gold Winner<br/>
+					<strong>W3 Awards 2014</strong>, Gold Winner<br/>
 					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 					<li>
-					W3 Awards 2012, Website Design<br/>
+					<strong>W3 Awards 2012</strong>, Website Design<br/>
 					<a href="http://www.watsonadventures.com/" target="_blank">Watson Adventures</a>
 					</li>
 					<li>
-					Davey Awards 2014<br/>
+					<strong>Davey Awards 2014</strong><br/>
 					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
 					</li>
 				</ul>
