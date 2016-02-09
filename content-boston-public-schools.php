@@ -133,7 +133,7 @@
 
 	<figure class="os-slideshow-container">
 		<div id="bps-mobile-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
+		<ul class="list-unstyled os-slideshow center-mode width-auto" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
 			<li>
 				<img data-lazy="<?php echo os_path('mobile-home.png', 'bps'); ?>" width="318" height="660">
 				<figcaption>Discover Boston Public Schools Mobile Homepage</figcaption>

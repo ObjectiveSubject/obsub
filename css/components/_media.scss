@@ -44,22 +44,22 @@ figure {
 figcaption {
 	font-style: italic;
 	font-size: 1rem;
-	max-width: $content-max-width;
-	margin: ($leading/2) auto 0;
-	box-sizing: content-box;
+	// max-width: $content-max-width;
+	margin-top: ($leading/2);
 	text-align: center;
+	@include media($screen-md) {
+		text-align: left;
+	}
 
 	.os-slideshow & {
 		opacity: 0;
 		transition: opacity 500ms ease;
+	}
+	.os-slideshow.width-auto & {
 		text-align: center;
 	}
 	.os-slideshow .slick-active & {
 		opacity: 1;		
-	}
-
-	@include media($screen-lg) {
-		text-align: left;
 	}
 	.city-of-oakland & {
 		color: $oakland_blue;
@@ -77,7 +77,7 @@ figcaption {
 .browser:before {
 	content: "•••";
 	display: block;
-	max-width: 850px;
+	// max-width: 850px;
 	margin: 0 auto;
 	background: #D4D4D4;
 	border-top-left-radius: 2px;
