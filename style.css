@@ -769,6 +769,10 @@ big,
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 /* Hug the block above you */
 .hug {
   margin-top: 0;
@@ -3071,17 +3075,11 @@ figcaption {
 
 .oakland-tree {
   background: white;
-  padding: 1.5rem 15px 4.5rem;
+  padding: 1.5rem 0 4.5rem;
   /* range slider resets */
   /* Make the thumbs the same size as your custom sliderthumb. They will not be visible but they will be draggable. */
   /* Eliminate the default appearance and tooltip behaviour that is peculiar to IE and Edge. */
   /* Custom slider styles */
-}
-@media screen and (min-width: 500px) {
-  .oakland-tree {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 }
 .oakland-tree input[type=range]::-ms-track {
   width: 100%;
@@ -3218,15 +3216,6 @@ figcaption {
 .slider-row.oakland-tree-large {
   max-width: 640px;
 }
-.slider-row.oakland-tree-medium {
-  display: none;
-  max-width: 215px;
-}
-@media screen and (min-width: 500px) {
-  .slider-row.oakland-tree-medium {
-    display: block;
-  }
-}
 .slider-row.oakland-tree-small {
   max-width: 116px;
 }
@@ -3257,9 +3246,6 @@ figcaption {
   }
   .slider-row img.top.large {
     clip: rect(0, 320px, 392px, 0);
-  }
-  .slider-row img.top.medium {
-    clip: rect(0, 107px, 130px, 0);
   }
   .slider-row img.top.small {
     clip: rect(0, 58px, 70px, 0);

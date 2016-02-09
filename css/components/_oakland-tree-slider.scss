@@ -1,11 +1,6 @@
 .oakland-tree {
 	background: white;
-	padding: $leading $size_container_padding ($leading * 3);
-
-	@include media($screen-sm) {
-		padding-left: $size_container_padding_sm;
-		padding-right: $size_container_padding_sm;
-	}
+	padding: $leading 0 ($leading * 3);
 
 	/* range slider resets */
 	input[type=range]::-ms-track {
@@ -155,13 +150,6 @@
 	&.oakland-tree-large {
 		max-width: 640px;
 	}
-	&.oakland-tree-medium {
-		display: none;
-		@include media($screen-sm) {
-			display: block;
-		}
-		max-width: 215px;
-	}
 	&.oakland-tree-small {
 		max-width: 116px;
 	}
@@ -187,9 +175,6 @@
 				margin: 0;
 				&.large {
 					clip: rect(0,320px,392px,0);
-				}
-				&.medium {
-					clip: rect(0,107px,130px,0);
 				}
 				&.small {
 					clip: rect(0,58px,70px,0);

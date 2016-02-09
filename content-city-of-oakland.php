@@ -74,9 +74,11 @@
 	</div>
 
 	<figure class="oakland-tree">
-		<div class="labels clearfix">
-			<em class="pull-left text-muted text-center" style="width: 50%;">Before</em>
-			<em class="pull-right text-muted text-center" style="width: 50%;">After</em>
+		<div class="labels outer-container">
+			<div class="inner-container">
+				<em class="pull-left text-muted" style="width: 50%;">Before</em>
+				<em class="pull-right text-muted text-right" style="width: 50%;">After</em>
+			</div>
 		</div>
 		<div class="slider-row oakland-tree-large">
 			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" />
@@ -85,15 +87,6 @@
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
 				<input type="range" name="tree-slider-lg" class="slider-input tree-slider-lg" value="50" min="0" max="100">
-			</div>
-		</div>
-		<div class="slider-row oakland-tree-medium">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="medium top" width="215" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="medium bottom" width="215" />
-			<div class="slider">
-				<div class="slider-track"></div>
-				<div class="slider-thumb"></div>
-				<input type="range" name="tree-slider-md" class="slider-input tree-slider-md" value="50" min="0" max="100">
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-small">
