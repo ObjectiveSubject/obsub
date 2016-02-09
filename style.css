@@ -1640,15 +1640,8 @@ a.scroll-down:after {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  .recognition-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
-  }
-  .recognition-content:last-child {
-    margin-right: 0;
+  .recognition-content .reddot-img {
+    margin-left: 8.5298%;
   }
 }
 .recognition-content li {

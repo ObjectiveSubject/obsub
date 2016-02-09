@@ -63,9 +63,12 @@
 .recognition-content {
 	@include clearfix;
 	margin-top: 6rem;
-	@include media($screen-md) {
-		@include span-columns(8);
-		@include shift(2);
+	
+	.reddot-img {
+		@include media($screen-md) {
+			// @include span-columns(8);
+			@include shift(1);
+		}
 	}
 
 	li {

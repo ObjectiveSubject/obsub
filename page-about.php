@@ -85,8 +85,9 @@ get_header(); ?>
 
 		<section class="page-section recognition outer-container">
 			<div class="recognition-content">
-				<h2 class="future-A">Recognition</h2>
-				<ul class="list-unstyled clearfix push">
+				<div class="reddot-img"><img src="<?php echo os_path('reddot.png' ,'about'); ?>" srcset="<?php echo os_path('reddot.png' ,'about'); ?> 1x, <?php echo os_path('reddot-@2x.png' ,'about'); ?> 2x" width="407" /></div>
+				<h2 class="future-A inner-container">Recognition</h2>
+				<ul class="list-unstyled clearfix push inner-container">
 					<li>
 					<strong>Webby Awards 2015</strong>, Travel Design<br/>
 					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
