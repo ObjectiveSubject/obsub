@@ -42,19 +42,32 @@
 	}
 
 	&.layout-image-left {
-		@include direction-context( right-to-left ){
-			.tile-image {
-				@include media($screen-md) {
-					@include span-columns(6);
-				}
-			}
-			.tile-content {
-				@include media($screen-md) {
-					@include span-columns(4);
-					@include shift(2);
-				}
+		.tile-image {
+			@include media($screen-md) {
+				@include span-columns(6);
 			}
 		}
+		.tile-content {
+			@include media($screen-md) {
+				@include span-columns(4);
+			}
+		}
+		&.right-to-left {
+			@include direction-context( right-to-left ){
+				.tile-content {
+					@include media($screen-md) {
+						@include span-columns(4);
+						@include shift(2);
+					}
+				}
+				.tile-image {
+					@include media($screen-md) {
+						@include span-columns(6);
+					}
+				}
+			}	
+		}
+		
 	}
 	&.layout-image-right {
 		@include direction-context(right-to-left) {

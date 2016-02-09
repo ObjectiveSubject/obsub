@@ -91,7 +91,7 @@ get_header(); ?>
 						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
-				<li class="tile push-triple layout-image-left">
+				<li class="tile push-triple layout-image-left right-to-left">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-ap.svg', 'home'); ?>" width="80" /></div>
 						<p class="push">The world’s largest news organization looked to Objective Subject to realize its master brand strategy, encapsulating the vision of ‘One AP’ across its global network of media channels and properties.</p>
@@ -143,7 +143,7 @@ get_header(); ?>
 						<p class="push"><a href="http://nationalboardofreview.org"><em>nationalboardofreview.org</em></a></p>
 					</div>
 				</li>
-				<li class="tile push-triple layout-image-left">
+				<li class="tile push-triple layout-image-left right-to-left">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-gibney.svg', 'home'); ?>" width="250" /></div>
 						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand positioning and develop messaging to best communicate the breadth and depth of its programming as well as its future vision. Our work included designing and building a new website, and designing visual communications worthy of any major arts organization in NYC.</p>

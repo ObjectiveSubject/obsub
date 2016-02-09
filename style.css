@@ -3019,24 +3019,46 @@ figcaption {
 }
 @media screen and (min-width: 768px) {
   .tile.layout-image-left .tile-image {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.35765%;
+    margin-right: 2.35765%;
     width: 48.82117%;
   }
   .tile.layout-image-left .tile-image:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .tile.layout-image-left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .tile.layout-image-left .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-image-left.right-to-left .tile-content {
     float: right;
     display: block;
     margin-left: 2.35765%;
     width: 31.76157%;
     margin-right: 17.05961%;
   }
-  .tile.layout-image-left .tile-content:last-child {
+  .tile.layout-image-left.right-to-left .tile-content:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-image-left.right-to-left .tile-image {
+    float: right;
+    display: block;
+    margin-left: 2.35765%;
+    width: 48.82117%;
+  }
+  .tile.layout-image-left.right-to-left .tile-image:last-child {
     margin-left: 0;
   }
 }
