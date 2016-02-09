@@ -57,11 +57,7 @@
 </section>
 
 <section id="process" class="page-section " style="background-color: #E7F1CF; padding-bottom: 50px;">
-	<div class="outer-container">
-		<h2 class="future-A inner-container push-triple">process</h2>
-	</div>
-
-	<figure class="alignnone">
+	<figure class="alignnone hug">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
 			<figcaption class="inner-container">Artifacts from Oakland's Archives</figcaption>
@@ -69,15 +65,16 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="push-double inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
+		<h2 class="future-A inner-container push-triple">process</h2>
+		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
 		<!-- [ANIMATED EVOLUTION OF TREE GRAPHIC: .MOV ELLIOT PREPARED] -->
 	</div>
 
 	<figure class="oakland-tree">
 		<div class="labels outer-container">
 			<div class="inner-container">
-				<em class="pull-left text-muted" style="width: 50%;">Before</em>
-				<em class="pull-right text-muted text-right" style="width: 50%;">After</em>
+				<em class="pull-left text-muted" style="width: 50%; color: #376FFF; ">Before</em>
+				<em class="pull-right text-muted text-right" style="width: 50%; color: #376FFF; ">After</em>
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-large">
@@ -101,7 +98,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<figcaption class="inner-container">Oakland’s tree, before and after</figcaption>
+		<figcaption class="inner-container">Oakland’s tree</figcaption>
 		<p class="inner-container push-triple">As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue, to a rich range of complimentary hues, and created a typographic system that emphasizes clarity and lack of ornament.</p>
 	</div>
 
