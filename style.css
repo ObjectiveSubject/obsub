@@ -3176,7 +3176,7 @@ figcaption {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #1a7fc3;
+  background-color: #376FFF;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -3193,7 +3193,7 @@ figcaption {
   width: 3px;
   border-radius: 2px;
   margin-left: -1.5px;
-  background-color: #1a7fc3;
+  background-color: #376FFF;
   height: 100%;
 }
 
