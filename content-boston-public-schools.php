@@ -135,16 +135,20 @@
 		<div id="bps-mobile-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode width-auto" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
 			<li>
-				<img data-lazy="<?php echo os_path('mobile-home.png', 'bps'); ?>" width="318" height="660">
-				<figcaption>Discover Boston Public Schools Mobile Homepage</figcaption>
+				<img src="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup1-@2x.png', 'bps'); ?> 2x" width="318" />
+				<figcaption>Mobile Homepage</figcaption>
 			</li>
 			<li>
-				<img data-lazy="<?php echo os_path('mobile-results.png', 'bps'); ?>" width="318" height="660">
-				<figcaption>Mobile School results</figcaption>
+				<img src="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup2-@2x.png', 'bps'); ?> 2x" width="318" />
+				<figcaption>School results</figcaption>
 			</li>
 			<li>
-				<img data-lazy="<?php echo os_path('mobile-about.png', 'bps'); ?>" width="318" height="660">
-				<figcaption>Mobile About page</figcaption>
+				<img src="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup3-@2x.png', 'bps'); ?> 2x" width="318" />
+				<figcaption>Compare and rank</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup4-@2x.png', 'bps'); ?> 2x" width="318" />
+				<figcaption>Ranked school choices</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("bps-mobile-nav"); ?>
