@@ -71,14 +71,14 @@ get_header(); ?>
 					Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:
 				</p>
 				<p class="push">
-					Aaron Carámbula <a href="https://github.com/carambula" target="_blank">@carambula</a>, Facebook<br/>
-					Sam Gray <a href="https://github.com/samrgray" target="_blank">@samrgray</a>, BlenderBox<br/>
-					Kuan Luo <a href="https://github.com/kuanluo" target="_blank">@kuanluo</a>, Etsy / Grand St<br/>
-					Blake Olmstead <a href="https://github.com/blakeolmstead" target="_blank">@blakeolmstead</a>, Atlas Obscura<br/>
-					Zack Seuberling <a href="https://github.com/zackseuberling" target="_blank">@zackseuberling</a>, Rumors<br/>
-					Mark Silver <a href="https://twitter.com/markdsilver" target="_blank">@markdsilver</a>, The New York Times<br/>
-					Dan Shin <a href="https://twitter.com/dan_shin" target="_blank">@dan_shin</a>, Square<br/>
-					Emma White <a href="https://twitter.com/nodilemma" target="_blank">@nodilemma</a>, Portal A
+					Aaron Carámbula <a href="https://github.com/carambula" target="_blank"><em>@carambula</em></a>, Facebook<br/>
+					Sam Gray <a href="https://github.com/samrgray" target="_blank"><em>@samrgray</em></a>, BlenderBox<br/>
+					Kuan Luo <a href="https://github.com/kuanluo" target="_blank"><em>@kuanluo</em></a>, Etsy / Grand St<br/>
+					Blake Olmstead <a href="https://github.com/blakeolmstead" target="_blank"><em>@blakeolmstead</em></a>, Atlas Obscura<br/>
+					Zack Seuberling <a href="https://github.com/zackseuberling" target="_blank"><em>@zackseuberling</em></a>, Rumors<br/>
+					Mark Silver <a href="https://twitter.com/markdsilver" target="_blank"><em>@markdsilver</em></a>, The New York Times<br/>
+					Dan Shin <a href="https://twitter.com/dan_shin" target="_blank"><em>@dan_shin</em></a>, Square<br/>
+					Emma White <a href="https://twitter.com/nodilemma" target="_blank"><em>@nodilemma</em></a>, Portal A
 				</p>
 			</div>
 		</section>
@@ -90,31 +90,31 @@ get_header(); ?>
 				<ul class="list-unstyled clearfix push inner-container">
 					<li>
 					<strong>Webby Awards 2015</strong>, Travel Design<br/>
-					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
 					</li>
 					<li>
 					<strong>German Design Award 2013</strong>, Identity Design<br/>
-					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
+					<a href="http://www.ap.org/company/brand" target="_blank"><em>Associated Press</em></a>
 					</li>
 					<li>
 					<strong>Red Dot Award 2014</strong>, Online Design<br/>
-					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
 					</li>
 					<li>
 					<strong>Red Dot Award 2012</strong>, Corporate Design<br/>
-					<a href="http://www.ap.org/company/brand" target="_blank">Associated Press</a>
+					<a href="http://www.ap.org/company/brand" target="_blank"><em>Associated Press</em></a>
 					</li>
 					<li>
 					<strong>W3 Awards 2014</strong>, Gold Winner<br/>
-					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
 					</li>
 					<li>
 					<strong>W3 Awards 2012</strong>, Website Design<br/>
-					<a href="http://www.watsonadventures.com/" target="_blank">Watson Adventures</a>
+					<a href="http://www.watsonadventures.com/" target="_blank"><em>Watson Adventures</em></a>
 					</li>
 					<li>
 					<strong>Davey Awards 2014</strong><br/>
-					<a href="http://www.nytimes.com/times-journeys/" target="_blank">New York Times, Times Journeys</a>
+					<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
 					</li>
 				</ul>
 			</div>
