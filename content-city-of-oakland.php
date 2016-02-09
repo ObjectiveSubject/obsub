@@ -69,7 +69,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="push-double inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer Jesse Ragan to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
+		<p class="push-double inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
 		<!-- [ANIMATED EVOLUTION OF TREE GRAPHIC: .MOV ELLIOT PREPARED] -->
 	</div>
 
