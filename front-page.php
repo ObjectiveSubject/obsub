@@ -81,8 +81,7 @@ get_header(); ?>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-left">
-					<div class="tile-image">
-						<img src="<?php echo os_path('ap.gif', 'home'); ?>" srcset="<?php echo os_path('ap.gif', 'home'); ?> 1x, <?php echo os_path('ap-@2x.gif', 'home'); ?> 2x" width="493" />
+					<div class="tile-image associated-press">
 						<img src="<?php echo os_path('ap.png', 'home'); ?>" srcset="<?php echo os_path('ap.png', 'home'); ?> 1x, <?php echo os_path('ap-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 					<div class="tile-content push">

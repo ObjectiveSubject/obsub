@@ -2948,6 +2948,11 @@ figcaption {
     float: left;
   }
 }
+@media screen and (min-width: 768px) {
+  .tile .tile-image.associated-press {
+    margin-top: 120px;
+  }
+}
 .tile .tile-image img {
   display: block;
   margin-bottom: 0.75rem;

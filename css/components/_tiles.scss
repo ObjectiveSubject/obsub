@@ -5,6 +5,11 @@
 	}
 
 	.tile-image {
+		&.associated-press {
+			@include media($screen-md) {
+				margin-top: 120px;
+			}
+		}
 		img {
 			display: block;
 			margin-bottom: $leading / 2;
