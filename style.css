@@ -779,6 +779,10 @@ big,
 }
 
 /* Create space */
+.push-half {
+  margin-top: 0.75rem;
+}
+
 .push {
   margin-top: 1.5rem;
 }
@@ -1493,6 +1497,37 @@ a.scroll-down:after {
 .former-clients {
   padding-top: 8vh;
   background-color: #F0F0EE;
+}
+
+@media screen and (min-width: 768px) {
+  .home .page-subtitle {
+    width: 59%;
+    float: left;
+    margin-right: 4%;
+  }
+}
+
+.home .ozy-video {
+  max-width: 232px;
+}
+@media screen and (min-width: 768px) {
+  .home .ozy-video {
+    width: 36.5%;
+    float: left;
+  }
+}
+.home .ozy-video a {
+  display: block;
+  position: relative;
+}
+.home .ozy-video img {
+  display: block;
+}
+.home .ozy-video .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
 }
 
 .bio-title {

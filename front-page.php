@@ -7,15 +7,26 @@
 
 get_header(); ?>
 
+<?php the_post(); ?>
+
 	<section id="home-intro" class="home-intro full-height page-section active" >
 
 		<div class="section-container">
 			<div class="intro-content section-content">
 				<div class="outer-container">
 					<div class="inner-container">
-						<?php while ( have_posts() ) : the_post(); ?>
-							<?php the_content(); ?>
-						<?php endwhile; // end of the loop. ?>
+						<h1>For better-designed public services</h1>
+						<div class="page-subtitle">
+							<h3>Our public agencies can develop a culture and operational processes that create positive experiences to deliver on a host of benefits for society.</h3>
+							<h3>From visual communication to digital experiences and built environment: we want to help.</h3>
+						</div>
+						<div class="ozy-video push">
+							<a href="http://www.ozy.com/video/play/better-logos-better-government/67599" target="_blank">
+								<img src="<?php echo os_path('ozy-video.png', 'home'); ?>" srcset="<?php echo os_path('ozy-video.png', 'home'); ?> 1x, <?php echo os_path('ozy-video-@2x.png', 'home'); ?> 2x" width="232" alt="OZY video" />
+								<img class="play-icon" src="<?php echo os_path('play.svg'); ?>" width="32" alt="play" />
+							</a>
+							<div class="caption push-half text-muted"><em>Watch principal David Jalbert-Gagnier explain our vision in this 2:27 video from OZY.</em></div>
+						</div>
 					</div>
 				</div>
 			</div>

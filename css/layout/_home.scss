@@ -2,3 +2,31 @@
 	padding-top: 8vh;
 	background-color: $light_gray;
 }
+
+.home .page-subtitle {
+	@include media($screen-md){
+		width: 59%;
+	    float: left;
+	    margin-right: 4%;
+	}
+}
+.home .ozy-video {
+	max-width: 232px;
+	@include media($screen-md){
+		width: 36.5%;
+		float: left;
+	}
+	a {
+		display: block;
+		position: relative;
+	}
+	img {
+		display: block;
+	}
+	.play-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -16px 0 0 -16px;
+	}
+}
