@@ -132,13 +132,6 @@
 			background: white;
 		}
 	}
-	&:hover {
-		.center-line {
-			.ui-light-theme & {
-				background: tint($color_text_main, 30%);
-			}
-		}
-	}
 }
 
 .main-navigation {

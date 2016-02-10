@@ -1162,9 +1162,6 @@ body::before {
 .ui-light-theme .menu-toggle .center-line {
   background: white;
 }
-.ui-light-theme .menu-toggle:hover .center-line {
-  background: #646464;
-}
 
 .main-navigation {
   display: none;
