@@ -149,7 +149,7 @@ get_header(); ?>
 						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand positioning and develop messaging to best communicate the breadth and depth of its programming as well as its future vision. Our work included designing and building a new website, and designing visual communications worthy of any major arts organization in NYC.</p>
 						<p class="push"><a href="http://gibneydance.org" target="_blank"><em>gibneydance.org</em></a></p>
 					</div>
-					<div class="tile-image push">
+					<div class="tile-image gibney push">
 						<img src="<?php echo os_path('gibney.png', 'home'); ?>" srcset="<?php echo os_path('gibney.png', 'home'); ?> 1x, <?php echo os_path('gibney-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
