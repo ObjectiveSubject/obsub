@@ -2996,6 +2996,16 @@ figcaption {
     margin-top: 90px;
   }
 }
+@media screen and (min-width: 768px) {
+  .tile .tile-image.nyt {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile .tile-image.gibney {
+    margin-top: 165px;
+  }
+}
 .tile .tile-image img {
   display: block;
   margin-bottom: 0.75rem;

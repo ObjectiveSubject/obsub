@@ -20,6 +20,16 @@
 				margin-top: 90px;
 			}
 		}
+		&.nyt {
+			@include media($screen-md) {
+				margin-top: 40px;
+			}	
+		}
+		&.gibney {
+			@include media($screen-md) {
+				margin-top: 165px;
+			}	
+		}
 		img {
 			display: block;
 			margin-bottom: $leading / 2;

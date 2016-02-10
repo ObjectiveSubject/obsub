@@ -85,7 +85,7 @@ get_header(); ?>
 						<p class="push">More recently, alongside our partners at Sotheby’s Institute of Art, we designed a digital interface for the new School of The New York Times, nytEDU. We addressed content strategy, including sitemaps, wireframes and recommendations on program naming, and visual design to educate users on ways to Learn with The New York Times.</p>
 						<p class="push"><a href="http://nytedu.com" target="_blank"><em>nytedu.com</em></a></p>
 					</div>
-					<div class="tile-image push">
+					<div class="tile-image nyt push">
 						<img src="<?php echo os_path('nyt1.png', 'home'); ?>" srcset="<?php echo os_path('nyt1.png', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.png', 'home'); ?> 2x" width="493" />
 						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/>
 						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
