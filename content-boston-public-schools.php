@@ -159,15 +159,15 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 			<li>
 				<img src="<?php echo os_path('DBPS-Billboards1-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards1-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards1-@2x-min.png', 'bps'); ?> 2x" width="850" />
-				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
 			</li>
 			<li>
 				<img src="<?php echo os_path('DBPS-Billboards2-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards2-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards2-@2x-min.png', 'bps'); ?> 2x" width="850" />
-				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
 			</li>
 			<li>
 				<img src="<?php echo os_path('DBPS-Billboards3-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards3-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards3-@2x-min.png', 'bps'); ?> 2x" width="850" />
-				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
 			</li>
 		</ul>
 		<?php os_slide_nav("bps-billboard-nav"); ?>

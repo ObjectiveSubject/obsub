@@ -75,7 +75,7 @@
     }
     &:focus {
         outline: none;
-    } 
+    }
 
     .os-slideshow & {
         opacity: 0.2;
@@ -141,7 +141,7 @@
         text-align: center;
         bottom: 5px;
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(white, 0.3);
         @include media($screen-md) {
             left: auto;
             text-align: right;
@@ -184,7 +184,7 @@
             background: $color_text_main;
         }
     }
-    
+
     .localdata & {
         li.slick-active button {
             background: $localdata_red;
@@ -263,7 +263,7 @@
     .prev {
         float: left;
         @include media($screen-lg) {
-            margin-left: 6.5%;   
+            margin-left: 6.5%;
         }
     }
     .text-arrow {
@@ -330,15 +330,3 @@
         .prev & { @include transform(rotate(45deg)); }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

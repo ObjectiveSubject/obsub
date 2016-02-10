@@ -2565,7 +2565,7 @@ figcaption {
   text-align: center;
   bottom: 5px;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 @media screen and (min-width: 768px) {
   .slick-slide .photo-credit {
