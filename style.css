@@ -1301,6 +1301,20 @@ body::before {
     float: left;
     display: block;
     margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    float: none;
+    margin-right: 0;
+  }
+  .inner-container:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .inner-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%;
     float: none;
@@ -1537,8 +1551,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1549,7 +1563,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1643,8 +1658,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    width: 74.41059%;
+    margin-left: 8.5298%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -1656,6 +1671,7 @@ a.scroll-down:after {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
+    margin-left: 17.05961%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -3042,6 +3058,17 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  .tile.layout-image-left .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-image-left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 31.76157%;
   }
   .tile.layout-image-left .tile-content:last-child {
@@ -3049,6 +3076,18 @@ figcaption {
   }
 }
 @media screen and (min-width: 768px) {
+  .tile.layout-image-left.right-to-left .tile-content {
+    float: right;
+    display: block;
+    margin-left: 2.35765%;
+    width: 40.29137%;
+    margin-right: 8.5298%;
+  }
+  .tile.layout-image-left.right-to-left .tile-content:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 960px) {
   .tile.layout-image-left.right-to-left .tile-content {
     float: right;
     display: block;
@@ -3087,6 +3126,18 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 8.5298%;
+  }
+  .tile.layout-image-right .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-image-right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 31.76157%;
     margin-left: 17.05961%;
   }
@@ -3099,11 +3150,33 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 17.05961%;
-    clear: left;
+    width: 48.82117%;
   }
   .tile.layout-half.left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-half.left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 82.52847%;
+    margin-left: 17.47153%;
+  }
+  .tile.layout-half.left .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-half.left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+    margin-left: 34.94305%;
+  }
+  .tile.layout-half.left .tile-content:last-child {
     margin-right: 0;
   }
 }
@@ -3112,10 +3185,32 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 48.82117%;
     margin-right: 0;
   }
   .tile.layout-half.right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-half.right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 82.52847%;
+  }
+  .tile.layout-half.right .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-half.right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+  }
+  .tile.layout-half.right .tile-content:last-child {
     margin-right: 0;
   }
 }

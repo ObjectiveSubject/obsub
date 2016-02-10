@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="intro-content section-content">
 				<div class="outer-container">
 					<div class="inner-container">
-						<h1>For better-designed public services</h1>
+						<h1>For better-designed<br/>public services</h1>
 						<div class="page-subtitle">
 							<h3>Our public agencies can develop a culture and operational processes that create positive experiences to deliver on a host of benefits for society.</h3>
 							<h3>From visual communication to digital experiences and built environment: we want to help.</h3>
@@ -112,7 +112,10 @@ get_header(); ?>
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-cfr.svg', 'home'); ?>" width="150" /></div>
 						<p class="push">Founded in 1921, the exclusive Council on Foreign Relations has partnered with Objective Subject for more than eight years to implement and steward its identity program, in both print and digital contexts.</p>
-						<p class="push"><img src="<?php echo os_path('cfr.png', 'home'); ?>" srcset="<?php echo os_path('cfr.png', 'home'); ?> 1x, <?php echo os_path('cfr-@2x.png', 'home'); ?> 2x" width="493" alt="CFR Brand Guidelines" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/></p>
+					</div>
+					<div class="clearfix"></div>
+					<div class="tile-image push">
+						<img src="<?php echo os_path('cfr.png', 'home'); ?>" srcset="<?php echo os_path('cfr.png', 'home'); ?> 1x, <?php echo os_path('cfr-@2x.png', 'home'); ?> 2x" width="493" alt="CFR Brand Guidelines" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/>
 					</div>
 				</li>
 			</ul>
