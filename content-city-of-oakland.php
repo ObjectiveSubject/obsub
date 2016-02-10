@@ -103,7 +103,7 @@
 	</div>
 
 	<figure class="aligncenter hug">
-		<img src="<?php echo os_path('CoO-Brochure-min.png', 'oakland') ?>" srcset="<?php echo os_path('CoO-Brochure-min.png', 'oakland') ?> 1x, <?php echo os_path('CoO-Brochure-@2x-min.png', 'oakland') ?> 2x" width="1025" height="690">
+		<img src="<?php echo os_path('CoO-Brochure.jpg', 'oakland') ?>" srcset="<?php echo os_path('CoO-Brochure.jpg', 'oakland') ?> 1x, <?php echo os_path('CoO-Brochure-@2x.jpg', 'oakland') ?> 2x" width="1025" height="690">
 		<div class="outer-container">
 			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
 		</div>
