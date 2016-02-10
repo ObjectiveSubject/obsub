@@ -602,12 +602,6 @@ h2, .h2 {
     margin-top: 3rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-    line-height: 2.125rem;
-  }
-}
 
 h3, .h3 {
   font-size: 1.25rem;
@@ -1173,92 +1167,72 @@ body::before {
 }
 
 .main-navigation {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+.main-menu-active .main-navigation {
   display: block;
-  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .main-navigation {
+    top: 57px;
+  }
+}
+.os-csstransforms .main-navigation {
+  top: 50%;
+  width: 100%;
+  height: 191px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .os-csstransforms .main-navigation {
+    height: 220px;
+  }
 }
 .main-navigation ul {
   list-style: none;
-  margin: 0;
+  margin-top: 0;
   padding-left: 0;
 }
 .main-navigation ul.sub-menu {
-  display: none;
+  margin-left: 1rem;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-.main-menu {
+.menu-item {
   display: none;
-  position: fixed;
-  top: 80px;
-  left: 15px;
-  font-size: 1.5rem;
-  line-height: 1em;
 }
-@media screen and (min-width: 500px) {
-  .main-menu {
-    left: 30px;
-  }
+.menu-item.page-profile {
+  margin-top: 0.5em;
 }
-@media screen and (min-width: 768px) {
-  .main-menu {
-    top: 57px;
-    left: 80px;
-  }
-}
-.main-menu a {
+.menu-item a {
   color: white;
   text-transform: lowercase;
 }
-.main-menu a:hover {
+.menu-item a:hover {
   color: #646464;
 }
-.main-menu .cs-localdata a:hover {
+.menu-item span {
+  color: #646464;
+  text-transform: lowercase;
+}
+.menu-item.cs-localdata a:hover {
   color: #FFA100;
 }
-.main-menu .cs-city-of-oakland a:hover {
+.menu-item.cs-city-of-oakland a:hover {
   color: #4EBB25;
 }
-.main-menu .cs-boston-public-schools a:hover {
+.menu-item.cs-boston-public-schools a:hover {
   color: #0077C8;
-}
-
-.menu-item {
-  position: relative;
-}
-.menu-item a:hover ~ .cs-thumb {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-.menu-item .cs-thumb {
-  display: none;
-  position: absolute;
-  left: 100%;
-  width: 150px;
-  height: 100px;
-  margin-left: 1em;
-  top: 0;
-  opacity: 0;
-  background-position: 0 center;
-  -webkit-transform: translateY(25%);
-  -moz-transform: translateY(25%);
-  -ms-transform: translateY(25%);
-  -o-transform: translateY(25%);
-  transform: translateY(25%);
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-@media screen and (min-width: 500px) {
-  .menu-item .cs-thumb {
-    display: block;
-  }
 }
 
 .main-menu-scrim {
@@ -1268,7 +1242,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: -1;
   display: none;
 }
 

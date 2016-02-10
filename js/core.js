@@ -430,7 +430,7 @@
 
 
 })(jQuery, window);
-/* 
+/*
  * Main Menu
  */
 
@@ -438,34 +438,39 @@
 
 	$('.menu-toggle').on('click', function(e){
 		e.preventDefault();
-		var $siteHeader = $('.site-header'),
-			$mainMenu = $('.main-menu'),
+		var $masthead = $('#masthead'),
+			$mainNav = $('.main-navigation'),
+			$menuItem = $('.menu-item'),
+			$scrim = $('.main-menu-scrim'),
 			animationSequence;
 
-		if ( $siteHeader.hasClass('main-menu-active') ) {
-			$siteHeader.removeClass('main-menu-active');
+		if ( $masthead.hasClass('main-menu-active') ) {
 			animationSequence = [
-				// { e: $(".main-menu > li"),	p: { translateY: "20px" }, 	o: { duration: 200, stagger: 200 } },
-				{ e: $mainMenu, 			p: "fadeOut" , 		o: { duration: 300 } },
-				{ e: $('.main-menu-scrim'), p: "fadeOut" , 		o: { duration: 300, sequenceQueue: false } }
+				{ 	e: $menuItem,	p: "fadeOut", o: { duration: 300 } },
+				{ 	e: $scrim,
+					p: "fadeOut",
+					o: {
+						duration: 300,
+						complete: function(){
+							$masthead.removeClass('main-menu-active');
+						}
+					}
+				}
 			];
 			$.Velocity.RunSequence(animationSequence);
 		} else {
-			if ( $('.main-menu-scrim').length === 0 ) {
-				$('<div class="main-menu-scrim"></div>').appendTo('body');
-			}
-			$siteHeader.addClass('main-menu-active');
+			$masthead.addClass('main-menu-active');
 			animationSequence = [
-				{ e: $('.main-menu-scrim'), p: "fadeIn", 		o: { duration: 300 } },
-			    { e: $mainMenu, 			p: "fadeIn", 		o: { duration: 300, sequenceQueue: false } },
-			    // { e: $(".main-menu > li"), 	p: { translateY: "0" },	o: { duration: 200, stagger: 200 } },
+				{ e: $scrim,	p: "fadeIn", o: { duration: 300 } },
+				{ e: $menuItem,	p: "fadeIn", o: { duration: 300, stagger: 75 } },
 			];
 			$.Velocity.RunSequence(animationSequence);
 		}
-		
+
 	});
 
 })(jQuery, window);
+
 /* 
  * Maps
  */
