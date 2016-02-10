@@ -34,7 +34,7 @@
 
 	<figure class="alignnone">
 		<div class="parallax-container">
-			<blockquote data-parallax-node="0.5" data-parallax-delay="-0.4">
+			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures.<span class="quote">&rdquo;</span><br/><small>&mdash; Kayla, Oakland Native, Chapter 510 Writing Project</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?>" srcset="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?> 1x, <?php echo os_path('CoO-TreeB@2x-min.jpg', 'oakland') ?> 2x" width="1600" height="1008">
@@ -49,7 +49,7 @@
 		</p>
 		<p class="inner-container">In the past, the City never had a concerted approach to visual communication. The resulting cacophony of symbols across city departments did not connote the clarity and simplicity that should be the hallmark of any experience with a large organization. </p>
 	</div>
-	
+
 	<figure class="aligncenter" style="background-color: white;">
 		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" />
 		<!-- <figcaption>explanatory caption</figcaption> -->
@@ -122,7 +122,7 @@
 </section>
 
 <section id="solution" class="page-section " style="background-color: #E0F3F2; padding-bottom: 200px">
-	
+
 	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
@@ -151,7 +151,7 @@
 		</ul>
 		<?php os_slide_nav("oakland-website-nav"); ?>
 	</figure>
-	
+
 	<div class="outer-container">
 		<div class="inner-container">
 			<p class="h2 future-A"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
@@ -185,19 +185,3 @@
 <?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,15 @@
 .parallax-container {
-	overflow:hidden; 
+	overflow:hidden;
 	position: relative;
+}
+
+blockquote.parallax-node {
+	margin-top: 0;
+	width: 100%;
+	@include media($screen-md) {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		@include transform( translateY(-50%) );
+	}
 }

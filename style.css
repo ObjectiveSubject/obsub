@@ -1456,9 +1456,6 @@ a.scroll-down:after {
   padding: 3rem 0;
   margin: 3rem 0 0;
 }
-.page-section blockquote[data-parallax-node] {
-  margin-top: 0;
-}
 .city-of-oakland .page-section blockquote {
   background: #003265;
   color: #376FFF;
@@ -1493,13 +1490,6 @@ a.scroll-down:after {
 .page-section blockquote small {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  [data-parallax-node] {
-    position: absolute;
-    width: 100%;
-  }
 }
 
 .former-clients {
@@ -3444,4 +3434,21 @@ figcaption {
 .parallax-container {
   overflow: hidden;
   position: relative;
+}
+
+blockquote.parallax-node {
+  margin-top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  blockquote.parallax-node {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }

@@ -1,45 +1,36 @@
-/* 
+/*
  * Links
  */
 
 (function( $, window, undefined ){
 
-	var $window = $(window);
-
 	$(document).ready(function(){
 
-		$('[data-parallax-node]').each(function(){
+		$('.parallax-node').each(function(){
 			var $node = $(this),
-				factor = $node.data('parallax-node'),
-				delay = $node.data('parallax-delay'),
-				nodeTop,
-				winHeight,
-				threshold;
+				$container = $node.parent(),
+				matrix = $node.css('transform'),
+				mxLength = matrix.length,
+				modifier = $node.data('speed-modifier');
 
-			init();
-			$window
-				.on("resize", init)
-				.on("scroll", onScroll);
+			matrix = matrix.slice(7, mxLength-1).split(", "); // creates an array [stretchX, skewY, skewX, stretchY, X, Y]
 
-			function init() {
-				nodeTop = $node.offset().top;
-				winHeight = $window.height();
-				threshold = nodeTop - (winHeight + (winHeight * delay));
-			}
+			onScroll();
+			OS.window.on("resize scroll", onScroll);
 
 			function onScroll() {
-				var scrollTop = $window.scrollTop(),
-					offset = scrollTop - threshold;
+				var scrollTop = OS.window.scrollTop(),
+					containerTop = $container.offset().top,
+					distance = scrollTop - containerTop;
 
 				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small" ) {
-					
-					if ( scrollTop >= threshold ) {
-						$node.css({
-							transform: 'translateY('+ (offset * factor) + 'px)',
-							zIndex: "1"
-						});
-					}
-				
+					$node.velocity({
+						translateY: parseInt(matrix[5]) + (distance * modifier)
+					}, 0);
+				} else {
+					$node.velocity({
+						translateY: 0
+					}, 0);
 				}
 			}
 		});
