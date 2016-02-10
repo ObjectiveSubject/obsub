@@ -32,7 +32,7 @@
 <section class="page-section push-double" style="background-color: #D6EFFD;">
 	<figure class="alignnone hug">
 		<div style="overflow:hidden; position: relative;">
-			<blockquote data-parallax-node="0.5" data-parallax-delay="-0.4">
+			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
 			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />
@@ -57,7 +57,7 @@
 	</div>
 
 	<figure class="bps-wordmarks aligncenter active-on-inview" data-offset="0.5">
-		<div style="background-color: #0077D2;" >	
+		<div style="background-color: #0077D2;" >
 			<img src="<?php echo os_path('Discover.png', 'bps') ?>" srcset="<?php echo os_path('Discover.png', 'bps') ?> 1x, <?php echo os_path('Discover-@2x.png', 'bps') ?> 2x" width="820" height="240">
 			<img src="<?php echo os_path('Register.png', 'bps') ?>" srcset="<?php echo os_path('Register.png', 'bps') ?> 1x, <?php echo os_path('Register-@2x.png', 'bps') ?> 2x" width="820" height="240">
 			<img src="<?php echo os_path('Succeed.png', 'bps') ?>" srcset="<?php echo os_path('Succeed.png', 'bps') ?> 1x, <?php echo os_path('Succeed-@2x.png', 'bps') ?> 2x" width="820" height="240">
@@ -71,7 +71,7 @@
 		<p class="inner-container">Since the role of this tool is to serve as the first step in part of the larger registration process, we proposed branding the process holistically, using the bright blue of Boston Public Schools as the unifying element for a streamlined visual system. This cohesive system will play an integral part in the communications campaign to parents.</p>
 	</div>
 
-	<figure class="aligncenter">	
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Poster-@2x-min.png', 'bps') ?> 2x" width="1200" height="797">
 		<div class="outer-container">
 			<figcaption class="inner-container">A poster for a school showcase using the visual system</figcaption>
@@ -84,7 +84,7 @@
 
 </section>
 
-<section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">	
+<section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">
 	<figure class="aligncenter hug">
 		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
 			<img src="<?php echo os_path('DBPS-Results.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Results.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Results-@2x.png', 'bps') ?> 2x" width="843" height="317">
@@ -183,4 +183,3 @@
 <?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>
-
