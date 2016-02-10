@@ -154,6 +154,26 @@
 		<?php os_slide_nav("bps-mobile-nav"); ?>
 	</figure>
 
+	<figure class="os-slideshow-container">
+		<div id="bps-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards1.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards1.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards1-@2x.png', 'bps'); ?> 2x" width="850" />
+				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+			</li>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards2.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards2.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards2-@2x.png', 'bps'); ?> 2x" width="850" />
+				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+			</li>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards3.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards3.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards3-@2x.png', 'bps'); ?> 2x" width="850" />
+				<div class="photo-credit">&copy; <em>Mindy Best Photography</em></div>
+			</li>
+		</ul>
+		<?php os_slide_nav("bps-billboard-nav"); ?>
+		<figcaption class="outer-container"><div class="inner-container">Discover BPS Billboards</div></figcaption>
+	</figure>
+
 	<div class="outer-container">
 		<p class="h2 future-A inner-container"><a href="http://www.discoverbps.org/" class="cta-link" target="_blank">discoverbps.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
