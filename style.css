@@ -1133,9 +1133,6 @@ body::before {
 .menu-toggle .bottom-line {
   top: 12px;
 }
-.menu-toggle:hover .top-line, .menu-toggle:hover .bottom-line, .menu-toggle:hover .center-line {
-  background: #646464;
-}
 .main-menu-active .menu-toggle .center-line {
   opacity: 0;
 }
@@ -1156,9 +1153,6 @@ body::before {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   background: white;
-}
-.main-menu-active .menu-toggle:hover .top-line, .main-menu-active .menu-toggle:hover .bottom-line, .main-menu-active .menu-toggle:hover .center-line {
-  background: #999C98;
 }
 .menu-toggle .center-line {
   position: absolute;

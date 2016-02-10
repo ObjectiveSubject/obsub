@@ -101,11 +101,9 @@
 	.bottom-line {
 		top: 12px;
 	}
-	&:hover {
-		.top-line, .bottom-line, .center-line {
-			background: tint($color_text_main, 30%);
-		}
-	}
+	// .top-line, .bottom-line, .center-line {
+	// 	background: tint($color_text_main, 30%);
+	// }
 	.main-menu-active & {
 		.center-line {
 			opacity: 0;
@@ -120,11 +118,11 @@
 			@include transform( rotate(-45deg) );
 			background: white;
 		}
-		&:hover {
-			.top-line, .bottom-line, .center-line {
-				background: $medium_gray;
-			}
-		}
+		// &:hover {
+		// 	.top-line, .bottom-line, .center-line {
+		// 		background: $medium_gray;
+		// 	}
+		// }
 	}
 
 	.center-line {
