@@ -115,7 +115,7 @@
 </section>
 
 <section class="page-section " style="background-color: #E0F3F2; padding-bottom: 100px">
-	<figure class="alignnone hug oakland-pattern" style="background-image: <?php echo 'url(' . os_path('pattern.jpg', 'oakland') . ')'; ?>"></figure>
+	<figure class="alignnone hug oakland-pattern"></figure>
 	<div class="outer-container">
 		<figcaption class="inner-container">Root system</figcaption>
 	</div>

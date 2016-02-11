@@ -61,6 +61,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	background-image: url(images/oakland/pattern-min.png);
+	@include hidpi {
+		background-image: url(images/oakland/pattern-@2x-min.png);
+	}
 }
-
-
