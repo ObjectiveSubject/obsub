@@ -27,7 +27,7 @@ get_header(); ?>
 			</div>
 
 			<div class="clearfix"></div>
-			
+
 			<?php $args = array( 'post_type' => 'bio', 'posts_per_page' => 100, 'order' => 'ASC' );
 			$bios = get_posts($args);
 			$count = 0;
@@ -62,7 +62,7 @@ get_header(); ?>
 			<div class="clearfix"></div>
 		</section>
 
-		<div class="process-snapshot"><img src="<?php echo os_path('process-snapshot.jpg', 'about'); ?>" /></div>
+		<div class="process-snapshot parallax-bg" style="background-image: url(<?php echo os_path('process-snapshot.jpg', 'about'); ?>)" data-speed-modifier="0.5"></div>
 
 		<section class="page-section alumni outer-container">
 			<div class="alumni-content">
@@ -121,5 +121,5 @@ get_header(); ?>
 		</section>
 
 	<?php endwhile; // end of the loop. ?>
-		
+
 <?php get_footer(); ?>
