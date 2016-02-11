@@ -66,7 +66,7 @@
 
 	<div class="outer-container">
 		<h2 class="future-A inner-container push-triple">process</h2>
-		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
+		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank" class="cs-body-link">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
 		<!-- [ANIMATED EVOLUTION OF TREE GRAPHIC: .MOV ELLIOT PREPARED] -->
 	</div>
 
@@ -156,8 +156,6 @@
 		<div class="inner-container">
 			<p class="h2 future-A"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 			<p>In this same spirit of open development, the portfolio library is publicly available, along with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity.</p>
-			<p>We continue to support the City as it improves the quality of its visual communication.</p>
-			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 
@@ -179,6 +177,13 @@
 		</ul>
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
 	</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p>We continue to support the City as it improves the quality of its visual communication.</p>
+			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		</div>
+	</div>
 
 </section>
 
