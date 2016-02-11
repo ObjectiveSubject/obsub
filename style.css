@@ -1840,6 +1840,18 @@ a.scroll-down:after {
 .city-of-oakland .cs-body-link:hover {
   color: #0041ea;
 }
+.boston-public-schools .cs-body-link {
+  color: #06CA00;
+}
+.boston-public-schools .cs-body-link:hover {
+  color: #047e00;
+}
+.localdata .cs-body-link {
+  color: #EE5A24;
+}
+.localdata .cs-body-link:hover {
+  color: #b73b0e;
+}
 
 .oakland-pattern {
   padding: 0;

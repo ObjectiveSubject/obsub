@@ -78,10 +78,6 @@
 		</div>
 	</figure>
 
-	<div class="outer-container">
-		<p class="inner-container">In addition to helping parents take control of an important decision in the children’s life, rethinking  the user experience represents an opportunity to position Boston Public School as a proactive, innovative and trustworthy organization. A positive perception of the school district can only engender more goodwill and participation from parents, students, and the community alike.</p>
-	</div>
-
 </section>
 
 <section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">
@@ -97,6 +93,8 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
+			<p>In addition to helping parents take control of an important decision in the children''s life, rethinking the user experience represents an opportunity to position Boston Public School as a proactive, innovative and trustworthy organization. A positive perception of the school district can only engender more goodwill and participation from parents, students, and the community alike.</p>
+			<p>Celebrated online urban policy publication Next City wrote about the project and our involvement in this November 2013 piece: <a href="http://nextcity.org/sharedcity/entry/how-boston-is-building-the-hotels.com-of-public-schools" class="cs-body-link" target="_blank">How Boston Is Building the Hotels.com of Public Schools</a></p>
 		</div>
 	</div>
 

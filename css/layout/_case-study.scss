@@ -52,6 +52,18 @@
 			color: darken($oakland_blue, 15%);
 		}
 	}
+	.boston-public-schools & {
+		color: $boston_green;
+		&:hover {
+			color: darken($boston_green, 15%);
+		}
+	}
+	.localdata & {
+		color: $localdata_red;
+		&:hover {
+			color: darken($localdata_red, 15%);
+		}
+	}
 }
 
 .oakland-pattern {
