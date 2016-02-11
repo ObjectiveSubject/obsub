@@ -56,7 +56,7 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section " style="background-color: #E7F1CF; padding-bottom: 50px;">
+<section id="process" class="page-section " style="background-color: #E3F1CE; padding-bottom: 50px;">
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
