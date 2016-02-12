@@ -62,11 +62,11 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-	
+
 	<?php endwhile;  ?>
 
 	<section id="former-clients" class="page-section former-clients">
-		
+
 		<div class="outer-container">
 
 			<div class="inner-container">
@@ -87,7 +87,7 @@ get_header(); ?>
 					</div>
 					<div class="tile-image nyt push">
 						<img src="<?php echo os_path('nyt1.png', 'home'); ?>" srcset="<?php echo os_path('nyt1.png', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.png', 'home'); ?> 2x" width="493" />
-						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/>
+						<img src="<?php echo os_path('nyt2-journeys.png', 'home'); ?>" srcset="<?php echo os_path('nyt2-journeys.png', 'home'); ?> 1x, <?php echo os_path('nyt2-journeys-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 6px -2px rgba(0,0,0,0.2)"/>
 						<img src="<?php echo os_path('nyt3-edu.png', 'home'); ?>" srcset="<?php echo os_path('nyt3-edu.png', 'home'); ?> 1x, <?php echo os_path('nyt3-edu-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
@@ -115,7 +115,7 @@ get_header(); ?>
 					</div>
 					<div class="clearfix"></div>
 					<div class="tile-image push">
-						<img src="<?php echo os_path('cfr.png', 'home'); ?>" srcset="<?php echo os_path('cfr.png', 'home'); ?> 1x, <?php echo os_path('cfr-@2x.png', 'home'); ?> 2x" width="493" alt="CFR Brand Guidelines" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)"/>
+						<img src="<?php echo os_path('cfr.png', 'home'); ?>" srcset="<?php echo os_path('cfr.png', 'home'); ?> 1x, <?php echo os_path('cfr-@2x.png', 'home'); ?> 2x" width="493" alt="CFR Brand Guidelines" style="box-shadow: 0 2px 6px -2px rgba(0,0,0,0.2)"/>
 					</div>
 				</li>
 			</ul>
@@ -186,7 +186,7 @@ get_header(); ?>
 						<p class="push"><a href="http://worldstrides.com" target="_blank"><em>worldstrides.com</em></a></p>
 					</div>
 					<div class="tile-image worldstrides push">
-						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 5px rgba(0,0,0,0.2)" />
+						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" style="box-shadow: 0 2px 6px -2px rgba(0,0,0,0.2)" />
 						<img src="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides2-mobile.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides2-mobile-@2x.png', 'home'); ?> 2x" width="493" />
 					</div>
 				</li>
