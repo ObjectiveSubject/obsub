@@ -52,7 +52,3 @@ OS.throttle = function (func, wait, options) {
 	  return result;
 	};
 };
-
-OS.pixelRatio = function() {
-   return window.getComputedStyle(document.querySelector('body'), 'after').getPropertyValue('content').replace(/[^a-z]/g,'') * 1;
-}
