@@ -51,7 +51,7 @@ get_header(); ?>
 				<p class="push">We’re lucky to partner with fellow creatives, developers, thinkers and strategists across projects for our clients. As an agile studio, our collaborations are important for delivering the best creative solutions. Some of our partners include:</p>
 				<ul class="push list-unstyled">
 					<li><a href="http://www.mindybestphotography.com/" target="_blank"><em>Mindy Best</em></a></li>
-					<li><a href="http://eightface.com/" target="_blank"><em>Dave Kellam</em></a></li>
+					<li><a href="http://davekellam.com/" target="_blank"><em>Dave Kellam</em></a></li>
 					<li><a href="http://marvinharder.com/" target="_blank"><em>Marvin Harder</em></a></li>
 					<li><a href="http://www.hieronymus.co/" target="_blank"><em>Hieronymus</em></a></li>
 					<li><a href="http://www.mowe.money/" target="_blank"><em>Andrew Mowe</em></a></li>
