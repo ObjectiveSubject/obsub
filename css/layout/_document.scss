@@ -1,6 +1,14 @@
+#page {
+	@include hidpi {
+		&::before {
+			content: "2";
+		}
+	}
+}
+
 body {
 	background-color: $light_gray;
-	
+
 	&::before {
 		content: "default";
 		display: none;
@@ -8,16 +16,16 @@ body {
 	@include media($screen-sm) {
 		&::before {
 			content: "small";
-		}	
+		}
 	}
 	@include media($screen-md) {
 		&::before {
 			content: "medium";
-		}	
+		}
 	}
 	@include media($screen-xl) {
 		&::before {
 			content: "xlarge";
-		}	
+		}
 	}
 }

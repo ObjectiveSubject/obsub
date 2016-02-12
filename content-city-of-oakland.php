@@ -56,7 +56,7 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section " style="background-color: #E3F1CE; padding-bottom: 50px;">
+<section id="process" class="page-section " style="background-color: #E4F1CF; padding-bottom: 50px;">
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
@@ -103,7 +103,7 @@
 	</div>
 
 	<figure class="aligncenter hug">
-		<img src="<?php echo os_path('CoO-Brochure.jpg', 'oakland') ?>" srcset="<?php echo os_path('CoO-Brochure.jpg', 'oakland') ?> 1x, <?php echo os_path('CoO-Brochure-@2x.jpg', 'oakland') ?> 2x" width="1025" height="690">
+		<img src="<?php echo os_path('CoO-Brochure-lowsrc.png', 'oakland') ?>" class="lazy-load" data-src="<?php echo os_path('CoO-Brochure.png', 'oakland'); ?>" data-src2x="<?php echo os_path('CoO-Brochure-@2x.png', 'oakland'); ?>" width="1025" height="690" />
 		<div class="outer-container">
 			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
 		</div>
