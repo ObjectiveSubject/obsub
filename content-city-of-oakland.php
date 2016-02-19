@@ -78,8 +78,8 @@
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-large">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" width="438" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" width="438" />
+			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" height="438" />
+			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" height="438" />
 			<div class="slider">
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
