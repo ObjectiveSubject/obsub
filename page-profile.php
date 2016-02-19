@@ -85,7 +85,7 @@ get_header(); ?>
 
 		<section class="page-section recognition outer-container">
 			<div class="recognition-content">
-				<div class="reddot-img"><img src="<?php echo os_path('reddot.png' ,'about'); ?>" srcset="<?php echo os_path('reddot.png' ,'about'); ?> 1x, <?php echo os_path('reddot-@2x.png' ,'about'); ?> 2x" width="407" /></div>
+				<div class="reddot-img"><img src="<?php echo os_path('reddot.png' ,'about'); ?>" srcset="<?php echo os_path('reddot.png' ,'about'); ?> 1x, <?php echo os_path('reddot-@2x.png' ,'about'); ?> 2x" width="407" height="270"/></div>
 				<h2 class="future-A inner-container">Recognition</h2>
 				<ul class="list-unstyled clearfix push inner-container">
 					<li>
