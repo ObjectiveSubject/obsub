@@ -51,7 +51,7 @@
 	</div>
 
 	<figure class="aligncenter" style="background-color: white;">
-		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" />
+		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" height="200"/>
 		<!-- <figcaption>explanatory caption</figcaption> -->
 	</figure>
 </section>
@@ -78,8 +78,8 @@
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-large">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" />
+			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" width="438" />
+			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" width="438" />
 			<div class="slider">
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
@@ -87,8 +87,8 @@
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-small">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="small top" width="116" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="small bottom" width="116" />
+			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="small top" width="116" height="119" />
+			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="small bottom" width="116" height="119" />
 			<div class="slider">
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
