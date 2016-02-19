@@ -18,7 +18,7 @@
 <?php endif; ?>
 <?php wp_head(); ?>
 <?php if ( is_page( 'contact' ) || is_singular( 'case_study' ) ) : ?>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js' async></script>
 <?php endif ;?>
 </head>
 
@@ -65,7 +65,7 @@
 		</nav>
 
 		<div class="main-menu-scrim"></div>
-		
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content <?php echo $post->post_name; ?>">
