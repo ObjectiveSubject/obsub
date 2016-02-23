@@ -2,6 +2,7 @@
 	@include hidpi {
 		&::before {
 			content: "2";
+			display: none;
 		}
 	}
 }
