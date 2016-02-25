@@ -2362,12 +2362,10 @@ figcaption {
   color: #06CA00;
 }
 
-/* A CSS Browser bar
+/* Browser Window
  * -----------------------------------------------------------*/
-.browser:before {
-  content: "•••";
-  display: block;
-  margin: 0 auto;
+.browser-bar {
+  height: 15px;
   background: #D4D4D4;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2378,7 +2376,7 @@ figcaption {
   height: 15px;
 }
 @media screen and (min-width: 500px) {
-  .browser:before {
+  .browser-bar {
     font-size: 26px;
     line-height: 26px;
     height: 26px;
@@ -2387,11 +2385,39 @@ figcaption {
   }
 }
 @media screen and (min-width: 768px) {
-  .browser:before {
+  .browser-bar {
     font-size: 30px;
     height: 30px;
     line-height: 30px;
   }
+}
+.browser-bar:before {
+  content: "•••";
+  display: block;
+}
+
+.browser-window {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.browser-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .browser-inner {
+    overflow-y: scroll;
+  }
+}
+.browser-inner img {
+  width: 100%;
 }
 
 /* Responsive Media

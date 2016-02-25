@@ -127,25 +127,46 @@
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
 		</div>
+
 	</div>
 
 	<figure class="os-slideshow-container">
 		<div id="oakland-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Homepage-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>City of Oakland Homepage</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Landing-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Landing Page</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Parks-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Parks and Recreation</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Terminal-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Terminal page</figcaption>
 			</li>
 		</ul>
@@ -163,15 +184,30 @@
 		<div id="oakland-toolkit-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>City of Oakland Design Toolkit</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Toolkit – Visual Identity</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Toolkit – Pattern Portfolio</figcaption>
 			</li>
 		</ul>

@@ -102,23 +102,48 @@
 		<div id="bps-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-website-nav .prev", "nextArrow": "#bps-website-nav .next", "appendDots": "#bps-website-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Home-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Home-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Discover Boston Public Schools homepage</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>School results</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-Details-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-Details-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>School detail</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Compare-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Compare-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Compare schools</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Ready-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Ready-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Schools chosen</figcaption>
 			</li>
 		</ul>

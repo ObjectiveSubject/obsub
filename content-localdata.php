@@ -60,19 +60,39 @@
 		<div id="tool-landing-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#tool-landing-nav .prev", "nextArrow": "#tool-landing-nav .next", "appendDots": "#tool-landing-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Tool1.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool1.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool1-@2x.png', 'localdata'); ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Tool1-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool1-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool1-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Tool Login Page</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool2-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool2-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool2-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Tool Landing Page</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool3-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool3-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool3-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Survey Dashboard</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool4-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?>" srcset="<?php echo os_path('LD-Tool4-min.png', 'localdata'); ?> 1x, <?php echo os_path('LD-Tool4-@2x-min.png', 'localdata'); ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Neighborhood Map page</figcaption>
 			</li>
 		</ul>
@@ -81,7 +101,7 @@
 </section>
 
 <section id="solution" class="page-section " style="padding-bottom: 100px; background-color: #FFEBC4;">
-	<div class="outer-container">	
+	<div class="outer-container">
 		<h2 class="future-A inner-container">solution</h2>
 		<p class="push inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	</div>
@@ -89,15 +109,30 @@
 		<div id="homepage-slide-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#homepage-slide-nav .prev", "nextArrow": "#homepage-slide-nav .next", "appendDots": "#homepage-slide-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Homepage-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Homepage-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Homepage-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Homepage</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-In-Action-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-In-Action-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-In-Action-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Action Page</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Story-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Story-Page-min.png', 'localdata') ?> 1x, <?php echo os_path('LD-Story-Page-@2x-min.png', 'localdata') ?> 2x" width="850" height="600">
+					</div>
+				</div>
 				<figcaption>Local Data Story Page</figcaption>
 			</li>
 		</ul>
@@ -117,19 +152,3 @@
 <?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
