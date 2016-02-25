@@ -2124,7 +2124,7 @@ input[type="submit"][disabled] {
   display: block;
 }
 
-/* Forms 
+/* Forms
  * ------------------------------------------- */
 form {
   margin: 1.5rem 0 0;
@@ -2371,7 +2371,7 @@ label.block {
   margin: 0 0 0.5rem;
   box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .subscribe-form {
     position: absolute;
     width: 100%;
