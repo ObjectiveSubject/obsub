@@ -114,6 +114,9 @@ a.no-decoration { text-decoration: none; }
 
 .text-color-link {
 	color: $color_text_main;
+	&:visited {
+		color: $color_text_main;
+	}
 	&:hover {
 		color: $color_link;
 	}

@@ -30,3 +30,31 @@
 		margin: -16px 0 0 -16px;
 	}
 }
+
+.ctas {
+	margin-top: $leading * 2;
+	@include media( $screen-md ) {
+		margin-top: $leading * 4;
+	}
+
+	.inner-container {
+		border-top: 1px solid $medium_gray;
+		position: relative;
+		padding-top: $leading;
+	}
+
+	em {
+		display: none;
+		@include media($screen-md) {
+			display: block;
+			position: absolute;
+			top: 38px;
+			left: -35px;
+		}
+	}
+
+	a {
+		display: block;
+		margin: 0;
+	}
+}

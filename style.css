@@ -1034,6 +1034,9 @@ a.no-decoration {
 .text-color-link {
   color: #222222;
 }
+.text-color-link:visited {
+  color: #222222;
+}
 .text-color-link:hover {
   color: #0071BC;
 }
@@ -1599,6 +1602,35 @@ a.scroll-down:after {
   top: 50%;
   left: 50%;
   margin: -16px 0 0 -16px;
+}
+
+.ctas {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .ctas {
+    margin-top: 6rem;
+  }
+}
+.ctas .inner-container {
+  border-top: 1px solid #999C98;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.ctas em {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .ctas em {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: -35px;
+  }
+}
+.ctas a {
+  display: block;
+  margin: 0;
 }
 
 .bio-title {
