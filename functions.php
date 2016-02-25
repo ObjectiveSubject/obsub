@@ -100,22 +100,15 @@ function obsub_scripts() {
 
 	wp_enqueue_style( 'obsub-style', get_template_directory_uri() . "/style{$postfix}.css" );
 
-	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', get_template_directory_uri() . "/js/jquery-2.1.4.js", array(), '', true );
 	wp_register_script( 'mapboxgl', get_template_directory_uri() . "/js/mapboxgl.js", array(), '', true );
-	wp_register_script( 'velocity', get_template_directory_uri() . "/js/velocity.min.js", array('jquery'), '', true );
-	wp_register_script( 'velocity_ui', get_template_directory_uri() . "/js/velocity.ui.min.js", array('jquery'), '', true );
-	wp_register_script( 'slick', get_template_directory_uri() . "/js/slick.js", array('jquery'), '', true );
-	
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . "/js/modernizr.min.js", array(), '', false );
-	if ( is_page('contact') ) { wp_enqueue_script( 'mapboxgl' ); }
-	wp_enqueue_script( 'velocity' );
-	wp_enqueue_script( 'velocity_ui' );
-	wp_enqueue_script( 'slick' );
-	wp_enqueue_script( 'os', get_template_directory_uri() . "/js/os.js", array('jquery'), '', true );
-	wp_enqueue_script( 'core', get_template_directory_uri() . "/js/core{$postfix}.js", array('jquery'), '', true );
 
-	wp_localize_script( 'core',
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . "/js/modernizr.min.js", array(), '', false );
+	if ( is_page('contact') ) {
+		wp_enqueue_script( 'mapboxgl' );
+	}
+	wp_enqueue_script( 'app', get_template_directory_uri() . "/js/app{$postfix}.js", array(), '', true );
+
+	wp_localize_script( 'app',
         'osAdmin',
         array(
             'ajaxUrl' => admin_url( 'admin-ajax.php' ), //url for php file that process ajax request to WP
@@ -151,4 +144,3 @@ require get_template_directory() . '/includes/post-types.php';
 /** Custom Taxonomies
 --------------------------------------------------*/
 require get_template_directory() . '/includes/taxonomies.php';
-

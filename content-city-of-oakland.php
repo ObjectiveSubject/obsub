@@ -34,7 +34,7 @@
 
 	<figure class="alignnone">
 		<div class="parallax-container">
-			<blockquote data-parallax-node="0.5" data-parallax-delay="-0.4">
+			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>Oakland is like a tree. The trunk full of businesses with branches stretching into their own communities with their own cultures.<span class="quote">&rdquo;</span><br/><small>&mdash; Kayla, Oakland Native, Chapter 510 Writing Project</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?>" srcset="<?php echo os_path('CoO-TreeB-min.jpg', 'oakland') ?> 1x, <?php echo os_path('CoO-TreeB@2x-min.jpg', 'oakland') ?> 2x" width="1600" height="1008">
@@ -49,14 +49,14 @@
 		</p>
 		<p class="inner-container">In the past, the City never had a concerted approach to visual communication. The resulting cacophony of symbols across city departments did not connote the clarity and simplicity that should be the hallmark of any experience with a large organization. </p>
 	</div>
-	
+
 	<figure class="aligncenter" style="background-color: white;">
-		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" />
+		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" height="200"/>
 		<!-- <figcaption>explanatory caption</figcaption> -->
 	</figure>
 </section>
 
-<section id="process" class="page-section " style="background-color: #E7F1CF; padding-bottom: 50px;">
+<section id="process" class="page-section " style="background-color: #E4F1CF; padding-bottom: 50px;">
 	<figure class="alignnone hug">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
@@ -66,7 +66,7 @@
 
 	<div class="outer-container">
 		<h2 class="future-A inner-container push-triple">process</h2>
-		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
+		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank" class="cs-body-link">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
 		<!-- [ANIMATED EVOLUTION OF TREE GRAPHIC: .MOV ELLIOT PREPARED] -->
 	</div>
 
@@ -78,8 +78,8 @@
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-large">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" />
+			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" height="438" />
+			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" height="438" />
 			<div class="slider">
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
@@ -87,8 +87,8 @@
 			</div>
 		</div>
 		<div class="slider-row oakland-tree-small">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="small top" width="116" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="small bottom" width="116" />
+			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="small top" width="116" height="119" />
+			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="small bottom" width="116" height="119" />
 			<div class="slider">
 				<div class="slider-track"></div>
 				<div class="slider-thumb"></div>
@@ -103,7 +103,7 @@
 	</div>
 
 	<figure class="aligncenter hug">
-		<img src="<?php echo os_path('CoO-Brochure-min.png', 'oakland') ?>" srcset="<?php echo os_path('CoO-Brochure-min.png', 'oakland') ?> 1x, <?php echo os_path('CoO-Brochure-@2x-min.png', 'oakland') ?> 2x" width="1025" height="690">
+		<img src="<?php echo os_path('CoO-Brochure-lowsrc.png', 'oakland') ?>" class="lazy-load" data-src="<?php echo os_path('CoO-Brochure.png', 'oakland'); ?>" data-src2x="<?php echo os_path('CoO-Brochure-@2x.png', 'oakland'); ?>" width="1025" height="690" />
 		<div class="outer-container">
 			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
 		</div>
@@ -115,49 +115,68 @@
 </section>
 
 <section class="page-section " style="background-color: #E0F3F2; padding-bottom: 100px">
-	<figure class="alignnone hug oakland-pattern" style="background-image: <?php echo 'url(' . os_path('pattern.jpg', 'oakland') . ')'; ?>"></figure>
+	<figure class="alignnone hug oakland-pattern"></figure>
 	<div class="outer-container">
 		<figcaption class="inner-container">Root system</figcaption>
 	</div>
 </section>
 
 <section id="solution" class="page-section " style="background-color: #E0F3F2; padding-bottom: 200px">
-	
+
 	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
 		</div>
+
 	</div>
 
 	<figure class="os-slideshow-container">
 		<div id="oakland-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Homepage-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>City of Oakland Homepage</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Landing-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Landing Page</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Parks-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Parks and Recreation</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-Terminal-crop-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-crop-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-crop-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Terminal page</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("oakland-website-nav"); ?>
 	</figure>
-	
+
 	<div class="outer-container">
 		<div class="inner-container">
 			<p class="h2 future-A"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 			<p>In this same spirit of open development, the portfolio library is publicly available, along with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity.</p>
-			<p>We continue to support the City as it improves the quality of its visual communication.</p>
-			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 
@@ -165,39 +184,45 @@
 		<div id="oakland-toolkit-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>City of Oakland Design Toolkit</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Toolkit – Visual Identity</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('CoO-PatternPortfolio-crop-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-crop-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-crop-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
 				<figcaption>Toolkit – Pattern Portfolio</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
 	</figure>
 
+	<div class="outer-container">
+		<div class="inner-container">
+			<p>We continue to support the City as it improves the quality of its visual communication.</p>
+			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		</div>
+	</div>
+
 </section>
 
 <?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

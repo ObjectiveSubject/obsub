@@ -602,12 +602,6 @@ h2, .h2 {
     margin-top: 3rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-    line-height: 2.125rem;
-  }
-}
 
 h3, .h3 {
   font-size: 1.25rem;
@@ -991,6 +985,13 @@ a.no-decoration {
 
 /* Layout
 ----------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  #page::before {
+    content: "2";
+    display: none;
+  }
+}
+
 body {
   background-color: #F0F0EE;
 }
@@ -1168,97 +1169,74 @@ body::before {
 .ui-light-theme .menu-toggle .center-line {
   background: white;
 }
-.ui-light-theme .menu-toggle:hover .center-line {
-  background: #646464;
-}
 
 .main-navigation {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+.main-menu-active .main-navigation {
   display: block;
-  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .main-navigation {
+    top: 57px;
+  }
+}
+.os-csstransforms .main-navigation {
+  top: 50%;
+  width: 100%;
+  height: 191px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .os-csstransforms .main-navigation {
+    height: 220px;
+  }
 }
 .main-navigation ul {
   list-style: none;
-  margin: 0;
+  margin-top: 0;
   padding-left: 0;
 }
 .main-navigation ul.sub-menu {
-  display: none;
+  margin-left: 1rem;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-.main-menu {
+.menu-item {
   display: none;
-  position: fixed;
-  top: 80px;
-  left: 15px;
-  font-size: 1.5rem;
-  line-height: 1em;
 }
-@media screen and (min-width: 500px) {
-  .main-menu {
-    left: 30px;
-  }
+.menu-item.page-profile {
+  margin-top: 0.5em;
 }
-@media screen and (min-width: 768px) {
-  .main-menu {
-    top: 57px;
-    left: 80px;
-  }
-}
-.main-menu a {
+.menu-item a {
   color: white;
   text-transform: lowercase;
 }
-.main-menu a:hover {
+.menu-item a:hover {
   color: #646464;
 }
-.main-menu .cs-localdata a:hover {
+.menu-item span {
+  color: #646464;
+  text-transform: lowercase;
+}
+.menu-item.cs-localdata a:hover {
   color: #FFA100;
 }
-.main-menu .cs-city-of-oakland a:hover {
+.menu-item.cs-city-of-oakland a:hover {
   color: #4EBB25;
 }
-.main-menu .cs-boston-public-schools a:hover {
+.menu-item.cs-boston-public-schools a:hover {
   color: #0077C8;
-}
-
-.menu-item {
-  position: relative;
-}
-.menu-item a:hover ~ .cs-thumb {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-.menu-item .cs-thumb {
-  display: none;
-  position: absolute;
-  left: 100%;
-  width: 150px;
-  height: 100px;
-  margin-left: 1em;
-  top: 0;
-  opacity: 0;
-  background-position: 0 center;
-  -webkit-transform: translateY(25%);
-  -moz-transform: translateY(25%);
-  -ms-transform: translateY(25%);
-  -o-transform: translateY(25%);
-  transform: translateY(25%);
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-@media screen and (min-width: 500px) {
-  .menu-item .cs-thumb {
-    display: block;
-  }
 }
 
 .main-menu-scrim {
@@ -1268,7 +1246,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: -1;
   display: none;
 }
 
@@ -1297,6 +1275,20 @@ body::before {
 }
 
 @media screen and (min-width: 768px) {
+  .inner-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    float: none;
+    margin-right: 0;
+  }
+  .inner-container:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
   .inner-container {
     float: left;
     display: block;
@@ -1442,9 +1434,6 @@ a.scroll-down:after {
   padding: 3rem 0;
   margin: 3rem 0 0;
 }
-.page-section blockquote[data-parallax-node] {
-  margin-top: 0;
-}
 .city-of-oakland .page-section blockquote {
   background: #003265;
   color: #376FFF;
@@ -1479,13 +1468,6 @@ a.scroll-down:after {
 .page-section blockquote small {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  [data-parallax-node] {
-    position: absolute;
-    width: 100%;
-  }
 }
 
 .former-clients {
@@ -1537,8 +1519,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1549,7 +1531,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1643,8 +1626,8 @@ a.scroll-down:after {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    width: 74.41059%;
+    margin-left: 8.5298%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -1656,6 +1639,7 @@ a.scroll-down:after {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
+    margin-left: 17.05961%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -1863,6 +1847,18 @@ a.scroll-down:after {
 .city-of-oakland .cs-body-link:hover {
   color: #0041ea;
 }
+.boston-public-schools .cs-body-link {
+  color: #06CA00;
+}
+.boston-public-schools .cs-body-link:hover {
+  color: #047e00;
+}
+.localdata .cs-body-link {
+  color: #EE5A24;
+}
+.localdata .cs-body-link:hover {
+  color: #b73b0e;
+}
 
 .oakland-pattern {
   padding: 0;
@@ -1871,6 +1867,12 @@ a.scroll-down:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-image: url(images/oakland/pattern-min.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  .oakland-pattern {
+    background-image: url(images/oakland/pattern-@2x-min.png);
+  }
 }
 
 .site-footer {
@@ -2360,12 +2362,10 @@ figcaption {
   color: #06CA00;
 }
 
-/* A CSS Browser bar
+/* Browser Window
  * -----------------------------------------------------------*/
-.browser:before {
-  content: "•••";
-  display: block;
-  margin: 0 auto;
+.browser-bar {
+  height: 15px;
   background: #D4D4D4;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2376,7 +2376,7 @@ figcaption {
   height: 15px;
 }
 @media screen and (min-width: 500px) {
-  .browser:before {
+  .browser-bar {
     font-size: 26px;
     line-height: 26px;
     height: 26px;
@@ -2385,11 +2385,39 @@ figcaption {
   }
 }
 @media screen and (min-width: 768px) {
-  .browser:before {
+  .browser-bar {
     font-size: 30px;
     height: 30px;
     line-height: 30px;
   }
+}
+.browser-bar:before {
+  content: "•••";
+  display: block;
+}
+
+.browser-window {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.browser-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .browser-inner {
+    overflow-y: scroll;
+  }
+}
+.browser-inner img {
+  width: 100%;
 }
 
 /* Responsive Media
@@ -2518,6 +2546,7 @@ figcaption {
 }
 
 .slick-slide {
+  position: relative;
   float: left;
   height: 100%;
   min-height: 1px;
@@ -2535,6 +2564,17 @@ figcaption {
 .os-slideshow .slick-slide.slick-active {
   opacity: 1;
 }
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
 .os-slideshow.center-mode .slick-slide {
   padding-left: 10px;
   padding-right: 10px;
@@ -2551,15 +2591,6 @@ figcaption {
     padding-right: 50px;
   }
 }
-.slick-slide img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-.width-auto .slick-slide img {
-  width: auto;
-  margin: 0 auto;
-}
 .slick-slide.shadow img {
   box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.2);
 }
@@ -2569,16 +2600,35 @@ figcaption {
 .slick-slide.dragging img {
   pointer-events: none;
 }
-.slick-initialized .slick-slide {
+.slick-slide img {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
-.slick-loading .slick-slide {
-  visibility: hidden;
+.width-auto .slick-slide img {
+  width: auto;
+  margin: 0 auto;
 }
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
+.slick-slide .photo-credit {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .slick-slide .photo-credit {
+    left: auto;
+    text-align: right;
+    right: 30px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .slick-slide .photo-credit {
+    right: 60px;
+  }
 }
 
 .slick-arrow.slick-hidden {
@@ -3042,6 +3092,17 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  .tile.layout-image-left .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-image-left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 31.76157%;
   }
   .tile.layout-image-left .tile-content:last-child {
@@ -3049,6 +3110,18 @@ figcaption {
   }
 }
 @media screen and (min-width: 768px) {
+  .tile.layout-image-left.right-to-left .tile-content {
+    float: right;
+    display: block;
+    margin-left: 2.35765%;
+    width: 40.29137%;
+    margin-right: 8.5298%;
+  }
+  .tile.layout-image-left.right-to-left .tile-content:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 960px) {
   .tile.layout-image-left.right-to-left .tile-content {
     float: right;
     display: block;
@@ -3087,6 +3160,18 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 8.5298%;
+  }
+  .tile.layout-image-right .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-image-right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 31.76157%;
     margin-left: 17.05961%;
   }
@@ -3099,11 +3184,33 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 17.05961%;
-    clear: left;
+    width: 48.82117%;
   }
   .tile.layout-half.left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-half.left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 82.52847%;
+    margin-left: 17.47153%;
+  }
+  .tile.layout-half.left .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-half.left .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+    margin-left: 34.94305%;
+  }
+  .tile.layout-half.left .tile-content:last-child {
     margin-right: 0;
   }
 }
@@ -3112,10 +3219,32 @@ figcaption {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 48.82117%;
     margin-right: 0;
   }
   .tile.layout-half.right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile.layout-half.right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 82.52847%;
+  }
+  .tile.layout-half.right .tile-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tile.layout-half.right .tile-content {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+  }
+  .tile.layout-half.right .tile-content:last-child {
     margin-right: 0;
   }
 }
@@ -3327,4 +3456,38 @@ figcaption {
 .parallax-container {
   overflow: hidden;
   position: relative;
+}
+
+.parallax-bg {
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 0;
+  padding-top: 66.666%;
+}
+@media screen and (min-width: 768px) {
+  .os-cssvhunit .parallax-bg {
+    height: 100vh;
+    padding-top: 0;
+  }
+}
+
+.parallax-node {
+  display: block;
+}
+
+blockquote.parallax-node {
+  margin-top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  blockquote.parallax-node {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }

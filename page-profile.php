@@ -27,7 +27,7 @@ get_header(); ?>
 			</div>
 
 			<div class="clearfix"></div>
-			
+
 			<?php $args = array( 'post_type' => 'bio', 'posts_per_page' => 100, 'order' => 'ASC' );
 			$bios = get_posts($args);
 			$count = 0;
@@ -51,7 +51,7 @@ get_header(); ?>
 				<p class="push">We’re lucky to partner with fellow creatives, developers, thinkers and strategists across projects for our clients. As an agile studio, our collaborations are important for delivering the best creative solutions. Some of our partners include:</p>
 				<ul class="push list-unstyled">
 					<li><a href="http://www.mindybestphotography.com/" target="_blank"><em>Mindy Best</em></a></li>
-					<li><a href="http://eightface.com/" target="_blank"><em>Dave Kellam</em></a></li>
+					<li><a href="http://davekellam.com/" target="_blank"><em>Dave Kellam</em></a></li>
 					<li><a href="http://marvinharder.com/" target="_blank"><em>Marvin Harder</em></a></li>
 					<li><a href="http://www.hieronymus.co/" target="_blank"><em>Hieronymus</em></a></li>
 					<li><a href="http://www.mowe.money/" target="_blank"><em>Andrew Mowe</em></a></li>
@@ -62,7 +62,7 @@ get_header(); ?>
 			<div class="clearfix"></div>
 		</section>
 
-		<div class="process-snapshot"><img src="<?php echo os_path('process-snapshot.jpg', 'about'); ?>" /></div>
+		<div class="process-snapshot parallax-bg" style="background-image: url(<?php echo os_path('process-snapshot.jpg', 'about'); ?>)" data-speed-modifier="0.5"></div>
 
 		<section class="page-section alumni outer-container">
 			<div class="alumni-content">
@@ -85,7 +85,7 @@ get_header(); ?>
 
 		<section class="page-section recognition outer-container">
 			<div class="recognition-content">
-				<div class="reddot-img"><img src="<?php echo os_path('reddot.png' ,'about'); ?>" srcset="<?php echo os_path('reddot.png' ,'about'); ?> 1x, <?php echo os_path('reddot-@2x.png' ,'about'); ?> 2x" width="407" /></div>
+				<div class="reddot-img"><img src="<?php echo os_path('reddot.png' ,'about'); ?>" srcset="<?php echo os_path('reddot.png' ,'about'); ?> 1x, <?php echo os_path('reddot-@2x.png' ,'about'); ?> 2x" width="407" height="270"/></div>
 				<h2 class="future-A inner-container">Recognition</h2>
 				<ul class="list-unstyled clearfix push inner-container">
 					<li>
@@ -121,5 +121,5 @@ get_header(); ?>
 		</section>
 
 	<?php endwhile; // end of the loop. ?>
-		
+
 <?php get_footer(); ?>

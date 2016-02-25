@@ -32,7 +32,7 @@
 <section class="page-section push-double" style="background-color: #D6EFFD;">
 	<figure class="alignnone hug">
 		<div style="overflow:hidden; position: relative;">
-			<blockquote data-parallax-node="0.5" data-parallax-delay="-0.4">
+			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
 			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />
@@ -57,7 +57,7 @@
 	</div>
 
 	<figure class="bps-wordmarks aligncenter active-on-inview" data-offset="0.5">
-		<div style="background-color: #0077D2;" >	
+		<div style="background-color: #0077D2;" >
 			<img src="<?php echo os_path('Discover.png', 'bps') ?>" srcset="<?php echo os_path('Discover.png', 'bps') ?> 1x, <?php echo os_path('Discover-@2x.png', 'bps') ?> 2x" width="820" height="240">
 			<img src="<?php echo os_path('Register.png', 'bps') ?>" srcset="<?php echo os_path('Register.png', 'bps') ?> 1x, <?php echo os_path('Register-@2x.png', 'bps') ?> 2x" width="820" height="240">
 			<img src="<?php echo os_path('Succeed.png', 'bps') ?>" srcset="<?php echo os_path('Succeed.png', 'bps') ?> 1x, <?php echo os_path('Succeed-@2x.png', 'bps') ?> 2x" width="820" height="240">
@@ -71,20 +71,16 @@
 		<p class="inner-container">Since the role of this tool is to serve as the first step in part of the larger registration process, we proposed branding the process holistically, using the bright blue of Boston Public Schools as the unifying element for a streamlined visual system. This cohesive system will play an integral part in the communications campaign to parents.</p>
 	</div>
 
-	<figure class="aligncenter">	
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Poster-@2x-min.png', 'bps') ?> 2x" width="1200" height="797">
 		<div class="outer-container">
 			<figcaption class="inner-container">A poster for a school showcase using the visual system</figcaption>
 		</div>
 	</figure>
 
-	<div class="outer-container">
-		<p class="inner-container">In addition to helping parents take control of an important decision in the children’s life, rethinking  the user experience represents an opportunity to position Boston Public School as a proactive, innovative and trustworthy organization. A positive perception of the school district can only engender more goodwill and participation from parents, students, and the community alike.</p>
-	</div>
-
 </section>
 
-<section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">	
+<section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">
 	<figure class="aligncenter hug">
 		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
 			<img src="<?php echo os_path('DBPS-Results.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Results.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Results-@2x.png', 'bps') ?> 2x" width="843" height="317">
@@ -97,6 +93,8 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
+			<p>In addition to helping parents take control of an important decision in the children''s life, rethinking the user experience represents an opportunity to position Boston Public School as a proactive, innovative and trustworthy organization. A positive perception of the school district can only engender more goodwill and participation from parents, students, and the community alike.</p>
+			<p>Celebrated online urban policy publication Next City wrote about the project and our involvement in this November 2013 piece: <a href="http://nextcity.org/sharedcity/entry/how-boston-is-building-the-hotels.com-of-public-schools" class="cs-body-link" target="_blank">How Boston Is Building the Hotels.com of Public Schools</a></p>
 		</div>
 	</div>
 
@@ -104,23 +102,48 @@
 		<div id="bps-website-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-website-nav .prev", "nextArrow": "#bps-website-nav .next", "appendDots": "#bps-website-dots" }'>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Home-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Home-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Home-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Discover Boston Public Schools homepage</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>School results</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-Details-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Schools-Details-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Schools-Details-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>School detail</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Compare-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Compare-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Compare-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Compare schools</figcaption>
 			</li>
 			<li class="browser">
-				<img src="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Ready-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Ready-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Ready-@2x-min.png', 'bps'); ?> 2x" width="850" height="800">
+					</div>
+				</div>
 				<figcaption>Schools chosen</figcaption>
 			</li>
 		</ul>
@@ -135,23 +158,43 @@
 		<div id="bps-mobile-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode width-auto" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup1-@2x.png', 'bps'); ?> 2x" width="318" />
+				<img src="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup1-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
 				<figcaption>Mobile Homepage</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup2-@2x.png', 'bps'); ?> 2x" width="318" />
+				<img src="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup2-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
 				<figcaption>School results</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup3-@2x.png', 'bps'); ?> 2x" width="318" />
+				<img src="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup3-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
 				<figcaption>Compare and rank</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup4-@2x.png', 'bps'); ?> 2x" width="318" />
+				<img src="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup4-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
 				<figcaption>Ranked school choices</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("bps-mobile-nav"); ?>
+	</figure>
+
+	<figure class="os-slideshow-container">
+		<div id="bps-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards1-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards1-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards1-@2x-min.png', 'bps'); ?> 2x" width="850" height="566" />
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
+			</li>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards2-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards2-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards2-@2x-min.png', 'bps'); ?> 2x" width="850" height="566" />
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
+			</li>
+			<li>
+				<img src="<?php echo os_path('DBPS-Billboards3-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Billboards3-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Billboards3-@2x-min.png', 'bps'); ?> 2x" width="850" height="566" />
+				<div class="photo-credit">&copy; Mindy Best Photography</div>
+			</li>
+		</ul>
+		<?php os_slide_nav("bps-billboard-nav"); ?>
+		<figcaption class="outer-container"><div class="inner-container">Discover BPS Billboards</div></figcaption>
 	</figure>
 
 	<div class="outer-container">
@@ -163,4 +206,3 @@
 <?php os_get_case_study(); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>
-

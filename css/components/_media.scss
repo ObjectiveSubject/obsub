@@ -25,7 +25,7 @@ img {
 
 figure {
  	margin: ($leading*3) 0 0;
- 	
+
  	&.alignnone {
  		img {
  			display: block;
@@ -59,7 +59,7 @@ figcaption {
 		text-align: center;
 	}
 	.os-slideshow .slick-active & {
-		opacity: 1;		
+		opacity: 1;
 	}
 	.city-of-oakland & {
 		color: $oakland_blue;
@@ -72,22 +72,20 @@ figcaption {
 	}
 }
 
-/* A CSS Browser bar
+
+/* Browser Window
  * -----------------------------------------------------------*/
-.browser:before {
-	content: "•••";
-	display: block;
-	// max-width: 850px;
-	margin: 0 auto;
-	background: #D4D4D4;
-	border-top-left-radius: 2px;
+.browser-bar {
+    height: 15px;
+    background: #D4D4D4;
+    border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	color: #FFF;
-	font-size: 16px;
+    color: #FFF;
+    font-size: 16px;
 	line-height: 16px;
 	padding-left: 1%;
 	height: 15px;
-	@include media($screen-sm) {
+    @include media($screen-sm) {
 		font-size: 26px;
 		line-height: 26px;
 		height: 26px;
@@ -99,6 +97,34 @@ figcaption {
 		height: 30px;
 		line-height: 30px;
 	}
+
+    &:before {
+    	content: "•••";
+    	display: block;
+    }
+}
+
+.browser-window {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 75%;
+}
+
+.browser-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+	@include media($screen-md) {
+		overflow-y: scroll;
+	}
+
+    img {
+        width: 100%;
+    }
 }
 
 
@@ -133,6 +159,3 @@ figcaption {
 		width: 100%;
 	}
 }
-
-
-

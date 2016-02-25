@@ -52,6 +52,18 @@
 			color: darken($oakland_blue, 15%);
 		}
 	}
+	.boston-public-schools & {
+		color: $boston_green;
+		&:hover {
+			color: darken($boston_green, 15%);
+		}
+	}
+	.localdata & {
+		color: $localdata_red;
+		&:hover {
+			color: darken($localdata_red, 15%);
+		}
+	}
 }
 
 .oakland-pattern {
@@ -61,6 +73,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	background-image: url(images/oakland/pattern-min.png);
+	@include hidpi {
+		background-image: url(images/oakland/pattern-@2x-min.png);
+	}
 }
-
-

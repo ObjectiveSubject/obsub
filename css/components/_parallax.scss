@@ -1,4 +1,32 @@
 .parallax-container {
-	overflow:hidden; 
+	overflow:hidden;
 	position: relative;
+}
+
+.parallax-bg {
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 0;
+	padding-top: 66.666%;
+	@include media($screen-md) {
+		.os-cssvhunit & {
+			height: 100vh;
+			padding-top: 0;
+		}
+	}
+}
+
+.parallax-node {
+	display: block;
+}
+
+blockquote.parallax-node {
+	margin-top: 0;
+	width: 100%;
+	@include media($screen-md) {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		@include transform( translateY(-50%) );
+	}
 }

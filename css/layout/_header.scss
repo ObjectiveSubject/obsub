@@ -43,7 +43,7 @@
 	background-image: url(images/logo@2x.png);
 	background-repeat: no-repeat;
 	background-size: 96px 84px;
-	
+
 	&.dark {
 		background-position: 0 0;
 	}
@@ -59,7 +59,7 @@
 		&.dark { display: none; }
 		&.light { display: block; }
 	}
-	
+
 	@include media($screen-md) {
 		width: 128px;
 		height: 56px;
@@ -101,9 +101,6 @@
 	.bottom-line {
 		top: 12px;
 	}
-	// .top-line, .bottom-line, .center-line {
-	// 	background: tint($color_text_main, 30%);
-	// }
 	.main-menu-active & {
 		.center-line {
 			opacity: 0;
@@ -118,11 +115,6 @@
 			@include transform( rotate(-45deg) );
 			background: white;
 		}
-		// &:hover {
-		// 	.top-line, .bottom-line, .center-line {
-		// 		background: $medium_gray;
-		// 	}
-		// }
 	}
 
 	.center-line {
@@ -140,26 +132,36 @@
 			background: white;
 		}
 	}
-	&:hover {
-		.center-line {
-			.ui-light-theme & {
-				background: tint($color_text_main, 30%);
-			}
-		}
-	}
 }
 
 .main-navigation {
-	display: block;
-	position: relative;
+	display: none;
+	position: fixed;
+    top: 80px;
+    left: 0;
+    .main-menu-active & {
+        display: block;
+    }
+    @include media($screen-md) {
+        top: 57px;
+    }
+    .os-csstransforms & {
+        top: 50%;
+        width: 100%;
+        height: 191px;
+        @include transform( translateY(-50%) );
+        @include media($screen-md) {
+            height: 220px;
+        }
+    }
 
 	ul {
 		list-style: none;
-		margin: 0;
+		margin-top: 0;
 		padding-left: 0;
-		&.sub-menu {
-			display: none;
-		}
+        &.sub-menu {
+            margin-left: 1rem;
+        }
 	}
 	a {
 		display: block;
@@ -167,64 +169,31 @@
 	}
 }
 
-.main-menu {
-	display: none;
-	position: fixed;
-    top: 80px;
-    left: $size_container_padding;
-    font-size: 1.5rem;
-    line-height: 1em;
-    @include media($screen-sm) {
-    	left: $size_container_padding_sm;
+.menu-item {
+    display: none;
+    &.page-profile {
+        margin-top: 0.5em;
     }
-    @include media($screen-md) {
-    	top: 57px;
-    	left: 80px;
-    }
-
     a {
     	color: white;
     	text-transform: lowercase;
-    	&:hover {
-    		color: tint($color_text_main, 30%)
-    	}
+        &:hover {
+            color: tint($color_text_main, 30%);
+        }
     }
-    .cs-localdata a:hover {
+    span {
+        color: tint($color_text_main, 30%);
+        text-transform: lowercase;
+    }
+    &.cs-localdata a:hover {
 		color: $localdata_orange;
 	}
-	.cs-city-of-oakland a:hover {
+	&.cs-city-of-oakland a:hover {
 		color: $oakland_green;
 	}
-	.cs-boston-public-schools a:hover {
+	&.cs-boston-public-schools a:hover {
 		color: $boston_blue;
 	}
-}
-
-.menu-item {
-	position: relative;
-
-	a:hover ~ .cs-thumb {
-		opacity: 1;
-		@include transform( translateY(0) );
-	}
-
-	.cs-thumb {
-		display: none;
-	    position: absolute;
-	    left: 100%;
-	    width: 150px;
-	    height: 100px;
-	    margin-left: 1em;
-	    top: 0;
-	    opacity: 0;
-	    background-position: 0 center;
-	    @include transform( translateY(25%) );
-	    @include transition( all 300ms ease );
-	    @include media($screen-sm) {
-			display: block;
-		}
-	}
-
 }
 
 .main-menu-scrim {
@@ -234,6 +203,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: -1;
     display: none;
 }

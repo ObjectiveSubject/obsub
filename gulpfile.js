@@ -1,5 +1,5 @@
 var gulp 		 = require('gulp'),
-	cache 		 = require('gulp-cache'),
+	addsrc 		 = require('gulp-add-src'),
 	concat 		 = require('gulp-concat'),
 	jshint 		 = require('gulp-jshint'),
 	minifycss 	 = require('gulp-minify-css'),
@@ -32,7 +32,8 @@ gulp.task('scripts', function() {
   return gulp.src('js/src/*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'))
-		.pipe(concat('core.js'))
+		.pipe(addsrc.prepend('js/prepend/*.js'))
+		.pipe(concat('app.js'))
 		.pipe(gulp.dest('js'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(uglify())

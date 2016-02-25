@@ -12,6 +12,12 @@
 }
 .inner-container {
 	@include media($screen-md) {
+		@include span-columns(10);
+		@include shift(1);
+		float: none;
+		margin-right: 0;
+	}
+	@include media($screen-lg) {
 		@include span-columns(8);
 		@include shift(2);
 		float: none;

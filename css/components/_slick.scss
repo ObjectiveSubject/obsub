@@ -65,6 +65,7 @@
     }
 }
 .slick-slide {
+    position: relative;
     float: left;
     height: 100%;
     min-height: 1px;
@@ -83,6 +84,20 @@
         }
     }
 
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
     .os-slideshow.center-mode & {
         padding-left: 10px;
         padding-right: 10px;
@@ -93,16 +108,6 @@
         @include media($screen-lg) {
             padding-left: 50px;
             padding-right: 50px;
-        }
-    }
-
-    img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        .width-auto & {
-            width: auto;
-            margin: 0 auto;
         }
     }
 
@@ -119,18 +124,32 @@
         pointer-events: none;
     }
 
-    .slick-initialized & {
+    img {
         display: block;
+        width: 100%;
+        max-width: 100%;
+        .width-auto & {
+            width: auto;
+            margin: 0 auto;
+        }
     }
 
-    .slick-loading & {
-        visibility: hidden;
-    }
-
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
+    .photo-credit {
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        bottom: 5px;
+        font-size: 1rem;
+        color: rgba(white, 0.3);
+        @include media($screen-md) {
+            left: auto;
+            text-align: right;
+            right: 30px;
+        }
+        @include media($screen-lg) {
+            right: 60px;
+        }
     }
 }
 
@@ -165,7 +184,7 @@
             background: $color_text_main;
         }
     }
-    
+
     .localdata & {
         li.slick-active button {
             background: $localdata_red;
@@ -244,7 +263,7 @@
     .prev {
         float: left;
         @include media($screen-lg) {
-            margin-left: 6.5%;   
+            margin-left: 6.5%;
         }
     }
     .text-arrow {
@@ -311,15 +330,3 @@
         .prev & { @include transform(rotate(45deg)); }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -64,6 +64,9 @@
 		}
 		.tile-content {
 			@include media($screen-md) {
+				@include span-columns(5);
+			}
+			@include media($screen-lg) {
 				@include span-columns(4);
 			}
 		}
@@ -71,6 +74,10 @@
 			@include direction-context( right-to-left ){
 				.tile-content {
 					@include media($screen-md) {
+						@include span-columns(5);
+						@include shift(1);
+					}
+					@include media($screen-lg) {
 						@include span-columns(4);
 						@include shift(2);
 					}
@@ -94,6 +101,10 @@
 		}
 		.tile-content {
 			@include media($screen-md) {
+				@include span-columns(5);
+				@include shift(1);
+			}
+			@include media($screen-lg) {
 				@include span-columns(4);
 				@include shift(2);
 			}
@@ -101,15 +112,31 @@
 	}
 	&.layout-half.left {
 		@include media($screen-md) {
-			@include span-columns(4);
-			@include shift(2);
-			clear: left;
+			@include span-columns(6);
+		}
+		.tile-content {
+			@include media($screen-md) {
+				@include span-columns(5 of 6);
+				@include shift(1);
+			}
+			@include media($screen-lg) {
+				@include span-columns(4 of 6);
+				@include shift(2);
+			}
 		}
 	}
 	&.layout-half.right {
 		@include media($screen-md) {
-			@include span-columns(4);
+			@include span-columns(6);
 			@include omega();
+		}
+		.tile-content {
+			@include media($screen-md) {
+				@include span-columns(5 of 6);
+			}
+			@include media($screen-lg) {
+				@include span-columns(4 of 6);
+			}
 		}
 	}
 }
