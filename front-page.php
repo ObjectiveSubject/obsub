@@ -128,8 +128,11 @@ get_header(); ?>
 						<p class="push">The Brooklyn Academy of Music is an ambassador of cutting edge arts and music. Our design research found that would-be visitors struggled to find their way through the BAM campus and its many venues. We designed a visitor experience that seamlessly integrates BAM’s existing web platform and visual brand to help guests plan an evening around a BAM outing, from pre- dinner drinks to their subway ride home.</p>
 						<p class="push"><a href="http://bam.org/visit" target="_blank"><em>bam.org/visit</em></a></p>
 					</div>
-					<div class="tile-image bam push">
-						<img src="<?php echo os_path('bam.gif', 'home'); ?>" srcset="<?php echo os_path('bam.gif', 'home'); ?> 1x, <?php echo os_path('bam-@2x.gif', 'home'); ?> 2x" width="495" height="326" />
+					<div class="tile-image bam">
+						<div class="building building-1"></div>
+						<div class="building building-2"></div>
+						<div class="building building-3"></div>
+						<!-- <img src="<?php echo os_path('bam-sprite.png', 'home'); ?>" srcset="<?php echo os_path('bam-sprite.png', 'home'); ?> 1x, <?php echo os_path('bam-sprite-@2x.png', 'home'); ?> 2x" width="165" height="326" /> -->
 					</div>
 				</li>
 				<li class="tile push-triple layout-half left">

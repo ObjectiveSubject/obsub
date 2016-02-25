@@ -10,9 +10,36 @@
 				margin-top: 120px;
 			}
 		}
-		&.bam img {
+		&.bam {
+			margin-top: 20px;
 			@include media($screen-md) {
-				margin-top: 110px;
+				margin-top: 130px;
+			}
+			.building {
+				@include animation(cycle 9000ms ease infinite);
+				background-image: url(images/home/bam-sprite.png);
+				background-size: 165px 326px;
+				background-repeat: no-repeat;
+				.os-csstransitions & {
+					opacity: 0;
+				}
+			}
+			.building-1 {
+				width: 170px;
+				height: 110px;
+				background-position: 0 0;
+			}
+			.building-2 {
+				width: 170px;
+				height: 110px;
+				background-position: 0 -124px;
+				@include animation-delay(2s);
+			}
+			.building-3 {
+				width: 170px;
+				height: 110px;
+				background-position: 0 -248px;
+				@include animation-delay(4s);
 			}
 		}
 		&.worldstrides {
@@ -23,12 +50,12 @@
 		&.nyt {
 			@include media($screen-md) {
 				margin-top: 40px;
-			}	
+			}
 		}
 		&.gibney {
 			@include media($screen-md) {
 				margin-top: 165px;
-			}	
+			}
 		}
 		img {
 			display: block;
@@ -87,9 +114,9 @@
 						@include span-columns(6);
 					}
 				}
-			}	
+			}
 		}
-		
+
 	}
 	&.layout-image-right {
 		@include direction-context(right-to-left) {

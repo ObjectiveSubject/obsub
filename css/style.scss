@@ -25,7 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* Base
 ----------------------------------------------- */
 @import "base/variables";
-@import "base/mixins";
+@import "base/shared";
 @import "base/normalize";
 @import "base/fonts";
 @import "base/global";
