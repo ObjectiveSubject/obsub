@@ -20,6 +20,9 @@
 				background-image: url(images/home/bam-sprite.png);
 				background-size: 165px 326px;
 				background-repeat: no-repeat;
+				@include hidpi() {
+					background-image: url(images/home/bam-sprite-@2x.png);
+				}
 				.os-csstransitions & {
 					opacity: 0;
 				}
