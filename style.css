@@ -123,6 +123,38 @@ html {
     opacity: 0;
   }
 }
+@-webkit-keyframes compass {
+  75% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes compass {
+  75% {
+    -moz-transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes compass {
+  75% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /* Normalize
  * ------------------------------------------- */
 html {
@@ -2000,6 +2032,53 @@ a.scroll-down:after {
   .oakland-pattern {
     background-image: url(images/oakland/pattern-@2x-min.png);
   }
+}
+
+.ld-logo {
+  background: white;
+  padding: 3rem 30px;
+}
+@media screen and (min-width: 500px) {
+  .ld-logo {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+.ld-logo-container {
+  max-width: 694px;
+  margin: 0 auto;
+}
+.ld-logo-container img {
+  display: block;
+}
+
+img.compass {
+  width: 27.37%;
+  float: left;
+}
+.os-csstransitions img.compass {
+  -webkit-transition: all 2.25s cubic-bezier(0.22, 1.5, 0.76, 0.82);
+  -moz-transition: all 2.25s cubic-bezier(0.22, 1.5, 0.76, 0.82);
+  transition: all 2.25s cubic-bezier(0.22, 1.5, 0.76, 0.82);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.os-csstransitions .active img.compass {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+img.logotype {
+  float: right;
+  width: 64.84%;
+  margin-top: 8%;
 }
 
 .site-footer {

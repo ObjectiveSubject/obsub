@@ -49,10 +49,15 @@
 		<h2 class="future-A inner-container">process</h2>
 		<p class="push inner-container">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
 	</div>
-	<figure class="alignnone">
-		<img src="<?php echo os_path('wordmark.png', 'localdata') ?>" width="1400" height="340" />
-		<div class="outer-container"><figcaption class="inner-container">The LocalData Wordmark</figcaption></div>
+	<figure class="ld-logo active-on-inview" data-offset="0.5">
+		<div class="ld-logo-container clearfix">
+			<img class="compass" src="<?php echo os_path('LD-Compass.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Compass.png', 'localdata') ?> 1x, <?php echo os_path('LD-Compass-@2x.png', 'localdata') ?> 2x" width="190" height="190" />
+			<img class="logotype" src="<?php echo os_path('LD-Wordmark.png', 'localdata') ?>" srcset="<?php echo os_path('LD-Wordmark.png', 'localdata') ?> 1x, <?php echo os_path('LD-Wordmark-@2x.png', 'localdata') ?> 2x" width="450" height="79" />
+		</div>
 	</figure>
+	<figcaption class="outer-container">
+		<div class="inner-container">The LocalData Wordmark</div>
+	</figcaption>
 	<div class="outer-container">
 		<p class="inner-container">We further helped the team design a product interface with an emphasis on clear and bold information communication, highlighting key data points with large and crisp typography.</p>
 	</div>

@@ -78,3 +78,37 @@
 		background-image: url(images/oakland/pattern-@2x-min.png);
 	}
 }
+
+.ld-logo {
+	background: white;
+	padding: ($leading * 2) $size_container_padding_sm;
+	@include media($screen-sm) {
+		padding-top: ($leading * 3);
+		padding-bottom: ($leading * 3);
+	}
+}
+.ld-logo-container {
+	max-width: 694px;
+	margin: 0 auto;
+	img {
+		display: block;
+	}
+}
+img.compass {
+	width: 27.37%;
+	float: left;
+	.os-csstransitions & {
+		@include transition( all 2.25s cubic-bezier(.22,1.5,.76,.82) );
+		@include transform( rotate(180deg) );
+	}
+	.active & {
+		.os-csstransitions & {
+			@include transform( rotate(360deg) );
+		}
+	}
+}
+img.logotype {
+	float: right;
+	width: 64.84%;
+	margin-top: 8%;
+}

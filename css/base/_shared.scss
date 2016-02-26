@@ -26,6 +26,18 @@
 	}
 };
 
+// Compass animation
+@include keyframes(compass) {
+	0% {
+	}
+	75% {
+		@include transform( rotate(360deg) );
+	}
+	100% {
+		@include transform( rotate(360deg) );
+	}
+}
+
 // Clearfix
 @mixin clearfix {
 	&:before,
