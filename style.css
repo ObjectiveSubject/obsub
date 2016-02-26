@@ -2040,8 +2040,8 @@ a.scroll-down:after {
 }
 @media screen and (min-width: 500px) {
   .ld-logo {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 }
 
@@ -2073,6 +2073,11 @@ img.compass {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+.mousemove img.compass {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
 }
 
 img.logotype {
