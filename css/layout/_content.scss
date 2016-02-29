@@ -53,9 +53,6 @@ a.scroll-down {
 		height: 4px;
 		background-color: $color_text_main;
 		@include transition(all 300ms ease);
-		.ui-light-theme & {
-			background-color: white;
-		}
 	}
 	&:before {
 		left: 0;
@@ -64,6 +61,11 @@ a.scroll-down {
 	&:after {
 		right: 0;
 		@include transform(rotate(-45deg));
+	}
+	&.light {
+		&:before, &:after {
+			background-color: white;
+		}
 	}
 
 }

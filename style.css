@@ -1475,9 +1475,6 @@ a.scroll-down:before, a.scroll-down:after {
   -moz-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-.ui-light-theme a.scroll-down:before, .ui-light-theme a.scroll-down:after {
-  background-color: white;
-}
 a.scroll-down:before {
   left: 0;
   -webkit-transform: rotate(45deg);
@@ -1493,6 +1490,9 @@ a.scroll-down:after {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+a.scroll-down.light:before, a.scroll-down.light:after {
+  background-color: white;
 }
 
 .page-header {
