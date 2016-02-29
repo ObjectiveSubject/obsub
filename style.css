@@ -2074,11 +2074,6 @@ img.compass {
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-.mousemove img.compass {
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-}
 
 img.logotype {
   float: right;

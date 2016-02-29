@@ -106,9 +106,6 @@ img.compass {
 			@include transform( rotate(360deg) );
 		}
 	}
-	.mousemove & {
-		@include transition(none);
-	}
 }
 img.logotype {
 	float: right;
