@@ -42,20 +42,25 @@
 
 		<?php if ( is_front_page() ) : ?>
 		<ul class="preview-nav list-unstyled hug">
-			<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
-			foreach ( $case_studies as $study ) : ?>
-				<li class="menu-item case_study future-A hug <?php echo 'cs-' . $study->post_name; ?>">
-					<a href="<?php echo get_the_permalink( $study->ID ); ?>" class="text-color-link"><?php echo get_the_title($study->ID); ?></a>
-				</li>
-			<?php endforeach; ?>
 			<li class="menu-item clear-left future-A hug">
-				<a href="#former-clients" class="smooth-scroll muted-link">our clients</a>
+				<span>case studies</span>
+				<ul class="sub-menu list-unstyled hug">
+				<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
+				foreach ( $case_studies as $study ) : ?>
+					<li class="menu-item case_study future-A hug <?php echo 'cs-' . $study->post_name; ?>">
+						<a href="<?php echo get_the_permalink( $study->ID ); ?>" class="text-color-link"><?php echo get_the_title($study->ID); ?></a>
+					</li>
+				<?php endforeach; ?>
+				</ul>
+			</li>
+			<li class="menu-item future-A hug">
+				<a href="#former-clients" class="smooth-scroll ">clients</a>
 			</li>
 			<li class="menu-item page-profile future-A hug">
-				<a href="<?php echo site_url('/profile'); ?>" class="muted-link">profile</a>
+				<a href="<?php echo site_url('/profile'); ?>" class="">profile</a>
 			</li>
 			<li class="menu-item page-contact future-A hug">
-				<a href="<?php echo site_url('/contact'); ?>" class="muted-link">contact</a>
+				<a href="<?php echo site_url('/contact'); ?>" class="">contact</a>
 			</li>
 		</ul>
 		<?php endif; ?>
@@ -64,7 +69,7 @@
 			<div class="main-menu outer-container">
 				<ul class="inner-container">
 					<li class="menu-item case_study h2 hug">
-						<span>featured projects</span>
+						<span>case studies</span>
 						<ul class="sub-menu">
 							<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
 							foreach ( $case_studies as $study ) : ?>
