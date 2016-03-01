@@ -1245,6 +1245,15 @@ body::before {
     margin-top: 6px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hide-menu-toggle .menu-toggle {
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+}
 .menu-toggle .top-line, .menu-toggle .bottom-line {
   content: "";
   position: absolute;
@@ -1300,6 +1309,18 @@ body::before {
   background: white;
 }
 
+.preview-nav {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .preview-nav {
+    display: block;
+  }
+}
+
 .main-navigation {
   display: none;
   position: fixed;
@@ -1342,20 +1363,20 @@ body::before {
   text-decoration: none;
 }
 
-.menu-item {
+.main-navigation .menu-item {
   display: none;
 }
-.menu-item.page-profile {
-  margin-top: 0.5em;
-}
-.menu-item a {
+.main-navigation .menu-item a {
   color: white;
   text-transform: lowercase;
 }
-.menu-item a:hover {
+.main-navigation .menu-item a:hover {
   color: #646464;
 }
-.menu-item span {
+.main-navigation .menu-item.page-profile {
+  margin-top: 0.5em;
+}
+.main-navigation .menu-item span {
   color: #646464;
   text-transform: lowercase;
 }

@@ -8,7 +8,7 @@
 		e.preventDefault();
 		var $masthead = $('#masthead'),
 			$mainNav = $('.main-navigation'),
-			$menuItem = $('.menu-item'),
+			$menuItem = $('.main-navigation .menu-item'),
 			$scrim = $('.main-menu-scrim'),
 			animationSequence;
 

@@ -26,7 +26,7 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'obsub' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header hide-menu-toggle" role="banner">
 
 		<div class="site-title">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark dark" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
@@ -40,10 +40,25 @@
 			<span class="hide">menu</span>
 		</a>
 
+		<ul class="preview-nav list-unstyled hug">
+			<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
+			foreach ( $case_studies as $study ) : ?>
+				<li class="menu-item case_study future-A hug <?php echo 'cs-' . $study->post_name; ?>">
+					<a href="<?php echo get_the_permalink( $study->ID ); ?>" class="text-color-link"><?php echo get_the_title($study->ID); ?></a>
+				</li>
+			<?php endforeach; ?>
+			<li class="menu-item page-profile future-A hug">
+				<a href="<?php echo site_url('/profile'); ?>" class="text-color-link">profile</a>
+			</li>
+			<li class="menu-item page-contact future-A hug">
+				<a href="<?php echo site_url('/contact'); ?>" class="text-color-link">contact</a>
+			</li>
+		</ul>
+
 		<nav id="site-navigation" class="main-navigation future-A" role="navigation">
 			<div class="main-menu outer-container">
 				<ul class="inner-container">
-					<li class="menu-item case-studies h2 hug">
+					<li class="menu-item case_study h2 hug">
 						<span>featured projects</span>
 						<ul class="sub-menu">
 							<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
