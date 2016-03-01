@@ -68,6 +68,10 @@
   @include clearfix;
 }
 
+.clear-left {
+	clear: left;
+}
+
 // Lists
 // ======================================= /
 .list-unstyled {
@@ -114,11 +118,20 @@ a.no-decoration { text-decoration: none; }
 
 .text-color-link {
 	color: $color_text_main;
-	&:visited {
+	&:visited, &:focus {
 		color: $color_text_main;
 	}
 	&:hover {
 		color: $color_link;
+	}
+}
+.muted-link {
+	color: $medium_gray;
+	&:visited, &:focus {
+		color: $medium_gray;
+	}
+	&:hover {
+		color: $color_text_main;
 	}
 }
 .white-link {

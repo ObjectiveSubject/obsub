@@ -4,10 +4,11 @@
 
 (function( $, window, undefined ){
 
+	var $masthead = $('#masthead');
+
 	$('.menu-toggle').on('click', function(e){
 		e.preventDefault();
-		var $masthead = $('#masthead'),
-			$mainNav = $('.main-navigation'),
+		var $mainNav = $('.main-navigation'),
 			$menuItem = $('.main-navigation .menu-item'),
 			$scrim = $('.main-menu-scrim'),
 			animationSequence;
@@ -36,5 +37,18 @@
 		}
 
 	});
+
+	if ( OS.isHome() ){
+
+		OS.window.on("scroll", function(){
+			var scrollTop = $(this).scrollTop();
+			if ( scrollTop > 50 ) {
+				$masthead.removeClass('hide-menu-toggle');
+			} else {
+				$masthead.addClass('hide-menu-toggle');
+			}
+		});
+
+	}
 
 })(jQuery, window);
