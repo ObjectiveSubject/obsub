@@ -182,7 +182,7 @@
     left: $size_container_padding_sm;
     opacity: 0;
     z-index: -1;
-    @include transform(translateY(50px));
+    @include transform(translateX(50px));
     @include transition(all 300ms ease);
     @include media($screen-md) {
         display: block;
@@ -190,7 +190,7 @@
     .hide-menu-toggle & {
         opacity: 1;
         z-index: 1;
-        @include transform(translateY(0));
+        @include transform(translateX(0));
     }
 
     .sub-menu {

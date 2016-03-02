@@ -42,20 +42,6 @@
 
 		<?php if ( is_front_page() ) : ?>
 		<ul class="preview-nav list-unstyled hug">
-			<li class="menu-item clear-left future-A hug">
-				<span class="muted-link h2">case studies</span>
-				<ul class="sub-menu list-unstyled hug">
-				<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
-				foreach ( $case_studies as $study ) : ?>
-					<li class="menu-item case_study future-A h2 hug <?php echo 'cs-' . $study->post_name; ?>">
-						<a href="<?php echo get_the_permalink( $study->ID ); ?>" class="text-color-link"><?php echo get_the_title($study->ID); ?></a>
-					</li>
-				<?php endforeach; ?>
-				</ul>
-			</li>
-			<li class="menu-item future-A h2 hug">
-				<a href="#former-clients" class="smooth-scroll muted-link">clients</a>
-			</li>
 			<li class="menu-item page-profile future-A h2 hug">
 				<a href="<?php echo site_url('/profile'); ?>" class="muted-link">profile</a>
 			</li>

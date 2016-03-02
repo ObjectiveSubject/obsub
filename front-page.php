@@ -14,19 +14,28 @@ get_header(); ?>
 		<div class="section-container">
 			<div class="intro-content section-content">
 				<div class="outer-container">
-					<div class="inner-container">
-						<h1>For better-designed<br/>public services</h1>
-						<div class="page-subtitle">
-							<h3>Our public agencies can develop a culture and operational processes that create positive experiences to deliver on a host of benefits for society.</h3>
-							<h3>From visual communication to digital experiences and built environment: we want to help.</h3>
-						</div>
-						<div class="ozy-video push">
-							<a href="http://www.ozy.com/video/play/better-logos-better-government/67599" target="_blank">
-								<img src="<?php echo os_path('ozy-video.png', 'home'); ?>" srcset="<?php echo os_path('ozy-video.png', 'home'); ?> 1x, <?php echo os_path('ozy-video-@2x.png', 'home'); ?> 2x" width="232" height="155" alt="OZY video" />
-								<img class="play-icon" src="<?php echo os_path('play.svg'); ?>" width="32" height="32" alt="play" />
-							</a>
-							<div class="caption push-half text-muted"><em>Watch principal David Jalbert-Gagnier explain our vision in this 2:27 video from OZY.</em></div>
-						</div>
+					<h1 class="page-title inner-container">For better-designed<br/>public services</h1>
+					<div class="page-subtitle">
+						<h3>Our public agencies can develop a culture and operational processes that create positive experiences to deliver on a host of benefits for society.</h3>
+						<h3>From visual communication to digital experiences and built environment: we want to help.</h3>
+						<ul class="list-unstyled push">
+							<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>10 ) );
+							foreach ( $case_studies as $study ) : ?>
+								<li class="menu-item future-A h2 hug <?php echo 'cs-' . $study->post_name; ?>">
+									<a href="<?php echo '#'.$study->post_name; ?>" class="smooth-scroll text-color-link"><?php echo get_the_title($study->ID); ?></a>
+								</li>
+							<?php endforeach; ?>
+							<li class="menu-item future-A h2 hug">
+								<a href="#former-clients" class="smooth-scroll text-color-link">clients</a>
+							</li>
+						</ul>
+					</div>
+					<div class="ozy-video push">
+						<a href="http://www.ozy.com/video/play/better-logos-better-government/67599" target="_blank">
+							<img src="<?php echo os_path('ozy-video.png', 'home'); ?>" srcset="<?php echo os_path('ozy-video.png', 'home'); ?> 1x, <?php echo os_path('ozy-video-@2x.png', 'home'); ?> 2x" width="232" height="155" alt="OZY video" />
+							<img class="play-icon" src="<?php echo os_path('play.svg'); ?>" width="32" height="32" alt="play" />
+						</a>
+						<div class="caption push-half text-muted"><em>Watch principal David Jalbert-Gagnier explain our vision in this 2:27 video from OZY.</em></div>
 					</div>
 				</div>
 			</div>

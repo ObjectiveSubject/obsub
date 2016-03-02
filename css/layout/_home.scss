@@ -1,20 +1,27 @@
+
 .former-clients {
 	padding-top: 8vh;
 	background-color: $light_gray;
 }
 
 .home .page-subtitle {
-	@include media($screen-md){
-		width: 59%;
-	    float: left;
-	    margin-right: 4%;
+	@include media($screen-md) {
+		@include span-columns(6);
+		@include shift(1);
+	}
+	@include media($screen-lg) {
+		@include span-columns(7);
+		@include shift(2);
 	}
 }
 .home .ozy-video {
 	max-width: 232px;
-	@include media($screen-md){
-		width: 36.5%;
-		float: left;
+	@include media($screen-md) {
+		@include span-columns(4);
+	}
+	@include media($screen-lg) {
+		@include span-columns(3);
+		@include omega();
 	}
 	a {
 		display: block;
