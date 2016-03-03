@@ -156,22 +156,50 @@
 
 	<figure class="os-slideshow-container">
 		<div id="bps-mobile-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode width-auto" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-mobile-nav .prev", "nextArrow": "#bps-mobile-nav .next", "appendDots": "#bps-mobile-dots", "centerPadding": "0", "slidesToShow" : 1 }'>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup1.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup1-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
-				<figcaption>Mobile Homepage</figcaption>
+				<div class="iphone">
+					<img src="<?php echo os_path('iPhone.svg'); ?>" alt="iphone" width="318" height="660" />
+					<div class="iphone-window">
+						<div class="iphone-window-inner">
+							<img src="<?php echo os_path('DBPS-Mobile1-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Mobile1-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Mobile1-@2x-min.png', 'bps'); ?> 2x" width="268" height="1184"/>
+						</div>
+					</div>
+				</div>
+				<figcaption class="text-center">Mobile Homepage</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup2.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup2-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
-				<figcaption>School results</figcaption>
+				<div class="iphone">
+					<img src="<?php echo os_path('iPhone.svg'); ?>" alt="iphone" width="318" height="660" />
+					<div class="iphone-window">
+						<div class="iphone-window-inner">
+							<img src="<?php echo os_path('DBPS-Mobile2-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Mobile2-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Mobile2-@2x-min.png', 'bps'); ?> 2x" width="268" height="2094"/>
+						</div>
+					</div>
+				</div>
+				<figcaption class="text-center">School results</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup3.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup3-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
-				<figcaption>Compare and rank</figcaption>
+				<div class="iphone">
+					<img src="<?php echo os_path('iPhone.svg'); ?>" alt="iphone" width="318" height="660" />
+					<div class="iphone-window">
+						<div class="iphone-window-inner">
+							<img src="<?php echo os_path('DBPS-Mobile3-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Mobile3-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Mobile3-@2x-min.png', 'bps'); ?> 2x" width="268" height="1534"/>
+						</div>
+					</div>
+				</div>
+				<figcaption class="text-center">Compare and rank</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-mobile-mockup4.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-mobile-mockup4-@2x.png', 'bps'); ?> 2x" width="318" height="660"/>
-				<figcaption>Ranked school choices</figcaption>
+				<div class="iphone">
+					<img src="<?php echo os_path('iPhone.svg'); ?>" alt="iphone" width="318" height="660" />
+					<div class="iphone-window">
+						<div class="iphone-window-inner">
+							<img src="<?php echo os_path('DBPS-Mobile4-min.png', 'bps'); ?>" srcset="<?php echo os_path('DBPS-Mobile4-min.png', 'bps'); ?> 1x, <?php echo os_path('DBPS-Mobile4-@2x-min.png', 'bps'); ?> 2x" width="268" height="1426"/>
+						</div>
+					</div>
+				</div>
+				<figcaption class="text-center">Ranked school choices</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("bps-mobile-nav"); ?>

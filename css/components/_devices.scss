@@ -1,0 +1,52 @@
+.iphone {
+    max-width: 250px;
+    margin: 0 auto;
+    position: relative;
+    @include media(400px) {
+        max-width: 318px;
+    }
+
+    & > img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.iphone-window {
+    position: absolute;
+    top: 13.8%;
+    left: 1.2%;
+    right: 0;
+    bottom: 13.2%;
+    background: #1A1A1A;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -1px;
+        right: 0;
+        bottom: -1px;
+        width: 6.92%;
+        background: #1a1a1a;
+        z-index: 2;
+    }
+
+    img {
+        margin: 0 auto;
+        width: 268px;
+        display: block;
+    }
+}
+
+.iphone-window-inner {
+    position: absolute;
+    top: 0;
+    left: 6.92%;
+    right: 1.2%;
+    height: 100%;
+    overflow-y: scroll;
+    .os-touchevents & {
+        right: 6.92%;
+    }
+}
