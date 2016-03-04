@@ -40,15 +40,45 @@
 
 	if ( OS.isHome() ){
 
+		var $previewNav = $('.preview-nav');
+
 		OS.window.on("scroll", function(){
 			var scrollTop = $(this).scrollTop();
+
 			if ( scrollTop > 50 ) {
-				$masthead.removeClass('hide-menu-toggle');
+				if ( $masthead.hasClass('show-preview-menu') ) {
+					$masthead.removeClass('show-preview-menu');
+					$previewNav.velocity({
+						marginLeft: '50px',
+						opacity: '0'
+					}, {
+						duration: 300,
+						complete: hideElements
+					});
+				}
+
 			} else {
-				$masthead.addClass('hide-menu-toggle');
+				if ( !$masthead.hasClass('show-preview-menu') ) {
+					$masthead.addClass('show-preview-menu');
+					$previewNav.velocity({
+						marginLeft: '0',
+						opacity: '1'
+					}, {
+						duration: 300,
+						begin: showElements
+					});
+				}
+
 			}
 		});
 
+	}
+
+	function hideElements( elems ) {
+		$(elems).hide();
+	}
+	function showElements( elems ) {
+		$(elems).show();
 	}
 
 })(jQuery, window);

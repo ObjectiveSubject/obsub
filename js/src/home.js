@@ -1,8 +1,14 @@
-/* 
+/*
  * Case Study Previews
  */
 
 (function( $, window, undefined ){
+
+	$(document).ready(function(){
+		setTimeout(function(){
+			$('body').addClass('loaded');
+		}, 500);
+	});
 
 	$('.home-intro, .home .case-study-preview').each(function(){
 		var $preview = $(this),
@@ -16,8 +22,8 @@
 
 		init();
 		OS.window.on("resize", init);
-		OS.window.on('scroll', onScroll);	
-	
+		OS.window.on('scroll', onScroll);
+
 		function init() {
 			mediaSize = OS.getMediaSize();
 			winHeight = OS.window.height();
