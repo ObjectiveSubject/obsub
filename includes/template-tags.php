@@ -7,6 +7,41 @@
  * @package obsub
  */
 
+function get_case_studies($args = false) {
+	$featured_only = array(
+		'meta_key' => 'case_study_featured',
+		'meta_value' => true
+	);
+	$exclude_self = array( 'post__not_in' => array(get_the_id()) );
+	$defaults = array(
+		'post_type' => 'case_study',
+	    'posts_per_page' => 500,
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
+	);
+
+	if ( !$args ) {
+		$args = $defaults;
+
+	} elseif ( is_array($args) ) {
+		$args = array_merge($defaults, $args);
+
+	} elseif ( is_string($args) ) {
+		$options = array_map('trim', explode(',', $args));
+		$args = $defaults;
+		if ( in_array('featured', $options) ) {
+			$args = array_merge($args, $featured_only);
+		}
+		if ( in_array('exclude_self', $options) ) {
+			$args = array_merge($args, $exclude_self);
+		}
+
+	}
+
+	$case_studies = get_posts($args);
+	return $case_studies;
+}
+
 function os_slide_nav($id) {
 	if ( ! $id ) $id = '';
 

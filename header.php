@@ -45,7 +45,7 @@
 			<li class="menu-item clear-left future-A hug">
 				<span class="muted-link">case studies</span>
 				<ul class="sub-menu list-unstyled hug">
-				<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
+				<?php $case_studies = get_case_studies('featured');
 				foreach ( $case_studies as $study ) : ?>
 					<li class="menu-item case_study future-A hug <?php echo 'cs-' . $study->post_name; ?>">
 						<a href="<?php echo '#'.$study->post_name; ?>" class="smooth-scroll text-color-link"><?php echo get_the_title($study->ID); ?></a>

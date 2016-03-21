@@ -1,7 +1,6 @@
 <?php
 
-$case_studies = get_posts(array(
-    'post_type'=>'case_study',
+$case_studies = get_case_studies(array(
     'orderby' => 'rand',
     'posts_per_page' => '1',
     'meta_key' => 'case_study_featured',
