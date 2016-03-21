@@ -42,6 +42,31 @@ function register_case_studies() {
 	);
 }
 
+function my_case_study_columns($columns) {
+	$columns = array(
+		'cb'	 	=> '<input type="checkbox" />',
+		'title' 	=> 'Title',
+		'display' 	=> 'Display',
+		'date'		=> 'Date',
+	);
+	return $columns;
+}
+function custom_case_study_columns($column, $post_id) {
+	switch ($column) {
+		case "display" :
+			if ( get_field('case_study_featured', $post_id) ) {
+				echo 'Featured';
+			} else {
+				echo '—';
+			}
+			break;
+	}
+}
+add_action("manage_case_study_posts_custom_column", "custom_case_study_columns", 10, 2);
+add_filter("manage_edit-case_study_columns", "my_case_study_columns");
+
+
+
 
 // Bios post type ================================ /
 add_action('init', 'register_bios');
