@@ -223,6 +223,6 @@
 
 </section>
 
-<?php os_get_case_study(); ?>
+<?php get_template_part( 'module', 'case-study-preview' ); ?>
 
 <?php get_template_part( 'module', 'contact-form' ); ?>

@@ -7,42 +7,9 @@
  * @package obsub
  */
 
-function os_get_case_study() {
-	$case_studies = get_posts(array(
-		'post_type'=>'case_study', 
-		'orderby' => 'rand', 
-		'posts_per_page' => '1',
-		'post__not_in' => array( get_the_id() )
-	)); 
-	foreach ($case_studies as $study) : 
-
-		$featured_image_id = get_post_thumbnail_id( $study->ID );
-		$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'large', true);
-		$featured_image_url = $featured_image_array[0];
-		$color = get_field('case_study_color', $study->ID); ?>
-
-		<section class="page-section full-height case-study-preview active-on-inview use-ui-light-theme <?php echo $study->post_name; ?>" data-offset="0.25">
-			<div class="section-container">
-				<div class="section-image-container">
-					<div class="section-image" style="background-image: url( <?php echo $featured_image_url; ?> );">
-						<div class="scrim"></div>
-					</div>
-				</div>
-				<div class="section-content">
-					<div class="outer-container">
-						<h1 class="case-study-title inner-container hug"><a href="<?php echo get_permalink( $study->ID ); ?>"><?php echo $study->post_excerpt; ?></a></h1>
-						<h3 class="case-study-subtitle inner-container"><?php echo get_field('case_study_subtitle', $study->ID); ?></h3>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-	<?php endforeach;
-}
-
 function os_slide_nav($id) {
 	if ( ! $id ) $id = '';
-	
+
 	echo '<nav id="' . $id . '" class="os-slide-nav">';
 		echo '<a href="#prev" class="os-slide-prev prev"><span class="graphic-arrow"></span><i class="text-arrow">&larr;</i></a>';
 		echo '<a href="#next" class="os-slide-next next"><span class="graphic-arrow"></span><i class="text-arrow">&rarr;</i></a>';
