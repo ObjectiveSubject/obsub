@@ -1,0 +1,73 @@
+.ap-logo-issue {
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.issue-image {
+    height: 210px;
+    width: 340px;
+    margin: 0 auto 1em;
+    background-image: url(images/ap/AP-sprite.png);
+    background-repeat: no-repeat;
+    @include hidpi {
+        background-image: url(images/ap/AP-sprite-@2x.png);
+    }
+
+    .issue-legibility & {
+        background-position: left top;
+    }
+    .issue-balance & {
+        background-position: right top;
+    }
+    .issue-proportions & {
+        background-position: left bottom;
+    }
+    .issue-drawing-quality & {
+        background-position: right bottom;
+    }
+}
+
+.ap-historical-logos {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.ap-historical-logo {
+    width: 11%;
+    float: left;
+    margin-right: 1.71%;
+    opacity: 0;
+    @include transform(translateY(50%));
+    @include transition(all 750ms ease);
+    &:last-child {
+        margin-right: 0;
+    }
+    .active & {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+    &:nth-child(2) {
+        @include transition-delay(100ms);
+    }
+    &:nth-child(3) {
+        @include transition-delay(200ms);
+    }
+    &:nth-child(4) {
+        @include transition-delay(300ms);
+    }
+    &:nth-child(5) {
+        @include transition-delay(400ms);
+    }
+    &:nth-child(6) {
+        @include transition-delay(500ms);
+    }
+    &:nth-child(7) {
+        @include transition-delay(600ms);
+    }
+    &:nth-child(8) {
+        @include transition-delay(700ms);
+    }
+}

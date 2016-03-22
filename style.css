@@ -3693,6 +3693,45 @@ figcaption {
   opacity: 1;
 }
 
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-bg {
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 0;
+  padding-top: 66.666%;
+}
+@media screen and (min-width: 768px) {
+  .os-cssvhunit .parallax-bg {
+    height: 100vh;
+    padding-top: 0;
+  }
+}
+
+.parallax-node {
+  display: block;
+}
+
+blockquote.parallax-node {
+  margin-top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  blockquote.parallax-node {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
 .oakland-tree {
   background: white;
   padding: 1.5rem 0 4.5rem;
@@ -3872,41 +3911,101 @@ figcaption {
   }
 }
 
-.parallax-container {
-  overflow: hidden;
+.ap-logo-issue {
   position: relative;
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 0 0 2em;
 }
 
-.parallax-bg {
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 0;
-  padding-top: 66.666%;
+.issue-image {
+  height: 210px;
+  width: 340px;
+  margin: 0 auto 1em;
+  background-image: url(images/ap/AP-sprite.png);
+  background-repeat: no-repeat;
 }
-@media screen and (min-width: 768px) {
-  .os-cssvhunit .parallax-bg {
-    height: 100vh;
-    padding-top: 0;
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  .issue-image {
+    background-image: url(images/ap/AP-sprite-@2x.png);
   }
 }
-
-.parallax-node {
-  display: block;
+.issue-legibility .issue-image {
+  background-position: left top;
+}
+.issue-balance .issue-image {
+  background-position: right top;
+}
+.issue-proportions .issue-image {
+  background-position: left bottom;
+}
+.issue-drawing-quality .issue-image {
+  background-position: right bottom;
 }
 
-blockquote.parallax-node {
-  margin-top: 0;
-  width: 100%;
+.ap-historical-logos {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
-@media screen and (min-width: 768px) {
-  blockquote.parallax-node {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+
+.ap-historical-logo {
+  width: 11%;
+  float: left;
+  margin-right: 1.71%;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 750ms ease;
+  -moz-transition: all 750ms ease;
+  transition: all 750ms ease;
+}
+.ap-historical-logo:last-child {
+  margin-right: 0;
+}
+.active .ap-historical-logo {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.ap-historical-logo:nth-child(2) {
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+.ap-historical-logo:nth-child(3) {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+.ap-historical-logo:nth-child(4) {
+  -webkit-transition-delay: 300ms;
+  -moz-transition-delay: 300ms;
+  transition-delay: 300ms;
+}
+.ap-historical-logo:nth-child(5) {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+.ap-historical-logo:nth-child(6) {
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+.ap-historical-logo:nth-child(7) {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+.ap-historical-logo:nth-child(8) {
+  -webkit-transition-delay: 700ms;
+  -moz-transition-delay: 700ms;
+  transition-delay: 700ms;
 }
