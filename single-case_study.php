@@ -38,6 +38,10 @@ get_header(); ?>
 
 		<?php get_template_part( 'content', $post->post_name ); ?>
 
+		<?php get_template_part( 'module', 'case-study-preview' ); ?>
+
+		<?php get_template_part( 'module', 'contact-form' ); ?>
+
 	<?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>

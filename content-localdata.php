@@ -130,7 +130,3 @@
 		<p class="h2 future-A inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 </section>
-
-<?php get_template_part( 'module', 'case-study-preview' ); ?>
-
-<?php get_template_part( 'module', 'contact-form' ); ?>
