@@ -9,8 +9,10 @@
 	}
 
 	.single-case_study & {
-		color: white;
-		&:before {
+		&.use-ui-light-theme {
+			color: white;
+		}
+		&.has-bg-image:before {
 			content: "";
 			display: block;
 			position: absolute;
@@ -29,24 +31,6 @@
 		opacity: 0.3;
 	}
 
-}
-
-.page-nav {
-	padding-top: $leading * 2;
-	@include media($screen-md){
-		display: none;
-	}
-	li {
-		@include media($screen-md){
-			opacity: 0;
-		}
-	}
-	a {
-		color: white;
-		&:hover {
-			color: tint($color_text_main, 70%);
-		}
-	}
 }
 
 .page-section {

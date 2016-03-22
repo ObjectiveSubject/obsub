@@ -1,3 +1,28 @@
+.page-nav {
+	padding-top: $leading * 2;
+	@include media($screen-md){
+		display: none;
+	}
+	li {
+		@include media($screen-md){
+			opacity: 0;
+		}
+	}
+	a {
+		color: $color_text_main;
+		&:hover {
+			color: tint($color_text_main, 70%);
+		}
+		.use-ui-light-theme & {
+			color: white;
+			&:hover {
+				color: tint($color_text_main, 70%);
+			}
+		}
+	}
+}
+
+
 .colophon {
 	@include clearfix;
 	.details {

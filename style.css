@@ -1618,10 +1618,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   position: relative;
   z-index: 1;
 }
-.single-case_study .page-header {
+.single-case_study .page-header.use-ui-light-theme {
   color: white;
 }
-.single-case_study .page-header:before {
+.single-case_study .page-header.has-bg-image:before {
   content: "";
   display: block;
   position: absolute;
@@ -1636,26 +1636,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   width: 100%;
   bottom: 10px;
   opacity: 0.3;
-}
-
-.page-nav {
-  padding-top: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .page-nav {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-nav li {
-    opacity: 0;
-  }
-}
-.page-nav a {
-  color: white;
-}
-.page-nav a:hover {
-  color: #bdbdbd;
 }
 
 .page-section {
@@ -2062,6 +2042,32 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     -o-transform: translateY(-50%) translateX(-75%);
     transform: translateY(-50%) translateX(-75%);
   }
+}
+
+.page-nav {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .page-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-nav li {
+    opacity: 0;
+  }
+}
+.page-nav a {
+  color: #222222;
+}
+.page-nav a:hover {
+  color: #bdbdbd;
+}
+.use-ui-light-theme .page-nav a {
+  color: white;
+}
+.use-ui-light-theme .page-nav a:hover {
+  color: #bdbdbd;
 }
 
 .colophon:before, .colophon:after {
