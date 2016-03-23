@@ -71,7 +71,7 @@
 					<li class="menu-item case_study h2 hug">
 						<span>case studies</span>
 						<ul class="sub-menu">
-							<?php $case_studies = get_posts( array( 'post_type'=>'case_study', 'posts_per_page'=>-1 ) );
+							<?php $case_studies = get_case_studies( array( 'orderby'=>'title' ) );
 							foreach ( $case_studies as $study ) : ?>
 								<li class="menu-item sub-menu-item h2 hug <?php echo 'cs-' . $study->post_name; ?>">
 									<a href="<?php echo get_the_permalink( $study->ID ); ?>"><?php echo get_the_title($study->ID); ?></a>
