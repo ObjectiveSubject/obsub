@@ -33,7 +33,7 @@
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('CFR-Collateral.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Collateral.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Collateral-@2x.png', 'cfr'); ?> 2x" width="1200" height="797" />
 		<div class="outer-container">
-			<figcaption class="inner-container">Council on Foreign Relations business collateral</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">Council on Foreign Relations business collateral</figcaption>
 		</div>
 	</figure>
 
@@ -46,7 +46,7 @@
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('CFR-Task-Force.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Task-Force.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Task-Force-@2x.png', 'cfr'); ?> 2x" width="1200" height="797" />
 		<div class="outer-container">
-			<figcaption class="inner-container">Council on Foreign Relations Task Force Reports 66–73</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">Council on Foreign Relations Task Force Reports 66–73</figcaption>
 		</div>
 	</figure>
 
@@ -56,7 +56,7 @@
 	<figure class="alignnone">
 		<img src="<?php echo os_path('CFR-Chronicle.jpg', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Chronicle.jpg', 'cfr'); ?> 1x, <?php echo os_path('CFR-Chronicle-@2x.jpg', 'cfr'); ?> 2x" width="1500" height="824" />
 		<div class="outer-container">
-			<figcaption class="inner-container">CFR's The Chronicle</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">CFR's The Chronicle</figcaption>
 		</div>
 	</figure>
 </section>
@@ -81,7 +81,7 @@
 						<img src="<?php echo os_path('CFR-Home-1.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Home-1.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Home-1-@2x.png', 'cfr'); ?> 2x" width="850" height="675">
 					</div>
 				</div>
-				<figcaption>brand.cfr.org &mdash; Home</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">brand.cfr.org &mdash; Home</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -90,7 +90,7 @@
 						<img src="<?php echo os_path('CFR-Law.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Law.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Law-@2x.png', 'cfr'); ?> 2x" width="850" height="1273">
 					</div>
 				</div>
-				<figcaption>brand.cfr.org &mdash; Spirit of the Law</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">brand.cfr.org &mdash; Spirit of the Law</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -99,7 +99,7 @@
 						<img src="<?php echo os_path('CFR-Architecture.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Architecture.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Architecture-@2x.png', 'cfr'); ?> 2x" width="850" height="1405">
 					</div>
 				</div>
-				<figcaption>brand.cfr.org &mdash; Brand Architecture</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">brand.cfr.org &mdash; Brand Architecture</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -108,7 +108,7 @@
 						<img src="<?php echo os_path('CFR-Interface.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Interface.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Interface-@2x.png', 'cfr'); ?> 2x" width="850" height="2000">
 					</div>
 				</div>
-				<figcaption>brand.cfr.org &mdash; Basic User Interface</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">brand.cfr.org &mdash; Basic User Interface</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -117,13 +117,93 @@
 						<img src="<?php echo os_path('CFR-Colour.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Colour.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Colour-@2x.png', 'cfr'); ?> 2x" width="850" height="3567">
 					</div>
 				</div>
-				<figcaption>brand.cfr.org &mdash; Color Palette</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">brand.cfr.org &mdash; Color Palette</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("cfr-brand-site-nav"); ?>
 	</figure>
 
-	<?php get_template_part('module', 'is-it-haarlemmer'); ?>
+	<figure class="sub_section font_overlay no_bleed last" >
+
+		<div class="sub_section_content" style="background-color: white" >
+
+			<div id="font_slide_controls" class="outer-container">
+				<div class="type_filters">
+					<a href="#" data-typeface="haarlemmer" class="h3 hug haarlemmer visible">Haarlemmer</a>
+					<a href="#" data-typeface="times" class="h3 hug times visible">Times New Roman</a>
+					<a href="#" data-typeface="georgia" class="h3 hug georgia visible">Georgia</a>
+					<a href="#" class="h3 hug notes visible">Notes</a>
+				</div>
+				<div class="type_paging">
+					<a href="#" class="h3 hug index active" data-index="0">a</a>
+					<a href="#" class="h3 hug index" data-index="1">e</a>
+					<a href="#" class="h3 hug index" data-index="2">g</a>
+					<a href="#" class="h3 hug index" data-index="3">j</a>
+				</div>
+			</div>
+
+			<div id="font_slides" data-slick='{ "prevArrow": "#cfr-typography-nav .prev", "nextArrow": "#cfr-typography-nav .next" }'>
+
+				<div class="font_slide letter_a">
+					<div class="slide_inner">
+						<div class="letter_wrap"></div>
+						<div class="info_dot info_dot_1">
+							<p class="note small">Shallow-curved top with teardrop terminal.</p>
+						</div>
+						<div class="info_dot info_dot_2">
+							<p class="note small">Convex lower bowl.</p>
+						</div>
+						<div class="info_dot info_dot_3">
+							<p class="note small">Sharpley tapered, upward-pointing tail.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="font_slide letter_e">
+					<div class="slide_inner">
+						<div class="letter_wrap"></div>
+						<div class="info_dot info_dot_1">
+							<p class="note small">The lower-case e features a small upper bowl with a horizontal, sharpley pointed cross bar.</p>
+						</div>
+						<div class="info_dot info_dot_2">
+							<p class="note small">Its tail points outward and is sharpley tapered.</p>
+						</div>
+					</div>
+				</div>
+				<div class="font_slide letter_g">
+					<div class="slide_inner">
+						<div class="letter_wrap"></div>
+						<div class="info_dot info_dot_1">
+							<p class="note small">The ear of the g is a rectangle abruptly entering the bowl.</p>
+						</div>
+						<div class="info_dot line info_dot_2">
+							<p class="note small">The lower-case g features a relatively large upper bowl with an angled stress.</p>
+						</div>
+						<div class="info_dot info_dot_3">
+							<p class="note small">The tail of the g is fluid with sharp curves.</p>
+						</div>
+					</div>
+				</div>
+				<div class="font_slide letter_j">
+					<div class="slide_inner">
+						<div class="letter_wrap"></div>
+						<div class="info_dot info_dot_1">
+							<p class="note small">The lower-case j features a flat, downward-pointing top serif.</p>
+						</div>
+						<div class="info_dot info_dot_2">
+							<p class="note small">A sharpley tapered, downward-pointing tail.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<?php os_slide_nav("cfr-typography-nav"); ?>
+
+		</div>
+
+		<figcaption class="outer-container" style="<?php echo "color: {$color};"; ?>">Is it Haarlemmer? A breakdown to CFR’s brand typeface</figcaption>
+
+	</figure>
 
 	<figure class="os-slideshow-container">
 		<div id="cfr-email-desktop-dots"></div>
@@ -135,7 +215,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-1.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-1.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-1-@2x.png', 'cfr'); ?> 2x" width="850" height="1304">
 					</div>
 				</div>
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -155,7 +235,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-2.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-2.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-2-@2x.png', 'cfr'); ?> 2x" width="850" height="1900">
 					</div>
 				</div>
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -175,7 +255,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-3.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-3.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-3-@2x.png', 'cfr'); ?> 2x" width="850" height="2493">
 					</div>
 				</div>
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -197,19 +277,19 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#cfr-infographics-nav .prev", "nextArrow": "#cfr-infographics-nav .next", "appendDots": "#cfr-infographics-dots" }'>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-1.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-1.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-1-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption>Renewing America Infographic for No Helping Hand: Federal Worker-Retraining Policy</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Renewing America Infographic for No Helping Hand: Federal Worker-Retraining Policy</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-2.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-2.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-2-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-3.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-3.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-3-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-4.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-4.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-4-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("cfr-infographics-nav"); ?>
