@@ -105,7 +105,7 @@
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('AP-Collateral.png', 'ap') ?>" srcset="<?php echo os_path('AP-Collateral.png', 'ap') ?> 1x, <?php echo os_path('AP-Collateral-@2x.png', 'ap') ?> 2x" width="1200" height="797" />
 		<div class="outer-container">
-			<figcaption class="inner-container">Associated Press Collateral</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};" ?>">Associated Press Collateral</figcaption>
 		</div>
 	</figure>
 
@@ -133,14 +133,14 @@
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('AP-Brand-Voice-Mockup.png', 'ap'); ?>" srcset="<?php echo os_path('AP-Brand-Voice-Mockup.png', 'ap'); ?> 1x, <?php echo os_path('AP-Brand-Voice-Mockup-@2x.png', 'ap'); ?> 2x" width="1160" height="774" alt="AP Brand Voice" />
 		<div class="outer-container">
-			<figcaption class="inner-container">AP's Brand voice</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};" ?>">AP's Brand voice</figcaption>
 		</div>
 	</figure>
 
 	<figure class="aligncenter">
 		<img src="<?php echo os_path('AP-Brand-Guidelines-Mockup.png', 'ap'); ?>" srcset="<?php echo os_path('AP-Brand-Guidelines-Mockup.png', 'ap'); ?> 1x, <?php echo os_path('AP-Brand-Guidelines-Mockup-@2x.png', 'ap'); ?> 2x" width="1160" height="774" alt="AP Brand Voice" />
 		<div class="outer-container">
-			<figcaption class="inner-container">AP's Brand guidelines</figcaption>
+			<figcaption class="inner-container" style="<?php echo "color: {$color};" ?>">AP's Brand guidelines</figcaption>
 		</div>
 	</figure>
 
@@ -155,15 +155,15 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#ap-environment-nav .prev", "nextArrow": "#ap-environment-nav .next", "appendDots": "#ap-environment-dots" }'>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-1.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-1.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-1.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-2.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-2.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-2-@2x.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-3-@2x.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption>Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("ap-environment-nav"); ?>
