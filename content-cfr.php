@@ -15,7 +15,7 @@
 		<blockquote style="background-color:<?php echo $color; ?>; color: white; ">
 			<p><span class="quote">&ldquo;</span>A quote from Council on Foreign Relations...<span class="quote">&rdquo;</span><br/><small>&mdash; Lisa Sheilds, <em>Vice President, Council on Foreign Relations</em></small></p>
 		</blockquote>
-		<img src="http://placehold.it/1200x495/dddddd/ffffff" width="1200" height="495">
+		<img src="<?php echo os_path('CFR-Building.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Building.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Building-@2x.png', 'cfr'); ?> 2x" width="1200" height="495">
 	</figure>
 
 </section>
