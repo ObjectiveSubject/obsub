@@ -1,23 +1,26 @@
 .ap-logo-issue {
     position: relative;
-    width: 50%;
-    float: left;
     text-align: center;
     margin: 0 0 2em;
+    @include media($screen-sm) {
+        width: 50%;
+        float: left;
+    }
 }
 
 .issue-image {
-    height: 210px;
-    width: 340px;
+    height: 0;
+    padding-top: 60%;
     margin: 0 auto 1em;
     background-image: url(images/ap/AP-sprite.png);
+    background-size: 200%;
     background-repeat: no-repeat;
     @include hidpi {
         background-image: url(images/ap/AP-sprite-@2x.png);
     }
 
     .issue-legibility & {
-        background-position: left top;
+        background-position: left -1px;
     }
     .issue-balance & {
         background-position: right top;
