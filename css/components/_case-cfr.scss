@@ -129,9 +129,12 @@ $cfr_robins_egg: #8FD6ED;
 
 	.info_dot {
 		position: absolute;
-		background: url(images/cfr/info_dot.png) no-repeat center center;
+		background: url(images/cfr/CFR-Dot.png) no-repeat center center;
 		width: 65px;
 		height: 65px;
+        @include hidpi() {
+            background-image: url(images/cfr/CFR-Dot-@2x.png);
+        }
 		&.hidden {
 			display: none;
 		}
@@ -139,6 +142,9 @@ $cfr_robins_egg: #8FD6ED;
 			background: url(images/cfr/info_line.png) no-repeat center center;
 			width: 29px;
 			height: 213px;
+            @include hidpi() {
+                background-image: url(images/cfr/info_line@2x.png);
+            }
 		}
 
 		.note {
@@ -158,7 +164,12 @@ $cfr_robins_egg: #8FD6ED;
 
 	.letter_a {
 		.slide_inner { padding-top: 290px; }
-		.letter_wrap { background: url(images/cfr/letter_a.png) no-repeat left top; }
+		.letter_wrap {
+            background: url(images/cfr/CFR-a.png) no-repeat left top;
+            @include hidpi() {
+                background-image: url(images/cfr/CFR-a-@2x.png);
+            }
+        }
 
 		.info_dot_1 {
 			top: 10px;
@@ -179,7 +190,12 @@ $cfr_robins_egg: #8FD6ED;
 
 	.letter_e {
 		.slide_inner { padding-top: 290px; }
-		.letter_wrap { background: url(images/cfr/letter_e.png) no-repeat left top; }
+		.letter_wrap {
+            background: url(images/cfr/CFR-e.png) no-repeat left top;
+            @include hidpi() {
+                background-image: url(images/cfr/CFR-e-@2x.png);
+            }
+        }
 
 		.info_dot_1 {
 			top: 80px;
@@ -195,7 +211,12 @@ $cfr_robins_egg: #8FD6ED;
 
 	.letter_g {
 		.slide_inner { padding-top: 420px; }
-		.letter_wrap { background: url(images/cfr/letter_g.png) no-repeat left top; }
+		.letter_wrap {
+            background: url(images/cfr/CFR-g.png) no-repeat left top;
+            @include hidpi() {
+                background-image: url(images/cfr/CFR-g-@2x.png);
+            }
+        }
 
 		.info_dot_1 {
 			top: 4px;
@@ -226,7 +247,12 @@ $cfr_robins_egg: #8FD6ED;
 
 	.letter_j {
 		.slide_inner { padding-top: 495px; }
-		.letter_wrap { background: url(images/cfr/letter_j.png) no-repeat left top; }
+		.letter_wrap {
+            background: url(images/cfr/CFR-j.png) no-repeat left top;
+            @include hidpi() {
+                background-image: url(images/cfr/CFR-j-@2x.png);
+            }
+        }
 
 		.info_dot_1 {
 			top: 115px;
