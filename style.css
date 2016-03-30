@@ -4183,6 +4183,7 @@ blockquote.parallax-node {
 #font_slides .info_dot {
   position: absolute;
   background: url(images/cfr/CFR-Dot.png) no-repeat center center;
+  background-size: 65px;
   width: 65px;
   height: 65px;
 }
@@ -4210,6 +4211,19 @@ blockquote.parallax-node {
   color: #b3a49e;
   line-height: 1.1em;
   margin-top: 0;
+}
+@media screen and (min-width: 500px) {
+  #font_slides .mobile-show {
+    display: none;
+  }
+}
+#font_slides .mobile-hide {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  #font_slides .mobile-hide {
+    display: block;
+  }
 }
 #font_slides[data-current-fonts="times"] .info_dot, #font_slides[data-current-fonts="georgia"] .info_dot, #font_slides[data-current-fonts="times_georgia"] .info_dot {
   display: none;

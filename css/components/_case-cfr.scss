@@ -130,6 +130,7 @@ $cfr_robins_egg: #8FD6ED;
 	.info_dot {
 		position: absolute;
 		background: url(images/cfr/CFR-Dot.png) no-repeat center center;
+        background-size: 65px;
 		width: 65px;
 		height: 65px;
         @include hidpi() {
@@ -155,6 +156,18 @@ $cfr_robins_egg: #8FD6ED;
             margin-top: 0;
 		}
 	}
+
+    .mobile-show {
+        @include media($screen-sm) {
+            display: none;
+        }
+    }
+    .mobile-hide {
+        display: none;
+        @include media($screen-sm) {
+            display: block;
+        }
+    }
 
 	&[data-current-fonts="times"],
 	&[data-current-fonts="georgia"],

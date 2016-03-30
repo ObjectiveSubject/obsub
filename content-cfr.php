@@ -148,14 +148,19 @@
 					<div class="slide_inner">
 						<div class="letter_wrap"></div>
 						<div class="info_dot info_dot_1">
-							<p class="note small">Shallow-curved top with teardrop terminal.</p>
+							<p class="note small mobile-hide">Shallow-curved top with teardrop terminal.</p>
 						</div>
 						<div class="info_dot info_dot_2">
-							<p class="note small">Convex lower bowl.</p>
+							<p class="note small mobile-hide">Convex lower bowl.</p>
 						</div>
 						<div class="info_dot info_dot_3">
-							<p class="note small">Sharpley tapered, upward-pointing tail.</p>
+							<p class="note small mobile-hide">Sharpley tapered, upward-pointing tail.</p>
 						</div>
+						<ul class="mobile-show">
+							<li>Shallow-curved top with teardrop terminal.</li>
+							<li>Convex lower bowl.</li>
+							<li>Sharpley tapered, upward-pointing tail.</li>
+						</ul>
 					</div>
 				</div>
 
@@ -163,36 +168,49 @@
 					<div class="slide_inner">
 						<div class="letter_wrap"></div>
 						<div class="info_dot info_dot_1">
-							<p class="note small">The lower-case e features a small upper bowl with a horizontal, sharpley pointed cross bar.</p>
+							<p class="note small mobile-hide">The lower-case e features a small upper bowl with a horizontal, sharpley pointed cross bar.</p>
 						</div>
 						<div class="info_dot info_dot_2">
-							<p class="note small">Its tail points outward and is sharpley tapered.</p>
+							<p class="note small mobile-hide">Its tail points outward and is sharpley tapered.</p>
 						</div>
+						<ul class="mobile-show">
+							<li>The lower-case e features a small upper bowl with a horizontal, sharpley pointed cross bar.</li>
+							<li>Its tail points outward and is sharpley tapered.</li>
+						</ul>
 					</div>
 				</div>
 				<div class="font_slide letter_g">
 					<div class="slide_inner">
 						<div class="letter_wrap"></div>
 						<div class="info_dot info_dot_1">
-							<p class="note small">The ear of the g is a rectangle abruptly entering the bowl.</p>
+							<p class="note small mobile-hide">The ear of the g is a rectangle abruptly entering the bowl.</p>
 						</div>
 						<div class="info_dot line info_dot_2">
-							<p class="note small">The lower-case g features a relatively large upper bowl with an angled stress.</p>
+							<p class="note small mobile-hide">The lower-case g features a relatively large upper bowl with an angled stress.</p>
 						</div>
 						<div class="info_dot info_dot_3">
-							<p class="note small">The tail of the g is fluid with sharp curves.</p>
+							<p class="note small mobile-hide">The tail of the g is fluid with sharp curves.</p>
 						</div>
+						<ul class="mobile-show">
+							<li>The ear of the g is a rectangle abruptly entering the bowl.</li>
+							<li>The lower-case g features a relatively large upper bowl with an angled stress.</li>
+							<li>The tail of the g is fluid with sharp curves.</li>
+						</ul>
 					</div>
 				</div>
 				<div class="font_slide letter_j">
 					<div class="slide_inner">
 						<div class="letter_wrap"></div>
 						<div class="info_dot info_dot_1">
-							<p class="note small">The lower-case j features a flat, downward-pointing top serif.</p>
+							<p class="note small mobile-hide">The lower-case j features a flat, downward-pointing top serif.</p>
 						</div>
 						<div class="info_dot info_dot_2">
-							<p class="note small">A sharpley tapered, downward-pointing tail.</p>
+							<p class="note small mobile-hide">A sharpley tapered, downward-pointing tail.</p>
 						</div>
+						<ul class="mobile-show">
+							<li>The lower-case j features a flat, downward-pointing top serif.</li>
+							<li>A sharpley tapered, downward-pointing tail.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
