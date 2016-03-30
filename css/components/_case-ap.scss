@@ -33,41 +33,82 @@
 .ap-historical-logos {
     padding-top: 4em;
     padding-bottom: 4em;
+    max-width: 280px;
+    margin: 0 auto;
+    @include media($screen-sm) {
+        max-width: 420px;
+    }
+    @include media($screen-md) {
+        max-width: 560px;
+    }
+    @include media(1120px) {
+        max-width: 1140px;
+    }
 }
 
 .ap-historical-logo {
-    width: 11%;
+    width: 120px;
     float: left;
-    margin-right: 1.71%;
+    margin: 0 10px 1em;
     opacity: 0;
     @include transform(translateY(50%));
     @include transition(all 750ms ease);
-    &:last-child {
-        margin-right: 0;
-    }
     .active & {
         opacity: 1;
         @include transform(translateY(0));
     }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+        background: url(images/ap/ap-logo-sprite.png) 0 0 no-repeat;
+        background-size: 960px 120px;
+        @include hidpi() {
+            background-image: url(images/ap/ap-logo-sprite.png);
+        }
+    }
+
+    $interval: -120;
     &:nth-child(2) {
         @include transition-delay(100ms);
+        .logo {
+            background-position: #{$interval * 1}px 0;
+        }
     }
     &:nth-child(3) {
         @include transition-delay(200ms);
+        .logo {
+            background-position: #{$interval * 2}px 0;
+        }
     }
     &:nth-child(4) {
         @include transition-delay(300ms);
+        .logo {
+            background-position: #{$interval * 3}px 0;
+        }
     }
     &:nth-child(5) {
         @include transition-delay(400ms);
+        .logo {
+            background-position: #{$interval * 4}px 0;
+        }
     }
     &:nth-child(6) {
         @include transition-delay(500ms);
+        .logo {
+            background-position: #{$interval * 5}px 0;
+        }
     }
     &:nth-child(7) {
         @include transition-delay(600ms);
+        .logo {
+            background-position: #{$interval * 6}px 0;
+        }
     }
     &:nth-child(8) {
         @include transition-delay(700ms);
+        .logo {
+            background-position: #{$interval * 7}px 0;
+        }
     }
 }

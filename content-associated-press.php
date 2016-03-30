@@ -27,37 +27,37 @@
 	</div>
 
 	<figure class="active-on-inview" data-offset="0.5" style="background-color: white;">
-		<ul class="ap-historical-logos list-unstyled outer-container">
+		<ul class="ap-historical-logos list-unstyled clearfix">
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1900</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1933</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1942</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1945</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1955</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1961</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">1981</em>
 			</li>
 			<li class="ap-historical-logo">
-				<img src="http://placehold.it/120x120" alt="logo" /><br>
+				<div class="logo"></div>
 				<em style="<?php echo "color: {$color};" ?>">2012</em>
 			</li>
 		</ul>

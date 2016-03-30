@@ -166,6 +166,7 @@ $cfr_robins_egg: #8FD6ED;
 		.slide_inner { padding-top: 290px; }
 		.letter_wrap {
             background: url(images/cfr/CFR-a.png) no-repeat left top;
+            background-size: 1960px 290px;
             @include hidpi() {
                 background-image: url(images/cfr/CFR-a-@2x.png);
             }
@@ -192,6 +193,7 @@ $cfr_robins_egg: #8FD6ED;
 		.slide_inner { padding-top: 290px; }
 		.letter_wrap {
             background: url(images/cfr/CFR-e.png) no-repeat left top;
+            background-size: 1960px 290px;
             @include hidpi() {
                 background-image: url(images/cfr/CFR-e-@2x.png);
             }
@@ -213,6 +215,7 @@ $cfr_robins_egg: #8FD6ED;
 		.slide_inner { padding-top: 420px; }
 		.letter_wrap {
             background: url(images/cfr/CFR-g.png) no-repeat left top;
+            background-size: 1960px 420px;
             @include hidpi() {
                 background-image: url(images/cfr/CFR-g-@2x.png);
             }
@@ -249,6 +252,7 @@ $cfr_robins_egg: #8FD6ED;
 		.slide_inner { padding-top: 495px; }
 		.letter_wrap {
             background: url(images/cfr/CFR-j.png) no-repeat left top;
+            background-size: 1960px 495px;
             @include hidpi() {
                 background-image: url(images/cfr/CFR-j-@2x.png);
             }

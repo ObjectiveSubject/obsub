@@ -3947,12 +3947,29 @@ blockquote.parallax-node {
 .ap-historical-logos {
   padding-top: 4em;
   padding-bottom: 4em;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 500px) {
+  .ap-historical-logos {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ap-historical-logos {
+    max-width: 560px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .ap-historical-logos {
+    max-width: 1140px;
+  }
 }
 
 .ap-historical-logo {
-  width: 11%;
+  width: 120px;
   float: left;
-  margin-right: 1.71%;
+  margin: 0 10px 1em;
   opacity: 0;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
@@ -3963,9 +3980,6 @@ blockquote.parallax-node {
   -moz-transition: all 750ms ease;
   transition: all 750ms ease;
 }
-.ap-historical-logo:last-child {
-  margin-right: 0;
-}
 .active .ap-historical-logo {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -3974,40 +3988,72 @@ blockquote.parallax-node {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
+.ap-historical-logo .logo {
+  width: 120px;
+  height: 120px;
+  background: url(images/ap/ap-logo-sprite.png) 0 0 no-repeat;
+  background-size: 960px 120px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  .ap-historical-logo .logo {
+    background-image: url(images/ap/ap-logo-sprite.png);
+  }
+}
 .ap-historical-logo:nth-child(2) {
   -webkit-transition-delay: 100ms;
   -moz-transition-delay: 100ms;
   transition-delay: 100ms;
+}
+.ap-historical-logo:nth-child(2) .logo {
+  background-position: -120px 0;
 }
 .ap-historical-logo:nth-child(3) {
   -webkit-transition-delay: 200ms;
   -moz-transition-delay: 200ms;
   transition-delay: 200ms;
 }
+.ap-historical-logo:nth-child(3) .logo {
+  background-position: -240px 0;
+}
 .ap-historical-logo:nth-child(4) {
   -webkit-transition-delay: 300ms;
   -moz-transition-delay: 300ms;
   transition-delay: 300ms;
+}
+.ap-historical-logo:nth-child(4) .logo {
+  background-position: -360px 0;
 }
 .ap-historical-logo:nth-child(5) {
   -webkit-transition-delay: 400ms;
   -moz-transition-delay: 400ms;
   transition-delay: 400ms;
 }
+.ap-historical-logo:nth-child(5) .logo {
+  background-position: -480px 0;
+}
 .ap-historical-logo:nth-child(6) {
   -webkit-transition-delay: 500ms;
   -moz-transition-delay: 500ms;
   transition-delay: 500ms;
+}
+.ap-historical-logo:nth-child(6) .logo {
+  background-position: -600px 0;
 }
 .ap-historical-logo:nth-child(7) {
   -webkit-transition-delay: 600ms;
   -moz-transition-delay: 600ms;
   transition-delay: 600ms;
 }
+.ap-historical-logo:nth-child(7) .logo {
+  background-position: -720px 0;
+}
 .ap-historical-logo:nth-child(8) {
   -webkit-transition-delay: 700ms;
   -moz-transition-delay: 700ms;
   transition-delay: 700ms;
+}
+.ap-historical-logo:nth-child(8) .logo {
+  background-position: -840px 0;
 }
 
 .font_overlay {
@@ -4168,6 +4214,7 @@ blockquote.parallax-node {
 }
 #font_slides .letter_a .letter_wrap {
   background: url(images/cfr/CFR-a.png) no-repeat left top;
+  background-size: 1960px 290px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   #font_slides .letter_a .letter_wrap {
@@ -4203,6 +4250,7 @@ blockquote.parallax-node {
 }
 #font_slides .letter_e .letter_wrap {
   background: url(images/cfr/CFR-e.png) no-repeat left top;
+  background-size: 1960px 290px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   #font_slides .letter_e .letter_wrap {
@@ -4228,6 +4276,7 @@ blockquote.parallax-node {
 }
 #font_slides .letter_g .letter_wrap {
   background: url(images/cfr/CFR-g.png) no-repeat left top;
+  background-size: 1960px 420px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   #font_slides .letter_g .letter_wrap {
@@ -4263,6 +4312,7 @@ blockquote.parallax-node {
 }
 #font_slides .letter_j .letter_wrap {
   background: url(images/cfr/CFR-j.png) no-repeat left top;
+  background-size: 1960px 495px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   #font_slides .letter_j .letter_wrap {
