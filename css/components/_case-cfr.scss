@@ -6,6 +6,18 @@ $cfr_robins_egg: #8FD6ED;
 
 .font_overlay {
     position: relative;
+
+    .mobile-show {
+        @include media($screen-sm) {
+            display: none;
+        }
+    }
+    .mobile-hide {
+        display: none;
+        @include media($screen-sm) {
+            display: block;
+        }
+    }
 }
 
 .sub_section_content {
@@ -81,8 +93,12 @@ $cfr_robins_egg: #8FD6ED;
 		}
 	}
 	.type_paging {
-		float: right;
-		margin-right: 30px;
+        text-align: center;
+        @include media($screen-sm) {
+            text-align: left;
+            float: right;
+    		margin-right: 30px;
+        }
 
 		a {
 			display: inline-block;
@@ -156,18 +172,6 @@ $cfr_robins_egg: #8FD6ED;
             margin-top: 0;
 		}
 	}
-
-    .mobile-show {
-        @include media($screen-sm) {
-            display: none;
-        }
-    }
-    .mobile-hide {
-        display: none;
-        @include media($screen-sm) {
-            display: block;
-        }
-    }
 
 	&[data-current-fonts="times"],
 	&[data-current-fonts="georgia"],
@@ -273,12 +277,12 @@ $cfr_robins_egg: #8FD6ED;
 
 		.info_dot_1 {
 			top: 115px;
-			left: 76px;
+			left: 96px;
 			.note { left: 115px; }
 		}
 		.info_dot_2 {
 			top: 438px;
-			left: 67px;
+			left: 87px;
 			.note {
 				left: 85px;
 				top: 10px;

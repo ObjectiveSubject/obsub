@@ -128,7 +128,7 @@
 		<div class="sub_section_content" style="background-color: white" >
 
 			<div id="font_slide_controls" class="outer-container">
-				<div class="type_filters">
+				<div class="type_filters mobile-hide">
 					<a href="#" data-typeface="haarlemmer" class="h3 hug haarlemmer visible">Haarlemmer</a>
 					<a href="#" data-typeface="times" class="h3 hug times visible">Times New Roman</a>
 					<a href="#" data-typeface="georgia" class="h3 hug georgia visible">Georgia</a>

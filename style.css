@@ -4064,6 +4064,19 @@ blockquote.parallax-node {
 .font_overlay {
   position: relative;
 }
+@media screen and (min-width: 500px) {
+  .font_overlay .mobile-show {
+    display: none;
+  }
+}
+.font_overlay .mobile-hide {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  .font_overlay .mobile-hide {
+    display: block;
+  }
+}
 
 .sub_section_content {
   padding: 30px 0 50px;
@@ -4144,8 +4157,14 @@ blockquote.parallax-node {
   background-color: #b3a49e;
 }
 #font_slide_controls .type_paging {
-  float: right;
-  margin-right: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  #font_slide_controls .type_paging {
+    text-align: left;
+    float: right;
+    margin-right: 30px;
+  }
 }
 #font_slide_controls .type_paging a {
   display: inline-block;
@@ -4211,19 +4230,6 @@ blockquote.parallax-node {
   color: #b3a49e;
   line-height: 1.1em;
   margin-top: 0;
-}
-@media screen and (min-width: 500px) {
-  #font_slides .mobile-show {
-    display: none;
-  }
-}
-#font_slides .mobile-hide {
-  display: none;
-}
-@media screen and (min-width: 500px) {
-  #font_slides .mobile-hide {
-    display: block;
-  }
 }
 #font_slides[data-current-fonts="times"] .info_dot, #font_slides[data-current-fonts="georgia"] .info_dot, #font_slides[data-current-fonts="times_georgia"] .info_dot {
   display: none;
@@ -4340,14 +4346,14 @@ blockquote.parallax-node {
 }
 #font_slides .letter_j .info_dot_1 {
   top: 115px;
-  left: 76px;
+  left: 96px;
 }
 #font_slides .letter_j .info_dot_1 .note {
   left: 115px;
 }
 #font_slides .letter_j .info_dot_2 {
   top: 438px;
-  left: 67px;
+  left: 87px;
 }
 #font_slides .letter_j .info_dot_2 .note {
   left: 85px;
