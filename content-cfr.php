@@ -233,7 +233,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-1.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-1.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-1-@2x.png', 'cfr'); ?> 2x" width="850" height="1304">
 					</div>
 				</div>
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">CFR's Invite desktop email</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -244,7 +244,7 @@
 						</div>
 					</div>
 				</div>
-				<figcaption class="text-center">Caption</figcaption>
+				<figcaption class="text-center">CFR's Invite mobile email</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -253,7 +253,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-2.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-2.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-2-@2x.png', 'cfr'); ?> 2x" width="850" height="1900">
 					</div>
 				</div>
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">CFR's Fellows desktop email</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -264,7 +264,7 @@
 						</div>
 					</div>
 				</div>
-				<figcaption class="text-center">Caption</figcaption>
+				<figcaption class="text-center">CFR's Fellows mobile email</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -273,7 +273,7 @@
 						<img src="<?php echo os_path('CFR-Email-Desktop-3.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Email-Desktop-3.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Email-Desktop-3-@2x.png', 'cfr'); ?> 2x" width="850" height="2493">
 					</div>
 				</div>
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>">CFR's Publications Quarterly desktop email</figcaption>
 			</li>
 			<li>
 				<div class="iphone">
@@ -284,7 +284,7 @@
 						</div>
 					</div>
 				</div>
-				<figcaption class="text-center">Caption</figcaption>
+				<figcaption class="text-center">CFR's Publications Quarterly mobile email</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("cfr-email-desktop-nav"); ?>
@@ -295,19 +295,19 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#cfr-infographics-nav .prev", "nextArrow": "#cfr-infographics-nav .next", "appendDots": "#cfr-infographics-dots" }'>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-1.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-1.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-1-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};"; ?>">Renewing America Infographic for No Helping Hand: Federal Worker-Retraining Policy</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>"><span class="no-style">Renewing America Infographic for</span> No Helping Hand: Federal Worker-Retraining Policy</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-2.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-2.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-2-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>"><span class="no-style">Renewing America Infographic for</span> Trading Up: U.S. Trade and Investment Policy</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-3.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-3.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-3-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>"><span class="no-style">Renewing America Infographic for</span> Keeping the Edge: U.S. Innovation</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('CFR-Infographic-4.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Infographic-4.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Infographic-4-@2x.png', 'cfr'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};"; ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};"; ?>"><span class="no-style">Renewing America Infographic for</span> Trading Up: U.S. Trade and Investment Policy</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("cfr-infographics-nav"); ?>
