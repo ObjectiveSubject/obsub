@@ -163,7 +163,7 @@
 			</li>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-3-@2x.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">Associated Press President and CEO Gary Pruitt</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("ap-environment-nav"); ?>
