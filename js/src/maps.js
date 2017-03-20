@@ -17,10 +17,10 @@
 		$offices = $('.office-locations');
 		mapboxgl.accessToken = 'pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA';
 		
-		var brooklynMap = new mapboxgl.Map({
-		    container: 'brooklyn-map', // container id
+		var nycMap = new mapboxgl.Map({
+		    container: 'nyc-map', // container id
 		    style: 'mapbox://styles/objectivesubject/cijdnlkv400hpavm3hkpvu33m', //stylesheet location
-		    center: [-73.987472, 40.700862],
+		    center: [-73.988658, 40.738673],
 		    zoom: 12.5,
 		    minZoom: 12.5,
 		});
@@ -43,9 +43,9 @@
 		winHeight 	= $window.height();
 		mediaSize 	= OS.getMediaSize();
 		officesTop 	= $offices.offset().top;
-		toggleMapY	= $('.brooklyn .office-address').offset().top;
+		toggleMapY	= $('.nyc .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
-		$topMap		= $(brooklynMap.getCanvas());
+		$topMap		= $(nycMap.getCanvas());
 	}
 
 	function onScroll() {

@@ -11,7 +11,7 @@
 			height: 100vh;
 		}
 	}
-	&.brooklyn {
+	&.nyc {
 		background-color: #F7D7D6;
 	}
 	&.oakland {
@@ -44,10 +44,10 @@
 		}
 	}
 
-	&.brooklyn-map {
+	&.nyc-map {
 		z-index: 1;
 		.os-no-webgl & {
-			background-image: url(images/map-brooklyn.png);
+			background-image: url(images/map-nyc.png);
 		}
 		.fixed & {
 			position: absolute;

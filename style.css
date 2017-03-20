@@ -1980,7 +1980,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     height: 100vh;
   }
 }
-.office-location.brooklyn {
+.office-location.nyc {
   background-color: #F7D7D6;
 }
 .office-location.oakland {
@@ -2014,13 +2014,13 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     z-index: 0;
   }
 }
-.office-map.brooklyn-map {
+.office-map.nyc-map {
   z-index: 1;
 }
-.os-no-webgl .office-map.brooklyn-map {
-  background-image: url(images/map-brooklyn.png);
+.os-no-webgl .office-map.nyc-map {
+  background-image: url(images/map-nyc.png);
 }
-.fixed .office-map.brooklyn-map {
+.fixed .office-map.nyc-map {
   position: absolute;
 }
 .office-map.oakland-map {
