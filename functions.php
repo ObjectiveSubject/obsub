@@ -98,16 +98,18 @@ add_action( 'widgets_init', 'obsub_widgets_init' );
 function obsub_scripts() {
 	$postfix = ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) ? '' : '.min';
 
+	// Styles
+	if ( is_page('contact') ) {
+		wp_enqueue_style( 'mapbox-style', 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' );
+	}
 	wp_enqueue_style( 'obsub-style', get_template_directory_uri() . "/style{$postfix}.css" );
 
-	wp_register_script( 'mapboxgl', get_template_directory_uri() . "/js/mapboxgl.js", array(), '', true );
-
+	// Scripts
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . "/js/modernizr.min.js", array(), '', false );
 	if ( is_page('contact') ) {
-		wp_enqueue_script( 'mapboxgl' );
+		wp_enqueue_script( 'mapboxgl', 'https://api.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js', array(), '', true );
 	}
 	wp_enqueue_script( 'app', get_template_directory_uri() . "/js/app{$postfix}.js", array(), '', true );
-
 	wp_localize_script( 'app',
         'osAdmin',
         array(

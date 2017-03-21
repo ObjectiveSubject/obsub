@@ -26,11 +26,12 @@ get_header(); ?>
 		</section>
 
 		<section id="office-locations" class="page-section office-locations clearfix" >
-			<div class="office-location brooklyn clearfix">
+			<div class="office-location nyc clearfix">
 				<div class="office-address">
 					<address class="h2 hug future-A">
-						81 prospect street<br/>
-						brooklyn, ny 11201
+						30 east 20th street<br/>
+						7th Floor<br/>
+						new york, ny 10003
 					</address>
 					<p class="directions push">
 						<em>Directions</em><br/>
@@ -39,7 +40,8 @@ get_header(); ?>
 						2 and 3 to Clark St
 					</p>
 				</div>
-				<div id="brooklyn-map" class="office-map brooklyn-map"></div>
+				<div id="nyc-map" class="office-map nyc-map"></div>
+				<div id="nyc-marker" class="map-marker" aria-hidden="true"></div>
 			</div>
 			<div class="office-location oakland clearfix">
 				<div class="office-address">
@@ -56,7 +58,8 @@ get_header(); ?>
 					</p>
 				</div>
 				<div id="oakland-map" class="office-map oakland-map"></div>
-			</div>
+				<div id="oakland-marker" class="map-marker" aria-hidden="true"></div>
+			</div>			
 		</section>
 
 		<section class="page-section outer-container push-triple">

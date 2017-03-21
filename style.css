@@ -1958,13 +1958,14 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .office-location {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .os-webgl .office-location {
     height: 100vh;
   }
 }
-.office-location.brooklyn {
+.office-location.nyc {
   background-color: #F7D7D6;
 }
 .office-location.oakland {
@@ -1998,20 +1999,16 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     z-index: 0;
   }
 }
-.office-map.brooklyn-map {
+.office-map.nyc-map {
   z-index: 1;
+  background-image: url(https://api.mapbox.com/styles/v1/objectivesubject/cijdnlkv400hpavm3hkpvu33m/static/-73.988658,40.738673,12.50,0.00,0.00/1280x1280?access_token=pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA);
 }
-.os-no-webgl .office-map.brooklyn-map {
-  background-image: url(images/map-brooklyn.png);
-}
-.fixed .office-map.brooklyn-map {
+.fixed .office-map.nyc-map {
   position: absolute;
 }
 .office-map.oakland-map {
   z-index: 0;
-}
-.os-no-webgl .office-map.oakland-map {
-  background-image: url(images/map-oakland.png);
+  background-image: url(https://api.mapbox.com/styles/v1/objectivesubject/cijdoxa6000f81mm2bsxybv8w/static/-122.265834,37.813318,12.50,0.00,0.00/1280x1280?access_token=pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA);
 }
 .fixed .office-map.oakland-map {
   position: fixed;
@@ -2046,6 +2043,25 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     -o-transform: translateY(-50%) translateX(-75%);
     transform: translateY(-50%) translateX(-75%);
   }
+}
+
+#nyc-marker {
+  background-color: #E24F4A;
+}
+
+#oakland-marker {
+  background-color: #1a7fc3;
+}
+
+.map-marker {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+.os-webgl .map-marker {
+  display: block;
 }
 
 .page-nav {

@@ -17243,13 +17243,14 @@ return function (global, window, document, undefined) {
 		$offices = $('.office-locations');
 		mapboxgl.accessToken = 'pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA';
 		
-		var brooklynMap = new mapboxgl.Map({
-		    container: 'brooklyn-map', // container id
+		var nycMap = new mapboxgl.Map({
+		    container: 'nyc-map', // container id
 		    style: 'mapbox://styles/objectivesubject/cijdnlkv400hpavm3hkpvu33m', //stylesheet location
-		    center: [-73.987472, 40.700862],
+		    center: [-73.988658, 40.738673],
 		    zoom: 12.5,
 		    minZoom: 12.5,
 		});
+		nycMap.scrollZoom.disable();
 
 		var oaklandMap = new mapboxgl.Map({
 		    container: 'oakland-map', // container id
@@ -17258,6 +17259,17 @@ return function (global, window, document, undefined) {
 		    zoom: 12.5,
 		    minZoom: 12.5,
 		});
+		oaklandMap.scrollZoom.disable();
+
+		var nycMarker = document.getElementById('nyc-marker');
+		new mapboxgl.Marker( nycMarker, { offset: [ -10, -10 ] } )
+			.setLngLat([-73.988658, 40.738673])
+			.addTo(nycMap);
+
+		var oaklandMarker = document.getElementById('oakland-marker');
+		new mapboxgl.Marker( oaklandMarker, { offset: [ -10, -10 ] } )
+			.setLngLat([-122.2658341, 37.8133177])
+			.addTo(oaklandMap);
 
 		initSizes();
 		
@@ -17269,9 +17281,9 @@ return function (global, window, document, undefined) {
 		winHeight 	= $window.height();
 		mediaSize 	= OS.getMediaSize();
 		officesTop 	= $offices.offset().top;
-		toggleMapY	= $('.brooklyn .office-address').offset().top;
+		toggleMapY	= $('.nyc .office-address').offset().top;
 		unFixedY	= $('.office-location.oakland').offset().top;
-		$topMap		= $(brooklynMap.getCanvas());
+		$topMap		= $('#nyc-map');//$(nycMap.getCanvas());
 	}
 
 	function onScroll() {
@@ -17286,7 +17298,8 @@ return function (global, window, document, undefined) {
 					.addClass('fixed')
 					.removeClass('un-fixed');
 				$topMap.velocity({
-					translateY: distance + 'px'
+					translateY: distance + 'px',
+					translateZ: 0
 				}, 0);
 
 			} else if ( scrollTop >= unFixedY ) {
@@ -17294,12 +17307,14 @@ return function (global, window, document, undefined) {
 					.addClass('un-fixed')
 					.removeClass('fixed');
 				$topMap.velocity({
-					translateY: '100vh'
+					translateY: '100vh',
+					translateZ: 0
 				}, 0);
 			} else {
 				$offices.removeClass('fixed un-fixed');
 				$topMap.velocity({
-					translateY: '0'
+					translateY: '0',
+					translateZ: 0
 				}, 0);
 			}
 
