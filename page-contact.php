@@ -16,7 +16,7 @@ get_header(); ?>
 						<h1 class="page-title">Why not say hi?</h1>
 						<h3 class="page-subtitle">We work on both coasts of the United States to make smart design happen.</h3>
 						<h2 class="future-A page-subtitle">
-							718.801.8075<br/>
+							212.863.9194<br/>
 							<a href="mailto:info@objectivesubject.com" class="text-color-link">info@objectivesubject.com</a>
 						</h2>
 					</div>
