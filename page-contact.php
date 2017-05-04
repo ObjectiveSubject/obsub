@@ -35,9 +35,9 @@ get_header(); ?>
 					</address>
 					<p class="directions push">
 						<em>Directions</em><br/>
-						F to York St,<br/>
-						A and C to High St,<br/>
-						2 and 3 to Clark St
+						N, Q, R, W, 4, 6<br/>
+						to 23rd St,<br/>
+						or Union Square
 					</p>
 				</div>
 				<div id="nyc-map" class="office-map nyc-map"></div>
