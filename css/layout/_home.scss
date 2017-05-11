@@ -3,6 +3,12 @@
 	background-color: $light_gray;
 }
 
+.home .page-title {
+	@include media($screen-lg){
+		font-size: 3.4rem;
+	}
+}
+
 .home .page-subtitle {
 	@include media($screen-md){
 		width: 59%;
@@ -38,9 +44,7 @@
 	}
 
 	.inner-container {
-		border-top: 1px solid $medium_gray;
 		position: relative;
-		padding-top: $leading;
 	}
 
 	em {
@@ -48,7 +52,7 @@
 		@include media($screen-md) {
 			display: block;
 			position: absolute;
-			top: 38px;
+			top: 1rem;
 			left: -35px;
 		}
 	}

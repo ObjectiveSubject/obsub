@@ -669,9 +669,9 @@ textarea {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #999C98;
   border: 0;
-  height: 2px;
+  height: 1px;
   margin: 2em 0;
   width: 100%;
 }
@@ -875,6 +875,10 @@ mark, ins {
 small,
 .small {
   font-size: 75%;
+}
+
+.v-align-super {
+  vertical-align: super;
 }
 
 big,
@@ -1719,6 +1723,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   background-color: #F0F0EE;
 }
 
+@media screen and (min-width: 960px) {
+  .home .page-title {
+    font-size: 3.4rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .home .page-subtitle {
     width: 59%;
@@ -1759,9 +1769,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   }
 }
 .ctas .inner-container {
-  border-top: 1px solid #999C98;
   position: relative;
-  padding-top: 1.5rem;
 }
 .ctas em {
   display: none;
@@ -1770,7 +1778,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .ctas em {
     display: block;
     position: absolute;
-    top: 38px;
+    top: 1rem;
     left: -35px;
   }
 }

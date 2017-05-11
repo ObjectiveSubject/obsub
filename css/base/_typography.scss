@@ -20,7 +20,7 @@ textarea {
 hr {
 	background-color: $color_background_hr;
 	border: 0;
-	height: 2px;
+	height: 1px;
 	margin: 2em 0;
 	width: 100%;
 }
@@ -202,6 +202,10 @@ mark, ins {
 small,
 .small {
 	font-size: 75%;
+}
+
+.v-align-super {
+	vertical-align: super;
 }
 
 big,
