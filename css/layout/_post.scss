@@ -79,6 +79,13 @@
 			background: #FFFF00;
 			color: #565656;
 		}
+		.transit-center & {
+			background: #5E29AC;
+			color: #FFFFFF;
+			p{
+				max-width: 63.624rem;
+			}
+		}
 		p {
 			font-size: rem(24);
 			line-height: rem(30);
