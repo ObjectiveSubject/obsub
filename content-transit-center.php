@@ -41,7 +41,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>Objective Subject’s system and website are the foundation for our communications. With it, TransitCenter channels a clear, cohesive and consistent message to cities, transit organizations and policy makers.<span class="quote">&rdquo;</span><br/><small>&mdash; David Bragdon, TransitCenter Executive Director</small></p>
 			</blockquote>
-			<img src="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?>" srcset="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?> 1x, <?php echo os_path('Boogie_Woogie@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
+			<img src="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?>" srcset="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?> 1x, <?php echo os_path('Boogie_Woogie@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008" alt="Broadway Boogie Woogie by Piet Mondrian">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Inspiration: Broadway Boogie Woogie by Piet Mondrian</div></figcaption>
 	</figure>
@@ -74,65 +74,114 @@
 			<h2 class="future-A">solution</h2>
 			<p>We created a strong visual identity and ‘house style’ for all future materials, and a style guide for consistent implementation. We gave TransitCenter a bold and ‘ownable’ distinctive purple for differentiation and gravitas. We created a bold and flexible logo which adapts to different contexts.</p>
 		</div>
-
 	</div>
 
-	<figure class="aligncenter" style="background-color:#fff;">
+	<figure  class="aligncenter" style="background-color:#fff; margin-top:4rem;">
+		<div class="outer-container">
+				<figure class="inner-container" style="border-top:5px solid #5E29AC; margin-bottom: 4.2rem; max-width: 90%; min-width:300px;">
+					<div id="logo-text" style="width:240px;padding-top: 16px; padding-right:39.25px;border-right: 5px solid #5E29AC; line-height: 0px;">
+						<img src="<?php echo os_path('TC-logo-text.svg', 'transitcenter') ?>" >
+					</div>
+					<div class="outer-container">
+					</div>
+				</figure>
+		</div>
+	</figure>
+	<div class="outer-container">
+		<figcaption class="inner-container">TransitCenter Wordmark</figcaption>
+	</div>
+
+	<div class="outer-container">
 		<div class="inner-container">
-			<p>some neat logo stuff</p>
+			<p>We extended the logo style into a full visual language, based on the streets of different American cities and taking cues from other transit features, and crafted the succinct tagline ‘We put transit in the center of cities’.</p>
+		</div>
+	</div>
+
+
+		<figure class="aligncenter">
+			<div class="inner-container">
+				<img src="<?php echo os_path('TC-streets.png', 'transitcenter') ?>"  srcset="<?php echo os_path('TC-streets.png', 'transitcenter') ?> 1x, <?php echo os_path('TC-streets@2x.png', 'transitcenter') ?> 2x"/>
+			</div>
+			<div class="outer-container">
+				<figcaption class="inner-container">TransitCenter Avitars</figcaption>
+			</div>
+		</figure>
+
+
+		<div class="outer-container">
+			<div class="inner-container">
+				<p>We elevated the design of TransitCenter’s influential research reports and worked with an illustrator to bring the ‘human impact’ of transit to life.</p>
+			</div>
 		</div>
 
+
+		<figure class="os-slideshow-container">
+			<div id="bps-billboard-dots"></div>
+			<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
+				<li>
+					<img src="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-COverBig@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
+					<figcaption class="outer-container">Illustration by Max Halton for Bus Report publication 2016</figcaption>
+				</li>
+				<li>
+					<img src="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-spot1@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
+					<figcaption class="outer-container">Illustration by Pete Gamlen for Uber Fact Sheet 2016</figcaption>
+				</li>
+				<li>
+					<img src="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Lesson3@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
+					<figcaption class="outer-container">Illustration by Adam Avery for A Bid for Better Transit publication 2017</figcaption>
+				</li>
+			</ul>
+			<?php os_slide_nav("bps-billboard-nav"); ?>
+		</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p>The visual identity system can be applied to publications created with partners, to a greater or lesser degree depending on the relationship.</p>
+		</div>
+	</div>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('TC-PublicationCovers.jpg', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-PublicationCovers.jpg', 'transitcenter') ?> 1x, <?php echo os_path('TC-PublicationCovers@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
+		<div class="outer-container">
+			<figcaption class="inner-container">TransitCenter Publications</figcaption>
+		</div>
 	</figure>
 
-	<figure class="os-slideshow-container">
-		<div id="oakland-website-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>City of Oakland Homepage</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Landing Page</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Parks and Recreation</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Terminal page</figcaption>
-			</li>
-		</ul>
-		<?php os_slide_nav("oakland-website-nav"); ?>
+	<figure class="alignnone">
+		<div class="outer-container">
+			<figcaption class="inner-container" style="background-color:white; color:pink;">ALL TRANSPORTATION IS LOCAL</figcaption>
+		</div>
+		<div class="outer-container">
+			<figcaption class="inner-container">TransitCenter Stationery</figcaption>
+		</div>
+	</figure>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('TC-Stationery.jpg', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-Stationery.jpg', 'transitcenter') ?> 1x, <?php echo os_path('TC-Stationery@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
+		<div class="outer-container">
+			<figcaption class="inner-container">TransitCenter Stationery</figcaption>
+		</div>
 	</figure>
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
-			<p>In this same spirit of open development, the portfolio library is publicly available, along with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity.</p>
+			<p>The Brand Guidelines give TransitCenter staff the guidance they need to ensure the visual identity is implemented consistently: crucial to ensuring that the impact of the brand is felt at every opportunity and core to supporting their strategic vision.</p>
 		</div>
 	</div>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('TC-BrandMockup.jpg', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-BrandMockup.jpg', 'transitcenter') ?> 1x, <?php echo os_path('TC-BrandMockup@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
+		<div class="outer-container">
+			<figcaption class="inner-container">TransitCenter Brand Guidelines</figcaption>
+		</div>
+	</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p>	We redesigned the website to demonstrate TransitCenter’s voice in the transportation world and expose the most important content.</p>
+		</div>
+	</div>
+
 
 	<figure class="os-slideshow-container">
 		<div id="oakland-toolkit-dots"></div>
@@ -141,37 +190,35 @@
 				<div class="browser-bar"></div>
 				<div class="browser-window">
 					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+						<img src="<?php echo os_path('TC-Homepage-.png', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Homepage-.png', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Homepage-@2x.png', 'transitcenter'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption>City of Oakland Design Toolkit</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
 				<div class="browser-window">
 					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+						<img src="<?php echo os_path('TC-Publications-page.png', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Publications-page.png', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Publications-page-@2x.png', 'transitcenter'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption>Toolkit – Visual Identity</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
 				<div class="browser-window">
 					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
+						<img src="<?php echo os_path('TC-Team.png', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Team.png', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Team-@2x.png', 'transitcenter'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption>Toolkit – Pattern Portfolio</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
+		<figcaption>TransitCenter Blog Page</figcaption>
 	</figure>
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<p>We continue to support the City as it improves the quality of its visual communication.</p>
-			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p>The live feed of news items, centered around the bold white-on-purple line knits together a consistent narrative around the commitment to better transit.</p>
+			<p class="h2 future-A"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 
