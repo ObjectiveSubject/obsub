@@ -17411,14 +17411,14 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
-/* 
+/*
  * Tree Slider
  */
 
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
-			
+
 		$('.slider-input').each(function(){
 			var $input = $(this),
 				$sliderRow = $input.closest('.slider-row'),
@@ -17427,7 +17427,7 @@ return function (global, window, document, undefined) {
 
 			$input.on('input', function(e){
 				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
-				
+
 					var val = $input.val(),
 						width = $imgTop.width(),
 						height = $imgTop.height(),
