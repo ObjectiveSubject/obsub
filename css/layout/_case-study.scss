@@ -34,6 +34,13 @@
 		}
 	}
 
+	.boston-public-schools & {
+		color: $hester_black;
+		&:hover {
+			color: $hester_black;
+		}
+	}
+
 	.icon {
 		font-size: 1.25em;
 		transition: all 250ms ease;
@@ -56,6 +63,12 @@
 		color: $boston_green;
 		&:hover {
 			color: darken($boston_green, 15%);
+		}
+	}
+	.hester-street & {
+		color: $hester_black;
+		&:hover {
+			color: darken($hester_black, 15%);
 		}
 	}
 	.localdata & {

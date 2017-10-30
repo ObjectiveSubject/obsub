@@ -218,6 +218,19 @@
             }
         }
     }
+    .hester-street & {
+        li.slick-active button {
+            background: $hester_black;
+            color: #fff;
+        }
+        button {
+            border-color: $hester_black;
+            color: #fff;
+            &:hover {
+                background: $hester_black;
+            }
+        }
+    }
 }
 
 .os-slideshow-container {
@@ -286,6 +299,12 @@
             color: $boston_green;
             &:hover {
                 color: $boston_dark_green;
+            }
+        }
+        .boston-public-schools & {
+            color: $hester_black;
+            &:hover {
+                color: $hester_black;
             }
         }
     }
