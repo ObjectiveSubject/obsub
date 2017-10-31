@@ -226,7 +226,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="h2 future-A inner-container"><a href="http://www.discoverbps.org/" class="cta-link" target="_blank">discoverbps.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h2 future-A inner-container"><a href="https://discover.bostonpublicschools.org" class="cta-link" target="_blank">discover.bostonpublicschools.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
 </section>
