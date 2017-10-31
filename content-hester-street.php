@@ -86,16 +86,14 @@
 
 	</div>
 
-	<figure class="alignnone push-triple" style="background-color: #000;height:72vw;">
+	<figure class="alignnone push-triple" style="background-color: #000;height:49vw;">
 		<div class="outer-container gt-america"
 				 style="color: white;
-						    height: 100%;
 						    line-height: .9em;
-						    font-size: 10vw;
-						    max-width: 99vw;
-
-						    padding-top: 22vw;">
-				WHERE THE PEOPLE SHAPE <br>
+						    font-size: 6vw;
+						    max-width: 63vw;
+						    padding-top: 14vw;">
+				WHERE THE<br> PEOPLE SHAPE <br>
 				<span class="txt-typing"
      		data-period="2000"
      		data-rotate="The city;NYC's culture;Cypress Hill;East Harlem;The Bronx"></span>
