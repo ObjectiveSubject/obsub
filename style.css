@@ -398,6 +398,18 @@ th {
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: "GT-America-Extended-Black";
+  src: url("fonts/GT-America-Extended-Black.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Extended-Black.otf") format("opentype"), url("fonts/GT-America-Extended-Black.woff") format("woff"), url("fonts/GT-America-Extended-Black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+.gt-america {
+  font-family: "GT-America-Extended-Black", monospace;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+}
+
 .future-A {
   font-family: "FutureAMedium", "Futura", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -2238,6 +2250,32 @@ img.logotype {
   margin-top: 8%;
 }
 
+svg.hs-wordmark {
+  background-color: #000;
+  fill: #fff;
+  padding: 132px 168px;
+  width: 100%;
+  animation: cycle-bg-color 25s ease-in-out 3s infinite;
+}
+
+@keyframes cycle-bg-color {
+  0% {
+    background-color: #000;
+    fill: #fff;
+  }
+  25% {
+    background-color: #aebd31;
+    fill: #fff;
+  }
+  50% {
+    background-color: #3366cc;
+    fill: #fff;
+  }
+  75% {
+    background-color: #ff685d;
+    fill: #fff;
+  }
+}
 .site-footer {
   position: relative;
   padding-top: 6rem;
