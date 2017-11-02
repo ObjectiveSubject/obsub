@@ -16640,6 +16640,25 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
+/*
+ * Tree Slider
+ */
+
+(function( $, window, undefined ){
+
+	$(document).ready(function(){
+
+		$('.fade-left').each(function(){
+			var element = $(this);
+			
+
+
+		});
+
+	});
+
+})(jQuery, window);
+
 /* 
  * contact form
  */

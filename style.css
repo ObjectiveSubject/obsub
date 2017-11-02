@@ -28,6 +28,16 @@ html {
 
 /* Base
 ----------------------------------------------- */
+.fade-each-left > * {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.fade-each-left > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @-webkit-keyframes cycle {
   0% {
     opacity: 0;
@@ -627,7 +637,7 @@ table th[class*="col-"] {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 0.05469rem;
+  font-size: 0.0546875rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -1526,9 +1536,9 @@ body::before {
   .inner-container {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
     float: none;
     margin-right: 0;
   }
@@ -1540,9 +1550,9 @@ body::before {
   .inner-container {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 17.0596085997%;
     float: none;
     margin-right: 0;
   }
@@ -1799,9 +1809,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-title, .partners-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1811,9 +1821,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-title, .partners-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 17.0596085997%;
   }
   .partners-title:last-child, .partners-content:last-child {
     margin-right: 0;
@@ -1831,8 +1841,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content p {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
   }
   .partners-content p:last-child {
     margin-right: 0;
@@ -1840,8 +1850,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content ul {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
   }
   .partners-content ul:last-child {
     margin-right: 0;
@@ -1851,8 +1861,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content p {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
+    margin-right: 2.3576515979%;
+    width: 57.3509785009%;
   }
   .partners-content p:last-child {
     margin-right: 0;
@@ -1860,8 +1870,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content ul {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
   }
   .partners-content ul:last-child {
     margin-right: 0;
@@ -1871,8 +1881,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content p {
     float: left;
     display: block;
-    margin-right: 3.16844%;
-    width: 65.61052%;
+    margin-right: 3.1684356888%;
+    width: 65.6105214371%;
   }
   .partners-content p:last-child {
     margin-right: 0;
@@ -1880,8 +1890,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .partners-content ul {
     float: left;
     display: block;
-    margin-right: 3.16844%;
-    width: 31.22104%;
+    margin-right: 3.1684356888%;
+    width: 31.2210428741%;
   }
   .partners-content ul:last-child {
     margin-right: 0;
@@ -1906,9 +1916,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .alumni-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%;
-    margin-left: 8.5298%;
+    margin-right: 2.3576515979%;
+    width: 74.4105871005%;
+    margin-left: 8.5298042998%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -1918,9 +1928,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .alumni-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 17.05961%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-left: 17.0596085997%;
   }
   .alumni-content:last-child {
     margin-right: 0;
@@ -1939,7 +1949,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 @media screen and (min-width: 768px) {
   .recognition-content .reddot-img {
-    margin-left: 8.5298%;
+    margin-left: 8.5298042998%;
   }
 }
 .recognition-content li {
@@ -1949,8 +1959,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .recognition-content li {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
   }
   .recognition-content li:last-child {
     margin-right: 0;
@@ -1966,8 +1976,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   .recognition-content li {
     float: left;
     display: block;
-    margin-right: 3.57866%;
-    width: 48.21067%;
+    margin-right: 3.5786636068%;
+    width: 48.2106681966%;
   }
   .recognition-content li:last-child {
     margin-right: 0;
@@ -2657,8 +2667,8 @@ label.block {
   width: 0;
   height: 0;
   border-bottom: 8px solid #FFF;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+  border-left: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
 }
 .subscribe-form .input-row {
   height: 42px;
@@ -3517,8 +3527,8 @@ figcaption {
   .tile.layout-image-left .tile-image {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
   }
   .tile.layout-image-left .tile-image:last-child {
     margin-right: 0;
@@ -3528,8 +3538,8 @@ figcaption {
   .tile.layout-image-left .tile-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%;
   }
   .tile.layout-image-left .tile-content:last-child {
     margin-right: 0;
@@ -3539,8 +3549,8 @@ figcaption {
   .tile.layout-image-left .tile-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
   }
   .tile.layout-image-left .tile-content:last-child {
     margin-right: 0;
@@ -3550,9 +3560,9 @@ figcaption {
   .tile.layout-image-left.right-to-left .tile-content {
     float: right;
     display: block;
-    margin-left: 2.35765%;
-    width: 40.29137%;
-    margin-right: 8.5298%;
+    margin-left: 2.3576515979%;
+    width: 40.2913699012%;
+    margin-right: 8.5298042998%;
   }
   .tile.layout-image-left.right-to-left .tile-content:last-child {
     margin-left: 0;
@@ -3562,9 +3572,9 @@ figcaption {
   .tile.layout-image-left.right-to-left .tile-content {
     float: right;
     display: block;
-    margin-left: 2.35765%;
-    width: 31.76157%;
-    margin-right: 17.05961%;
+    margin-left: 2.3576515979%;
+    width: 31.7615656014%;
+    margin-right: 17.0596085997%;
   }
   .tile.layout-image-left.right-to-left .tile-content:last-child {
     margin-left: 0;
@@ -3574,8 +3584,8 @@ figcaption {
   .tile.layout-image-left.right-to-left .tile-image {
     float: right;
     display: block;
-    margin-left: 2.35765%;
-    width: 48.82117%;
+    margin-left: 2.3576515979%;
+    width: 48.821174201%;
   }
   .tile.layout-image-left.right-to-left .tile-image:last-child {
     margin-left: 0;
@@ -3585,8 +3595,8 @@ figcaption {
   .tile.layout-image-right .tile-image {
     float: right;
     display: block;
-    margin-left: 2.35765%;
-    width: 48.82117%;
+    margin-left: 2.3576515979%;
+    width: 48.821174201%;
   }
   .tile.layout-image-right .tile-image:last-child {
     margin-left: 0;
@@ -3596,9 +3606,9 @@ figcaption {
   .tile.layout-image-right .tile-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    margin-left: 8.5298%;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%;
+    margin-left: 8.5298042998%;
   }
   .tile.layout-image-right .tile-content:last-child {
     margin-right: 0;
@@ -3608,9 +3618,9 @@ figcaption {
   .tile.layout-image-right .tile-content {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 17.05961%;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
+    margin-left: 17.0596085997%;
   }
   .tile.layout-image-right .tile-content:last-child {
     margin-right: 0;
@@ -3620,8 +3630,8 @@ figcaption {
   .tile.layout-half.left {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
   }
   .tile.layout-half.left:last-child {
     margin-right: 0;
@@ -3631,9 +3641,9 @@ figcaption {
   .tile.layout-half.left .tile-content {
     float: left;
     display: block;
-    margin-right: 4.82916%;
-    width: 82.52847%;
-    margin-left: 17.47153%;
+    margin-right: 4.8291579146%;
+    width: 82.5284736809%;
+    margin-left: 17.4715263191%;
   }
   .tile.layout-half.left .tile-content:last-child {
     margin-right: 0;
@@ -3643,9 +3653,9 @@ figcaption {
   .tile.layout-half.left .tile-content {
     float: left;
     display: block;
-    margin-right: 4.82916%;
-    width: 65.05695%;
-    margin-left: 34.94305%;
+    margin-right: 4.8291579146%;
+    width: 65.0569473618%;
+    margin-left: 34.9430526382%;
   }
   .tile.layout-half.left .tile-content:last-child {
     margin-right: 0;
@@ -3655,8 +3665,8 @@ figcaption {
   .tile.layout-half.right {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
     margin-right: 0;
   }
   .tile.layout-half.right:last-child {
@@ -3667,8 +3677,8 @@ figcaption {
   .tile.layout-half.right .tile-content {
     float: left;
     display: block;
-    margin-right: 4.82916%;
-    width: 82.52847%;
+    margin-right: 4.8291579146%;
+    width: 82.5284736809%;
   }
   .tile.layout-half.right .tile-content:last-child {
     margin-right: 0;
@@ -3678,8 +3688,8 @@ figcaption {
   .tile.layout-half.right .tile-content {
     float: left;
     display: block;
-    margin-right: 4.82916%;
-    width: 65.05695%;
+    margin-right: 4.8291579146%;
+    width: 65.0569473618%;
   }
   .tile.layout-half.right .tile-content:last-child {
     margin-right: 0;

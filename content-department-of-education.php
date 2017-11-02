@@ -42,96 +42,51 @@
 			</blockquote>
 			<img src="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-skateboarding-NYC@2x.jpg', 'doe') ?> 2x" width="1600">
 		</div>
-		<figcaption class="outer-container"><div class="inner-container">Big Trees Trail at Joaquin Miller Park, Oakland (Photo credits: Greg Linhares / City of Oakland)</div></figcaption>
-	</figure>
-
-	<div class="outer-container">
-		<p class="inner-container">
-			<strong>A Symbol</strong><br/>
-			For many decades, a stylized oak tree has represented the city and its intertwined citizenry. In fact, the symbol has become so popular that many in the community embrace it to brand their store, organization, and <a href="https://www.flickr.com/photos/rebeccacbrown13/4935745171" target="_blank" class="cs-body-link">even bodies</a>. While such a wellspring of adoption is any community’s dream, this widespread use exposed the need to create a differentiated interpretation of the symbol, so it can be made clear when the government is communicating.
-		</p>
-		<p class="inner-container">In the past, the City never had a concerted approach to visual communication. The resulting cacophony of symbols across city departments did not connote the clarity and simplicity that should be the hallmark of any experience with a large organization. </p>
-	</div>
-
-	<figure class="aligncenter" style="background-color: white;">
-		<img src="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?>" srcset="<?php echo os_path('oakland-cacophony.png', 'oakland'); ?> 1x, <?php echo os_path('oakland-cacophony@2x.png', 'oakland'); ?> 2x" width="1193" height="200"/>
-		<!-- <figcaption>explanatory caption</figcaption> -->
+		<figcaption class="outer-container"><div class="inner-container">Skateboarding in New York City, 1965. (Photocredit: Bill Eppridge—Time & Life Pictures/Getty Images)</div></figcaption>
 	</figure>
 </section>
 
-<section id="process" class="page-section " style="background-color: #E4F1CF; padding-bottom: 50px;">
-	<figure class="alignnone hug">
+<section id="process" class="page-section " >
+
+	<div class="outer-container">
+		<h2 class="future-A inner-container push-triple">process</h2>
+		<div class="inner-container">
+			<p>We interviewed people across the NYC school community to build our evidence base, and quickly deduced the problem: head teachers across NYC are not prioritizing health and physical education in the school day, despite its benefits across grades and behavior.</p>
+			<p>Communicating the legitimacy and imperative of wellness education in the Office of School Wellness Programs’ visual communications became the chief objective. To create impact, capture the attention of key audiences, and communicate the core messages, we focused on the students, their actions and their outcomes. </p>
+		</div>
+	</div>
+
+	<!-- <figure class="alignnone hug">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
 			<figcaption class="inner-container">Artifacts from Oakland's Archives</figcaption>
 		</div>
-	</figure>
+	</figure> -->
 
-	<div class="outer-container">
-		<h2 class="future-A inner-container push-triple">process</h2>
-		<p class="inner-container">We first performed in-depth research and a far-reaching visual audit. Immersed in the City’s Archives, we traced the original use of the symbol to the early 1970s. Throughout its history, it has received few tweaks, and retains a special kind of beauty which we were keen to preserve. But with its high recognition and unique properties, there were still various issues with the mark, especially how it rendered in smaller contexts. We collaborated with type designer <a href="http://jesseragan.com" target="_blank" class="cs-body-link">Jesse Ragan</a> to treat the symbol as we would from a typeface glyph, to give it better optical legibility, especially on-screen and at small sizes.</p>
-		<!-- [ANIMATED EVOLUTION OF TREE GRAPHIC: .MOV ELLIOT PREPARED] -->
-	</div>
-
-	<figure class="oakland-tree">
-		<div class="labels outer-container">
-			<div class="inner-container">
-				<em class="pull-left text-muted" style="width: 50%; color: #376FFF; ">Before</em>
-				<em class="pull-right text-muted text-right" style="width: 50%; color: #376FFF; ">After</em>
-			</div>
-		</div>
-		<div class="slider-row oakland-tree-large">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="large top" width="640" height="438" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="large bottom" width="640" height="438" />
-			<div class="slider">
-				<div class="slider-track"></div>
-				<div class="slider-thumb"></div>
-				<input type="range" name="tree-slider-lg" class="slider-input tree-slider-lg" value="50" min="0" max="100">
-			</div>
-		</div>
-		<div class="slider-row oakland-tree-small">
-			<img src="<?php echo os_path('CoO-Tree2.svg', 'oakland'); ?>" class="small top" width="116" height="119" />
-			<img src="<?php echo os_path('CoO-Tree1.svg', 'oakland'); ?>" class="small bottom" width="116" height="119" />
-			<div class="slider">
-				<div class="slider-track"></div>
-				<div class="slider-thumb"></div>
-				<input type="range" name="tree-slider-sm" class="slider-input tree-slider-sm" value="50" min="0" max="100">
-			</div>
-		</div>
-	</figure>
-
-	<div class="outer-container">
-		<figcaption class="inner-container">Oakland’s tree</figcaption>
-		<p class="inner-container push-triple">As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue, to a rich range of complimentary hues, and created a typographic system that emphasizes clarity and lack of ornament.</p>
-	</div>
-
-	<figure class="aligncenter hug">
-		<img src="<?php echo os_path('CoO-Brochure-lowsrc.png', 'oakland') ?>" class="lazy-load" data-src="<?php echo os_path('CoO-Brochure.png', 'oakland'); ?>" data-src2x="<?php echo os_path('CoO-Brochure-@2x.png', 'oakland'); ?>" width="1025" height="690" />
+	<figure class="alignnone">
+		<img src="<?php echo os_path('DOE-interview.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-interview.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-interview@2x.jpg', 'doe') ?> 2x">
 		<div class="outer-container">
-			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
+			<figcaption class="inner-container">Lizzie interviewing Dan Marascia, PE Teacher; Courtland Elementary School</figcaption>
 		</div>
 	</figure>
-
-	<div class="outer-container push-triple">
-		<p class="inner-container">The City should be able to modulate its expression without always employing a blunt use of the logo. We created a pattern that, while related to the tree logo, grows it into a full root system, as complex and rich as the communities and network that support the city. This pattern can be applied to elements in overt or subtle ways, based on the context.</p>
-	</div>
 </section>
 
-<section class="page-section " style="background-color: #E0F3F2; padding-bottom: 100px">
-	<figure class="alignnone hug oakland-pattern"></figure>
-	<div class="outer-container">
-		<figcaption class="inner-container">Root system</figcaption>
-	</div>
-</section>
-
-<section id="solution" class="page-section " style="background-color: #E0F3F2; padding-bottom: 200px">
+<section id="solution" class="page-section " >
 
 	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A">solution</h2>
+			<p>We designed an identity which brands the result rather than the office. The wordmark logo Think—Move—Achieve— highlights the symbiotic relationship between learning to take care of one’s mind and body, and achieving personal and academic goals.</p>
 		</div>
-
 	</div>
+
+	<figure class="aligncenter" style="background-color:#fff; height:250px;width:100%;line-height:250px;">
+		<div class="outer-container fade-each-left active-on-inview" style="text-align:center;vertical-align:center">
+				<img style="max-width:30%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Think.svg', 'doe') ?>">
+				<img style="max-width:30%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Move.svg', 'doe') ?>">
+				<img style="max-width:37%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Achieve.svg', 'doe') ?>">
+		</div>
+	</figure>
 
 	<figure class="os-slideshow-container">
 		<div id="oakland-website-dots"></div>
