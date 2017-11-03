@@ -37,8 +37,8 @@
 
 	<figure class="alignnone">
 		<div class="parallax-container">
-			<blockquote class="parallax-node" data-speed-modifier="0.5">
-				<p><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
+			<blockquote class="parallax-node bleed" data-speed-modifier="0.5">
+				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-skateboarding-NYC@2x.jpg', 'doe') ?> 2x" width="1600">
 		</div>
@@ -56,13 +56,6 @@
 		</div>
 	</div>
 
-	<!-- <figure class="alignnone hug">
-		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
-		<div class="outer-container">
-			<figcaption class="inner-container">Artifacts from Oakland's Archives</figcaption>
-		</div>
-	</figure> -->
-
 	<figure class="alignnone">
 		<img src="<?php echo os_path('DOE-interview.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-interview.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-interview@2x.jpg', 'doe') ?> 2x">
 		<div class="outer-container">
@@ -71,7 +64,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section " >
+<section id="solution" class="page-section " style="padding-bottom:100px;">
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -80,102 +73,74 @@
 		</div>
 	</div>
 
-	<figure class="aligncenter" style="background-color:#fff; height:250px;width:100%;line-height:250px;">
-		<div class="outer-container fade-each-left active-on-inview" style="text-align:center;vertical-align:center">
-				<img style="max-width:30%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Think.svg', 'doe') ?>">
-				<img style="max-width:30%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Move.svg', 'doe') ?>">
-				<img style="max-width:37%;display:inline-block;padding:0 1vw;" src="<?php echo os_path('Achieve.svg', 'doe') ?>">
+	<figure class="aligncenter doe-wordmarks active-on-inview" data-offset="0.6">
+		<div class="outer-container">
+				<img style="display:inline-block;" src="<?php echo os_path('Think.svg', 'doe') ?>">
+				<img style="display:inline-block;" src="<?php echo os_path('Move.svg', 'doe') ?>">
+				<img style="display:inline-block;" src="<?php echo os_path('Achieve.svg', 'doe') ?>">
 		</div>
 	</figure>
 
-	<figure class="os-slideshow-container">
-		<div id="oakland-website-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-website-nav .prev", "nextArrow": "#oakland-website-nav .next", "appendDots": "#oakland-website-dots" }'>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Homepage-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Homepage-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>City of Oakland Homepage</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Landing-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Landing-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Landing Page</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Parks-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Parks-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Parks and Recreation</figcaption>
-			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-Terminal-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-Terminal-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Terminal page</figcaption>
-			</li>
-		</ul>
-		<?php os_slide_nav("oakland-website-nav"); ?>
+	<div class="outer-container">
+		<figcaption class="inner-container">Think—Move—Achieve— Wordmark</figcaption>
+	</div>
+
+	<div class="outer-container push-triple">
+		<p class="inner-container">The line emphasizes the continuum between all three elements and therefore the holistic nature of wellness. This is supported by the graphic pattern to reinforce the identity.</p>
+	</div>
+
+
+	<figure class="aligncenter">
+		<img src="<?php echo os_path('DOE-Poster-Mock-ups.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Poster-Mock-ups.png', 'doe') ?> 1x, <?php echo os_path('DOE-Poster-Mock-ups@2x.png', 'doe') ?> 2x" width="1200" height="797">
+		<div class="outer-container">
+			<figcaption class="inner-container">Think—Move—Achieve— Posters</figcaption>
+		</div>
 	</figure>
 
-	<div class="outer-container">
+	<div class="outer-container push-triple" style="padding-bottom: 60px;">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
-			<p>In this same spirit of open development, the portfolio library is publicly available, along with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity.</p>
+			<p>We expanded the NYC Department of Education’s color palette, and used an approachable, confident and energetic typeface. </p>
 		</div>
 	</div>
 
 	<figure class="os-slideshow-container">
-		<div id="oakland-toolkit-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-1-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-1-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>City of Oakland Design Toolkit</figcaption>
+		<div id="doe-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#doe-billboard-nav .prev", "nextArrow": "#doe-billboard-nav .next", "appendDots": "#doe-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('DOE-wellness.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-wellness.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-wellness@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
 			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-2-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-2-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Toolkit – Visual Identity</figcaption>
+			<li>
+				<img src="<?php echo os_path('DOE-champs.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-champs.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-champs@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
 			</li>
-			<li class="browser">
-				<div class="browser-bar"></div>
-				<div class="browser-window">
-					<div class="browser-inner">
-						<img src="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?>" srcset="<?php echo os_path('CoO-PatternPortfolio-3-min.png', 'oakland'); ?> 1x, <?php echo os_path('CoO-PatternPortfolio-3-@2x-min.png', 'oakland'); ?> 2x" width="850" height="780">
-					</div>
-				</div>
-				<figcaption>Toolkit – Pattern Portfolio</figcaption>
+			<li>
+				<img src="<?php echo os_path('DOE-dance.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-dance.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-dance@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
+			</li>
+			<li>
+				<img src="<?php echo os_path('DOE-kickball.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-kickball.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-kickball@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
 			</li>
 		</ul>
-		<?php os_slide_nav("oakland-toolkit-nav"); ?>
+		<?php os_slide_nav("doe-billboard-nav"); ?>
+		<figcaption class="outer-container"><div class="inner-container">Photograph of students participating in wellness programs</div></figcaption>
+	</figure>
+
+
+	<div class="outer-container push-triple">
+		<div class="inner-container">
+			<p>We showed how student stories reach audiences, and prescribed the photo style to support the office’s objectives: focusing on the student, student learning and schools’ engagement with physical and health education programming.</p>
+		</div>
+	</div>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?> 1x, <?php echo os_path('DOE-Brand-Guidelines@2x.png', 'doe') ?> 2x">
+		<div class="outer-container">
+			<figcaption class="inner-container">DOE's Brand Guidelines</figcaption>
+		</div>
 	</figure>
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<p>We continue to support the City as it improves the quality of its visual communication.</p>
-			<p class="h2 future-A"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p>We refined the OSWP’s existing communications materials for clarity and brevity, and created Brand Guidelines to enable all staff to apply the identity consistently. </p>
+			<p class="h2 future-A"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 

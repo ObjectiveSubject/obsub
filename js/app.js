@@ -16602,7 +16602,7 @@ return function (global, window, document, undefined) {
     };
 }((window.jQuery || window.Zepto || window), window, document);
 }));
-/* 
+/*
  * active-on-inview
  */
 
@@ -16629,7 +16629,6 @@ return function (global, window, document, undefined) {
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
@@ -16640,6 +16639,7 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
+
 /*
  * Tree Slider
  */
