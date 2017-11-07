@@ -6,7 +6,6 @@
 .office-location {
 	position: relative;
 	width: 100%;
-	overflow: hidden;
 	@include media($screen-md) {
 		.os-webgl & {
 			height: 100vh;
@@ -47,14 +46,18 @@
 
 	&.nyc-map {
 		z-index: 1;
-		background-image: url(https://api.mapbox.com/styles/v1/objectivesubject/cijdnlkv400hpavm3hkpvu33m/static/-73.988658,40.738673,12.50,0.00,0.00/1280x1280?access_token=pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA);
+		.os-no-webgl & {
+			background-image: url(images/map-nyc.png);
+		}
 		.fixed & {
 			position: absolute;
 		}
 	}
 	&.oakland-map {
 		z-index: 0;
-		background-image: url(https://api.mapbox.com/styles/v1/objectivesubject/cijdoxa6000f81mm2bsxybv8w/static/-122.265834,37.813318,12.50,0.00,0.00/1280x1280?access_token=pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA);
+		.os-no-webgl & {
+			background-image: url(images/map-oakland.png);
+		}
 		.fixed & {
 			position: fixed;
 		}
@@ -85,18 +88,7 @@
 	}
 }
 
-#nyc-marker { background-color: $red; }
-#oakland-marker { background-color: $blue; }
-.map-marker {
-	display: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-	.os-webgl & {
-		display: block;
-	}
-}
+
 
 
 
