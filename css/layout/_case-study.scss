@@ -46,6 +46,13 @@
 		}
 	}
 
+	.boston-public-schools & {
+		color: $hester_black;
+		&:hover {
+			color: $hester_black;
+		}
+	}
+
 	.icon {
 		font-size: 1.25em;
 		transition: all 250ms ease;
@@ -74,6 +81,12 @@
 		color: $boston_green;
 		&:hover {
 			color: darken($boston_green, 15%);
+		}
+	}
+	.hester-street & {
+		color: $hester_black;
+		&:hover {
+			color: darken($hester_black, 15%);
 		}
 	}
 	.localdata & {
@@ -135,4 +148,32 @@ img.logotype {
 	float: right;
 	width: 64.84%;
 	margin-top: 8%;
+}
+
+//Hester Street Wordmark Animation
+svg.hs-wordmark{
+	background-color: #000;
+	fill:#fff;
+	padding: 132px 168px;
+	width:100%;
+	animation: cycle-bg-color 25s ease-in-out 3s infinite;
+}
+
+@keyframes cycle-bg-color{
+	0%{
+		background-color: #000;
+		fill: #fff;
+	}
+	25%{
+		background-color: #aebd31;
+		fill:#fff;
+	}
+	50%{
+		background-color: #3366cc;
+		fill:#fff;
+	}
+	75%{
+		background-color: #ff685d;
+		fill:#fff;
+	}
 }

@@ -408,6 +408,18 @@ th {
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: "GT-America-Extended-Black";
+  src: url("fonts/GT-America-Extended-Black.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Extended-Black.otf") format("opentype"), url("fonts/GT-America-Extended-Black.woff") format("woff"), url("fonts/GT-America-Extended-Black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+.gt-america {
+  font-family: "GT-America-Extended-Black", monospace;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+}
+
 .future-A {
   font-family: "FutureAMedium", "Futura", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1504,8 +1516,13 @@ body::before {
 .menu-item.cs-boston-public-schools a:hover {
   color: #0077C8;
 }
+<<<<<<< HEAD
 .menu-item.cs-claremont-graduate-university a:hover {
   color: #AF1D27;
+=======
+.menu-item.cs-hester-street a:hover {
+  color: #000000;
+>>>>>>> hesterstreet
 }
 
 .main-menu-scrim {
@@ -1714,6 +1731,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .localdata .page-section blockquote {
   background: #EE5A24;
   color: #FFEAC4;
+}
+.hester-street .page-section blockquote {
+  background: #000000;
+  color: #FFFFFF;
 }
 .boston-public-schools .page-section blockquote {
   background: #FFFF00;
@@ -2161,11 +2182,19 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .boston-public-schools .cta-link:hover {
   color: #0E7A09;
 }
+<<<<<<< HEAD
 .claremont-graduate-university .cta-link {
   color: #AF1D27;
 }
 .claremont-graduate-university .cta-link:hover {
   color: #580f14;
+=======
+.boston-public-schools .cta-link {
+  color: #000000;
+}
+.boston-public-schools .cta-link:hover {
+  color: #000000;
+>>>>>>> hesterstreet
 }
 .cta-link .icon {
   font-size: 1.25em;
@@ -2196,6 +2225,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .boston-public-schools .cs-body-link:hover {
   color: #047e00;
+}
+.hester-street .cs-body-link {
+  color: #000000;
+}
+.hester-street .cs-body-link:hover {
+  color: black;
 }
 .localdata .cs-body-link {
   color: #EE5A24;
@@ -2272,6 +2307,32 @@ img.logotype {
   margin-top: 8%;
 }
 
+svg.hs-wordmark {
+  background-color: #000;
+  fill: #fff;
+  padding: 132px 168px;
+  width: 100%;
+  animation: cycle-bg-color 25s ease-in-out 3s infinite;
+}
+
+@keyframes cycle-bg-color {
+  0% {
+    background-color: #000;
+    fill: #fff;
+  }
+  25% {
+    background-color: #aebd31;
+    fill: #fff;
+  }
+  50% {
+    background-color: #3366cc;
+    fill: #fff;
+  }
+  75% {
+    background-color: #ff685d;
+    fill: #fff;
+  }
+}
 .site-footer {
   position: relative;
   padding-top: 6rem;
@@ -2813,8 +2874,13 @@ figcaption {
 .boston-public-schools figcaption {
   color: #06CA00;
 }
+<<<<<<< HEAD
 .department-of-education figcaption {
   color: #ff7b00;
+=======
+.hester-street figcaption {
+  color: #000000;
+>>>>>>> hesterstreet
 }
 
 /* Browser Window
@@ -3145,6 +3211,7 @@ figcaption {
   background: #06CA00;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .claremont-graduate-university .slick-dots li.slick-active button {
   background: #AF1D27;
 }
@@ -3163,6 +3230,18 @@ figcaption {
 .department-of-education .slick-dots button:hover {
   background: #ff7b00;
 >>>>>>> doe
+=======
+.hester-street .slick-dots li.slick-active button {
+  background: #000000;
+  color: #fff;
+}
+.hester-street .slick-dots button {
+  border-color: #000000;
+  color: #fff;
+}
+.hester-street .slick-dots button:hover {
+  background: #000000;
+>>>>>>> hesterstreet
 }
 
 .os-slideshow-container {
@@ -3246,6 +3325,7 @@ figcaption {
   color: #0E7A09;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .claremont-graduate-university .os-slide-nav .text-arrow {
   color: #AF1D27;
 }
@@ -3258,6 +3338,13 @@ figcaption {
 .department-of-education .os-slide-nav .text-arrow:hover {
   color: #b35600;
 >>>>>>> doe
+=======
+.boston-public-schools .os-slide-nav .text-arrow {
+  color: #000000;
+}
+.boston-public-schools .os-slide-nav .text-arrow:hover {
+  color: #000000;
+>>>>>>> hesterstreet
 }
 
 .graphic-arrow {

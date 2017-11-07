@@ -218,7 +218,7 @@
             }
         }
     }
-<<<<<<< HEAD
+
     .claremont-graduate-university & {
         li.slick-active button {
             background: $claremont_red;
@@ -227,7 +227,10 @@
             border-color: $claremont_red;
             &:hover {
                 background: $claremont_red;
-=======
+              }
+          }
+      }
+
     .department-of-education & {
         li.slick-active button {
             background: $doe_orange;
@@ -236,7 +239,19 @@
             border-color: $doe_orange;
             &:hover {
                 background: $doe_orange;
->>>>>>> doe
+              }
+          }
+      }
+    .hester-street & {
+        li.slick-active button {
+            background: $hester_black;
+            color: #fff;
+        }
+        button {
+            border-color: $hester_black;
+            color: #fff;
+            &:hover {
+                background: $hester_black;
             }
         }
     }
@@ -310,14 +325,25 @@
                 color: $boston_dark_green;
             }
         }
+
         .claremont-graduate-university & {
             color: $claremont_red;
             &:hover {
                 color: darken($claremont_red, 15%);
+              }
+          }
+
         .department-of-education & {
             color: $doe_orange;
             &:hover {
                 color: darken($doe_orange, 15%);
+              }
+          }
+
+        .boston-public-schools & {
+            color: $hester_black;
+            &:hover {
+                color: $hester_black;
             }
         }
     }
@@ -340,19 +366,16 @@
         @include transition(all 300ms ease);
         .localdata & { background-color: $localdata_red; }
         .city-of-oakland & { background-color: $oakland_blue; }
-<<<<<<< HEAD
         .claremont-graduate-university & { background-color: $claremont_red; }
         .boston-public-schools & { background-color: $boston_green; }
         .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
         .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
         .claremont-graduate-university .os-slide-nav a:hover & { background-color: darken($claremont_red, 15%); }
-=======
         .department-of-education & { background-color: $doe_orange; }
         .boston-public-schools & { background-color: $boston_green; }
         .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
         .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
         .department-of-education .os-slide-nav a:hover & { background-color: darken($doe_orange, 15%); }
->>>>>>> doe
         .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
         .next & {
             right: 0;
