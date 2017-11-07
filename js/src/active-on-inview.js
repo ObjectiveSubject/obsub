@@ -1,4 +1,4 @@
-/* 
+/*
  * active-on-inview
  */
 
