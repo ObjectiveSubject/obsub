@@ -90,6 +90,11 @@
 				max-width: 63.624rem;
 			}
 		}
+		.department-of-education & {
+			background: $doe_green;
+			color: $doe_dark_green;
+
+		}
 		p {
 			font-size: rem(24);
 			line-height: rem(30);

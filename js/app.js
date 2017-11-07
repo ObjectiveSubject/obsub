@@ -16630,7 +16630,6 @@ return function (global, window, document, undefined) {
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
