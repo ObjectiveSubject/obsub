@@ -1052,6 +1052,11 @@ big,
   background-color: #F0F0EE;
 }
 
+.bg-transit-center {
+  background-color: #5E29AC;
+  color: white;
+}
+
 .bg-localdata {
   background-color: #FFA100;
   color: white;
@@ -1504,6 +1509,9 @@ body::before {
   -moz-transition-delay: 200ms;
   transition-delay: 200ms;
 }
+.menu-item.cs-transit-center a:hover {
+  color: #5E29AC;
+}
 .menu-item.cs-localdata a:hover {
   color: #FFA100;
 }
@@ -1740,9 +1748,18 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   background: #FFFF00;
   color: #565656;
 }
+<<<<<<< HEAD
 .department-of-education .page-section blockquote {
   background: #daffb1;
   color: #62be00;
+=======
+.transit-center .page-section blockquote {
+  background: #5E29AC;
+  color: #FFFFFF;
+}
+.transit-center .page-section blockquote p {
+  max-width: 63.624rem;
+>>>>>>> transitcenter
 }
 .page-section blockquote p {
   font-size: 1.5rem;
@@ -2865,8 +2882,13 @@ figcaption {
 .city-of-oakland figcaption {
   color: #376FFF;
 }
+<<<<<<< HEAD
 .claremont-graduate-university figcaption {
   color: #AF1D27;
+=======
+.transit-center figcaption {
+  color: #5E29AC;
+>>>>>>> transitcenter
 }
 .localdata figcaption {
   color: #EE5A24;
@@ -4129,6 +4151,7 @@ figcaption {
 .parallax-container {
   overflow: hidden;
   position: relative;
+  max-height: 100vh;
 }
 
 .parallax-bg {

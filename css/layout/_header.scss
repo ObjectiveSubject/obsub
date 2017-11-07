@@ -264,7 +264,10 @@
         }
     }
 
-    &.cs-localdata a:hover {
+  &.cs-transit-center a:hover {
+      color: $transit_purple;
+    }
+  &.cs-localdata a:hover {
 		color: $localdata_orange;
 	}
 	&.cs-city-of-oakland a:hover {
@@ -276,12 +279,16 @@
 	&.cs-boston-public-schools a:hover {
 		color: $boston_blue;
 	}
+<<<<<<< HEAD
   &.cs-claremont-graduate-university a:hover {
     color: $claremont_red;
   }
   &.cs-hester-street a:hover {
     color: $hester_black;
   }
+=======
+
+>>>>>>> transitcenter
 }
 
 .main-menu-scrim {
