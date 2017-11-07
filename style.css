@@ -28,6 +28,16 @@ html {
 
 /* Base
 ----------------------------------------------- */
+.fade-each-left > * {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.fade-each-left > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @-webkit-keyframes cycle {
   0% {
     opacity: 0;
@@ -1488,6 +1498,9 @@ body::before {
 .menu-item.cs-city-of-oakland a:hover {
   color: #4EBB25;
 }
+.menu-item.cs-department-of-education a:hover {
+  color: #ff7b00;
+}
 .menu-item.cs-boston-public-schools a:hover {
   color: #0077C8;
 }
@@ -1705,6 +1718,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .boston-public-schools .page-section blockquote {
   background: #FFFF00;
   color: #565656;
+}
+.department-of-education .page-section blockquote {
+  background: #daffb1;
+  color: #62be00;
 }
 .page-section blockquote p {
   font-size: 1.5rem;
@@ -2132,6 +2149,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .city-of-oakland .cta-link:hover {
   color: #003ad0;
 }
+.department-of-education .cta-link {
+  color: #ff7b00;
+}
+.department-of-education .cta-link:hover {
+  color: #994a00;
+}
 .boston-public-schools .cta-link {
   color: #06CA00;
 }
@@ -2161,6 +2184,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .city-of-oakland .cs-body-link:hover {
   color: #0041ea;
+}
+.department-of-education .cs-body-link {
+  color: #ff7b00;
+}
+.department-of-education .cs-body-link:hover {
+  color: #b35600;
 }
 .boston-public-schools .cs-body-link {
   color: #06CA00;
@@ -2784,6 +2813,9 @@ figcaption {
 .boston-public-schools figcaption {
   color: #06CA00;
 }
+.department-of-education figcaption {
+  color: #ff7b00;
+}
 
 /* Browser Window
  * -----------------------------------------------------------*/
@@ -3112,6 +3144,7 @@ figcaption {
 .boston-public-schools .slick-dots button:hover {
   background: #06CA00;
 }
+<<<<<<< HEAD
 .claremont-graduate-university .slick-dots li.slick-active button {
   background: #AF1D27;
 }
@@ -3120,6 +3153,16 @@ figcaption {
 }
 .claremont-graduate-university .slick-dots button:hover {
   background: #AF1D27;
+=======
+.department-of-education .slick-dots li.slick-active button {
+  background: #ff7b00;
+}
+.department-of-education .slick-dots button {
+  border-color: #ff7b00;
+}
+.department-of-education .slick-dots button:hover {
+  background: #ff7b00;
+>>>>>>> doe
 }
 
 .os-slideshow-container {
@@ -3202,11 +3245,19 @@ figcaption {
 .boston-public-schools .os-slide-nav .text-arrow:hover {
   color: #0E7A09;
 }
+<<<<<<< HEAD
 .claremont-graduate-university .os-slide-nav .text-arrow {
   color: #AF1D27;
 }
 .claremont-graduate-university .os-slide-nav .text-arrow:hover {
   color: #6d1218;
+=======
+.department-of-education .os-slide-nav .text-arrow {
+  color: #ff7b00;
+}
+.department-of-education .os-slide-nav .text-arrow:hover {
+  color: #b35600;
+>>>>>>> doe
 }
 
 .graphic-arrow {
@@ -3234,8 +3285,13 @@ figcaption {
 .city-of-oakland .graphic-arrow:before, .city-of-oakland .graphic-arrow:after {
   background-color: #376FFF;
 }
+<<<<<<< HEAD
 .claremont-graduate-university .graphic-arrow:before, .claremont-graduate-university .graphic-arrow:after {
   background-color: #AF1D27;
+=======
+.department-of-education .graphic-arrow:before, .department-of-education .graphic-arrow:after {
+  background-color: #ff7b00;
+>>>>>>> doe
 }
 .boston-public-schools .graphic-arrow:before, .boston-public-schools .graphic-arrow:after {
   background-color: #06CA00;
@@ -3246,8 +3302,13 @@ figcaption {
 .city-of-oakland .os-slide-nav a:hover .graphic-arrow:before, .city-of-oakland .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #0041ea;
 }
+<<<<<<< HEAD
 .claremont-graduate-university .os-slide-nav a:hover .graphic-arrow:before, .claremont-graduate-university .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #6d1218;
+=======
+.department-of-education .os-slide-nav a:hover .graphic-arrow:before, .department-of-education .os-slide-nav a:hover .graphic-arrow:after {
+  background-color: #b35600;
+>>>>>>> doe
 }
 .boston-public-schools .os-slide-nav a:hover .graphic-arrow:before, .boston-public-schools .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #0E7A09;
@@ -3756,6 +3817,46 @@ figcaption {
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+  opacity: 1;
+}
+
+.doe-wordmarks {
+  background-color: #fff;
+  height: 250px;
+  width: 100%;
+  line-height: 250px;
+}
+.doe-wordmarks div.outer-container {
+  text-align: center;
+  vertical-align: center;
+}
+.doe-wordmarks img {
+  padding: 0 1vw;
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.doe-wordmarks img:nth-child(1) {
+  max-width: 30%;
+}
+.doe-wordmarks img:nth-child(2) {
+  max-width: 30%;
+  transition-delay: 250ms;
+}
+.doe-wordmarks img:nth-child(3) {
+  max-width: 37%;
+  transition-delay: 500ms;
+}
+.doe-wordmarks.active img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 

@@ -9585,7 +9585,7 @@ OS.throttle = function (func, wait, options) {
     };
 
     Slick.prototype.getNavTarget = function() {
-        
+
         var _ = this,
             asNavFor = _.options.asNavFor;
 
@@ -11473,9 +11473,9 @@ OS.throttle = function (func, wait, options) {
         _.currentSlide = animSlide;
 
         _.setSlideClasses(_.currentSlide);
-        
+
         if ( _.options.asNavFor ) {
-            
+
             navTarget = _.getNavTarget();
             navTarget = navTarget.slick('getSlick');
 
@@ -16629,7 +16629,6 @@ return function (global, window, document, undefined) {
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
@@ -16642,6 +16641,7 @@ return function (global, window, document, undefined) {
 })(jQuery, window);
 
 /*
+
  * active-on-inview
  */
 
@@ -16686,9 +16686,10 @@ return function (global, window, document, undefined) {
 					fadeInOut()
 		});
 	});
+
 })(jQuery, window);
 
-/* 
+/*
  * contact form
  */
 
@@ -16712,7 +16713,7 @@ return function (global, window, document, undefined) {
 			$formFields.velocity("fadeIn", {duration: 400});
 			$('.input-row').first()
 				.velocity("fadeIn", {
-					duration: 400, 
+					duration: 400,
 					complete: function(){
 						$('#contact_name').focus();
 					}
@@ -16725,7 +16726,7 @@ return function (global, window, document, undefined) {
 			$relatedLink = $('a.gateway[data-value="'+value+'"]');
 
 		$('.subject-select').addClass("has-selection");
-		
+
 		if ( ! $relatedLink.hasClass('selected') ){
 			$('a.gateway').removeClass("selected");
 			$relatedLink.addClass("selected");
@@ -16783,14 +16784,14 @@ return function (global, window, document, undefined) {
 		});
 	}
 
-	/* Form submitting 
+	/* Form submitting
 	----------------------------------------------- */
 
 	$('#contact-form').submit(function(e){
 		e.preventDefault();
 		var $form = $(this),
 			postData = $(this).serialize();
-		
+
 		$('.contact-form').addClass("loading");
 		if ( !checkValidForm( $form ) ) {
 			postError(false, "Invalid field", "Please make sure your fields are valid.");
@@ -16798,7 +16799,7 @@ return function (global, window, document, undefined) {
 			return;
 		}
 
-		var settings = { 
+		var settings = {
 			url: osAdmin.ajaxUrl,
 			type: 'post',
 			dataType: 'json',
@@ -16833,7 +16834,7 @@ return function (global, window, document, undefined) {
 			}
 			$('.message.error').append('Please make sure to give us your name, email, and a brief message.');
 		});
-	
+
 		$form.find('input[type="hidden"]').each(function(){
 			if ( $(this).val() ) {
 				formValid = false;
@@ -16904,7 +16905,7 @@ return function (global, window, document, undefined) {
 
 
 
-/* 
+/*
  * Header
  */
 
@@ -16917,7 +16918,7 @@ return function (global, window, document, undefined) {
 
 		$('.page-section').each(function(){
 			var $node = $(this);
-			
+
 			init();
 			OS.window
 				.on("resize", init)
@@ -17206,7 +17207,7 @@ return function (global, window, document, undefined) {
 
 })(jQuery, window);
 
-/* 
+/*
  * Maps
  */
 
@@ -17224,7 +17225,7 @@ return function (global, window, document, undefined) {
 
 		$offices = $('.office-locations');
 		mapboxgl.accessToken = 'pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA';
-		
+
 		var nycMap = new mapboxgl.Map({
 		    container: 'nyc-map', // container id
 		    style: 'mapbox://styles/objectivesubject/cijdnlkv400hpavm3hkpvu33m', //stylesheet location
@@ -17254,7 +17255,7 @@ return function (global, window, document, undefined) {
 			.addTo(oaklandMap);
 
 		initSizes();
-		
+
 		$window.on("resize", initSizes);
 		$window.on("scroll", onScroll);
 	}
@@ -17309,7 +17310,7 @@ return function (global, window, document, undefined) {
 	}
 
 })(jQuery, window);
-/* 
+/*
  * Page nav
  */
 
@@ -17397,7 +17398,7 @@ return function (global, window, document, undefined) {
 
 })(jQuery, window);
 
-/* 
+/*
  * Slideshows
  */
 
@@ -17416,8 +17417,8 @@ return function (global, window, document, undefined) {
 
 			if ( slides.hasClass('center-mode') ) {
 				$.extend(settings, {
-					centerMode: true, 
-					centerPadding: "20px", 
+					centerMode: true,
+					centerPadding: "20px",
 					slidesToShow: 1,
 					responsive: [
 					    {
@@ -17451,7 +17452,7 @@ return function (global, window, document, undefined) {
 					settings.responsive = [breakpoint];
 				}
 			}
-			
+
 			slides.slick(settings);
 
 		});
@@ -17459,14 +17460,14 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
-/* 
+/*
  * Tree Slider
  */
 
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
-			
+
 		$('.slider-input').each(function(){
 			var $input = $(this),
 				$sliderRow = $input.closest('.slider-row'),
@@ -17475,7 +17476,7 @@ return function (global, window, document, undefined) {
 
 			$input.on('input', function(e){
 				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
-				
+
 					var val = $input.val(),
 						width = $imgTop.width(),
 						height = $imgTop.height(),

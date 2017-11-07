@@ -79,6 +79,10 @@
 			background: #FFFF00;
 			color: #565656;
 		}
+		.department-of-education & {
+			background: $doe_green;
+			color: $doe_dark_green;
+		}
 		p {
 			font-size: rem(24);
 			line-height: rem(30);
