@@ -16602,7 +16602,7 @@ return function (global, window, document, undefined) {
     };
 }((window.jQuery || window.Zepto || window), window, document);
 }));
-/* 
+/*
  * active-on-inview
  */
 
@@ -16616,6 +16616,7 @@ return function (global, window, document, undefined) {
 				winHeight,
 				nodeOffset,
 				nodeTop;
+
 
 			init();
 			OS.window
@@ -16640,6 +16641,7 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
+
 /*
  * active type
  */

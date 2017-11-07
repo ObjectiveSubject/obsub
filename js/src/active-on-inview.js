@@ -1,4 +1,4 @@
-/* 
+/*
  * active-on-inview
  */
 
@@ -12,6 +12,7 @@
 				winHeight,
 				nodeOffset,
 				nodeTop;
+
 
 			init();
 			OS.window
