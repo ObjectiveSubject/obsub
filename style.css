@@ -948,25 +948,25 @@ big,
   display: inline-block;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .hide-sm {
     display: none !important;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hide-md {
     display: none !important;
   }
 }
 
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   .hide-lg {
     display: none !important;
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .hide-xl {
     display: none !important;
   }
@@ -976,25 +976,25 @@ big,
   display: none !important;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .show-sm {
     display: block !important;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .show-md {
     display: block !important;
   }
 }
 
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   .show-lg {
     display: block !important;
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .show-xl {
     display: block !important;
   }
@@ -1059,6 +1059,11 @@ big,
 
 .bg-city-of-oakland {
   background-color: #4EBB25;
+  color: white;
+}
+
+.bg-claremont-graduate-university {
+  background-color: #AF1D27;
   color: white;
 }
 
@@ -1494,9 +1499,6 @@ body::before {
   -moz-transition-delay: 200ms;
   transition-delay: 200ms;
 }
-.menu-item.cs-transit-center a:hover {
-  color: #5E29AC;
-}
 .menu-item.cs-localdata a:hover {
   color: #FFA100;
 }
@@ -1506,8 +1508,14 @@ body::before {
 .menu-item.cs-boston-public-schools a:hover {
   color: #0077C8;
 }
+.menu-item.cs-transit-center a:hover {
+  color: #5E29AC;
+}
 .menu-item.cs-hester-street a:hover {
   color: #000000;
+}
+.menu-item.cs-claremont-graduate-university a:hover {
+  color: #AF1D27;
 }
 
 .main-menu-scrim {
@@ -1708,6 +1716,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .city-of-oakland .page-section blockquote {
   background: #003265;
   color: #376FFF;
+}
+.claremont-graduate-university .page-section blockquote {
+  background: #AF1D27;
+  color: #FFF;
 }
 .localdata .page-section blockquote {
   background: #EE5A24;
@@ -2160,6 +2172,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .boston-public-schools .cta-link:hover {
   color: #0E7A09;
 }
+.claremont-graduate-university .cta-link {
+  color: #AF1D27;
+}
+.claremont-graduate-university .cta-link:hover {
+  color: #580f14;
+}
 .boston-public-schools .cta-link {
   color: #000000;
 }
@@ -2201,6 +2219,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .localdata .cs-body-link:hover {
   color: #b73b0e;
+}
+.claremont-graduate-university .cs-body-link {
+  color: #AF1D27;
+}
+.claremont-graduate-university .cs-body-link:hover {
+  color: #6d1218;
 }
 
 .oakland-pattern {
@@ -2826,6 +2850,9 @@ figcaption {
 .transit-center figcaption {
   color: #5E29AC;
 }
+.claremont-graduate-university figcaption {
+  color: #AF1D27;
+}
 .localdata figcaption {
   color: #EE5A24;
 }
@@ -3174,6 +3201,15 @@ figcaption {
 .hester-street .slick-dots button:hover {
   background: #000000;
 }
+.claremont-graduate-university .slick-dots li.slick-active button {
+  background: #AF1D27;
+}
+.claremont-graduate-university .slick-dots button {
+  border-color: #AF1D27;
+}
+.claremont-graduate-university .slick-dots button:hover {
+  background: #AF1D27;
+}
 
 .os-slideshow-container {
   position: relative;
@@ -3261,6 +3297,12 @@ figcaption {
 .boston-public-schools .os-slide-nav .text-arrow:hover {
   color: #000000;
 }
+.claremont-graduate-university .os-slide-nav .text-arrow {
+  color: #AF1D27;
+}
+.claremont-graduate-university .os-slide-nav .text-arrow:hover {
+  color: #6d1218;
+}
 
 .graphic-arrow {
   display: none;
@@ -3287,6 +3329,9 @@ figcaption {
 .city-of-oakland .graphic-arrow:before, .city-of-oakland .graphic-arrow:after {
   background-color: #376FFF;
 }
+.claremont-graduate-university .graphic-arrow:before, .claremont-graduate-university .graphic-arrow:after {
+  background-color: #AF1D27;
+}
 .boston-public-schools .graphic-arrow:before, .boston-public-schools .graphic-arrow:after {
   background-color: #06CA00;
 }
@@ -3295,6 +3340,9 @@ figcaption {
 }
 .city-of-oakland .os-slide-nav a:hover .graphic-arrow:before, .city-of-oakland .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #0041ea;
+}
+.claremont-graduate-university .os-slide-nav a:hover .graphic-arrow:before, .claremont-graduate-university .os-slide-nav a:hover .graphic-arrow:after {
+  background-color: #6d1218;
 }
 .boston-public-schools .os-slide-nav a:hover .graphic-arrow:before, .boston-public-schools .os-slide-nav a:hover .graphic-arrow:after {
   background-color: #0E7A09;

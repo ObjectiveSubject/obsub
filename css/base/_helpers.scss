@@ -6,43 +6,43 @@
 .inline-block { display: inline-block; }
 
 .hide-sm {
-	@media (min-width: $screen-sm) {
+	@media (max-width: $screen-sm) {
 		display: none !important;
 	}
 }
 .hide-md {
-	@media (min-width: $screen-md) {
+	@media (max-width: $screen-md) {
 		display: none !important;
 	}
 }
 .hide-lg {
-	@media (min-width: $screen-lg) {
+	@media (max-width: $screen-lg) {
 		display: none !important;
 	}
 }
 .hide-xl {
-	@media (min-width: $screen-xl) {
+	@media (max-width: $screen-xl) {
 		display: none !important;
 	}
 }
 .show-xl, .show-sm, .show-md, .show-lg { display: none !important; }
 .show-sm {
-	@media (min-width: $screen-sm) {
+	@media (max-width: $screen-sm) {
 		display: block !important;
 	}
 }
 .show-md {
-	@media (min-width: $screen-md) {
+	@media (max-width: $screen-md) {
 		display: block !important;
 	}
 }
 .show-lg {
-	@media (min-width: $screen-lg) {
+	@media (max-width: $screen-lg) {
 		display: block !important;
 	}
 }
 .show-xl {
-	@media (min-width: $screen-xl) {
+	@media (max-width: $screen-xl) {
 		display: block !important;
 	}
 }
@@ -99,6 +99,10 @@
 }
 .bg-city-of-oakland {
 	background-color: $oakland_green;
+	color: white;
+}
+.bg-claremont-graduate-university {
+	background-color: $claremont_red;
 	color: white;
 }
 .text-muted {

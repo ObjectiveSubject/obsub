@@ -264,9 +264,6 @@
         }
     }
 
-  &.cs-transit-center a:hover {
-      color: $transit_purple;
-    }
   &.cs-localdata a:hover {
 		color: $localdata_orange;
 	}
@@ -276,8 +273,14 @@
 	&.cs-boston-public-schools a:hover {
 		color: $boston_blue;
 	}
+  &.cs-transit-center a:hover {
+      color: $transit_purple;
+    }
   &.cs-hester-street a:hover {
     color: $hester_black;
+  }
+  &.cs-claremont-graduate-university a:hover {
+    color: $claremont_red;
   }
 }
 

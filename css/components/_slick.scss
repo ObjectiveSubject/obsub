@@ -228,6 +228,18 @@
             color: #fff;
             &:hover {
                 background: $hester_black;
+              }
+         }
+    }
+    .claremont-graduate-university & {
+        li.slick-active button {
+            background: $claremont_red;
+        }
+        button {
+            border-color: $claremont_red;
+            &:hover {
+                background: $claremont_red;
+
             }
         }
     }
@@ -306,6 +318,12 @@
             &:hover {
                 color: $hester_black;
             }
+        }      
+        .claremont-graduate-university & {
+            color: $claremont_red;
+            &:hover {
+                color: darken($claremont_red, 15%);
+            }
         }
     }
 }
@@ -327,9 +345,11 @@
         @include transition(all 300ms ease);
         .localdata & { background-color: $localdata_red; }
         .city-of-oakland & { background-color: $oakland_blue; }
+        .claremont-graduate-university & { background-color: $claremont_red; }
         .boston-public-schools & { background-color: $boston_green; }
         .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
         .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
+        .claremont-graduate-university .os-slide-nav a:hover & { background-color: darken($claremont_red, 15%); }
         .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
         .next & {
             right: 0;
