@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FutureAMedium';
-    src: url('fonts/future_019-webfont.eot'); 
+    src: url('fonts/future_019-webfont.eot');
     src: url('fonts/future_019-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/future_019-webfont.woff') format('woff'),
          url('fonts/future_019-webfont.ttf') format('truetype'),
@@ -11,10 +11,10 @@
 
 @font-face {
   font-family: 'ArnhemPro';
-  src: url('fonts/ArnhemPro-Blond.eot?#iefix') format('embedded-opentype'),  
+  src: url('fonts/ArnhemPro-Blond.eot?#iefix') format('embedded-opentype'),
        url('fonts/ArnhemPro-Blond.otf')  format('opentype'),
-       url('fonts/ArnhemPro-Blond.woff') format('woff'), 
-       url('fonts/ArnhemPro-Blond.ttf')  format('truetype'), 
+       url('fonts/ArnhemPro-Blond.woff') format('woff'),
+       url('fonts/ArnhemPro-Blond.ttf')  format('truetype'),
        url('fonts/ArnhemPro-Blond.svg#ArnhemPro-Blond') format('svg');
   font-weight: 300;
   font-style: normal;
@@ -22,10 +22,10 @@
 
 @font-face {
   font-family: 'ArnhemPro';
-  src: url('fonts/ArnhemPro-SemiBold.eot?#iefix') format('embedded-opentype'),  
-       url('fonts/ArnhemPro-SemiBold.otf')  format('opentype'),  
-       url('fonts/ArnhemPro-SemiBold.woff') format('woff'), 
-       url('fonts/ArnhemPro-SemiBold.ttf')  format('truetype'), 
+  src: url('fonts/ArnhemPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ArnhemPro-SemiBold.otf')  format('opentype'),
+       url('fonts/ArnhemPro-SemiBold.woff') format('woff'),
+       url('fonts/ArnhemPro-SemiBold.ttf')  format('truetype'),
        url('fonts/ArnhemPro-SemiBold.svg#ArnhemPro-Bold') format('svg');
   font-weight: 600;
   font-style: normal;
@@ -34,15 +34,31 @@
 
 @font-face {
   font-family: 'ArnhemPro';
-  src: url('fonts/ArnhemPro-BlondItalic.eot?#iefix') format('embedded-opentype'),  
+  src: url('fonts/ArnhemPro-BlondItalic.eot?#iefix') format('embedded-opentype'),
        url('fonts/ArnhemPro-BlondItalic.otf')  format('opentype'),
-       url('fonts/ArnhemPro-BlondItalic.woff') format('woff'), 
-       url('fonts/ArnhemPro-BlondItalic.ttf')  format('truetype'), 
+       url('fonts/ArnhemPro-BlondItalic.woff') format('woff'),
+       url('fonts/ArnhemPro-BlondItalic.ttf')  format('truetype'),
        url('fonts/ArnhemPro-BlondItalic.svg#ArnhemPro-BlondItalic') format('svg');
   font-weight: 300;
   font-style: italic;
 }
 
+//used in Hester Street Banner
+@font-face {
+  font-family: "GT-America-Extended-Black";
+  src: url('fonts/GT-America-Extended-Black.eot?#iefix') format('embedded-opentype'),
+       url('fonts/GT-America-Extended-Black.otf')  format('opentype'),
+       url('fonts/GT-America-Extended-Black.woff') format('woff'),
+       url('fonts/GT-America-Extended-Black.ttf')  format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gt-america {
+  font-family: "GT-America-Extended-Black", monospace;
+  -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+}
 
 .future-A {
 	font-family: $font_heading;

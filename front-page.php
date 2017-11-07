@@ -15,10 +15,9 @@ get_header(); ?>
 			<div class="intro-content section-content">
 				<div class="outer-container">
 					<div class="inner-container">
-						<h1>For better-designed<br/>public services</h1>
+						<h1 class="page-title">We see a world with better communication, not just more information</h1>
 						<div class="page-subtitle">
-							<h3>Our public agencies can develop a culture and operational processes that create positive experiences to deliver on a host of benefits for society.</h3>
-							<h3>From visual communication to digital experiences and built environment: we want to help.</h3>
+							<h3>We improve how both the public and private sectors communicate, through a fusion of policy and design expertise. We create clear visual identities and digital experiences for governments, non-profits and innovative firms. <a href="<?php echo site_url('contact/'); ?>">Get in touch</a>.</h3>
 						</div>
 						<div class="ozy-video push">
 							<a href="http://www.ozy.com/video/play/better-logos-better-government/67599" target="_blank">
@@ -63,13 +62,16 @@ get_header(); ?>
 
 	<?php endforeach;  ?>
 
+	<?php get_template_part( 'content-ctas' ); ?>
+	<?php get_template_part( 'content-hr' ); ?>
+
 	<section id="former-clients" class="page-section former-clients">
 
 		<div class="outer-container">
 
 			<div class="inner-container">
 				<h2 class="future-A">our specialities extend across other industries</h2>
-				<p class="push">Beyond our focus on the design needs of the public sector, our experience extends to a varied clientele in terms of both sectors and industries.</p>
+				<p class="push">We also work with a host of non-profit and private sector organizations.</p>
 			</div>
 
 			<h2 class="future-A push-triple inner-container">media</h2>
@@ -77,11 +79,9 @@ get_header(); ?>
 				<li class="tile push-triple layout-image-right">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-nytimes.svg', 'home'); ?>" width="250" height="33"/></div>
-						<p class="push">We’ve worked with the Times to codify its design tools into a cogent set of rules and principles that can be applied by marketers, designers and advertisers who partner with The New York Times Brand. This brand book is leveraged both inside the organization and with outside groups to make every communication feel ‘Timesian.’</p>
-						<p class="push">We created an award-winning website for the Times’ travel product, Times Journeys, and continue to offer strategic and creative services to support the new ways one can Travel with The New York Times.</p>
-						<p class="push"><a href="http://nytimes.com/timesjourneys" target="_blank"><em>nytimes.com/timesjourneys</em></a></p>
-						<p class="push">More recently, alongside our partners at Sotheby’s Institute of Art, we designed a digital interface for the new School of The New York Times, nytEDU. We addressed content strategy, including sitemaps, wireframes and recommendations on program naming, and visual design to educate users on ways to Learn with The New York Times.</p>
-						<p class="push"><a href="http://nytedu.com" target="_blank"><em>nytedu.com</em></a></p>
+						<p class="push big">A toolkit to reinforce journalism’s most prestigious brand and align new services</p>
+						<p class="push">We worked with the Times to codify its design tools into a cogent set of principles and rules to make every communication feel more ‘Timesian’. Those inside the organization as well marketers, designers and advertisers which partner with The New York Times use this ‘brand book’ to reinforce the brand. We created an award-winning website for the travel product ‘Times Journeys’, and continue to offer strategic and creative services to support the new ways one can travel with The New York Times. <a href="http://nytimes.com/timesjourneys" target="_blank"><em>nytimes.com/timesjourneys</em></a></p>
+						<p class="push">Alongside our partners at Sotheby’s Institute of Art, we designed a digital interface for The New York Times’ new school, nytEDU. We focused on the user in both our visual design and when developing the content strategy – which included sitemaps, wireframes and program naming recommendations – ensuring users are aware of all the ways to learn with The New York Times. <a href="http://nytedu.com" target="_blank"><em>nytedu.com</em></a></p>
 					</div>
 					<div class="tile-image nyt push">
 						<img src="<?php echo os_path('nyt1.png', 'home'); ?>" srcset="<?php echo os_path('nyt1.png', 'home'); ?> 1x, <?php echo os_path('nyt1-@2x.png', 'home'); ?> 2x" width="493" height="330"/>
@@ -92,8 +92,8 @@ get_header(); ?>
 				<li class="tile push-triple layout-image-left right-to-left">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-ap.svg', 'home'); ?>" width="80" height="93" /></div>
-						<p class="push">The world’s largest news organization looked to Objective Subject to realize its master brand strategy, encapsulating the vision of ‘One AP’ across its global network of media channels and properties.</p>
-						<p class="push">We created a cohesive and bold visual identity that communicates the mission and values of the AP. We supported AP’s digital teams in the implementation of numerous online products, including AP Images and AP Archives.</p>
+						<p class="push big">A bright new brand for 21<span class="v-align-super small">st</span> Century journalism</p>
+						<p class="push">Objective Subject implemented the master brand strategy of the world’s largest news organization, unifying the ‘One AP’ identity across its global network of media channels and properties. Our team created a cohesive and bold visual identity which communicates the mission and values of the Associated Press. We supported AP’s digital teams in the consistent implementation of numerous products, including print, screen, online and the briefing room.</p>	
 					</div>
 					<div class="tile-image associated-press push">
 						<img src="<?php echo os_path('ap.png', 'home'); ?>" srcset="<?php echo os_path('ap.png', 'home'); ?> 1x, <?php echo os_path('ap-@2x.png', 'home'); ?> 2x" width="493" height="330" />
@@ -102,14 +102,15 @@ get_header(); ?>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-fa.svg', 'home'); ?>" width="180" height="71"/></div>
-						<p class="push">Objective Subject created a visual system to connote the authoritative, high-quality and direct qualities of the Foreign Affairs brand. We leveraged existing visual elements, including the iconic wordmark and light blue color, to maintain continuity with the publication’s rich history.</p>
-						<p class="push">Foreign Affairs also wanted to better define how to use its name, since it is both the title of its flagship publication and also the field-at-large. Emphasizing an affiliation with the publication, we conceived an alternate identity to complement the historic wordmark, one with a blue frame that crops off the edge of any piece of communication.</p>
+						<p class="push big">Continuity and alignment</p>
+						<p class="push">Objective Subject created a visual system to express the high-quality, authoritative and forthright nature of the Foreign Affairs brand. We built on existing visual elements, including the iconic wordmark and light blue color, to keep continuity with the publication’s rich history. Foreign Affairs also sought to define how better to use its name, since it is both the publication title and the field-at-large. We created an alternative identity which emphasizes an affiliation with the publication, and which complements the historic wordmark with an alternative color.</p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-cfr.svg', 'home'); ?>" width="150" height="72"/></div>
-						<p class="push">Founded in 1921, the exclusive Council on Foreign Relations has partnered with Objective Subject for more than eight years to implement and steward its identity program, in both print and digital contexts.</p>
+						<p class="push big">An august think-tank gets an understated brand</p>
+						<p class="push">The historical and exclusive Council on Foreign Relations partnered with Objective Subject for more than eight years for brand consultation, to oversee and implement its identity program in both print and digital contexts, and to develop a range of marketing, advertising and media materials including innovative and engaging infographics.</p>
 					</div>
 					<div class="clearfix"></div>
 					<div class="tile-image push">
@@ -123,8 +124,8 @@ get_header(); ?>
 				<li class="tile push-triple layout-image-right">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-bam.svg', 'home'); ?>" width="100" height="92"/></div>
-						<p class="push">The Brooklyn Academy of Music is an ambassador of cutting edge arts and music. Our design research found that would-be visitors struggled to find their way through the BAM campus and its many venues. We designed a visitor experience that seamlessly integrates BAM’s existing web platform and visual brand to help guests plan an evening around a BAM outing, from pre- dinner drinks to their subway ride home.</p>
-						<p class="push"><a href="http://bam.org/visit" target="_blank"><em>bam.org/visit</em></a></p>
+						<p class="push big">A digital hospitality experience</p>
+						<p class="push">The Brooklyn Academy of Music is a historical and progressive multi-arts venue, with an important development role in Brooklyn. Our design research found visitors struggling to find their way through the BAM campus and its many venues. Objective Subject designed a visitor experience that seamlessly integrated BAM’s existing web platform and visual brand to help guests plan an evening around a BAM outing, from pre- dinner drinks to their subway ride home. <a href="http://bam.org/visit" target="_blank"><em>bam.org/visit</em></a></p>
 					</div>
 					<div class="tile-image bam">
 						<div class="building building-1"></div>
@@ -136,22 +137,22 @@ get_header(); ?>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-orpheus.svg', 'home'); ?>" width="195" height="52"/></div>
-						<p class="push">Performing without a conductor, Orpheus Chamber Orchestra is one of the world’s foremost chamber orchestras. Its digital presence needed to both present its distinctive story as well as accomplish key business goals in ticket and subscription sales. The final solution layers various elements,bringing the vitality and emotion of the music to every user interaction.</p>
-						<p class="push"><a href="http://orpheusnyc.org" target="_blank"><em>orpheusnyc.org</em></a></p>
+						<p class="push big">A well-conducted digital presence</p>
+						<p class="push">Performing without a conductor, Orpheus is one of the world’s top chamber orchestras. Its digital presence needed both to present its distinctive story and accomplish key business goals in ticket and subscription sales. Objective Subject designed and built a website solution which layers different elements, bringing the vitality and emotion of Orpheus’ music to every user interaction. <a href="http://orpheusnyc.org" target="_blank"><em>orpheusnyc.org</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-nbr.svg', 'home'); ?>" width="250" height="53" /></div>
-						<p class="push">Since 1909, the National Board of Review has been New York City’s premier film awards organization, dedicated to the celebration and advancement of excellence in cinema. We were inspired by typography in early publications to develop a visual identity that is appropriately modern. Our work extends through a suite of materials, including a website, that recall the velvety and clubby feel of a projection room.</p>
-						<p class="push"><a href="http://nationalboardofreview.org"><em>nationalboardofreview.org</em></a></p>
+						<p class="push big">A club feel for cinema devotees</p>
+						<p class="push">Since 1909, the National Board of Review has been New York City’s premier film awards organization, dedicated to the celebration and advancement of excellence in cinema. We developed an appropriately modern visual identity, inspired by typography in their early publications. Our work extends through a suite of materials, including a website, that recall the velvety and clubby feel of a projection room. <a href="http://nationalboardofreview.org" target="_blank"><em>nationalboardofreview.org</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-left right-to-left">
 					<div class="tile-content">
 						<div><img src="<?php echo os_path('logo-gibney.svg', 'home'); ?>" width="250" height="136"/></div>
-						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand positioning and develop messaging to best communicate the breadth and depth of its programming as well as its future vision. Our work included designing and building a new website, and designing visual communications worthy of any major arts organization in NYC.</p>
-						<p class="push"><a href="http://gibneydance.org" target="_blank"><em>gibneydance.org</em></a></p>
+						<p class="push big">An elevated experience for a growing dance company</p>
+						<p class="push">In collaboration with Gina Gibney, Objective Subject helped the growing dance organization define its brand position and develop messages to best communicate the breadth and depth of its programming and future vision. Our work included designing and building a new website, and creating visual communications worthy of any major NYC arts organization. <a href="http://gibneydance.org" target="_blank"><em>gibneydance.org</em></a></p>
 					</div>
 					<div class="tile-image gibney push">
 						<img src="<?php echo os_path('gibney.png', 'home'); ?>" srcset="<?php echo os_path('gibney.png', 'home'); ?> 1x, <?php echo os_path('gibney-@2x.png', 'home'); ?> 2x" width="493" height="330" />
@@ -164,27 +165,22 @@ get_header(); ?>
 				<li class="tile push-triple layout-half left">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-guittard.svg', 'home'); ?>" width="180" height="68"/></div>
-						<p class="push">After nearly 150 years of making the best chocolate in the world, the Guittard Chocolate Company was looking for a way to unify its offering and leverage its reputation for quality and integrity across its branded communications.</p>
-						<p class="push">Our team conducted in-depth research with employees, partners, and customers, to identify key values and personality traits. We recommended the adoption of a master brand strategy, centered around the promise of 'Chocolate for Experts.' The corporate wordmark is derived from the founder Étienne Guittard’s signature. We leveraged the company’s navy blue for the master brand, supported by a palette of subtle, earthy and bright colors to denote the quality of the natural ingredients.</p>
-						<p class="push"><a href="http://guittard.com" target="_blank"><em>guittard.com</em></a></p>
+						<p class="push big">Chocolate for Experts</p>
+						<p class="push">After nearly 150 years of making the best chocolate in the world, the Guittard Chocolate Company was looking for a way to unify its brand across its communications and leverage its reputation for quality and integrity. Our team conducted in-depth research with employees, partners and customers to identify key values and brand personality traits. We recommended the adoption of a ‘master brand’ strategy, centered around the promise of 'Chocolate for Experts.' We created the corporate wordmark from founder Étienne Guittard’s signature, and used the company’s navy blue for the master brand, supported by a palette of subtle, earthy and bright colors to denote the quality of the natural ingredients. <a href="http://guittard.com" target="_blank"><em>guittard.com</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-half right">
 					<div class="tile-content push">
 						<div class="cmc-logo"><img src="<?php echo os_path('logo-carrmcclellan.svg', 'home'); ?>" width="250" height="21"/></div>
-						<p class="push">Carr McClellan is a full-service boutique firm with a strong track record for its clients, located throughout Northern California.</p>
-						<p class="push">The new positioning is captured in the brand strategy and reinforced by the new look: Carr McClellan is committed to advancing clients’ business goals with an approach that is effective, down-to-earth, and enthusiastic.</p>
-						<p class="push">The visual system we designed perfectly balances a modern approach, while still referencing the firm's strong heritage and persistent stability amidst a volatile industry and economy.</p>
-						<p class="push"><a href="http://carrmclellan.org" target="_blank"><em>carrmclellan.org</em></a></p>
+						<p class="push big">The spirit, and the letter<br class="show-lg"/>of the law</p>
+						<p class="push">Carr McClellan is a Northern Californian full-service boutique law firm. They sought a new visual system to convey their new brand positioning: a firm committed to advancing clients’ business goals with an effective, down-to-earth and enthusiastic approach. We designed a visual system which perfectly balanced modernity with the firm's strong heritage and persistent stability amidst a volatile economy and industry. <a href="http://carrmclellan.org" target="_blank"><em>carrmclellan.org</em></a></p>
 					</div>
 				</li>
 				<li class="tile push-triple layout-image-right">
 					<div class="tile-content push">
 						<div><img src="<?php echo os_path('logo-ws.svg', 'home'); ?>" width="250" height="52"/></div>
-						<p class="push">An undisputed leader in educational travel for nearly 50 years, WorldStrides offers a wide range of traveler experiences from elementary school trips to full-scale group itineraries for graduate students in MBA programs around the world.</p>
-						<p class="push">Our work involved robust content strategy to bring harmony across a disparate set of metadata. Our research and analysis determined that the individual trip, or itinerary, ought to be the key node around which all content is organized. We created a series of reusable content modules which are shared amongst itineraries, simplifying site maintenance, while creating unique and immersive experiences for the user.</p>
-						<p class="push">Since launching in November 2015, the results have been impressive, with a 50% jump in lead generation.</p>
-						<p class="push"><a href="http://worldstrides.com" target="_blank"><em>worldstrides.com</em></a></p>
+						<p class="push big">Education through travel</p>
+						<p class="push">A leader in educational travel for nearly 50 years, WorldStrides offers a wide range of traveler experiences, from elementary school trips to group itineraries for MBA graduate students around the world. Focusing on website user needs, we created a robust content strategy to harmonize disparate metadata. Our research and analysis showed that the individual trip or itinerary should be the key node around which all content is organized. We created a series of reusable content modules which are shared amongst itineraries, and which create unique and immersive experiences for the user as well as simplifying site maintenance. Since launching, lead generation has increased 50%. <a href="http://worldstrides.com" target="_blank"><em>worldstrides.com</em></a></p>
 					</div>
 					<div class="tile-image worldstrides push">
 						<img src="<?php echo os_path('Worldstrides1.png', 'home'); ?>" srcset="<?php echo os_path('Worldstrides1.png', 'home'); ?> 1x, <?php echo os_path('Worldstrides1-@2x.png', 'home'); ?> 2x" width="493" height="330" style="box-shadow: 0 2px 6px -2px rgba(0,0,0,0.2)" />
@@ -197,15 +193,7 @@ get_header(); ?>
 
 	</section>
 
-	<section class="ctas">
-		<div class="outer-container">
-			<div class="inner-container">
-				<a href="/profile" class="future-A h2 text-color-link">get to know us</a>
-				<em class="h3">or</em>
-				<a href="/contact/#contact-form" class="future-A h2 text-color-link">get in touch</a>
-			</div>
-		</div>
-	</section>
+	<?php get_template_part( 'content-ctas' ); ?>
 
 	<a href="#city-of-oakland" class="scroll-down smooth-scroll"><span class="hide">City of Oakland</span></a>
 

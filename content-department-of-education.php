@@ -1,0 +1,151 @@
+<?php
+	$featured_image_id = get_post_thumbnail_id();
+	$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'full', true);
+	$featured_image_url = $featured_image_array[0];
+?>
+
+<section class="page-header page-section full-height use-ui-light-theme" style="background-image:url( <?php echo $featured_image_url; ?> )">
+	<div class="section-content">
+		<div class="outer-container">
+			<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
+			<h3 class="page-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
+			<nav class="page-nav inner-container">
+				<ul class="list-unstyled hug">
+					<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
+					<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
+					<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="photo-credit">
+		<div class="outer-container">
+			<div class="inner-container">&copy; [PHOTO CREDIT NEEDED]</div>
+		</div>
+	</div>
+	<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
+</section>
+
+<section id="opportunity" class="page-section">
+	<div class="outer-container">
+		<h2 class="future-A inner-container">opportunity</h2>
+		<div class="inner-container">
+			<p>The NYC Department of Education’s Office of School Wellness Programs sought a new visual identity to convey the positive impact of its work for students, and to enable its messages to reach the right people.</p>
+			<p>We saw an opportunity to demonstrate the holistic nature of student health and wellness, and to help schools recognize the benefit of prioritizing the overall well-being of every student and family rather than ‘cherry-picking’ from the office’s suite of programs and materials.</p>
+		</div>
+	</div>
+
+	<figure class="alignnone">
+		<div class="parallax-container">
+			<blockquote class="parallax-node bleed" data-speed-modifier="0.5">
+				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
+			</blockquote>
+			<img src="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-skateboarding-NYC@2x.jpg', 'doe') ?> 2x" width="1600">
+		</div>
+		<figcaption class="outer-container"><div class="inner-container">Skateboarding in New York City, 1965. (Photocredit: Bill Eppridge—Time & Life Pictures/Getty Images)</div></figcaption>
+	</figure>
+</section>
+
+<section id="process" class="page-section " >
+
+	<div class="outer-container">
+		<h2 class="future-A inner-container push-triple">process</h2>
+		<div class="inner-container">
+			<p>We interviewed people across the NYC school community to build our evidence base, and quickly deduced the problem: head teachers across NYC are not prioritizing health and physical education in the school day, despite its benefits across grades and behavior.</p>
+			<p>Communicating the legitimacy and imperative of wellness education in the Office of School Wellness Programs’ visual communications became the chief objective. To create impact, capture the attention of key audiences, and communicate the core messages, we focused on the students, their actions and their outcomes. </p>
+		</div>
+	</div>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('DOE-interview.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-interview.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-interview@2x.jpg', 'doe') ?> 2x">
+		<div class="outer-container">
+			<figcaption class="inner-container">Lizzie interviewing Dan Marascia, PE Teacher; Courtland Elementary School</figcaption>
+		</div>
+	</figure>
+</section>
+
+<section id="solution" class="page-section " style="padding-bottom:100px;">
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<h2 class="future-A">solution</h2>
+			<p>We designed an identity which brands the result rather than the office. The wordmark logo Think—Move—Achieve— highlights the symbiotic relationship between learning to take care of one’s mind and body, and achieving personal and academic goals.</p>
+		</div>
+	</div>
+
+	<figure class="aligncenter doe-wordmarks active-on-inview" data-offset="0.6">
+		<div class="outer-container">
+				<img style="display:inline-block;" src="<?php echo os_path('Think.svg', 'doe') ?>">
+				<img style="display:inline-block;" src="<?php echo os_path('Move.svg', 'doe') ?>">
+				<img style="display:inline-block;" src="<?php echo os_path('Achieve.svg', 'doe') ?>">
+		</div>
+	</figure>
+
+	<div class="outer-container">
+		<figcaption class="inner-container">Think—Move—Achieve— Wordmark</figcaption>
+	</div>
+
+	<div class="outer-container push-triple">
+		<p class="inner-container">The line emphasizes the continuum between all three elements and therefore the holistic nature of wellness. This is supported by the graphic pattern to reinforce the identity.</p>
+	</div>
+
+
+	<figure class="aligncenter">
+		<img src="<?php echo os_path('DOE-Poster-Mock-ups.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Poster-Mock-ups.png', 'doe') ?> 1x, <?php echo os_path('DOE-Poster-Mock-ups@2x.png', 'doe') ?> 2x" width="1200" height="797">
+		<div class="outer-container">
+			<figcaption class="inner-container">Think—Move—Achieve— Posters</figcaption>
+		</div>
+	</figure>
+
+	<div class="outer-container push-triple" style="padding-bottom: 60px;">
+		<div class="inner-container">
+			<p>We expanded the NYC Department of Education’s color palette, and used an approachable, confident and energetic typeface. </p>
+		</div>
+	</div>
+
+	<figure class="os-slideshow-container">
+		<div id="doe-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#doe-billboard-nav .prev", "nextArrow": "#doe-billboard-nav .next", "appendDots": "#doe-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('DOE-wellness.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-wellness.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-wellness@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
+			</li>
+			<li>
+				<img src="<?php echo os_path('DOE-champs.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-champs.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-champs@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
+			</li>
+			<li>
+				<img src="<?php echo os_path('DOE-dance.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-dance.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-dance@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
+			</li>
+			<li>
+				<img src="<?php echo os_path('DOE-kickball.jpg', 'doe'); ?>" srcset="<?php echo os_path('DOE-kickball.jpg', 'doe'); ?> 1x, <?php echo os_path('DOE-kickball@2x.jpg', 'doe'); ?> 2x" width="850" height="566" />
+			</li>
+		</ul>
+		<?php os_slide_nav("doe-billboard-nav"); ?>
+		<figcaption class="outer-container"><div class="inner-container">Photograph of students participating in wellness programs</div></figcaption>
+	</figure>
+
+
+	<div class="outer-container push-triple">
+		<div class="inner-container">
+			<p>We showed how student stories reach audiences, and prescribed the photo style to support the office’s objectives: focusing on the student, student learning and schools’ engagement with physical and health education programming.</p>
+		</div>
+	</div>
+
+	<figure class="alignnone">
+		<img src="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?> 1x, <?php echo os_path('DOE-Brand-Guidelines@2x.png', 'doe') ?> 2x">
+		<div class="outer-container">
+			<figcaption class="inner-container">DOE's Brand Guidelines</figcaption>
+		</div>
+	</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p>We refined the OSWP’s existing communications materials for clarity and brevity, and created Brand Guidelines to enable all staff to apply the identity consistently. </p>
+			<p class="h2 future-A"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		</div>
+	</div>
+
+</section>
+
+<?php os_get_case_study(); ?>
+
+<?php get_template_part( 'module', 'contact-form' ); ?>

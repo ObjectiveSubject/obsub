@@ -1,10 +1,11 @@
-/* 
+/*
  * active-on-inview
  */
 
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
+		
 
 		$('.active-on-inview').each(function(){
 			var $node = $(this),
@@ -25,7 +26,6 @@
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {

@@ -16,7 +16,7 @@ get_header(); ?>
 						<h1 class="page-title">Why not say hi?</h1>
 						<h3 class="page-subtitle">We work on both coasts of the United States to make smart design happen.</h3>
 						<h2 class="future-A page-subtitle">
-							718.801.8075<br/>
+							212.863.9194<br/>
 							<a href="mailto:info@objectivesubject.com" class="text-color-link">info@objectivesubject.com</a>
 						</h2>
 					</div>
@@ -35,9 +35,9 @@ get_header(); ?>
 					</address>
 					<p class="directions push">
 						<em>Directions</em><br/>
-						F to York St,<br/>
-						A and C to High St,<br/>
-						2 and 3 to Clark St
+						N, Q, R, W, 4, 6<br/>
+						to 23rd St,<br/>
+						or Union Square
 					</p>
 				</div>
 				<div id="nyc-map" class="office-map nyc-map"></div>

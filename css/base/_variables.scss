@@ -30,6 +30,14 @@ $boston_green: #06CA00;
 $boston_dark_green: #0E7A09;
 $localdata_orange: #FFA100;
 $localdata_red: #EE5A24;
+$claremont_red: #AF1D27;
+$doe_green: #daffb1;
+$doe_dark_green: #62be00;
+$doe_orange: #ff7b00;
+$hester_black: #000000;
+$hester_gray: #CCCCC6;
+$transit_purple: #5E29AC;
+
 
 $color_text_main: #222222;
 $color_text_heading: #202020;
@@ -47,7 +55,7 @@ $color_code: #0071BC;
 $color_blockquote: #222;
 
 $color_background_body: #fff;
-$color_background_hr: #ccc;
+$color_background_hr: $medium_gray;
 $color_background_button: #e6e6e6;
 $color_background_pre: #eee;
 
@@ -60,6 +68,7 @@ $color_background_selection: lightblue;
 $color_border_input: #ccc;
 $color_border_input_hover: #ccc;
 $color_border_input_focus: #ccc;
+
 
 
 // Typography
