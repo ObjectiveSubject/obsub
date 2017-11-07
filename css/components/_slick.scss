@@ -384,13 +384,13 @@
         .localdata & { background-color: $localdata_red; }
         .hester-street & { background-color: $hester_black; }
         .transit-center & { background-color: $transit_purple; }
-        
+
         .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
         .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
         .claremont-graduate-university .os-slide-nav a:hover & { background-color: darken($claremont_red, 15%); }
         .department-of-education .os-slide-nav a:hover & { background-color: darken($doe_orange, 15%); }
         .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
-        .hester-street .os-slide-nav a:hover & { background-color: darken($hester_gray); }
+        .hester-street .os-slide-nav a:hover & { background-color: $hester_gray; }
         .transit-center .os-slide-nav a:hover & { background-color: darken($transit_purple, 15%); }
 
         .next & {
