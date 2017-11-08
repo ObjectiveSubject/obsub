@@ -1,31 +1,3 @@
-<?php
-	$featured_image_id = get_post_thumbnail_id();
-	$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'full', true);
-	$featured_image_url = $featured_image_array[0];
-?>
-
-<section class="page-header page-section full-height use-ui-light-theme" style="background-image:url( <?php echo $featured_image_url; ?> )">
-	<div class="section-content">
-		<div class="outer-container">
-			<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
-			<h3 class="page-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
-			<nav class="page-nav inner-container">
-				<ul class="list-unstyled hug">
-					<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
-					<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
-					<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<div class="photo-credit">
-		<div class="outer-container">
-			<div class="inner-container">&copy; [NEED PHOTO CREDIT]</div>
-		</div>
-	</div>
-	<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
-</section>
-
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<h2 class="future-A inner-container">opportunity</h2>
@@ -188,7 +160,3 @@
 	</div>
 
 </section>
-
-<?php os_get_case_study(); ?>
-
-<?php get_template_part( 'module', 'contact-form' ); ?>
