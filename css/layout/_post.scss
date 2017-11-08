@@ -51,13 +51,33 @@
 			background: #003265;
 			color: #376FFF;
 		}
+		.claremont-graduate-university & {
+			background: $claremont_red;
+			color: #FFF;
+		}
 		.localdata & {
 			background: $localdata_red;
 			color: #FFEAC4;
 		}
+		.hester-street & {
+			background: $hester_black;
+			color: #FFFFFF;
+		}
 		.boston-public-schools & {
 			background: #FFFF00;
 			color: #565656;
+		}
+		.transit-center & {
+			background: #5E29AC;
+			color: #FFFFFF;
+			p{
+				max-width: 63.624rem;
+			}
+		}
+		.department-of-education & {
+			background: $doe_green;
+			color: $doe_dark_green;
+
 		}
 		p {
 			font-size: rem(24);

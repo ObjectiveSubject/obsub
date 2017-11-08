@@ -1,3 +1,14 @@
+//DOE animation pre-active
+.fade-each-left > *{
+	opacity: 0;
+	transform: translate3d(-100%,0,0);
+}
+
+.fade-each-left > *{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
 
 // BAM Animation
 @include keyframes(cycle) {
@@ -26,6 +37,7 @@
 	}
 };
 
+
 // Compass animation
 @include keyframes(compass) {
 	0% {
@@ -37,6 +49,8 @@
 		@include transform( rotate(360deg) );
 	}
 }
+
+
 
 // Clearfix
 @mixin clearfix {

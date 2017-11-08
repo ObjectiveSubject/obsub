@@ -1,4 +1,4 @@
-/* 
+/*
  * active-on-inview
  */
 
@@ -13,6 +13,7 @@
 				nodeOffset,
 				nodeTop;
 
+
 			init();
 			OS.window
 				.on("resize", init)
@@ -25,7 +26,6 @@
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {

@@ -16602,7 +16602,7 @@ return function (global, window, document, undefined) {
     };
 }((window.jQuery || window.Zepto || window), window, document);
 }));
-/* 
+/*
  * active-on-inview
  */
 
@@ -16617,6 +16617,7 @@ return function (global, window, document, undefined) {
 				nodeOffset,
 				nodeTop;
 
+
 			init();
 			OS.window
 				.on("resize", init)
@@ -16629,7 +16630,6 @@ return function (global, window, document, undefined) {
 			function onScroll() {
 				var scrollTop = OS.window.scrollTop();
 				nodeTop = $node.offset().top + nodeOffset;
-
 				if ( scrollTop >= nodeTop ) {
 					$node.addClass('active');
 				} else {
@@ -16640,6 +16640,74 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
+
+/*
+ * active type
+ */
+
+// https://codepen.io/gschier/pen/jkivt
+
+(function( document, window, undefined ){
+
+	var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 1.5; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 300;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-typing');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], toRotate.split(";"), period);
+    }
+  }
+  // INJECT CSS
+  // var css = document.createElement("style");
+  // css.type = "text/css";
+  // css.innerHTML = ".txt-typing > .wrap { border-right: 0.08em solid #666 }";
+  // document.body.appendChild(css);
+};
+
+})(document, window);
+
 /*
  * CFR Case Study
  */
@@ -16705,6 +16773,53 @@ return function (global, window, document, undefined) {
     });
 
 })(jQuery);
+
+/*
+ * active-on-inview
+ */
+
+(function( $, window, undefined ){
+	$(document).ready(function(){
+
+		$('.cycle-each').each(function(){
+
+				var node = $(this),
+						children = node.children(),
+						eachDuration = 4000, //in ms
+						delay= 40,
+						hold= 2000,
+						i = 0
+
+						//hide all elemnets to get started
+						children.each(function(){
+							$(this).css("opacity", "0");
+						});
+
+						//loop through all the children
+						function fadeInOut(){
+							// setTimeout(function(){
+								var thisChild = $(children[i])
+
+								node.empty()
+								node.html(children[i])
+
+								thisChild.animate({opacity: 1},eachDuration/2, function(){
+									setTimeout(function(){
+
+										thisChild.animate({opacity: 0},eachDuration/2, function(){
+											i >= children.length-1 ? i=0 : i++
+											fadeInOut()
+										});
+									},hold)
+								})
+
+
+							// },eachDuration+delay+hold)
+						}
+					fadeInOut()
+		});
+	});
+})(jQuery, window);
 
 /* 
  * contact form
@@ -17477,14 +17592,14 @@ return function (global, window, document, undefined) {
 	});
 
 })(jQuery, window);
-/* 
+/*
  * Tree Slider
  */
 
 (function( $, window, undefined ){
 
 	$(document).ready(function(){
-			
+
 		$('.slider-input').each(function(){
 			var $input = $(this),
 				$sliderRow = $input.closest('.slider-row'),
@@ -17493,7 +17608,7 @@ return function (global, window, document, undefined) {
 
 			$input.on('input', function(e){
 				if ( OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
-				
+
 					var val = $input.val(),
 						width = $imgTop.width(),
 						height = $imgTop.height(),

@@ -264,15 +264,27 @@
         }
     }
 
-    &.cs-localdata a:hover {
+  &.cs-localdata a:hover {
 		color: $localdata_orange;
 	}
 	&.cs-city-of-oakland a:hover {
 		color: $oakland_green;
 	}
+  &.cs-department-of-education a:hover {
+    color: $doe_orange;
+  }
 	&.cs-boston-public-schools a:hover {
 		color: $boston_blue;
 	}
+  &.cs-transit-center a:hover {
+      color: $transit_purple;
+    }
+  &.cs-hester-street a:hover {
+    color: $hester_black;
+  }
+  &.cs-claremont-graduate-university a:hover {
+    color: $claremont_red;
+  }
 }
 
 .main-menu-scrim {

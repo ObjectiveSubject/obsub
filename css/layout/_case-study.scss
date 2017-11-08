@@ -52,10 +52,29 @@
 			color: darken($oakland_blue, 20%);
 		}
 	}
+	.department-of-education & {
+		color: $doe_orange;
+		&:hover {
+			color: darken($doe_orange, 20%);
+		}
+	}
 	.boston-public-schools & {
 		color: $boston_green;
 		&:hover {
 			color: $boston_dark_green;
+		}
+	}
+	.claremont-graduate-university & {
+		color: $claremont_red;
+		&:hover {
+			color: darken($claremont_red, 20%);
+		}
+	}
+
+	.boston-public-schools & {
+		color: $hester_black;
+		&:hover {
+			color: $hester_black;
 		}
 	}
 
@@ -77,16 +96,34 @@
 			color: darken($oakland_blue, 15%);
 		}
 	}
+	.department-of-education & {
+		color: $doe_orange;
+		&:hover {
+			color: darken($doe_orange, 15%);
+		}
+	}
 	.boston-public-schools & {
 		color: $boston_green;
 		&:hover {
 			color: darken($boston_green, 15%);
 		}
 	}
+	.hester-street & {
+		color: $hester_black;
+		&:hover {
+			color: darken($hester_black, 15%);
+		}
+	}
 	.localdata & {
 		color: $localdata_red;
 		&:hover {
 			color: darken($localdata_red, 15%);
+		}
+	}
+	.claremont-graduate-university & {
+		color: $claremont_red;
+		&:hover {
+			color: darken($claremont_red, 15%);
 		}
 	}
 }
@@ -136,4 +173,32 @@ img.logotype {
 	float: right;
 	width: 64.84%;
 	margin-top: 8%;
+}
+
+//Hester Street Wordmark Animation
+svg.hs-wordmark{
+	background-color: #000;
+	fill:#fff;
+	padding: 132px 168px;
+	width:100%;
+	animation: cycle-bg-color 25s ease-in-out 3s infinite;
+}
+
+@keyframes cycle-bg-color{
+	0%{
+		background-color: #000;
+		fill: #fff;
+	}
+	25%{
+		background-color: #aebd31;
+		fill:#fff;
+	}
+	50%{
+		background-color: #3366cc;
+		fill:#fff;
+	}
+	75%{
+		background-color: #ff685d;
+		fill:#fff;
+	}
 }
