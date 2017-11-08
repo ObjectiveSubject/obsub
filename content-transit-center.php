@@ -91,7 +91,7 @@
 			<div id="bps-billboard-dots"></div>
 			<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 				<li>
-					<img src="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-COverBig@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
+					<img src="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-CoverBig@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
 					<figcaption class="outer-container">Illustration by Max Halton for Bus Report publication 2016</figcaption>
 				</li>
 				<li>
