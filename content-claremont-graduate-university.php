@@ -10,7 +10,7 @@
 	<figure class="alignnone">
 		<div class="parallax-container">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
-				<p><span class="quote">&ldquo;</span>[Some Quote would go here]<span class="quote">&rdquo;</span><br/><small>&mdash; Smart Person, Exec Direct</small></p>
+				<p><span class="quote">&ldquo;</span>Objective Subject was an invaluable partner in the re-envisioning and redevelopment of our website. They helped us get to the essence of who we are as a university, and then worked with us to clearly communicate that information to our audience with a unified, efficient, and award-winning user experience.<span class="quote">&rdquo;</span><br/><small>&mdash; Hollis Cooper, Director of Digital Strategy, Claremont Graduate University</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('graduate.png', 'cgu') ?>" srcset="<?php echo os_path('graduate.png', 'cgu') ?> 1x, <?php echo os_path('graduate@2x.png', 'cgu') ?> 2x" width="1600" height="1008">
 		</div>
