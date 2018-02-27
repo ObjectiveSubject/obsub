@@ -52,6 +52,12 @@
 			color: darken($oakland_blue, 20%);
 		}
 	}
+	.atil & {
+		color: $atil_yellow;
+		&:hover {
+			color: darken($atil_yellow, 20%);
+		}
+	}
 	.department-of-education & {
 		color: $doe_orange;
 		&:hover {
@@ -94,6 +100,12 @@
 		color: $oakland_blue;
 		&:hover {
 			color: darken($oakland_blue, 15%);
+		}
+	}
+	.atil & {
+		color: $atil_yellow;
+		&:hover {
+			color: darken($atil_yellow, 15%);
 		}
 	}
 	.department-of-education & {

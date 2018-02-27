@@ -65,6 +65,10 @@ figcaption {
 		color: $oakland_blue;
 	}
 
+	.atil & {
+		color: $atil_yellow;
+	}
+
 	.transit-center &{
 		color: $transit_purple;
   }
@@ -123,6 +127,9 @@ figcaption {
     overflow: hidden;
     padding-top: 75%;
 	background-color: gray;
+	&.black {
+		background-color: black;
+	}
 }
 
 .browser-inner {

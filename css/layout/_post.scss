@@ -51,6 +51,10 @@
 			background: #003265;
 			color: #376FFF;
 		}
+		.atil &.parallax-node {
+			background: $atil_yellow;
+			color: #FFFFFF;
+		}
 		.claremont-graduate-university & {
 			background: $claremont_red;
 			color: #FFF;
@@ -92,6 +96,9 @@
 			@include media($screen-lg) {
 				font-size: rem(44);
 				line-height: rem(46);
+			}
+			&.bleed{
+				max-width: 63.624rem;
 			}
 		}
 		small {
