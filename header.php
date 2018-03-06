@@ -54,7 +54,7 @@
 				<a href="#former-clients" class="smooth-scroll muted-link">clients</a>
 			</li>
 			<li class="menu-item page-profile future-A hug">
-				<a href="<?php echo site_url('/profile'); ?>" class="muted-link">profile</a>
+				<a href="<?php echo site_url('/profile'); ?>" class="muted-link">about</a>
 			</li>
 			<li class="menu-item page-contact future-A hug">
 				<a href="<?php echo site_url('/contact'); ?>" class="muted-link">contact</a>
