@@ -128,7 +128,7 @@
 					</div>
 				</div>
 			</div>
-			<figcaption class="inner-container">TransitCenter’s All Transportation is Local chapters</figcaption>
+			<figcaption class="inner-container">All Transportation is Local interactive</figcaption>
 
 
 			<div class="inner-container">
