@@ -9262,7 +9262,57 @@ OS.throttle = function (func, wait, options) {
 	  }
 	  return result;
 	};
+
 };
+
+OS.scrollCallbacks = [];
+
+OS.initScrollLoop = function(){
+
+	var scrollTop = -1,
+			requestFrame =  window.requestAnimationFrame ||
+						window.webkitRequestAnimationFrame ||
+						window.mozRequestAnimationFrame ||
+						window.msRequestAnimationFrame ||
+						window.oRequestAnimationFrame ||
+						// IE Fallback, you can even fallback to onscroll
+						function (callback) {
+							window.setTimeout(callback, 1000 / 60);
+						};
+
+	function loop() {
+
+		// if scrollTop and window's scroll position are equal, return and try again.
+		if (scrollTop == window.pageYOffset) {
+			requestFrame(loop);
+			return false;
+		}
+
+		// set scrollTop to window's scroll position.
+		scrollTop = window.pageYOffset;
+
+		// do your magic
+		OS.scrollCallbacks.forEach(function (fn) {
+			if (typeof fn == "function") {
+				fn(scrollTop);
+			}
+		});
+
+		// run loop again
+		requestFrame(loop);
+
+	}
+
+	// initialize loop()
+	loop();
+
+};
+
+$(document).ready(function(){
+
+	OS.initScrollLoop();
+
+});
 
 /*
      _ _      _       _
@@ -16788,7 +16838,7 @@ window.onload = function() {
 						eachDuration = 4000, //in ms
 						delay= 40,
 						hold= 2000,
-						i = 0
+						i = 0;
 
 						//hide all elemnets to get started
 						children.each(function(){
@@ -16798,25 +16848,25 @@ window.onload = function() {
 						//loop through all the children
 						function fadeInOut(){
 							// setTimeout(function(){
-								var thisChild = $(children[i])
+								var thisChild = $(children[i]);
 
-								node.empty()
-								node.html(children[i])
+								node.empty();
+								node.html(children[i]);
 
 								thisChild.animate({opacity: 1},eachDuration/2, function(){
 									setTimeout(function(){
 
 										thisChild.animate({opacity: 0},eachDuration/2, function(){
-											i >= children.length-1 ? i=0 : i++
-											fadeInOut()
+											i = (i >= children.length - 1) ? 0 : i + 1;
+											fadeInOut();
 										});
-									},hold)
-								})
+									},hold);
+								});
 
 
 							// },eachDuration+delay+hold)
 						}
-					fadeInOut()
+					fadeInOut();
 		});
 	});
 })(jQuery, window);
@@ -17089,55 +17139,41 @@ window.onload = function() {
 
 (function( $, window, undefined ){
 
-	$(document).ready(function(){
-		setTimeout(function(){
-			$('body').addClass('loaded');
-		}, 500);
-	});
+	$('.home .case-study, #case-studies').each(function(){
 
-	$('.home-intro, .home .case-study-preview').each(function(){
-		var $preview = $(this),
-			$container = $preview.find('.section-container'),
-			$scrim = $preview.find('.scrim'),
-			$content = $preview.find('.section-content'),
-			scrimOpacity = 0.3,
-			previewTop,
-			winHeight,
-			mediaSize;
+		var $that = $(this),
+			timeoutEnter,
+			timeoutLeave, 
+			activeClass = $that.is('#case-studies') ? 'has-active' : 'active';
 
-		init();
-		OS.window.on("resize", init);
-		OS.window.on('scroll', onScroll);
+		OS.scrollCallbacks.push(function(scrollTop){
 
-		function init() {
-			mediaSize = OS.getMediaSize();
-			winHeight = OS.window.height();
-			previewTop = $preview.offset().top;
-		}
+			var top = $that.offset().top - (window.innerHeight / 2) + 100, // an extra 100px up _feels_ like the "perceived" center
+				height = $that.outerHeight();
 
-		function onScroll() {
-			var scrollTop,
-				distance;
+			if ( scrollTop >= top && scrollTop < top + height ) {
 
-			if ( mediaSize !== "default" && mediaSize !== "small" ) {
-				scrollTop = OS.window.scrollTop();
-				distance = scrollTop - previewTop;
-
-				if ( distance >= 0 ) {
-					$container.velocity({
-						translateY: (distance * 0.5) + 'px'
-					}, 0);
-				} else if ( distance > $preview.outerHeight() / 2 ) {
-					$container.velocity({
-						translateY: '50%'
-					}, 0);
-				} else {
-					$container.velocity({
-						translateY: '0px'
-					}, 0);
+				if ( ! timeoutEnter ) {
+					timeoutEnter = setTimeout(function(){
+						$that.addClass(activeClass);
+					}, 250);
 				}
+				clearTimeout(timeoutLeave);
+				timeoutLeave = undefined;
+
+			} else {
+
+				if ( ! timeoutLeave ) {
+					timeoutLeave = setTimeout(function(){
+						$that.removeClass(activeClass);
+					}, 250);
+				}
+				clearTimeout(timeoutEnter);
+				timeoutEnter = undefined;
 			}
-		}
+
+		});
+
 	});
 
 })(jQuery, window);
@@ -17195,7 +17231,7 @@ window.onload = function() {
 
 		function onScroll() {
 			var scrollTop = OS.window.scrollTop(),
-				scrollLinkTop = $scrollDownLink.offset().top;
+				scrollLinkTop = $scrollDownLink.length ? $scrollDownLink.offset().top : 0;
 
 			if ( OS.isHome() ) {
 				if ( scrollTop >= offsetTop && scrollTop < (offsetTop + winHeight) ) {
@@ -17206,7 +17242,7 @@ window.onload = function() {
 						$scrollDownLink.attr('href', '#' + $nextSection.attr('id') );
 					}
 				}
-				if ( scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
+				if ( $scrollDownLink.length && scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
 					if ( $section.hasClass('case-study-preview') ) {
 						$scrollDownLink.addClass('light');
 					} else {

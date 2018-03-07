@@ -36,22 +36,19 @@
 	display: block;
 	position: absolute;
 	top: 0;
-	width: 96px;
-	height: 42px;
+	width: 92px;
+	height: 40px;
 	text-indent: -99999px;
 	background-image: url(images/logo@2x.png);
 	background-repeat: no-repeat;
-	background-size: 96px 84px;
+	background-size: 92px auto;
 
 	&.dark {
 		background-position: 0 0;
 	}
 	&.light {
 		display: none;
-		background-position: 0 -42px;
-		@include media($screen-md) {
-			background-position: 0 -56px;
-		}
+		background-position: 0 -40px;
 	}
 	.ui-light-theme &,
 	.main-menu-active & {
@@ -59,22 +56,17 @@
 		&.light { display: block; }
 	}
 
-	@include media($screen-md) {
-		width: 128px;
-		height: 56px;
-		background-size: 128px 112px;
-    }
 }
 
 .menu-toggle {
 	position: fixed;
     top: 30px;
-    left: $size_container_padding;
+    right: $size_container_padding;
     margin-top: 3px;
 	width: 18px;
 	height: 18px;
 	@include media($screen-sm) {
-		left: $size_container_padding_sm;
+		right: $size_container_padding_sm;
 	}
 	@include media($screen-md) {
 		top: 60px;
@@ -83,7 +75,7 @@
 
     .show-preview-menu & {
         @include media($screen-md) {
-            @include transform(translateX(-50px));
+            @include transform(translate3d(50px,0,0));
         }
     }
 
@@ -214,13 +206,13 @@
     }
 
     .preview-nav & {
-        opacity: 0;
+        // opacity: 0;
         float: left;
         margin-right: 1em;
-        font-size: rem(24);
+        font-size: rem(22);
         line-height: 1em;
         @include transition(all 300ms ease);
-        @include transform(translateX(20px));
+        // @include transform(translateX(20px));
         &:hover {
             & > a,
             & > span {
@@ -241,10 +233,10 @@
             @include transition-delay(300ms);
         }
 
-        .loaded & {
-            opacity: 1;
-            @include transform(translateX(0));
-        }
+        // .loaded & {
+        //     opacity: 1;
+        //     @include transform(translateX(0));
+        // }
 
         span {
             cursor: pointer;

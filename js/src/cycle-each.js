@@ -12,7 +12,7 @@
 						eachDuration = 4000, //in ms
 						delay= 40,
 						hold= 2000,
-						i = 0
+						i = 0;
 
 						//hide all elemnets to get started
 						children.each(function(){
@@ -22,25 +22,25 @@
 						//loop through all the children
 						function fadeInOut(){
 							// setTimeout(function(){
-								var thisChild = $(children[i])
+								var thisChild = $(children[i]);
 
-								node.empty()
-								node.html(children[i])
+								node.empty();
+								node.html(children[i]);
 
 								thisChild.animate({opacity: 1},eachDuration/2, function(){
 									setTimeout(function(){
 
 										thisChild.animate({opacity: 0},eachDuration/2, function(){
-											i >= children.length-1 ? i=0 : i++
-											fadeInOut()
+											i = (i >= children.length - 1) ? 0 : i + 1;
+											fadeInOut();
 										});
-									},hold)
-								})
+									},hold);
+								});
 
 
 							// },eachDuration+delay+hold)
 						}
-					fadeInOut()
+					fadeInOut();
 		});
 	});
 })(jQuery, window);

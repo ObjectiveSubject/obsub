@@ -1,50 +1,127 @@
-.former-clients {
-	padding-top: 8vh;
-	background-color: $light_gray;
-}
-
-.home .page-title {
-	@include media($screen-lg){
-		font-size: 3.4rem;
+#case-studies {
+	&.has-active {
+		color: white;
 	}
 }
 
-.home .page-subtitle {
-	@include media($screen-md){
-		width: 59%;
-	    float: left;
-	    margin-right: 4%;
+.case-study__left {
+	@include media($screen-md) {
+		@include shift(1);
+	}
+	@include media($screen-lg) {
+		@include span-columns(6);
+		@include shift(2);
+	}
+
+	transition: all	250ms ease-out;
+
+	.has-active & {
+		opacity: 0.5;
+	}
+	&:hover,
+	.active & {
+		opacity: 1;
 	}
 }
-.home .ozy-video {
-	max-width: 232px;
-	@include media($screen-md){
-		width: 36.5%;
-		float: left;
+
+.case-study__right {
+	@include media($screen-md) {
+		@include shift(1);
 	}
-	a {
-		display: block;
-		position: relative;
+	@include media($screen-lg) {
+		@include span-columns(4);
+		@include shift(0);
 	}
+
+	transition: all	250ms ease-out;
+
+	.os-no-touchevents & {
+		opacity: 0;
+		transform: translate3d(-10%,0,0);
+	}
+
+	.case-study__left:hover + &,
+	.active & {
+		opacity: 1;	
+		transform: translate3d(0,0,0);
+	}
+}
+
+.case-study__media {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: all 250ms ease-out;
+	z-index: -1;
+	.active & {
+		opacity: 1;
+	}
+}
+
+.case-study__image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0.5;
+
 	img {
-		display: block;
-	}
-	.play-icon {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin: -16px 0 0 -16px;
+	
+		width: auto;
+		height: auto;
+	
+		max-height: none;
+		max-width: none;
+	
+		min-height: 130%;
+		min-width: 130%;
+	
+		transform: translate3d(-50%, -50%, 0);
 	}
+}
+
+.case-study__color {
+	// opacity: 0.3;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+.our-views-article {
+	@include media($screen-sm) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+	@include media($screen-lg) {
+		@include span-columns(4);
+		&:nth-child(2n) {
+			margin-right: flex-gutter();
+		}
+		&:nth-child(2n+1) {
+			clear: none;
+		}
+		@include omega(3n);
+	}
+}
+
+
+.former-clients {
+	padding-top: 8vh;
+	// background-color: $light_gray;
 }
 
 .ctas {
 	margin-top: $leading * 2;
 	@include media( $screen-md ) {
 		margin-top: $leading * 4;
-	}
-
-	.inner-container {
-		position: relative;
 	}
 
 	em {
