@@ -700,82 +700,104 @@ hr {
 
 /* Headings
  * ------------------------------------------ */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
   font-weight: 300;
 }
 
-h1, .h1 {
+.h1,
+h1 {
   font-size: 2rem;
   line-height: 2rem;
   margin-top: 1.5rem;
 }
 @media screen and (min-width: 500px) {
-  h1, .h1 {
+  .h1,
+  h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
-  h1, .h1 {
+  .h1,
+  h1 {
     font-size: 3.375rem;
     line-height: 3.375rem;
     margin-top: 3rem;
   }
 }
 @media screen and (min-width: 960px) {
-  h1, .h1 {
+  .h1,
+  h1 {
     font-size: 3.8125rem;
     line-height: 3.8125rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  h1, .h1 {
+  .h1,
+  h1 {
     font-size: 4.125rem;
     line-height: 4.125rem;
   }
 }
 
-h2, .h2 {
+.h2,
+h2 {
   font-size: 1.375rem;
   line-height: 1.875rem;
   margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  h2, .h2 {
+  .h2,
+  h2 {
     font-size: 2rem;
     line-height: 2.125rem;
     margin-top: 3rem;
   }
 }
 
-h3, .h3 {
+.h3,
+h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-family: "ArnhemPro", "Georgia", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  h3, .h3 {
+  .h3,
+  h3 {
     font-size: 1.375rem;
     line-height: 1.875rem;
   }
 }
 
-h4, .h4 {
+.h4,
+h4 {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-family: "FutureAMedium", "Futura", sans-serif;
 }
 
-h5, .h5 {
+.h5,
+h5 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-h6, .h6 {
+.h6,
+h6 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -800,14 +822,16 @@ p.colophon {
   line-height: 1.5rem;
 }
 
-ul, ol {
+ol,
+ul {
   margin: 3rem 0 0;
   line-height: 1.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 960px) {
-  ul, ol {
+  ol,
+  ul {
     font-size: 1.125rem;
     line-height: 1.6875rem;
   }
@@ -821,8 +845,8 @@ ol {
   list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li > ol,
+li > ul {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -835,11 +859,15 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600;
 }
 
-dfn, cite, em, i {
+cite,
+dfn,
+em,
+i {
   font-style: italic;
 }
 
@@ -877,25 +905,30 @@ pre {
   padding: 1.6em;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: "Menlo", monospace;
   font-weight: normal;
   font-size: 0.9em;
   color: #0071BC;
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-mark, ins {
+ins,
+mark {
   background: #fff9c0;
   text-decoration: none;
 }
 
-small,
-.small {
+.small,
+small {
   font-size: 75%;
 }
 
@@ -903,8 +936,8 @@ small,
   vertical-align: super;
 }
 
-big,
-.big {
+.big,
+big {
   font-size: 125%;
 }
 
@@ -944,6 +977,22 @@ big,
 
 .push-triple {
   margin-top: 4.5rem;
+}
+
+.push-half-bottom {
+  margin-bottom: 0.75rem;
+}
+
+.push-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.push-double-bottom {
+  margin-bottom: 3rem;
+}
+
+.push-triple-bottom {
+  margin-bottom: 4.5rem;
 }
 
 .show {
@@ -4729,6 +4778,8 @@ blockquote.parallax-node {
   margin: 0;
 }
 
-.cycle-images {
+.cycle-each {
   display: block;
+  position: relative;
+  list-style: none;
 }

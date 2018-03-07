@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<?php while ( have_posts() ) : the_post(); ?>
+	<?php while (have_posts()) : the_post(); ?>
 
 		<section class="page-header page-section full-height">
 			<div class="section-content">
@@ -43,7 +43,7 @@ get_header(); ?>
 				<div id="nyc-map" class="office-map nyc-map"></div>
 				<div id="nyc-marker" class="map-marker" aria-hidden="true"></div>
 			</div>
-			<div class="office-location oakland clearfix">
+			<!-- <div class="office-location oakland clearfix">
 				<div class="office-address">
 					<address class="h2 hug future-A">
 						2355 broadway<br/>
@@ -59,7 +59,7 @@ get_header(); ?>
 				</div>
 				<div id="oakland-map" class="office-map oakland-map"></div>
 				<div id="oakland-marker" class="map-marker" aria-hidden="true"></div>
-			</div>			
+			</div>			 -->
 		</section>
 
 		<section class="page-section outer-container push-triple">
@@ -70,6 +70,6 @@ get_header(); ?>
 
 		<?php get_template_part('module', 'contact-form'); ?>
 
-	<?php endwhile; // end of the loop. ?>
-		
+	<?php endwhile; // end of the loop.?>
+
 <?php get_footer(); ?>
