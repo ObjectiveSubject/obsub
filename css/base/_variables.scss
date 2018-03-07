@@ -1,6 +1,6 @@
 // Structure
 // ============================================ /
-$max-width: rem(1024) !global;
+$max-width: rem(1084) !global;
 $content-max-width: $max-width * 0.666;
 
 $size_container_padding: 15px;
@@ -17,7 +17,7 @@ $screen-xl: 1200px;
 
 // Colors
 // ============================================ /
-$light_gray: #F0F0EE;
+$light_gray: #e6e6e6;
 $medium_gray: #999C98;
 $blue: #1a7fc3;
 $red: #E24F4A;
@@ -40,16 +40,16 @@ $doe_orange: #ff7b00;
 
 $atil_yellow: #f0b419;
 
-$color_text_main: #222222;
-$color_text_heading: #202020;
+$color_text_main: #000;
+$color_text_heading: $color_text_main;
 
 $color_text_input: $color_text_main;
 $color_text_input_hover: #111;
 $color_text_input_focus: $color_text_main;
 
-$color_link: #0071BC;
-$color_link_visited: tint($color_link, 10%);
-$color_link_hover: darken($color_link, 10%);
+$color_link: inherit;
+$color_link_visited: $color_link;
+$color_link_hover: $color_link;
 
 $color_code: #0071BC;
 
@@ -57,7 +57,7 @@ $color_blockquote: #222;
 
 $color_background_body: #fff;
 $color_background_hr: $medium_gray;
-$color_background_button: #e6e6e6;
+$color_background_button: #4a4a4a;
 $color_background_pre: #eee;
 
 $color_border_button: #ccc #ccc #bbb;

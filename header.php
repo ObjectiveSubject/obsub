@@ -39,25 +39,14 @@
 
 		<?php if ( is_front_page() ) : ?>
 		<ul class="preview-nav list-unstyled hug">
-			<li class="menu-item clear-left future-A hug">
-				<span class="muted-link">case studies</span>
-				<ul class="sub-menu list-unstyled hug">
-				<?php $case_studies = get_case_studies('featured');
-				foreach ( $case_studies as $study ) : ?>
-					<li class="menu-item case_study future-A hug <?php echo 'cs-' . $study->post_name; ?>">
-						<a href="<?php echo '#'.$study->post_name; ?>" class="smooth-scroll text-color-link"><?php echo get_the_title($study->ID); ?></a>
-					</li>
-				<?php endforeach; ?>
-				</ul>
-			</li>
 			<li class="menu-item future-A hug">
-				<a href="#former-clients" class="smooth-scroll muted-link">clients</a>
+				<a href="#former-clients" class="smooth-scroll">clients</a>
 			</li>
 			<li class="menu-item page-profile future-A hug">
-				<a href="<?php echo site_url('/profile'); ?>" class="muted-link">about</a>
+				<a href="<?php echo site_url('/profile'); ?>">about</a>
 			</li>
 			<li class="menu-item page-contact future-A hug">
-				<a href="<?php echo site_url('/contact'); ?>" class="muted-link">contact</a>
+				<a href="<?php echo site_url('/contact'); ?>">contact</a>
 			</li>
 		</ul>
 		<?php endif; ?>

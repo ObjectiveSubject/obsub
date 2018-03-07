@@ -4,55 +4,41 @@
 
 (function( $, window, undefined ){
 
-	$(document).ready(function(){
-		setTimeout(function(){
-			$('body').addClass('loaded');
-		}, 500);
-	});
+	$('.home .case-study, #case-studies').each(function(){
 
-	$('.home-intro, .home .case-study-preview').each(function(){
-		var $preview = $(this),
-			$container = $preview.find('.section-container'),
-			$scrim = $preview.find('.scrim'),
-			$content = $preview.find('.section-content'),
-			scrimOpacity = 0.3,
-			previewTop,
-			winHeight,
-			mediaSize;
+		var $that = $(this),
+			timeoutEnter,
+			timeoutLeave, 
+			activeClass = $that.is('#case-studies') ? 'has-active' : 'active';
 
-		init();
-		OS.window.on("resize", init);
-		OS.window.on('scroll', onScroll);
+		OS.scrollCallbacks.push(function(scrollTop){
 
-		function init() {
-			mediaSize = OS.getMediaSize();
-			winHeight = OS.window.height();
-			previewTop = $preview.offset().top;
-		}
+			var top = $that.offset().top - (window.innerHeight / 2) + 100, // an extra 100px up _feels_ like the "perceived" center
+				height = $that.outerHeight();
 
-		function onScroll() {
-			var scrollTop,
-				distance;
+			if ( scrollTop >= top && scrollTop < top + height ) {
 
-			if ( mediaSize !== "default" && mediaSize !== "small" ) {
-				scrollTop = OS.window.scrollTop();
-				distance = scrollTop - previewTop;
-
-				if ( distance >= 0 ) {
-					$container.velocity({
-						translateY: (distance * 0.5) + 'px'
-					}, 0);
-				} else if ( distance > $preview.outerHeight() / 2 ) {
-					$container.velocity({
-						translateY: '50%'
-					}, 0);
-				} else {
-					$container.velocity({
-						translateY: '0px'
-					}, 0);
+				if ( ! timeoutEnter ) {
+					timeoutEnter = setTimeout(function(){
+						$that.addClass(activeClass);
+					}, 250);
 				}
+				clearTimeout(timeoutLeave);
+				timeoutLeave = undefined;
+
+			} else {
+
+				if ( ! timeoutLeave ) {
+					timeoutLeave = setTimeout(function(){
+						$that.removeClass(activeClass);
+					}, 250);
+				}
+				clearTimeout(timeoutEnter);
+				timeoutEnter = undefined;
 			}
-		}
+
+		});
+
 	});
 
 })(jQuery, window);

@@ -30,7 +30,7 @@
 
 		function onScroll() {
 			var scrollTop = OS.window.scrollTop(),
-				scrollLinkTop = $scrollDownLink.offset().top;
+				scrollLinkTop = $scrollDownLink.length ? $scrollDownLink.offset().top : 0;
 
 			if ( OS.isHome() ) {
 				if ( scrollTop >= offsetTop && scrollTop < (offsetTop + winHeight) ) {
@@ -41,7 +41,7 @@
 						$scrollDownLink.attr('href', '#' + $nextSection.attr('id') );
 					}
 				}
-				if ( scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
+				if ( $scrollDownLink.length && scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
 					if ( $section.hasClass('case-study-preview') ) {
 						$scrollDownLink.addClass('light');
 					} else {

@@ -48,7 +48,8 @@ a {
 	}
 	&:hover,
 	&:active {
-		outline: 0;
+    outline: 0;
+    opacity: 0.6;
 	}
 }
 
