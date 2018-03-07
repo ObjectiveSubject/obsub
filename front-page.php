@@ -58,7 +58,7 @@ get_header(); ?>
 			<div class="case-study__media" style="width:100vw;height:100vh">
 				<div class="case-study__color"></div>
 				<div class="case-study__image">
-					<?php echo get_the_post_thumbnail( $study, 'large' ); ?>
+					<?php echo get_the_post_thumbnail( $study, 'full' ); ?>
 				</div>
 			</div>
 		</article>
