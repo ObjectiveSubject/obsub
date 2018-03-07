@@ -17,14 +17,13 @@
 }
 
 .site-title {
-	float: right;
 	position: fixed;
 	top: 30px;
-	right: $size_container_padding;
+	left: $size_container_padding;
 	width: 96px;
 	height: 42px;
 	@include media($screen-sm) {
-		right: $size_container_padding_sm;
+		left: $size_container_padding_sm;
 	}
 	@include media($screen-md) {
 		width: 128px;
@@ -178,7 +177,7 @@
 .preview-nav {
     position: fixed;
     top: 64px;
-    left: $size_container_padding_sm;
+    right: $size_container_padding_sm;
     z-index: 1;
     @media screen and ( max-width: $screen-md - 1 ) {
         display: none !important;
