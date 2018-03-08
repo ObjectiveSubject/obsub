@@ -1,0 +1,92 @@
+.bio-title {
+	text-transform: lowercase;
+}	
+
+.partners {
+	margin-top: 4rem;
+}
+
+.partners-title, .partners-content {
+	@include media($screen-md) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+	@include media($screen-lg) {
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
+
+.partners-content {	
+	@include clearfix;
+	@include media($screen-sm) {
+		p {
+			@include span-columns(6 of 12);
+		}
+		ul {
+			@include span-columns(6 of 12);	
+		}
+	}
+	@include media($screen-md) {
+		p {
+			@include span-columns(7 of 12);
+		}
+		ul {
+			@include span-columns(4 of 12);	
+		}
+	}
+	@include media($screen-lg) {
+		p {
+			@include span-columns(6 of 9);
+		}
+		ul {
+			@include span-columns(3 of 9);	
+		}
+	}	
+}
+
+.process-snapshot {
+	margin-top: 7rem;
+}
+
+.alumni-content {
+	@include clearfix;
+	margin-top: 4rem;
+	@include media($screen-md) {
+		@include span-columns(9);
+		@include shift(1);
+	}
+	@include media($screen-lg) {
+		@include span-columns(6);
+		@include shift(2);
+	}
+}
+
+.recognition-content {
+	@include clearfix;
+	margin-top: 6rem;
+	
+	.reddot-img {
+		@include media($screen-md) {
+			// @include span-columns(8);
+			@include shift(1);
+		}
+	}
+
+	li {
+		margin-top: 1rem;
+		@include media($screen-sm) {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+		@include media($screen-md) {
+			@include span-columns(4 of 8);
+		}
+	}
+}
+
+
+
+
+
+

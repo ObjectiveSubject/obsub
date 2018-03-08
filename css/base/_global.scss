@@ -3,8 +3,9 @@
  * ------------------------------------------- */
 
 *,
-*:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after,
+*:before {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
 
@@ -12,13 +13,15 @@ html {
 	box-sizing: border-box;
 }
 
-::-moz-selection { /* Code for Firefox */
-    // color: $color_selection_text;
-    background: $color_background_selection;
+::-moz-selection {
+	/* Code for Firefox */
+	// color: $color_selection_text;
+	background: $color_background_selection;
 }
+
 ::selection {
-    // color: $color_selection_text;
-    background: $color_background_selection;
+	// color: $color_selection_text;
+	background: $color_background_selection;
 }
 
 /* Links
@@ -27,29 +30,33 @@ html {
 a {
 	color: $color_link;
 	text-decoration: none;
-  @include transition(all 300ms ease);
-  &.no-transition {
-    @include transition(none);
-  }
-  // &:not(.no-transition) {
-  //   transition: color 250ms ease, background-color 250ms ease, opacity 250ms ease;
-  // } 
+	@include transition(all 300ms ease);
+
+	&.no-transition {
+		@include transition(none);
+	}
+	// &:not(.no-transition) {
+	//   transition: color 250ms ease, background-color 250ms ease, opacity 250ms ease;
+	// }
 
 	&:visited {
 		color: $color_link_visited;
 	}
-	&:hover,
+
+	&:active,
 	&:focus,
-	&:active {
+	&:hover {
 		color: $color_link_hover;
 	}
+
 	&:focus {
 		outline: none;
 	}
-	&:hover,
-	&:active {
-    outline: 0;
-    opacity: 0.6;
+
+	&:active,
+	&:hover {
+		outline: 0;
+		opacity: 0.6;
 	}
 }
 
@@ -57,160 +64,158 @@ a {
  * ------------------------------------------- */
 
 table {
-  background-color: $table_bg;
+	background-color: $table_bg;
 	margin: 0 0 1.5em;
 }
+
 caption {
-  padding-top: $table-cell-padding;
-  padding-bottom: $table-cell-padding;
-  color: $color_text_muted;
-  text-align: left;
-}
-th {
-  text-align: left;
+	padding-top: $table-cell-padding;
+	padding-bottom: $table-cell-padding;
+	color: $color_text_muted;
+	text-align: left;
 }
 
+th {
+	text-align: left;
+}
 
 // Baseline styles
 
 .table {
-  width: 100%;
-  max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 	// Headings
-	> thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th {
+	> tbody,
+	 > thead,
+	> tfoot {
+		> tr {
+			> th {
 				font-family: $font_heading;
 			}
 		}
 	}
-  // Cells
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        padding: $table-cell-padding;
-        line-height: $line-height-base;
-        vertical-align: top;
-        border-top: 1px solid $table-border-color;
-      }
-    }
-  }
-  // Bottom align for column headings
-  > thead > tr > th {
-    vertical-align: bottom;
-    border-bottom: 2px solid $table-border-color;
-  }
-  // Remove top border from thead by default
-  > caption + thead,
-  > colgroup + thead,
-  > thead:first-child {
-    > tr:first-child {
-      > th,
-      > td {
-        border-top: 0;
-      }
-    }
-  }
-  // Account for multiple tbody instances
-  > tbody + tbody {
-    border-top: 2px solid $table-border-color;
-  }
+	// Cells
+	> tbody,
+	 > thead,
+	> tfoot {
+		> tr {
+			> td,
+			> th {
+				padding: $table-cell-padding;
+				line-height: $line-height-base;
+				vertical-align: top;
+				border-top: 1px solid $table-border-color;
+			}
+		}
+	}
+	// Bottom align for column headings
+	> thead > tr > th {
+		vertical-align: bottom;
+		border-bottom: 2px solid $table-border-color;
+	}
+	// Remove top border from thead by default
+	> colgroup + thead,
+	 > thead:first-child,
+	> caption + thead {
+		> tr:first-child {
+			> td,
+			> th {
+				border-top: 0;
+			}
+		}
+	}
+	// Account for multiple tbody instances
+	> tbody + tbody {
+		border-top: 2px solid $table-border-color;
+	}
 
-  // Nesting
-  .table {
-    background-color: $table_bg_nested;
-  }
+	// Nesting
+	.table {
+		background-color: $table_bg_nested;
+	}
 }
-
 
 // Condensed table w/ half padding
 
 .table-condensed {
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        padding: $table-condensed-cell-padding;
-      }
-    }
-  }
+	> tbody,
+	 > thead,
+	> tfoot {
+		> tr {
+			> td,
+			> th {
+				padding: $table-condensed-cell-padding;
+			}
+		}
+	}
 }
-
 
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
 
 .table-bordered {
-  border: 1px solid $table-border-color;
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        border: 1px solid $table-border-color;
-      }
-    }
-  }
-  > thead > tr {
-    > th,
-    > td {
-      border-bottom-width: 2px;
-    }
-  }
-}
+	border: 1px solid $table-border-color;
 
+	> tbody,
+	 > thead,
+	> tfoot {
+		> tr {
+			> td,
+			> th {
+				border: 1px solid $table-border-color;
+			}
+		}
+	}
+
+	> thead > tr {
+		> td,
+		> th {
+			border-bottom-width: 2px;
+		}
+	}
+}
 
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-  > tbody > tr:nth-of-type(odd) {
-    background-color: $table-bg-accent;
-  }
+	> tbody > tr:nth-of-type(odd) {
+		background-color: $table-bg-accent;
+	}
 }
-
 
 // Hover effect
 //
 // Placed here since it has to come after the potential zebra striping
 
 .table-hover {
-  > tbody > tr:hover {
-    background-color: $table-bg-hover;
-  }
+	> tbody > tr:hover {
+		background-color: $table-bg-hover;
+	}
 }
-
 
 // Table cell sizing
 //
 // Reset default table behavior
 
 table col[class*="col-"] {
-  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
-  float: none;
-  display: table-column;
-}
-table {
-  td,
-  th {
-    &[class*="col-"] {
-      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
-      float: none;
-      display: table-cell;
-    }
-  }
+	position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+	float: none;
+	display: table-column;
 }
 
+table {
+	td,
+	th {
+		&[class*="col-"] {
+			position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+			float: none;
+			display: table-cell;
+		}
+	}
+}
 
 // Responsive tables
 //
@@ -219,71 +224,129 @@ table {
 // will display normally.
 
 .table-responsive {
-  overflow-x: auto;
-  min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+	overflow-x: auto;
+	min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
 
-  @media screen and (max-width: $screen-sm) {
-    width: 100%;
-    margin-bottom: 1em;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid $table-border-color;
+	@media screen and (max-width: $screen-sm) {
+		width: 100%;
+		margin-bottom: 1em;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		border: 1px solid $table-border-color;
 
-    // Tighten up spacing
-    > .table {
-      margin-bottom: 0;
+		// Tighten up spacing
+		> .table {
+			margin-bottom: 0;
 
-      // Ensure the content doesn't wrap
-      > thead,
-      > tbody,
-      > tfoot {
-        > tr {
-          > th,
-          > td {
-            white-space: nowrap;
-          }
-        }
-      }
-    }
+			// Ensure the content doesn't wrap
+			> tbody,
+			 > thead,
+			> tfoot {
+				> tr {
+					> td,
+					> th {
+						white-space: nowrap;
+					}
+				}
+			}
+		}
 
-    // Special overrides for the bordered tables
-    > .table-bordered {
-      border: 0;
+		// Special overrides for the bordered tables
+		> .table-bordered {
+			border: 0;
 
-      // Nuke the appropriate borders so that the parent can handle them
-      > thead,
-      > tbody,
-      > tfoot {
-        > tr {
-          > th:first-child,
-          > td:first-child {
-            border-left: 0;
-          }
-          > th:last-child,
-          > td:last-child {
-            border-right: 0;
-          }
-        }
-      }
+			// Nuke the appropriate borders so that the parent can handle them
+			> tbody,
+			 > thead,
+			> tfoot {
+				> tr {
+					> td:first-child,
+					> th:first-child {
+						border-left: 0;
+					}
 
-      // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
-      // chances are there will be only one `tr` in a `thead` and that would
-      // remove the border altogether.
-      > tbody,
-      > tfoot {
-        > tr:last-child {
-          > th,
-          > td {
-            border-bottom: 0;
-          }
-        }
-      }
+					> td:last-child,
+					> th:last-child {
+						border-right: 0;
+					}
+				}
+			}
 
-    }
-  }
+			// Only nuke the last row's bottom-border in `tbody` and `tfoot` since
+			// chances are there will be only one `tr` in a `thead` and that would
+			// remove the border altogether.
+			> tfoot,
+			> tbody {
+				> tr:last-child {
+					> td,
+					> th {
+						border-bottom: 0;
+					}
+				}
+			}
+
+		}
+	}
 }
 
-/* Text meant only for screen readers. 
+//rough grid layout
+
+.flex-blocks {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	margin: 0 auto;
+	flex-basis: 100%;
+	padding: 1rem;
+}
+
+.column-span-1 {
+	flex-basis: 1/12*100%;
+}
+
+.column-span-2 {
+	flex-basis: 2/12*100%;
+}
+
+.column-span-3 {
+	flex-basis: 3/12*100%;
+}
+
+.column-span-4 {
+	flex-basis: 4/12*100%;
+}
+
+.column-span-5 {
+	flex-basis: 5/12*100%;
+}
+
+.column-span-6 {
+	flex-basis: 6/12*100%;
+}
+
+.column-span-7 {
+	flex-basis: 7/12*100%;
+}
+
+.column-span-8 {
+	flex-basis: 8/12*100%;
+}
+
+.column-span-9 {
+	flex-basis: 9/12*100%;
+}
+
+.column-span-10 {
+	flex-basis: 10/12*100%;
+}
+
+.column-span-11 {
+	flex-basis: 11/12*100%;
+}
+
+/* Text meant only for screen readers.
  * ------------------------------------------------- */
 
 .screen-reader-text {
@@ -293,9 +356,9 @@ table {
 	width: 1px;
 	overflow: hidden;
 
-	&:hover,
 	&:active,
-	&:focus {
+	&:focus,
+	&:hover {
 		background-color: #f1f1f1;
 		border-radius: 3px;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -311,7 +374,8 @@ table {
 		text-decoration: none;
 		top: 5px;
 		width: auto;
-		z-index: 100000; /* Above WP toolbar. */
+		z-index: 100000;
+		/* Above WP toolbar. */
 	}
 }
 

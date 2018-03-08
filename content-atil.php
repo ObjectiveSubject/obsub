@@ -138,7 +138,7 @@
 
 	<div class="outer-container bleed push-triple">
 			<div class="flex-blocks">
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person66.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person66.jpg', 'atil'); ?> 1x, <?php echo os_path('Person66@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -148,7 +148,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person65.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person65.jpg', 'atil'); ?> 1x, <?php echo os_path('Person65@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -158,7 +158,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person64.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person64.jpg', 'atil'); ?> 1x, <?php echo os_path('Person64@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -168,7 +168,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person62.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person62.jpg', 'atil'); ?> 1x, <?php echo os_path('Person62@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -178,7 +178,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person67.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person67.jpg', 'atil'); ?> 1x, <?php echo os_path('Person67@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -189,7 +189,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person68.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person68.jpg', 'atil'); ?> 1x, <?php echo os_path('Person68@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -199,7 +199,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person69.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person69.jpg', 'atil'); ?> 1x, <?php echo os_path('Person69@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -209,7 +209,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person70.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person70.jpg', 'atil'); ?> 1x, <?php echo os_path('Person70@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -219,7 +219,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person71.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person71.jpg', 'atil'); ?> 1x, <?php echo os_path('Person71@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -229,7 +229,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person72.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person72.jpg', 'atil'); ?> 1x, <?php echo os_path('Person72@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -239,7 +239,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person73.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person73.jpg', 'atil'); ?> 1x, <?php echo os_path('Person73@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
@@ -250,7 +250,7 @@
 					</div>
 				</div>
 
-				<div class="column column-3">
+				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person74.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person74.jpg', 'atil'); ?> 1x, <?php echo os_path('Person74@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
 					</div>
