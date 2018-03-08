@@ -61,7 +61,7 @@
 }
 
 .future-A {
-	font-family: $font_heading;
+	font-family: $font_heading !important;
 	-webkit-font-smoothing: antialiased;
     text-transform: lowercase;
 }

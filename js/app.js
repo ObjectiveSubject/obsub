@@ -17195,12 +17195,17 @@ window.onload = function() {
 
 (function( $, window, undefined ){
 
-	$('.home .case-study, #case-studies').each(function(){
+	var $caseStudies = $('.home .case-study');
+
+	$caseStudies.each(function(i){
 
 		var $that = $(this),
-			timeoutEnter,
-			timeoutLeave, 
-			activeClass = $that.is('#case-studies') ? 'has-active' : 'active';
+			id = $that.data('id'),
+			color = $that.data('color'),
+			$image = $('#image-' + id),
+			$maskItem = $('#li-case-study-' + id),
+			activeClass = 'active',
+			isLast = i === $caseStudies.length - 1;
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
@@ -17209,23 +17214,58 @@ window.onload = function() {
 
 			if ( scrollTop >= top && scrollTop < top + height ) {
 
-				if ( ! timeoutEnter ) {
-					timeoutEnter = setTimeout(function(){
-						$that.addClass(activeClass);
-					}, 250);
+				$that.addClass(activeClass).removeClass('past');					
+				$maskItem.addClass(activeClass).removeClass('past');
+				$image.addClass(activeClass).removeClass('past');
+
+				if ( isLast ) {
+					$('#case-studies').removeClass('reached-last');
 				}
-				clearTimeout(timeoutLeave);
-				timeoutLeave = undefined;
+
+			} else if ( scrollTop >= top + height ) {
+
+				$that.addClass('past').removeClass(activeClass);
+				$maskItem.addClass('past').removeClass(activeClass);
+				$image.addClass('past').removeClass(activeClass);
+
+				if ( isLast ) {
+					$('#case-studies').addClass('reached-last');
+				}
 
 			} else {
 
-				if ( ! timeoutLeave ) {
-					timeoutLeave = setTimeout(function(){
-						$that.removeClass(activeClass);
-					}, 250);
-				}
-				clearTimeout(timeoutEnter);
-				timeoutEnter = undefined;
+				$that.removeClass( activeClass + ' past' );
+				$maskItem.removeClass( activeClass + ' past' );
+				$image.removeClass( activeClass + ' past' );
+
+			}
+
+		});
+
+	});
+
+	$('#case-studies').each(function(){
+
+		var $that = $(this),
+			activeClass = 'has-active';
+
+		OS.scrollCallbacks.push(function(scrollTop){
+
+			var top = $that.offset().top,
+				height = $that.outerHeight();
+
+			if ( scrollTop >= top && scrollTop < top + height ) {
+
+				$that.addClass(activeClass).removeClass('past');
+
+			} else if ( scrollTop >= top + height ) { 
+
+				$that.addClass('past').removeClass(activeClass);
+
+			} else {
+
+				$that.removeClass(activeClass + ' past');
+
 			}
 
 		});

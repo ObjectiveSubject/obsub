@@ -1,34 +1,36 @@
 #masthead {
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 30px;
     z-index: 1000;
-    padding: 0 $size_container_padding;
+    // padding: 0 $size_container_padding;
 
-    @include media($screen-sm) {
-    	padding-left: $size_container_padding_sm;
-		padding-right: $size_container_padding_sm;
-    }
+    // @include media($screen-sm) {
+    // 	padding-left: $size_container_padding_sm;
+	// 	padding-right: $size_container_padding_sm;
+    // }
     @include media($screen-md) {
-    	top: 100px;
+    	top: 60px;
     }
-    @include media($screen-xl) {
-    	padding: 0 ($size_container_padding_sm * 2);
-    }
+    // @include media($screen-xl) {
+    // 	padding: 0 ($size_container_padding_sm * 2);
+    // }
 }
 
 .site-title {
-	position: fixed;
-	top: 30px;
-	left: $size_container_padding;
+    position: relative;
+    float: left;
+	// top: 30px;
+	// left: $size_container_padding;
 	width: 96px;
 	height: 42px;
-	@include media($screen-sm) {
-		left: $size_container_padding_sm;
-	}
+	// @include media($screen-sm) {
+	// 	left: $size_container_padding_sm;
+	// }
 	@include media($screen-md) {
 		width: 128px;
 		height: 56px;
-		top: 60px;
+		// top: 60px;
     }
 }
 
@@ -59,22 +61,16 @@
 }
 
 .menu-toggle {
-	position: fixed;
-    top: 30px;
-    right: $size_container_padding;
+    position: relative;
+    float: right;
     margin-top: 3px;
 	width: 18px;
-	height: 18px;
-	@include media($screen-sm) {
-		right: $size_container_padding_sm;
-	}
-	@include media($screen-md) {
-		top: 60px;
-		margin-top: 6px;
-    }
+    height: 18px;
+    opacity: 1;
 
     .show-preview-menu & {
         @include media($screen-md) {
+            opacity: 0;
             @include transform(translate3d(50px,0,0));
         }
     }
@@ -167,9 +163,10 @@
 }
 
 .preview-nav {
-    position: fixed;
-    top: 64px;
-    right: $size_container_padding_sm;
+    position: relative;
+    float: right;
+    // top: 64px;
+    // right: $size_container_padding_sm;
     z-index: 1;
     @media screen and ( max-width: $screen-md - 1 ) {
         display: none !important;
@@ -186,6 +183,7 @@
 .menu-item {
     .main-navigation & {
         display: none;
+        font-family: $font_heading;
 
         a {
         	color: white;
@@ -208,7 +206,7 @@
     .preview-nav & {
         // opacity: 0;
         float: left;
-        margin-right: 1em;
+        margin-left: 1em;
         font-size: rem(22);
         line-height: 1em;
         @include transition(all 300ms ease);
