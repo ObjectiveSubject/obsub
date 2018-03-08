@@ -255,6 +255,30 @@
 		</div>
 	</div>
 
+	<div class="outer-container">
+			Video goes HERE
+			<figcaption class="inner-container">Brand Video</figcaption>
+	</div>
+
+	<div class="outer-container">
+			Video goes HERE
+			<figcaption class="inner-container">Anthem Video</figcaption>
+	</div>
+
+	<div class="outer-container push-triple push-triple-bottom">
+		<div class="inner-container">
+			<p>We also continue to work with Gibney to realize the brand, designing a wayfinding and environmental graphics system for its physical space.</p>
+		</div>
+	</div>
+
+
+	<div class="outer-container">
+		<img src="<?php echo os_path('way-finding-1.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-1.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
+
+		<img src="<?php echo os_path('way-finding-2.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-2.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
+		<figcaption class="inner-container">The system is flexible yet straightforward to help visitors navigate the space.</figcaption>
+
+	</div>
 
 
 </section>
