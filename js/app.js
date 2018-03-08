@@ -17146,8 +17146,8 @@ window.onload = function() {
 			color = $that.data('color'),
 			$image = $('#image-' + id),
 			$maskItem = $('#li-case-study-' + id),
-			activeClass = 'active',
-			colorIsSet = false;
+			activeClass = 'active';
+			// colorIsSet = false;
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
@@ -17160,12 +17160,12 @@ window.onload = function() {
 				$maskItem.addClass(activeClass).removeClass('past');
 				$image.addClass(activeClass).removeClass('past');
 
-				if ( ! colorIsSet ) {
-					$('.bg-image').css({
-						backgroundColor: color
-					});
-					colorIsSet = true;
-				}
+				// if ( ! colorIsSet ) {
+				// 	$('.bg-image').css({
+				// 		backgroundColor: color
+				// 	});
+				// 	colorIsSet = true;
+				// }
 
 			} else if ( scrollTop > top + height ) {
 
@@ -17173,7 +17173,7 @@ window.onload = function() {
 				$maskItem.addClass('past').removeClass(activeClass);
 				$image.addClass('past').removeClass(activeClass);
 
-				colorIsSet = false;
+				// colorIsSet = false;
 
 			} else {
 
@@ -17181,7 +17181,7 @@ window.onload = function() {
 				$maskItem.removeClass( activeClass + ' past' );
 				$image.removeClass( activeClass + ' past' );
 
-				colorIsSet = false;
+				// colorIsSet = false;
 
 			}
 
@@ -17207,9 +17207,9 @@ window.onload = function() {
 
 				$that.removeClass(activeClass);
 				// unsetBgColor();
-				$('.bg-image').css({
-					backgroundColor: 'black'
-				});
+				// $('.bg-image').css({
+				// 	backgroundColor: 'black'
+				// });
 
 			}
 

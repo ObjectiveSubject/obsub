@@ -9,7 +9,7 @@ get_header();
 the_post(); 
 $case_studies = get_case_studies(); ?>
 
-	<section id="home-intro" class="home-intro full-height page-section active" style="height:75vh" >
+	<section id="home-intro" class="home-intro full-height page-section active" style="height:80vh" >
 
 		<div class="section-container">
 			<div class="intro-content section-content">
@@ -27,28 +27,31 @@ $case_studies = get_case_studies(); ?>
 
 	<section id="case-studies">
 
-		<?php foreach ( $case_studies as $study ) : ?>
+		<?php 
+		foreach ( $case_studies as $study ) :
+		
+			$color = get_field('case_study_color', $study->ID); ?>
 
-		<article id="<?php echo "case-study-{$study->ID}"; ?>" class="case-study" data-id="<?php echo $study->ID; ?>" data-color="<?php echo get_field('case_study_color', $study->ID); ?>">
-			<div class="outer-container">
-				<div class="inner-container">
-					<h2 class="case-study__title h1"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
-					<div class="case-study__desc">
-						<p class="h3">
-							<?php echo get_the_excerpt( $study ); ?><br/>
-							<a href="<?php echo get_permalink( $study ); ?>" title="View case study"><em>View case study &rarr;</em></a>
-						</p>
+			<article id="<?php echo "case-study-{$study->ID}"; ?>" class="case-study" data-id="<?php echo $study->ID; ?>" data-color="<?php echo $color; ?>">
+				<div class="outer-container">
+					<div class="inner-container">
+						<h2 class="case-study__title h1"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+						<div class="case-study__desc">
+							<p class="h3">
+								<?php echo get_the_excerpt( $study ); ?><br/>
+								<a href="<?php echo get_permalink( $study ); ?>" title="View case study" style="color:<?php echo $color; ?>"><em>View case study &rarr;</em></a>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
+			</article>
 
 		<?php endforeach;  ?>
 
 		<!-- <div class="bg-color"></div> -->
 		
 		<div class="bg-image">
-			<?php foreach ( $case_studies as $study ) {
+			<?php foreach ( $case_studies as $key => $study ) {
 				echo get_the_post_thumbnail( $study, 'full', array( 'id' => 'image-' . $study->ID ) ); 
 			} ?>
 		</div>		
@@ -72,7 +75,7 @@ $case_studies = get_case_studies(); ?>
 			
 	</section>
 
-	<section id="our-views" style="margin-top:40vh; padding-top: 3rem; background-color: #e6e6e6">
+	<section id="our-views" style="margin-top:40vh; padding-top: 3rem; background-color: #e6e6e6; position:relative">
 		<div class="outer-container">
 			
 			<div class="inner-container">
@@ -94,7 +97,7 @@ $case_studies = get_case_studies(); ?>
 		</div>
 	</section>
 
-	<section id="address" style="padding-top:5rem; background-color: #e6e6e6">
+	<section id="address" style="padding-top:5rem; background-color: #e6e6e6; position:relative">
 		<div class="outer-container">
 			<div class="inner-container">
 				<address class="h2">

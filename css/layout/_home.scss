@@ -41,7 +41,7 @@
 	}
 
 	img {
-		filter: grayscale(100%);
+		// filter: grayscale(100%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -57,10 +57,14 @@
 	
 		transform: translate3d(-50%, -50%, 0);
 		transition: all 600ms $easing;
-		opacity: 0;
+
+		&:not(:first-child),
+		&.past:first-child {
+			opacity: 0;
+		}
 
 		&.active {
-			opacity: 0.3;
+			opacity: 0.2;
 		}
 	}
 }
@@ -93,14 +97,13 @@
 	position: absolute;
 	top: 67%;
 	height: 4px;
-	background: black;
+	background: white;
 	width: 100%;
 	max-width: 300px;
 	transition: transform $duration $easing;
 	transform-origin: top left; 
 	transform: scale3d(0,1,1);
 	.has-active & {
-		background: white;
 		transform: scale3d(1,1,1);
 	}
 }
@@ -111,10 +114,8 @@
 	margin: 2rem 0 0;
 	opacity: 0;
 	transition: all $duration $easing;
-	transform: translate3d(0,25%,0);
 	.has-active & {
 		opacity: 1;
-		transform: translate3d(0,0,0);
 	}
 
 	li {
