@@ -88,7 +88,7 @@
     -webkit-appearance: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background 300ms ease;
+    transition: all $duration $easing;
 
     &:visited {
     	background: $color;
@@ -96,8 +96,9 @@
     }
 
 	&:hover, &:focus {
-		background: $hover;
-		color: white;
+		background: white;
+		color: black;
+		opacity: 1;
 	}
 
 	&:focus {
