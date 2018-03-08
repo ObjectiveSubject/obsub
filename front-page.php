@@ -57,8 +57,8 @@ $case_studies = get_case_studies(); ?>
 		</div>		
 
 		<div class="mask">
-			<div class="outer-container" style="height:100%">
-				<div class="inner-container" style="height:100%; position:relative">
+			<div class="outer-container">
+				<div class="inner-container">
 					<div class="mask__bar"></div>
 					<ul class="mask__list list-unstyled">
 						<?php foreach ( $case_studies as $study ) : ?>

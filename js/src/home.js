@@ -27,11 +27,19 @@
 				$maskItem.addClass(activeClass).removeClass('past');
 				$image.addClass(activeClass).removeClass('past');
 
+				if ( isLast ) {
+					$('#case-studies').removeClass('reached-last');
+				}
+
 			} else if ( scrollTop >= top + height ) {
 
 				$that.addClass('past').removeClass(activeClass);
 				$maskItem.addClass('past').removeClass(activeClass);
 				$image.addClass('past').removeClass(activeClass);
+
+				if ( isLast ) {
+					$('#case-studies').addClass('reached-last');
+				}
 
 			} else {
 

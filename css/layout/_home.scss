@@ -5,6 +5,13 @@
 	position: relative;
 }
 
+.case-study {
+	pointer-events: none;
+	&.active {
+		pointer-events: all;
+	}
+}
+
 .case-study__title {
 	opacity: 0;
 	transition: all	$duration $easing;
@@ -74,33 +81,15 @@
 	}
 }
 
-// .bg-color {
-// 	position: fixed;
-// 	z-index: -1;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	// transition: transform $duration	$easing;
-// 	// transform: scale3d(1,1.5,1);
-// 	// transform-origin: top left;
-// 	// .active & {
-// 	// 	transform: scale3d(1,1,1);
-// 	// }
-// }
-
 .mask {
 	position: fixed;
-	top: 0;
+	top: 67%;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	pointer-events: none;
 }
 
 .mask__bar {
-	position: absolute;
-	top: 67%;
 	height: 4px;
 	background: white;
 	width: 100%;
@@ -111,11 +100,12 @@
 	.has-active & {
 		transform: scale3d(1,1,1);
 	}
+	.reached-last & {
+		transform: scale3d(0,1,1);
+	}
 }
 
 .mask__list {
-    position: absolute;
-    top: 67%;
 	margin: 2rem 0 0;
 	opacity: 0;
 	transition: all $duration $easing;
@@ -126,9 +116,16 @@
 	li {
 		transition: all $duration $easing;
 		opacity: 0.5;
-		&:hover,
-		&.active {
+		max-height: 27px;
+		&:hover {
 			opacity: 1;
+		}
+
+		&.active,
+		&.past {
+			max-height: 0;
+			opacity: 0;
+			transform: translate3d(0,-100%,0);
 		}
 
 		a {
