@@ -1848,6 +1848,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 
 .case-study {
   pointer-events: none;
+  min-height: 25vh;
 }
 .case-study.active {
   pointer-events: all;
@@ -1960,6 +1961,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .has-active .mask__list {
   opacity: 1;
+}
+.reached-last .mask__list {
+  opacity: 0;
 }
 .mask__list li {
   transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);

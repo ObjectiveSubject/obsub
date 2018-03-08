@@ -7,6 +7,7 @@
 
 .case-study {
 	pointer-events: none;
+	min-height: 25vh;
 	&.active {
 		pointer-events: all;
 	}
@@ -114,6 +115,9 @@
 	.has-active & {
 		opacity: 1;
 	}
+	.reached-last & {
+		opacity: 0;
+	}
 
 	li {
 		transition: all $duration-lg $easing;
@@ -141,7 +145,7 @@
 	.mask--top & {
 		position: absolute;
 		bottom: 0;
-		
+
 		li {
 			max-height: 0;
 			opacity: 0;
