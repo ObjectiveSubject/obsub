@@ -1755,90 +1755,47 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   line-height: 1.5rem;
 }
 
-#case-studies.has-active {
+#case-studies {
   color: white;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  position: relative;
 }
 
-.case-study__left {
-  transition: all	250ms ease-out;
+.case-study__title {
+  opacity: 0;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-@media screen and (min-width: 768px) {
-  .case-study__left {
-    margin-left: 8.5298%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .case-study__left {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 17.05961%;
-  }
-  .case-study__left:last-child {
-    margin-right: 0;
-  }
-}
-.has-active .case-study__left {
-  opacity: 0.5;
-}
-.case-study__left:hover, .active .case-study__left {
+.active .case-study__title {
   opacity: 1;
 }
 
-.case-study__right {
-  transition: all	250ms ease-out;
-}
-@media screen and (min-width: 768px) {
-  .case-study__right {
-    margin-left: 8.5298%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .case-study__right {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 0%;
-  }
-  .case-study__right:last-child {
-    margin-right: 0;
-  }
-}
-.os-no-touchevents .case-study__right {
+.case-study__desc {
   opacity: 0;
-  transform: translate3d(-10%, 0, 0);
+  transform: translate3d(0, 20%, 0);
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-.case-study__left:hover + .case-study__right, .active .case-study__right {
+.active .case-study__desc {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.case-study__media {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 250ms ease-out;
-  z-index: -1;
-}
-.active .case-study__media {
-  opacity: 1;
-}
-
-.case-study__image {
+.bg-image {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
   overflow: hidden;
-  opacity: 0.5;
+  background-color: black;
+  transition: background-color 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-.case-study__image img {
+.has-active .bg-image {
+  position: fixed;
+}
+.bg-image img {
+  filter: grayscale(100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1846,15 +1803,62 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   height: auto;
   max-height: none;
   max-width: none;
-  min-height: 130%;
-  min-width: 130%;
+  min-height: 100%;
+  min-width: 100%;
   transform: translate3d(-50%, -50%, 0);
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0;
+}
+.bg-image img.active {
+  opacity: 0.3;
 }
 
-.case-study__color {
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.mask__bar {
+  position: absolute;
+  top: 67%;
+  height: 4px;
+  background: black;
   width: 100%;
-  height: 100%;
-  background-color: #000;
+  max-width: 300px;
+  transition: transform 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  transform-origin: top left;
+  transform: scale3d(0, 1, 1);
+}
+.has-active .mask__bar {
+  background: white;
+  transform: scale3d(1, 1, 1);
+}
+
+.mask__list {
+  position: absolute;
+  top: 67%;
+  margin: 2rem 0 0;
+  opacity: 0;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  transform: translate3d(0, 25%, 0);
+}
+.has-active .mask__list {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.mask__list li {
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.5;
+}
+.mask__list li:hover, .mask__list li.active {
+  opacity: 1;
+}
+.mask__list li a {
+  display: block;
 }
 
 @media screen and (min-width: 500px) {

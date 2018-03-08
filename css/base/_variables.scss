@@ -100,3 +100,7 @@ $table-cell-padding: 5px;
 $line-height-base: 1em;
 $table-border-color: #DDD;
 $table-condensed-cell-padding: 5px;
+
+// http://easings.net/#easeInOutQuint
+$easing: cubic-bezier(0.86, 0, 0.07, 1);
+$duration: 300ms;
