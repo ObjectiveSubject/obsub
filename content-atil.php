@@ -60,7 +60,7 @@
 	</div>
 
 	<blockquote class="inverted" data-speed-modifier="0.5">
-		<p class=""><span class="quote">&ldquo;</span>Quote from TransitCenter<span class="quote">&rdquo;</span><br/><small>&mdash;  John Smith, TransitCenter Employee</small></p>
+		<p class=""><span class="quote">&ldquo;</span>Objective Subject’s familiarity with urban policy made us feel as though we were working with a true partner, not just a design consultant. <span class="quote">&rdquo;</span><br/><small>&mdash;  Steven Higashide <em>Director of Research, TransitCenter</em></small></p>
 	</blockquote>
 
 
