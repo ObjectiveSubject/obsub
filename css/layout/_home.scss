@@ -1,76 +1,52 @@
 #case-studies {
-	&.has-active {
-		color: white;
-	}
+	color: white;
+	padding-top: 40vh;
+	padding-bottom: 50vh;
+	position: relative;
 }
 
-.case-study__left {
-	@include media($screen-md) {
-		@include shift(1);
-	}
-	@include media($screen-lg) {
-		@include span-columns(6);
-		@include shift(2);
-	}
+.case-study__title {
+	opacity: 0;
+	transition: all	$duration $easing;
 
-	transition: all	250ms ease-out;
-
-	.has-active & {
-		opacity: 0.5;
-	}
-	&:hover,
 	.active & {
 		opacity: 1;
 	}
 }
 
-.case-study__right {
-	@include media($screen-md) {
-		@include shift(1);
-	}
-	@include media($screen-lg) {
-		@include span-columns(4);
-		@include shift(0);
-	}
+.case-study__desc {
+	opacity: 0;
+	transform: translate3d(0,20%,0);
+	transition: all	$duration $easing;
 
-	transition: all	250ms ease-out;
-
-	.os-no-touchevents & {
-		opacity: 0;
-		transform: translate3d(-10%,0,0);
-	}
-
-	.case-study__left:hover + &,
 	.active & {
 		opacity: 1;	
 		transform: translate3d(0,0,0);
 	}
 }
 
-.case-study__media {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	transition: all 250ms ease-out;
-	z-index: -1;
-	.active & {
-		opacity: 1;
-	}
-}
-
-.case-study__image {
+.bg-image {
 	position: absolute;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
 	overflow: hidden;
-	opacity: 0.5;
+	background-color: black;
+	transition: background-color $duration $easing;
+
+	.has-active & {
+		position: fixed;
+	}
+	.past & {
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	}
 
 	img {
+		// filter: grayscale(100%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -81,19 +57,87 @@
 		max-height: none;
 		max-width: none;
 	
-		min-height: 130%;
-		min-width: 130%;
+		min-height: 100%;
+		min-width: 100%;
 	
 		transform: translate3d(-50%, -50%, 0);
+		transition: all 600ms $easing;
+
+		&:not(:first-child),
+		&.past:first-child {
+			opacity: 0;
+		}
+
+		&.active {
+			opacity: 0.2;
+		}
 	}
 }
 
-.case-study__color {
-	// opacity: 0.3;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
+// .bg-color {
+// 	position: fixed;
+// 	z-index: -1;
+// 	top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	right: 0;
+// 	// transition: transform $duration	$easing;
+// 	// transform: scale3d(1,1.5,1);
+// 	// transform-origin: top left;
+// 	// .active & {
+// 	// 	transform: scale3d(1,1,1);
+// 	// }
+// }
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
 }
+
+.mask__bar {
+	position: absolute;
+	top: 67%;
+	height: 4px;
+	background: white;
+	width: 100%;
+	max-width: 300px;
+	transition: transform $duration $easing;
+	transform-origin: top left; 
+	transform: scale3d(0,1,1);
+	.has-active & {
+		transform: scale3d(1,1,1);
+	}
+}
+
+.mask__list {
+    position: absolute;
+    top: 67%;
+	margin: 2rem 0 0;
+	opacity: 0;
+	transition: all $duration $easing;
+	.has-active & {
+		opacity: 1;
+	}
+
+	li {
+		transition: all $duration $easing;
+		opacity: 0.5;
+		&:hover,
+		&.active {
+			opacity: 1;
+		}
+
+		a {
+			display: block;
+		}
+	}
+}
+
+//- ------------------------------ // 
 
 .our-views-article {
 	@include media($screen-sm) {

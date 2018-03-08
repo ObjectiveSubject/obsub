@@ -42,7 +42,7 @@
 	background-size: cover;
 	@include transition( all 750ms ease );
 	backface-visibility: hidden;
-
+	
 	.scrim {
 		position: absolute;
 		top: 0;
@@ -53,6 +53,7 @@
 		background-color: rgba(0,0,0,0.4);
 	}
 }
+
 
 .section-content {
 	position: relative;
