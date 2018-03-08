@@ -1946,12 +1946,12 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   overflow: hidden;
 }
 .mask.mask--bottom {
-  top: 67%;
+  top: 75%;
   bottom: 0;
 }
 .mask.mask--top {
   top: 0;
-  bottom: 80%;
+  bottom: 90%;
 }
 
 .mask__list {
@@ -1979,6 +1979,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .mask--bottom .mask__list li.active, .mask--bottom .mask__list li.past {
   max-height: 0;
   opacity: 0;
+  margin: 0;
   transform: translate3d(0, -100%, 0);
 }
 .mask--top .mask__list {
@@ -1988,6 +1989,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .mask--top .mask__list li {
   max-height: 0;
   opacity: 0;
+  margin: 0;
   transform: translate3d(0, 100%, 0);
 }
 .mask--top .mask__list li.past {

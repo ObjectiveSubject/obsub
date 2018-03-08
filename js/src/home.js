@@ -18,7 +18,7 @@
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
-			var top = $that.offset().top - (window.innerHeight / 2) + 100, // an extra 100px up _feels_ like the "perceived" center
+			var top = $that.offset().top - (window.innerHeight * 0.5),
 				height = $that.outerHeight();
 
 			if ( scrollTop >= top && scrollTop < top + height ) {

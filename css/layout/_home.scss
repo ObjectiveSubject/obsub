@@ -99,12 +99,12 @@
 	overflow: hidden;
 	
 	&.mask--bottom {
-		top: 67%;
+		top: 75%;
 		bottom: 0;
 	}
 	&.mask--top {
 		top: 0;
-		bottom: 80%;
+		bottom: 90%;
 	}
 }
 
@@ -138,6 +138,7 @@
 			&.past {
 				max-height: 0;
 				opacity: 0;
+				margin: 0;
 				transform: translate3d(0,-100%,0);
 			}
 		}
@@ -149,6 +150,7 @@
 		li {
 			max-height: 0;
 			opacity: 0;
+			margin: 0;
 			transform: translate3d(0,100%,0);
 			&.past {
 				max-height: 42px;
