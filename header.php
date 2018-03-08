@@ -25,31 +25,35 @@
 
 	<header id="masthead" class="site-header <?php echo ( is_front_page() ) ? 'show-preview-menu' : ''; ?> " role="banner">
 
-		<div class="site-title">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark dark" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark light" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
+		<div class="outer-container">
+
+			<div class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark dark" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="wordmark light" rel="home"><span class="hide"><?php bloginfo( 'name' ); ?></span></a>
+			</div>
+
+			<a class="menu-toggle" href="#">
+				<i class="top-line"></i>
+				<i class="center-line"></i>
+				<i class="bottom-line"></i>
+				<span class="hide">menu</span>
+			</a>
+
+			<?php if ( is_front_page() ) : ?>
+			<ul class="preview-nav list-unstyled hug">
+				<li class="menu-item future-A hug">
+					<a href="#former-clients" class="smooth-scroll">clients</a>
+				</li>
+				<li class="menu-item page-profile future-A hug">
+					<a href="<?php echo site_url('/profile'); ?>">about</a>
+				</li>
+				<li class="menu-item page-contact future-A hug">
+					<a href="<?php echo site_url('/contact'); ?>">contact</a>
+				</li>
+			</ul>
+			<?php endif; ?>
+
 		</div>
-
-		<a class="menu-toggle" href="#">
-			<i class="top-line"></i>
-			<i class="center-line"></i>
-			<i class="bottom-line"></i>
-			<span class="hide">menu</span>
-		</a>
-
-		<?php if ( is_front_page() ) : ?>
-		<ul class="preview-nav list-unstyled hug">
-			<li class="menu-item future-A hug">
-				<a href="#former-clients" class="smooth-scroll">clients</a>
-			</li>
-			<li class="menu-item page-profile future-A hug">
-				<a href="<?php echo site_url('/profile'); ?>">about</a>
-			</li>
-			<li class="menu-item page-contact future-A hug">
-				<a href="<?php echo site_url('/contact'); ?>">contact</a>
-			</li>
-		</ul>
-		<?php endif; ?>
 
 		<nav id="site-navigation" class="main-navigation future-A" role="navigation">
 			<div class="main-menu outer-container">

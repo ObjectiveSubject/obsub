@@ -22,7 +22,7 @@ get_header(); ?>
 		<section class="page-header page-section <?php echo $cs_class; ?>" style="<?php echo ($featured_image_id) ? "background-image:url( {$featured_image_url} )" : ""; ?> ">
 			<div class="section-content">
 				<div class="outer-container">
-					<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
+					<h1 class="page-title inner-container hug super"><?php echo get_the_excerpt(); ?></h1>
 					<h3 class="page-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
 					<nav class="page-nav inner-container">
 						<ul class="list-unstyled hug">
