@@ -148,12 +148,86 @@
 	</div>
 
 
+	<figure class="os-slideshow-container">
+		<div id="oakland-toolkit-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-homepage.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-homepage.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-homepage@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >The website’s homepage puts a given week’s activities front and center, highlighting the hitherto lesser-known offerings.</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-company.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-company.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-company@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #4</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-event.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-event.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-event@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #5</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-upcoming@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #6</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-monthly@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #7</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("oakland-toolkit-nav"); ?>
+	</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p><strong>Implementation</strong></p>
+			<p style="margin-top:0;">Though our research uncovered a deep complexity to the organization, one universal understanding was the integrality of movement. Physical movement, naturally, but also emotional, spiritual, and political movement are all manifested through Gibney’s values, programs, and community. We also realized that having the word ‘Dance’ as part of the name provided more limitations than opportunities, and recommended it be dropped to leverage the colloquial name already familiar to the community.</p>
+		</div>
+	</div>
+
+	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each push-triple">
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-1.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+		</div>
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-2.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+		</div>
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-3.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-3.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-3@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+		</div>
+	</figure>
+	<div class="outer-container">
+		<figcaption class="inner-container">Caption this rotation #8</figcaption>
+	</div>
+
+</section>
+
 
 
 	<div class="outer-container push-triple-bottom">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A"><a href="http://gibney.com/" class="cta-link" target="_blank">gibney.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
-
-</section>
