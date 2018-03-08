@@ -17,7 +17,7 @@
 				functions = {
 					fadeInOut: fadeInOut,
 					fadeOutReveal: fadeOutReveal
-				}
+				};
 
 			//hide all elemnets to get started
 			children.each(function (i, el) {
@@ -30,8 +30,7 @@
 
 			//loop through all children revieling the one below on fade
 			function fadeOutReveal() {
-				console.log(children.last())
-				children.css("position", "absolute")
+				children.css("position", "absolute");
 
 				children.each(function (i, el) {
 
@@ -42,14 +41,15 @@
 				children.last().css({
 					"position": "relative",
 					"opacity": "1"
-				})
+				});
 
 
 
 				function loop() {
 					var thisChild = $(children[i]),
 						nextIndex = i >= children.length - 1 ? 0 : i + 1,
-						nextChild = $(children[nextIndex])
+						nextChild = $(children[nextIndex]);
+
 					node.height(children.last().height());
 
 					nextChild.animate({
@@ -61,25 +61,25 @@
 					}, eachDuration / 2, function () {
 
 						setTimeout(function () {
-							i >= children.length - 1 ? i = 0 : i++
-								loop()
+							i = i >= children.length - 1 ? 0 : i + 1;
+							loop();
 						}, hold);
 
 
 					});
 				}
 
-				loop()
+				loop();
 			}
 
 			//loop through all the children
 			function fadeInOut() {
 				// setTimeout(function(){
-				var thisChild = $(children[i])
-				node.height(thisChild.height())
-				node.empty()
-				node.html(thisChild[0])
-				node.height(thisChild.height())
+				var thisChild = $(children[i]);
+				node.height(thisChild.height());
+				node.empty();
+				node.html(thisChild[0]);
+				node.height(thisChild.height());
 				thisChild.animate({
 					opacity: 1
 				}, eachDuration / 2, function () {
@@ -88,15 +88,15 @@
 						thisChild.animate({
 							opacity: 0
 						}, eachDuration / 2, function () {
-							i >= children.length - 1 ? i = 0 : i++
-								fadeInOut()
+							i = i >= children.length - 1 ? 0 : i + 1;
+							fadeInOut();
 						});
-					}, hold)
-				})
+					}, hold);
+				});
 			}
 
 			// run the function
-			functions[type]()
+			functions[type]();
 		});
 	});
 })(jQuery, window);

@@ -117,12 +117,12 @@
 
 	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each push-triple">
 		<div class="outer-container">
-			<img src="<?php echo os_path('new-architecture.png', 'gibney') ?>" srcset="<?php echo os_path('new-architecture.png', 'gibney') ?> 1x, <?php echo os_path('new-architecture@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
-			<figcaption class="inner-container">Gibney’s cohesive brand architecture allows for a more streamlined communication of the institution’s many offerings.</figcaption>
+			<img src="<?php echo os_path('GibneyBrandArch-Before.png', 'gibney') ?>" srcset="<?php echo os_path('GibneyBrandArch-Before.png', 'gibney') ?> 1x, <?php echo os_path('GibneyBrandArch-Before@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">Gibney’s old brand architecture was a collection of ad hoc identities that bore little relationship to one another, creating confusion for their audiences.</figcaption>
 		</div>
 		<div class="outer-container">
-			<img src="<?php echo os_path('old-architecture.png', 'gibney') ?>" srcset="<?php echo os_path('old-architecture.png', 'gibney') ?> 1x, <?php echo os_path('old-architecture@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
-			<figcaption class="inner-container">Gibney’s old brand architecture was a collection of ad hoc identities that bore little relationship to one another, creating confusion for their audiences.</figcaption>
+			<img src="<?php echo os_path('GibneyBrandArch-After.png', 'gibney') ?>" srcset="<?php echo os_path('GibneyBrandArch-After.png', 'gibney') ?> 1x, <?php echo os_path('GibneyBrandArch-After@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+			<figcaption class="inner-container">Gibney’s cohesive brand architecture allows for a more streamlined communication of the institution’s many offerings.</figcaption>
 		</div>
 	</figure>
 
@@ -209,18 +209,53 @@
 
 	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each push-triple">
 		<div class="outer-container">
-			<img src="<?php echo os_path('brochure-1.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+			<img src="<?php echo os_path('brochure-3.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-3.png', 'gibney') ?> 1x, <?php echo os_path('brochure-3@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
 		</div>
 		<div class="outer-container">
-			<img src="<?php echo os_path('brochure-2.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<img src="<?php echo os_path('brochure-1.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.png', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
 		</div>
 		<div class="outer-container">
-			<img src="<?php echo os_path('brochure-3.jpg', 'gibney') ?>" srcset="<?php echo os_path('brochure-3.jpg', 'gibney') ?> 1x, <?php echo os_path('brochure-3@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<img src="<?php echo os_path('brochure-2.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.png', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
 		</div>
 	</figure>
-	<div class="outer-container">
-		<figcaption class="inner-container">Caption this rotation #8</figcaption>
+
+	<div data-offset="0.25" class="outer-container active-on-inview">
+		<div class="inner-container gibney__cat--container">
+			<img class="gibney__cat gibney__cat--right" src="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('performance-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="performance catalogue">
+			<img class="gibney__cat gibney__cat--middle" src="<?php echo os_path('training-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('training-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('training-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="training catalogue">
+			<img class="gibney__cat gibney__cat--left" src="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('rental-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+		</div>
+		<figcaption class="inner-container">Using a range of size formats, the reenvisioned catalogue clarifies content based on both Gibney’s offerings and audiences.</figcaption>
 	</div>
+
+
+	<div class="outer-container">
+		<figure class="inner-container">
+			<img src="<?php echo os_path('spread-1.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-1.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-1@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+		</figure>
+	</div>
+
+	<div class="flex-blocks outer-container">
+		<div class="column column-span-6 ">
+			<img src="<?php echo os_path('spread-2.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-2.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-2@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+		</div>
+		<div class="column column-span-6">
+			<img src="<?php echo os_path('spread-3.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-3.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-3@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+		</div>
+		<figcaption class="inner-container">The use of negative space within the interior spreads creates visual tension between image and text. </figcaption>
+	</div>
+
+
+	<div class="outer-container push-triple push-triple-bottom">
+		<div class="inner-container">
+			<p>Acknowledging the opportunity a brand launch offers an organization to reintroduce itself, we developed concepts for and produced two videos that explained the rebrand process and summed up the new Gibney.</p>
+		</div>
+	</div>
+
+
 
 </section>
 
@@ -228,6 +263,6 @@
 
 	<div class="outer-container push-triple-bottom">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://gibney.com/" class="cta-link" target="_blank">gibney.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A"><a href="http://gibneydance.org/" class="cta-link" target="_blank">gibneydance.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
