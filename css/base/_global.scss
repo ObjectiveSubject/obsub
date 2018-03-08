@@ -47,15 +47,11 @@ a {
 	&:focus,
 	&:hover {
 		color: $color_link_hover;
-	}
-
-	&:focus {
-		outline: none;
+		outline: 0;
 	}
 
 	&:active,
 	&:hover {
-		outline: 0;
 		opacity: 0.6;
 	}
 }

@@ -27,6 +27,22 @@ $case_studies = get_case_studies(); ?>
 
 	<section id="case-studies" class="page-section use-ui-light-theme">
 
+		<div class="mask mask--top">
+			<div class="outer-container">
+				<div class="inner-container">
+					<ul class="mask__list list-unstyled">
+						<?php foreach ( $case_studies as $study ) : ?>
+						<li class="h1 push-half <?php echo "li-case-study-{$study->ID}"; ?>">
+							<a href="<?php echo get_permalink( $study ); ?>" title="View case study">
+								<?php echo get_the_title($study); ?>
+							</a>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 		<?php 
 		foreach ( $case_studies as $study ) :
 		
@@ -34,14 +50,12 @@ $case_studies = get_case_studies(); ?>
 
 			<article id="<?php echo "case-study-{$study->ID}"; ?>" class="case-study" data-id="<?php echo $study->ID; ?>" data-color="<?php echo $color; ?>">
 				<div class="outer-container">
-					<div class="inner-container">
-						<h2 class="case-study__title super"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
-						<div class="case-study__desc">
-							<p class="h3">
-								<?php echo get_the_excerpt( $study ); ?><br/>
-								<a href="<?php echo get_permalink( $study ); ?>" title="View case study" style="color:<?php echo $color; ?>"><em>View case study &rarr;</em></a>
-							</p>
-						</div>
+					<h2 class="case-study__title h1"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+					<div class="case-study__desc">
+						<p class="h3">
+							<?php echo get_the_excerpt( $study ); ?><br/>
+							<a href="<?php echo get_permalink( $study ); ?>" class="button">View case study &nbsp; &#8250;</a>
+						</p>
 					</div>
 				</div>
 			</article>
@@ -56,13 +70,12 @@ $case_studies = get_case_studies(); ?>
 			} ?>
 		</div>		
 
-		<div class="mask">
+		<div class="mask mask--bottom">
 			<div class="outer-container">
 				<div class="inner-container">
-					<div class="mask__bar"></div>
 					<ul class="mask__list list-unstyled">
 						<?php foreach ( $case_studies as $study ) : ?>
-						<li id="<?php echo "li-case-study-{$study->ID}"; ?>">
+						<li class="h1 push-half <?php echo "li-case-study-{$study->ID}"; ?>">
 							<a href="<?php echo get_permalink( $study ); ?>" title="View case study">
 								<?php echo get_the_title($study); ?>
 							</a>
