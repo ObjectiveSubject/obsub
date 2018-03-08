@@ -1,7 +1,7 @@
 #case-studies {
 	color: white;
 	padding-top: 40vh;
-	padding-bottom: 20vh;
+	padding-bottom: 50vh;
 	position: relative;
 }
 
@@ -38,6 +38,11 @@
 
 	.has-active & {
 		position: fixed;
+	}
+	.past & {
+		position: absolute;
+		top: auto;
+		bottom: 0;
 	}
 
 	img {

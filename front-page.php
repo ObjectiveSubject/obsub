@@ -75,7 +75,7 @@ $case_studies = get_case_studies(); ?>
 			
 	</section>
 
-	<section id="our-views" style="margin-top:40vh; padding-top: 3rem; background-color: #e6e6e6; position:relative">
+	<section id="our-views" style="padding-top: 3rem; background-color: #e6e6e6; position:relative">
 		<div class="outer-container">
 			
 			<div class="inner-container">

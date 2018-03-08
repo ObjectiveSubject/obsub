@@ -1758,7 +1758,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 #case-studies {
   color: white;
   padding-top: 40vh;
-  padding-bottom: 20vh;
+  padding-bottom: 50vh;
   position: relative;
 }
 
@@ -1793,6 +1793,11 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .has-active .bg-image {
   position: fixed;
+}
+.past .bg-image {
+  position: absolute;
+  top: auto;
+  bottom: 0;
 }
 .bg-image img {
   position: absolute;
