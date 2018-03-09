@@ -49,7 +49,6 @@
 					var thisChild = $(children[i]),
 						nextIndex = i >= children.length - 1 ? 0 : i + 1,
 						nextChild = $(children[nextIndex]);
-
 					node.height(children.last().height());
 
 					nextChild.animate({

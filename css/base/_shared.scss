@@ -83,6 +83,7 @@
 	padding: 0.3em 0.5em;
 	text-shadow: none;
 	text-align: center;
+	text-transform: lowercase;
     font-size: rem(16);
     cursor: pointer;
     -webkit-appearance: none;
@@ -96,8 +97,8 @@
     }
 
 	&:hover, &:focus {
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 		opacity: 1;
 	}
 
