@@ -4,7 +4,8 @@
 
 (function( $, window, undefined ){
 
-	var $caseStudies = $('.home .case-study');
+	var $caseStudies = $('.home .js-case-study-container'),
+		current = 0;
 
 	$caseStudies.each(function(i){
 
@@ -12,20 +13,36 @@
 			id = $that.data('id'),
 			color = $that.data('color'),
 			$image = $('#image-' + id),
-			$maskItems = $('.li-case-study-' + id),
-			activeClass = 'active',
+			$maskItem = $('#li-case-study-' + id),
+			maskItemHeight = $maskItem.outerHeight(),
 			isLast = i === $caseStudies.length - 1;
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
-			var top = $that.offset().top - (window.innerHeight * 0.5),
-				height = $that.outerHeight();
+			var top = $that.offset().top,
+				height = $that.outerHeight(),
+				y,
+				imageY;
 
 			if ( scrollTop >= top && scrollTop < top + height ) {
 
-				$that.addClass(activeClass).removeClass('past');					
-				$maskItems.addClass(activeClass).removeClass('past');
-				$image.addClass(activeClass).removeClass('past');
+				current = i;
+
+				$maskItem
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(0,0,0)'
+					});
+
+				imageY = (Math.min( 1, (scrollTop - top) / height) * 10) + 50;
+
+				$image
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(-50%,-'+imageY+'%,0)'
+					});
 
 				if ( isLast ) {
 					$('#case-studies').removeClass('reached-last');
@@ -33,9 +50,16 @@
 
 			} else if ( scrollTop >= top + height ) {
 
-				$that.addClass('past').removeClass(activeClass);
-				$maskItems.addClass('past').removeClass(activeClass);
-				$image.addClass('past').removeClass(activeClass);
+				y = ( current - i ) * maskItemHeight;
+
+				$maskItem
+					.addClass('past')
+					.removeClass('active')
+					.css({
+						transform: 'translate3d(0,-' + y + 'px,0)'
+					});
+
+				$image.addClass('past').removeClass('active');
 
 				if ( isLast ) {
 					$('#case-studies').addClass('reached-last');
@@ -43,9 +67,14 @@
 
 			} else {
 
-				$that.removeClass( activeClass + ' past' );
-				$maskItems.removeClass( activeClass + ' past' );
-				$image.removeClass( activeClass + ' past' );
+				y = ((i - current) * maskItemHeight) + (window.innerHeight * 0.67);
+
+				$maskItem
+					.removeClass( 'active past' )
+					.css({
+						transform: 'translate3d(0,' + y + 'px,0)'
+					});
+				$image.removeClass( 'active past' );
 
 			}
 

@@ -67,11 +67,12 @@
 	width: 18px;
     height: 18px;
     opacity: 1;
+    transform: translate3d(100%,0,0);
 
     .show-preview-menu & {
         @include media($screen-md) {
             opacity: 0;
-            @include transform(translate3d(50px,0,0));
+            @include transform(translate3d(200%,0,0));
         }
     }
 

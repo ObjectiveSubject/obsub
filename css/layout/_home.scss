@@ -1,16 +1,65 @@
 #case-studies {
 	color: white;
-	padding-top: 40vh;
-	padding-bottom: 50vh;
 	position: relative;
+	padding-bottom: 75vh;
+}
+
+.case-study-container {
+	height: 75vh;
+}
+
+.mask {
+	position: absolute;
+	top: 100px;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	transition: opacity	$duration $easing;
+
+	@include media($screen-lg) {
+		top: 60px;
+	}
+	
+	.has-active & {
+		position: fixed;
+		opacity: 1;
+	}
+
+}
+
+.mask__list {
+	// margin: 67vh 0 0;
+	// height: 33vh;
 }
 
 .case-study {
-	pointer-events: none;
-	min-height: 25vh;
-	&.active {
-		pointer-events: all;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: transform $duration-lg $easing, max-height $duration $easing;
+
+	a {
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
 	}
+	
+
+	&.active {
+		a {
+			opacity: 1;
+		}
+	}
+	// &.past,
+	// &.active {
+		
+	// }
+	
+}
+
+.case-study__text {
+	transition: transform $duration-lg $easing;
 }
 
 .case-study__title {
@@ -21,25 +70,18 @@
 	@include media($screen-lg) {
 		@include shift(2);
 	}
-	opacity: 0;
-	transition: all	$duration-lg $easing;
-
-	.active & {
-		opacity: 1;
-	}
 }
 
 .case-study__desc {
 	@include media($screen-md) {
 		@include span-columns(4);
+		height: 0;
 	}
 	opacity: 0;
-	transform: translate3d(0,20%,0);
-	transition: all	$duration-lg $easing;
+	transition: all $duration-lg $easing;
 
 	.active & {
-		opacity: 1;	
-		transform: translate3d(0,0,0);
+		opacity: 1;
 	}
 
 	p {
@@ -79,11 +121,11 @@
 		max-height: none;
 		max-width: none;
 	
-		min-height: 100%;
-		min-width: 100%;
+		min-height: 120%;
+		min-width: 120%;
 	
 		transform: translate3d(-50%, -50%, 0);
-		transition: all 600ms $easing;
+		transition: opacity 600ms $easing;
 
 		&:not(:first-child),
 		&.past:first-child {
@@ -91,76 +133,7 @@
 		}
 
 		&.active {
-			opacity: 0.2;
-		}
-	}
-}
-
-.mask {
-	position: fixed;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	
-	&.mask--bottom {
-		top: 75%;
-		bottom: 0;
-	}
-	&.mask--top {
-		top: 0;
-		bottom: 90%;
-	}
-}
-
-.mask__list {
-	margin: 0;
-	opacity: 0;
-	transition: all $duration-lg $easing;
-	.has-active & {
-		opacity: 1;
-	}
-	.reached-last & {
-		opacity: 0;
-	}
-
-	li {
-		transition: all $duration-lg $easing;
-		max-height: 42px;
-
-		a {
-			display: block;
-			opacity: 0.5;
-			&:hover {
-				opacity: 1;
-			}
-		}
-	}
-
-	.mask--bottom & {
-		li {
-			&.active,
-			&.past {
-				max-height: 0;
-				opacity: 0;
-				margin: 0;
-				transform: translate3d(0,-100%,0);
-			}
-		}
-	}
-	.mask--top & {
-		position: absolute;
-		bottom: 0;
-
-		li {
-			max-height: 0;
-			opacity: 0;
-			margin: 0;
-			transform: translate3d(0,100%,0);
-			&.past {
-				max-height: 42px;
-				opacity: 1;
-				transform: translate3d(0,0,0);
-			}
+			opacity: 0.4;
 		}
 	}
 }

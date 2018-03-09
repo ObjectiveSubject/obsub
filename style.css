@@ -992,6 +992,10 @@ mark {
   text-decoration: none;
 }
 
+sup {
+  font-size: 50%;
+}
+
 .small,
 small {
   font-size: 75%;
@@ -1375,15 +1379,16 @@ body::before {
   width: 18px;
   height: 18px;
   opacity: 1;
+  transform: translate3d(100%, 0, 0);
 }
 @media screen and (min-width: 768px) {
   .show-preview-menu .menu-toggle {
     opacity: 0;
-    -webkit-transform: translate3d(50px, 0, 0);
-    -moz-transform: translate3d(50px, 0, 0);
-    -ms-transform: translate3d(50px, 0, 0);
-    -o-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(200%, 0, 0);
+    -moz-transform: translate3d(200%, 0, 0);
+    -ms-transform: translate3d(200%, 0, 0);
+    -o-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
   }
 }
 .menu-toggle .top-line, .menu-toggle .bottom-line {
@@ -1841,23 +1846,52 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 
 #case-studies {
   color: white;
-  padding-top: 40vh;
-  padding-bottom: 50vh;
   position: relative;
+  padding-bottom: 75vh;
+}
+
+.case-study-container {
+  height: 75vh;
+}
+
+.mask {
+  position: absolute;
+  top: 100px;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+@media screen and (min-width: 960px) {
+  .mask {
+    top: 60px;
+  }
+}
+.has-active .mask {
+  position: fixed;
+  opacity: 1;
 }
 
 .case-study {
-  pointer-events: none;
-  min-height: 25vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: transform 600ms cubic-bezier(0.86, 0, 0.07, 1), max-height 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-.case-study.active {
-  pointer-events: all;
+.case-study a {
+  opacity: 0.5;
+}
+.case-study a:hover {
+  opacity: 1;
+}
+.case-study.active a {
+  opacity: 1;
 }
 
-.case-study__title {
-  opacity: 0;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+.case-study__text {
+  transition: transform 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
+
 @media screen and (min-width: 768px) {
   .case-study__title {
     float: left;
@@ -1875,13 +1909,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     margin-left: 17.05961%;
   }
 }
-.active .case-study__title {
-  opacity: 1;
-}
 
 .case-study__desc {
   opacity: 0;
-  transform: translate3d(0, 20%, 0);
   transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1890,6 +1920,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    height: 0;
   }
   .case-study__desc:last-child {
     margin-right: 0;
@@ -1897,7 +1928,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .active .case-study__desc {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 .case-study__desc p {
   line-height: 1.45;
@@ -1930,75 +1960,16 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   height: auto;
   max-height: none;
   max-width: none;
-  min-height: 100%;
-  min-width: 100%;
+  min-height: 120%;
+  min-width: 120%;
   transform: translate3d(-50%, -50%, 0);
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 .bg-image img:not(:first-child), .bg-image img.past:first-child {
   opacity: 0;
 }
 .bg-image img.active {
-  opacity: 0.2;
-}
-
-.mask {
-  position: fixed;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-}
-.mask.mask--bottom {
-  top: 75%;
-  bottom: 0;
-}
-.mask.mask--top {
-  top: 0;
-  bottom: 90%;
-}
-
-.mask__list {
-  margin: 0;
-  opacity: 0;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-}
-.has-active .mask__list {
-  opacity: 1;
-}
-.reached-last .mask__list {
-  opacity: 0;
-}
-.mask__list li {
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-  max-height: 42px;
-}
-.mask__list li a {
-  display: block;
-  opacity: 0.5;
-}
-.mask__list li a:hover {
-  opacity: 1;
-}
-.mask--bottom .mask__list li.active, .mask--bottom .mask__list li.past {
-  max-height: 0;
-  opacity: 0;
-  margin: 0;
-  transform: translate3d(0, -100%, 0);
-}
-.mask--top .mask__list {
-  position: absolute;
-  bottom: 0;
-}
-.mask--top .mask__list li {
-  max-height: 0;
-  opacity: 0;
-  margin: 0;
-  transform: translate3d(0, 100%, 0);
-}
-.mask--top .mask__list li.past {
-  max-height: 42px;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+  opacity: 0.4;
 }
 
 @media screen and (min-width: 500px) {

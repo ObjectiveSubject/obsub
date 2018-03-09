@@ -25,40 +25,14 @@ $case_studies = get_case_studies(); ?>
 
 	</section>
 
-	<section id="case-studies" class="page-section use-ui-light-theme">
-
-		<div class="mask mask--top">
-			<div class="outer-container">
-				<div class="inner-container">
-					<ul class="mask__list list-unstyled">
-						<?php foreach ( $case_studies as $study ) : ?>
-						<li class="h1 push-half <?php echo "li-case-study-{$study->ID}"; ?>">
-							<a href="<?php echo get_permalink( $study ); ?>" title="View case study">
-								<?php echo get_the_title($study); ?>
-							</a>
-						</li>
-						<?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
-		</div>
+	<section id="case-studies" class="page-section use-ui-light-theme push-double">
 
 		<?php 
 		foreach ( $case_studies as $study ) :
 		
 			$color = get_field('case_study_color', $study->ID); ?>
 
-			<article id="<?php echo "case-study-{$study->ID}"; ?>" class="case-study" data-id="<?php echo $study->ID; ?>" data-color="<?php echo $color; ?>">
-				<div class="outer-container">
-					<h2 class="case-study__title h1 hug"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
-					<div class="case-study__desc">
-						<p class="hug">
-							<?php echo get_the_excerpt( $study ); ?><br/>
-							<a href="<?php echo get_permalink( $study ); ?>" class="button" style="margin-top:0.5em">view case study &nbsp; &#8250;</a>
-						</p>
-					</div>
-				</div>
-			</article>
+			<div class="case-study-container js-case-study-container" data-id="<?php echo $study->ID; ?>" data-color="<?php echo $color; ?>"></div>
 
 		<?php endforeach;  ?>
 
@@ -70,20 +44,37 @@ $case_studies = get_case_studies(); ?>
 			} ?>
 		</div>		
 
-		<div class="mask mask--bottom">
-			<div class="outer-container">
-				<div class="inner-container">
-					<ul class="mask__list list-unstyled">
-						<?php foreach ( $case_studies as $study ) : ?>
-						<li class="h1 push-half <?php echo "li-case-study-{$study->ID}"; ?>">
-							<a href="<?php echo get_permalink( $study ); ?>" title="View case study">
-								<?php echo get_the_title($study); ?>
-							</a>
-						</li>
-						<?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
+		<div class="mask">
+			
+			<ul class="mask__list list-unstyled">
+
+				<?php foreach ( $case_studies as $study ) : ?>
+
+				<li id="<?php echo "li-case-study-{$study->ID}"; ?>" class="case-study">
+
+					<div class="outer-container">
+					
+						<div class="case-study__text clearfix">
+							
+							<h2 class="case-study__title h1 hug"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+							
+							<div class="case-study__desc">
+								<p class="hug">
+									<?php echo get_the_excerpt( $study ); ?><br/>
+									<a href="<?php echo get_permalink( $study ); ?>" class="button" style="margin-top:0.5em">view case study &nbsp; &#8250;</a>
+								</p>
+							</div>
+
+						</div>
+
+					</div>
+
+				</li>
+
+				<?php endforeach; ?>
+
+			</ul>
+		
 		</div>
 			
 	</section>
@@ -92,7 +83,7 @@ $case_studies = get_case_studies(); ?>
 		<div class="outer-container">
 			
 			<div class="inner-container">
-				<h3 class="h1">Some text talking about our views lorem ipsum dolor sit amet</h3>
+				<h3 class="h1">Involving creative people to tackle complex questions can yield more dynamic, trusting, and accountable communities. Here are some places where we think we can help.</h3>
 			</div>		
 
 			<div class="clearfix" style="margin-top:5rem">
@@ -134,8 +125,9 @@ $case_studies = get_case_studies(); ?>
 		<div class="outer-container">
 			<div class="inner-container">
 				<address class="h1">
-					30 East 20th Street, 7th Floor<br/>New York, NY 10003<br/><br/>
-					+1 212 863 9194 office<br/>info@objectivesubject.com
+					30 East 20<sup>th</sup> Street, 7<sup>th</sup> Floor<br/>New York, NY 10003<br/><br/>
+					<a href="tel:+12128639194">+1 212 863 9194</a><br/>
+					<a href="mailto:info@objectivesubject.com">info@objectivesubject.com</a>
 				</address>
 				<p style="margin-top:1.5rem"><a href="#" class="button">contact us &nbsp; &#8250;</a></p>
 			</div>

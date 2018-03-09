@@ -16843,7 +16843,7 @@ window.onload = function() {
 				functions = {
 					fadeInOut: fadeInOut,
 					fadeOutReveal: fadeOutReveal
-				}
+				};
 
 			//hide all elemnets to get started
 			children.each(function (i, el) {
@@ -16856,8 +16856,8 @@ window.onload = function() {
 
 			//loop through all children revieling the one below on fade
 			function fadeOutReveal() {
-				console.log(children.last())
-				children.css("position", "absolute")
+				console.log(children.last());
+				children.css("position", "absolute");
 
 				children.each(function (i, el) {
 
@@ -16868,14 +16868,14 @@ window.onload = function() {
 				children.last().css({
 					"position": "relative",
 					"opacity": "1"
-				})
+				});
 
 
 
 				function loop() {
 					var thisChild = $(children[i]),
 						nextIndex = i >= children.length - 1 ? 0 : i + 1,
-						nextChild = $(children[nextIndex])
+						nextChild = $(children[nextIndex]);
 					node.height(children.last().height());
 
 					nextChild.animate({
@@ -16887,25 +16887,25 @@ window.onload = function() {
 					}, eachDuration / 2, function () {
 
 						setTimeout(function () {
-							i >= children.length - 1 ? i = 0 : i++
-								loop()
+							i = (i >= children.length - 1) ? 0 : i+1;
+								loop();
 						}, hold);
 
 
 					});
 				}
 
-				loop()
+				loop();
 			}
 
 			//loop through all the children
 			function fadeInOut() {
 				// setTimeout(function(){
-				var thisChild = $(children[i])
-				node.height(thisChild.height())
-				node.empty()
-				node.html(thisChild[0])
-				node.height(thisChild.height())
+				var thisChild = $(children[i]);
+				node.height(thisChild.height());
+				node.empty();
+				node.html(thisChild[0]);
+				node.height(thisChild.height());
 				thisChild.animate({
 					opacity: 1
 				}, eachDuration / 2, function () {
@@ -16914,15 +16914,15 @@ window.onload = function() {
 						thisChild.animate({
 							opacity: 0
 						}, eachDuration / 2, function () {
-							i >= children.length - 1 ? i = 0 : i++
-								fadeInOut()
+							i = (i >= children.length - 1) ? 0 : i+1;
+								fadeInOut();
 						});
-					}, hold)
-				})
+					}, hold);
+				});
 			}
 
 			// run the function
-			functions[type]()
+			functions[type]();
 		});
 	});
 })(jQuery, window);
@@ -17195,7 +17195,8 @@ window.onload = function() {
 
 (function( $, window, undefined ){
 
-	var $caseStudies = $('.home .case-study');
+	var $caseStudies = $('.home .js-case-study-container'),
+		current = 0;
 
 	$caseStudies.each(function(i){
 
@@ -17203,20 +17204,36 @@ window.onload = function() {
 			id = $that.data('id'),
 			color = $that.data('color'),
 			$image = $('#image-' + id),
-			$maskItems = $('.li-case-study-' + id),
-			activeClass = 'active',
+			$maskItem = $('#li-case-study-' + id),
+			maskItemHeight = $maskItem.outerHeight(),
 			isLast = i === $caseStudies.length - 1;
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
-			var top = $that.offset().top - (window.innerHeight * 0.5),
-				height = $that.outerHeight();
+			var top = $that.offset().top,
+				height = $that.outerHeight(),
+				y,
+				imageY;
 
 			if ( scrollTop >= top && scrollTop < top + height ) {
 
-				$that.addClass(activeClass).removeClass('past');					
-				$maskItems.addClass(activeClass).removeClass('past');
-				$image.addClass(activeClass).removeClass('past');
+				current = i;
+
+				$maskItem
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(0,0,0)'
+					});
+
+				imageY = (Math.min( 1, (scrollTop - top) / height) * 10) + 50;
+
+				$image
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(-50%,-'+imageY+'%,0)'
+					});
 
 				if ( isLast ) {
 					$('#case-studies').removeClass('reached-last');
@@ -17224,9 +17241,16 @@ window.onload = function() {
 
 			} else if ( scrollTop >= top + height ) {
 
-				$that.addClass('past').removeClass(activeClass);
-				$maskItems.addClass('past').removeClass(activeClass);
-				$image.addClass('past').removeClass(activeClass);
+				y = ( current - i ) * maskItemHeight;
+
+				$maskItem
+					.addClass('past')
+					.removeClass('active')
+					.css({
+						transform: 'translate3d(0,-' + y + 'px,0)'
+					});
+
+				$image.addClass('past').removeClass('active');
 
 				if ( isLast ) {
 					$('#case-studies').addClass('reached-last');
@@ -17234,9 +17258,14 @@ window.onload = function() {
 
 			} else {
 
-				$that.removeClass( activeClass + ' past' );
-				$maskItems.removeClass( activeClass + ' past' );
-				$image.removeClass( activeClass + ' past' );
+				y = ((i - current) * maskItemHeight) + (window.innerHeight * 0.67);
+
+				$maskItem
+					.removeClass( 'active past' )
+					.css({
+						transform: 'translate3d(0,' + y + 'px,0)'
+					});
+				$image.removeClass( 'active past' );
 
 			}
 
