@@ -1847,11 +1847,11 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 #case-studies {
   color: white;
   position: relative;
-  padding-bottom: 75vh;
+  padding-bottom: 60vh;
 }
 
 .case-study-container {
-  height: 75vh;
+  height: 60vh;
 }
 
 .mask {

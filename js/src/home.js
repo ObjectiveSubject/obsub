@@ -35,7 +35,7 @@
 						transform: 'translate3d(0,0,0)'
 					});
 
-				imageY = (Math.min( 1, (scrollTop - top) / height) * 10) + 50;
+				imageY = (Math.min( 1, (scrollTop - top) / height) * 8) + 50;
 
 				$image
 					.addClass('active')
