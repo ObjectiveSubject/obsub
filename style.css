@@ -1899,6 +1899,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+.case-study__desc p {
+  line-height: 1.45;
+}
 
 .bg-image {
   position: absolute;
@@ -2468,6 +2471,7 @@ input[type="reset"] {
   padding: 0.3em 0.5em;
   text-shadow: none;
   text-align: center;
+  text-transform: lowercase;
   font-size: 1rem;
   cursor: pointer;
   -webkit-appearance: none;

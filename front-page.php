@@ -50,11 +50,11 @@ $case_studies = get_case_studies(); ?>
 
 			<article id="<?php echo "case-study-{$study->ID}"; ?>" class="case-study" data-id="<?php echo $study->ID; ?>" data-color="<?php echo $color; ?>">
 				<div class="outer-container">
-					<h2 class="case-study__title h1"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+					<h2 class="case-study__title h1 hug"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
 					<div class="case-study__desc">
-						<p class="h3">
+						<p class="hug">
 							<?php echo get_the_excerpt( $study ); ?><br/>
-							<a href="<?php echo get_permalink( $study ); ?>" class="button">View case study &nbsp; &#8250;</a>
+							<a href="<?php echo get_permalink( $study ); ?>" class="button" style="margin-top:0.5em">view case study &nbsp; &#8250;</a>
 						</p>
 					</div>
 				</div>
