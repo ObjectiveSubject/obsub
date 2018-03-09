@@ -16856,7 +16856,6 @@ window.onload = function() {
 
 			//loop through all children revieling the one below on fade
 			function fadeOutReveal() {
-				console.log(children.last());
 				children.css("position", "absolute");
 
 				children.each(function (i, el) {
@@ -16887,8 +16886,8 @@ window.onload = function() {
 					}, eachDuration / 2, function () {
 
 						setTimeout(function () {
-							i = (i >= children.length - 1) ? 0 : i+1;
-								loop();
+							i = i >= children.length - 1 ? 0 : i + 1;
+							loop();
 						}, hold);
 
 
@@ -16914,8 +16913,8 @@ window.onload = function() {
 						thisChild.animate({
 							opacity: 0
 						}, eachDuration / 2, function () {
-							i = (i >= children.length - 1) ? 0 : i+1;
-								fadeInOut();
+							i = i >= children.length - 1 ? 0 : i + 1;
+							fadeInOut();
 						});
 					}, hold);
 				});

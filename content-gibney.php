@@ -117,12 +117,12 @@
 
 	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each push-triple">
 		<div class="outer-container">
-			<img src="<?php echo os_path('new-architecture.png', 'gibney') ?>" srcset="<?php echo os_path('new-architecture.png', 'gibney') ?> 1x, <?php echo os_path('new-architecture@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
-			<figcaption class="inner-container">Gibney’s cohesive brand architecture allows for a more streamlined communication of the institution’s many offerings.</figcaption>
+			<img src="<?php echo os_path('GibneyBrandArch-Before.png', 'gibney') ?>" srcset="<?php echo os_path('GibneyBrandArch-Before.png', 'gibney') ?> 1x, <?php echo os_path('GibneyBrandArch-Before@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">Gibney’s old brand architecture was a collection of ad hoc identities that bore little relationship to one another, creating confusion for their audiences.</figcaption>
 		</div>
 		<div class="outer-container">
-			<img src="<?php echo os_path('old-architecture.png', 'gibney') ?>" srcset="<?php echo os_path('old-architecture.png', 'gibney') ?> 1x, <?php echo os_path('old-architecture@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
-			<figcaption class="inner-container">Gibney’s old brand architecture was a collection of ad hoc identities that bore little relationship to one another, creating confusion for their audiences.</figcaption>
+			<img src="<?php echo os_path('GibneyBrandArch-After.png', 'gibney') ?>" srcset="<?php echo os_path('GibneyBrandArch-After.png', 'gibney') ?> 1x, <?php echo os_path('GibneyBrandArch-After@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+			<figcaption class="inner-container">Gibney’s cohesive brand architecture allows for a more streamlined communication of the institution’s many offerings.</figcaption>
 		</div>
 	</figure>
 
@@ -148,12 +148,145 @@
 	</div>
 
 
+	<figure class="os-slideshow-container">
+		<div id="oakland-toolkit-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#oakland-toolkit-nav .prev", "nextArrow": "#oakland-toolkit-nav .next", "appendDots": "#oakland-toolkit-dots" }'>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-homepage.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-homepage.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-homepage@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >The website’s homepage puts a given week’s activities front and center, highlighting the hitherto lesser-known offerings.</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-company.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-company.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-company@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #4</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-event.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-event.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-event@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #5</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-upcoming@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #6</figcaption>
+			</li>
+			<li class="browser">
+				<div class="browser-bar"></div>
+				<div class="browser-window">
+					<div class="browser-inner">
+						<img src="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-monthly@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
+					</div>
+				</div>
+				<figcaption >Caption this image #7</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("oakland-toolkit-nav"); ?>
+	</figure>
+
+	<div class="outer-container">
+		<div class="inner-container">
+			<p><strong>Implementation</strong></p>
+			<p style="margin-top:0;">Though our research uncovered a deep complexity to the organization, one universal understanding was the integrality of movement. Physical movement, naturally, but also emotional, spiritual, and political movement are all manifested through Gibney’s values, programs, and community. We also realized that having the word ‘Dance’ as part of the name provided more limitations than opportunities, and recommended it be dropped to leverage the colloquial name already familiar to the community.</p>
+		</div>
+	</div>
+
+	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each push-triple">
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-3.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-3.png', 'gibney') ?> 1x, <?php echo os_path('brochure-3@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+		</div>
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-1.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.png', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+		</div>
+		<div class="outer-container">
+			<img src="<?php echo os_path('brochure-2.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.png', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+		</div>
+	</figure>
+
+	<div data-offset="0.25" class="outer-container active-on-inview">
+		<div class="inner-container gibney__cat--container">
+			<img class="gibney__cat gibney__cat--right" src="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('performance-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="performance catalogue">
+			<img class="gibney__cat gibney__cat--middle" src="<?php echo os_path('training-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('training-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('training-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="training catalogue">
+			<img class="gibney__cat gibney__cat--left" src="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('rental-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+		</div>
+		<figcaption class="inner-container">Using a range of size formats, the reenvisioned catalogue clarifies content based on both Gibney’s offerings and audiences.</figcaption>
+	</div>
+
+
+	<div class="outer-container">
+		<figure class="inner-container">
+			<img src="<?php echo os_path('spread-1.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-1.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-1@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+		</figure>
+	</div>
+
+	<div class="flex-blocks outer-container">
+		<div class="column column-span-6 ">
+			<img src="<?php echo os_path('spread-2.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-2.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-2@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+		</div>
+		<div class="column column-span-6">
+			<img src="<?php echo os_path('spread-3.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-3.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-3@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+		</div>
+		<figcaption class="inner-container">The use of negative space within the interior spreads creates visual tension between image and text. </figcaption>
+	</div>
+
+
+	<div class="outer-container push-triple push-triple-bottom">
+		<div class="inner-container">
+			<p>Acknowledging the opportunity a brand launch offers an organization to reintroduce itself, we developed concepts for and produced two videos that explained the rebrand process and summed up the new Gibney.</p>
+		</div>
+	</div>
+
+	<div class="outer-container">
+			Video goes HERE
+			<figcaption class="inner-container">Brand Video</figcaption>
+	</div>
+
+	<div class="outer-container">
+			Video goes HERE
+			<figcaption class="inner-container">Anthem Video</figcaption>
+	</div>
+
+	<div class="outer-container push-triple push-triple-bottom">
+		<div class="inner-container">
+			<p>We also continue to work with Gibney to realize the brand, designing a wayfinding and environmental graphics system for its physical space.</p>
+		</div>
+	</div>
+
+
+	<div class="outer-container">
+		<img src="<?php echo os_path('way-finding-1.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-1.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
+
+		<img src="<?php echo os_path('way-finding-2.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-2.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
+		<figcaption class="inner-container">The system is flexible yet straightforward to help visitors navigate the space.</figcaption>
+
+	</div>
+
+
+</section>
+
 
 
 	<div class="outer-container push-triple-bottom">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A"><a href="http://gibneydance.org/" class="cta-link" target="_blank">gibneydance.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
-
-</section>

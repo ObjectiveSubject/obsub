@@ -4738,3 +4738,28 @@ blockquote.parallax-node {
   position: relative;
   list-style: none;
 }
+
+.gibney__cat {
+  bottom: 0;
+  position: absolute;
+  width: unset;
+  transition: transform 350ms;
+}
+.gibney__cat--right {
+  right: 0;
+  transform: translate3d(40%, 0, 0);
+}
+.gibney__cat--middle {
+  left: 15%;
+  transform: translate3d(-12%, 0, 0);
+}
+.gibney__cat--left {
+  transform: translate3d(-74%, 0, 0);
+}
+.active .gibney__cat {
+  transform: translate3d(0, 0, 0);
+}
+.gibney__cat--container {
+  position: relative;
+  height: 690px;
+}
