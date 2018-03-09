@@ -14,7 +14,6 @@ $screen-md: 768px;
 $screen-lg: 960px;
 $screen-xl: 1200px;
 
-
 // Colors
 // ============================================ /
 $light_gray: #e6e6e6;
@@ -28,6 +27,7 @@ $oakland_green: #4EBB25;
 $boston_blue: #0077C8;
 $boston_green: #06CA00;
 $boston_dark_green: #0E7A09;
+$gibney_black: #000000;
 $localdata_orange: #FFA100;
 $localdata_red: #EE5A24;
 $hester_black: #000000;
@@ -70,7 +70,6 @@ $color_border_input: #ccc;
 $color_border_input_hover: #ccc;
 $color_border_input_focus: #ccc;
 
-
 // Typography
 // ============================================ /
 $font_main: "ArnhemPro", "Georgia", sans-serif;
@@ -80,15 +79,20 @@ $font_pre: "Menlo", monospace;
 $leading: 1.5rem;
 $font_line_height_pre: 1.6rem;
 
-$h1_size: 3.5em;  $h1_line_height: 1.1em;
-$h2_size: 2.5em;  $h2_line_height: 1.2em;
-$h3_size: 1.5em;  $h3_line_height: 1.3em;
-$h4_size: 1.2em;  $h4_line_height: 1.4em;
-$h5_size: 1em;  $h5_line_height: 1.4em;
-$h6_size: 1em;  $h6_line_height: 1.4em;
+$h1_size: 3.5em;
+$h1_line_height: 1.1em;
+$h2_size: 2.5em;
+$h2_line_height: 1.2em;
+$h3_size: 1.5em;
+$h3_line_height: 1.3em;
+$h4_size: 1.2em;
+$h4_line_height: 1.4em;
+$h5_size: 1em;
+$h5_line_height: 1.4em;
+$h6_size: 1em;
+$h6_line_height: 1.4em;
 
 $color_text_muted: #aaa;
-
 
 // Tables
 // ============================================ /

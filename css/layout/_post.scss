@@ -12,6 +12,7 @@
 		&.use-ui-light-theme {
 			color: white;
 		}
+
 		&.has-bg-image:before {
 			content: "";
 			display: block;
@@ -47,42 +48,57 @@
 	blockquote {
 		padding: ($leading * 2) 0;
 		margin: ($leading * 2) 0 0;
+
 		.city-of-oakland & {
 			background: #003265;
 			color: #376FFF;
 		}
+
 		.atil &.parallax-node {
 			background: $atil_yellow;
 			color: #FFFFFF;
 		}
+
+		.gibney &.parallax-node {
+			background: $gibney_black;
+			color: #FFFFFF;
+		}
+
 		.claremont-graduate-university & {
 			background: $claremont_red;
 			color: #FFF;
 		}
+
 		.localdata & {
 			background: $localdata_red;
 			color: #FFEAC4;
 		}
+
 		.hester-street & {
 			background: $hester_black;
 			color: #FFFFFF;
 		}
+
 		.boston-public-schools & {
 			background: #FFFF00;
 			color: #565656;
 		}
+
 		.transit-center & {
 			background: #5E29AC;
 			color: #FFFFFF;
-			p{
+
+			p {
 				max-width: 63.624rem;
 			}
 		}
+
 		.department-of-education & {
 			background: $doe_green;
 			color: $doe_dark_green;
 
 		}
+
 		p {
 			font-size: rem(24);
 			line-height: rem(30);
@@ -97,10 +113,12 @@
 				font-size: rem(44);
 				line-height: rem(46);
 			}
-			&.bleed{
+
+			&.bleed {
 				max-width: 63.624rem;
 			}
 		}
+
 		small {
 			font-size: rem(16);
 			line-height: rem(24);

@@ -1,20 +1,25 @@
 .page-nav {
 	padding-top: $leading * 2;
-	@include media($screen-md){
+	@include media($screen-md) {
 		display: none;
 	}
+
 	li {
-		@include media($screen-md){
+		@include media($screen-md) {
 			opacity: 0;
 		}
 	}
+
 	a {
 		color: $color_text_main;
+
 		&:hover {
 			color: tint($color_text_main, 70%);
 		}
+
 		.use-ui-light-theme & {
 			color: white;
+
 			&:hover {
 				color: tint($color_text_main, 70%);
 			}
@@ -22,15 +27,16 @@
 	}
 }
 
-
 .colophon {
 	@include clearfix;
+
 	.details {
 		@include media($screen-lg) {
 			float: left;
 			width: 60%;
 		}
 	}
+
 	.awards {
 		@include media($screen-lg) {
 			float: left;
@@ -42,36 +48,55 @@
 .cta-link {
 	.localdata & {
 		color: $localdata_red;
+
 		&:hover {
 			color: darken($localdata_red, 20%);
 		}
 	}
+
 	.city-of-oakland & {
 		color: $oakland_blue;
+
 		&:hover {
 			color: darken($oakland_blue, 20%);
 		}
 	}
+
+	.gibney & {
+		color: $gibney_black;
+
+		&:hover {
+			color: darken($gibney_black, 20%);
+		}
+	}
+
 	.atil & {
 		color: $atil_yellow;
+
 		&:hover {
 			color: darken($atil_yellow, 20%);
 		}
 	}
+
 	.department-of-education & {
 		color: $doe_orange;
+
 		&:hover {
 			color: darken($doe_orange, 20%);
 		}
 	}
+
 	.boston-public-schools & {
 		color: $boston_green;
+
 		&:hover {
 			color: $boston_dark_green;
 		}
 	}
+
 	.claremont-graduate-university & {
 		color: $claremont_red;
+
 		&:hover {
 			color: darken($claremont_red, 20%);
 		}
@@ -79,6 +104,7 @@
 
 	.boston-public-schools & {
 		color: $hester_black;
+
 		&:hover {
 			color: $hester_black;
 		}
@@ -88,9 +114,10 @@
 		font-size: 1.25em;
 		transition: all 250ms ease;
 	}
+
 	&:hover {
 		[class*="rotate-"] {
-			@include transform( rotate(0) translateX(20px) );
+			@include transform(rotate(0) translateX(20px));
 		}
 	}
 }
@@ -98,42 +125,63 @@
 .cs-body-link {
 	.city-of-oakland & {
 		color: $oakland_blue;
+
 		&:hover {
 			color: darken($oakland_blue, 15%);
 		}
 	}
+
+	.city-of-oakland & {
+		color: $gibney_black;
+
+		&:hover {
+			color: darken($gibney_black, 15%);
+		}
+	}
+
 	.atil & {
 		color: $atil_yellow;
+
 		&:hover {
 			color: darken($atil_yellow, 15%);
 		}
 	}
+
 	.department-of-education & {
 		color: $doe_orange;
+
 		&:hover {
 			color: darken($doe_orange, 15%);
 		}
 	}
+
 	.boston-public-schools & {
 		color: $boston_green;
+
 		&:hover {
 			color: darken($boston_green, 15%);
 		}
 	}
+
 	.hester-street & {
 		color: $hester_black;
+
 		&:hover {
 			color: darken($hester_black, 15%);
 		}
 	}
+
 	.localdata & {
 		color: $localdata_red;
+
 		&:hover {
 			color: darken($localdata_red, 15%);
 		}
 	}
+
 	.claremont-graduate-university & {
 		color: $claremont_red;
+
 		&:hover {
 			color: darken($claremont_red, 15%);
 		}
@@ -147,9 +195,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	background-image: url(images/oakland/pattern-min.png);
+	background-image: url("images/oakland/pattern-min.png");
 	@include hidpi {
-		background-image: url(images/oakland/pattern-@2x-min.png);
+		background-image: url("images/oakland/pattern-@2x-min.png");
 	}
 }
 
@@ -161,26 +209,32 @@
 		padding-bottom: ($leading * 5);
 	}
 }
+
 .ld-logo-container {
 	max-width: 694px;
 	margin: 0 auto;
+
 	img {
 		display: block;
 	}
 }
+
 img.compass {
 	width: 27.37%;
 	float: left;
+
 	.os-csstransitions & {
-		@include transition( all 2.25s cubic-bezier(.22,1.5,.76,.82) );
-		@include transform( rotate(180deg) );
+		@include transition(all 2.25s cubic-bezier(.22,1.5,.76,.82));
+		@include transform(rotate(180deg));
 	}
+
 	.active & {
 		.os-csstransitions & {
-			@include transform( rotate(360deg) );
+			@include transform(rotate(360deg));
 		}
 	}
 }
+
 img.logotype {
 	float: right;
 	width: 64.84%;
@@ -188,29 +242,32 @@ img.logotype {
 }
 
 //Hester Street Wordmark Animation
-svg.hs-wordmark{
+svg.hs-wordmark {
 	background-color: #000;
-	fill:#fff;
+	fill: #fff;
 	padding: 132px 168px;
-	width:100%;
+	width: 100%;
 	animation: cycle-bg-color 25s ease-in-out 3s infinite;
 }
 
-@keyframes cycle-bg-color{
-	0%{
+@keyframes cycle-bg-color {
+	0% {
 		background-color: #000;
 		fill: #fff;
 	}
-	25%{
+
+	25% {
 		background-color: #aebd31;
-		fill:#fff;
+		fill: #fff;
 	}
-	50%{
+
+	50% {
 		background-color: #3366cc;
-		fill:#fff;
+		fill: #fff;
 	}
-	75%{
+
+	75% {
 		background-color: #ff685d;
-		fill:#fff;
+		fill: #fff;
 	}
 }

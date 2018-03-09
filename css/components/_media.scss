@@ -2,9 +2,9 @@
 /* Media
  * -----------------------------------------------------------*/
 
-.page-content .wp-smiley,
+.comment-content .wp-smiley,
 .entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.page-content .wp-smiley {
 	border: none;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -19,28 +19,32 @@ object {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
 }
 
 figure {
- 	margin: ($leading*3) 0 0;
+	margin: ($leading*3) 0 0;
 
- 	&.alignnone {
- 		img {
- 			display: block;
- 			width: 100%;
- 			height: auto;
- 		}
- 	}
- 	&.aligncenter {
- 		img {
- 			display: block;
- 			max-width: 100%;
- 			margin: 0 auto;
- 		}
- 	}
+	&.alignnone {
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&.aligncenter {
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
 }
+
 figcaption {
 	font-style: italic;
 	font-size: 1rem;
@@ -55,54 +59,65 @@ figcaption {
 		opacity: 0;
 		transition: opacity 500ms ease;
 	}
+
 	.os-slideshow.width-auto & {
 		text-align: center;
 	}
+
 	.os-slideshow .slick-active & {
 		opacity: 1;
 	}
+
 	.city-of-oakland & {
 		color: $oakland_blue;
+	}
+
+	.gibney & {
+		color: $gibney_black;
 	}
 
 	.atil & {
 		color: $atil_yellow;
 	}
 
-	.transit-center &{
+	.transit-center & {
 		color: $transit_purple;
-  }
+	}
+
 	.claremont-graduate-university & {
 		color: $claremont_red;
 	}
+
 	.localdata & {
 		color: $localdata_red;
 	}
+
 	.boston-public-schools & {
 		color: $boston_green;
 	}
+
 	.hester-street & {
 		color: $hester_black;
 	}
+
 	.department-of-education & {
 		color: $doe_orange;
 	}
 }
 
-
 /* Browser Window
  * -----------------------------------------------------------*/
 .browser-bar {
-    height: 15px;
-    background: #D4D4D4;
-    border-top-left-radius: 2px;
+	height: 15px;
+	background: #D4D4D4;
+	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-    color: #FFF;
-    font-size: 16px;
+	color: #FFF;
+	font-size: 16px;
 	line-height: 16px;
 	padding-left: 1%;
 	height: 15px;
-    @include media($screen-sm) {
+	@include media($screen-sm) {
 		font-size: 26px;
 		line-height: 26px;
 		height: 26px;
@@ -115,39 +130,39 @@ figcaption {
 		line-height: 30px;
 	}
 
-    &:before {
-    	content: "•••";
-    	display: block;
-    }
+	&:before {
+		content: "•••";
+		display: block;
+	}
 }
 
 .browser-window {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    padding-top: 75%;
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-top: 75%;
 	background-color: gray;
+
 	&.black {
 		background-color: black;
 	}
 }
 
 .browser-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	@include media($screen-md) {
 		overflow-y: scroll;
 	}
 
-    img {
-        width: 100%;
-    }
+	img {
+		width: 100%;
+	}
 }
-
 
 /* Responsive Media
  * -----------------------------------------------------------*/
@@ -172,7 +187,11 @@ figcaption {
 		padding-top: 66.666%;
 	}
 
-	iframe, video, object, img, .responsive-media-content {
+	.responsive-media-content,
+	iframe,
+	img,
+	object,
+	video {
 		position: absolute;
 		top: 0;
 		left: 0;
