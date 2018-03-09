@@ -2489,8 +2489,8 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   opacity: 1;
 }
 button:focus,
