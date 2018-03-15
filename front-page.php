@@ -86,26 +86,26 @@ $case_studies = get_case_studies(); ?>
 				<h3 class="h1">Involving creative people to tackle complex questions can yield more dynamic, trusting, and accountable communities. Here are some places where we think we can help.</h3>
 			</div>		
 
-			<div class="clearfix" style="margin-top:5rem">
+			<div class="our-views-container" style="margin-top:5rem">
 				<?php 
 				$views = array(
 					array(
 						'title' => 'Design thinking to reinvent the policymaking process',
 						'content' => 'Governments need a new approach to creating public policy that reduces risks, unknowns, and variables while improving impact, quality, and accuracy.',
-						'url' => '#',
-						'image' => '<img src="http://unsplash.it/750/560" width="750" height="560" style="display:block"/>'
+						'url' => get_template_directory_uri() . '/documents/OS%20Concept%20Brief%20Policy%20Design%2020171113.pdf',
+						'image' => '<img src="' . get_template_directory_uri() . '/images/policydesign.png" width="1000" height="700" alt="policy design" style="display:block"/>'
 					),
 					array(
 						'title' => 'On the design of public transit experiences that delight and deliver',
 						'content' => 'Using human-centered design principles to help transit agencies provide care to their users.',
-						'url' => '#',
-						'image' => '<img src="http://unsplash.it/750/560" width="750" height="560" style="display:block"/>'
+						'url' => get_template_directory_uri() . '/documents/OS%20Concept%20Brief%20Transit%20UX%2020180215.pdf',
+						'image' => '<img src="' . get_template_directory_uri() . '/images/transitexperience.jpg" width="1000" height="700" alt="transit experience" style="display:block"/>'
 					),
 					array(
 						'title' => 'What visual identity can do for government communications',
 						'content' => 'Inconsistent, unclear and cluttered communication from Government does not allow citizens to see what Government is doing for them.',
-						'url' => '#',
-						'image' => '<img src="http://unsplash.it/750/560" width="750" height="560" style="display:block"/>'
+						'url' => get_template_directory_uri() . '/documents/OS%20Concept%20Brief%20Visual%20Identity%2020161013.pdf',
+						'image' => '<img src="' . get_template_directory_uri() . '/images/visualidentity.jpg" width="1000" height="700" alt="visual identity" style="display:block"/>'
 					)
 				);
 				foreach ( $views as $view ) { ?>
@@ -113,7 +113,7 @@ $case_studies = get_case_studies(); ?>
 						<?php echo $view['image']; ?>
 						<h4 class="h2 push-half"><?php echo $view['title']; ?></h4>
 						<p class="push-half"><?php echo $view['content']; ?></p>
-						<p class="push-half"><a href="<?php echo $view['url']; ?>" class="button">read &nbsp; &#8250;</a></p>
+						<p class="push-half"><a href="<?php echo $view['url']; ?>" target="_blank" class="button">read &nbsp; &#8250;</a></p>
 					</article>
 				<?php } ?>
 			</div>
