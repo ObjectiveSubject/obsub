@@ -33,7 +33,7 @@
 			<figcaption><div class="inner-container">Co-creation workshop with Gibney staff</div></figcaption>
 		</div>
 
-		<div class="inner-container">
+		<div class="inner-container push-triple">
 			<p>Internally, Gibney had been using a concept called “the three C’s” to organize and talk about activities: Center, for the physical space; Company, for the dance company; and Community, for its social action work. Gibney relied on these three terms as a shorthand because they were easy to explain. But through the process, we discovered that most of Gibney’s work spans across and blurs these distinctions. From the audience’s perspective, the categories created unnecessary barriers to knowing about the entirety of Gibney’s actions.</p>
 			<p>We underscored the need to transcend these constraints to find a more flexible, encompassing, and clear way to explain Gibney that would be centered around the user.</p>
 		</div>
@@ -69,7 +69,7 @@
 
 </section>
 
-<section id="solution" class="page-section ">
+<section id="solution" class="page-section push-triple">
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -78,25 +78,28 @@
 		</div>
 
 		<blockquote class="inverted" data-speed-modifier="0.5">
-			<p class=""><span class="quote">&ldquo;</span>Quote from Gina<span class="quote">&rdquo;</span><br/><small>&mdash;Gina Gibney, <em>CEO and Artistic Director</em></small></p>
+			<p class=""><span class="quote">&ldquo;</span>Just as dance is able to capture more than what can be put in words, our new identity allows us to visually distill our powerful message.<span class="quote">&rdquo;</span><br/><small>&mdash;Gina Gibney, <em>CEO and Artistic Director</em></small></p>
 		</blockquote>
 
-		<div class="flex-blocks push-triple">
+		<!-- <div class="flex-blocks push-triple">
 			<div class="column column-span-3" style="background:black;flex-basis: 22%;margin: 15px;">
-				<canvas width="194px" height="194px" id="canvas1"></canvas> <!-- change width and heigth based on parent size #2-->
-			</div>
+				<canvas width="194px" height="194px" id="canvas1"></canvas>  -->
+				<!-- change width and heigth based on parent size #2-->
+			<!-- </div>
 			<div class="column column-span-3" style="background:black;flex-basis: 22%;margin: 15px;">
-				<canvas width="194px" height="194px" id="canvas2"></canvas> <!-- change width and heigth based on parent size #2-->
-			</div>
+				<canvas width="194px" height="194px" id="canvas2"></canvas>  -->
+				<!-- change width and heigth based on parent size #2-->
+			<!-- </div>
 			<div class="column column-span-3" style="background:black;flex-basis: 22%;margin: 15px;">
-				<canvas width="194px" height="194px" id="canvas3"></canvas> <!-- change width and heigth based on parent size #2-->
-			</div>
+				<canvas width="194px" height="194px" id="canvas3"></canvas>  -->
+				<!-- change width and heigth based on parent size #2-->
+			<!-- </div>
 			<div class="column column-span-3" style="background:black;flex-basis: 22%;margin: 15px;">
-				<canvas width="194px" height="194px" id="canvas4"></canvas> <!-- change width and heigth based on parent size #2-->
-			</div>
-		</div>
-
-		<figcaption><div class="inner-container">Our motion explorations provided an insight to movement with lines</div></figcaption>
+				<canvas width="194px" height="194px" id="canvas4"></canvas>  -->
+				<!-- change width and heigth based on parent size #2-->
+			<!-- </div>
+		</div> -->
+		<!-- <figcaption><div class="inner-container">Our motion explorations provided an insight to movement with lines</div></figcaption> -->
 
 		<div class="inner-container push-triple">
 			<p>As we approached the visual identity, we wanted to convey the concepts of movement, transformation, and growth that define Gibney. We developed a system based on the flexibility of lines.</p>
@@ -105,8 +108,11 @@
 	</div>
 
 	<figure class="aligncenter ">
-		<div class="" style="height:500px;background:black">
-			<!-- ANIMATION OF GIBNEY LOGO GOES HERE #3-->
+		<div class="" style="background:black;text-align:center">
+			<video autoplay poster="posterimage.jpg" autoplay muted loop preload="preload">
+				<source src="<?php echo os_path('logoanimnobreak.mp4', 'gibney') ?>" type="video/mp4">
+				<source src="<?php echo os_path('logoanimnobreak.mov', 'gibney') ?>" type="video">
+			</video>
 		</div>
 
 		<div class="outer-container">
@@ -214,19 +220,19 @@
 		</div>
 		<div class="outer-container">
 			<img src="<?php echo os_path('brochure-1.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.png', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
-			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+			<figcaption class="inner-container">CAPTION THIS IMAGE #9</figcaption>
 		</div>
 		<div class="outer-container">
 			<img src="<?php echo os_path('brochure-2.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.png', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
-			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+			<figcaption class="inner-container">CAPTION THIS IMAGE #10</figcaption>
 		</div>
 	</figure>
 
-	<div data-offset="0.25" class="outer-container active-on-inview">
+	<div data-offset="0.25" class="outer-container push-triple active-on-inview">
 		<div class="inner-container gibney__cat--container">
-			<img class="gibney__cat gibney__cat--right" src="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('performance-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('performance-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="performance catalogue">
-			<img class="gibney__cat gibney__cat--middle" src="<?php echo os_path('training-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('training-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('training-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="training catalogue">
-			<img class="gibney__cat gibney__cat--left" src="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?>" srcset="<?php echo os_path('rental-catalogue.jpg', 'gibney') ?> 1x, <?php echo os_path('rental-catalogue@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+			<img class="gibney__cat gibney__cat--right" src="<?php echo os_path('catalogue-performance.png', 'gibney') ?>" srcset="<?php echo os_path('catalogue-performance.png', 'gibney') ?> 1x, <?php echo os_path('catalogue-performance@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="performance catalogue">
+			<img class="gibney__cat gibney__cat--middle" src="<?php echo os_path('catalogue-training.png', 'gibney') ?>" srcset="<?php echo os_path('catalogue-training.png', 'gibney') ?> 1x, <?php echo os_path('catalogue-training@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="training catalogue">
+			<img class="gibney__cat gibney__cat--left" src="<?php echo os_path('catalogue-rental.png', 'gibney') ?>" srcset="<?php echo os_path('catalogue-rental.png', 'gibney') ?> 1x, <?php echo os_path('catalogue-rental@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
 		</div>
 		<figcaption class="inner-container">Using a range of size formats, the reenvisioned catalogue clarifies content based on both Gibney’s offerings and audiences.</figcaption>
 	</div>
@@ -234,16 +240,16 @@
 
 	<div class="outer-container">
 		<figure class="inner-container">
-			<img src="<?php echo os_path('spread-1.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-1.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-1@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
+			<img src="<?php echo os_path('spread-1.png', 'gibney') ?>" srcset="<?php echo os_path('spread-1.png', 'gibney') ?> 1x, <?php echo os_path('spread-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="rental catalogue">
 		</figure>
 	</div>
 
 	<div class="flex-blocks outer-container">
 		<div class="column column-span-6 ">
-			<img src="<?php echo os_path('spread-2.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-2.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-2@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+			<img src="<?php echo os_path('spread-2.png', 'gibney') ?>" srcset="<?php echo os_path('spread-2.png', 'gibney') ?> 1x, <?php echo os_path('spread-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
 		</div>
 		<div class="column column-span-6">
-			<img src="<?php echo os_path('spread-3.jpg', 'gibney') ?>" srcset="<?php echo os_path('spread-3.jpg', 'gibney') ?> 1x, <?php echo os_path('spread-3@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
+			<img src="<?php echo os_path('spread-3.png', 'gibney') ?>" srcset="<?php echo os_path('spread-3.png', 'gibney') ?> 1x, <?php echo os_path('spread-3@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
 		</div>
 		<figcaption class="inner-container">The use of negative space within the interior spreads creates visual tension between image and text. </figcaption>
 	</div>
@@ -256,12 +262,16 @@
 	</div>
 
 	<div class="outer-container">
-			Video goes HERE
+			<video width="850px" height="400px" preload="preload" >
+				<source src="" type="video/mp4">
+			</video>
 			<figcaption class="inner-container">Brand Video</figcaption>
 	</div>
 
 	<div class="outer-container">
-			Video goes HERE
+		<video width="850px" height="400px" preload="preload" >
+			<source src="" type="video/mp4">
+		</video>
 			<figcaption class="inner-container">Anthem Video</figcaption>
 	</div>
 
@@ -275,7 +285,7 @@
 	<div class="outer-container">
 		<img src="<?php echo os_path('way-finding-1.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-1.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
 
-		<img src="<?php echo os_path('way-finding-2.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-2.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding">
+		<img src="<?php echo os_path('way-finding-2.png', 'gibney') ?>" srcset="<?php echo os_path('way-finding-2.png', 'gibney') ?> 1x, <?php echo os_path('way-finding-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="way-finding" style="margin-top:1rem;">
 		<figcaption class="inner-container">The system is flexible yet straightforward to help visitors navigate the space.</figcaption>
 
 	</div>
