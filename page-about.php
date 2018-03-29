@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php the_post(); ?>
 
-	<section id="about-intro" class="about-intro full-height page-section" >
+	<section id="about-intro" class="about-intro full-height page-section" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
 
 			<div class="section-content">
 				<div class="intro-content section-content">
@@ -20,10 +20,10 @@ get_header(); ?>
 						</div>
 						<nav class="page-nav inner-container">
 							<ul class="list-unstyled hug">
-								<li><a href="#approach" class="future-A h2 smooth-scroll">approach</a></li>
-								<li><a href="#practice-areas" class="future-A h2 smooth-scroll">practice areas</a></li>
-								<li><a href="#capabilities" class="future-A h2 smooth-scroll">capabilities</a></li>
-								<li><a href="#team" class="future-A h2 smooth-scroll">team</a></li>
+								<li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li>
+								<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
+								<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
+								<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -88,7 +88,7 @@ get_header(); ?>
 
 	</section>
 
-	<section id="practice-areas" class="about__practice-areas" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #000; color:white">
+	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white">
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
@@ -114,7 +114,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section id="capibilities" class="about__capibilities" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #000; color:white;">
+	<section id="capibilities" class="page-section use-ui-light-theme about__capibilities" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
 
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
@@ -185,9 +185,98 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+
 	</section>
 
-	<section id="team" class="about__team" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #000">
+	<section id="team" class="page-section use-ui-light-theme about__team" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
+		<div class="outer-container  push-triple-bottom">
+			<div class="inner-container">
+				<h2 class="future-A">team</h2>
+				<p class="push">Through our work, we explore what happens when creative people are involved in shaping solutions to the issues we face as a society.</p>
+			</div>
+		</div>
+
+		<div class="outer-container ">
+			<div class="flex-blocks">
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+				<div class="about__block">
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="outer-container ">
+			<div class="inner-container push-triple push-triple-bottom">
+				<p class="push">Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:</p>
+				<ul class="list-unstyled  push">
+					<li>Aaron Carámbula <em>@carambula</em>, Facebook </li>
+					<li>Emma White <em>@nodilemma</em>, Portal A </li>
+					<li>Sam Gray <em>@samrgray</em>, BlenderBox </li>
+					<li>Kuan Luo <em>@kuanluo</em>, Etsy / Grand St </li>
+					<li>Blake Olmstead <em>@blakeolmstead</em>, Atlas Obscura </li>
+					<li>Zack Seuberling <em>@zackseuberling</em>, Rumors </li>
+					<li>Mark Silver <em>@markdsilver</em>, The New York Times </li>
+					<li>Dan Shin <em>@dan_shin</em>, Square</li>
+					<li> Houman Momtazian, Everything Type Company</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="outer-container">
+			<h2 class="future-A inner-container push-triple">Recognition</h2>
+			<ul class="list-unstyled clearfix push inner-container about__column-list push-triple-bottom">
+				<li>
+				<strong>Webby Awards 2015</strong>, Travel Design<br/>
+				<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
+				</li>
+				<li>
+				<strong>German Design Award 2013</strong>, Identity Design<br/>
+				<a href="http://www.ap.org/company/brand" target="_blank"><em>Associated Press</em></a>
+				</li>
+				<li>
+				<strong>Red Dot Award 2014</strong>, Online Design<br/>
+				<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
+				</li>
+				<li>
+				<strong>Red Dot Award 2012</strong>, Corporate Design<br/>
+				<a href="http://www.ap.org/company/brand" target="_blank"><em>Associated Press</em></a>
+				</li>
+				<li>
+				<strong>W3 Awards 2014</strong>, Gold Winner<br/>
+				<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
+				</li>
+				<li>
+				<strong>W3 Awards 2012</strong>, Website Design<br/>
+				<a href="http://www.watsonadventures.com/" target="_blank"><em>Watson Adventures</em></a>
+				</li>
+				<li>
+				<strong>Davey Awards 2014</strong><br/>
+				<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>
+				</li>
+			</ul>
+		</div>
 
 	</section>
 
