@@ -1243,12 +1243,26 @@ a.no-decoration {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+[class*="rotate-"][class*="-c-90"] {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 [class*="rotate-"][class*="-cc-45"] {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+[class*="rotate-"][class*="-cc-90"] {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .text-color-link {
@@ -2553,6 +2567,24 @@ svg.hs-wordmark {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  right: 3rem;
+  transform: translate3d(0, 5rem, 0);
+  transition: transform 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.page-has-scrolled .back-to-top {
+  transform: translate3d(0, 0, 0);
+}
+@media screen and (min-width: 768px) {
+  .back-to-top {
+    display: block;
+  }
 }
 
 button,

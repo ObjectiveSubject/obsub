@@ -32,6 +32,9 @@
 				</ul>
 			</div>
 		</div>
+
+		<a href="#page" class="back-to-top button smooth-scroll">back to top &nbsp;&nbsp;<span class="rotate-cc-90">&#8250</span></a>
+
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

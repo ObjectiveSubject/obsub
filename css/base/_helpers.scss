@@ -167,8 +167,16 @@ a.no-decoration {
 		@include transform(rotate(45deg));
 	}
 
+	&[class*="-c-90"] {
+		@include transform(rotate(90deg));
+	}
+
 	&[class*="-cc-45"] {
 		@include transform(rotate(-45deg));
+	}
+
+	&[class*="-cc-90"] {
+		@include transform(rotate(-90deg));
 	}
 }
 
