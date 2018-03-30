@@ -1,6 +1,6 @@
 <?php
 /**
- * Front Page
+ * Page: About
  *
  * @package obsub
  */

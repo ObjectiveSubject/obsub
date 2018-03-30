@@ -224,22 +224,17 @@
     }
 
     .preview-nav & {
-        // opacity: 0;
         float: left;
         margin-left: 1em;
         font-size: rem(22);
         line-height: 1em;
         @include transition(all 300ms ease);
-        // @include transform(translateX(20px));
-        &:hover {
-            & > a,
-            & > span {
-                color: $color_text_main;
-            }
-
-            .sub-menu .menu-item {
+        
+        body:not(.home):not(.single-case_study) &:not(.current-menu-item) > a,
+        .single-case_study & > a:not([href*="work"]) {
+            opacity: 0.3;
+            &:hover {
                 opacity: 1;
-                @include transform(translateX(0));
             }
         }
 

@@ -1,75 +1,46 @@
 <?php
 /**
- * Template Name: Contact
+ * Page: Contact
  *
  * @package obsub
  */
 
 get_header(); ?>
 
-	<?php while (have_posts()) : the_post(); ?>
+<?php the_post(); ?>
 
-		<section class="page-header page-section full-height">
-			<div class="section-content">
-				<div class="outer-container">
-					<div class="inner-container">
-						<h1 class="page-title">Why not say hi?</h1>
-						<h3 class="page-subtitle">We work on both coasts of the United States to make smart design happen.</h3>
-						<h2 class="future-A page-subtitle">
-							212.863.9194<br/>
-							<a href="mailto:info@objectivesubject.com" class="text-color-link">info@objectivesubject.com</a>
-						</h2>
-					</div>
+	<section id="about-intro" class="about-intro page-section">
+	
+		<div class="intro-content section-content">
+			<div class="outer-container">
+
+				<div class="inner-container">
+					<h1 class="h1 page-title">Partners, colleagues, friends, lovers, visitors, lost tourists: all are welcome!</h1>
+					<h3>If you would like to meet us to talk through a project or find out more, we'd love to hear from you. Visitors are always welcome.</h3>
 				</div>
+
 			</div>
-			<a href="#office-locations" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
-		</section>
+		</div>
+	
+	</section>
 
-		<section id="office-locations" class="page-section office-locations clearfix" >
-			<div class="office-location nyc clearfix">
-				<div class="office-address">
-					<address class="h2 hug future-A">
-						30 east 20th street<br/>
-						7th Floor<br/>
-						new york, ny 10003
-					</address>
-					<p class="directions push">
-						<em>Directions</em><br/>
-						N, Q, R, W, 4, 6<br/>
-						to 23rd St,<br/>
-						or Union Square
-					</p>
-				</div>
-				<div id="nyc-map" class="office-map nyc-map"></div>
-				<div id="nyc-marker" class="map-marker" aria-hidden="true"></div>
-			</div>
-			<!-- <div class="office-location oakland clearfix">
-				<div class="office-address">
-					<address class="h2 hug future-A">
-						2355 broadway<br/>
-						no. 402<br/>
-						oakland, ca 94612
-					</address>
-					<p class="directions push">
-						<em>Directions</em><br/>
-						BART: 19th St - Oakland<br/>
-						From San Francisco:<br/>
-						I-580 exit 20 towards Broadway
-					</p>
-				</div>
-				<div id="oakland-map" class="office-map oakland-map"></div>
-				<div id="oakland-marker" class="map-marker" aria-hidden="true"></div>
-			</div>			 -->
-		</section>
+	<div class="outer-container">
 
-		<section class="page-section outer-container push-triple">
-			<div class="inner-container">
-				<p>If you are curious to hear more about our work and process, interested in hiring us for your project, or simply want to ask about job availability, please do not hesitate to contact us.</p>
-			</div>
-		</section>
+		<div class="inner-container">
+			<address class="h1">
+				30 East 20<sup>th</sup> Street, 7<sup>th</sup> Floor<br/>New York, NY 10003<br/>
+				<a href="tel:+12128639194">+1 212 863 9194</a><br/>
+				<a href="mailto:info@objectivesubject.com"><em>info@objectivesubject.com</em></a>
+			</address>
+		</div>
 
-		<?php get_template_part('module', 'contact-form'); ?>
+		<div class="inner-container mt-5">
+			<h2 class="h1">Too shy for a ring? Let us reach out.</h2>
+		</div>
 
-	<?php endwhile; // end of the loop.?>
+	</div>
+
+	<?php get_template_part( 'module-contact-form' ); ?>
+
 
 <?php get_footer(); ?>
