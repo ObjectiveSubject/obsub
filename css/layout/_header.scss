@@ -1,6 +1,6 @@
 #masthead {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 30px;
     z-index: 1000;
     // padding: 0 $size_container_padding;
@@ -18,8 +18,8 @@
 }
 
 .site-title {
-    position: relative;
-    float: left;
+    position: fixed;
+    // float: left;
     // top: 30px;
     // left: $size_container_padding;
     width: 96px;

@@ -5,6 +5,10 @@ input[type="reset"] {
 	@include button();
 }
 
+.button-ghost {
+	@include button(white, $color_text_main );
+}
+
 input[type="submit"] {
 	border: 0;
 	border-radius: 0;

@@ -65,18 +65,14 @@
 }
 
 // Buttons
-@mixin button($color: $color_background_button, $hover: null) {
-
-	@if $hover == null {
-		$hover: darken($color, 25%);
-	}
+@mixin button($bg-color: $color_background_button, $color: $color_text_button) {
 
 	display: inline-block;
 	border: 0;
 	border-radius: 3px;
-	background: $color;
+	background: $bg-color;
 	box-shadow: none;
-	color: white;
+	color: $color;
 	font-family: $font_heading;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -91,14 +87,9 @@
     -moz-osx-font-smoothing: grayscale;
     transition: all $duration $easing;
 
-    &:visited {
-    	background: $color;
-    	color: white;
-    }
-
 	&:hover, &:focus {
-		background: black;
-		color: white;
+		background: darken($bg-color, 15%);
+		color: $color;
 		opacity: 1;
 	}
 

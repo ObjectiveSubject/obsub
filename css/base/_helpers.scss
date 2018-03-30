@@ -183,8 +183,7 @@ a.no-decoration {
 .text-color-link {
 	color: $color_text_main;
 
-	&:focus,
-	&:visited {
+	&:focus{
 		color: $color_text_main;
 	}
 
@@ -196,8 +195,7 @@ a.no-decoration {
 .muted-link {
 	color: $medium_gray;
 
-	&:focus,
-	&:visited {
+	&:focus{
 		color: $medium_gray;
 	}
 

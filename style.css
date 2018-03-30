@@ -467,9 +467,6 @@ a.no-transition {
   -moz-transition: none;
   transition: none;
 }
-a:visited {
-  color: inherit;
-}
 a:active, a:focus, a:hover {
   color: inherit;
   outline: 0;
@@ -1268,7 +1265,7 @@ a.no-decoration {
 .text-color-link {
   color: #000;
 }
-.text-color-link:focus, .text-color-link:visited {
+.text-color-link:focus {
   color: #000;
 }
 .text-color-link:hover {
@@ -1278,7 +1275,7 @@ a.no-decoration {
 .muted-link {
   color: #999C98;
 }
-.muted-link:focus, .muted-link:visited {
+.muted-link:focus {
   color: #999C98;
 }
 .muted-link:hover {
@@ -1359,7 +1356,7 @@ body::before {
 
 #masthead {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 30px;
   z-index: 1000;
 }
@@ -1370,8 +1367,7 @@ body::before {
 }
 
 .site-title {
-  position: relative;
-  float: left;
+  position: fixed;
   width: 96px;
   height: 42px;
 }
@@ -2611,13 +2607,6 @@ input[type="reset"] {
   -moz-osx-font-smoothing: grayscale;
   transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-button:visited,
-.button:visited,
-input[type="button"]:visited,
-input[type="reset"]:visited {
-  background: #4a4a4a;
-  color: white;
-}
 button:hover, button:focus,
 .button:hover,
 .button:focus,
@@ -2625,7 +2614,7 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus {
-  background: black;
+  background: #242424;
   color: white;
   opacity: 1;
 }
@@ -2639,6 +2628,40 @@ button[disabled],
 .button[disabled],
 input[type="button"][disabled],
 input[type="reset"][disabled] {
+  background: lightgray;
+  cursor: default;
+}
+
+.button-ghost {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  background: white;
+  box-shadow: none;
+  color: #000;
+  font-family: "FutureAMedium", "Futura", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.3em 0.5em;
+  text-shadow: none;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.button-ghost:hover, .button-ghost:focus {
+  background: #d9d9d9;
+  color: #000;
+  opacity: 1;
+}
+.button-ghost:focus {
+  outline: none;
+}
+.button-ghost[disabled] {
   background: lightgray;
   cursor: default;
 }
