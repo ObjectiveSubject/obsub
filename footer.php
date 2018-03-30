@@ -10,28 +10,33 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer future-A bg-default" role="contentinfo">
+	<footer id="colophon" class="site-footer bg-default" role="contentinfo">
 		<div class="outer-container">
-			<div class="inner-container clearfix">
-				<a href="#subForm" class="subscribe-toggle">let us say hi, periodically</a>
-				<form action="http://objectivesubject.createsend.com/t/r/s/djdjtk/" method="post" id="subForm" class="subscribe-form">
-				    <div class="input-row">
-				        <label for="fieldEmail" class="hide">Email</label>
-				        <input id="fieldEmail" name="cm-djdjtk-djdjtk" type="email" placeholder="luke@skywalker.com" required />
-				        <button type="submit">Press enter</button>
-				    </div>
-				</form>
-				<a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">facebook</a>
-				<a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">twitter</a>
-				<a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">dribbble</a>
-				<span class="copyright">copyright <i>&copy;</i> <?php echo date('Y'); ?> objective subject</span>
+			<div class="inner-container">
+				<ul class="site-footer__list list-unstyled">
+					<li><a href="work" >Work</a></li>
+					<li><a href="views">Views</a></li>
+					<li><a href="about">About</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+				<ul class="site-footer__list list-unstyled">
+					<li><a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">Facebook</a></li>
+					<li><a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">Twitter</a></li>
+					<li><a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">Dribbble</a></li>
+				</ul>
+				<ul  class="site-footer__list list-unstyled">
+					<li><a href="#">Download Firm Profile (<span class="old-num ">5.5</span><span class="mini-caps">mb, pdf</span>)</a> </li>
+				</ul>
+				<ul class="site-footer__list list-unstyled">
+					<li><span class="copyright">copyright &copy; <?php echo date('Y'); ?> objective subject</span></li>
+				</ul>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
 
-<?php if ( defined('WP_DEBUG') && WP_DEBUG === TRUE ) : ?>
+<?php if (defined('WP_DEBUG') && WP_DEBUG === true) : ?>
 	<div class="media-size"></div>
 <?php endif; ?>
 

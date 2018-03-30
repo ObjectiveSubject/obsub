@@ -717,6 +717,14 @@ table th[class*="col-"] {
   /* Above WP toolbar. */
 }
 
+.old-num {
+  font-variant-numeric: oldstyle-nums;
+}
+
+.mini-caps {
+  font-variant-caps: small-caps;
+}
+
 /* Clearings
  * ------------------------------------------------- */
 .clearfix:before, .clearfix:after {
@@ -2502,32 +2510,36 @@ svg.hs-wordmark {
   padding-top: 6rem;
   padding-bottom: 5rem;
 }
-.site-footer span, .site-footer a {
-  display: block;
+.site-footer a,
+.site-footer li {
   padding: 5px 0;
   color: #999C98;
 }
 @media screen and (min-width: 1010px) {
-  .site-footer span, .site-footer a {
+  .site-footer a,
+  .site-footer li {
     float: left;
     padding: 0;
     margin-right: 2%;
   }
-  .site-footer span.copyright, .site-footer a.copyright {
-    float: right;
-    margin-right: 0;
+  .site-footer a.copyright,
+  .site-footer li.copyright {
+    color: #999C98;
   }
 }
-.site-footer span i, .site-footer a i {
+.site-footer a i,
+.site-footer li i {
   font-style: normal;
   vertical-align: -10px;
   font-size: 1.8em;
 }
-.site-footer a:hover, .site-footer a.subscribe-toggle.active {
+.site-footer a.subscribe-toggle.active, .site-footer a:hover {
   color: #000;
 }
-.site-footer .inner-container {
-  position: relative;
+
+.site-footer__list {
+  height: 30px;
+  margin: 0;
 }
 
 /* Components
