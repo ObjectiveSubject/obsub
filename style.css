@@ -2582,7 +2582,8 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   line-height: 1.5rem;
 }
 .page-section.about-intro {
-  height: 85vh;
+  height: calc(85vh - 60px);
+  top: 60px;
 }
 
 #case-studies {

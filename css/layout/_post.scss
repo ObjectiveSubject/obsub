@@ -118,6 +118,7 @@
 	}
 
 	&.about-intro {
-		height:85vh;
+		height: calc(85vh - 60px);
+		top: 60px;
 	}
 }
