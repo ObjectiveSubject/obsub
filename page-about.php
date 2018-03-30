@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php the_post(); ?>
 
-	<section id="about-intro" class="about-intro full-height page-section" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
+	<section id="about-intro" class="about-intro page-section use-ui-light-theme page-section" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white; height:85vh">
 
 			<div class="section-content">
 				<div class="intro-content section-content">
@@ -20,7 +20,7 @@ get_header(); ?>
 						</div>
 						<nav class="page-nav inner-container">
 							<ul class="list-unstyled hug">
-								<li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li>
+								<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
 								<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
 								<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
 								<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
@@ -29,12 +29,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
 
 	</section>
 
-	<section id="approach" class="about__approach">
-		<div class="outer-container  push-triple-bottom">
+	<!-- <section id="approach" class="about__approach">
+		<div class="outer-container  push-triple push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">approach</h2>
 				<p class="push">We differ from large consultancies and small studios by how we conduct our engagements.</p>
@@ -44,11 +43,11 @@ get_header(); ?>
 		<div class="full-height page-section">
 			<div class="outer-container">
 					<div class="flex-blocks">
-						<div class="flex-left column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
+						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 							<h2 class="future-A">research-led strategy</h2>
 							<p class="push">Understanding the unique conditions of your organization's strategy and policy, as well the needs of audiences and users, is the starting point of any engagement. Only when we truly understand the problem do we start to develop solutions.</p>
 						</div>
-						<div class="flex-right column-span-8">
+						<div class="flex-right column column-span-8">
 							<img src="http://via.placeholder.com/900X900" alt="">
 						</div>
 					</div>
@@ -59,11 +58,11 @@ get_header(); ?>
 		<div class="full-height page-section">
 			<div class="outer-container">
 				<div class="flex-blocks">
-					<div class="flex-left column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
+					<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 						<h2 class="future-A">involving you</h2>
 						<p class="push">Our most fruitful engagements are with clients who care. We involve you so that you have the opportunity to shape the direction of our work together. Our process may challenge you to think beyond your expectations, but you can rely on us to always keep your best interests in mind.</p>
 					</div>
-					<div class="flex-right column-span-8">
+					<div class="flex-right column column-span-8">
 						<img src="http://via.placeholder.com/900X900" alt="">
 					</div>
 				</div>
@@ -74,11 +73,11 @@ get_header(); ?>
 		<div class="full-height page-section">
 			<div class="outer-container">
 					<div class="flex-blocks">
-						<div class="flex-left column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
+						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 							<h2 class="future-A">original solutions</h2>
 							<p class="push">Our team of designers, strategists, and developers approach a challenge from all angles, resulting in intuitive, practical, and beautiful designs that are well-executed.</p>
 						</div>
-						<div class="flex-right column-span-8">
+						<div class="flex-right column column-span-8">
 							<img src="http://via.placeholder.com/900X900" alt="">
 						</div>
 					</div>
@@ -86,9 +85,9 @@ get_header(); ?>
 
 		</div>
 
-	</section>
+	</section> -->
 
-	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white">
+	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white"> <!-- -->
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
@@ -96,25 +95,35 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="outer-container">
+		<div class="outer-container push-triple-bottom">
 			<div class="flex-blocks">
-				<div class="about__block">
+				<div class="about__block" style="background-image:url(<?php echo os_path('policy.jpg', 'about') ?>)">
+					<div class="about__block-text">
+						<h3 class="future-A h3" style=" color:white;">policy & civic sector</h3>
+					</div>
+				</div>
+				<div class="about__block" style="background-image:url(<?php echo os_path('education.jpg', 'about') ?>)">
+					<div class="about__block-text">
+						<h3 class="future-A h3" style=" color:white;">education</h3>
+					</div>
+				</div>
+				<div class="about__block" style="background-image:url(<?php echo os_path('media.jpg', 'about') ?>)">
+					<div class="about__block-text">
+						<h3 class="future-A h3" style=" color:white;">media</h3>
+					</div>
 
 				</div>
-				<div class="about__block">
-
-				</div>
-				<div class="about__block">
-
-				</div>
-				<div class="about__block">
+				<div class="about__block" style="background-image:url(<?php echo os_path('culture.jpg', 'about') ?>)">
+					<div class="about__block-text">
+						<h3 class="future-A h3" style=" color:white;">culture</h3>
+					</div>
 
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="capibilities" class="page-section use-ui-light-theme about__capibilities" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
+	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;"> <!--  -->
 
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
@@ -123,9 +132,9 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="outer-container">
+		<div class="outer-container push-triple-bottom">
 			<div class="flex-blocks">
-				<div class="about__column">
+				<div class="column column-span-3">
 
 						<h2 class="future-A">define</h2>
 						<ul class="about__column-list">
@@ -139,7 +148,7 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="about__column">
+				<div class="column column-span-3">
 
 						<h2 class="future-A">research</h2>
 						<ul class="about__column-list">
@@ -153,7 +162,7 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="about__column">
+				<div class="column column-span-3">
 
 						<h2 class="future-A">create</h2>
 						<ul class="about__column-list">
@@ -168,7 +177,7 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="about__column">
+				<div class="column column-span-3">
 
 						<h2 class="future-A">build</h2>
 						<ul class="about__column-list">
@@ -196,35 +205,37 @@ get_header(); ?>
 			</div>
 		</div>
 
+		<?php
+            $bios= new WP_Query(
+                array(
+                    'post_type' => 'bio',
+                    'order' => 'ASC'
+                )
+            );
+                if ($bios->have_posts()) :
+
+        ?>
 		<div class="outer-container ">
 			<div class="flex-blocks">
-				<div class="about__block">
+			<?php
+            while ($bios->have_posts()) : $bios->the_post();
+                ?>
 
-				</div>
-				<div class="about__block">
 
+				<div class="about__block" style="position: relative; background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>)">
+					<div class="about__block-text">
+						<h3 class="future-A h3" style=" color:white;"><?php the_title() ; ?></h3>
+						<h3 class="future-A h3" style=" color:white;opacity:.4;"><?php echo get_the_excerpt() ; ?></h3>
+					</div>
 				</div>
-				<div class="about__block">
 
-				</div>
-				<div class="about__block">
 
-				</div>
-				<div class="about__block">
 
-				</div>
-				<div class="about__block">
-
-				</div>
-				<div class="about__block">
-
-				</div>
-				<div class="about__block">
-
-				</div>
+			<?php endwhile; ?>
 			</div>
 		</div>
 
+		<?php endif; ?>
 
 		<div class="outer-container ">
 			<div class="inner-container push-triple push-triple-bottom">
@@ -280,16 +291,6 @@ get_header(); ?>
 
 	</section>
 
-	<section id="address" style="margin-top:5rem">
-	<div class="outer-container">
-		<div class="inner-container">
-			<address class="h2">
-				30 East 20th Street, 7th Floor<br/>New York, NY 10003<br/><br/>
-				+1 212 863 9194 office<br/>info@objectivesubject.com
-			</address>
-			<p style="margin-top:1.5rem"><a href="#" class="button">contact us &nbsp; &#8250;</a></p>
-		</div>
-	</div>
-	</section>
+
 
 <?php get_footer(); ?>

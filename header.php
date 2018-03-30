@@ -49,30 +49,22 @@
 				<a href="<?php echo esc_url(home_url('/')); ?>" class="wordmark light" rel="home"><span class="hide"><?php bloginfo('name'); ?></span></a>
 			</div>
 
-			<a class="menu-toggle" href="#">
-				<i class="top-line"></i>
-				<i class="center-line"></i>
-				<i class="bottom-line"></i>
-				<span class="hide">menu</span>
-			</a>
 
-			<?php if (is_front_page()) : ?>
-			<ul class="preview-nav list-unstyled hug">
+			<!-- <ul class="preview-nav list-unstyled hug">
 				<li class="menu-item future-A hug">
-					<a href="#former-clients" class="smooth-scroll">clients</a>
+					<a href="work" >work</a>
 				</li>
 				<li class="menu-item page-profile future-A hug">
-					<a href="<?php echo site_url('/profile'); ?>">about</a>
+					<a href="about">about</a>
 				</li>
 				<li class="menu-item page-contact future-A hug">
-					<a href="<?php echo site_url('/contact'); ?>">contact</a>
-				</li>
-			</ul>
-			<?php endif; ?>
+					<a href="contact">contact</a>
+				</li> -->
+				<?php wp_nav_menu(array('menu_class' => 'preview-nav future-A h3 list-unstyled hug')) ?>
 
 		</div>
 
-		<nav id="site-navigation" class="main-navigation future-A" role="navigation">
+		<!-- <nav id="site-navigation" class="main-navigation future-A" role="navigation">
 			<div class="main-menu outer-container">
 				<ul class="inner-container">
 					<li class="menu-item case_study h2 hug">
@@ -94,7 +86,7 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
 
 		<div class="main-menu-scrim"></div>
 

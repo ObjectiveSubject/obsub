@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 
-	<section id="work-intro" class="work-intro full-height page-section">
+	<section id="work-intro" class="work-intro full-height page-section" style="height:85vh">
 
 			<div class="section-content">
 				<div class="intro-content section-content">
@@ -23,7 +23,6 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
 
 	</section>
 

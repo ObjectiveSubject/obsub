@@ -1,14 +1,14 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">opportunity</h2>
+			<h2 class="future-A h3">opportunity</h2>
 			<p>If cities and towns across the country are to thrive in the decades ahead, the detailed, parcel-level data that community groups, planners and government agencies collect needs to be transformed.</p>
 			<p>When three eager technologists were embedded in the Detroit city government as part of their Code for America fellowship, they knew they had their work cut out for them.</p>
 			<ol class="list-unstyled os-numbered-list">
-				<li><span class="number future-A">1</span>They saw Detroit as the vast sprawling city.</li>
-				<li><span class="number future-A">2</span>Looking for the best opportunities to use technology.</li>
-				<li><span class="number future-A">3</span>Outdated surveys providing inadequate data for informed decisions, was a major issue.</li>
-				<li><span class="number future-A">4</span>Surveying was a time and resources-intensive process involving paper forms, content-entry errors and many months to plot an area.</li>
+				<li><span class="number future-A h3">1</span>They saw Detroit as the vast sprawling city.</li>
+				<li><span class="number future-A h3">2</span>Looking for the best opportunities to use technology.</li>
+				<li><span class="number future-A h3">3</span>Outdated surveys providing inadequate data for informed decisions, was a major issue.</li>
+				<li><span class="number future-A h3">4</span>Surveying was a time and resources-intensive process involving paper forms, content-entry errors and many months to plot an area.</li>
 			</ol>
 		</div>
 	</div>
@@ -23,7 +23,7 @@
 		<div class="outer-container"><figcaption class="inner-container">Inspiration</figcaption></div>
 	</figure>
 	<div class="outer-container">
-		<h2 class="future-A inner-container">process</h2>
+		<h2 class="future-A h3 inner-container">process</h2>
 		<p class="push inner-container">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
 	</div>
 	<figure class="ld-logo active-on-inview" data-offset="0.5">
@@ -84,7 +84,7 @@
 
 <section id="solution" class="page-section " style="padding-bottom: 100px; background-color: #FFEBC4;">
 	<div class="outer-container">
-		<h2 class="future-A inner-container">solution</h2>
+		<h2 class="future-A h3 inner-container">solution</h2>
 		<p class="push inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	</div>
 	<figure class="os-slideshow-container">
@@ -127,6 +127,6 @@
 		</div>
 	</figure>
 	<div class="colophon push-double outer-container clearfix">
-		<p class="h2 future-A inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h2 future-A h3 inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 </section>

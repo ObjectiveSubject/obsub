@@ -1,7 +1,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container bleed">
 		<div class="inner-container">
-			<h2 class="future-A">opportunity</h2>
+			<h2 class="future-A h3">opportunity</h2>
 			<p>Given our skills and interest in transit, working with TransitCenter was a dream project. The non-profit was formed from the sale of TransitCheck to advocate for better transit across America. We saw that, despite confusion with city transit interchanges, a name change for TransitCenter was off the table.</p>
 			<p>So we proposed a refresh for the brand, visual identity and website, to capitalize on its growing status. We saw an opportunity to enhance its web presence, with a user-focused site to better tell the story of the organization and elevate its voice in the transportation ecosystem.</p>
 		</div>
@@ -24,7 +24,7 @@
 
 	<div class="outer-container bleed">
 		<div class="inner-container">
-			<h2 class="future-A">process</h2>
+			<h2 class="future-A h3">process</h2>
 			<p>We conducted brand, communications and market audits and recognized that TransitCenter was both missing opportunities to explain its mission through its website, logo, self-description and other materials. Multiple communications materials were developed in different styles, which missed the benefits of a consistent brand in building recognition.</p>
 			<p>TransitCenter’s existing color scheme of blues and greens was commonly used in the sector, which didn’t allow it to stand out, and there was both a challenge and an opportunity to ensure its visual identity could pair with partner organizations. We saw the need to match communications with organizational strategy: publications that made more impact; more frequent hosting of events; and a raised profile as a commentator on transit developments.</p>
 		</div>
@@ -43,7 +43,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">solution</h2>
+			<h2 class="future-A h3">solution</h2>
 			<p>We created a strong visual identity and ‘house style’ for all future materials, and a style guide for consistent implementation. We gave TransitCenter a bold and ‘ownable’ distinctive purple for differentiation and gravitas. We created a bold and flexible logo which adapts to different contexts.</p>
 		</div>
 	</div>
@@ -190,7 +190,7 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>The live feed of news items, centered around the bold white-on-purple line knits together a consistent narrative around the commitment to better transit.</p>
-			<p class="h2 future-A"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 

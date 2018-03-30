@@ -1,7 +1,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">opportunity</h2>
+			<h2 class="future-A h3">opportunity</h2>
 			<p>We’ve worked with Gibney on an ongoing basis since 2014. Over these years we’ve developed a deep relationship with this institution, which defies simple explanation. Most people don't know about—much less understand—all that Gibney is and does.</p>
 			<p>Founded in 1991, Gibney Dance has long existed at the intersection of dance and social action. These values have remained an integral part of the organization, even as every other aspect of the organization transformed exponentially. In a few short years, Gibney has expanded physically and programmatically—adding 52,000 square feet of space and ever more programs for audiences and artists. At this point of inflection, Gibney approached us to redefine their brand to more accurately and wholly tell their story.</p>
 		</div>
@@ -24,7 +24,7 @@
 
 	<div class="outer-container ">
 		<div class="inner-container">
-			<h2 class="future-A">process</h2>
+			<h2 class="future-A h3">process</h2>
 			<p>Before beginning the project, we already knew that Gibney’s offer was wide-ranging and complex. This made our research activities critical to establishing a clear and solid strategic foundation upon which all subsequent activities would be based.</p>
 			<p>In order to deliver a more accurate identity, our priority was to rethink the organization through a deeper understanding of Gibney’s community—all the individuals that contribute to, benefit from, and participate in Gibney activities— and what Gibney means to them. We conducted interviews with Gibney’s dancers, current and former staff, participants to dance classes and domestic violence movement workshops, resident artists, supporters, and board members. We also conducted co-creation workshops with staff to uncover perceptions and insights about Gibney. The brand platform and set of recommendations taken from these activities enabled all future work to be approached from the perspective of Gibney's community.</p>
 		</div>
@@ -73,7 +73,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">solution</h2>
+			<h2 class="future-A h3">solution</h2>
 			<p>Though our research uncovered a deep complexity to the organization, one universal understanding was the integrality of movement. Physical movement, naturally, but also emotional, spiritual, and political movement are all manifested through Gibney’s values, programs, and community. We also realized that having the word ‘Dance’ as part of the name provided more limitations than opportunities, and recommended it be dropped to leverage the colloquial name already familiar to the community.</p>
 		</div>
 
@@ -297,6 +297,6 @@
 
 	<div class="outer-container push-triple-bottom">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://gibneydance.org/" class="cta-link" target="_blank">gibneydance.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3"><a href="http://gibneydance.org/" class="cta-link" target="_blank">gibneydance.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>

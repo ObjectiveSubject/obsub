@@ -1,7 +1,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">opportunity</h2>
+			<h2 class="future-A h3">opportunity</h2>
 			<p>Fresh off our brand refresh, TransitCenter came to us with a concept for their next research topic, which encouraged politicians and elected officials to invest in public transit and institute policies that support ridership on those investments by building neighborhoods designed for people, not cars. TransitCenter explained that many city leaders want to support transit-friendly neighborhoods for their constituents, but think it’s out of their jurisdiction or are overwhelmed by how to do it.</p>
 		</div>
 
@@ -28,7 +28,7 @@
 
 	<div class="outer-container ">
 		<div class="inner-container">
-			<h2 class="future-A">process</h2>
+			<h2 class="future-A h3">process</h2>
 			<p>The original draft publication was a persuasive explanation of how local policies like parking requirements hinder transit infrastructure in American cities by focusing development around the needs of the automobile. But as transit policy nerds ourselves, we understood that parking requirements were just one of many ways that public transit projects are sidelined in cities, even when local elected officials are eager to improve or introduce them. Recognizing the complex, interconnected policies and practices that hamper transit development in American cities, we went back to TransitCenter with an idea.</p>
 			<p>We sketched out a visual manifestation of the breadth of actions that can impact neighborhood development—from zoning policy to building form to quick-build, walkable (and bikeable) street design—and the resulting urban landscape. Starting with the typical American city’s development optimized for car use, we created a series of sketches that layered the effects of policy changes that could enable more vibrant, mixed-use, and transit-friendly development to cities.</p>
 		</div>
@@ -70,7 +70,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">solution</h2>
+			<h2 class="future-A h3">solution</h2>
 			<p>Always bearing in mind the target audience—civic leaders—and the possibility of shifting political environments, we developed a concept for a handy toolkit that would be equally useful, compelling, and adaptable to new circumstances.</p>
 		</div>
 	</div>
@@ -268,7 +268,7 @@
 
 	<div class="outer-container push-triple-bottom">
 		<div class="inner-container">
-			<p class="h2 future-A"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 

@@ -100,18 +100,13 @@
 		}
 
 		p {
-			font-size: rem(24);
-			line-height: rem(30);
+			@extend h1;
 			max-width: $max-width * 0.666;
 			margin: 0 auto;
 			padding: 0 $size_container_padding;
 			@include media($screen-sm) {
 				padding-left: $size_container_padding_sm;
 				padding-right: $size_container_padding_sm;
-			}
-			@include media($screen-lg) {
-				font-size: rem(44);
-				line-height: rem(46);
 			}
 
 			&.bleed {

@@ -5,7 +5,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">opportunity</h2>
+			<h2 class="future-A h3">opportunity</h2>
 			<p>Founded in 1921, Council on Foreign Relations is an independent, non-partisan membership organization, think tank, and publisher.</p>
 			<p>With over 340,000 unique visitors monthly, CFR.org is a hub for the organization’s published work, original interactive media, and institutional information.</p>
 		</div>
@@ -24,7 +24,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A push-triple">process</h2>
+			<h2 class="future-A h3 push-triple">process</h2>
 			<p>In August 2008, CFR debuted a new visual identity, created by <a href="http://landor.com/" class="cs-body-link" target="_blank">Landor Associates</a>, one of the world’s leading strategic brand consulting firms. Shortly thereafter, Objective Subject realized the comprehensive communication system across all physical and virtual applications.</p>
 			<p>After an intensive organization-wide audit of material uses and needs, Objective Subject refined brand guidelines to govern all platforms including printed publications, online material, and physical touch-points.</p>
 		</div>
@@ -65,7 +65,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">solution</h2>
+			<h2 class="future-A h3">solution</h2>
 			<p>We worked closely with their in-house web development team to overhaul the design of the site to create a straight-forward, elegant, and on-brand digital experience.</p>
 			<p>The CFR guidelines are a living document that adapts to the ongoing needs of the brand. We are the gatekeepers of the brand and amend this document to adjust to evolving opportunities and requirements.</p>
 		</div>
@@ -315,13 +315,13 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A push-triple">ongoing engagement</h2>
+			<h2 class="future-A h3 push-triple">ongoing engagement</h2>
 			<p>We are proud to continually partner with CFR to help realize key brand communications and strategy since our initial engagement in 2008.</p>
 		</div>
 	</div>
 
 	<div class="outer-container">
-		<p class="h2 future-A inner-container"><a href="http://cfr.org/" class="cta-link cs-body-link" target="_blank">cfr.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h2 future-A h3 inner-container"><a href="http://cfr.org/" class="cta-link cs-body-link" target="_blank">cfr.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
 </section>
