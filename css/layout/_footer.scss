@@ -2,8 +2,12 @@
 	position: relative;
 	padding-top: 6rem;
 	padding-bottom: 5rem;
+}
 
-	a,
+.site-footer__list {
+	@include clearfix;
+	margin: 0;
+
 	li {
 		padding: 5px 0;
 		color: $medium_gray;
@@ -26,16 +30,10 @@
 	}
 
 	a {
+		color: #333;
 		&.subscribe-toggle.active,
 		&:hover {
 			color: $color_text_main;
 		}
 	}
-
-}
-
-.site-footer__list {
-	height: 30px;
-	margin: 0;
-
 }

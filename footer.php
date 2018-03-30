@@ -14,10 +14,10 @@
 		<div class="outer-container">
 			<div class="inner-container">
 				<ul class="site-footer__list list-unstyled">
-					<li><a href="work" >Work</a></li>
-					<li><a href="views">Views</a></li>
-					<li><a href="about">About</a></li>
-					<li><a href="contact">Contact</a></li>
+					<li><a href="<?php echo site_url('work') ?>" >Work</a></li>
+					<!-- <li><a href="<?php echo site_url('views') ?>">Views</a></li> -->
+					<li><a href="<?php echo site_url('about') ?>">About</a></li>
+					<li><a href="<?php echo site_url('contact') ?>">Contact</a></li>
 				</ul>
 				<ul class="site-footer__list list-unstyled">
 					<li><a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">Facebook</a></li>
@@ -28,7 +28,7 @@
 					<li><a href="#">Download Firm Profile (<span class="old-num ">5.5</span><span class="mini-caps">mb, pdf</span>)</a> </li>
 				</ul>
 				<ul class="site-footer__list list-unstyled">
-					<li><span class="copyright">copyright &copy; <?php echo date('Y'); ?> objective subject</span></li>
+					<li><em class="copyright">copyright &copy; <?php echo date('Y'); ?> objective subject</em></li>
 				</ul>
 			</div>
 		</div>
