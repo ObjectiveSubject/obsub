@@ -6,7 +6,9 @@
  *
  * @package obsub
  */
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo('charset'); ?>">
@@ -36,7 +38,7 @@
 <?php endif ;?>
 </head>
 
-<body <?php body_class(); ?> >
+<body <?php body_class( os_get_body_class() ); ?> >
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'obsub'); ?></a>
 

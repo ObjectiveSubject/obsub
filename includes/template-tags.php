@@ -321,3 +321,15 @@ function obsub_category_transient_flusher() {
 }
 add_action( 'edit_category', 'obsub_category_transient_flusher' );
 add_action( 'save_post',     'obsub_category_transient_flusher' );
+
+
+/**
+ * Return custom body classes
+ */
+function os_get_body_class() {
+	global $post;
+
+	if ( is_singular() ) {
+		return get_post_type($post) . '-' . $post->post_name;
+	}
+}

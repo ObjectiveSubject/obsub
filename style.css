@@ -1183,6 +1183,10 @@ big {
   list-style: none;
 }
 
+.use-ui-light-theme {
+  color: white;
+}
+
 .bg-default {
   background-color: #e6e6e6;
 }
@@ -1591,6 +1595,9 @@ body::before {
   -moz-transition-delay: 300ms;
   transition-delay: 300ms;
 }
+.ui-light-theme .preview-nav .menu-item a {
+  color: white;
+}
 .preview-nav .menu-item span {
   cursor: pointer;
   -webkit-transition: all 300ms ease;
@@ -1778,9 +1785,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   position: relative;
   z-index: 1;
 }
-.single-case_study .page-header.use-ui-light-theme {
-  color: white;
-}
 .single-case_study .page-header.has-bg-image:before {
   content: "";
   display: block;
@@ -1874,6 +1878,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .page-section blockquote small {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.page-section.about-intro {
+  height: 85vh;
 }
 
 #case-studies {
@@ -2054,6 +2061,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .ctas a {
   display: block;
   margin: 0;
+}
+
+.page-about {
+  background: #333;
 }
 
 .about__block {

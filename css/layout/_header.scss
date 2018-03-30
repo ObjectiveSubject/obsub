@@ -260,6 +260,12 @@
         //     @include transform(translateX(0));
         // }
 
+        a {
+            .ui-light-theme & {
+                color: white;
+            }
+        }
+
         span {
             cursor: pointer;
             @include transition(all 300ms ease);

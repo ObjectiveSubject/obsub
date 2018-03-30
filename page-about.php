@@ -9,27 +9,25 @@ get_header(); ?>
 
 <?php the_post(); ?>
 
-	<section id="about-intro" class="about-intro page-section use-ui-light-theme page-section" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white; height:85vh">
-
-			<div class="section-content">
-				<div class="intro-content section-content">
-					<div class="outer-container">
-						<div class="inner-container">
-							<h1 class="h1 page-title">What happens when creative people are involved in shaping solutions to the issues we face as a society?</h1>
-							<h3>Our creative solutions are the result of a rigorous, logical, and inspired process. We look beyond the brief to find the real problem, designing solutions through a fusion of policy and design expertise as all good design should, we prioritize the people and their experience.</h3>
-						</div>
-						<nav class="page-nav inner-container">
-							<ul class="list-unstyled hug">
-								<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
-								<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
-								<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
-								<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
-							</ul>
-						</nav>
-					</div>
+	<section id="about-intro" class="about-intro page-section use-ui-light-theme">
+	
+		<div class="intro-content section-content">
+			<div class="outer-container">
+				<div class="inner-container">
+					<h1 class="h1 page-title">What happens when creative people are involved in shaping solutions to the issues we face as a society?</h1>
+					<h3>Our creative solutions are the result of a rigorous, logical, and inspired process. We look beyond the brief to find the real problem, designing solutions through a fusion of policy and design expertise as all good design should, we prioritize the people and their experience.</h3>
 				</div>
+				<nav class="page-nav inner-container">
+					<ul class="list-unstyled hug">
+						<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
+						<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
+						<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
+						<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
+					</ul>
+				</nav>
 			</div>
-
+		</div>
+	
 	</section>
 
 	<!-- <section id="approach" class="about__approach">
@@ -87,7 +85,7 @@ get_header(); ?>
 
 	</section> -->
 
-	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white"> <!-- -->
+	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " style="padding-bottom: 3rem; padding-top: 3rem;"> <!-- -->
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
@@ -123,7 +121,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;"> <!--  -->
+	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem;"> <!--  -->
 
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
@@ -197,7 +195,7 @@ get_header(); ?>
 
 	</section>
 
-	<section id="team" class="page-section use-ui-light-theme about__team" style="padding-bottom: 3rem; padding-top: 3rem; background-color: #333333 ; color:white;">
+	<section id="team" class="page-section use-ui-light-theme about__team" style="padding-bottom: 3rem; padding-top: 3rem;">
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">team</h2>

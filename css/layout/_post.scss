@@ -9,9 +9,6 @@
 	}
 
 	.single-case_study & {
-		&.use-ui-light-theme {
-			color: white;
-		}
 
 		&.has-bg-image:before {
 			content: "";
@@ -118,5 +115,9 @@
 			font-size: rem(16);
 			line-height: rem(24);
 		}
+	}
+
+	&.about-intro {
+		height:85vh;
 	}
 }
