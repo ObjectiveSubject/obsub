@@ -2535,6 +2535,8 @@ svg.hs-wordmark {
 
 .site-footer__list {
   margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
 .site-footer__list:before, .site-footer__list:after {
   content: "";

@@ -7,6 +7,9 @@
 .site-footer__list {
 	@include clearfix;
 	margin: 0;
+	font-size: 14px;
+	line-height: 1.6;
+
 
 	li {
 		padding: 5px 0;
