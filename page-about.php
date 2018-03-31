@@ -15,7 +15,6 @@ get_header(); ?>
 			<div class="outer-container">
 				<div class="inner-container">
 					<h1 class="h1 page-title">What happens when creative people are involved in shaping solutions to the issues we face as a society?</h1>
-					<h3>Our creative solutions are the result of a rigorous, logical, and inspired process. We look beyond the brief to find the real problem, designing solutions through a fusion of policy and design expertise as all good design should, we prioritize the people and their experience.</h3>
 				</div>
 				<nav class="page-nav inner-container">
 					<ul class="list-unstyled hug">
@@ -89,7 +88,7 @@ get_header(); ?>
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
-				<p class="push">Since 2007, we’ve made strides towards an informed and engaged society with organizations in four sectors key to its realization:</p>
+				<p class="push">Since 2007, we’ve worked with organizations in four key sectors that shape the ideas and interactions we have with one another.</p>
 			</div>
 		</div>
 
@@ -126,7 +125,7 @@ get_header(); ?>
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">capabilities</h2>
-				<p class="push">We are a civic-minded group with a flexible skill set that can solve a range of communication challenges. our capabilities include, but are not limited to:</p>
+				<p class="push">We believe that involving design thinking to tackle complex questions can yield more dynamic, trusting, and accountable communities. Our capabilities include, but are not limited to:</p>
 			</div>
 		</div>
 
@@ -199,7 +198,7 @@ get_header(); ?>
 		<div class="outer-container  push-triple-bottom">
 			<div class="inner-container">
 				<h2 class="future-A">team</h2>
-				<p class="push">Through our work, we explore what happens when creative people are involved in shaping solutions to the issues we face as a society.</p>
+				<p class="push">We are a civic-minded group with a flexible skill set that can solve a range of challenges.</p>
 			</div>
 		</div>
 

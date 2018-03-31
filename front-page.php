@@ -16,7 +16,7 @@ $case_studies = get_case_studies(); ?>
 				<div class="outer-container">
 					<div class="inner-container">
 						<h1 class="page-title">Objective Subject is a design firm.</h1>
-						<p class="h1">We create a more informed and engaged society by rethinking how companies, institutions, and governments’ thorniest issues are framed and experienced.</p>
+						<p class="h1">We are creating a more informed and engaged society by rethinking how companies, institutions, and governments are framed and experienced.</p>
 						<p><a href="/about" class="button">about us &nbsp; &#8250;</a></p>
 					</div>
 				</div>
@@ -83,7 +83,7 @@ $case_studies = get_case_studies(); ?>
 		<div class="outer-container">
 			
 			<div class="inner-container">
-				<h3 class="h1">Involving creative people to tackle complex questions can yield more dynamic, trusting, and accountable communities. Here are some places where we think we can help.</h3>
+				<h3 class="h1">Some areas where we think design can make an impact.</h3>
 			</div>		
 
 			<div class="our-views-container" style="margin-top:5rem">
