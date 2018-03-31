@@ -22,13 +22,13 @@
 				<ul class="site-footer__list list-unstyled">
 					<li><a href="https://www.facebook.com/obsub" class="facebook social" target="_blank">Facebook</a></li>
 					<li><a href="https://twitter.com/ob_sub" class="twitter social" target="_blank">Twitter</a></li>
-					<li><a href="https://dribbble.com/objectivesubject" class="dribble social" target="_blank">Dribbble</a></li>
+					<li><a href="https://www.instagram.com/objectivesubject/" class="instagram social" target="_blank">Instagram</a></li>
 				</ul>
 				<ul  class="site-footer__list list-unstyled">
-					<li><a href="#">Download Firm Profile (<span class="old-num ">5.5</span><span class="mini-caps">mb, pdf</span>)</a> </li>
+					<li><a href="<?php echo site_url('/wp-content/uploads/2018/03/Objective-Subject-Firm-Overview-Medium-2018.pdf') ?>" target="_blank">Download Firm Profile (<span class="old-num ">7.2</span><span class="mini-caps">mb, pdf</span>)</a> </li>
 				</ul>
 				<ul class="site-footer__list list-unstyled">
-					<li><em class="copyright">copyright &copy; <?php echo date('Y'); ?> objective subject</em></li>
+					<li><em class="copyright">Copyright &copy; <?php echo date('Y'); ?>, Objective Subject</em></li>
 				</ul>
 			</div>
 		</div>
