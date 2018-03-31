@@ -6,8 +6,8 @@
 	</div>
 </section>
 
-<section class="page-section push-double" style="background-color: #D6EFFD;">
-	<figure class="alignnone hug">
+<section class="page-section mt-2" style="background-color: #D6EFFD;">
+	<figure class="alignnone mt-nudge">
 		<div style="overflow:hidden; position: relative;">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
@@ -58,7 +58,7 @@
 </section>
 
 <section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">
-	<figure class="aligncenter hug">
+	<figure class="aligncenter mt-nudge">
 		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
 			<img src="<?php echo os_path('DBPS-Results.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Results.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Results-@2x.png', 'bps') ?> 2x" width="843" height="317">
 		</div>

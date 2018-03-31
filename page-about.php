@@ -17,7 +17,7 @@ get_header(); ?>
 					<h1 class="h1 page-title">What happens when creative people are involved in shaping solutions to the issues we face as a society?</h1>
 				</div>
 				<nav class="page-nav inner-container">
-					<ul class="list-unstyled hug">
+					<ul class="list-unstyled mt-nudge">
 						<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
 						<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
 						<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
@@ -30,10 +30,10 @@ get_header(); ?>
 	</section>
 
 	<!-- <section id="approach" class="about__approach">
-		<div class="outer-container  push-triple push-triple-bottom">
+		<div class="outer-container  mt-3 mb-3">
 			<div class="inner-container">
 				<h2 class="future-A">approach</h2>
-				<p class="push">We differ from large consultancies and small studios by how we conduct our engagements.</p>
+				<p class="mt-1">We differ from large consultancies and small studios by how we conduct our engagements.</p>
 			</div>
 		</div>
 
@@ -42,7 +42,7 @@ get_header(); ?>
 					<div class="flex-blocks">
 						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 							<h2 class="future-A">research-led strategy</h2>
-							<p class="push">Understanding the unique conditions of your organization's strategy and policy, as well the needs of audiences and users, is the starting point of any engagement. Only when we truly understand the problem do we start to develop solutions.</p>
+							<p class="mt-1">Understanding the unique conditions of your organization's strategy and policy, as well the needs of audiences and users, is the starting point of any engagement. Only when we truly understand the problem do we start to develop solutions.</p>
 						</div>
 						<div class="flex-right column column-span-8">
 							<img src="http://via.placeholder.com/900X900" alt="">
@@ -57,7 +57,7 @@ get_header(); ?>
 				<div class="flex-blocks">
 					<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 						<h2 class="future-A">involving you</h2>
-						<p class="push">Our most fruitful engagements are with clients who care. We involve you so that you have the opportunity to shape the direction of our work together. Our process may challenge you to think beyond your expectations, but you can rely on us to always keep your best interests in mind.</p>
+						<p class="mt-1">Our most fruitful engagements are with clients who care. We involve you so that you have the opportunity to shape the direction of our work together. Our process may challenge you to think beyond your expectations, but you can rely on us to always keep your best interests in mind.</p>
 					</div>
 					<div class="flex-right column column-span-8">
 						<img src="http://via.placeholder.com/900X900" alt="">
@@ -72,7 +72,7 @@ get_header(); ?>
 					<div class="flex-blocks">
 						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
 							<h2 class="future-A">original solutions</h2>
-							<p class="push">Our team of designers, strategists, and developers approach a challenge from all angles, resulting in intuitive, practical, and beautiful designs that are well-executed.</p>
+							<p class="mt-1">Our team of designers, strategists, and developers approach a challenge from all angles, resulting in intuitive, practical, and beautiful designs that are well-executed.</p>
 						</div>
 						<div class="flex-right column column-span-8">
 							<img src="http://via.placeholder.com/900X900" alt="">
@@ -85,14 +85,14 @@ get_header(); ?>
 	</section> -->
 
 	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " style="padding-bottom: 3rem; padding-top: 3rem;"> <!-- -->
-		<div class="outer-container  push-triple-bottom">
+		<div class="outer-container  mb-3">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
-				<p class="push">Since 2007, we’ve worked with organizations in four key sectors that shape the ideas and interactions we have with one another.</p>
+				<p class="mt-1">Since 2007, we’ve worked with organizations in four key sectors that shape the ideas and interactions we have with one another.</p>
 			</div>
 		</div>
 
-		<div class="outer-container push-triple-bottom">
+		<div class="outer-container mb-3">
 			<div class="flex-blocks">
 				<div class="about__block" style="background-image:url(<?php echo os_path('policy.jpg', 'about') ?>)">
 					<div class="about__block-text">
@@ -122,14 +122,14 @@ get_header(); ?>
 
 	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem;"> <!--  -->
 
-		<div class="outer-container  push-triple-bottom">
+		<div class="outer-container  mb-3">
 			<div class="inner-container">
 				<h2 class="future-A">capabilities</h2>
-				<p class="push">We believe that involving design thinking to tackle complex questions can yield more dynamic, trusting, and accountable communities. Our capabilities include, but are not limited to:</p>
+				<p class="mt-1">We believe that involving design thinking to tackle complex questions can yield more dynamic, trusting, and accountable communities. Our capabilities include, but are not limited to:</p>
 			</div>
 		</div>
 
-		<div class="outer-container push-triple-bottom">
+		<div class="outer-container mb-3">
 			<div class="flex-blocks">
 				<div class="column column-span-3">
 
@@ -195,10 +195,10 @@ get_header(); ?>
 	</section>
 
 	<section id="team" class="page-section use-ui-light-theme about__team" style="padding-bottom: 3rem; padding-top: 3rem;">
-		<div class="outer-container  push-triple-bottom">
+		<div class="outer-container  mb-3">
 			<div class="inner-container">
 				<h2 class="future-A">team</h2>
-				<p class="push">We are a civic-minded group with a flexible skill set that can solve a range of challenges.</p>
+				<p class="mt-1">We are a civic-minded group with a flexible skill set that can solve a range of challenges.</p>
 			</div>
 		</div>
 
@@ -235,9 +235,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<div class="outer-container ">
-			<div class="inner-container push-triple push-triple-bottom">
-				<p class="push">Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:</p>
-				<ul class="list-unstyled  push">
+			<div class="inner-container mt-3 mb-3">
+				<p class="mt-1">Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:</p>
+				<ul class="list-unstyled  mt-1">
 					<li>Aaron Carámbula <em>@carambula</em>, Facebook </li>
 					<li>Emma White <em>@nodilemma</em>, Portal A </li>
 					<li>Sam Gray <em>@samrgray</em>, BlenderBox </li>
@@ -253,8 +253,8 @@ get_header(); ?>
 		</div>
 
 		<div class="outer-container">
-			<h2 class="future-A inner-container push-triple">Recognition</h2>
-			<ul class="list-unstyled clearfix push inner-container about__column-list push-triple-bottom">
+			<h2 class="future-A inner-container mt-3">Recognition</h2>
+			<ul class="list-unstyled clearfix mt-1 inner-container about__column-list mb-3">
 				<li>
 				<strong>Webby Awards 2015</strong>, Travel Design<br/>
 				<a href="http://www.nytimes.com/times-journeys/" target="_blank"><em>New York Times, Times Journeys</em></a>

@@ -26,7 +26,7 @@ get_header(); ?>
 	</section>
 
 	<section id="works" class="work__works page-section ">
-		<div class="outer-container  push-triple-bottom">
+		<div class="outer-container  mb-3">
 			<div class="flex-blocks">
 				<?php
                     if (have_rows('work_block')):

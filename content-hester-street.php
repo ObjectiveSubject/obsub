@@ -7,7 +7,7 @@
 			</div>
 	</div>
 
-	<figure class="alignnone push-double">
+	<figure class="alignnone mt-2">
 		<div class="parallax-container">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Quote from Hester Street]<span class="quote">&rdquo;</span><br/><small>&mdash;Betsy MacLean, Executive Director</small></p>
@@ -18,10 +18,10 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section hug ">
+<section id="process" class="page-section mt-nudge ">
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container push-triple">process</h2>
+		<h2 class="future-A h3 inner-container mt-3">process</h2>
 		<div class="inner-container">
 			<p>We went on an inspiring journey to discover what makes Hester Street unique, challenges they face and the organization’s future strategy. Identifying gaps and opportunities in HSC’s communication, we recommended a set of strategic actions such as prioritizing people’s skills to explain the organization, a flexible and meaningful identity system, and a set of messages for different situations.</p>
 			<p>Our designers iteratively developed a new identity system and an accessible, streamlined website, and our strategists crafted and tested a multi-level messaging platform, all inspired by our research findings.</p>
@@ -58,7 +58,7 @@
 
 	</div>
 
-	<figure class="alignnone push-triple" style="background-color: #000;height:49vw;">
+	<figure class="alignnone mt-3" style="background-color: #000;height:49vw;">
 		<div class="outer-container gt-america"
 				 style="color: white;
 						    line-height: .9em;
@@ -155,7 +155,7 @@
 			<p class="h2 future-A h3"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
-	<div class="outer-container push-double">
+	<div class="outer-container mt-2">
 
 	</div>
 

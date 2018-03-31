@@ -1036,44 +1036,6 @@ big {
   text-align: right;
 }
 
-/* Hug the block above you */
-.hug {
-  margin-top: 0;
-}
-
-/* Create space */
-.push-half {
-  margin-top: 0.75rem;
-}
-
-.push {
-  margin-top: 1.5rem;
-}
-
-.push-double {
-  margin-top: 3rem;
-}
-
-.push-triple {
-  margin-top: 4.5rem;
-}
-
-.push-half-bottom {
-  margin-bottom: 0.75rem;
-}
-
-.push-bottom {
-  margin-bottom: 1.5rem;
-}
-
-.push-double-bottom {
-  margin-bottom: 3rem;
-}
-
-.push-triple-bottom {
-  margin-bottom: 4.5rem;
-}
-
 .show {
   display: block;
 }
@@ -2987,9 +2949,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   display: block;
 }
 
-.page-nav {
-  padding-top: 3rem;
-}
 @media screen and (min-width: 768px) {
   .page-nav {
     display: none;

@@ -25,7 +25,7 @@ $case_studies = get_case_studies(); ?>
 
 	</section>
 
-	<section id="case-studies" class="page-section use-ui-light-theme push-double">
+	<section id="case-studies" class="page-section use-ui-light-theme mt-2">
 
 		<?php 
 		foreach ( $case_studies as $study ) :
@@ -56,10 +56,10 @@ $case_studies = get_case_studies(); ?>
 					
 						<div class="case-study__text clearfix">
 							
-							<h2 class="case-study__title h1 hug"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+							<h2 class="case-study__title h1 mt-nudge"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
 							
 							<div class="case-study__desc">
-								<p class="hug">
+								<p class="mt-nudge">
 									<?php echo get_the_excerpt( $study ); ?><br/>
 									<a href="<?php echo get_permalink( $study ); ?>" class="button-ghost" style="margin-top:0.5em">view case study &nbsp; &#8250;</a>
 								</p>
@@ -111,9 +111,9 @@ $case_studies = get_case_studies(); ?>
 				foreach ( $views as $view ) { ?>
 					<article class="our-views-article" style="margin-bottom: 2rem">
 						<?php echo $view['image']; ?>
-						<h4 class="h2 push-half"><?php echo $view['title']; ?></h4>
-						<p class="push-half"><?php echo $view['content']; ?></p>
-						<p class="push-half"><a href="<?php echo $view['url']; ?>" target="_blank" class="button">read &nbsp; &#8250;</a></p>
+						<h4 class="h2 mt-nudge"><?php echo $view['title']; ?></h4>
+						<p class="mt-nudge"><?php echo $view['content']; ?></p>
+						<p class="mt-nudge"><a href="<?php echo $view['url']; ?>" target="_blank" class="button">read &nbsp; &#8250;</a></p>
 					</article>
 				<?php } ?>
 			</div>

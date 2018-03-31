@@ -17,14 +17,14 @@
 		<figcaption class="outer-container"><div class="inner-container">Los Angeles Mayor Eric Garcetti at the Measure M victory press conference</div></figcaption>
 	</figure>
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<div class="inner-container">
 			<p>It became clear that there was an opportunity to incorporate the larger landscape of urban policies that contribute to the lively, walkable neighborhoods conducive to transit usage. Furthermore, there was an opportunity to render dense policy matters in a more compelling and digestible way.</p>
 		</div>
 	</div>
 </section>
 
-<section id="process" class="page-section push-triple">
+<section id="process" class="page-section mt-3">
 
 	<div class="outer-container ">
 		<div class="inner-container">
@@ -53,7 +53,7 @@
 		<?php os_slide_nav("bps-billboard-nav"); ?>
 	</figure>
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<div class="inner-container">
 			<p>After a series of robust and fruitful conversations, the TransitCenter team then applied their in-depth knowledge, research, and experience to flesh out the content across the framework.</p>
 		</div>
@@ -98,7 +98,7 @@
 		</div>
 	</figure>
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<div class="inner-container">
 			<p>We designed a practical binder in a striking color to capture the attention of a busy public official. The content was divided by implementation considerations, rather than subject matter, to anticipate the steps local leaders would need to take.</p>
 		</div>
@@ -120,7 +120,7 @@
 			<p>We optimized the publication for online consumption with interactive triggers to even further underscore the cumulative effect of policies.</p>
 		</div>
 
-			<div class="browser push-triple" >
+			<div class="browser mt-3" >
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">
@@ -136,7 +136,7 @@
 			</div>
 	</div>
 
-	<div class="outer-container bleed push-triple">
+	<div class="outer-container bleed mt-3">
 			<div class="flex-blocks">
 				<div class="column column-span-3">
 					<div class="block-image">
@@ -266,7 +266,7 @@
 
 
 
-	<div class="outer-container push-triple-bottom">
+	<div class="outer-container mb-3">
 		<div class="inner-container">
 			<p class="h2 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>

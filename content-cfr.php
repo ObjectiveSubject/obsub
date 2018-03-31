@@ -24,7 +24,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 push-triple">process</h2>
+			<h2 class="future-A h3 mt-3">process</h2>
 			<p>In August 2008, CFR debuted a new visual identity, created by <a href="http://landor.com/" class="cs-body-link" target="_blank">Landor Associates</a>, one of the world’s leading strategic brand consulting firms. Shortly thereafter, Objective Subject realized the comprehensive communication system across all physical and virtual applications.</p>
 			<p>After an intensive organization-wide audit of material uses and needs, Objective Subject refined brand guidelines to govern all platforms including printed publications, online material, and physical touch-points.</p>
 		</div>
@@ -129,16 +129,16 @@
 
 			<div id="font_slide_controls" class="outer-container">
 				<div class="type_filters mobile-hide">
-					<a href="#" data-typeface="haarlemmer" class="h3 hug haarlemmer visible">Haarlemmer</a>
-					<a href="#" data-typeface="times" class="h3 hug times visible">Times New Roman</a>
-					<a href="#" data-typeface="georgia" class="h3 hug georgia visible">Georgia</a>
-					<a href="#" class="h3 hug notes visible">Notes</a>
+					<a href="#" data-typeface="haarlemmer" class="h3 mt-nudge haarlemmer visible">Haarlemmer</a>
+					<a href="#" data-typeface="times" class="h3 mt-nudge times visible">Times New Roman</a>
+					<a href="#" data-typeface="georgia" class="h3 mt-nudge georgia visible">Georgia</a>
+					<a href="#" class="h3 mt-nudge notes visible">Notes</a>
 				</div>
 				<div class="type_paging">
-					<a href="#" class="h3 hug index active" data-index="0">a</a>
-					<a href="#" class="h3 hug index" data-index="1">e</a>
-					<a href="#" class="h3 hug index" data-index="2">g</a>
-					<a href="#" class="h3 hug index" data-index="3">j</a>
+					<a href="#" class="h3 mt-nudge index active" data-index="0">a</a>
+					<a href="#" class="h3 mt-nudge index" data-index="1">e</a>
+					<a href="#" class="h3 mt-nudge index" data-index="2">g</a>
+					<a href="#" class="h3 mt-nudge index" data-index="3">j</a>
 				</div>
 			</div>
 
@@ -315,7 +315,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 push-triple">ongoing engagement</h2>
+			<h2 class="future-A h3 mt-3">ongoing engagement</h2>
 			<p>We are proud to continually partner with CFR to help realize key brand communications and strategy since our initial engagement in 2008.</p>
 		</div>
 	</div>

@@ -33,19 +33,19 @@
 <section id="process" class="page-section ">
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container push-triple">process</h2>
+		<h2 class="future-A h3 inner-container mt-3">process</h2>
 		<div class="inner-container">
 			<p>Through stakeholder interviews across the organization, we refined a brand platform to inform the creation of the visual identity. This captured the spirit and heritage of the university and the outlook of the staff and students. Through a visual audit of the university’s current identity and iterations through its history, we identified the seal of the university as a key visual asset, and the flame as its logical shorthand.</p>
 			<p>The need to convey program interdisciplinarity in a way that would not impact negatively on the online experience informed our approach to content strategy. Through a full content audit, followed by sorting and categorizing of the site’s content, we created information architecture rules which supported the CGU team’s efforts to streamline and redraft the site.</p>
 		</div>
 	</div>
 
-	<figure class="aligncenter push-triple" style="padding:0 80px;">
+	<figure class="aligncenter mt-3" style="padding:0 80px;">
 		<img src="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Diagram@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 	</figure>
 
 	<div class="outer-container">
-		<p class="inner-container push-triple">We created user journey maps to envision how prospective or current students would navigate through the website and anticipate their needs through the reorganized content. In the development phase, we adapted the back-end structure and controls to work with organizational behaviors, which ensures a consistent front-end user experience.</p>
+		<p class="inner-container mt-3">We created user journey maps to envision how prospective or current students would navigate through the website and anticipate their needs through the reorganized content. In the development phase, we adapted the back-end structure and controls to work with organizational behaviors, which ensures a consistent front-end user experience.</p>
 	</div>
 
 	<figure class="aligncenter">
@@ -64,7 +64,7 @@
 			<p class="inner-container">The flame symbol was a unique and ownable asset which we simplified into an icon suitable for digital uses. Paired with the flame, we minimized the typographic elements to create a simplified wordmark to serve as a foundation for the university’s many schools, programs, and offices. We added flexible straplines ‘since 1925’ and ‘part of Claremont Colleges’ to strengthen the brand positioning.</p>
 	</div>
 
-	<div class="aligncenter push-double" style="background-color: white;">
+	<div class="aligncenter mt-2" style="background-color: white;">
 		<div class="outer-container" style="padding: 40px 0;    max-width: 49vw; line-height:0px">
 				<img width="100%" src="<?php echo os_path('CGU-straight-logo.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-straight-logo.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-straight-logo@2x.png', 'cgu'); ?> 2x" height="690" />
 
@@ -85,14 +85,14 @@
 	</div>
 
 
-	<figure class="aligncenter push-triple">
+	<figure class="aligncenter mt-3">
 		<img src="<?php echo os_path('CGU-Brand-Architecture.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Brand-Architecture.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Brand-Architecture@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 		<div class="outer-container">
 			<figcaption class="inner-container">Claremont Graduate University brand architecture</figcaption>
 		</div>
 	</figure>
 
-	<figure class="aligncenter push-triple">
+	<figure class="aligncenter mt-3">
 		<div class="outer-container">
 			<img src="<?php echo os_path('CGU-Stationery-Mockup.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Stationery-Mockup.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Stationery-Mockup@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 			<figcaption class="inner-container">Claremont Graduate University print materials</figcaption>
@@ -103,7 +103,7 @@
 			<p class="inner-container">Recognizing a breadth of touchpoints – from formal administrative communications to student event materials – we devised an implementation spectrum for the identity system that could just as easily portray subdued, institutional gravitas as it could an energetic, bold style.</p>
 	</div>
 
-	<figure class="aligncenter push-triple">
+	<figure class="aligncenter mt-3">
 		<img src="<?php echo os_path('CGU-Lookbooks.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Lookbooks.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Lookbooks@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 		<div class="outer-container">
 			<figcaption class="inner-container">Claremont Gradute University Lookbooks</figcaption>
@@ -260,6 +260,6 @@
 		</div>
 	</div>
 
-	<div class="push-triple">	</div>
+	<div class="mt-3">	</div>
 
 </section>

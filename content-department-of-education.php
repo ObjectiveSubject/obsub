@@ -21,7 +21,7 @@
 <section id="process" class="page-section " >
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container push-triple">process</h2>
+		<h2 class="future-A h3 inner-container mt-3">process</h2>
 		<div class="inner-container">
 			<p>We interviewed people across the NYC school community to build our evidence base, and quickly deduced the problem: head teachers across NYC are not prioritizing health and physical education in the school day, despite its benefits across grades and behavior.</p>
 			<p>Communicating the legitimacy and imperative of wellness education in the Office of School Wellness Programs’ visual communications became the chief objective. To create impact, capture the attention of key audiences, and communicate the core messages, we focused on the students, their actions and their outcomes. </p>
@@ -57,7 +57,7 @@
 		<figcaption class="inner-container">Think—Move—Achieve— Wordmark</figcaption>
 	</div>
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<p class="inner-container">The line emphasizes the continuum between all three elements and therefore the holistic nature of wellness. This is supported by the graphic pattern to reinforce the identity.</p>
 	</div>
 
@@ -69,7 +69,7 @@
 		</div>
 	</figure>
 
-	<div class="outer-container push-triple" style="padding-bottom: 60px;">
+	<div class="outer-container mt-3" style="padding-bottom: 60px;">
 		<div class="inner-container">
 			<p>We expanded the NYC Department of Education’s color palette, and used an approachable, confident and energetic typeface. </p>
 		</div>
@@ -96,7 +96,7 @@
 	</figure>
 
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<div class="inner-container">
 			<p>We showed how student stories reach audiences, and prescribed the photo style to support the office’s objectives: focusing on the student, student learning and schools’ engagement with physical and health education programming.</p>
 		</div>

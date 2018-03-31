@@ -52,38 +52,38 @@
 			</div>
 
 
-			<!-- <ul class="preview-nav list-unstyled hug">
-				<li class="menu-item future-A hug">
+			<!-- <ul class="preview-nav list-unstyled mt-nudge">
+				<li class="menu-item future-A mt-nudge">
 					<a href="work" >work</a>
 				</li>
-				<li class="menu-item page-profile future-A hug">
+				<li class="menu-item page-profile future-A mt-nudge">
 					<a href="about">about</a>
 				</li>
-				<li class="menu-item page-contact future-A hug">
+				<li class="menu-item page-contact future-A mt-nudge">
 					<a href="contact">contact</a>
 				</li> -->
-				<?php wp_nav_menu(array('menu_class' => 'preview-nav future-A h3 list-unstyled hug')) ?>
+				<?php wp_nav_menu(array('menu_class' => 'preview-nav future-A h3 list-unstyled mt-nudge')) ?>
 
 		</div>
 
 		<!-- <nav id="site-navigation" class="main-navigation future-A" role="navigation">
 			<div class="main-menu outer-container">
 				<ul class="inner-container">
-					<li class="menu-item case_study h2 hug">
+					<li class="menu-item case_study h2 mt-nudge">
 						<span>case studies</span>
 						<ul class="sub-menu">
 							<?php $case_studies = get_case_studies(array( 'orderby'=>'title' ));
                             foreach ($case_studies as $study) : ?>
-								<li class="menu-item sub-menu-item h2 hug <?php echo 'cs-' . $study->post_name; ?>">
+								<li class="menu-item sub-menu-item h2 mt-nudge <?php echo 'cs-' . $study->post_name; ?>">
 									<a href="<?php echo get_the_permalink($study->ID); ?>"><?php echo get_the_title($study->ID); ?></a>
 								</li>
 							<?php endforeach; ?>
 						</ul>
 					</li>
-					<li class="menu-item page-profile h2 hug">
+					<li class="menu-item page-profile h2 mt-nudge">
 						<a href="<?php echo site_url('/profile'); ?>">profile</a>
 					</li>
-					<li class="menu-item page-contact h2 hug">
+					<li class="menu-item page-contact h2 mt-nudge">
 						<a href="<?php echo site_url('/contact'); ?>">contact</a>
 					</li>
 				</ul>

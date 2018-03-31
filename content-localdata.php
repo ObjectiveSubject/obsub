@@ -18,13 +18,13 @@
 </section>
 
 <section id="process" class="page-section " style="padding-bottom: 100px; background-color: #FFEAC4;">
-	<figure class="alignnone hug">
+	<figure class="alignnone mt-nudge">
 		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<div class="outer-container"><figcaption class="inner-container">Inspiration</figcaption></div>
 	</figure>
 	<div class="outer-container">
 		<h2 class="future-A h3 inner-container">process</h2>
-		<p class="push inner-container">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
+		<p class="mt-1 inner-container">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
 	</div>
 	<figure class="ld-logo active-on-inview" data-offset="0.5">
 		<div class="ld-logo-container clearfix">
@@ -85,7 +85,7 @@
 <section id="solution" class="page-section " style="padding-bottom: 100px; background-color: #FFEBC4;">
 	<div class="outer-container">
 		<h2 class="future-A h3 inner-container">solution</h2>
-		<p class="push inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
+		<p class="mt-1 inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	</div>
 	<figure class="os-slideshow-container">
 		<div id="homepage-slide-dots"></div>
@@ -126,7 +126,7 @@
 			<figcaption class="inner-container">LocalData Stationery</figcaption>
 		</div>
 	</figure>
-	<div class="colophon push-double outer-container clearfix">
+	<div class="colophon mt-2 outer-container clearfix">
 		<p class="h2 future-A h3 inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 </section>

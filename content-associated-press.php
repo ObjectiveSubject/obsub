@@ -96,7 +96,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 push-triple">process</h2>
+			<h2 class="future-A h3 mt-3">process</h2>
 			<p>We began the design process by interviewing key stakeholders to understand the critical issues with the existing system. Dominant feedback noted a lack of flexibility with the existing mark, a dated aesthetic and the impression of an overly-American feel.</p>
 			<p>In our initial design assessment, Objective Subject determined that the existing letterforms hindered legibility and reproduction across mediums. Our team initially explored minimal tweaks to the logo with an aim to modernize, address legibility and improve the craft of the letterforms.</p>
 		</div>
@@ -109,10 +109,10 @@
 		</div>
 	</figure>
 
-	<div class="outer-container push-triple">
+	<div class="outer-container mt-3">
 		<div class="inner-container">
 			<p>Our iterative process generated an option with a red underscore, which we dubbed ‘the prompt,’ that evokes AP’s emphasis on editorial rigor and precise and accurate approach. Setting the letterforms in black on a white backdrop proved to further highlight these values, while improving contrast and legibility. Using a consistently white backdrop further improved the strength of the mark in the variety of environments it needs to live in.</p>
-			<div class="responsive-media-16x9 push-double">
+			<div class="responsive-media-16x9 mt-2">
 				<iframe src="https://player.vimeo.com/video/37266155?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="635" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>
@@ -169,12 +169,12 @@
 		<?php os_slide_nav("ap-environment-nav"); ?>
 	</figure>
 
-	<div class="outer-container push-double">
+	<div class="outer-container mt-2">
 		<div class="inner-container">
-			<div class="responsive-media-16x9 push-double">
+			<div class="responsive-media-16x9 mt-2">
 				<iframe src="https://player.vimeo.com/video/37635453?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="635" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
-			<div class="responsive-media-16x9 push-double">
+			<div class="responsive-media-16x9 mt-2">
 				<iframe src="https://player.vimeo.com/video/37269528?color=ffffff&title=0&byline=0&portrait=0" width="635" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>

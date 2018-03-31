@@ -1,5 +1,4 @@
 .page-nav {
-	padding-top: $leading * 2;
 	@include media($screen-md) {
 		display: none;
 	}
