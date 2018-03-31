@@ -56,10 +56,10 @@ $case_studies = get_case_studies(); ?>
 					
 						<div class="case-study__text clearfix">
 							
-							<h2 class="case-study__title h1 mt-nudge"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
+							<h2 class="case-study__title h1 mt-3"><a href="<?php echo get_permalink( $study ); ?>" title="View case study"><?php echo get_the_title( $study ); ?></a></h2>
 							
 							<div class="case-study__desc">
-								<p class="mt-nudge">
+								<p class="mt-3">
 									<?php echo get_the_excerpt( $study ); ?><br/>
 									<a href="<?php echo get_permalink( $study ); ?>" class="button-ghost" style="margin-top:0.5em">view case study &nbsp; &#8250;</a>
 								</p>

@@ -2560,16 +2560,11 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 
 .mask {
   position: absolute;
-  top: 100px;
+  top: 120px;
   height: 100vh;
   width: 100%;
   opacity: 0;
   transition: opacity 300ms cubic-bezier(0.86, 0, 0.07, 1);
-}
-@media screen and (min-width: 960px) {
-  .mask {
-    top: 60px;
-  }
 }
 .has-active .mask {
   position: fixed;
@@ -2580,7 +2575,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   position: absolute;
   top: 0;
   width: 100%;
-  transition: transform 600ms cubic-bezier(0.86, 0, 0.07, 1), max-height 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .case-study a {
   opacity: 0.5;
@@ -2590,6 +2585,11 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .case-study.active a {
   opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  .case-study.past a {
+    opacity: 0;
+  }
 }
 
 .case-study__text {
@@ -2610,7 +2610,14 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 @media screen and (min-width: 960px) {
   .case-study__title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
     margin-left: 17.05961%;
+  }
+  .case-study__title:last-child {
+    margin-right: 0;
   }
 }
 

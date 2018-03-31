@@ -17221,7 +17221,8 @@ window.onload = function() {
 (function( $, window, undefined ){
 
 	var $caseStudies = $('.home .js-case-study-container'),
-		current = 0;
+		current = 0,
+		maskItemHeight = 0;
 
 	$caseStudies.each(function(i){
 
@@ -17230,8 +17231,18 @@ window.onload = function() {
 			color = $that.data('color'),
 			$image = $('#image-' + id),
 			$maskItem = $('#li-case-study-' + id),
-			maskItemHeight = $maskItem.outerHeight(),
 			isLast = i === $caseStudies.length - 1;
+			
+		if ( $caseStudies[i - 1] ) {
+
+			var lastId = $($caseStudies[i - 1]).data('id');
+			maskItemHeight = $('#li-case-study-' + lastId).outerHeight();
+
+		} else {
+
+			maskItemHeight = $maskItem.outerHeight();
+
+		}
 
 		OS.scrollCallbacks.push(function(scrollTop){
 
@@ -17283,7 +17294,7 @@ window.onload = function() {
 
 			} else {
 
-				y = ((i - current) * maskItemHeight) + (window.innerHeight * 0.67);
+				y = ((i - current) * maskItemHeight) + (window.innerHeight * 0.5);
 
 				$maskItem
 					.removeClass( 'active past' )
