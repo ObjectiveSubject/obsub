@@ -16,8 +16,7 @@ function get_case_studies($args = false) {
 	$defaults = array(
 		'post_type' => 'case_study',
 	    'posts_per_page' => 500,
-		'orderby' => 'menu_order',
-		'order' => 'ASC'
+		'orderby' => array( 'date' => 'DESC', 'menu_order' => 'ASC' ),
 	);
 
 	if ( !$args ) {
