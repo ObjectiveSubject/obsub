@@ -38,15 +38,19 @@
 		<div id="bps-billboard-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<img src="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-01-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
 				<figcaption class="outer-container">TBD</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<img src="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-02-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
 				<figcaption class="outer-container">TBD</figcaption>
 			</li>
 			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<img src="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-03-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-04-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
 				<figcaption class="outer-container">TBD</figcaption>
 			</li>
 		</ul>
@@ -79,16 +83,16 @@
 		<div class="outer-container">
 			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
 				<li class="img-1">
-					<img  src="<?php echo os_path('drawing-1.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-1.png', 'atil') ?> 1x, <?php echo os_path('drawing-1@2x.png', 'atil') ?> 2x" width="1600" height="1008">
+					<img  src="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-01-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
 				</li>
 				<li class="img-2">
-					<img src="<?php echo os_path('drawing-2.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-2.png', 'atil') ?> 1x, <?php echo os_path('drawing-2@2x.png', 'atil') ?> 2x" width="1600" height="1008">
+					<img src="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-02-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
 				</li>
 				<li class="img-3">
-					<img src="<?php echo os_path('drawing-3.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-3.png', 'atil') ?> 1x, <?php echo os_path('drawing-3@2x.png', 'atil') ?> 2x" width="1600" height="1008">
+					<img src="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-03-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
 				</li>
 				<li class="img-4">
-					<img src="<?php echo os_path('drawing-4.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-4.png', 'atil') ?> 1x, <?php echo os_path('drawing-4@2x.png', 'atil') ?> 2x" width="1600" height="1008">
+					<img src="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-04-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
 				</li>
 			</ul>
 		</div>
