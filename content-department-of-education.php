@@ -102,7 +102,7 @@
 		</div>
 	</div>
 
-	<figure class="alignnone">
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?> 1x, <?php echo os_path('DOE-Brand-Guidelines@2x.png', 'doe') ?> 2x">
 		<div class="outer-container">
 			<figcaption class="inner-container">DOE's Brand Guidelines</figcaption>
