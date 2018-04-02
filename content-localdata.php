@@ -1,7 +1,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3">opportunity</h2>
+			<h2 class="future-A h3 mt-4">opportunity</h2>
 			<p>If cities and towns across the country are to thrive in the decades ahead, the detailed, parcel-level data that community groups, planners and government agencies collect needs to be transformed.</p>
 			<p>When three eager technologists were embedded in the Detroit city government as part of their Code for America fellowship, they knew they had their work cut out for them.</p>
 			<ol class="list-unstyled os-numbered-list">
@@ -12,18 +12,18 @@
 			</ol>
 		</div>
 	</div>
-	<blockquote>
+	<blockquote class="mt-4">
 		<p><span class="quote">&ldquo;</span>They saw detroit, the vast sprawling city, and the outdated surveys providing inadequate data for informed decisions, as a major issue.<span class="quote">&rdquo;</span></p>
 	</blockquote>
 </section>
 
-<section id="process" class="page-section " style="padding-bottom: 100px; background-color: #FFEAC4;">
+<section id="process" class="page-section ">
 	<figure class="alignnone mt-nudge">
 		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<div class="outer-container"><figcaption class="inner-container">Inspiration</figcaption></div>
 	</figure>
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container">process</h2>
+		<h2 class="future-A h3 mt-4 inner-container">process</h2>
 		<p class="mt-1 inner-container">We worked with LocalData’s team to streamline the visual communication of their offering. The fully configureable nature of the product and its emphasis on geolocation technology is revealed in the compass arrow icon, which was inspired by the Tinker Toys from our youth, embodying the spirit of a set of tools with limitless possibilities. The elemental color set further emphasizes the simplicity that is at the core of the value proposition.</p>
 	</div>
 	<figure class="ld-logo active-on-inview" data-offset="0.5">
@@ -82,9 +82,9 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section " style="padding-bottom: 100px; background-color: #FFEBC4;">
+<section id="solution" class="page-section ">
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container">solution</h2>
+		<h2 class="future-A h3 mt-4 inner-container">solution</h2>
 		<p class="mt-1 inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
 	</div>
 	<figure class="os-slideshow-container">
@@ -126,7 +126,7 @@
 			<figcaption class="inner-container">LocalData Stationery</figcaption>
 		</div>
 	</figure>
-	<div class="colophon mt-2 outer-container clearfix">
-		<p class="h2 future-A h3 inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+	<div class="colophon outer-container clearfix">
+		<p class="h2 future-A h3 mt-4 inner-container"><a href="http://localdata.com" class="cta-link" target="_blank">localdata.com <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 </section>

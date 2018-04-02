@@ -128,13 +128,17 @@ h6 {
  * ------------------------------------------ */
 p {
     line-height: $leading;
-    margin-top: $leading * 2;
+    margin-top: $spacer;
     margin-bottom: 0;
     font-size: rem(16);
     line-height: rem(24);
+    @include media($screen-md) {
+        margin-top: $spacer * 1.25;
+    }
     @include media($screen-lg) {
         font-size: rem(18);
         line-height: rem(27);
+        margin-top: $spacer * 1.75;
     }
 
     &.colophon {

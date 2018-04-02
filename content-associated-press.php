@@ -5,7 +5,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3">opportunity</h2>
+			<h2 class="future-A h3 mt-4">opportunity</h2>
 			<p>As the largest news organization in the world, the Associated Press (AP) is dedicated to reporting and delivering breaking news from the most remote corners of the globe. Recent upheaval in the media world has forced many news organizations to close their doors. A not-for-profit cooperative of American newspapers, AP saw an opportunity to revise its approach to address an evolving world.</p>
 			<p>Over the last decade, the organization made strides to strengthen its position as a leading provider of photo and video content. By 2009, AP was a new organization, albeit one that lacked strategic cohesion and market differentiation.</p>
 		</div>
@@ -21,7 +21,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="inner-container">
+		<p class="inner-container mt-4">
 			To address these realities, AP turned to the expertise of the <a href="http://fromclarity.co/" class="cs-body-link" target="_blank">Schroeder Group</a>, a New York-based brand consultancy. Following exhaustive interviews and research, AP developed a masterbrand strategy to drive distinction, clarify its values, and serve as a guide for business decisions.
 		</p>
 	</div>
@@ -64,9 +64,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="inner-container">
-		Describing itself as gutsy, resourceful and connected, and with core values of integrity, action and independence, the AP engaged Objective Subject to develop a visual identity system reflective of a dynamic news organization competing in the digital age.
-		</p>
+		<p class="inner-container mt-4">Describing itself as gutsy, resourceful and connected, and with core values of integrity, action and independence, the AP engaged Objective Subject to develop a visual identity system reflective of a dynamic news organization competing in the digital age.</p>
 	</div>
 
 	<figure class="ap-logo-issues">
@@ -96,7 +94,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-3">process</h2>
+			<h2 class="future-A h3 mt-4">process</h2>
 			<p>We began the design process by interviewing key stakeholders to understand the critical issues with the existing system. Dominant feedback noted a lack of flexibility with the existing mark, a dated aesthetic and the impression of an overly-American feel.</p>
 			<p>In our initial design assessment, Objective Subject determined that the existing letterforms hindered legibility and reproduction across mediums. Our team initially explored minimal tweaks to the logo with an aim to modernize, address legibility and improve the craft of the letterforms.</p>
 		</div>
@@ -124,7 +122,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3">solution</h2>
+			<h2 class="future-A h3 mt-4">solution</h2>
 			<p>We retained the original logo’s stencil lettering, which embody the gutsy and adventurous personality of an international news organization. Redrawing the letters upright speaks to AP’s integrity, while lending a more contemporary feel to the mark.</p>
 			<p>Our team recommended a cooler, bolder, and truer red hue that both represents the dynamic nature of the news company, and allows a much-needed flexibility to reflect AP’s diverse array of products and services.</p>
 		</div>

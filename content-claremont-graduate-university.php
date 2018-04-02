@@ -1,6 +1,6 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container">opportunity</h2>
+		<h2 class="future-A h3 mt-4 inner-container">opportunity</h2>
 			<div class="inner-container">
 				<p>Claremont Graduate University is an integral part of the prestigious Claremont Colleges, a collection of liberal arts colleges in an idyllic corner of Southern California, 30 miles east of Los Angeles. Founded in 1925, CGU boasts globally renowned scholars and a unique, multi-disciplinary approach to graduate studies. We helped CGU identify and embody these brand pillars and reinvent its fragmented and sprawling online experience, in the process transforming the website management process for staff. </p>
 				<p>We saw the opportunity to unite the different constituting schools, each with disparate and varied identities, under a masterbrand that would convey the university’s offer and raise the profile of the university overall. At the same time, their visual assets (logo, color palette, typography) could be updated to work effectively on a new and refreshed website. </p>
@@ -33,7 +33,7 @@
 <section id="process" class="page-section ">
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container mt-3">process</h2>
+		<h2 class="future-A h3 inner-container mt-4">process</h2>
 		<div class="inner-container">
 			<p>Through stakeholder interviews across the organization, we refined a brand platform to inform the creation of the visual identity. This captured the spirit and heritage of the university and the outlook of the staff and students. Through a visual audit of the university’s current identity and iterations through its history, we identified the seal of the university as a key visual asset, and the flame as its logical shorthand.</p>
 			<p>The need to convey program interdisciplinarity in a way that would not impact negatively on the online experience informed our approach to content strategy. Through a full content audit, followed by sorting and categorizing of the site’s content, we created information architecture rules which supported the CGU team’s efforts to streamline and redraft the site.</p>
@@ -57,14 +57,14 @@
 
 </section>
 
-<section id="solution" class="page-section ">
+<section id="solution" class="page-section">
 
 	<div class="outer-container">
-			<h2 class="inner-container future-A h3">solution</h2>
-			<p class="inner-container">The flame symbol was a unique and ownable asset which we simplified into an icon suitable for digital uses. Paired with the flame, we minimized the typographic elements to create a simplified wordmark to serve as a foundation for the university’s many schools, programs, and offices. We added flexible straplines ‘since 1925’ and ‘part of Claremont Colleges’ to strengthen the brand positioning.</p>
+		<h2 class="inner-container future-A h3 mt-4">solution</h2>
+		<p class="inner-container">The flame symbol was a unique and ownable asset which we simplified into an icon suitable for digital uses. Paired with the flame, we minimized the typographic elements to create a simplified wordmark to serve as a foundation for the university’s many schools, programs, and offices. We added flexible straplines ‘since 1925’ and ‘part of Claremont Colleges’ to strengthen the brand positioning.</p>
 	</div>
 
-	<div class="aligncenter mt-2" style="background-color: white;">
+	<div class="aligncenter mt-4" style="background-color: white;">
 		<div class="outer-container" style="padding: 40px 0;    max-width: 49vw; line-height:0px">
 				<img width="100%" src="<?php echo os_path('CGU-straight-logo.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-straight-logo.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-straight-logo@2x.png', 'cgu'); ?> 2x" height="690" />
 
@@ -81,18 +81,18 @@
 
 
 	<div class="outer-container">
-			<p class="inner-container">A refreshed visual identity brought CGU’s personality, values, and heritage to light. Building upon our research into the university’s brand architecture, we strengthened the hierarchy of elements and came up with visual treatments that illuminate each tier.</p>
+		<p class="inner-container">A refreshed visual identity brought CGU’s personality, values, and heritage to light. Building upon our research into the university’s brand architecture, we strengthened the hierarchy of elements and came up with visual treatments that illuminate each tier.</p>
 	</div>
 
 
-	<figure class="aligncenter mt-3">
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('CGU-Brand-Architecture.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Brand-Architecture.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Brand-Architecture@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 		<div class="outer-container">
 			<figcaption class="inner-container">Claremont Graduate University brand architecture</figcaption>
 		</div>
 	</figure>
 
-	<figure class="aligncenter mt-3">
+	<figure class="aligncenter">
 		<div class="outer-container">
 			<img src="<?php echo os_path('CGU-Stationery-Mockup.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Stationery-Mockup.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Stationery-Mockup@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 			<figcaption class="inner-container">Claremont Graduate University print materials</figcaption>
@@ -103,14 +103,12 @@
 			<p class="inner-container">Recognizing a breadth of touchpoints – from formal administrative communications to student event materials – we devised an implementation spectrum for the identity system that could just as easily portray subdued, institutional gravitas as it could an energetic, bold style.</p>
 	</div>
 
-	<figure class="aligncenter mt-3">
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('CGU-Lookbooks.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Lookbooks.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Lookbooks@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
 		<div class="outer-container">
 			<figcaption class="inner-container">Claremont Gradute University Lookbooks</figcaption>
 		</div>
 	</figure>
-
-
 
 	<figure class="os-slideshow-container">
 		<div id="cgu-billboard-dots"></div>
@@ -130,7 +128,7 @@
 
 
 	<div class="outer-container">
-			<p class="inner-container">The website now has a clear logic, consistent user experience, and is easy and efficient to update for university staff through a streamlined process and customized backend user interface. Upon launch of the new site, information requests increased by 10% in the first week alone.</p>
+		<p class="inner-container mt-4">The website now has a clear logic, consistent user experience, and is easy and efficient to update for university staff through a streamlined process and customized backend user interface. Upon launch of the new site, information requests increased by 10% in the first week alone.</p>
 	</div>
 
 
@@ -256,10 +254,8 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<p class="h2 future-A h3"><a href="http://brand.cgu.edu/" class="cta-link" target="_blank">brand.cgu.edu <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3 mt-4"><a href="http://brand.cgu.edu/" class="cta-link" target="_blank">brand.cgu.edu <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
-
-	<div class="mt-3">	</div>
 
 </section>

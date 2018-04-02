@@ -1581,15 +1581,21 @@ h6 {
  * ------------------------------------------ */
 p {
   line-height: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  p {
+    margin-top: 1.875rem;
+  }
 }
 @media screen and (min-width: 960px) {
   p {
     font-size: 1.125rem;
     line-height: 1.6875rem;
+    margin-top: 2.625rem;
   }
 }
 p.colophon {
@@ -2455,7 +2461,7 @@ a.no-decoration {
     padding-bottom: 2.625rem !important;
   }
 }
-.mt-4 {
+.mt-4, figure {
   margin-top: 1.875rem !important;
 }
 
@@ -2482,7 +2488,7 @@ a.no-decoration {
 }
 
 @media screen and (min-width: 768px) {
-  .mt-4 {
+  .mt-4, figure {
     margin-top: 2.625rem !important;
   }
 
@@ -2509,7 +2515,7 @@ a.no-decoration {
   }
 }
 @media screen and (min-width: 960px) {
-  .mt-4 {
+  .mt-4, figure {
     margin-top: 4.125rem !important;
   }
 
@@ -4425,7 +4431,9 @@ img {
 }
 
 figure {
-  margin: 4.5rem 0 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 figure.alignnone img {
   display: block;
