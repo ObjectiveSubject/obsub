@@ -27,35 +27,52 @@ get_header(); ?>
 
 	<section id="works" class="work__works page-section ">
 		<div class="outer-container  mb-3">
-			<div class="flex-blocks">
+			<div class="os-row">
 				<?php
                     if (have_rows('work_block')):
                         while (have_rows('work_block')) : the_row();
                         $image = $title = $type = $case_id = $link = "";
-                            $image = get_sub_field('work_image');
-                            $title = get_sub_field('work_title');
-                            $type = get_sub_field('work_type');
-                            $case_id = get_sub_field('work_case');
-                            $link = get_permalink($case_id);
+						$image = get_sub_field('work_image');
+						$title = get_sub_field('work_title');
+						$type = get_sub_field('work_type');
+						$case_id = get_sub_field('work_case');
+						$link = get_permalink($case_id);
 
                         ?>
 
-						<div class="work__block" style="position:relative;">
-							<img src="<?php echo $image ?>" />
-							<div class="work__block-text">
-								<p class="work__title"><?php echo $title ?></p>
-								<p class="work__type"><?php echo $type ?></p>
-								<?php if ($case_id): ?>
+						<div class="os-column os-span-12 os-span-6-md os-span-4-lg mb-2">
 
-									<a href="<?php echo $link ?>">
+							<div class="work__block" style="position:relative;">
+
+								<?php if ( $case_id ) : ?>
+								<a href="<?php echo $link ?>">
+								<?php endif ?>
+
+									<div class="work__block-image">
+										<img src="<?php echo $image ?>" alt="<?php echo $title ?>"/>
+									</div>
+
+									<div class="work__block-text">
+										<p class="work__meta mt-nudge">
+											<?php echo $title ?><br/>
+											<span class="text-muted inline-block" style="margin-top:0.5em"><?php echo $type ?></span>
+										</p>
+										<?php if ($case_id): ?>
+
 										<div class="work__link-arrow" style="position:absolute;">
 											<span class="line"></span>
 											<span class="line"></span>
 										</div>
-									</a>
+										
+										<?php endif; ?>
+									</div>
+									
+								<?php if ( $case_id ) : ?>
+								</a>
+								<?php endif ?>
 
-								<?php endif; ?>
 							</div>
+
 						</div>
 
 				<?php
