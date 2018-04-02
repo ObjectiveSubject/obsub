@@ -112,7 +112,7 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>We refined the OSWP’s existing communications materials for clarity and brevity, and created Brand Guidelines to enable all staff to apply the identity consistently. </p>
-			<p class="h2 future-A h3"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<!-- <p class="h2 future-A h3"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p> -->
 		</div>
 	</div>
 

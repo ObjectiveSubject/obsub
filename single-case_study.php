@@ -40,7 +40,7 @@ get_header(); ?>
 
 		<?php get_template_part('module', 'case-study-preview'); ?>
 
-		<?php get_template_part('module', 'contact-form'); ?>
+		<?php //get_template_part('module', 'contact-form'); ?>
 
 	<?php endwhile; // end of the loop.?>
 
