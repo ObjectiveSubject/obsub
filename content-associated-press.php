@@ -120,7 +120,7 @@
 
 </section>
 
-<section id="solution" class="page-section" style="padding-bottom: 200px;">
+<section id="solution" class="page-section">
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -155,15 +155,19 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#ap-environment-nav .prev", "nextArrow": "#ap-environment-nav .next", "appendDots": "#ap-environment-dots" }'>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-1.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-1.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-1.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">AP identity applied to microphone</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-2.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-2.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-2-@2x.png', 'ap'); ?> 2x" width="850" height="567">
-				<figcaption style="<?php echo "color: {$color};" ?>">Caption</figcaption>
+				<figcaption style="<?php echo "color: {$color};" ?>">AP office interiors</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-3.png', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-3-@2x.png', 'ap'); ?> 2x" width="850" height="567">
 				<figcaption style="<?php echo "color: {$color};" ?>">Associated Press President and CEO Gary Pruitt</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('AP-slideshow-4.jpg', 'ap'); ?>" srcset="<?php echo os_path('AP-slideshow-4.jpg', 'ap'); ?> 1x, <?php echo os_path('AP-slideshow-4-@2x.jpg', 'ap'); ?> 2x" width="850" height="567">
+				<figcaption style="<?php echo "color: {$color};" ?>">POTUS at AP luncheon</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("ap-environment-nav"); ?>
@@ -181,7 +185,7 @@
 	</div>
 
 	<div class="outer-container">
-		<p class="h2 future-A h3 inner-container"><a href="http://ap.org/" class="cta-link cs-body-link" target="_blank">ap.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h2 future-A h3 mt-4 inner-container"><a href="http://ap.org/" class="cta-link cs-body-link" target="_blank">ap.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
 </section>
