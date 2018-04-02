@@ -6320,6 +6320,7 @@ blockquote.parallax-node {
   display: block;
   position: relative;
   list-style: none;
+  padding: 0;
 }
 
 .gibney__cat {

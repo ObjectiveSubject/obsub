@@ -34,28 +34,29 @@
 		</div>
 	</div>
 
-	<figure class="os-slideshow-container">
-		<div id="bps-billboard-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
-			<li>
-				<img src="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-01-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-			<li>
-				<img src="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-02-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-			<li>
-				<img src="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-03-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-			<li>
-				<img src="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-04-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-		</ul>
-		<?php os_slide_nav("bps-billboard-nav"); ?>
+	<figure class="aligncenter ">
+		<div class="outer-container">
+			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
+				<li class="img-1">
+					<img  src="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-01-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-2">
+					<img src="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-02-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-3">
+					<img src="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-03-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-4">
+					<img src="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-04-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+			</ul>
+		</div>
+
+		<div class="outer-container">
+			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
+		</div>
 	</figure>
+
 
 	<div class="outer-container mt-3">
 		<div class="inner-container">
@@ -79,27 +80,27 @@
 		</div>
 	</div>
 
-	<figure class="aligncenter ">
-		<div class="outer-container">
-			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
-				<li class="img-1">
-					<img  src="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-01-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-2">
-					<img src="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-02-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-3">
-					<img src="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-03-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-4">
-					<img src="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-04-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-			</ul>
-		</div>
-
-		<div class="outer-container">
-			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
-		</div>
+	<figure class="os-slideshow-container">
+		<div id="bps-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-01-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-02-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-03-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-04-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("bps-billboard-nav"); ?>
 	</figure>
 
 	<div class="outer-container mt-3">
@@ -128,7 +129,9 @@
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">
-						<img src="<?php echo os_path('streets-base.png', 'atil'); ?>" srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
+						<video style="width:100%;" src="<?php echo os_path('ATIL Interactive.mov', 'atil'); ?>" autoplay poster="streets-base.png">
+							<img  srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
+						</video>
 					</div>
 				</div>
 			</div>
@@ -140,7 +143,7 @@
 			</div>
 	</div>
 
-	<div class="outer-container bleed mt-3">
+	<div class="outer-container mt-3">
 			<div class="flex-blocks">
 				<div class="column column-span-3">
 					<div class="block-image">
