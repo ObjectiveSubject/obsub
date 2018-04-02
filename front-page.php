@@ -82,11 +82,11 @@ $case_studies = get_case_studies(); ?>
 	<section id="our-views" class="page-section" style="padding-top: 3rem; background-color: #e6e6e6;">
 		<div class="outer-container">
 			
-			<div class="inner-container">
+			<div class="inner-container mt-5">
 				<h3 class="h1">Some areas where we think design can make an impact.</h3>
 			</div>		
 
-			<div class="our-views-container" style="margin-top:5rem">
+			<div class="our-views-container mt-5" >
 				<?php 
 				$views = array(
 					array(
@@ -121,15 +121,14 @@ $case_studies = get_case_studies(); ?>
 		</div>
 	</section>
 
-	<section id="address" class="page-section" style="padding-top:5rem; background-color: #e6e6e6;">
+	<section id="address" class="page-section mt-6">
 		<div class="outer-container">
 			<div class="inner-container">
 				<address class="h1">
-					30 East 20<sup>th</sup> Street, 7<sup>th</sup> Floor<br/>New York, NY 10003<br/><br/>
+					30 East 20<sup>th</sup> Street, 7<sup>th</sup> Floor<br/>New York, NY 10003<br/>
 					<a href="tel:+12128639194">+1 212 863 9194</a><br/>
-					<a href="mailto:info@objectivesubject.com">info@objectivesubject.com</a>
+					<a href="mailto:info@objectivesubject.com" class="muted-link">info@objectivesubject.com</a>
 				</address>
-				<p style="margin-top:1.5rem"><a href="#" class="button">contact us &nbsp; &#8250;</a></p>
 			</div>
 		</div>
 	</section>
