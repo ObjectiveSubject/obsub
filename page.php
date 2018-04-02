@@ -13,7 +13,7 @@ get_header(); ?>
 			<div class="section-content">
 				<div class="outer-container">
 					<div class="inner-container">
-						<h1>looks like we can't find what you're looking for...</h1>
+						<?php the_content(); ?>
 					</div>
 				</div>
 			</div>

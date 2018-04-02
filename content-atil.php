@@ -129,8 +129,8 @@
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">
-						<video style="width:100%;" src="<?php echo os_path('ATIL Interactive.mov', 'atil'); ?>" autoplay poster="streets-base.png">
-							<img  srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
+						<video style="width:100%;" src="<?php echo os_path('ATIL Interactive.mov', 'atil'); ?>" autoplay poster="<?php echo os_path('streets-base.png', 'atil') ?>">
+							<img src="<?php echo os_path('streets-base.png', 'atil') ?>" srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
 						</video>
 					</div>
 				</div>
