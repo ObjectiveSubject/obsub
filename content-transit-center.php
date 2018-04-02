@@ -92,15 +92,15 @@
 			<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 				<li>
 					<img src="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-CoverBig@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption class="outer-container">Illustration by Max Halton for Bus Report publication 2016</figcaption>
+					<figcaption>Illustration by Max Halton for Bus Report publication 2016</figcaption>
 				</li>
 				<li>
 					<img src="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-spot1@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption class="outer-container">Illustration by Pete Gamlen for Uber Fact Sheet 2016</figcaption>
+					<figcaption>Illustration by Pete Gamlen for Uber Fact Sheet 2016</figcaption>
 				</li>
 				<li>
 					<img src="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Lesson3@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption class="outer-container">Illustration by Adam Avery for A Bid for Better Transit publication 2017</figcaption>
+					<figcaption>Illustration by Adam Avery for A Bid for Better Transit publication 2017</figcaption>
 				</li>
 			</ul>
 			<?php os_slide_nav("bps-billboard-nav"); ?>
@@ -116,15 +116,6 @@
 		<img src="<?php echo os_path('TC-PublicationCovers.jpg', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-PublicationCovers.jpg', 'transitcenter') ?> 1x, <?php echo os_path('TC-PublicationCovers@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
 		<div class="outer-container">
 			<figcaption class="inner-container">TransitCenter Publications</figcaption>
-		</div>
-	</figure>
-
-	<figure class="alignnone">
-		<div class="outer-container">
-			<figcaption class="inner-container" style="background-color:white; color:pink;">ALL TRANSPORTATION IS LOCAL</figcaption>
-		</div>
-		<div class="outer-container">
-			<figcaption class="inner-container">TransitCenter Stationery</figcaption>
 		</div>
 	</figure>
 
@@ -184,7 +175,9 @@
 			</li>
 		</ul>
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
-		<figcaption>TransitCenter Blog Page</figcaption>
+		<div class="outer-container">
+			<figcaption class="inner-container">TransitCenter Blog Page</figcaption>
+		</div>
 	</figure>
 
 	<div class="outer-container">

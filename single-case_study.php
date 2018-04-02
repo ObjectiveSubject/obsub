@@ -38,7 +38,7 @@ get_header(); ?>
 
 		<?php get_template_part('content', $post->post_name); ?>
 
-		<?php get_template_part('module', 'case-study-preview'); ?>
+		<div class="mt-4"><?php get_template_part('module', 'case-study-preview'); ?></div>
 
 		<?php //get_template_part('module', 'contact-form'); ?>
 

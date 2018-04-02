@@ -155,8 +155,5 @@
 			<p class="h2 future-A h3"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
-	<div class="outer-container mt-2">
-
-	</div>
 
 </section>
