@@ -84,57 +84,65 @@ get_header(); ?>
 
 	</section> -->
 
-	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " style="padding-bottom: 3rem; padding-top: 3rem;"> <!-- -->
-		<div class="outer-container  mb-3">
+	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " > <!-- -->
+		<div class="outer-container">
 			<div class="inner-container">
 				<h2 class="future-A">practice areas</h2>
 				<p class="mt-1">Since 2007, we’ve worked with organizations in four key sectors that shape the ideas and interactions we have with one another.</p>
 			</div>
 		</div>
 
-		<div class="outer-container mb-3">
-			<div class="flex-blocks">
-				<div class="about__block" style="background-image:url(<?php echo os_path('policy.jpg', 'about') ?>)">
-					<div class="about__block-text">
-						<h3 class="future-A h3" style=" color:white;">policy & civic sector</h3>
+		<div class="outer-container mt-5">
+			<div class="os-row">
+				<div class="os-column os-span-12 os-span-6-md mb-1">
+					<div class="about__block" style="background-image:url(<?php echo os_path('policy.jpg', 'about') ?>)">
+						<div class="about__block-text">
+							<h3 class="future-A h3" style=" color:white;">policy & civic sector</h3>
+						</div>
 					</div>
 				</div>
-				<div class="about__block" style="background-image:url(<?php echo os_path('education.jpg', 'about') ?>)">
-					<div class="about__block-text">
-						<h3 class="future-A h3" style=" color:white;">education</h3>
+				<div class="os-column os-span-12 os-span-6-md mb-1">
+					<div class="about__block" style="background-image:url(<?php echo os_path('education.jpg', 'about') ?>)">
+						<div class="about__block-text">
+							<h3 class="future-A h3" style=" color:white;">education</h3>
+						</div>
 					</div>
 				</div>
-				<div class="about__block" style="background-image:url(<?php echo os_path('media.jpg', 'about') ?>)">
-					<div class="about__block-text">
-						<h3 class="future-A h3" style=" color:white;">media</h3>
-					</div>
+				<div class="os-column os-span-12 os-span-6-md mb-1">
+					<div class="about__block" style="background-image:url(<?php echo os_path('media.jpg', 'about') ?>)">
+						<div class="about__block-text">
+							<h3 class="future-A h3" style=" color:white;">media</h3>
+						</div>
 
-				</div>
-				<div class="about__block" style="background-image:url(<?php echo os_path('culture.jpg', 'about') ?>)">
-					<div class="about__block-text">
-						<h3 class="future-A h3" style=" color:white;">culture</h3>
 					</div>
+				</div>
+				<div class="os-column os-span-12 os-span-6-md mb-1">
+					<div class="about__block" style="background-image:url(<?php echo os_path('culture.jpg', 'about') ?>)">
+						<div class="about__block-text">
+							<h3 class="future-A h3" style=" color:white;">culture</h3>
+						</div>
 
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" style="padding-bottom: 3rem; padding-top: 3rem;"> <!--  -->
+	<section id="capibilities" class="page-section about__capibilities use-ui-light-theme" > <!--  -->
 
-		<div class="outer-container  mb-3">
+		<div class="outer-container mt-5">
 			<div class="inner-container">
 				<h2 class="future-A">capabilities</h2>
 				<p class="mt-1">We believe that involving design thinking to tackle complex questions can yield more dynamic, trusting, and accountable communities. Our capabilities include, but are not limited to:</p>
 			</div>
 		</div>
 
-		<div class="outer-container mb-3">
-			<div class="flex-blocks">
-				<div class="column column-span-3">
+		<div class="outer-container mt-5">
+			<div class="os-row">
+				<div class="os-column os-span-12 os-span-6-sm os-offset-1-md os-span-5-md os-offset-0-lg os-span-3-lg">
 
 						<h2 class="future-A">define</h2>
-						<ul class="about__column-list">
+						<ul class="about__column-list mt-1">
 							<li>Vision & goals setting</li>
 							<li>Brand architecture analysis</li>
 							<li>Policy brainstorms</li>
@@ -145,10 +153,10 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="column column-span-3">
+				<div class="os-column os-span-12 os-span-6-sm os-span-5-md os-span-3-lg">
 
 						<h2 class="future-A">research</h2>
-						<ul class="about__column-list">
+						<ul class="about__column-list mt-1">
 							<li>Content, communications, & visual identity auditing</li>
 							<li>Stakeholder interviews</li>
 							<li>Journey mapping</li>
@@ -159,10 +167,10 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="column column-span-3">
+				<div class="os-column os-span-12 os-span-6-sm os-offset-1-md os-span-5-md os-offset-0-lg os-span-3-lg">
 
 						<h2 class="future-A">create</h2>
-						<ul class="about__column-list">
+						<ul class="about__column-list mt-1">
 
 							<li>Visual & digital design</li>
 							<li>Experience & wayfinding design</li>
@@ -174,10 +182,10 @@ get_header(); ?>
 						</ul>
 
 				</div>
-				<div class="column column-span-3">
+				<div class="os-column os-span-12 os-span-6-sm os-span-5-md os-span-3-lg">
 
 						<h2 class="future-A">build</h2>
-						<ul class="about__column-list">
+						<ul class="about__column-list mt-1">
 
 							<li>Wireframing</li>
 							<li>Front-end & back-end development</li>
@@ -194,8 +202,8 @@ get_header(); ?>
 
 	</section>
 
-	<section id="team" class="page-section use-ui-light-theme about__team" style="padding-bottom: 3rem; padding-top: 3rem;">
-		<div class="outer-container  mb-3">
+	<section id="team" class="page-section use-ui-light-theme about__team pb-5" >
+		<div class="outer-container  mt-5">
 			<div class="inner-container">
 				<h2 class="future-A">team</h2>
 				<p class="mt-1">We are a civic-minded group with a flexible skill set that can solve a range of challenges.</p>
@@ -212,17 +220,18 @@ get_header(); ?>
                 if ($bios->have_posts()) :
 
         ?>
-		<div class="outer-container ">
-			<div class="flex-blocks">
+		<div class="outer-container mt-5">
+			<div class="os-row">
 			<?php
             while ($bios->have_posts()) : $bios->the_post();
                 ?>
 
-
-				<div class="about__block" style="position: relative; background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>)">
-					<div class="about__block-text">
-						<h3 class="future-A h3" style=" color:white;"><?php the_title() ; ?></h3>
-						<h3 class="future-A h3" style=" color:white;opacity:.4;"><?php echo get_the_excerpt() ; ?></h3>
+				<div class="os-column os-span-12 os-span-6-md mb-1">
+					<div class="about__block" style="position: relative; background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>)">
+						<div class="about__block-text">
+							<h3 class="future-A h3" style=" color:white;"><?php the_title() ; ?></h3>
+							<h3 class="future-A h3" style=" color:white;opacity:.4;"><?php echo get_the_excerpt() ; ?></h3>
+						</div>
 					</div>
 				</div>
 
@@ -234,8 +243,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<div class="outer-container ">
-			<div class="inner-container mt-3 mb-3">
+		<div class="outer-container mt-5">
+			<div class="inner-container">
 				<p class="mt-1">Since the start of Objective Subject, we’ve worked with some talented people. Gone, but not forgotten a few of our fellow co-workers:</p>
 				<ul class="list-unstyled  mt-1">
 					<li>Aaron Carámbula <em>@carambula</em>, Facebook </li>

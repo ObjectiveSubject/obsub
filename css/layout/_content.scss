@@ -1,9 +1,9 @@
 .outer-container {
 	@include outer-container;
-	padding: 0 $size_container_padding;
+	padding: 0 $gutter/2;
 	@include media($screen-sm) {
-		padding-left: $size_container_padding_sm;
-		padding-right: $size_container_padding_sm;
+		padding-left: $gutter;
+		padding-right: $gutter;
 	}
 	&.bleed {
 		padding-left: 0;

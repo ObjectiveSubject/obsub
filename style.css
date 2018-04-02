@@ -771,6 +771,10 @@ th {
     max-width: calc( 100% - 24px );
   }
 }
+.os-offset-0 {
+  margin-left: calc( 0% + 12px );
+}
+
 .os-offset-1 {
   margin-left: calc( 8.33333% + 12px );
 }
@@ -819,6 +823,11 @@ th {
   margin-left: calc( 100% + 12px );
 }
 
+@media screen and (min-width: 500px) {
+  .os-offset-0-sm {
+    margin-left: calc( 0% + 12px );
+  }
+}
 @media screen and (min-width: 500px) {
   .os-offset-1-sm {
     margin-left: calc( 8.33333% + 12px );
@@ -877,6 +886,11 @@ th {
 @media screen and (min-width: 500px) {
   .os-offset-12-sm {
     margin-left: calc( 100% + 12px );
+  }
+}
+@media screen and (min-width: 768px) {
+  .os-offset-0-md {
+    margin-left: calc( 0% + 12px );
   }
 }
 @media screen and (min-width: 768px) {
@@ -940,6 +954,11 @@ th {
   }
 }
 @media screen and (min-width: 960px) {
+  .os-offset-0-lg {
+    margin-left: calc( 0% + 12px );
+  }
+}
+@media screen and (min-width: 960px) {
   .os-offset-1-lg {
     margin-left: calc( 8.33333% + 12px );
   }
@@ -997,6 +1016,11 @@ th {
 @media screen and (min-width: 960px) {
   .os-offset-12-lg {
     margin-left: calc( 100% + 12px );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .os-offset-0-xl {
+    margin-left: calc( 0% + 12px );
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3005,7 +3029,7 @@ body:not(.home):not(.single-case_study) .preview-nav .menu-item:not(.current-men
   max-width: 67.75rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding: 0 12px;
 }
 .outer-container:before, .outer-container:after {
   content: "";
@@ -3016,8 +3040,8 @@ body:not(.home):not(.single-case_study) .preview-nav .menu-item:not(.current-men
 }
 @media screen and (min-width: 500px) {
   .outer-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .outer-container.bleed {
@@ -3416,9 +3440,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 
 .about__block {
-  width: calc(50% - 2rem);
   height: 333px;
-  margin: 1rem;
   background-size: cover;
   background-position: center;
   position: relative;

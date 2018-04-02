@@ -85,33 +85,50 @@
 
 // Grid Column Offsets
 // ---------------------------------- //
-@for $i from 1 through $columns {
+
+// @include media($screen-sm) {
+//     .os-offset-0-sm {
+//         margin-left: 0;
+//     }
+// }
+// @include media($screen-md) {
+//     .os-offset-0-md {
+//         margin-left: 0;
+//     }
+// }
+// @include media($screen-lg) {
+//     .os-offset-0-lg {
+//         margin-left: 0;
+//     }
+// }
+
+@for $i from 0 through $columns {
     .os-offset-#{$i} {
         margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
     }
 }
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
     @include media($screen-sm) {
         .os-offset-#{$i}-sm {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
     @include media($screen-md) {
         .os-offset-#{$i}-md {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
     @include media($screen-lg) {
         .os-offset-#{$i}-lg {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
     @include media($screen-xl) {
         .os-offset-#{$i}-xl {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
