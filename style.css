@@ -5172,9 +5172,6 @@ figcaption {
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-.case-study-preview a {
-  display: block;
   color: white;
 }
 

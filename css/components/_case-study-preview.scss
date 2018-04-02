@@ -6,12 +6,8 @@
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-	a {
-		display: block;
-		color: rgba(white, 1);
-	}
+	backface-visibility: hidden;
+	color: white;
 }
 
 .section-container {
