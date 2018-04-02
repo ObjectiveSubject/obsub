@@ -133,7 +133,7 @@
 	</div>
 
 	<figure class="alignnone">
-		<img src="<?php echo os_path('TC-BrandMockup.jpg', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-BrandMockup.jpg', 'transitcenter') ?> 1x, <?php echo os_path('TC-BrandMockup@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008">
+		<img src="<?php echo os_path('TC-BrandMockup.png', 'transitcenter') ?>" width="1212" height="978" srcset="<?php echo os_path('TC-BrandMockup.png', 'transitcenter') ?> 1x, <?php echo os_path('TC-BrandMockup@2x.png', 'transitcenter') ?> 2x" width="1600" height="1008">
 		<div class="outer-container">
 			<figcaption class="inner-container">TransitCenter Brand Guidelines</figcaption>
 		</div>
