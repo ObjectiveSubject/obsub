@@ -17,7 +17,7 @@ get_header(); ?>
 				<div class="intro-content section-content">
 					<div class="outer-container">
 						<div class="inner-container">
-							<h1 class="h1 page-title">We partner with ambitious organizations that trust us to look beyond the brief. Our work together redefines successful outcomes.</h1>
+							<h1 class="h1 page-title">We partner with ambitious organizations that trust us to look beyond the brief. Together, our work redefines successful outcomes.</h1>
 						</div>
 					</div>
 				</div>
