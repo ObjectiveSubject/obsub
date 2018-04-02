@@ -63,6 +63,8 @@ $color_background_body: #fff;
 $color_background_hr: $medium_gray;
 $color_background_button: #4a4a4a;
 $color_background_pre: #eee;
+$color_background_input: #d8d8d8;
+$color_background_input_active: lighten($color_background_input, 10%);
 
 $color_border_button: #ccc #ccc #bbb;
 $color_border_button_hover: #ccc #bbb #aaa;
