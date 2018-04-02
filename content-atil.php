@@ -110,7 +110,7 @@
 
 	<figure class="aligncenter cycle-images">
 		<div class="outer-container">
-			<img class="img-1" src="<?php echo os_path('chapters.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('chapters.png', 'atil') ?> 1x, <?php echo os_path('chapters@2x.png', 'atil') ?> 2x" width="1600" height="1008" alt="TransitCenter’s All Transportation is Local chapters" >
+			<img class="img-1" src="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?> 1x, <?php echo os_path('ATIL-Chapter-Mockup@2x.png', 'atil') ?> 2x" width="1600" height="1008" alt="TransitCenter’s All Transportation is Local chapters" >
 		</div>
 
 		<div class="outer-container">
