@@ -12,7 +12,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>Objective Subject helped us get to the essence of who we are as a university, and then worked with us to clearly communicate that information to our audience with a unified, efficient, and award-winning user experience.<span class="quote">&rdquo;</span><br/><small>&mdash; Hollis Cooper, Director of Digital Strategy, Claremont Graduate University</small></p>
 			</blockquote>
-			<img src="<?php echo os_path('cgu.png', 'cgu') ?>" srcset="<?php echo os_path('cgu.png', 'cgu') ?> 1x, <?php echo os_path('cgu@2x.png', 'cgu') ?> 2x" width="1600" height="1008">
+			<img src="<?php echo os_path('cgu.jpg', 'cgu') ?>" srcset="<?php echo os_path('cgu.jpg', 'cgu') ?> 1x, <?php echo os_path('cgu@2x.jpg', 'cgu') ?> 2x" width="1600" height="1008">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Student Graduating</div></figcaption>
 	</figure>
