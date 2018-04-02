@@ -7,7 +7,7 @@
 
 get_header();
 the_post(); 
-$case_studies = get_case_studies(); ?>
+$case_studies = get_case_studies('featured'); ?>
 
 	<section id="home-intro" class="home-intro full-height page-section active" style="height:85vh" >
 
