@@ -12,9 +12,9 @@
 	</div>
 
 	<figure class="alignnone">
-		<blockquote style="background-color:<?php echo $color; ?>; color: white; ">
+		<!-- <blockquote style="background-color:<?php echo $color; ?>; color: white; ">
 			<p><span class="quote">&ldquo;</span>A quote from Council on Foreign Relations...<span class="quote">&rdquo;</span><br/><small>&mdash; Lisa Sheilds, <em>Vice President, Council on Foreign Relations</em></small></p>
-		</blockquote>
+		</blockquote> -->
 		<img src="<?php echo os_path('CFR-Building.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Building.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Building-@2x.png', 'cfr'); ?> 2x" width="1200" height="495">
 	</figure>
 
@@ -61,7 +61,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section" style="padding-bottom: 200px;">
+<section id="solution" class="page-section" >
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -312,13 +312,6 @@
 		</ul>
 		<?php os_slide_nav("cfr-infographics-nav"); ?>
 	</figure>
-
-	<div class="outer-container">
-		<div class="inner-container">
-			<h2 class="future-A h3 mt-3">ongoing engagement</h2>
-			<p>We are proud to continually partner with CFR to help realize key brand communications and strategy since our initial engagement in 2008.</p>
-		</div>
-	</div>
 
 	<div class="outer-container">
 		<p class="h2 future-A h3 inner-container"><a href="http://cfr.org/" class="cta-link cs-body-link" target="_blank">cfr.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
