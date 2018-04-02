@@ -1,0 +1,25 @@
+$col-width: 100 / $columns;
+$col-width: calc($col-width - $gutter/2);
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat($columns, $col-width);
+    grid-gap: $gutter;
+}
+
+.grid-item {
+    display: block;
+    grid-column: span $columns;
+
+    @include media($screen-md){
+        &.span-5-md {
+            grid-column: span 5;
+        }
+        &.span-6-md {
+            grid-column: span 6;
+        }
+        &.span-7-md {
+            grid-column: span 7;
+        }
+    }
+}

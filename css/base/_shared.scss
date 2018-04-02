@@ -102,3 +102,49 @@
 		cursor: default;
 	}
 }
+
+
+/*
+ * Return a calculated span value for grid columns 
+ *
+ * $span: (int) grid columns to span
+ * $columns: (int) total columns
+ *
+ * returns: a calc() value;
+ */
+ @function os-span( $span, $total-columns: $columns ) {
+    
+    $ratio: $span / $total-columns;
+    @if ( $ratio > 1 ) {
+        $ratio: 1;
+    }
+    $calc: calc( #{ $ratio * 100% } - #{ $gutter } );
+
+    @return $calc;
+};
+
+
+// Grid row
+// ------------------------------------- //
+@mixin os-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+    min-width: 100%;
+    
+    &.is-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+// Grid column
+// ------------------------------------- //
+@mixin os-column {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: $gutter/2;
+    margin-right: $gutter/2;
+    max-width: 100%;
+}

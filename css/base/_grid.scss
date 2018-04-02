@@ -1,0 +1,120 @@
+/*
+ * Grid System
+ * ---------------
+ */
+
+// Row
+// ---------------------------------- //
+.os-row {
+    @include os-row;
+
+    &.has-collapsed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Column
+// ---------------------------------- //
+.os-column {
+    @include os-column;
+    
+    &.g-is-collapsed {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+// Grid Column Spans
+// ---------------------------------- //
+
+@for $i from 1 through $columns {
+
+    .os-span-#{$i} {
+        flex-basis: os-span( $i );
+        max-width: os-span( $i );
+    }
+
+}
+
+@for $i from 1 through $columns {
+
+    @include media($screen-sm) {
+        .os-span-#{$i}-sm {
+            flex-basis: os-span( $i );
+            max-width: os-span( $i );
+        }
+    }
+
+}
+
+@for $i from 1 through $columns {
+
+    @include media($screen-md) {
+        .os-span-#{$i}-md {
+            flex-basis: os-span( $i );
+            max-width: os-span( $i );
+        }
+    }
+
+}
+
+@for $i from 1 through $columns {
+
+    @include media($screen-lg) {
+        .os-span-#{$i}-lg {
+            flex-basis: os-span( $i );
+            max-width: os-span( $i );
+        }
+    }
+
+}
+
+@for $i from 1 through $columns {
+
+    @include media($screen-xl) {
+        .os-span-#{$i}-xl {
+            flex-basis: os-span( $i );
+            max-width: os-span( $i );
+        }
+    }
+
+}
+
+
+
+// Grid Column Offsets
+// ---------------------------------- //
+@for $i from 1 through $columns {
+    .os-offset-#{$i} {
+        margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
+    }
+}
+@for $i from 1 through $columns {
+    @include media($screen-sm) {
+        .os-offset-#{$i}-sm {
+            margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
+        }
+    }
+}
+@for $i from 1 through $columns {
+    @include media($screen-md) {
+        .os-offset-#{$i}-md {
+            margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
+        }
+    }
+}
+@for $i from 1 through $columns {
+    @include media($screen-lg) {
+        .os-offset-#{$i}-lg {
+            margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
+        }
+    }
+}
+@for $i from 1 through $columns {
+    @include media($screen-xl) {
+        .os-offset-#{$i}-xl {
+            margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
+        }
+    }
+}

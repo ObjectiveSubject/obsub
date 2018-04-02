@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "base/variables";
 @import "base/shared";
 @import "base/normalize";
+@import "base/grid";
 @import "base/fonts";
 @import "base/global";
 @import "base/typography";
@@ -60,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/numbered-list";
 @import "components/case-study-preview";
 @import "components/get-in-touch";
+@import "components/grid";
 @import "components/tiles";
 @import "components/active-inview";
 @import "components/parallax";
