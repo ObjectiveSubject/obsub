@@ -86,7 +86,7 @@ $case_studies = get_case_studies(); ?>
 				<h3 class="h1">Some areas where we think design can make an impact.</h3>
 			</div>		
 
-			<div class="our-views-container mt-5" >
+			<div class="os-row mt-5" >
 				<?php 
 				$views = array(
 					array(
@@ -109,7 +109,7 @@ $case_studies = get_case_studies(); ?>
 					)
 				);
 				foreach ( $views as $view ) { ?>
-					<article class="our-views-article" style="margin-bottom: 2rem">
+					<article class="os-column os-span-12 os-span-6-md os-span-4-lg mb-3">
 						<?php echo $view['image']; ?>
 						<h4 class="h2 mt-nudge"><?php echo $view['title']; ?></h4>
 						<p class="mt-nudge"><?php echo $view['content']; ?></p>

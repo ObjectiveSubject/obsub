@@ -416,7 +416,7 @@ th {
   flex-shrink: 1;
   margin-left: 12px;
   margin-right: 12px;
-  max-width: 100%;
+  max-width: calc( 100% - 24px );
 }
 .os-column.g-is-collapsed {
   margin-left: 0 !important;
@@ -3381,30 +3381,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 }
 .bg-image img.active {
   opacity: 0.4;
-}
-
-.our-views-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -1.17883%;
-}
-
-.our-views-article {
-  flex-basis: 100% 1 0;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin-left: 1.17883%;
-  margin-right: 1.17883%;
-}
-@media screen and (min-width: 500px) {
-  .our-views-article {
-    flex-basis: calc( 50% - 2.35765% );
-  }
-}
-@media screen and (min-width: 960px) {
-  .our-views-article {
-    flex-basis: calc( 33.333% - 2.35765% );
-  }
 }
 
 .former-clients {

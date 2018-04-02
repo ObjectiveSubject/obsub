@@ -146,5 +146,5 @@
     flex-shrink: 1;
     margin-left: $gutter/2;
     margin-right: $gutter/2;
-    max-width: 100%;
+    max-width: calc( 100% - #{$gutter} );
 }

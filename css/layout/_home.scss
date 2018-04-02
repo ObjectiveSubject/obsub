@@ -139,33 +139,6 @@
 }
 
 //- ------------------------------ // 
-.our-views-container {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -(flex-gutter() / 2);
-}
-.our-views-article {
-	flex-basis: 100% 1 0;
-	flex-grow: 0;
-	flex-shrink: 0;
-	margin-left: flex-gutter() / 2;
-	margin-right: flex-gutter() / 2;
-	@include media($screen-sm) {
-		flex-basis: calc( 50% - #{flex-gutter()} );
-		// display: flex;
-		// flex-direction: column;
-		// & > * {
-		// 	flex: 100% 1 1;
-		// }
-		// & > *:last-child {
-		// 	margin-top: auto;
-		// }
-	}
-	@include media($screen-lg) {
-		flex-basis: calc( 33.333% - #{flex-gutter()} );
-	}
-}
-
 
 .former-clients {
 	padding-top: 8vh;
