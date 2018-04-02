@@ -1,5 +1,5 @@
 <section id="opportunity" class="page-section">
-	<div class="outer-container bleed">
+	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A h3">opportunity</h2>
 			<p>Given our skills and interest in transit, working with TransitCenter was a dream project. The non-profit was formed from the sale of TransitCheck to advocate for better transit across America. We saw that, despite confusion with city transit interchanges, a name change for TransitCenter was off the table.</p>
@@ -22,7 +22,7 @@
 
 <section id="process" class="page-section ">
 
-	<div class="outer-container bleed">
+	<div class="outer-container">
 		<div class="inner-container">
 			<h2 class="future-A h3">process</h2>
 			<p>We conducted brand, communications and market audits and recognized that TransitCenter was both missing opportunities to explain its mission through its website, logo, self-description and other materials. Multiple communications materials were developed in different styles, which missed the benefits of a consistent brand in building recognition.</p>
