@@ -3387,6 +3387,9 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .bg-image img.past:first-child, .bg-image img:not(:first-child) {
   opacity: 0;
 }
+.bg-image img.active {
+  opacity: 0.4;
+}
 
 .former-clients {
   padding-top: 8vh;
