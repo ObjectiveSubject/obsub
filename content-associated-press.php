@@ -71,7 +71,7 @@
 	</div>
 
 	<figure class="ap-logo-issues">
-		<ul class="list-unstyled outer-container">
+		<ul class="list-unstyled outer-container mt-5">
 			<li class="ap-logo-issue issue-legibility">
 				<div class="issue-image"></div>
 				<em style="<?php echo "color: {$color};" ?>">Issue: Legibility</em>
@@ -151,7 +151,7 @@
 		</div>
 	</div>
 
-	<figure class="os-slideshow-container">
+	<figure class="os-slideshow-container mt-5">
 		<div id="ap-environment-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#ap-environment-nav .prev", "nextArrow": "#ap-environment-nav .next", "appendDots": "#ap-environment-dots" }'>
 			<li>
@@ -172,10 +172,10 @@
 
 	<div class="outer-container mt-2">
 		<div class="inner-container">
-			<div class="responsive-media-16x9 mt-2">
+			<div class="responsive-media-16x9 mt-5">
 				<iframe src="https://player.vimeo.com/video/37635453?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="635" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
-			<div class="responsive-media-16x9 mt-2">
+			<div class="responsive-media-16x9 mt-5">
 				<iframe src="https://player.vimeo.com/video/37269528?color=ffffff&title=0&byline=0&portrait=0" width="635" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>
