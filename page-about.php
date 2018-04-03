@@ -10,7 +10,7 @@ get_header(); ?>
 <?php the_post(); ?>
 
 	<section id="about-intro" class="about-intro page-section use-ui-light-theme">
-	
+
 		<div class="intro-content section-content">
 			<div class="outer-container">
 				<div class="inner-container">
@@ -18,15 +18,15 @@ get_header(); ?>
 				</div>
 				<nav class="page-nav inner-container">
 					<ul class="list-unstyled mt-nudge">
-						<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
-						<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
-						<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
-						<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
+						<!-- <li><a href="#approach" class="future-A h3 smooth-scroll" style=" color:white;">approach</a></li> -->
+						<li><a href="#practice-areas" class="future-A h3 smooth-scroll" style=" color:white;">practice areas</a></li>
+						<li><a href="#capabilities" class="future-A h3 smooth-scroll" style=" color:white;">capabilities</a></li>
+						<li><a href="#team" class="future-A h3 smooth-scroll" style=" color:white;">team</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	
+
 	</section>
 
 	<!-- <section id="approach" class="about__approach">
