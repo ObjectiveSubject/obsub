@@ -3382,12 +3382,10 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   min-width: 120%;
   transform: translate3d(-50%, -50%, 0);
   transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.4;
 }
 .bg-image img.past:first-child, .bg-image img:not(:first-child) {
   opacity: 0;
-}
-.bg-image img.active {
-  opacity: 0.4;
 }
 
 .former-clients {
