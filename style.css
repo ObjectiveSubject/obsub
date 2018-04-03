@@ -1581,7 +1581,7 @@ h6 {
  * ------------------------------------------ */
 p {
   line-height: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -6346,4 +6346,16 @@ blockquote.parallax-node {
 .gibney__cat--container {
   position: relative;
   height: 690px;
+}
+
+figure.alignnone .gibney__clip-box {
+  height: 560px;
+  position: relative;
+  clip-path: inset(0px 0px);
+}
+figure.alignnone .gibney__clip-box img {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: auto;
 }

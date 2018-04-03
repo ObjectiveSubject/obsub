@@ -133,7 +133,9 @@
 	</figure>
 
 	<figure class="alignnone mt-3">
-		<img src="<?php echo os_path('static-lines.png', 'gibney') ?>" srcset="<?php echo os_path('static-lines.png', 'gibney') ?> 1x, <?php echo os_path('static-lines@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
+		<div class="gibney__clip-box">
+			<img src="<?php echo os_path('static-lines.svg', 'gibney') ?>" srcset="<?php echo os_path('static-lines.svg', 'gibney') ?> 1x, <?php echo os_path('static-lines@2x.svg', 'gibney') ?> 2x" alt="Old Architecture">
+		</div>
 		<div class="outer-container">
 			<figcaption class=" inner-container">Parallel lines make for a compelling visual language to convey movements, even in static contexts.</figcaption>
 		</div>
