@@ -1,24 +1,29 @@
 <?php
+
 /**
- * Template Name: Basic Template
+ * The template for displaying 404 pages (not found).
  *
  * @package obsub
  */
 
+
 get_header(); ?>
 
-	<?php while (have_posts()) : the_post(); ?>
+
 
 		<section class="page-header page-section full-height">
 			<div class="section-content">
 				<div class="outer-container">
 					<div class="inner-container">
 						<h1>looks like we can't find what you're looking for...</h1>
+						<img src="<?php echo os_path('pleaseclap.gif', '404') ?>" width="1600" height="1008" alt="Please Clap...">
+
+						<p><a class="button" href="/">home   ›</a></p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-	<?php endwhile; // end of the loop.?>
+
 
 <?php get_footer(); ?>
