@@ -21,6 +21,7 @@ $case_studies = get_case_studies('featured'); ?>
 					</div>
 				</div>
 			</div>
+			<a href="#case-studies" class="scroll-down smooth-scroll" style="background:white;"><span class="hide">Scroll down</span></a>
 		</div>
 
 	</section>

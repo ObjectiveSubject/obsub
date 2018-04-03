@@ -6,6 +6,7 @@
 
 .case-study-container {
 	height: 60vh;
+	transform: translate3d(0,-500px, 0);
 }
 
 .mask {
@@ -13,7 +14,6 @@
 	top: 120px;
 	height: 100vh;
 	width: 100%;
-	opacity: 0;
 	transition: opacity $duration $easing;
 
 	.has-active & {
@@ -139,6 +139,10 @@
 		&.past:first-child,
 		&:not(:first-child) {
 			opacity: 0;
+		}
+
+		&.past:last-child {
+			opacity: 0.4;
 		}
 
 		&.active {
