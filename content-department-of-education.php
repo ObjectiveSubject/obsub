@@ -1,6 +1,6 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container">opportunity</h2>
+		<h3 class="future-A h3 inner-container">opportunity</h3>
 		<div class="inner-container">
 			<p>The NYC Department of Education’s Office of School Wellness Programs sought a new visual identity to convey the positive impact of its work for students, and to enable its messages to reach the right people.</p>
 			<p>We saw an opportunity to demonstrate the holistic nature of student health and wellness, and to help schools recognize the benefit of prioritizing the overall well-being of every student and family rather than ‘cherry-picking’ from the office’s suite of programs and materials.</p>
@@ -21,7 +21,7 @@
 <section id="process" class="page-section " >
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container mt-3">process</h2>
+		<h3 class="future-A h3 inner-container mt-3">process</h3>
 		<div class="inner-container">
 			<p>We interviewed people across the NYC school community to build our evidence base, and quickly deduced the problem: head teachers across NYC are not prioritizing health and physical education in the school day, despite its benefits across grades and behavior.</p>
 			<p>Communicating the legitimacy and imperative of wellness education in the Office of School Wellness Programs’ visual communications became the chief objective. To create impact, capture the attention of key audiences, and communicate the core messages, we focused on the students, their actions and their outcomes. </p>
@@ -40,7 +40,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>We designed an identity which brands the result rather than the office. The wordmark logo Think—Move—Achieve— highlights the symbiotic relationship between learning to take care of one’s mind and body, and achieving personal and academic goals.</p>
 		</div>
 	</div>
@@ -112,7 +112,7 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>We refined the OSWP’s existing communications materials for clarity and brevity, and created Brand Guidelines to enable all staff to apply the identity consistently. </p>
-			<!-- <p class="h2 future-A h3"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p> -->
+			<!-- <p class="h3 future-A h3"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p> -->
 		</div>
 	</div>
 
