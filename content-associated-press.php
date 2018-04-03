@@ -4,7 +4,7 @@
 
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-        ::before
+        
 		<div class="inner-container mt-5">
 			<h2 class="future-A h3">opportunity</h2>
 			<p>As the largest news organization in the world, the Associated Press (AP) is dedicated to reporting and delivering breaking news from the most remote corners of the globe. Recent upheaval in the media world has forced many news organizations to close their doors. A not-for-profit cooperative of American newspapers, AP saw an opportunity to revise its approach to address an evolving world.</p>
