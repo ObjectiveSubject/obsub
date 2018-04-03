@@ -16,7 +16,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5" style="background-color:<?php echo $color; ?>; color: white; ">
 				<p><span class="quote">&ldquo;</span>With 170 years of illustrious history and with its content reaching 2 billion people every day, AP is the definitive source for trusted news.<span class="quote">&rdquo;</span></p>
 			</blockquote>
-			<img src="<?php echo os_path('AP-Parallax.jpg', 'atil') ?>" srcset="<?php echo os_path('AP-Parallax.jpg', 'atil') ?> 1x, <?php echo os_path('AP-Parallax@2x.jpg', 'atil') ?> 2x" width="1600" height="1008" alt="Journalist capturing photographs for Associated Press">
+			<img src="<?php echo os_path('AP-Parallax.jpg', 'ap') ?>" srcset="<?php echo os_path('AP-Parallax.jpg', 'ap') ?> 1x, <?php echo os_path('AP-Parallax@2x.jpg', 'ap') ?> 2x" width="1600" height="1008" alt="Journalist capturing photographs for Associated Press">
 		</div>
 	</figure>
 
