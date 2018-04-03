@@ -12,7 +12,7 @@
 			<blockquote class="parallax-node bleed" data-speed-modifier="0.5">
 				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
 			</blockquote>
-			<img src="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-skateboarding-NYC@2x.jpg', 'doe') ?> 2x" width="1600">
+			<img src="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-Parallax@2x.jpg', 'doe') ?> 2x" width="1600">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Skateboarding in New York City, 1965. (Photocredit: Bill Eppridge—Time & Life Pictures/Getty Images)</div></figcaption>
 	</figure>
