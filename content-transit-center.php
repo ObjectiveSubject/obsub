@@ -13,7 +13,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>Objective Subject’s system and website are the foundation for our communications. With it, TransitCenter channels a clear, cohesive and consistent message to cities, transit organizations and policy makers.<span class="quote">&rdquo;</span><br/><small>&mdash; David Bragdon, TransitCenter Executive Director</small></p>
 			</blockquote>
-			<img src="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?>" srcset="<?php echo os_path('Boogie_Woogie.jpg', 'transitcenter') ?> 1x, <?php echo os_path('Boogie_Woogie@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008" alt="Broadway Boogie Woogie by Piet Mondrian">
+			<img src="<?php echo os_path('Bus.jpg', 'transitcenter') ?>" srcset="<?php echo os_path('Bus.jpg', 'transitcenter') ?> 1x, <?php echo os_path('Bus@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008" alt="Broadway Boogie Woogie by Piet Mondrian">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Inspiration: Broadway Boogie Woogie by Piet Mondrian</div></figcaption>
 	</figure>

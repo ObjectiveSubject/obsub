@@ -12,7 +12,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
-			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />
+			<<img src="<?php echo os_path('DBPS-Parallax.jpg', 'atil') ?>" srcset="<?php echo os_path('DBPS-Parallax.jpg', 'atil') ?> 1x, <?php echo os_path('DBPS-Parallax.jpg', 'atil') ?> 2x" width="1600" height="1008">
 		</div>
 		<div class="outer-container">
 			<figcaption class="inner-container">Boston Public School busses</figcaption>
