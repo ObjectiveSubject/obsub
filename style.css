@@ -1512,8 +1512,8 @@ h6 {
 .h1,
 h1,
 .page-section blockquote p {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.625rem;
+  line-height: 1.2;
   margin-top: 1.5rem;
   font-family: "ArnhemPro", "Georgia", sans-serif;
 }
@@ -3294,6 +3294,14 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 .case-study__text {
   transition: transform 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
+.case-study__text p {
+  margin-top: 0.3rem;
+}
+@media screen and (min-width: 960px) {
+  .case-study__text p {
+    margin-top: 2.2rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .case-study__title {
@@ -3375,7 +3383,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   transform: translate3d(-50%, -50%, 0);
   transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-.bg-image img:not(:first-child), .bg-image img.past:first-child {
+.bg-image img.past:first-child, .bg-image img:not(:first-child) {
   opacity: 0;
 }
 .bg-image img.active {

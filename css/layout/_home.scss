@@ -14,7 +14,7 @@
 	height: 100vh;
 	width: 100%;
 	opacity: 0;
-	transition: opacity	$duration $easing;
+	transition: opacity $duration $easing;
 
 	.has-active & {
 		position: fixed;
@@ -36,29 +36,36 @@
 
 	a {
 		opacity: 0.5;
+
 		&:hover {
 			opacity: 1;
 		}
 	}
-	
 
 	&.active {
 		a {
 			opacity: 1;
 		}
 	}
-	@media only screen and (max-width: #{$screen-md - 1}){
+	@media only screen and (max-width: #{$screen-md - 1}) {
 		&.past {
 			a {
 				opacity: 0;
 			}
 		}
 	}
-	
+
 }
 
 .case-study__text {
 	transition: transform $duration-lg $easing;
+
+	p {
+		margin-top: 0.3rem;
+		@include media($screen-lg) {
+			margin-top: 2.2rem;
+		}
+	}
 }
 
 .case-study__title {
@@ -103,6 +110,7 @@
 	.has-active & {
 		position: fixed;
 	}
+
 	.past & {
 		position: absolute;
 		top: auto;
@@ -114,21 +122,21 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-	
+
 		width: auto;
 		height: auto;
-	
+
 		max-height: none;
 		max-width: none;
-	
+
 		min-height: 120%;
 		min-width: 120%;
-	
+
 		transform: translate3d(-50%, -50%, 0);
 		transition: opacity 600ms $easing;
 
-		&:not(:first-child),
-		&.past:first-child {
+		&.past:first-child,
+		&:not(:first-child) {
 			opacity: 0;
 		}
 
@@ -138,7 +146,7 @@
 	}
 }
 
-//- ------------------------------ // 
+//- ------------------------------ //
 
 .former-clients {
 	padding-top: 8vh;
@@ -147,7 +155,7 @@
 
 .ctas {
 	margin-top: $leading * 2;
-	@include media( $screen-md ) {
+	@include media($screen-md) {
 		margin-top: $leading * 4;
 	}
 

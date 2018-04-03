@@ -69,8 +69,8 @@ h6 {
 
 .h1,
 h1 {
-    font-size: rem(32);
-    line-height: rem(32);
+    font-size: rem(26);
+    line-height: 1.2;
     margin-top: $leading;
     font-family: $font_main;
     @include media($screen-lg) {
