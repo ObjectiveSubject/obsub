@@ -1,92 +1,62 @@
-.bio-title {
-	text-transform: lowercase;
-}	
-
-.partners {
-	margin-top: 4rem;
+.page-about {
+    background: #333;
 }
 
-.partners-title, .partners-content {
-	@include media($screen-md) {
-		@include span-columns(10);
-		@include shift(1);
-	}
-	@include media($screen-lg) {
-		@include span-columns(8);
-		@include shift(2);
-	}
+.about__block {
+    height: 333px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    #practice-areas & {
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.4;
+        }
+
+    }
+
+    #team & {
+        .about__block-text {
+            display: none;
+        }
+
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: #000;
+                opacity: 0.4;
+            }
+
+            .about__block-text {
+                display: block;
+            }
+
+        }
+    }
 }
 
-.partners-content {	
-	@include clearfix;
-	@include media($screen-sm) {
-		p {
-			@include span-columns(6 of 12);
-		}
-		ul {
-			@include span-columns(6 of 12);	
-		}
-	}
-	@include media($screen-md) {
-		p {
-			@include span-columns(7 of 12);
-		}
-		ul {
-			@include span-columns(4 of 12);	
-		}
-	}
-	@include media($screen-lg) {
-		p {
-			@include span-columns(6 of 9);
-		}
-		ul {
-			@include span-columns(3 of 9);	
-		}
-	}	
+.about__block-text {
+    position: absolute;
+    margin: $leading;
+
+    h3.h3 {
+        margin: 0;
+    }
 }
 
-.process-snapshot {
-	margin-top: 7rem;
+.about__column-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-top: 1rem;
+    }
 }
-
-.alumni-content {
-	@include clearfix;
-	margin-top: 4rem;
-	@include media($screen-md) {
-		@include span-columns(9);
-		@include shift(1);
-	}
-	@include media($screen-lg) {
-		@include span-columns(6);
-		@include shift(2);
-	}
-}
-
-.recognition-content {
-	@include clearfix;
-	margin-top: 6rem;
-	
-	.reddot-img {
-		@include media($screen-md) {
-			// @include span-columns(8);
-			@include shift(1);
-		}
-	}
-
-	li {
-		margin-top: 1rem;
-		@include media($screen-sm) {
-			@include span-columns(6);
-			@include omega(2n);
-		}
-		@include media($screen-md) {
-			@include span-columns(4 of 8);
-		}
-	}
-}
-
-
-
-
-
-

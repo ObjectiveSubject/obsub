@@ -1,46 +1,70 @@
 // Display
 // ======================================= /
-.show { display: block; }
-.hide { display: none; }
-.inline { display: inline; }
-.inline-block { display: inline-block; }
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
 
 .hide-sm {
 	@media (max-width: $screen-sm) {
 		display: none !important;
 	}
 }
+
 .hide-md {
 	@media (max-width: $screen-md) {
 		display: none !important;
 	}
 }
+
 .hide-lg {
 	@media (max-width: $screen-lg) {
 		display: none !important;
 	}
 }
+
 .hide-xl {
 	@media (max-width: $screen-xl) {
 		display: none !important;
 	}
 }
-.show-xl, .show-sm, .show-md, .show-lg { display: none !important; }
+
+.show-lg,
+.show-md,
+.show-sm,
+.show-xl {
+	display: none !important;
+}
+
 .show-sm {
 	@media (max-width: $screen-sm) {
 		display: block !important;
 	}
 }
+
 .show-md {
 	@media (max-width: $screen-md) {
 		display: block !important;
 	}
 }
+
 .show-lg {
 	@media (max-width: $screen-lg) {
 		display: block !important;
 	}
 }
+
 .show-xl {
 	@media (max-width: $screen-xl) {
 		display: block !important;
@@ -61,11 +85,16 @@
 	margin-left: 1.5em;
 }
 
-.pull-right { float: right; }
-.pull-left { float: left; }
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
 
 .clearfix {
-  @include clearfix;
+	@include clearfix;
 }
 
 .clear-left {
@@ -75,81 +104,119 @@
 // Lists
 // ======================================= /
 .list-unstyled {
-  padding-left: 0;
-  margin-left: 0;
-  list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
 }
 
 // Colors
 // ======================================= /
+.use-ui-light-theme {
+	color: white;
+}
+
 .bg-default {
 	background-color: $light_gray;
 }
-.bg-transit-center{
+
+.bg-transit-center {
 	background-color: $transit_purple;
-	color:white;
+	color: white;
 }
+
 .bg-localdata {
 	background-color: $localdata_orange;
 	color: white;
 }
+
 .bg-boston-public-schools {
 	background-color: $boston_blue;
 	color: white;
 }
+
 .bg-city-of-oakland {
 	background-color: $oakland_green;
 	color: white;
 }
+
 .bg-claremont-graduate-university {
 	background-color: $claremont_red;
 	color: white;
 }
-.text-muted {
-	color: $medium_gray;
+
+.bg-atil {
+	background-color: $atil_yellow;
+	color: white;
 }
 
+.bg-gibney {
+	background-color: $gibney_black;
+	color: white;
+}
+
+.text-muted {
+	opacity: 0.4;
+}
 
 // Style
 // ======================================= /
-a.no-decoration { text-decoration: none; }
+a.no-decoration {
+	text-decoration: none;
+}
 
 [class*="rotate-"] {
 	display: inline-block;
+
 	&[class*="-c-45"] {
-		@include transform( rotate(45deg) );
+		@include transform(rotate(45deg));
 	}
+
+	&[class*="-c-90"] {
+		@include transform(rotate(90deg));
+	}
+
 	&[class*="-cc-45"] {
-		@include transform( rotate(-45deg) );
+		@include transform(rotate(-45deg));
+	}
+
+	&[class*="-cc-90"] {
+		@include transform(rotate(-90deg));
 	}
 }
 
 .text-color-link {
 	color: $color_text_main;
-	&:visited, &:focus {
+
+	&:focus {
 		color: $color_text_main;
 	}
-	&:hover {
-		color: $color_link;
-	}
-}
-.muted-link {
-	color: $medium_gray;
-	&:visited, &:focus {
-		color: $medium_gray;
-	}
-	&:hover {
-		color: $color_text_main;
-	}
-}
-.white-link {
-	color: white;
+
 	&:hover {
 		color: $color_link;
 	}
 }
 
-.media-size  {
+.muted-link {
+	color: $medium_gray;
+
+	&:focus {
+		color: $medium_gray;
+	}
+
+	&:hover {
+		color: $color_text_main;
+	}
+}
+
+.white-link {
+	color: white;
+
+	&:hover {
+		color: $color_link;
+	}
+}
+
+.media-size {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -157,6 +224,7 @@ a.no-decoration { text-decoration: none; }
 	padding: 5px;
 	color: #bbb;
 	font-size: 12px;
+
 	&:before {
 		content: "default";
 	}

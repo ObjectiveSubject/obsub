@@ -15,6 +15,7 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
     position: relative;
     overflow: hidden;
@@ -35,8 +36,9 @@
         overflow: visible;
     }
 }
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -50,8 +52,8 @@
     top: 0;
     display: block;
 
-    &:before,
-    &:after {
+    &:after,
+    &:before {
         content: "";
         display: table;
     }
@@ -64,21 +66,25 @@
         visibility: hidden;
     }
 }
+
 .slick-slide {
     position: relative;
     float: left;
     height: 100%;
     min-height: 1px;
     transition: opacity 500ms ease;
+
     [dir="rtl"] & {
         float: right;
     }
+
     &:focus {
         outline: none;
     }
 
     .os-slideshow & {
         opacity: 0.2;
+
         &.slick-active {
             opacity: 1;
         }
@@ -116,6 +122,7 @@
             box-shadow: 0 6px 10px -2px rgba(black, 0.2);
         }
     }
+
     &.slick-loading img {
         display: none;
     }
@@ -128,6 +135,7 @@
         display: block;
         width: 100%;
         max-width: 100%;
+
         .width-auto & {
             width: auto;
             margin: 0 auto;
@@ -162,16 +170,19 @@
     padding: 0;
     margin: 0;
     text-align: center;
+
     li {
         display: inline-block;
         margin: 0 0.5em;
         font-size: 1rem;
+
         &.slick-active {
             button {
                 background: $color_text_main;
             }
         }
     }
+
     button {
         text-indent: -99999px;
         padding: 0;
@@ -180,6 +191,7 @@
         width: 10px;
         height: 10px;
         background: none;
+
         &:hover {
             background: $color_text_main;
         }
@@ -189,32 +201,84 @@
         li.slick-active button {
             background: $localdata_red;
         }
+
         button {
             border-color: $localdata_red;
+
             &:hover {
                 background: $localdata_red;
             }
         }
     }
+
     .city-of-oakland & {
         li.slick-active button {
             background: $oakland_blue;
         }
+
         button {
             border-color: $oakland_blue;
+
             &:hover {
                 background: $oakland_blue;
             }
         }
     }
+
+    .gibney & {
+        li.slick-active button {
+            background: $gibney_black;
+        }
+
+        button {
+            border-color: $gibney_black;
+
+            &:hover {
+                background: $gibney_black;
+            }
+        }
+    }
+
+    .atil & {
+        li.slick-active button {
+            background: $atil_yellow;
+        }
+
+        button {
+            border-color: $atil_yellow;
+
+            &:hover {
+                background: $atil_yellow;
+            }
+        }
+    }
+
     .boston-public-schools & {
         li.slick-active button {
             background: $boston_green;
         }
+
         button {
             border-color: $boston_green;
+
             &:hover {
                 background: $boston_green;
+            }
+        }
+    }
+
+    .hester-street & {
+        li.slick-active button {
+            background: $hester_black;
+            color: #fff;
+        }
+
+        button {
+            border-color: $hester_black;
+            color: #fff;
+
+            &:hover {
+                background: $hester_black;
             }
         }
     }
@@ -223,35 +287,40 @@
         li.slick-active button {
             background: $claremont_red;
         }
+
         button {
             border-color: $claremont_red;
+
             &:hover {
                 background: $claremont_red;
-              }
-          }
-      }
+            }
+        }
+    }
 
     .department-of-education & {
         li.slick-active button {
             background: $doe_orange;
         }
+
         button {
             border-color: $doe_orange;
+
             &:hover {
                 background: $doe_orange;
-              }
-          }
-      }
-    .hester-street & {
-        li.slick-active button {
-            background: $hester_black;
-            color: #fff;
+            }
         }
+    }
+
+    .transit-center & {
+        li.slick-active button {
+            background: $transit_purple;
+        }
+
         button {
-            border-color: $hester_black;
-            color: #fff;
+            border-color: $transit_purple;
+
             &:hover {
-                background: $hester_black;
+                background: $transit_purple;
             }
         }
     }
@@ -279,6 +348,7 @@
         margin-top: -2em;
         width: 100%;
     }
+
     a {
         display: block;
         padding: 1rem;
@@ -287,63 +357,100 @@
         width: 4rem;
         text-align: center;
         color: $color_text_main;
+
         &:hover {
             color: darken($color_text_main, 15%);
         }
     }
+
     .next {
         float: right;
         @include media($screen-lg) {
             margin-right: 6.5%;
         }
     }
+
     .prev {
         float: left;
         @include media($screen-lg) {
             margin-left: 6.5%;
         }
     }
+
     .text-arrow {
         .os-csstransforms & {
             display: none;
         }
+
         .localdata & {
             color: $localdata_red;
+
             &:hover {
                 color: darken($localdata_red, 15%);
             }
         }
+
         .city-of-oakland & {
             color: $oakland_blue;
+
             &:hover {
                 color: darken($oakland_blue, 15%);
             }
         }
+
+        .gibney & {
+            color: $gibney_black;
+
+            &:hover {
+                color: darken($gibney_black, 15%);
+            }
+        }
+
+        .atil & {
+            color: $atil_yellow;
+
+            &:hover {
+                color: darken($atil_yellow, 15%);
+            }
+        }
+
         .boston-public-schools & {
             color: $boston_green;
+
             &:hover {
                 color: $boston_dark_green;
             }
         }
 
+        .boston-public-schools & {
+            color: $hester_black;
+
+            &:hover {
+                color: $hester_black;
+            }
+        }
+
         .claremont-graduate-university & {
             color: $claremont_red;
+
             &:hover {
                 color: darken($claremont_red, 15%);
-              }
-          }
+            }
+        }
 
         .department-of-education & {
             color: $doe_orange;
+
             &:hover {
                 color: darken($doe_orange, 15%);
-              }
-          }
+            }
+        }
 
-        .boston-public-schools & {
-            color: $hester_black;
+        .transit-center & {
+            color: $transit_purple;
+
             &:hover {
-                color: $hester_black;
+                color: darken($transit_purple, 15%);
             }
         }
     }
@@ -354,44 +461,122 @@
     position: relative;
     width: 32px;
     height: 14px;
+
     .os-csstransforms & {
         display: block;
     }
-    &:before, &:after {
+
+    &:after,
+    &:before {
         content: "";
         position: absolute;
         width: 18px;
         height: 4px;
         background-color: $color_text_main;
         @include transition(all 300ms ease);
-        .localdata & { background-color: $localdata_red; }
-        .city-of-oakland & { background-color: $oakland_blue; }
-        .claremont-graduate-university & { background-color: $claremont_red; }
-        .boston-public-schools & { background-color: $boston_green; }
-        .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
-        .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
-        .claremont-graduate-university .os-slide-nav a:hover & { background-color: darken($claremont_red, 15%); }
-        .department-of-education & { background-color: $doe_orange; }
-        .boston-public-schools & { background-color: $boston_green; }
-        .localdata .os-slide-nav a:hover & { background-color: darken($localdata_red, 15%); }
-        .city-of-oakland .os-slide-nav a:hover & { background-color: darken($oakland_blue, 15%); }
-        .department-of-education .os-slide-nav a:hover & { background-color: darken($doe_orange, 15%); }
-        .boston-public-schools .os-slide-nav a:hover & { background-color: $boston_dark_green; }
+
+        .boston-public-schools & {
+            background-color: $boston_green;
+        }
+
+        .city-of-oakland & {
+            background-color: $oakland_blue;
+        }
+
+        .gibney & {
+            background-color: $gibney_black;
+        }
+
+        .atil & {
+            background-color: $atil_yellow;
+        }
+
+        .claremont-graduate-university & {
+            background-color: $claremont_red;
+        }
+
+        .department-of-education & {
+            background-color: $doe_orange;
+        }
+
+        .localdata & {
+            background-color: $localdata_red;
+        }
+
+        .hester-street & {
+            background-color: $hester_black;
+        }
+
+        .transit-center & {
+            background-color: $transit_purple;
+        }
+
+        .boston-public-schools .os-slide-nav a:hover & {
+            background-color: $boston_dark_green;
+        }
+
+        .city-of-oakland .os-slide-nav a:hover & {
+            background-color: darken($oakland_blue, 15%);
+        }
+
+        .gibney .os-slide-nav a:hover & {
+            background-color: darken($gibney_black, 15%);
+        }
+
+        .atil .os-slide-nav a:hover & {
+            background-color: darken($atil_yellow, 15%);
+        }
+
+        .claremont-graduate-university .os-slide-nav a:hover & {
+            background-color: darken($claremont_red, 15%);
+        }
+
+        .department-of-education .os-slide-nav a:hover & {
+            background-color: darken($doe_orange, 15%);
+        }
+
+        .localdata .os-slide-nav a:hover & {
+            background-color: darken($localdata_red, 15%);
+        }
+
+        .hester-street .os-slide-nav a:hover & {
+            background-color: $hester_gray;
+        }
+
+        .transit-center .os-slide-nav a:hover & {
+            background-color: darken($transit_purple, 15%);
+        }
+
         .next & {
             right: 0;
         }
+
         .prev & {
             left: 0;
         }
     }
+
     &:before {
         top: 0;
-        .next & { @include transform(rotate(45deg)); }
-        .prev & { @include transform(rotate(-45deg)); }
+
+        .next & {
+            @include transform(rotate(45deg));
+        }
+
+        .prev & {
+            @include transform(rotate(-45deg));
+        }
     }
+
     &:after {
         bottom: 0;
-        .next & { @include transform(rotate(-45deg)); }
-        .prev & { @include transform(rotate(45deg)); }
+
+        .next & {
+            @include transform(rotate(-45deg));
+        }
+
+        .prev & {
+            @include transform(rotate(45deg));
+        }
     }
 }

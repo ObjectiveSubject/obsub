@@ -14,6 +14,7 @@
 				nodeOffset,
 				nodeTop;
 
+
 			init();
 			OS.window
 				.on("resize", init)

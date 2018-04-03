@@ -16,28 +16,23 @@ textarea {
 	display: block;
 	width: 100%;
 	color: $color_text_input;
-	background-color: white;
-	font-family: $font_heading;
-	line-height: 1.4em;
+	background-color: $color_background_input;
+	line-height: 1;
 	border: 0;
 	border-radius: 0;
 	box-sizing: border-box;
-	padding: 0 0 0 3px;
+	padding: 1em;
 	transition: all 300ms ease;
-	@include media($screen-sm) {
-		display: inline;
-		width: auto;
-		background: none;
-	}
 
 	&.block {
 		display: block;
 		width: 100%;
 	}
 
+	&:hover,
 	&:focus {
 		color: $color_text_input_focus;
-		background-color: white;
+		background-color: $color_background_input_active;
 		outline: 0;
 	}
 
@@ -76,16 +71,21 @@ textarea {
 	width: 100%;
 	resize: none;
     min-height: 100px;
-    line-height: 1.25em;
+    line-height: 1.25;
 }
 
 label {
-	display: inline;
+	display: block;
 	width: auto;
-	&.block {
-		display: block;
-		width: 100%;
-		padding-bottom: 0.25em;
+}
+
+.form-field {
+
+	@include media($screen-md){
+		&.align-md {
+			display: flex;
+			align-items: center;
+		}
 	}
 }
 

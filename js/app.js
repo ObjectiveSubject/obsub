@@ -9262,7 +9262,57 @@ OS.throttle = function (func, wait, options) {
 	  }
 	  return result;
 	};
+
 };
+
+OS.scrollCallbacks = [];
+
+OS.initScrollLoop = function(){
+
+	var scrollTop = -1,
+			requestFrame =  window.requestAnimationFrame ||
+						window.webkitRequestAnimationFrame ||
+						window.mozRequestAnimationFrame ||
+						window.msRequestAnimationFrame ||
+						window.oRequestAnimationFrame ||
+						// IE Fallback, you can even fallback to onscroll
+						function (callback) {
+							window.setTimeout(callback, 1000 / 60);
+						};
+
+	function loop() {
+
+		// if scrollTop and window's scroll position are equal, return and try again.
+		if (scrollTop == window.pageYOffset) {
+			requestFrame(loop);
+			return false;
+		}
+
+		// set scrollTop to window's scroll position.
+		scrollTop = window.pageYOffset;
+
+		// do your magic
+		OS.scrollCallbacks.forEach(function (fn) {
+			if (typeof fn == "function") {
+				fn(scrollTop);
+			}
+		});
+
+		// run loop again
+		requestFrame(loop);
+
+	}
+
+	// initialize loop()
+	loop();
+
+};
+
+$(document).ready(function(){
+
+	OS.initScrollLoop();
+
+});
 
 /*
      _ _      _       _
@@ -16618,6 +16668,7 @@ return function (global, window, document, undefined) {
 				nodeOffset,
 				nodeTop;
 
+
 			init();
 			OS.window
 				.on("resize", init)
@@ -16708,6 +16759,32 @@ window.onload = function() {
 
 })(document, window);
 
+/**
+ * Back to top link behavior
+ */
+
+(function(window, $){
+
+    console.log('test');
+
+    var $body = $('body'),
+        windowHeight = window.innerHeight;
+
+    OS.scrollCallbacks.push(function(scrollTop){
+
+        if ( scrollTop > windowHeight/2 ) {
+
+            $body.addClass('page-has-scrolled');
+
+        } else {
+
+            $body.removeClass('page-has-scrolled');
+
+        }
+
+    });
+
+})(this, jQuery);
 /*
  * CFR Case Study
  */
@@ -16778,45 +16855,100 @@ window.onload = function() {
  * active-on-inview
  */
 
-(function( $, window, undefined ){
-	$(document).ready(function(){
+(function ($, window, undefined) {
+	$(document).ready(function () {
 
-		$('.cycle-each').each(function(){
+		$('.cycle-each').each(function () {
 
-				var node = $(this),
-						children = node.children(),
-						eachDuration = 4000, //in ms
-						delay= 40,
-						hold= 2000,
-						i = 0;
+			var node = $(this),
+				children = node.children(),
+				eachDuration = node.data("duration") || 4000, //in ms
+				delay = node.data("delay") || 40,
+				hold = node.data("hold") || 2000,
+				i = 0,
+				type = node.data("type") || "fadeInOut",
+				functions = {
+					fadeInOut: fadeInOut,
+					fadeOutReveal: fadeOutReveal
+				};
 
-						//hide all elemnets to get started
-						children.each(function(){
-							$(this).css("opacity", "0");
+			//hide all elemnets to get started
+			children.each(function (i, el) {
+
+				$(this).css({
+					"opacity": "0",
+					"z-index": children.length - i + 1
+				});
+			});
+
+			//loop through all children revieling the one below on fade
+			function fadeOutReveal() {
+				children.css("position", "absolute");
+
+				children.each(function (i, el) {
+
+					$(this).css({
+						"opacity": "1",
+					});
+				});
+				children.last().css({
+					"position": "relative",
+					"opacity": "1"
+				});
+
+
+
+				function loop() {
+					var thisChild = $(children[i]),
+						nextIndex = i >= children.length - 1 ? 0 : i + 1,
+						nextChild = $(children[nextIndex]);
+					node.height(children.last().height());
+
+					nextChild.animate({
+						opacity: 1
+					}, eachDuration / 2);
+
+					thisChild.animate({
+						opacity: 0
+					}, eachDuration / 2, function () {
+
+						setTimeout(function () {
+							i = i >= children.length - 1 ? 0 : i + 1;
+							loop();
+						}, hold);
+
+
+					});
+				}
+
+				loop();
+			}
+
+			//loop through all the children
+			function fadeInOut() {
+				// setTimeout(function(){
+				var thisChild = $(children[i]);
+				node.height(thisChild.height());
+				node.empty();
+				node.html(thisChild[0]);
+				node.height(thisChild.height());
+				thisChild.animate({
+					opacity: 1
+				}, eachDuration / 2, function () {
+					setTimeout(function () {
+
+						thisChild.animate({
+							opacity: 0
+						}, eachDuration / 2, function () {
+							i = i >= children.length - 1 ? 0 : i + 1;
+							fadeInOut();
 						});
+					}, hold);
+				});
+			}
 
-						//loop through all the children
-						function fadeInOut(){
-								var thisChild = $(children[i]);
-
-								node.empty();
-								node.html(children[i]);
-
-								thisChild.animate({opacity: 1},eachDuration/2, function(){
-									setTimeout(function(){
-
-										thisChild.animate({opacity: 0},eachDuration/2, function(){
-											if (i >= children.length-1) {
-												i=0;
-											} else {
-												i++;
-											}
-											fadeInOut();
-										});
-									},hold);
-								});
-						}
-					fadeInOut();
+			// run the function
+			functions[type]();
 		});
 	});
 })(jQuery, window);
@@ -17089,55 +17221,121 @@ window.onload = function() {
 
 (function( $, window, undefined ){
 
-	$(document).ready(function(){
-		setTimeout(function(){
-			$('body').addClass('loaded');
-		}, 500);
+	var $caseStudies = $('.home .js-case-study-container'),
+		current = 0,
+		maskItemHeight = 0;
+
+	$caseStudies.each(function(i){
+
+		var $that = $(this),
+			id = $that.data('id'),
+			color = $that.data('color'),
+			$image = $('#image-' + id),
+			$maskItem = $('#li-case-study-' + id),
+			isLast = i === $caseStudies.length - 1;
+			
+		if ( $caseStudies[i - 1] ) {
+
+			var lastId = $($caseStudies[i - 1]).data('id');
+			maskItemHeight = $('#li-case-study-' + lastId).outerHeight();
+
+		} else {
+
+			maskItemHeight = $maskItem.outerHeight();
+
+		}
+
+		OS.scrollCallbacks.push(function(scrollTop){
+
+			var top = $that.offset().top,
+				height = $that.outerHeight(),
+				y,
+				imageY;
+
+			if ( scrollTop >= top && scrollTop < top + height ) {
+
+				current = i;
+
+				$maskItem
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(0,0,0)'
+					});
+
+				imageY = (Math.min( 1, (scrollTop - top) / height) * 8) + 50;
+
+				$image
+					.addClass('active')
+					.removeClass('past')
+					.css({
+						transform: 'translate3d(-50%,-'+imageY+'%,0)'
+					});
+
+				if ( isLast ) {
+					$('#case-studies').removeClass('reached-last');
+				}
+
+			} else if ( scrollTop >= top + height ) {
+
+				y = ( current - i ) * maskItemHeight;
+
+				$maskItem
+					.addClass('past')
+					.removeClass('active')
+					.css({
+						transform: 'translate3d(0,-' + y + 'px,0)'
+					});
+
+				$image.addClass('past').removeClass('active');
+
+				if ( isLast ) {
+					$('#case-studies').addClass('reached-last');
+				}
+
+			} else {
+
+				y = ((i - current) * maskItemHeight) + (window.innerHeight * 0.5);
+
+				$maskItem
+					.removeClass( 'active past' )
+					.css({
+						transform: 'translate3d(0,' + y + 'px,0)'
+					});
+				$image.removeClass( 'active past' );
+
+			}
+
+		});
+
 	});
 
-	$('.home-intro, .home .case-study-preview').each(function(){
-		var $preview = $(this),
-			$container = $preview.find('.section-container'),
-			$scrim = $preview.find('.scrim'),
-			$content = $preview.find('.section-content'),
-			scrimOpacity = 0.3,
-			previewTop,
-			winHeight,
-			mediaSize;
+	$('#case-studies').each(function(){
 
-		init();
-		OS.window.on("resize", init);
-		OS.window.on('scroll', onScroll);
+		var $that = $(this),
+			activeClass = 'has-active';
 
-		function init() {
-			mediaSize = OS.getMediaSize();
-			winHeight = OS.window.height();
-			previewTop = $preview.offset().top;
-		}
+		OS.scrollCallbacks.push(function(scrollTop){
 
-		function onScroll() {
-			var scrollTop,
-				distance;
+			var top = $that.offset().top,
+				height = $that.outerHeight();
 
-			if ( mediaSize !== "default" && mediaSize !== "small" ) {
-				scrollTop = OS.window.scrollTop();
-				distance = scrollTop - previewTop;
+			if ( scrollTop >= top && scrollTop < top + height ) {
 
-				if ( distance >= 0 ) {
-					$container.velocity({
-						translateY: (distance * 0.5) + 'px'
-					}, 0);
-				} else if ( distance > $preview.outerHeight() / 2 ) {
-					$container.velocity({
-						translateY: '50%'
-					}, 0);
-				} else {
-					$container.velocity({
-						translateY: '0px'
-					}, 0);
-				}
+				$that.addClass(activeClass).removeClass('past');
+
+			} else if ( scrollTop >= top + height ) { 
+
+				$that.addClass('past').removeClass(activeClass);
+
+			} else {
+
+				$that.removeClass(activeClass + ' past');
+
 			}
-		}
+
+		});
+
 	});
 
 })(jQuery, window);
@@ -17195,7 +17393,7 @@ window.onload = function() {
 
 		function onScroll() {
 			var scrollTop = OS.window.scrollTop(),
-				scrollLinkTop = $scrollDownLink.offset().top;
+				scrollLinkTop = $scrollDownLink.length ? $scrollDownLink.offset().top : 0;
 
 			if ( OS.isHome() ) {
 				if ( scrollTop >= offsetTop && scrollTop < (offsetTop + winHeight) ) {
@@ -17206,7 +17404,7 @@ window.onload = function() {
 						$scrollDownLink.attr('href', '#' + $nextSection.attr('id') );
 					}
 				}
-				if ( scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
+				if ( $scrollDownLink.length && scrollLinkTop >= offsetTop && scrollLinkTop < (offsetTop + winHeight) ) {
 					if ( $section.hasClass('case-study-preview') ) {
 						$scrollDownLink.addClass('light');
 					} else {
@@ -17258,25 +17456,31 @@ window.onload = function() {
  * Main Menu
  */
 
-(function( $, window, undefined ){
+(function ($, window, undefined) {
 
 	var $masthead = $('#masthead');
 
-	$('.menu-toggle').on('click', function(e){
+	$('.menu-toggle').on('click', function (e) {
 		e.preventDefault();
 		var $mainNav = $('.main-navigation'),
 			$menuItem = $('.main-navigation .menu-item'),
 			$scrim = $('.main-menu-scrim'),
 			animationSequence;
 
-		if ( $masthead.hasClass('main-menu-active') ) {
-			animationSequence = [
-				{ 	e: $menuItem,	p: "fadeOut", o: { duration: 300 } },
-				{ 	e: $scrim,
+		if ($masthead.hasClass('main-menu-active')) {
+			animationSequence = [{
+					e: $menuItem,
+					p: "fadeOut",
+					o: {
+						duration: 300
+					}
+				},
+				{
+					e: $scrim,
 					p: "fadeOut",
 					o: {
 						duration: 300,
-						complete: function(){
+						complete: function () {
 							$masthead.removeClass('main-menu-active');
 						}
 					}
@@ -17285,55 +17489,68 @@ window.onload = function() {
 			$.Velocity.RunSequence(animationSequence);
 		} else {
 			$masthead.addClass('main-menu-active');
-			animationSequence = [
-				{ e: $scrim,	p: "fadeIn", o: { duration: 300 } },
-				{ e: $menuItem,	p: "fadeIn", o: { duration: 300, stagger: 75 } },
+			animationSequence = [{
+					e: $scrim,
+					p: "fadeIn",
+					o: {
+						duration: 300
+					}
+				},
+				{
+					e: $menuItem,
+					p: "fadeIn",
+					o: {
+						duration: 300,
+						stagger: 75
+					}
+				},
 			];
 			$.Velocity.RunSequence(animationSequence);
 		}
 
 	});
 
-	if ( OS.isHome() ){
+	// if ( OS.isHome() ){
 
-		var $previewNav = $('.preview-nav');
+	var $previewNav = $('.preview-nav');
 
-		OS.window.on("scroll", function(){
-			var scrollTop = $(this).scrollTop();
+	OS.window.on("scroll", function () {
+		var scrollTop = $(this).scrollTop();
 
-			if ( scrollTop > 50 ) {
-				if ( $masthead.hasClass('show-preview-menu') ) {
-					$masthead.removeClass('show-preview-menu');
-					$previewNav.velocity({
-						marginLeft: '50px',
-						opacity: '0'
-					}, {
-						duration: 300,
-						complete: hideElements
-					});
-				}
-
-			} else {
-				if ( !$masthead.hasClass('show-preview-menu') ) {
-					$masthead.addClass('show-preview-menu');
-					$previewNav.velocity({
-						marginLeft: '0',
-						opacity: '1'
-					}, {
-						duration: 300,
-						begin: showElements
-					});
-				}
-
+		if (scrollTop > 50) {
+			if ($masthead.hasClass('show-preview-menu')) {
+				$masthead.removeClass('show-preview-menu');
+				$previewNav.velocity({
+					marginLeft: '50px',
+					opacity: '0'
+				}, {
+					duration: 300,
+					complete: hideElements
+				});
 			}
-		});
 
-	}
+		} else {
+			if (!$masthead.hasClass('show-preview-menu')) {
+				$masthead.addClass('show-preview-menu');
+				$previewNav.velocity({
+					marginLeft: '0',
+					opacity: '1'
+				}, {
+					duration: 300,
+					begin: showElements
+				});
+			}
 
-	function hideElements( elems ) {
+		}
+	});
+
+	// }
+
+	function hideElements(elems) {
 		$(elems).hide();
 	}
-	function showElements( elems ) {
+
+	function showElements(elems) {
 		$(elems).show();
 	}
 
@@ -17427,27 +17644,73 @@ window.onload = function() {
 	}
 
 })(jQuery, window);
-/* 
+/*
  * Page nav
  */
 
-(function( $, window, undefined ){
-
-	if ( $('.single-case_study').length > 0 && OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small" ) {
+(function ($, window, undefined) {
+	// $('.single-case_study').length > 0 &&
+	if (OS.getMediaSize() !== "default" && OS.getMediaSize() !== "small") {
 		$(document).ready(onReady);
 	}
 
 	function onReady() {
-		var animationSequence = [
-			{ e: $('.page-nav'), 	p: "slideDown",	 o: { duration: 500, delay: 500 } },
-		    { e: $('.page-nav li:nth-child(1)'), p: {opacity: 1}, o: { duration: 300 } },
-		    { e: $('.page-nav li:nth-child(2)'), p: {opacity: 1}, o: { duration: 300, sequenceQueue: false, delay: 100 } },
-		    { e: $('.page-nav li:nth-child(3)'), p: {opacity: 1}, o: { duration: 300, sequenceQueue: false, delay: 100 } }
+		var animationSequence = [{
+				e: $('.page-nav'),
+				p: "slideDown",
+				o: {
+					duration: 500,
+					delay: 500
+				}
+			},
+			{
+				e: $('.page-nav li:nth-child(1)'),
+				p: {
+					opacity: 1
+				},
+				o: {
+					duration: 300
+				}
+			},
+			{
+				e: $('.page-nav li:nth-child(2)'),
+				p: {
+					opacity: 1
+				},
+				o: {
+					duration: 300,
+					sequenceQueue: false,
+					delay: 100
+				}
+			},
+			{
+				e: $('.page-nav li:nth-child(3)'),
+				p: {
+					opacity: 1
+				},
+				o: {
+					duration: 300,
+					sequenceQueue: false,
+					delay: 100
+				}
+			},
+			{
+				e: $('.page-nav li:nth-child(4)'),
+				p: {
+					opacity: 1
+				},
+				o: {
+					duration: 300,
+					sequenceQueue: false,
+					delay: 100
+				}
+			}
 		];
 		$.Velocity.RunSequence(animationSequence);
 	}
 
 })(jQuery, window);
+
 /*
  * Links
  */

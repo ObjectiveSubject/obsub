@@ -6,12 +6,8 @@
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-	a {
-		display: block;
-		color: rgba(white, 1);
-	}
+	backface-visibility: hidden;
+	color: white;
 }
 
 .section-container {
@@ -42,7 +38,7 @@
 	background-size: cover;
 	@include transition( all 750ms ease );
 	backface-visibility: hidden;
-
+	
 	.scrim {
 		position: absolute;
 		top: 0;
@@ -50,9 +46,18 @@
 		width: 100%;
 		height: 100%;
 		z-index: 0;
-		background-color: rgba(0,0,0,0.4);
+		background-color: rgba(0,0,0,0.8);
+		
+		.case-study-preview & {
+			opacity: 0;
+			transition: opacity $duration $easing;
+		}
+		.case-study-preview.active & {
+			opacity: 1;
+		}
 	}
 }
+
 
 .section-content {
 	position: relative;

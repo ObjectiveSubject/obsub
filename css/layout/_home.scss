@@ -1,50 +1,168 @@
-.former-clients {
-	padding-top: 8vh;
-	background-color: $light_gray;
+#case-studies {
+	color: white;
+	position: relative;
+	padding-bottom: 60vh;
 }
 
-.home .page-title {
-	@include media($screen-lg){
-		font-size: 3.4rem;
-	}
+.case-study-container {
+	height: 60vh;
+	transform: translate3d(0,-500px, 0);
 }
 
-.home .page-subtitle {
-	@include media($screen-md){
-		width: 59%;
-	    float: left;
-	    margin-right: 4%;
+.mask {
+	position: absolute;
+	top: 120px;
+	height: 100vh;
+	width: 100%;
+	transition: opacity $duration $easing;
+
+	.has-active & {
+		position: fixed;
+		opacity: 1;
 	}
+
 }
-.home .ozy-video {
-	max-width: 232px;
-	@include media($screen-md){
-		width: 36.5%;
-		float: left;
-	}
+
+.mask__list {
+	// margin: 67vh 0 0;
+	// height: 33vh;
+}
+
+.case-study {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: all 600ms $easing-cubic;
+
 	a {
-		display: block;
-		position: relative;
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
+
+	&.active {
+		a {
+			opacity: 1;
+		}
+	}
+	@media only screen and (max-width: #{$screen-md - 1}) {
+		&.past {
+			a {
+				opacity: 0;
+			}
+		}
+	}
+
+}
+
+.case-study__text {
+	transition: transform $duration-lg $easing;
+
+	p {
+		margin-top: 0.3rem;
+		@include media($screen-lg) {
+			margin-top: 2.2rem;
+		}
+	}
+}
+
+.case-study__title {
+	@include media($screen-md) {
+		@include span-columns(6);
+		@include shift(1);
+	}
+	@include media($screen-lg) {
+		@include span-columns(4);
+		@include shift(2);
+	}
+}
+
+.case-study__desc {
+	@include media($screen-md) {
+		@include span-columns(4);
+		height: 0;
+	}
+	opacity: 0;
+	transition: all $duration-lg $easing;
+
+	.active & {
+		opacity: 1;
+	}
+
+	p {
+		line-height: 1.45;
+	}
+}
+
+.bg-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+	overflow: hidden;
+	background-color: black;
+	transition: background-color $duration $easing;
+
+	.has-active & {
+		position: fixed;
+	}
+
+	.past & {
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	}
+
 	img {
-		display: block;
-	}
-	.play-icon {
+		// filter: grayscale(100%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin: -16px 0 0 -16px;
+
+		width: auto;
+		height: auto;
+
+		max-height: none;
+		max-width: none;
+
+		min-height: 120%;
+		min-width: 120%;
+
+		transform: translate3d(-50%, -50%, 0);
+		transition: opacity 600ms $easing;
+		opacity: 0.4;
+
+		&.past:first-child,
+		&:not(:first-child) {
+			opacity: 0;
+		}
+
+		&.past:last-child {
+			opacity: 0.4;
+		}
+
+		&.active {
+			opacity: 0.4;
+		}
+
 	}
+}
+
+//- ------------------------------ //
+
+.former-clients {
+	padding-top: 8vh;
+	// background-color: $light_gray;
 }
 
 .ctas {
 	margin-top: $leading * 2;
-	@include media( $screen-md ) {
+	@include media($screen-md) {
 		margin-top: $leading * 4;
-	}
-
-	.inner-container {
-		position: relative;
 	}
 
 	em {

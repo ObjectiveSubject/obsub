@@ -65,40 +65,32 @@
 }
 
 // Buttons
-@mixin button($color: $color_background_button, $hover: null) {
+@mixin button($bg-color: $color_background_button, $color: $color_text_button) {
 
-	@if $hover == null {
-		$hover: darken($color, 25%);
-	}
-
+	display: inline-block;
 	border: 0;
-	border-radius: 0;
-	background: $color;
+	border-radius: 3px;
+	background: $bg-color;
 	box-shadow: none;
-	color: white;
+	color: $color;
 	font-family: $font_heading;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 0.3em 0.5em;
 	text-shadow: none;
 	text-align: center;
-    font-size: rem(12);
-    text-transform: uppercase;
-    padding: 1.25em 2.5em;
+	text-transform: lowercase;
+    font-size: rem(16);
     cursor: pointer;
     -webkit-appearance: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background 300ms ease;
-
-    &:visited {
-    	background: $color;
-    	color: white;
-    }
+    transition: all $duration $easing;
 
 	&:hover, &:focus {
-		background: $hover;
-		color: white;
+		background: darken($bg-color, 15%);
+		color: $color;
+		opacity: 1;
 	}
 
 	&:focus {
@@ -109,4 +101,50 @@
 		background: lightgray;
 		cursor: default;
 	}
+}
+
+
+/*
+ * Return a calculated span value for grid columns 
+ *
+ * $span: (int) grid columns to span
+ * $columns: (int) total columns
+ *
+ * returns: a calc() value;
+ */
+ @function os-span( $span, $total-columns: $columns ) {
+    
+    $ratio: $span / $total-columns;
+    @if ( $ratio > 1 ) {
+        $ratio: 1;
+    }
+    $calc: calc( #{ $ratio * 100% } - #{ $gutter } );
+
+    @return $calc;
+};
+
+
+// Grid row
+// ------------------------------------- //
+@mixin os-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+    min-width: 100%;
+    
+    &.is-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+// Grid column
+// ------------------------------------- //
+@mixin os-column {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: $gutter/2;
+    margin-right: $gutter/2;
+    max-width: calc( 100% - #{$gutter} );
 }

@@ -2,8 +2,16 @@
 	position: relative;
 	padding-top: 6rem;
 	padding-bottom: 5rem;
-	span, a {
-		display: block;
+}
+
+.site-footer__list {
+	@include clearfix;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.6;
+
+
+	li {
 		padding: 5px 0;
 		color: $medium_gray;
 
@@ -11,9 +19,9 @@
 			float: left;
 			padding: 0;
 			margin-right: 2%;
+
 			&.copyright {
-				float: right;
-				margin-right: 0;
+				color: $medium_gray;
 			}
 		}
 
@@ -23,13 +31,12 @@
 			font-size: 1.8em;
 		}
 	}
+
 	a {
-		&:hover, &.subscribe-toggle.active {
+		color: #333;
+		&.subscribe-toggle.active,
+		&:hover {
 			color: $color_text_main;
 		}
-	}
-
-	.inner-container {
-		position: relative;
 	}
 }

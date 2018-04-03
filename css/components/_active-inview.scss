@@ -1,55 +1,62 @@
 .bps-wordmarks {
 	img {
 		display: block;
-		@include transform( translateY(-30px) );
+		@include transform(translateY(-30px));
 		opacity: 0;
 		transition: all 500ms ease;
+
 		&:nth-child(2) {
 			transition-delay: 250ms;
 		}
+
 		&:nth-child(3) {
 			transition-delay: 500ms;
 		}
 	}
+
 	&.active {
 		img {
-			@include transform( translateY(0) );
+			@include transform(translateY(0));
 			opacity: 1;
 		}
 	}
 }
 
-
-
 .doe-wordmarks {
-	background-color:#fff;
-	height:250px;
-	width:100%;
-	line-height:250px;
-	div.outer-container{
-		text-align:center;
-		vertical-align:center;
+	background-color: #fff;
+	height: 500px;
+	width: 100%;
+	line-height: 500px;
+
+	div.outer-container {
+		text-align: center;
+		vertical-align: middle;
 	}
+
 	img {
-		padding:0 1vw;
-		@include transform( translateX(-30px) );
+		padding: 0 1vw;
+		@include transform(translateX(-30px));
 		opacity: 0;
 		transition: all 500ms ease;
+
 		&:nth-child(1) {
-			max-width:30%;
+			max-width: 30%;
 		}
+
 		&:nth-child(2) {
-			max-width:30%;
+			max-width: 30%;
 			transition-delay: 250ms;
 		}
+
 		&:nth-child(3) {
-			max-width:37%;
+			max-width: 37%;
 			transition-delay: 500ms;
 		}
 	}
+
 	&.active {
 		img {
-			@include transform( translateX(0) );
+			@include transform(translateX(0));
 			opacity: 1;
 		}
 	}

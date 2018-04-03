@@ -1,41 +1,13 @@
-<?php
-	$featured_image_id = get_post_thumbnail_id();
-	$featured_image_array = wp_get_attachment_image_src($featured_image_id, 'full', true);
-	$featured_image_url = $featured_image_array[0];
-?>
-
-<section class="page-header page-section full-height use-ui-light-theme" style="background-image:url( <?php echo $featured_image_url; ?> )">
-	<div class="section-content">
-		<div class="outer-container">
-			<h1 class="page-title inner-container hug"><?php echo get_the_excerpt(); ?></h1>
-			<h3 class="page-subtitle inner-container"><?php the_field('case_study_subtitle'); ?></h3>
-			<nav class="page-nav inner-container">
-				<ul class="list-unstyled hug">
-					<li><a href="#opportunity" class="future-A h2 smooth-scroll">opportunity</a></li>
-					<li><a href="#process" class="future-A h2 smooth-scroll">process</a></li>
-					<li><a href="#solution" class="future-A h2 smooth-scroll">solution</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<div class="photo-credit">
-		<div class="outer-container">
-			<div class="inner-container">&copy; [NEED PHOTO CREDIT]</div>
-		</div>
-	</div>
-	<a href="#opportunity" class="scroll-down smooth-scroll"><span class="hide">Scroll down</span></a>
-</section>
-
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<h2 class="future-A inner-container">opportunity</h2>
+		<h3 class="future-A h3 inner-container">opportunity</h3>
 			<div class="inner-container">
 				<p>Hester Street is a non-profit that works with community groups to ensure more equitable urban planning and development. Amidst rapid growth in the organization, the team recognized the need to unify and clarify its brand and communications strategy to better articulate their full offer.</p>
 				<p>We leapt at the opportunity to help this crucial social justice organization focus their communications, reach new audiences and make an impact across the U.S. </p>
 			</div>
 	</div>
 
-	<figure class="alignnone push-double">
+	<figure class="alignnone mt-2">
 		<div class="parallax-container">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Quote from Hester Street]<span class="quote">&rdquo;</span><br/><small>&mdash;Betsy MacLean, Executive Director</small></p>
@@ -46,10 +18,10 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section hug ">
+<section id="process" class="page-section mt-nudge ">
 
 	<div class="outer-container">
-		<h2 class="future-A inner-container push-triple">process</h2>
+		<h3 class="future-A h3 inner-container mt-3">process</h3>
 		<div class="inner-container">
 			<p>We went on an inspiring journey to discover what makes Hester Street unique, challenges they face and the organization’s future strategy. Identifying gaps and opportunities in HSC’s communication, we recommended a set of strategic actions such as prioritizing people’s skills to explain the organization, a flexible and meaningful identity system, and a set of messages for different situations.</p>
 			<p>Our designers iteratively developed a new identity system and an accessible, streamlined website, and our strategists crafted and tested a multi-level messaging platform, all inspired by our research findings.</p>
@@ -67,7 +39,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>We renamed the organization to simply, ‘Hester Street’, removing the Collaborative moniker, which did not add much and even confused perceptions of the organization.</p>
 		</div>
 
@@ -86,13 +58,8 @@
 
 	</div>
 
-	<figure class="alignnone push-triple" style="background-color: #000;height:49vw;">
-		<div class="outer-container gt-america"
-				 style="color: white;
-						    line-height: .9em;
-						    font-size: 6vw;
-						    max-width: 63vw;
-						    padding-top: 14vw;">
+	<figure class="alignnone mt-3" style="background-color: #000;height:49vw;">
+		<div class="outer-container gt-america" style="color: white;line-height: .9em;font-size: 6vw;max-width: 63vw;padding-top: 14vw; ">
 				WHERE THE<br> PEOPLE SHAPE <br>
 				<span class="txt-typing"
      		data-period="2000"
@@ -180,15 +147,8 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>The team and their skills are prominent on the site, helping people to understand their complex but holistic offer.</p>
-			<p class="h2 future-A"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
-	</div>
-	<div class="outer-container push-double">
-
 	</div>
 
 </section>
-
-<?php os_get_case_study(); ?>
-
-<?php get_template_part( 'module', 'contact-form' ); ?>

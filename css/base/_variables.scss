@@ -1,7 +1,10 @@
 // Structure
 // ============================================ /
-$max-width: rem(1024) !global;
+$max-width: rem(1084) !global;
 $content-max-width: $max-width * 0.666;
+$spacer: 1.5rem;
+$columns: 12;
+$gutter: 24px;
 
 $size_container_padding: 15px;
 $size_container_padding_sm: 30px;
@@ -14,10 +17,9 @@ $screen-md: 768px;
 $screen-lg: 960px;
 $screen-xl: 1200px;
 
-
 // Colors
 // ============================================ /
-$light_gray: #F0F0EE;
+$light_gray: #e6e6e6;
 $medium_gray: #999C98;
 $blue: #1a7fc3;
 $red: #E24F4A;
@@ -28,27 +30,30 @@ $oakland_green: #4EBB25;
 $boston_blue: #0077C8;
 $boston_green: #06CA00;
 $boston_dark_green: #0E7A09;
+$gibney_black: #000000;
 $localdata_orange: #FFA100;
 $localdata_red: #EE5A24;
+$hester_black: #000000;
+$hester_gray: #CCCCC6;
+$transit_purple: #5E29AC;
 $claremont_red: #AF1D27;
 $doe_green: #daffb1;
 $doe_dark_green: #62be00;
 $doe_orange: #ff7b00;
-$hester_black: #000000;
-$hester_gray: #CCCCC6;
-$transit_purple: #5E29AC;
 
+$atil_yellow: #f0b419;
 
-$color_text_main: #222222;
-$color_text_heading: #202020;
+$color_text_main: #000;
+$color_text_heading: $color_text_main;
 
 $color_text_input: $color_text_main;
 $color_text_input_hover: #111;
 $color_text_input_focus: $color_text_main;
+$color_text_button: white;
 
-$color_link: #0071BC;
-$color_link_visited: tint($color_link, 10%);
-$color_link_hover: darken($color_link, 10%);
+$color_link: inherit;
+$color_link_visited: $color_link;
+$color_link_hover: $color_link;
 
 $color_code: #0071BC;
 
@@ -56,8 +61,10 @@ $color_blockquote: #222;
 
 $color_background_body: #fff;
 $color_background_hr: $medium_gray;
-$color_background_button: #e6e6e6;
+$color_background_button: #4a4a4a;
 $color_background_pre: #eee;
+$color_background_input: #d8d8d8;
+$color_background_input_active: lighten($color_background_input, 10%);
 
 $color_border_button: #ccc #ccc #bbb;
 $color_border_button_hover: #ccc #bbb #aaa;
@@ -69,8 +76,6 @@ $color_border_input: #ccc;
 $color_border_input_hover: #ccc;
 $color_border_input_focus: #ccc;
 
-
-
 // Typography
 // ============================================ /
 $font_main: "ArnhemPro", "Georgia", sans-serif;
@@ -80,15 +85,20 @@ $font_pre: "Menlo", monospace;
 $leading: 1.5rem;
 $font_line_height_pre: 1.6rem;
 
-$h1_size: 3.5em;  $h1_line_height: 1.1em;
-$h2_size: 2.5em;  $h2_line_height: 1.2em;
-$h3_size: 1.5em;  $h3_line_height: 1.3em;
-$h4_size: 1.2em;  $h4_line_height: 1.4em;
-$h5_size: 1em;  $h5_line_height: 1.4em;
-$h6_size: 1em;  $h6_line_height: 1.4em;
+$h1_size: 3.5em;
+$h1_line_height: 1.1em;
+$h2_size: 2.5em;
+$h2_line_height: 1.2em;
+$h3_size: 1.5em;
+$h3_line_height: 1.3em;
+$h4_size: 1.2em;
+$h4_line_height: 1.4em;
+$h5_size: 1em;
+$h5_line_height: 1.4em;
+$h6_size: 1em;
+$h6_line_height: 1.4em;
 
 $color_text_muted: #aaa;
-
 
 // Tables
 // ============================================ /
@@ -100,3 +110,9 @@ $table-cell-padding: 5px;
 $line-height-base: 1em;
 $table-border-color: #DDD;
 $table-condensed-cell-padding: 5px;
+
+// http://easings.net/
+$easing: cubic-bezier(0.86, 0, 0.07, 1);
+$easing-cubic: cubic-bezier(0, 0, 0.21, 0.68);
+$duration: 300ms;
+$duration-lg: $duration * 2;

@@ -1,0 +1,43 @@
+.gibney__cat {
+    bottom: 0;
+    position: absolute;
+    width: unset;
+    transition: transform 350ms;
+
+    &--right {
+        right: 0;
+        transform: translate3d(40%,0,0);
+    }
+
+    &--middle {
+        left: 15%;
+        transform: translate3d(-12%,0,0);
+    }
+
+    &--left {
+        transform: translate3d(-74%,0,0);
+    }
+
+    .active & {
+        transform: translate3d(0,0,0);
+    }
+
+    &--container {
+        position: relative;
+        height: 690px;
+    }
+
+}
+
+figure.alignnone .gibney__clip-box {
+    height: 560px;
+    position: relative;
+    clip-path: inset(0px 0px);
+
+    img {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: auto;
+    }
+}

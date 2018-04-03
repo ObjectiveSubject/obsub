@@ -124,25 +124,25 @@ add_action( 'wp_enqueue_scripts', 'obsub_scripts' );
 
 
 /** Form Handling.
---------------------------------------------------*/
+ *  --------------------------------------------------*/
 require get_template_directory() . '/includes/forms.php';
 
 
 /** Custom Admin style.
---------------------------------------------------*/
+ *  --------------------------------------------------*/
 require get_template_directory() . '/includes/admin.php';
 
 
 /** Custom template tags for this theme.
---------------------------------------------------*/
+ *  --------------------------------------------------*/
 require get_template_directory() . '/includes/template-tags.php';
 
 
 /** Custom Post Types
---------------------------------------------------*/
+ *  --------------------------------------------------*/
 require get_template_directory() . '/includes/post-types.php';
 
 
 /** Custom Taxonomies
---------------------------------------------------*/
+ *  --------------------------------------------------*/
 require get_template_directory() . '/includes/taxonomies.php';
