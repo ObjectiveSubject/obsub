@@ -4,14 +4,14 @@
 
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<h3 class="future-A h3">opportunity</h3>
 			<p>Founded in 1921, Council on Foreign Relations is an independent, non-partisan membership organization, think tank, and publisher.</p>
 			<p>With over 340,000 unique visitors monthly, CFR.org is a hub for the organization’s published work, original interactive media, and institutional information.</p>
 		</div>
 	</div>
 
-	<figure class="alignnone">
+	<figure class="alignnone mt-5">
 		<!-- <blockquote style="background-color:<?php echo $color; ?>; color: white; ">
 			<p><span class="quote">&ldquo;</span>A quote from Council on Foreign Relations...<span class="quote">&rdquo;</span><br/><small>&mdash; Lisa Sheilds, <em>Vice President, Council on Foreign Relations</em></small></p>
 		</blockquote> -->
@@ -24,13 +24,13 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h3 class="future-A h3 mt-3">process</h3>
+			<h3 class="future-A h3 mt-5">process</h3>
 			<p>In August 2008, CFR debuted a new visual identity, created by <a href="http://landor.com/" class="cs-body-link" target="_blank">Landor Associates</a>, one of the world’s leading strategic brand consulting firms. Shortly thereafter, Objective Subject realized the comprehensive communication system across all physical and virtual applications.</p>
 			<p>After an intensive organization-wide audit of material uses and needs, Objective Subject refined brand guidelines to govern all platforms including printed publications, online material, and physical touch-points.</p>
 		</div>
 	</div>
 
-	<figure class="aligncenter">
+	<figure class="aligncenter mt-5">
 		<img src="<?php echo os_path('CFR-Collateral.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Collateral.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Collateral-@2x.png', 'cfr'); ?> 2x" width="1200" height="797" />
 		<div class="outer-container">
 			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">Council on Foreign Relations business collateral</figcaption>
@@ -38,12 +38,12 @@
 	</figure>
 
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<p>CFR has a diverse portfolio of publications that disseminate critical thinking on pertinent foreign-policy issues. We transformed their communications from low-quality, laser-printed stationery and print materials to one consistent suite of custom, on-brand collateral reflecting the quality of CFR’s work. All elements were produced with 100% post-consumer waste & FSC certified paper—all for less than previous printing costs.</p>
 		</div>
 	</div>
 
-	<figure class="aligncenter">
+	<figure class="aligncenter mt-5">
 		<img src="<?php echo os_path('CFR-Task-Force.png', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Task-Force.png', 'cfr'); ?> 1x, <?php echo os_path('CFR-Task-Force-@2x.png', 'cfr'); ?> 2x" width="1200" height="797" />
 		<div class="outer-container">
 			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">Council on Foreign Relations Task Force Reports 66–73</figcaption>
@@ -53,7 +53,7 @@
 </section>
 
 <section class="page-section use-ui-light-theme">
-	<figure class="alignnone">
+	<figure class="alignnone mt-5">
 		<img src="<?php echo os_path('CFR-Chronicle.jpg', 'cfr'); ?>" srcset="<?php echo os_path('CFR-Chronicle.jpg', 'cfr'); ?> 1x, <?php echo os_path('CFR-Chronicle-@2x.jpg', 'cfr'); ?> 2x" width="1500" height="824" />
 		<div class="outer-container">
 			<figcaption class="inner-container" style="<?php echo "color: {$color};"; ?>">CFR's The Chronicle</figcaption>
@@ -64,14 +64,14 @@
 <section id="solution" class="page-section" >
 
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<h3 class="future-A h3">solution</h3>
 			<p>We worked closely with their in-house web development team to overhaul the design of the site to create a straight-forward, elegant, and on-brand digital experience.</p>
 			<p>The CFR guidelines are a living document that adapts to the ongoing needs of the brand. We are the gatekeepers of the brand and amend this document to adjust to evolving opportunities and requirements.</p>
 		</div>
 	</div>
 
-	<figure class="os-slideshow-container">
+	<figure class="os-slideshow-container mt-5">
 		<div id="cfr-brand-site-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#cfr-brand-site-nav .prev", "nextArrow": "#cfr-brand-site-nav .next", "appendDots": "#cfr-brand-site-dots" }'>
 			<li class="browser">
@@ -125,7 +125,7 @@
 
 	<figure class="sub_section font_overlay no_bleed last" >
 
-		<div class="sub_section_content" style="background-color: white" >
+		<div class="sub_section_content mt-5" style="background-color: white" >
 
 			<div id="font_slide_controls" class="outer-container">
 				<div class="type_filters mobile-hide">
@@ -223,7 +223,7 @@
 
 	</figure>
 
-	<figure class="os-slideshow-container">
+	<figure class="os-slideshow-container mt-5">
 		<div id="cfr-email-desktop-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#cfr-email-desktop-nav .prev", "nextArrow": "#cfr-email-desktop-nav .next", "appendDots": "#cfr-email-desktop-dots" }'>
 			<li class="browser">
@@ -290,7 +290,7 @@
 		<?php os_slide_nav("cfr-email-desktop-nav"); ?>
 	</figure>
 
-	<figure class="os-slideshow-container">
+	<figure class="os-slideshow-container mt-5">
 		<div id="cfr-infographics-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#cfr-infographics-nav .prev", "nextArrow": "#cfr-infographics-nav .next", "appendDots": "#cfr-infographics-dots" }'>
 			<li>
@@ -314,7 +314,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="h3 future-A h3 inner-container"><a href="http://cfr.org/" class="cta-link cs-body-link" target="_blank">cfr.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h3 future-A h3 inner-container mt-5"><a href="http://cfr.org/" class="cta-link cs-body-link" target="_blank">cfr.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
 </section>

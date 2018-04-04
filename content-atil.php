@@ -1,13 +1,13 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<h3 class="future-A h3">opportunity</h3>
 			<p>Fresh off our brand refresh, TransitCenter came to us with a concept for their next research topic, which encouraged politicians and elected officials to invest in public transit and institute policies that support ridership on those investments by building neighborhoods designed for people, not cars. TransitCenter explained that many city leaders want to support transit-friendly neighborhoods for their constituents, but think it’s out of their jurisdiction or are overwhelmed by how to do it.</p>
 		</div>
 
 	</div>
 
-	<figure class="alignnone">
+	<figure class="alignnone mt-5">
 		<div class="parallax-container">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p class="bleed"><span class="quote">&ldquo;</span>Leaders who link transportation accomplishments to broad goals can improve life for their citizens while winning public acclaim.<span class="quote">&rdquo;</span><br/><small>&mdash; All Transportation is Local</small></p>
@@ -17,14 +17,14 @@
 		<figcaption class="outer-container"><div class="inner-container">Los Angeles Mayor Eric Garcetti at the Measure M victory press conference</div></figcaption>
 	</figure>
 
-	<div class="outer-container mt-3">
+	<div class="outer-container mt-5">
 		<div class="inner-container">
 			<p>It became clear that there was an opportunity to incorporate the larger landscape of urban policies that contribute to the lively, walkable neighborhoods conducive to transit usage. Furthermore, there was an opportunity to render dense policy matters in a more compelling and digestible way.</p>
 		</div>
 	</div>
 </section>
 
-<section id="process" class="page-section mt-3">
+<section id="process" class="page-section mt-5">
 
 	<div class="outer-container ">
 		<div class="inner-container">
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-	<figure class="aligncenter ">
+	<figure class="aligncenter mt-5">
 		<div class="outer-container">
 			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
 				<li class="img-1">
@@ -53,12 +53,12 @@
 		</div>
 
 		<div class="outer-container">
-			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
+			<figcaption class="inner-container mt-5">Initial sketches of policy effects layered on the urban landscape</figcaption>
 		</div>
 	</figure>
 
 
-	<div class="outer-container mt-3">
+	<div class="outer-container mt-5">
 		<div class="inner-container">
 			<p>After a series of robust and fruitful conversations, the TransitCenter team then applied their in-depth knowledge, research, and experience to flesh out the content across the framework.</p>
 		</div>
@@ -74,13 +74,13 @@
 <section id="solution" class="page-section ">
 
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<h3 class="future-A h3">solution</h3>
 			<p>Always bearing in mind the target audience—civic leaders—and the possibility of shifting political environments, we developed a concept for a handy toolkit that would be equally useful, compelling, and adaptable to new circumstances.</p>
 		</div>
 	</div>
 
-	<figure class="os-slideshow-container">
+	<figure class="os-slideshow-container mt-5">
 		<div id="bps-billboard-dots"></div>
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 			<li>
@@ -103,13 +103,13 @@
 		<?php os_slide_nav("bps-billboard-nav"); ?>
 	</figure>
 
-	<div class="outer-container mt-3">
-		<div class="inner-container">
+	<div class="outer-container">
+		<div class="inner-container mt-4">
 			<p>We designed a practical binder in a striking color to capture the attention of a busy public official. The content was divided by implementation considerations, rather than subject matter, to anticipate the steps local leaders would need to take.</p>
 		</div>
 	</div>
 
-	<figure class="aligncenter">
+	<figure class="aligncenter mt-5">
 		<div class="outer-container">
 			<img src="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?>" srcset="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?> 1x, <?php echo os_path('ATIL-Chapter-Mockup@2x.png', 'atil') ?> 2x" width="1600" height="1008" alt="TransitCenter’s All Transportation is Local chapters" >
 		</div>
@@ -120,12 +120,12 @@
 	</figure>
 
 	<div class="outer-container">
-		<div class="inner-container">
+		<div class="inner-container mt-5">
 			<p>The individual hole-punched sections allow for easy digestion while also leaving room for the publication to be updated with new or revised sections when TransitCenter has new findings in the future.</p>
 			<p>We optimized the publication for online consumption with interactive triggers to even further underscore the cumulative effect of policies.</p>
 		</div>
 
-			<div class="browser mt-3" >
+			<div class="browser mt-5" >
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">
@@ -138,13 +138,13 @@
 			<figcaption class="inner-container">All Transportation is Local interactive</figcaption>
 
 
-			<div class="inner-container">
+			<div class="inner-container mt-5">
 				<p>TransitCenter distributed <em>All Transportation is Local</em> to policymakers and transportation leaders around the country. TransitCenter’s useful, considered content married with our arresting and functional design elicited an enthusiastic response from policymakers on social media.</p>
 			</div>
 	</div>
 
-	<div class="outer-container mt-3">
-			<div class="flex-blocks">
+	<div class="outer-container">
+			<div class="flex-blocks mt-5">
 				<div class="column column-span-3">
 					<div class="block-image">
 						<img src="<?php echo os_path('Person66.jpg', 'atil'); ?>" srcset="<?php echo os_path('Person66.jpg', 'atil'); ?> 1x, <?php echo os_path('Person66@2x.jpg', 'atil'); ?> 2x" width="850" height="780">
@@ -273,7 +273,7 @@
 
 
 
-	<div class="outer-container">
+	<div class="outer-container mt-3 mb-3">
 		<div class="inner-container">
 			<p class="h3 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
