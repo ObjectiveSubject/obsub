@@ -7,18 +7,18 @@
 			</div>
 	</div>
 
-	<figure class="alignnone mt-2">
+	<figure class="alignnone">
 		<div class="parallax-container">
-			<blockquote class="parallax-node" data-speed-modifier="0.5">
+			<!-- <blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Quote from Hester Street]<span class="quote">&rdquo;</span><br/><small>&mdash;Betsy MacLean, Executive Director</small></p>
-			</blockquote>
+			</blockquote> -->
 			<img src="<?php echo os_path('HS-Broadway_sign.jpg', 'hesterstreet') ?>" srcset="<?php echo os_path('HS-Broadway_sign.jpg', 'hesterstreet') ?> 1x, <?php echo os_path('HS-Broadway_sign@2x.jpg', 'hesterstreet') ?> 2x" width="1600" height="1008">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Inspiration: Broadway street sign, New York City</div></figcaption>
 	</figure>
 </section>
 
-<section id="process" class="page-section mt-nudge ">
+<section id="process" class="page-section">
 
 	<div class="outer-container">
 		<h3 class="future-A h3 inner-container mt-3">process</h3>
@@ -147,7 +147,7 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>The team and their skills are prominent on the site, helping people to understand their complex but holistic offer.</p>
-			<p class="h2 future-A h3"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h2 future-A h3 mt-4"><a href="http://hesterstreet.org/" class="cta-link" target="_blank">hesterstreet.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 

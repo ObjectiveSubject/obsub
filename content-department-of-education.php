@@ -36,7 +36,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section " style="padding-bottom:100px;">
+<section id="solution" class="page-section ">
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -69,7 +69,7 @@
 		</div>
 	</figure>
 
-	<div class="outer-container mt-3" style="padding-bottom: 60px;">
+	<div class="outer-container mt-3" >
 		<div class="inner-container">
 			<p>We expanded the NYC Department of Education’s color palette, and used an approachable, confident and energetic typeface. </p>
 		</div>

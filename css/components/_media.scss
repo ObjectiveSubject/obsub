@@ -26,7 +26,10 @@ img {
 }
 
 figure {
-	margin: ($leading*3) 0 0;
+	@extend .mt-4;
+	margin-left: 0; 
+	margin-right: 0;
+	margin-bottom: 0;
 
 	&.alignnone {
 		img {

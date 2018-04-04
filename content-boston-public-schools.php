@@ -6,7 +6,7 @@
 	</div>
 </section>
 
-<section class="page-section mt-2" style="background-color: #D6EFFD;">
+<section class="page-section mt-4">
 	<figure class="alignnone mt-nudge">
 		<div style="overflow:hidden; position: relative;">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
@@ -20,7 +20,7 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px;">
+<section id="process" class="page-section" >
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>
@@ -57,9 +57,9 @@
 
 </section>
 
-<section id="solution" class="page-section" style="background-color: #D6EFFD; padding-bottom: 100px">
-	<figure class="aligncenter mt-nudge">
-		<div class="image-bg" style="background-color: #EAEAEA; padding: 60px 0; border: 3px solid #CCE3F1; border-right: 0; border-left: 0;">
+<section id="solution" class="page-section" >
+	<figure class="aligncenter ">
+		<div class="image-bg">
 			<img src="<?php echo os_path('DBPS-Results.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Results.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Results-@2x.png', 'bps') ?> 2x" width="843" height="317">
 		</div>
 		<div class="outer-container">

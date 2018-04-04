@@ -28,7 +28,7 @@
 	</figure>
 </section>
 
-<section id="process" class="page-section " style="background-color: #E4F1CF; padding-bottom: 50px;">
+<section id="process" class="page-section">
 	<figure class="alignnone mt-nudge">
 		<img src="<?php echo os_path('artifacts.jpg', 'oakland') ?>" width="1212" height="978">
 		<div class="outer-container">
@@ -71,29 +71,29 @@
 
 	<div class="outer-container">
 		<figcaption class="inner-container">Oakland’s tree</figcaption>
-		<p class="inner-container mt-3">As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue, to a rich range of complimentary hues, and created a typographic system that emphasizes clarity and lack of ornament.</p>
+		<p class="inner-container mt-4">As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue, to a rich range of complimentary hues, and created a typographic system that emphasizes clarity and lack of ornament.</p>
 	</div>
 
-	<figure class="aligncenter mt-nudge">
+	<figure class="aligncenter mt-4">
 		<img src="<?php echo os_path('CoO-Brochure-lowsrc.png', 'oakland') ?>" class="lazy-load" data-src="<?php echo os_path('CoO-Brochure.png', 'oakland'); ?>" data-src2x="<?php echo os_path('CoO-Brochure-@2x.png', 'oakland'); ?>" width="1025" height="690" />
 		<div class="outer-container">
 			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
 		</div>
 	</figure>
 
-	<div class="outer-container mt-3">
+	<div class="outer-container mt-4">
 		<p class="inner-container">The City should be able to modulate its expression without always employing a blunt use of the logo. We created a pattern that, while related to the tree logo, grows it into a full root system, as complex and rich as the communities and network that support the city. This pattern can be applied to elements in overt or subtle ways, based on the context.</p>
 	</div>
 </section>
 
-<section class="page-section " style="background-color: #E0F3F2; padding-bottom: 100px">
+<section class="page-section mt-4">
 	<figure class="alignnone mt-nudge oakland-pattern"></figure>
 	<div class="outer-container">
 		<figcaption class="inner-container">Root system</figcaption>
 	</div>
 </section>
 
-<section id="solution" class="page-section " style="background-color: #E0F3F2; padding-bottom: 200px">
+<section id="solution" class="page-section">
 
 	<div class="outer-container">
 		<div class="inner-container">

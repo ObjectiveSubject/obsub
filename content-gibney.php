@@ -20,7 +20,7 @@
 
 </section>
 
-<section id="process" class="page-section mt-3">
+<section id="process" class="page-section">
 
 	<div class="outer-container ">
 		<div class="inner-container">
@@ -28,12 +28,12 @@
 			<p>Before beginning the project, we already knew that Gibney’s offer was wide-ranging and complex. This made our research activities critical to establishing a clear and solid strategic foundation upon which all subsequent activities would be based.</p>
 			<p>In order to deliver a more accurate identity, our priority was to rethink the organization through a deeper understanding of Gibney’s community—all the individuals that contribute to, benefit from, and participate in Gibney activities— and what Gibney means to them. We conducted interviews with Gibney’s dancers, current and former staff, participants to dance classes and domestic violence movement workshops, resident artists, supporters, and board members. We also conducted co-creation workshops with staff to uncover perceptions and insights about Gibney. The brand platform and set of recommendations taken from these activities enabled all future work to be approached from the perspective of Gibney's community.</p>
 		</div>
-		<div class="mt-3">
+		<figure>
 			<img src="<?php echo os_path('workshop.jpg', 'gibney') ?>" srcset="<?php echo os_path('workshop.jpg', 'gibney') ?> 1x, <?php echo os_path('workshop@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Co-creation workshop with Gibney staff">
 			<figcaption><div class="inner-container">Co-creation workshop with Gibney staff</div></figcaption>
-		</div>
+		</figure>
 
-		<div class="inner-container mt-3">
+		<div class="inner-container">
 			<p>Internally, Gibney had been using a concept called “the three C’s” to organize and talk about activities: Center, for the physical space; Company, for the dance company; and Community, for its social action work. Gibney relied on these three terms as a shorthand because they were easy to explain. But through the process, we discovered that most of Gibney’s work spans across and blurs these distinctions. From the audience’s perspective, the categories created unnecessary barriers to knowing about the entirety of Gibney’s actions.</p>
 			<p>We underscored the need to transcend these constraints to find a more flexible, encompassing, and clear way to explain Gibney that would be centered around the user.</p>
 		</div>
@@ -69,7 +69,7 @@
 
 </section>
 
-<section id="solution" class="page-section mt-3">
+<section id="solution" class="page-section">
 
 	<div class="outer-container">
 		<div class="inner-container">
@@ -297,7 +297,7 @@
 
 
 
-	<div class="outer-container mb-3">
+	<div class="outer-container">
 		<div class="inner-container">
 			<p class="h3 future-A h3"><a href="http://gibneydance.org/" class="cta-link" target="_blank">gibneydance.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>

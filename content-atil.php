@@ -273,7 +273,7 @@
 
 
 
-	<div class="outer-container mb-3">
+	<div class="outer-container">
 		<div class="inner-container">
 			<p class="h3 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>

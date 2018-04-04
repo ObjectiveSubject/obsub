@@ -12,12 +12,12 @@
 			</ol>
 		</div>
 	</div>
-	<blockquote>
+	<blockquote class="mt-4">
 		<p><span class="quote">&ldquo;</span>They saw detroit, the vast sprawling city, and the outdated surveys providing inadequate data for informed decisions, as a major issue.<span class="quote">&rdquo;</span></p>
 	</blockquote>
 </section>
 
-<section id="process" class="page-section " style="padding-bottom: 100px; background-color: #FFEAC4;">
+<section id="process" class="page-section ">
 	<figure class="alignnone mt-nudge">
 		<img src="<?php echo os_path('inspiration.jpg', 'localdata') ?>" width="1400" height="530">
 		<div class="outer-container"><figcaption class="inner-container">Inspiration</figcaption></div>
@@ -82,7 +82,7 @@
 	</figure>
 </section>
 
-<section id="solution" class="page-section " style="padding-bottom: 100px; background-color: #FFEBC4;">
+<section id="solution" class="page-section ">
 	<div class="outer-container">
 		<h3 class="future-A h3 inner-container">solution</h3>
 		<p class="mt-1 inner-container">The same logic applies to design of other communication, such as the website, where data points explain how Local Data has already helped a host of other cities, from Lynn, Massachusetts, to Gary, Indiana.</p>
