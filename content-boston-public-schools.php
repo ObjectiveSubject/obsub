@@ -1,6 +1,6 @@
 <section id="opportunity" class="page-section outer-container">
 	<div class="inner-container">
-		<h2 class="future-A h3 mt-4">opportunity</h2>
+		<h3 class="future-A h3">opportunity</h3>
 		<p>Every year in Boston, 57,000 students must be placed in 137 public schools. The Discover Boston Public Schools project was born out of a 2011 Code for America fellowship by Joel Mahoney, to address the school department’s critical mandate to engage parents in the process of placing their students in schools. In its first pilot year, upwards of half the parents in Boston used the platform to identify the right school for their child — a pretty remarkable adoption rate for new civic technology.</p>
 		<p>In 2013, the school district enacted a policy to transition from a zone-based model to a home-based model of placement, allowing parents to find the best schools for their children within close proximity to their home. The New York Times wrote about the genesis of this algorithm.</p>
 	</div>
@@ -12,7 +12,7 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Discover BPS] changed the way we relate to parents.<span class="quote">&rdquo;</span><br/><small>&mdash; Carol R. Johnson, <em>Superintendent, Boston Public Schools</em></small></p>
 			</blockquote>
-			<img src="<?php echo os_path('schoolbusses.jpg', 'bps') ?>" width="1400" height="830" />
+			<img src="<?php echo os_path('DBPS-Parallax.jpg', 'bps') ?>" srcset="<?php echo os_path('DBPS-Parallax.jpg', 'bps') ?> 1x, <?php echo os_path('DBPS-Parallax.jpg', 'bps') ?> 2x" width="1600" height="1008">
 		</div>
 		<div class="outer-container">
 			<figcaption class="inner-container">Boston Public School busses</figcaption>
@@ -28,7 +28,7 @@
 				To address this policy change, the Discover BPS tool would need to be re-worked. The project team reached out to our team to lead the design of a highly accessible interface that addresses the needs of key constituents with a map-driven interface, centering school options around the location entered by the user.
 			</p>
 			<p>Key to the solution was to ensure that standardized test scores alone did not lead user selection of schools. To that effect, we emphasized an extensive list of school characteristics that might play a critical role in a parent’s choice. By viewing schools options with preferences such as ‘focus on the arts,’ ‘full-time nurse,’ specific care hours or facilities, parents are empowered to find the schools that are the right fit for their student.</p>
-			<h2 class="future-A h3 mt-4">process</h2>
+			<h3 class="future-A h3">process</h3>
 			<p>With a full understanding of all that the tool needed to accomplish, our team considered how parents would learn about Discover BPS. In the first incarnation of the tool, the initiative had been branded as an individual product, with little to no relationship with the school district.</p>
 		</div>
 	</div>
@@ -69,7 +69,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>In addition to helping parents take control of an important decision in the children''s life, rethinking the user experience represents an opportunity to position Boston Public School as a proactive, innovative and trustworthy organization. A positive perception of the school district can only engender more goodwill and participation from parents, students, and the community alike.</p>
 			<p>Celebrated online urban policy publication Next City wrote about the project and our involvement in this November 2013 piece: <a href="http://nextcity.org/sharedcity/entry/how-boston-is-building-the-hotels.com-of-public-schools" class="cs-body-link" target="_blank">How Boston Is Building the Hotels.com of Public Schools</a></p>
 		</div>
@@ -203,7 +203,7 @@
 	</figure>
 
 	<div class="outer-container">
-		<p class="h2 future-A h3 mt-4 inner-container"><a href="https://discover.bostonpublicschools.org" class="cta-link" target="_blank">discover.bostonpublicschools.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+		<p class="h3 future-A h3 inner-container"><a href="https://discover.bostonpublicschools.org" class="cta-link" target="_blank">discover.bostonpublicschools.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 	</div>
 
 </section>

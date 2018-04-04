@@ -10,7 +10,7 @@ get_header(); ?>
 <?php the_post(); ?>
 
 	<section id="about-intro" class="about-intro page-section use-ui-light-theme">
-	
+
 		<div class="intro-content section-content">
 			<div class="outer-container">
 				<div class="inner-container">
@@ -18,21 +18,21 @@ get_header(); ?>
 				</div>
 				<nav class="page-nav inner-container">
 					<ul class="list-unstyled mt-nudge">
-						<!-- <li><a href="#approach" class="future-A h2 smooth-scroll" style=" color:white;">approach</a></li> -->
-						<li><a href="#practice-areas" class="future-A h2 smooth-scroll" style=" color:white;">practice areas</a></li>
-						<li><a href="#capabilities" class="future-A h2 smooth-scroll" style=" color:white;">capabilities</a></li>
-						<li><a href="#team" class="future-A h2 smooth-scroll" style=" color:white;">team</a></li>
+						<!-- <li><a href="#approach" class="future-A h3 smooth-scroll" style=" color:white;">approach</a></li> -->
+						<li><a href="#practice-areas" class="future-A h3 smooth-scroll" style=" color:white;">practice areas</a></li>
+						<li><a href="#capabilities" class="future-A h3 smooth-scroll" style=" color:white;">capabilities</a></li>
+						<li><a href="#team" class="future-A h3 smooth-scroll" style=" color:white;">team</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	
+
 	</section>
 
 	<!-- <section id="approach" class="about__approach">
 		<div class="outer-container  mt-3 mb-3">
 			<div class="inner-container">
-				<h2 class="future-A">approach</h2>
+				<h3 class="future-A">approach</h3>
 				<p class="mt-1">We differ from large consultancies and small studios by how we conduct our engagements.</p>
 			</div>
 		</div>
@@ -41,7 +41,7 @@ get_header(); ?>
 			<div class="outer-container">
 					<div class="flex-blocks">
 						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
-							<h2 class="future-A">research-led strategy</h2>
+							<h3 class="future-A">research-led strategy</h3>
 							<p class="mt-1">Understanding the unique conditions of your organization's strategy and policy, as well the needs of audiences and users, is the starting point of any engagement. Only when we truly understand the problem do we start to develop solutions.</p>
 						</div>
 						<div class="flex-right column column-span-8">
@@ -56,7 +56,7 @@ get_header(); ?>
 			<div class="outer-container">
 				<div class="flex-blocks">
 					<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
-						<h2 class="future-A">involving you</h2>
+						<h3 class="future-A">involving you</h3>
 						<p class="mt-1">Our most fruitful engagements are with clients who care. We involve you so that you have the opportunity to shape the direction of our work together. Our process may challenge you to think beyond your expectations, but you can rely on us to always keep your best interests in mind.</p>
 					</div>
 					<div class="flex-right column column-span-8">
@@ -71,7 +71,7 @@ get_header(); ?>
 			<div class="outer-container">
 					<div class="flex-blocks">
 						<div class="flex-left column column-span-4" style="display: flex; flex-direction: column; justify-content: center;">
-							<h2 class="future-A">original solutions</h2>
+							<h3 class="future-A">original solutions</h3>
 							<p class="mt-1">Our team of designers, strategists, and developers approach a challenge from all angles, resulting in intuitive, practical, and beautiful designs that are well-executed.</p>
 						</div>
 						<div class="flex-right column column-span-8">
@@ -87,7 +87,7 @@ get_header(); ?>
 	<section id="practice-areas" class="page-section about__practice-areas use-ui-light-theme " > <!-- -->
 		<div class="outer-container">
 			<div class="inner-container">
-				<h2 class="future-A">practice areas</h2>
+				<h3 class="future-A">practice areas</h3>
 				<p class="mt-1">Since 2007, we’ve worked with organizations in four key sectors that shape the ideas and interactions we have with one another.</p>
 			</div>
 		</div>
@@ -132,7 +132,7 @@ get_header(); ?>
 
 		<div class="outer-container mt-5">
 			<div class="inner-container">
-				<h2 class="future-A">capabilities</h2>
+				<h3 class="future-A">capabilities</h3>
 				<p class="mt-1">We believe that involving design thinking to tackle complex questions can yield more dynamic, trusting, and accountable communities. Our capabilities include, but are not limited to:</p>
 			</div>
 		</div>
@@ -141,7 +141,7 @@ get_header(); ?>
 			<div class="os-row">
 				<div class="os-column os-span-12 os-span-6-sm os-offset-1-md os-span-5-md os-offset-0-lg os-span-3-lg">
 
-						<h2 class="future-A">define</h2>
+						<h3 class="future-A">define</h3>
 						<ul class="about__column-list mt-1">
 							<li>Vision & goals setting</li>
 							<li>Brand architecture analysis</li>
@@ -155,7 +155,7 @@ get_header(); ?>
 				</div>
 				<div class="os-column os-span-12 os-span-6-sm os-span-5-md os-span-3-lg">
 
-						<h2 class="future-A">research</h2>
+						<h3 class="future-A">research</h3>
 						<ul class="about__column-list mt-1">
 							<li>Content, communications, & visual identity auditing</li>
 							<li>Stakeholder interviews</li>
@@ -169,7 +169,7 @@ get_header(); ?>
 				</div>
 				<div class="os-column os-span-12 os-span-6-sm os-offset-1-md os-span-5-md os-offset-0-lg os-span-3-lg">
 
-						<h2 class="future-A">create</h2>
+						<h3 class="future-A">create</h3>
 						<ul class="about__column-list mt-1">
 
 							<li>Visual & digital design</li>
@@ -184,7 +184,7 @@ get_header(); ?>
 				</div>
 				<div class="os-column os-span-12 os-span-6-sm os-span-5-md os-span-3-lg">
 
-						<h2 class="future-A">build</h2>
+						<h3 class="future-A">build</h3>
 						<ul class="about__column-list mt-1">
 
 							<li>Wireframing</li>
@@ -205,7 +205,7 @@ get_header(); ?>
 	<section id="team" class="page-section use-ui-light-theme about__team pb-5" >
 		<div class="outer-container  mt-5">
 			<div class="inner-container">
-				<h2 class="future-A">team</h2>
+				<h3 class="future-A">team</h3>
 				<p class="mt-1">We are a civic-minded group with a flexible skill set that can solve a range of challenges.</p>
 			</div>
 		</div>
@@ -262,7 +262,7 @@ get_header(); ?>
 		</div>
 
 		<div class="outer-container">
-			<h2 class="future-A inner-container mt-3">Recognition</h2>
+			<h3 class="future-A inner-container mt-3">Recognition</h3>
 			<ul class="list-unstyled clearfix mt-1 inner-container about__column-list mb-3">
 				<li>
 				<strong>Webby Awards 2015</strong>, Travel Design<br/>

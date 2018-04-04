@@ -1,6 +1,6 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<h2 class="future-A h3 mt-4 inner-container">opportunity</h2>
+		<h3 class="future-A h3 inner-container">opportunity</h3>
 			<div class="inner-container">
 				<p>Hester Street is a non-profit that works with community groups to ensure more equitable urban planning and development. Amidst rapid growth in the organization, the team recognized the need to unify and clarify its brand and communications strategy to better articulate their full offer.</p>
 				<p>We leapt at the opportunity to help this crucial social justice organization focus their communications, reach new audiences and make an impact across the U.S. </p>
@@ -21,7 +21,7 @@
 <section id="process" class="page-section">
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container mt-4">process</h2>
+		<h3 class="future-A h3 inner-container mt-3">process</h3>
 		<div class="inner-container">
 			<p>We went on an inspiring journey to discover what makes Hester Street unique, challenges they face and the organization’s future strategy. Identifying gaps and opportunities in HSC’s communication, we recommended a set of strategic actions such as prioritizing people’s skills to explain the organization, a flexible and meaningful identity system, and a set of messages for different situations.</p>
 			<p>Our designers iteratively developed a new identity system and an accessible, streamlined website, and our strategists crafted and tested a multi-level messaging platform, all inspired by our research findings.</p>
@@ -39,7 +39,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>We renamed the organization to simply, ‘Hester Street’, removing the Collaborative moniker, which did not add much and even confused perceptions of the organization.</p>
 		</div>
 
@@ -59,12 +59,7 @@
 	</div>
 
 	<figure class="alignnone mt-3" style="background-color: #000;height:49vw;">
-		<div class="outer-container gt-america"
-				 style="color: white;
-						    line-height: .9em;
-						    font-size: 6vw;
-						    max-width: 63vw;
-						    padding-top: 14vw;">
+		<div class="outer-container gt-america" style="color: white;line-height: .9em;font-size: 6vw;max-width: 63vw;padding-top: 14vw; ">
 				WHERE THE<br> PEOPLE SHAPE <br>
 				<span class="txt-typing"
      		data-period="2000"

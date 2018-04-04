@@ -28,3 +28,16 @@
     }
 
 }
+
+figure.alignnone .gibney__clip-box {
+    height: 560px;
+    position: relative;
+    clip-path: inset(0px 0px);
+
+    img {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: auto;
+    }
+}

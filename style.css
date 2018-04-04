@@ -1512,8 +1512,8 @@ h6 {
 .h1,
 h1,
 .page-section blockquote p {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.625rem;
+  line-height: 1.2;
   margin-top: 1.5rem;
   font-family: "ArnhemPro", "Georgia", sans-serif;
 }
@@ -3262,6 +3262,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 
 .case-study-container {
   height: 60vh;
+  transform: translate3d(0, -500px, 0);
 }
 
 .mask {
@@ -3269,7 +3270,6 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   top: 120px;
   height: 100vh;
   width: 100%;
-  opacity: 0;
   transition: opacity 300ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 .has-active .mask {
@@ -3281,7 +3281,7 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   position: absolute;
   top: 0;
   width: 100%;
-  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.21, 0.68);
 }
 .case-study a {
   opacity: 0.5;
@@ -3300,6 +3300,14 @@ a.scroll-down.light:before, a.scroll-down.light:after {
 
 .case-study__text {
   transition: transform 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.case-study__text p {
+  margin-top: 0.3rem;
+}
+@media screen and (min-width: 960px) {
+  .case-study__text p {
+    margin-top: 2.2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3381,9 +3389,13 @@ a.scroll-down.light:before, a.scroll-down.light:after {
   min-width: 120%;
   transform: translate3d(-50%, -50%, 0);
   transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.4;
 }
-.bg-image img:not(:first-child), .bg-image img.past:first-child {
+.bg-image img.past:first-child, .bg-image img:not(:first-child) {
   opacity: 0;
+}
+.bg-image img.past:last-child {
+  opacity: 0.4;
 }
 .bg-image img.active {
   opacity: 0.4;
@@ -5611,13 +5623,13 @@ figcaption {
 
 .doe-wordmarks {
   background-color: #fff;
-  height: 250px;
+  height: 500px;
   width: 100%;
-  line-height: 250px;
+  line-height: 500px;
 }
 .doe-wordmarks div.outer-container {
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 .doe-wordmarks img {
   padding: 0 1vw;
@@ -6329,6 +6341,7 @@ blockquote.parallax-node {
   display: block;
   position: relative;
   list-style: none;
+  padding: 0;
 }
 
 .gibney__cat {
@@ -6354,4 +6367,16 @@ blockquote.parallax-node {
 .gibney__cat--container {
   position: relative;
   height: 690px;
+}
+
+figure.alignnone .gibney__clip-box {
+  height: 560px;
+  position: relative;
+  clip-path: inset(0px 0px);
+}
+figure.alignnone .gibney__clip-box img {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: auto;
 }

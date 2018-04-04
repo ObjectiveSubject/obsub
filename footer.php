@@ -12,24 +12,26 @@
 
 	<footer id="colophon" class="site-footer bg-default" role="contentinfo">
 		<div class="outer-container">
+			<?php if (!is_page_template('page.php')): ?>
 
-			<div class="inner-container">
-				<p class="h1">Get our periodic email updates</p>
-				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309EB2458E90C43B586B223EEA4E239EEE513766D33A967F0A3CD89493E329D3A9FB70B520762DED60A2E37E3A8A03AB73DC">
-					<div class="form-field align-md">
-						<label for="fieldName" style="min-width:150px"><em>Your name</em></label>
-						<input id="fieldName" name="cm-name" type="text" />
-					</div>
-					<div class="form-field align-md mt-nudge">
-						<label for="fieldEmail" style="min-width:150px"><em>Email Address</em></label>
-						<input id="fieldEmail" class="js-cm-email-input" name="cm-djdjtk-djdjtk" type="email" required /> 
-					</div>
-					<div class="mt-nudge text-right">
-						<button class="js-cm-submit-button" type="submit">Subscribe &nbsp;&nbsp;&#8250;</button> 
-					</div>
-				</form>
-				<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-			</div>
+				<div class="inner-container">
+					<p class="h1">Get our periodic email updates</p>
+					<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309EB2458E90C43B586B223EEA4E239EEE513766D33A967F0A3CD89493E329D3A9FB70B520762DED60A2E37E3A8A03AB73DC">
+						<div class="form-field align-md">
+							<label for="fieldName" style="min-width:150px"><em>Your name</em></label>
+							<input id="fieldName" name="cm-name" type="text" />
+						</div>
+						<div class="form-field align-md mt-nudge">
+							<label for="fieldEmail" style="min-width:150px"><em>Email Address</em></label>
+							<input id="fieldEmail" class="js-cm-email-input" name="cm-djdjtk-djdjtk" type="email" required />
+						</div>
+						<div class="mt-nudge text-right">
+							<button class="js-cm-submit-button" type="submit">Subscribe &nbsp;&nbsp;&#8250;</button>
+						</div>
+					</form>
+					<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+				</div>
+			<?php endif; ?>
 
 			<div class="inner-container mt-5">
 				<ul class="site-footer__list list-unstyled">
@@ -52,7 +54,7 @@
 			</div>
 		</div>
 
-		<a href="#page" class="back-to-top button smooth-scroll">back to top &nbsp;&nbsp;<span class="rotate-cc-90">&#8250</span></a>
+		<a href="#page" class="back-to-top button smooth-scroll">back to top &nbsp;&nbsp;<span class="rotate-cc-90"> &#8250; </span></a>
 
 	</footer><!-- #colophon -->
 
@@ -64,16 +66,14 @@
 
 <?php wp_footer(); ?>
 
-<!-- Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2792624-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).mt-1(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-2792624-1', 'auto');
-  ga('send', 'pageview');
-
+  gtag('config', 'UA-2792624-1');
 </script>
 
 </body>

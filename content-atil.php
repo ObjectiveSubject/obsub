@@ -1,7 +1,7 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">opportunity</h2>
+			<h3 class="future-A h3">opportunity</h3>
 			<p>Fresh off our brand refresh, TransitCenter came to us with a concept for their next research topic, which encouraged politicians and elected officials to invest in public transit and institute policies that support ridership on those investments by building neighborhoods designed for people, not cars. TransitCenter explained that many city leaders want to support transit-friendly neighborhoods for their constituents, but think it’s out of their jurisdiction or are overwhelmed by how to do it.</p>
 		</div>
 
@@ -28,30 +28,35 @@
 
 	<div class="outer-container ">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">process</h2>
+			<h3 class="future-A h3">process</h3>
 			<p>The original draft publication was a persuasive explanation of how local policies like parking requirements hinder transit infrastructure in American cities by focusing development around the needs of the automobile. But as transit policy nerds ourselves, we understood that parking requirements were just one of many ways that public transit projects are sidelined in cities, even when local elected officials are eager to improve or introduce them. Recognizing the complex, interconnected policies and practices that hamper transit development in American cities, we went back to TransitCenter with an idea.</p>
 			<p>We sketched out a visual manifestation of the breadth of actions that can impact neighborhood development—from zoning policy to building form to quick-build, walkable (and bikeable) street design—and the resulting urban landscape. Starting with the typical American city’s development optimized for car use, we created a series of sketches that layered the effects of policy changes that could enable more vibrant, mixed-use, and transit-friendly development to cities.</p>
 		</div>
 	</div>
 
-	<figure class="os-slideshow-container">
-		<div id="bps-billboard-dots"></div>
-		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
-			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-			<li>
-				<img src="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?>" srcset="<?php echo os_path('placeholder900x600.jpg', 'atil'); ?> 1x, <?php echo os_path('placeholder900x600@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
-			</li>
-		</ul>
-		<?php os_slide_nav("bps-billboard-nav"); ?>
+	<figure class="aligncenter ">
+		<div class="outer-container">
+			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
+				<li class="img-1">
+					<img  src="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-01.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-01-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-2">
+					<img src="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-02.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-02-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-3">
+					<img src="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-03.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-03-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+				<li class="img-4">
+					<img src="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('ATIL-Sketch-04.jpg', 'atil') ?> 1x, <?php echo os_path('ATIL-Sketch-04-@2x.jpg', 'atil') ?> 2x" width="1600" height="1008">
+				</li>
+			</ul>
+		</div>
+
+		<div class="outer-container">
+			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
+		</div>
 	</figure>
+
 
 	<div class="outer-container mt-3">
 		<div class="inner-container">
@@ -70,32 +75,32 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>Always bearing in mind the target audience—civic leaders—and the possibility of shifting political environments, we developed a concept for a handy toolkit that would be equally useful, compelling, and adaptable to new circumstances.</p>
 		</div>
 	</div>
 
-	<figure class="aligncenter ">
-		<div class="outer-container">
-			<ul data-delay="0" data-hold="2000" data-duration="4000" data-type="fadeOutReveal" class="cycle-each">
-				<li class="img-1">
-					<img  src="<?php echo os_path('drawing-1.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-1.png', 'atil') ?> 1x, <?php echo os_path('drawing-1@2x.png', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-2">
-					<img src="<?php echo os_path('drawing-2.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-2.png', 'atil') ?> 1x, <?php echo os_path('drawing-2@2x.png', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-3">
-					<img src="<?php echo os_path('drawing-3.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-3.png', 'atil') ?> 1x, <?php echo os_path('drawing-3@2x.png', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-				<li class="img-4">
-					<img src="<?php echo os_path('drawing-4.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('drawing-4.png', 'atil') ?> 1x, <?php echo os_path('drawing-4@2x.png', 'atil') ?> 2x" width="1600" height="1008">
-				</li>
-			</ul>
-		</div>
-
-		<div class="outer-container">
-			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
-		</div>
+	<figure class="os-slideshow-container">
+		<div id="bps-billboard-dots"></div>
+		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-01-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-02-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-03-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+			<li>
+				<img src="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-04-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
+				<figcaption class="outer-container">TBD</figcaption>
+			</li>
+		</ul>
+		<?php os_slide_nav("bps-billboard-nav"); ?>
 	</figure>
 
 	<div class="outer-container mt-3">
@@ -104,9 +109,9 @@
 		</div>
 	</div>
 
-	<figure class="aligncenter cycle-images">
+	<figure class="aligncenter">
 		<div class="outer-container">
-			<img class="img-1" src="<?php echo os_path('chapters.png', 'atil') ?>" width="1212" height="978" srcset="<?php echo os_path('chapters.png', 'atil') ?> 1x, <?php echo os_path('chapters@2x.png', 'atil') ?> 2x" width="1600" height="1008" alt="TransitCenter’s All Transportation is Local chapters" >
+			<img src="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?>" srcset="<?php echo os_path('ATIL-Chapter-Mockup.png', 'atil') ?> 1x, <?php echo os_path('ATIL-Chapter-Mockup@2x.png', 'atil') ?> 2x" width="1600" height="1008" alt="TransitCenter’s All Transportation is Local chapters" >
 		</div>
 
 		<div class="outer-container">
@@ -124,7 +129,9 @@
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">
-						<img src="<?php echo os_path('streets-base.png', 'atil'); ?>" srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
+						<video style="width:100%;" src="<?php echo os_path('ATIL Interactive.mov', 'atil'); ?>" autoplay poster="<?php echo os_path('streets-base.png', 'atil') ?>">
+							<img src="<?php echo os_path('streets-base.png', 'atil') ?>" srcset="<?php echo os_path('streets-base.png', 'atil'); ?> 1x, <?php echo os_path('streets-base@2x.png', 'atil'); ?> 2x" width="850" height="780">
+						</video>
 					</div>
 				</div>
 			</div>
@@ -136,7 +143,7 @@
 			</div>
 	</div>
 
-	<div class="outer-container bleed mt-3">
+	<div class="outer-container mt-3">
 			<div class="flex-blocks">
 				<div class="column column-span-3">
 					<div class="block-image">
@@ -268,7 +275,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<p class="h2 future-A h3 mt-4"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+			<p class="h3 future-A h3"><a href="http://transitcenter.org/" class="cta-link" target="_blank">transitcenter.org <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
 		</div>
 	</div>
 

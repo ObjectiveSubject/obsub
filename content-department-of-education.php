@@ -1,6 +1,6 @@
 <section id="opportunity" class="page-section">
 	<div class="outer-container">
-		<h2 class="future-A h3 mt-4 inner-container">opportunity</h2>
+		<h3 class="future-A h3 inner-container">opportunity</h3>
 		<div class="inner-container">
 			<p>The NYC Department of Education’s Office of School Wellness Programs sought a new visual identity to convey the positive impact of its work for students, and to enable its messages to reach the right people.</p>
 			<p>We saw an opportunity to demonstrate the holistic nature of student health and wellness, and to help schools recognize the benefit of prioritizing the overall well-being of every student and family rather than ‘cherry-picking’ from the office’s suite of programs and materials.</p>
@@ -12,7 +12,7 @@
 			<blockquote class="parallax-node bleed" data-speed-modifier="0.5">
 				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
 			</blockquote>
-			<img src="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-skateboarding-NYC.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-skateboarding-NYC@2x.jpg', 'doe') ?> 2x" width="1600">
+			<img src="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-Parallax@2x.jpg', 'doe') ?> 2x" width="1600">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Skateboarding in New York City, 1965. (Photocredit: Bill Eppridge—Time & Life Pictures/Getty Images)</div></figcaption>
 	</figure>
@@ -21,7 +21,7 @@
 <section id="process" class="page-section " >
 
 	<div class="outer-container">
-		<h2 class="future-A h3 inner-container mt-4">process</h2>
+		<h3 class="future-A h3 inner-container mt-3">process</h3>
 		<div class="inner-container">
 			<p>We interviewed people across the NYC school community to build our evidence base, and quickly deduced the problem: head teachers across NYC are not prioritizing health and physical education in the school day, despite its benefits across grades and behavior.</p>
 			<p>Communicating the legitimacy and imperative of wellness education in the Office of School Wellness Programs’ visual communications became the chief objective. To create impact, capture the attention of key audiences, and communicate the core messages, we focused on the students, their actions and their outcomes. </p>
@@ -40,7 +40,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container">
-			<h2 class="future-A h3 mt-4">solution</h2>
+			<h3 class="future-A h3">solution</h3>
 			<p>We designed an identity which brands the result rather than the office. The wordmark logo Think—Move—Achieve— highlights the symbiotic relationship between learning to take care of one’s mind and body, and achieving personal and academic goals.</p>
 		</div>
 	</div>
@@ -102,7 +102,7 @@
 		</div>
 	</div>
 
-	<figure class="alignnone">
+	<figure class="aligncenter">
 		<img src="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?>" srcset="<?php echo os_path('DOE-Brand-Guidelines.png', 'doe') ?> 1x, <?php echo os_path('DOE-Brand-Guidelines@2x.png', 'doe') ?> 2x">
 		<div class="outer-container">
 			<figcaption class="inner-container">DOE's Brand Guidelines</figcaption>
@@ -112,7 +112,7 @@
 	<div class="outer-container">
 		<div class="inner-container">
 			<p>We refined the OSWP’s existing communications materials for clarity and brevity, and created Brand Guidelines to enable all staff to apply the identity consistently. </p>
-			<!-- <p class="h2 future-A h3 mt-4"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p> -->
+			<!-- <p class="h3 future-A h3"><a href="http://nyc.doe.owsp/" class="cta-link" target="_blank">nyc.doe.owsp <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p> -->
 		</div>
 	</div>
 
