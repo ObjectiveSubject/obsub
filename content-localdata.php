@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<blockquote>
-		<p><span class="quote">&ldquo;</span>They saw detroit, the vast sprawling city, and the outdated surveys providing inadequate data for informed decisions, as a major issue.<span class="quote">&rdquo;</span></p>
+		<p><span class="quote">&ldquo;</span>They saw Detroit, the vast sprawling city, and the outdated surveys providing inadequate data for informed decisions, as a major issue.<span class="quote">&rdquo;</span></p>
 	</blockquote>
 </section>
 

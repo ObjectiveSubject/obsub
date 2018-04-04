@@ -9,9 +9,9 @@
 
 	<figure class="alignnone mt-5">
 		<div class="parallax-container">
-			<blockquote class="parallax-node" data-speed-modifier="0.5">
+			<!-- <blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p><span class="quote">&ldquo;</span>[Quote from Hester Street]<span class="quote">&rdquo;</span><br/><small>&mdash;Betsy MacLean, Executive Director</small></p>
-			</blockquote>
+			</blockquote> -->
 			<img src="<?php echo os_path('HS-Broadway_sign.jpg', 'hesterstreet') ?>" srcset="<?php echo os_path('HS-Broadway_sign.jpg', 'hesterstreet') ?> 1x, <?php echo os_path('HS-Broadway_sign@2x.jpg', 'hesterstreet') ?> 2x" width="1600" height="1008">
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Inspiration: Broadway street sign, New York City</div></figcaption>

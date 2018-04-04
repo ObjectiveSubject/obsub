@@ -85,19 +85,19 @@
 		<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 			<li>
 				<img src="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-01.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-01-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
+				<figcaption class="outer-container">The printed report</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-02.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-02-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
+				<figcaption class="outer-container">The printed report</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-03.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-03-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
+				<figcaption class="outer-container">The printed report</figcaption>
 			</li>
 			<li>
 				<img src="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?>" srcset="<?php echo os_path('TC-Binder-04.jpg', 'atil'); ?> 1x, <?php echo os_path('TC-Binder-04-@2x.jpg', 'atil'); ?> 2x" width="850" height="566" />
-				<figcaption class="outer-container">TBD</figcaption>
+				<figcaption class="outer-container">The printed report</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("bps-billboard-nav"); ?>
