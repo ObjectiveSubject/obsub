@@ -29,7 +29,7 @@
 	</div>
 
 	<figure class="alignnone mt-5">
-		<img src="<?php echo os_path('DOE-interview.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-interview.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-interview@2x.jpg', 'doe') ?> 2x">
+		<img src="<?php echo os_path('DOE-Interview.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-Interview.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-Interview@2x.jpg', 'doe') ?> 2x">
 		<div class="outer-container">
 			<figcaption class="inner-container">Lizzie interviewing Dan Marascia, PE Teacher; Courtland Elementary School</figcaption>
 		</div>
