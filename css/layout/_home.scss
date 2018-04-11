@@ -7,6 +7,7 @@
 .case-study-container {
 	height: 60vh;
 	transform: translate3d(0,-500px, 0);
+
 }
 
 .mask {
@@ -29,7 +30,19 @@
 }
 
 .case-study {
-	position: absolute;
+	display: flex;
+	position: relative;
+	height: 80vh;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media($screen-md) {
+		display: block;
+		position: absolute;
+		height: auto;
+		background-image: none !important;
+	};
 	top: 0;
 	width: 100%;
 	transition: all 600ms $easing-cubic;
@@ -80,11 +93,12 @@
 }
 
 .case-study__desc {
+	opacity: 1;
 	@include media($screen-md) {
 		@include span-columns(4);
 		height: 0;
+		opacity: 0;
 	}
-	opacity: 0;
 	transition: all $duration-lg $easing;
 
 	.active & {
@@ -97,7 +111,16 @@
 }
 
 .bg-image {
+
 	position: absolute;
+	display: none;
+	@include media($screen-md) {
+		display: block;
+
+		.has-active & {
+			position: fixed;
+		}
+	}
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -106,10 +129,6 @@
 	overflow: hidden;
 	background-color: black;
 	transition: background-color $duration $easing;
-
-	.has-active & {
-		position: fixed;
-	}
 
 	.past & {
 		position: absolute;

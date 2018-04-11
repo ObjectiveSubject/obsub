@@ -187,9 +187,9 @@
     // top: 64px;
     // right: $size_container_padding_sm;
     z-index: 1;
-    @media screen and (max-width: $screen-md - 1) {
-        display: none !important;
-    }
+    // @media screen and (max-width: $screen-md - 1) {
+    //     display: none !important;
+    // }
 
     .sub-menu {
         position: absolute;
@@ -229,10 +229,11 @@
         font-size: rem(22);
         line-height: 1em;
         @include transition(all 300ms ease);
-        
-        body:not(.home):not(.single-case_study) &:not(.current-menu-item) > a,
-        .single-case_study & > a:not([href*="work"]) {
+
+        .single-case_study & > a:not([href*="work"]),
+        body:not(.home):not(.single-case_study) &:not(.current-menu-item) > a {
             opacity: 0.3;
+
             &:hover {
                 opacity: 1;
             }

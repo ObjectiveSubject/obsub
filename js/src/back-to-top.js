@@ -2,25 +2,23 @@
  * Back to top link behavior
  */
 
-(function(window, $){
+(function (window, $) {
 
-    console.log('test');
+	var $body = $('body'),
+		windowHeight = window.innerHeight;
 
-    var $body = $('body'),
-        windowHeight = window.innerHeight;
+	OS.scrollCallbacks.push(function (scrollTop) {
 
-    OS.scrollCallbacks.push(function(scrollTop){
+		if (scrollTop > windowHeight / 2) {
 
-        if ( scrollTop > windowHeight/2 ) {
+			$body.addClass('page-has-scrolled');
 
-            $body.addClass('page-has-scrolled');
+		} else {
 
-        } else {
+			$body.removeClass('page-has-scrolled');
 
-            $body.removeClass('page-has-scrolled');
+		}
 
-        }
-
-    });
+	});
 
 })(this, jQuery);

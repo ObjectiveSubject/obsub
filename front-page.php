@@ -21,7 +21,7 @@ $case_studies = get_case_studies('featured'); ?>
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
 	</section>
@@ -51,7 +51,7 @@ $case_studies = get_case_studies('featured'); ?>
 
 				<?php foreach ($case_studies as $study) : ?>
 
-				<li id="<?php echo "li-case-study-{$study->ID}"; ?>" class="case-study">
+				<li id="<?php echo "li-case-study-{$study->ID}"; ?>" class="case-study" style="background-image:url( <?php echo get_the_post_thumbnail_url($study);?> )">
 
 					<div class="outer-container">
 
