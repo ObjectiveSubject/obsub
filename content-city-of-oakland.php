@@ -74,12 +74,12 @@
 		<p class="inner-container mt-5">As we defined the color scheme, we wanted to help Oakland break through the clutter of commercial activity by giving it a clear and bold look. We paired a dominant color, an energetic green hue, to a rich range of complimentary hues, and created a typographic system that emphasizes clarity and lack of ornament.</p>
 	</div>
 
-	<figure class="aligncenter mt-5">
+	<figure class="aligncenter mt-5" style="background-color: #E4F1CF;">
 		<img src="<?php echo os_path('CoO-Brochure-lowsrc.png', 'oakland') ?>" class="lazy-load" data-src="<?php echo os_path('CoO-Brochure.png', 'oakland'); ?>" data-src2x="<?php echo os_path('CoO-Brochure-@2x.png', 'oakland'); ?>" width="1025" height="690" />
-		<div class="outer-container">
-			<figcaption class="inner-container">City of Oakland Brochures</figcaption>
-		</div>
 	</figure>
+	<div class="outer-container">
+		<figcaption class="inner-container">City of Oakland Brochures</figcaption>
+	</div>
 
 	<div class="outer-container mt-5">
 		<p class="inner-container">The City should be able to modulate its expression without always employing a blunt use of the logo. We created a pattern that, while related to the tree logo, grows it into a full root system, as complex and rich as the communities and network that support the city. This pattern can be applied to elements in overt or subtle ways, based on the context.</p>
@@ -147,7 +147,7 @@
 
 	<div class="outer-container">
 		<div class="inner-container mt-5">
-			<p class="h3 future-A h3"><a href="http://beta.oaklandca.gov/" class="cta-link" target="_blank">beta.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
+
 			<p>In this same spirit of open development, the portfolio library is publicly available, along with a design toolkit created to support designers, agencies and civil servants in creating material to fit the new visual identity.</p>
 		</div>
 	</div>
@@ -186,11 +186,5 @@
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
 	</figure>
 
-	<div class="outer-container">
-		<div class="inner-container mt-5">
-			<p>We continue to support the City as it improves the quality of its visual communication.</p>
-			<p class="h3 future-A h3"><a href="http://design.oaklandca.gov/" class="cta-link" target="_blank">design.oaklandca.gov <span class="icon arnhem rotate-cc-45">&rarr;</span></a></p>
-		</div>
-	</div>
 
 </section>

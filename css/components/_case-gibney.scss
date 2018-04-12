@@ -30,6 +30,8 @@
 }
 
 figure.alignnone .gibney__clip-box {
+    background-color: #000000;
+
     height: 560px;
     position: relative;
     clip-path: inset(0px 0px);
@@ -38,6 +40,6 @@ figure.alignnone .gibney__clip-box {
         position: fixed;
         top: 0;
         height: 100vh;
-        width: auto;
+        width: 100%;
     }
 }

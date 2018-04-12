@@ -10,7 +10,7 @@
 	<figure class="alignnone mt-5">
 		<div class="parallax-container">
 			<blockquote class="parallax-node bleed" data-speed-modifier="0.5">
-				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and english for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
+				<p style="padding:0"><span class="quote">&ldquo;</span>We're competing with math and English for time in the school day, but Wellness supports students to achieve in these subjects.<span class="quote">&rdquo;</span><br/><small>&mdash;Wellness worker</small></p>
 			</blockquote>
 			<img src="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?>" srcset="<?php echo os_path('DOE-Parallax.jpg', 'doe') ?> 1x, <?php echo os_path('DOE-Parallax@2x.jpg', 'doe') ?> 2x" width="1600">
 		</div>

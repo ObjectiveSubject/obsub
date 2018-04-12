@@ -39,10 +39,13 @@
 			<p>The need to convey program interdisciplinarity in a way that would not impact negatively on the online experience informed our approach to content strategy. Through a full content audit, followed by sorting and categorizing of the site’s content, we created information architecture rules which supported the CGU team’s efforts to streamline and redraft the site.</p>
 		</div>
 	</div>
-
-	<figure class="aligncenter mt-5" style="padding:0 80px;">
-		<img src="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Diagram@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
-	</figure>
+	<div class="alignnone" style="background-color:#ffffff;">
+		<div class="outer-container mt-5">
+			<figure class="inner-container " style="padding-bottom:5rem;">
+				<img src="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?>" srcset="<?php echo os_path('CGU-Diagram.png', 'cgu'); ?> 1x, <?php echo os_path('CGU-Diagram@2x.png', 'cgu'); ?> 2x" width="1600" height="1008"/>
+			</figure>
+		</div>
+	</div>
 
 	<div class="outer-container">
 		<p class="inner-container mt-5">We created user journey maps to envision how prospective or current students would navigate through the website and anticipate their needs through the reorganized content. In the development phase, we adapted the back-end structure and controls to work with organizational behaviors, which ensures a consistent front-end user experience.</p>

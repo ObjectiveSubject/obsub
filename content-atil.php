@@ -6,7 +6,8 @@
 		</div>
 
 	</div>
-
+</section>
+<section class="page-section use-ui-light-theme">
 	<figure class="alignnone mt-5">
 		<div class="parallax-container">
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
@@ -16,7 +17,8 @@
 		</div>
 		<figcaption class="outer-container"><div class="inner-container">Los Angeles Mayor Eric Garcetti at the Measure M victory press conference</div></figcaption>
 	</figure>
-
+</section>
+<section class="page-section">
 	<div class="outer-container mt-5">
 		<div class="inner-container">
 			<p>It became clear that there was an opportunity to incorporate the larger landscape of urban policies that contribute to the lively, walkable neighborhoods conducive to transit usage. Furthermore, there was an opportunity to render dense policy matters in a more compelling and digestible way.</p>
@@ -53,7 +55,7 @@
 		</div>
 
 		<div class="outer-container">
-			<figcaption class="inner-container mt-5">Initial sketches of policy effects layered on the urban landscape</figcaption>
+			<figcaption class="inner-container">Initial sketches of policy effects layered on the urban landscape</figcaption>
 		</div>
 	</figure>
 
@@ -125,7 +127,7 @@
 			<p>We optimized the publication for online consumption with interactive triggers to even further underscore the cumulative effect of policies.</p>
 		</div>
 
-			<div class="browser mt-5" >
+			<div class="browser mt-5 page-section use-ui-light-theme" >
 				<div class="browser-bar"></div>
 				<div class="browser-window black">
 					<div class="browser-inner">

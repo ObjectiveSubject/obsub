@@ -13,9 +13,8 @@
 			<blockquote class="parallax-node" data-speed-modifier="0.5">
 				<p class="bleed"><span class="quote">&ldquo;</span>You can’t change the world without changing people.<span class="quote">&rdquo;</span><br/><small>&mdash;Gina Gibney, <em>Artistic Director & CEO</em></small></p>
 			</blockquote>
-			<img src="<?php echo os_path('parrallax-quote.jpg', 'gibney') ?>" srcset="<?php echo os_path('parrallax-quote.jpg', 'gibney') ?> 1x, <?php echo os_path('parrallax-quote@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="Caption this image #1">
+			<img src="<?php echo os_path('parrallax-quote.jpg', 'gibney') ?>" srcset="<?php echo os_path('parrallax-quote.jpg', 'gibney') ?> 1x, <?php echo os_path('parrallax-quote@2x.jpg', 'gibney') ?> 2x" width="1600" height="1008" alt="">
 		</div>
-		<figcaption class="outer-container"><div class="inner-container">Caption this image #1</div></figcaption>
 	</figure>
 
 </section>
@@ -175,7 +174,7 @@
 						<img src="<?php echo os_path('desktop-company.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-company.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-company@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption >Caption this image #4</figcaption>
+				<figcaption >Moments of the new website</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -184,7 +183,7 @@
 						<img src="<?php echo os_path('desktop-event.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-event.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-event@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption >Caption this image #5</figcaption>
+				<figcaption >Moments of the new website</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -193,7 +192,7 @@
 						<img src="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-upcoming.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-upcoming@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption >Caption this image #6</figcaption>
+				<figcaption >Moments of the new website</figcaption>
 			</li>
 			<li class="browser">
 				<div class="browser-bar"></div>
@@ -202,7 +201,7 @@
 						<img src="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?>" srcset="<?php echo os_path('desktop-calendar-monthly.jpg', 'gibney'); ?> 1x, <?php echo os_path('desktop-calendar-monthly@2x.jpg', 'gibney'); ?> 2x" width="850" height="780">
 					</div>
 				</div>
-				<figcaption >Caption this image #7</figcaption>
+				<figcaption >Moments of the new website</figcaption>
 			</li>
 		</ul>
 		<?php os_slide_nav("oakland-toolkit-nav"); ?>
@@ -218,18 +217,19 @@
 	<figure data-delay="0" data-hold="3000" data-duration="2000" data-type="fadeOutReveal" class="outer-container cycle-each mt-5">
 		<div class="outer-container">
 			<img src="<?php echo os_path('brochure-3.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-3.png', 'gibney') ?> 1x, <?php echo os_path('brochure-3@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
-			<figcaption class="inner-container">CAPTION THIS IMAGE #8</figcaption>
+
 		</div>
 		<div class="outer-container">
 			<img src="<?php echo os_path('brochure-1.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-1.png', 'gibney') ?> 1x, <?php echo os_path('brochure-1@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="New Architecture">
-			<figcaption class="inner-container">CAPTION THIS IMAGE #9</figcaption>
+
 		</div>
 		<div class="outer-container">
 			<img src="<?php echo os_path('brochure-2.png', 'gibney') ?>" srcset="<?php echo os_path('brochure-2.png', 'gibney') ?> 1x, <?php echo os_path('brochure-2@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="Old Architecture">
-			<figcaption class="inner-container">CAPTION THIS IMAGE #10</figcaption>
 		</div>
 	</figure>
-
+	<div class="outer-container">
+		<figcaption class="inner-container">We developed a range of design fidelity to allow impactful material to be professionally designed, but also simpler design that can be accomplished by administrative staff, in-house.</figcaption>
+	</div>
 	<div data-offset="0.25" class="outer-container mt-5 active-on-inview">
 		<div class="inner-container gibney__cat--container">
 			<img class="gibney__cat gibney__cat--right" src="<?php echo os_path('catalogue-performance.png', 'gibney') ?>" srcset="<?php echo os_path('catalogue-performance.png', 'gibney') ?> 1x, <?php echo os_path('catalogue-performance@2x.png', 'gibney') ?> 2x" width="1600" height="1008" alt="performance catalogue">

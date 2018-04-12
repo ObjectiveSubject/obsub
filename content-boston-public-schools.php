@@ -48,12 +48,12 @@
 		<p class="inner-container mt-5">Since the role of this tool is to serve as the first step in part of the larger registration process, we proposed branding the process holistically, using the bright blue of Boston Public Schools as the unifying element for a streamlined visual system. This cohesive system will play an integral part in the communications campaign to parents.</p>
 	</div>
 
-	<figure class="aligncenter mt-5">
+	<figure class="aligncenter mt-5" style="background-color: #D7EFFC;">
 		<img src="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?>" srcset="<?php echo os_path('DBPS-Poster-min.png', 'bps') ?> 1x, <?php echo os_path('DBPS-Poster-@2x-min.png', 'bps') ?> 2x" width="1200" height="797">
-		<div class="outer-container">
-			<figcaption class="inner-container">A poster for a school showcase using the visual system</figcaption>
-		</div>
 	</figure>
+	<div class="outer-container">
+		<figcaption class="inner-container">A poster for a school showcase using the visual system</figcaption>
+	</div>
 
 </section>
 
