@@ -131,14 +131,14 @@
 		</div>
 	</figure>
 
-	<figure class="alignnone mt-5">
+	<figure class="alignnone mt-5" style="position:relative;height:568px;">
 		<div class="gibney__clip-box">
 			<img src="<?php echo os_path('static-lines.svg', 'gibney') ?>"  ?> >
 		</div>
-		<div class="outer-container">
-			<figcaption class=" inner-container">Parallel lines make for a compelling visual language to convey movements, even in static contexts.</figcaption>
-		</div>
 	</figure>
+	<div class="outer-container">
+		<figcaption class=" inner-container">Parallel lines make for a compelling visual language to convey movements, even in static contexts.</figcaption>
+	</div>
 
 
 	<figure class="outer-container mt-5">

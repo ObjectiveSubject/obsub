@@ -158,7 +158,6 @@
 	opacity: 0.4;
 }
 
-
 // Style
 // ======================================= /
 a.no-decoration {
@@ -188,7 +187,7 @@ a.no-decoration {
 .text-color-link {
 	color: $color_text_main;
 
-	&:focus{
+	&:focus {
 		color: $color_text_main;
 	}
 
@@ -200,7 +199,7 @@ a.no-decoration {
 .muted-link {
 	color: $medium_gray;
 
-	&:focus{
+	&:focus {
 		color: $medium_gray;
 	}
 

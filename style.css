@@ -6371,8 +6371,10 @@ blockquote.parallax-node {
 figure.alignnone .gibney__clip-box {
   background-color: #000000;
   height: 560px;
-  position: relative;
-  clip-path: inset(0px 0px);
+  width: 100%;
+  position: absolute;
+  clip-path: inset(0 0);
+  clip: rect(0, auto, auto, 0);
 }
 figure.alignnone .gibney__clip-box img {
   position: fixed;
