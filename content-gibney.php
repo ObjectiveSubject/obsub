@@ -265,14 +265,14 @@
 
 	<div class="outer-container">
 			<video width="850px" height="400px" preload="preload" >
-				<source src="" type="video/mp4">
+				<source src="https://player.vimeo.com/video/264336408" type="video/mp4">
 			</video>
 			<figcaption class="inner-container">Brand Video</figcaption>
 	</div>
 
 	<div class="outer-container">
 		<video width="850px" height="400px" preload="preload" >
-			<source src="" type="video/mp4">
+			<source src="https://player.vimeo.com/video/264336135" type="video/mp4">
 		</video>
 			<figcaption class="inner-container">Anthem Video</figcaption>
 	</div>
