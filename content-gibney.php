@@ -133,7 +133,7 @@
 
 	<figure class="alignnone mt-5" style="position:relative;height:568px;">
 		<div class="gibney__clip-box">
-			<img src="<?php echo os_path('static-lines.svg', 'gibney') ?>"  ?> >
+			<img src="http://www.objectivesubject.com/wp-content/uploads/2018/04/static-lines.gif"  ?> >
 		</div>
 	</figure>
 	<div class="outer-container">
