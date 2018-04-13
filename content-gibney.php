@@ -265,7 +265,7 @@
 
 	<div class="outer-container mt-5 mb-5">
 		 <iframe src="https://player.vimeo.com/video/264336408" width="850" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<figcaption class="inner-container">Brand Reel</figcaption>
+			<figcaption class="inner-container">Motion Look and feel</figcaption>
 	</div>
 
 	<div class="outer-container mt-5 mb-5">
