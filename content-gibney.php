@@ -108,7 +108,7 @@
 
 	<figure class="aligncenter mt-5">
 		<div class="" style="background:black;text-align:center">
-			<video autoplay poster="posterimage.jpg" autoplay muted loop preload="preload">
+			<video autoplay poster="http://www.objectivesubject.com/wp-content/uploads/2018/04/gibneyposterimage.jpg" autoplay muted loop preload="preload">
 				<source src="<?php echo os_path('logoanimnobreak.mp4', 'gibney') ?>" type="video/mp4">
 				<source src="<?php echo os_path('logoanimnobreak.mov', 'gibney') ?>" type="video">
 			</video>
