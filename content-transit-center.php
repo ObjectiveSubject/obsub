@@ -15,7 +15,7 @@
 			</blockquote>
 			<img src="<?php echo os_path('Bus.jpg', 'transitcenter') ?>" srcset="<?php echo os_path('Bus.jpg', 'transitcenter') ?> 1x, <?php echo os_path('Bus@2x.jpg', 'transitcenter') ?> 2x" width="1600" height="1008" alt="Broadway Boogie Woogie by Piet Mondrian">
 		</div>
-		<figcaption class="outer-container"><div class="inner-container">Inspiration: Broadway Boogie Woogie by Piet Mondrian</div></figcaption>
+		<figcaption class="outer-container"><div class="inner-container">A Metro Rapid bus in Los Angeles</div></figcaption>
 	</figure>
 
 </section>
