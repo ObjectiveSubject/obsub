@@ -44,7 +44,7 @@
 	<div class="outer-container">
 		<div class="inner-container mt-5">
 			<h2 class="future-A h3">solution</h2>
-			<p>We created a strong visual identity and ‘house style’ for all future materials, and a style guide for consistent implementation. We gave TransitCenter a bold and ‘ownable’ distinctive purple for differentiation and gravitas. We created a bold and flexible logo which adapts to different contexts.</p>
+			<p>We created a bold visual identity and ‘house style’ for all future materials, and a style guide for consistent implementation. We gave TransitCenter a bold and ‘ownable’ distinctive purple for differentiation and gravitas. We created a bold and flexible logo which adapts to different contexts.</p>
 		</div>
 	</div>
 
@@ -75,7 +75,7 @@
 				<img src="<?php echo os_path('TC-streets.png', 'transitcenter') ?>"  srcset="<?php echo os_path('TC-streets.png', 'transitcenter') ?> 1x, <?php echo os_path('TC-streets@2x.png', 'transitcenter') ?> 2x"/>
 			</div>
 			<div class="outer-container">
-				<figcaption class="inner-container">TransitCenter Avitars</figcaption>
+				<figcaption class="inner-container">TransitCenter Avatars</figcaption>
 			</div>
 		</figure>
 
@@ -92,15 +92,15 @@
 			<ul class="list-unstyled os-slideshow center-mode" data-slick='{ "prevArrow": "#bps-billboard-nav .prev", "nextArrow": "#bps-billboard-nav .next", "appendDots": "#bps-billboard-dots" }'>
 				<li>
 					<img src="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-CoverBig.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-CoverBig@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption>Illustration by Max Halton for Bus Report publication 2016</figcaption>
+					<figcaption>Illustration by Max Halton for Bus Turnaround publication</figcaption>
 				</li>
 				<li>
 					<img src="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-spo1.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-spot1@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption>Illustration by Pete Gamlen for Uber Fact Sheet 2016</figcaption>
+					<figcaption>Illustration by Pete Gamlen for fact sheet on On-Demand Transportation</figcaption>
 				</li>
 				<li>
 					<img src="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?>" srcset="<?php echo os_path('TC-Lesson3.jpg', 'transitcenter'); ?> 1x, <?php echo os_path('TC-Lesson3@2x.jpg', 'transitcenter'); ?> 2x" width="850" height="566" />
-					<figcaption>Illustration by Adam Avery for A Bid for Better Transit publication 2017</figcaption>
+					<figcaption>Illustration by Adam Avery for report on transit operations contracting</figcaption>
 				</li>
 			</ul>
 			<?php os_slide_nav("bps-billboard-nav"); ?>
