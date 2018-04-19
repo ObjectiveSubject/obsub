@@ -64,7 +64,7 @@
 
 	<div class="outer-container">
 			<h3 class="inner-container future-A h3 mt-5">solution</h3>
-			<p class="inner-container">The flame symbol was a unique and ownable asset which we simplified into an icon suitable for digital uses. Paired with the flame, we minimized the typographic elements to create a simplified wordmark to serve as a foundation for the university’s many schools, programs, and offices. We added flexible straplines ‘since 1925’ and ‘part of Claremont Colleges’ to strengthen the brand positioning.</p>
+			<p class="inner-container">The flame symbol was a unique and ownable asset which we simplified into an icon suitable for digital uses. Paired with the flame, we minimized the typographic elements to create a simplified wordmark to serve as a foundation for the university’s many schools, programs, and offices. We added flexible straplines ‘Founded 1925’ and ‘A Member of the Claremont Colleges’ to strengthen the brand positioning.</p>
 	</div>
 
 	<div class="aligncenter mt-5" style="background-color: white;">
