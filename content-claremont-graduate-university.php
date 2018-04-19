@@ -35,7 +35,7 @@
 	<div class="outer-container">
 		<h3 class="future-A h3 inner-container mt-5">process</h3>
 		<div class="inner-container">
-			<p>Through stakeholder interviews across the organization, we refined a brand platform to inform the creation of the visual identity. This captured the spirit and heritage of the university and the outlook of the staff and students. Through a visual audit of the university’s current identity and iterations through its history, we identified the seal of the university as a key visual asset, and the flame as its logical shorthand.</p>
+			<p>Through stakeholder interviews across the organization, we refined a brand platform to inform the creation of the visual identity. This captured the spirit and heritage of the university and the outlook of the staff and students. Through a visual audit of the university’s current identity and iterations through its history, we identified the seal of the university as a key visual asset, and the flame its logical shorthand.</p>
 			<p>The need to convey program interdisciplinarity in a way that would not impact negatively on the online experience informed our approach to content strategy. Through a full content audit, followed by sorting and categorizing of the site’s content, we created information architecture rules which supported the CGU team’s efforts to streamline and redraft the site.</p>
 		</div>
 	</div>
