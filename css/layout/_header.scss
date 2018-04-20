@@ -187,9 +187,6 @@
     // top: 64px;
     // right: $size_container_padding_sm;
     z-index: 1;
-    @media screen and (max-width: $screen-md - 1) {
-        display: none !important;
-    }
 
     .sub-menu {
         position: absolute;

@@ -2904,11 +2904,6 @@ body::before {
   float: right;
   z-index: 1;
 }
-@media screen and (max-width: 767px) {
-  .preview-nav {
-    display: none !important;
-  }
-}
 .preview-nav .sub-menu {
   position: absolute;
   left: 0;
