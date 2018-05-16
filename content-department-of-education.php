@@ -1,5 +1,8 @@
 <section id="opportunity" class="page-section">
-	<div class="outer-container mt-5">
+	<figcaption class="outer-container">
+		<div class="inner-container">Photo credit: Kirsten Luce</div>
+	</figcaption>
+	<div class="outer-container mt-4">
 		<h3 class="future-A h3 inner-container">opportunity</h3>
 		<div class="inner-container">
 			<p>The NYC Department of Education’s Office of School Wellness Programs sought a new visual identity to convey the positive impact of its work for students, and to enable its messages to reach the right people.</p>
