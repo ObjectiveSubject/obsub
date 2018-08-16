@@ -15,7 +15,7 @@ $case_studies = get_case_studies('featured'); ?>
 			<div class="intro-content section-content">
 				<div class="outer-container">
 					<div class="inner-container">
-						<h1 class="page-title">Objective Subject is a design firm.</h1>
+						<h1 class="page-title">Objective Subject is a strategy and design firm.</h1>
 						<p class="h1">We are creating a more informed and engaged society by rethinking how companies, institutions, and governments are framed and experienced.</p>
 						<p><a href="/about" class="button">about us &nbsp; &#8250;</a></p>
 					</div>
