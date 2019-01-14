@@ -128,7 +128,7 @@ $case_studies = get_case_studies('featured'); ?>
 		<div class="outer-container">
 			<div class="inner-container">
 				<address class="h1">
-					30 East 20<sup>th</sup> Street, 7<sup>th</sup> Floor<br/>New York, NY 10003<br/>
+					400 Third Avenue, Suite 3<br/>Brooklyn, NY 11215<br/>
 					<a href="tel:+12128639194">+1 212 863 9194</a><br/>
 					<a href="mailto:info@objectivesubject.com" class="muted-link">info@objectivesubject.com</a>
 				</address>
